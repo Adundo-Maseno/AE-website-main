@@ -71,14 +71,5 @@
     "brace-expansion": "latest",
     "postcss": "^8.5.25",
     "sharp": "latest"
-  },
-  "pnpm": {
-    "overrides": {
-      "@types/react": "19.2.18",
-      "@types/react-dom": "19.2.5",
-      "brace-expansion": "latest",
-      "postcss": "^8.5.25",
-      "sharp": "latest"
-    }
   }
 }
