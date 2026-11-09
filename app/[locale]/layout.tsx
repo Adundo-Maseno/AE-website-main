@@ -8,24 +8,28 @@ const playfairDisplay = Playfair_Display({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-playfair',
+  display: 'swap',
 })
 
 const dmSans = DM_Sans({ 
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-dm-sans',
+  display: 'swap',
 })
 
 const bebasNeue = Bebas_Neue({
   subsets: ['latin'],
   weight: ['400'],
   variable: '--font-bebas',
+  display: 'swap',
 })
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-space-grotesk',
+  display: 'swap',
 })
 
 import { getTranslations } from 'next-intl/server';
@@ -33,9 +37,10 @@ import { getTranslations } from 'next-intl/server';
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Metadata' });
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ae-website-main.vercel.app';
 
   return {
-    metadataBase: new URL('https://agri-experience.com'),
+    metadataBase: new URL(siteUrl),
     title: {
       default: t('root_title_default'),
       template: t('root_title_template'),
@@ -48,7 +53,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     openGraph: {
       type: 'website',
       locale: locale === 'en' ? 'en_US' : 'fr_FR',
-      url: 'https://agri-experience.com',
+      url: `${siteUrl}/${locale}`,
       siteName: 'Agri Experience',
       title: t('root_title_default'),
       description: t('root_desc'),

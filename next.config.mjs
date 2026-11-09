@@ -27,6 +27,9 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production' ? { exclude: ['error', 'warn'] } : false,
   },
+  experimental: {
+    optimizePackageImports: ['lucide-react', 'framer-motion', 'gsap', '@gsap/react'],
+  },
   async headers() {
     return [
       {

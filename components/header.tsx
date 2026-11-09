@@ -262,7 +262,7 @@ export default function Header() {
               className="relative hidden md:flex items-center"
             >
               <div
-                className={`flex items-center gap-1 bg-black/5 rounded-full p-1 border border-black/5 transition-all ${
+                className={`flex items-center gap-1 bg-black/5 rounded-full p-1 border border-black/5 transition-opacity duration-200 ${
                   !TRANSLATION_FEATURE_ACTIVE
                     ? 'opacity-40 grayscale cursor-not-allowed select-none'
                     : 'opacity-100'
@@ -284,7 +284,7 @@ export default function Header() {
                           router.replace(pathname, { locale: loc.code as any, scroll: false });
                         }
                       }}
-                      className={`text-[11.5px] min-[1440px]:text-xs font-bold px-2 min-[1440px]:px-2.5 py-1 min-[1440px]:py-1.5 rounded-full transition-all ${
+                      className={`text-[11.5px] min-[1440px]:text-xs font-bold px-2 min-[1440px]:px-2.5 py-1 min-[1440px]:py-1.5 rounded-full transition-colors duration-150 ${
                         isActive
                           ? 'bg-white text-deep-forest shadow-sm'
                           : 'text-charcoal/60 hover:text-charcoal'
@@ -410,7 +410,7 @@ export default function Header() {
                   {/* Language Switcher */}
                   <div className="relative group flex flex-col items-center mb-6">
                     <div
-                      className={`w-full flex items-center justify-center p-1 bg-black/5 rounded-full border border-black/5 transition-all ${
+                      className={`w-full flex items-center justify-center p-1 bg-black/5 rounded-full border border-black/5 transition-opacity duration-200 ${
                         !TRANSLATION_FEATURE_ACTIVE
                           ? 'opacity-40 grayscale cursor-not-allowed select-none'
                           : 'opacity-100'
@@ -433,7 +433,7 @@ export default function Header() {
                                 setIsOpen(false);
                               }
                             }}
-                            className={`flex-1 text-[13px] font-bold py-2.5 rounded-full transition-all ${
+                            className={`flex-1 text-[13px] font-bold py-2.5 rounded-full transition-colors duration-150 ${
                               isActive
                                 ? 'bg-white text-deep-forest shadow-sm'
                                 : 'text-charcoal/60 hover:text-charcoal'

@@ -91,7 +91,7 @@ export default function CookieToast() {
               {t('desc')}{' '}
               <Link
                 href="/privacy"
-                className="text-primary-green font-semibold underline underline-offset-2 hover:text-deep-forest transition-colors"
+                className="text-deep-forest font-semibold underline underline-offset-2 hover:text-[#1b6b33] transition-colors"
               >
                 {t('privacy_policy')}
               </Link>
@@ -107,7 +107,7 @@ export default function CookieToast() {
               </button>
               <button
                 onClick={() => handleConsent('granted')}
-                className="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold text-white bg-primary-green hover:bg-[#1A4D2E] active:scale-95 transition-all duration-200 shadow-sm hover:shadow-md"
+                className="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold text-white bg-deep-forest hover:bg-[#153e25] active:scale-95 transition-all duration-200 shadow-sm hover:shadow-md"
               >
                 {t('accept')}
               </button>

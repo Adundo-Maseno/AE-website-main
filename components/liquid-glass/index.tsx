@@ -212,7 +212,8 @@ const GlassContainer = forwardRef<
             height: "100%",
             padding,
             overflow: "hidden",
-            transition: "all 0.2s ease-in-out",
+            transition: "transform 0.2s ease-in-out, opacity 0.2s ease-in-out",
+            willChange: "transform, opacity",
           }}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
@@ -236,7 +237,7 @@ const GlassContainer = forwardRef<
 
           {/* user content stays sharp */}
           <div
-            className="transition-all duration-150 ease-in-out"
+            className="transition-transform duration-150 ease-in-out"
             style={{
               position: "relative",
               zIndex: 1,
@@ -464,7 +465,8 @@ export default function LiquidGlass({
   const baseStyle = {
     ...style,
     transform: transformStyle,
-    transition: "all ease-out 0.2s",
+    transition: "transform 0.2s ease-out, opacity 0.15s ease-out",
+    willChange: "transform, opacity",
   }
 
   const positionStyles = {
@@ -484,7 +486,8 @@ export default function LiquidGlass({
           width: glassSize.width,
           borderRadius: `${cornerRadius}px`,
           transform: baseStyle.transform,
-          transition: baseStyle.transition,
+          transition: "transform 0.2s ease-out, opacity 0.15s ease-out",
+          willChange: "transform, opacity",
         }}
       />
       <div
@@ -495,7 +498,8 @@ export default function LiquidGlass({
           width: glassSize.width,
           borderRadius: `${cornerRadius}px`,
           transform: baseStyle.transform,
-          transition: baseStyle.transition,
+          transition: "transform 0.2s ease-out, opacity 0.15s ease-out",
+          willChange: "transform, opacity",
         }}
       />
 
