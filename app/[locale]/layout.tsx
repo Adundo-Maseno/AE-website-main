@@ -64,6 +64,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     twitter: {
       card: 'summary_large_image',
     },
+    alternates: {
+      canonical: `/${locale}`,
+      languages: {
+        en: '/en',
+        fr: '/fr',
+        'x-default': '/en',
+      },
+    },
     robots: {
       index: true,
       follow: true,
@@ -85,6 +93,7 @@ import LanguageSwitchProvider from '@/components/language-switch-provider'
 import GoogleAnalytics from '@/components/google-analytics'
 import CookieToast from '@/components/cookie-toast'
 import { ServiceWorkerCleanup } from '@/components/service-worker-cleanup'
+import { JsonLd } from '@/components/json-ld'
 
 export default async function RootLayout({
   children,
@@ -102,6 +111,7 @@ export default async function RootLayout({
       className={`${playfairDisplay.variable} ${dmSans.variable} ${bebasNeue.variable} ${spaceGrotesk.variable} bg-background`}
     >
       <body suppressHydrationWarning className="font-dm-sans antialiased text-foreground">
+        <JsonLd locale={locale} />
         <ServiceWorkerCleanup />
         <GoogleAnalytics />
         <NextIntlClientProvider messages={messages}>
