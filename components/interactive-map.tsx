@@ -30,56 +30,17 @@ const InteractiveMapbox = dynamic(
 )
 import { getOptimalZoom } from './map/map-utils'
 import { MapSearch } from './map/map-search'
+import {
+  type Region,
+  type CountryProject,
+  type CountryRecord,
+  type DetailedCountryRecord,
+  formatFarmers,
+  regionFill
+} from './map/map-types'
 
-type Region = 'East Africa' | 'West Africa' | 'Central Africa' | 'Southern Africa'
-
-export interface CountryProject {
-  title: string
-  location: string
-  summary: string
-  outcome: string
-  partners: string[]
-  evidence: string[]
-  methods: string[]
-  timeline?: string
-  budget_scope?: string
-  key_deliverables?: string[]
-}
-
-export interface CountryRecord {
-  id?: number
-  name: string
-  geoName?: string
-  code: string
-  region: Region
-  projects: number
-  engagement: number
-  overview: string
-  focus: string[]
-  impact: string[]
-  locations: string[]
-  stats: Array<{ label: string; value: string }>
-  workDone: string[]
-}
-
-export interface DetailedCountryRecord extends CountryRecord {
-  projectBlueprints?: CountryProject[]
-}
-
-export const regionFill = (region: Region) => {
-  switch (region) {
-    case 'West Africa':
-      return 'rgba(180, 83, 9, 0.30)'
-    case 'Central Africa':
-      return 'rgba(22, 101, 52, 0.28)'
-    case 'Southern Africa':
-      return 'rgba(22, 163, 74, 0.24)'
-    default:
-      return 'rgba(15, 61, 49, 0.34)'
-  }
-}
-
-export const formatFarmers = (engagement: number) => `${Math.round(engagement / 1000)}K+`
+export type { Region, CountryProject, CountryRecord, DetailedCountryRecord }
+export { formatFarmers, regionFill }
 
 export const cityCoordinates: Record<string, [number, number]> = {
   'Nairobi': [36.8219, -1.2921],

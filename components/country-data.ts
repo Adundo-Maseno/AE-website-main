@@ -1,4 +1,4 @@
-import { DetailedCountryRecord, CountryProject, formatFarmers } from './interactive-map';
+import { DetailedCountryRecord, CountryProject, formatFarmers } from './map/map-types';
 
 export const countrySeeds: DetailedCountryRecord[] = [
   {
@@ -278,7 +278,7 @@ export const countrySeeds: DetailedCountryRecord[] = [
     projects: 5,
     engagement: 50000,
     overview: 'Senegal supports market analysis and youth-focused learning inside the West Africa portfolio.',
-    focus: ['Youth engagement', 'Markets', 'Association support'],         
+    focus: ['Youth engagement', 'Markets', 'Association support'],
     impact: ['Better market visibility', 'Youth-centered learning', 'More practical programming'],
     locations: ['Dakar', 'Thiès', 'Saint-Louis'],
     stats: [

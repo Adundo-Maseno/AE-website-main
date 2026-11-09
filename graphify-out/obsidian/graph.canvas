@@ -1,0 +1,6235 @@
+{
+  "nodes": [
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "Interactive Map & Country GeoData",
+      "x": 0,
+      "y": 0,
+      "width": 1760,
+      "height": 920,
+      "color": "1"
+    },
+    {
+      "id": "n_ref_radix_ui_react_slot",
+      "type": "file",
+      "file": "@radix-uireact-slot.md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_radix_ui_react_slot",
+      "type": "file",
+      "file": "@radix-uireact-slot@1.2.4.md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_badge_badge",
+      "type": "file",
+      "file": "Badge().md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_button_button",
+      "type": "file",
+      "file": "Button().md",
+      "x": 620,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_interactive_map_countryproject",
+      "type": "file",
+      "file": "CountryProject.md",
+      "x": 820,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_interactive_map_countryrecord",
+      "type": "file",
+      "file": "CountryRecord.md",
+      "x": 1020,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_interactive_map_detailedcountryrecord",
+      "type": "file",
+      "file": "DetailedCountryRecord.md",
+      "x": 1220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_interactive_map_interactivemap",
+      "type": "file",
+      "file": "InteractiveMap().md",
+      "x": 1420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_interactive_map_interactivemapbox",
+      "type": "file",
+      "file": "InteractiveMapbox.md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_interactive_mapbox_interactivemapbox",
+      "type": "file",
+      "file": "InteractiveMapbox().md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_interactive_mapbox_interactivemapboxprops",
+      "type": "file",
+      "file": "InteractiveMapboxProps.md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_active_project_fly_to_mapactiveprojectflyto",
+      "type": "file",
+      "file": "MapActiveProjectFlyTo().md",
+      "x": 620,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_active_project_fly_to_mapactiveprojectflytoprops",
+      "type": "file",
+      "file": "MapActiveProjectFlyToProps.md",
+      "x": 820,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_auto_center_mapautocenter",
+      "type": "file",
+      "file": "MapAutoCenter().md",
+      "x": 1020,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_auto_center_mapautocenterprops",
+      "type": "file",
+      "file": "MapAutoCenterProps.md",
+      "x": 1220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_context_mapcontext",
+      "type": "file",
+      "file": "MapContext.md",
+      "x": 1420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_context_mapcontexttype",
+      "type": "file",
+      "file": "MapContextType.md",
+      "x": 20,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_controls_mapcontrols",
+      "type": "file",
+      "file": "MapControls().md",
+      "x": 220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_highlighted_countries_maphighlightedcountries",
+      "type": "file",
+      "file": "MapHighlightedCountries().md",
+      "x": 420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_highlighted_countries_maphighlightedcountriesprops",
+      "type": "file",
+      "file": "MapHighlightedCountriesProps.md",
+      "x": 620,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_marker_mapmarker",
+      "type": "file",
+      "file": "MapMarker().md",
+      "x": 820,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_marker_mapmarkerprops",
+      "type": "file",
+      "file": "MapMarkerProps.md",
+      "x": 1020,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_map_page_mappage",
+      "type": "file",
+      "file": "MapPage().md",
+      "x": 1220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_popup_mappopup",
+      "type": "file",
+      "file": "MapPopup().md",
+      "x": 1420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_popup_mappopupprops",
+      "type": "file",
+      "file": "MapPopupProps.md",
+      "x": 20,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_context_mapprovider",
+      "type": "file",
+      "file": "MapProvider().md",
+      "x": 220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_context_mapproviderprops",
+      "type": "file",
+      "file": "MapProviderProps.md",
+      "x": 420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_interactive_map_region",
+      "type": "file",
+      "file": "Region.md",
+      "x": 620,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_interactive_mapbox_selectedlocation",
+      "type": "file",
+      "file": "SelectedLocation.md",
+      "x": 820,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_africa",
+      "type": "file",
+      "file": "africa.md",
+      "x": 1020,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_badge",
+      "type": "file",
+      "file": "badge.tsx.md",
+      "x": 1220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_badge_badgevariants",
+      "type": "file",
+      "file": "badgeVariants.md",
+      "x": 1420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_button",
+      "type": "file",
+      "file": "button.tsx.md",
+      "x": 20,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_button_buttonvariants",
+      "type": "file",
+      "file": "buttonVariants.md",
+      "x": 220,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_interactive_map_citycoordinates",
+      "type": "file",
+      "file": "cityCoordinates.md",
+      "x": 420,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_class_variance_authority",
+      "type": "file",
+      "file": "class-variance-authority.md",
+      "x": 620,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_class_variance_authority",
+      "type": "file",
+      "file": "class-variance-authority@0.7.1.md",
+      "x": 820,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_country_data",
+      "type": "file",
+      "file": "country-data.ts.md",
+      "x": 1020,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_country_data_countryseeds",
+      "type": "file",
+      "file": "countrySeeds.md",
+      "x": 1220,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_country_data_countryseedsfr",
+      "type": "file",
+      "file": "countrySeedsFr.md",
+      "x": 1420,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_country_data_creategenericprojects",
+      "type": "file",
+      "file": "createGenericProjects().md",
+      "x": 20,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_highlighted_countries_maphighlightedcountries_executeanimation",
+      "type": "file",
+      "file": "executeAnimation().md",
+      "x": 220,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_interactive_map_formatfarmers",
+      "type": "file",
+      "file": "formatFarmers().md",
+      "x": 420,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_interactive_mapbox_getcategoryicon",
+      "type": "file",
+      "file": "getCategoryIcon().md",
+      "x": 620,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_country_data_getcountryseeds",
+      "type": "file",
+      "file": "getCountrySeeds().md",
+      "x": 820,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_utils_getoptimalzoom",
+      "type": "file",
+      "file": "getOptimalZoom().md",
+      "x": 1020,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_interactive_map",
+      "type": "file",
+      "file": "interactive-map.tsx.md",
+      "x": 1220,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_interactive_mapbox",
+      "type": "file",
+      "file": "interactive-mapbox.tsx.md",
+      "x": 1420,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_active_project_fly_to",
+      "type": "file",
+      "file": "map-active-project-fly-to.tsx.md",
+      "x": 20,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_auto_center",
+      "type": "file",
+      "file": "map-auto-center.tsx.md",
+      "x": 220,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_context",
+      "type": "file",
+      "file": "map-context.tsx.md",
+      "x": 420,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_controls",
+      "type": "file",
+      "file": "map-controls.tsx.md",
+      "x": 620,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_highlighted_countries",
+      "type": "file",
+      "file": "map-highlighted-countries.tsx.md",
+      "x": 820,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_marker",
+      "type": "file",
+      "file": "map-marker.tsx.md",
+      "x": 1020,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_popup",
+      "type": "file",
+      "file": "map-popup.tsx.md",
+      "x": 1220,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_utils",
+      "type": "file",
+      "file": "map-utils.ts.md",
+      "x": 1420,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_map_page",
+      "type": "file",
+      "file": "mappage.tsx.md",
+      "x": 20,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_mapbox_gl",
+      "type": "file",
+      "file": "mapbox-gl.md",
+      "x": 220,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_mapbox_gl",
+      "type": "file",
+      "file": "mapbox-gl_1.md",
+      "x": 420,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_react",
+      "type": "file",
+      "file": "react.md",
+      "x": 620,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_highlighted_countries_regioncolors",
+      "type": "file",
+      "file": "regionColors.md",
+      "x": 820,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_interactive_map_regionfill",
+      "type": "file",
+      "file": "regionFill().md",
+      "x": 1020,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_context_usemap",
+      "type": "file",
+      "file": "useMap().md",
+      "x": 1220,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "Main Marketing Pages & Views",
+      "x": 1840,
+      "y": 0,
+      "width": 1760,
+      "height": 920,
+      "color": "2"
+    },
+    {
+      "id": "n_ref_gsap_react",
+      "type": "file",
+      "file": "@gsapreact.md",
+      "x": 1860,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_about_page_aboutpage",
+      "type": "file",
+      "file": "AboutPage().md",
+      "x": 2060,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_services_bento_grid_bentocard",
+      "type": "file",
+      "file": "BentoCard().md",
+      "x": 2260,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_services_bento_grid_bentocardprops",
+      "type": "file",
+      "file": "BentoCardProps.md",
+      "x": 2460,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_capacity_building_page_capacitybuildingpage",
+      "type": "file",
+      "file": "CapacityBuildingPage().md",
+      "x": 2660,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_client_advisory_page_clientadvisorypage",
+      "type": "file",
+      "file": "ClientAdvisoryPage().md",
+      "x": 2860,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_contact_page_contactpage",
+      "type": "file",
+      "file": "ContactPage().md",
+      "x": 3060,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_scroll_accordion_desktopstickyaccordion",
+      "type": "file",
+      "file": "DesktopStickyAccordion().md",
+      "x": 3260,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_digital_platforms_page_digitalplatformspage",
+      "type": "file",
+      "file": "DigitalPlatformsPage().md",
+      "x": 1860,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_page_home",
+      "type": "file",
+      "file": "Home().md",
+      "x": 2060,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_insights_page_insightspage",
+      "type": "file",
+      "file": "InsightsPage().md",
+      "x": 2260,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_i18n_routing_link",
+      "type": "file",
+      "file": "Link.md",
+      "x": 2460,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_scroll_accordion_mobilefallbackaccordion",
+      "type": "file",
+      "file": "MobileFallbackAccordion().md",
+      "x": 2660,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_newsletter_page_newsletterpage",
+      "type": "file",
+      "file": "NewsletterPage().md",
+      "x": 2860,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_impact_page_ourimpactpage",
+      "type": "file",
+      "file": "OurImpactPage().md",
+      "x": 3060,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_team_page_ourteampage",
+      "type": "file",
+      "file": "OurTeamPage().md",
+      "x": 3260,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_page_ourworkpage",
+      "type": "file",
+      "file": "OurWorkPage().md",
+      "x": 1860,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_privacy_page_privacypage",
+      "type": "file",
+      "file": "PrivacyPage().md",
+      "x": 2060,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_project_implementation_page_projectimplementationpage",
+      "type": "file",
+      "file": "ProjectImplementationPage().md",
+      "x": 2260,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_rolling_text_rollingtext",
+      "type": "file",
+      "file": "RollingText().md",
+      "x": 2460,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_rolling_text_rollingtextprops",
+      "type": "file",
+      "file": "RollingTextProps.md",
+      "x": 2660,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_scroll_accordion_scrollaccordion",
+      "type": "file",
+      "file": "ScrollAccordion().md",
+      "x": 2860,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_services_bento_grid_servicepillar",
+      "type": "file",
+      "file": "ServicePillar.md",
+      "x": 3060,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_services_bento_grid_servicesbentogrid",
+      "type": "file",
+      "file": "ServicesBentoGrid().md",
+      "x": 3260,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_stakeholder_convenings_page_stakeholderconveningspage",
+      "type": "file",
+      "file": "StakeholderConveningsPage().md",
+      "x": 1860,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_team_page_teammember",
+      "type": "file",
+      "file": "TeamMember.md",
+      "x": 2060,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_technical_studies_page_technicalstudiespage",
+      "type": "file",
+      "file": "TechnicalStudiesPage().md",
+      "x": 2260,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_why_agri_experience_whyagriexperience",
+      "type": "file",
+      "file": "WhyAgriExperience().md",
+      "x": 2460,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_page",
+      "type": "file",
+      "file": "localepage.tsx.md",
+      "x": 2660,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_about_page",
+      "type": "file",
+      "file": "aboutpage.tsx.md",
+      "x": 2860,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_capacity_building_page",
+      "type": "file",
+      "file": "capacity-buildingpage.tsx.md",
+      "x": 3060,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_client_advisory_page",
+      "type": "file",
+      "file": "client-advisorypage.tsx.md",
+      "x": 3260,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_proxy_config",
+      "type": "file",
+      "file": "config_3.md",
+      "x": 1860,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_contact_page",
+      "type": "file",
+      "file": "contactpage.tsx.md",
+      "x": 2060,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_cookie_toast",
+      "type": "file",
+      "file": "cookie-toast.tsx.md",
+      "x": 2260,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_digital_platforms_page",
+      "type": "file",
+      "file": "digital-platformspage.tsx.md",
+      "x": 2460,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_framer_motion",
+      "type": "file",
+      "file": "framer-motion.md",
+      "x": 2660,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_i18n_routing_getpathname",
+      "type": "file",
+      "file": "getPathname.md",
+      "x": 2860,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_gsap",
+      "type": "file",
+      "file": "gsap.md",
+      "x": 3060,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_insights_page",
+      "type": "file",
+      "file": "insightspage.tsx.md",
+      "x": 3260,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_lucide_react",
+      "type": "file",
+      "file": "lucide-react.md",
+      "x": 1860,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_newsletter_page",
+      "type": "file",
+      "file": "newsletterpage.tsx.md",
+      "x": 2060,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_next_intl",
+      "type": "file",
+      "file": "next-intl.md",
+      "x": 2260,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_impact_page",
+      "type": "file",
+      "file": "our-impactpage.tsx.md",
+      "x": 2460,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_team_page",
+      "type": "file",
+      "file": "our-teampage.tsx.md",
+      "x": 2660,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_page",
+      "type": "file",
+      "file": "our-workpage.tsx.md",
+      "x": 2860,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_privacy_page",
+      "type": "file",
+      "file": "privacypage.tsx.md",
+      "x": 3060,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_project_implementation_page",
+      "type": "file",
+      "file": "project-implementationpage.tsx.md",
+      "x": 3260,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_proxy",
+      "type": "file",
+      "file": "proxy.ts.md",
+      "x": 1860,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_i18n_routing_redirect",
+      "type": "file",
+      "file": "redirect.md",
+      "x": 2060,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_i18n_request",
+      "type": "file",
+      "file": "request.ts.md",
+      "x": 2260,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_rolling_text",
+      "type": "file",
+      "file": "rolling-text.tsx.md",
+      "x": 2460,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_i18n_routing_routing",
+      "type": "file",
+      "file": "routing.md",
+      "x": 2660,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_i18n_routing",
+      "type": "file",
+      "file": "routing.ts.md",
+      "x": 2860,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_scroll_accordion",
+      "type": "file",
+      "file": "scroll-accordion.tsx.md",
+      "x": 3060,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_services_bento_grid",
+      "type": "file",
+      "file": "services-bento-grid.tsx.md",
+      "x": 3260,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_stakeholder_convenings_page",
+      "type": "file",
+      "file": "stakeholder-conveningspage.tsx.md",
+      "x": 1860,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_technical_studies_page",
+      "type": "file",
+      "file": "technical-studiespage.tsx.md",
+      "x": 2060,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_why_agri_experience",
+      "type": "file",
+      "file": "why-agri-experience.tsx.md",
+      "x": 2260,
+      "y": 640,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "API Routes & Email Pipeline",
+      "x": 3680,
+      "y": 0,
+      "width": 1320,
+      "height": 720,
+      "color": "3"
+    },
+    {
+      "id": "n_lib_email_contactsubmission",
+      "type": "file",
+      "file": "ContactSubmission.md",
+      "x": 3700,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_api_email_preview_route_get",
+      "type": "file",
+      "file": "GET().md",
+      "x": 3900,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_api_contact_route_post",
+      "type": "file",
+      "file": "POST().md",
+      "x": 4100,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_api_contact_route",
+      "type": "file",
+      "file": "contactroute.ts.md",
+      "x": 4300,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_patch_preloader_content",
+      "type": "file",
+      "file": "content.md",
+      "x": 4500,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_patch_team_content",
+      "type": "file",
+      "file": "content_1.md",
+      "x": 4700,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_api_email_preview_route",
+      "type": "file",
+      "file": "email-previewroute.ts.md",
+      "x": 3700,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_email",
+      "type": "file",
+      "file": "email.ts.md",
+      "x": 3900,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_email_escapehtml",
+      "type": "file",
+      "file": "escapeHtml().md",
+      "x": 4100,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_patch_preloader_fs",
+      "type": "file",
+      "file": "fs.md",
+      "x": 4300,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_patch_team_fs",
+      "type": "file",
+      "file": "fs_1.md",
+      "x": 4500,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_preview_emails_fs",
+      "type": "file",
+      "file": "fs_3.md",
+      "x": 4700,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_email_generaterespondentacknowledgmentemail",
+      "type": "file",
+      "file": "generateRespondentAcknowledgmentEmail().md",
+      "x": 3700,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_email_generateteamnotificationemail",
+      "type": "file",
+      "file": "generateTeamNotificationEmail().md",
+      "x": 3900,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_email_getlogoattachment",
+      "type": "file",
+      "file": "getLogoAttachment().md",
+      "x": 4100,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_api_email_preview_route_getlogodatauri",
+      "type": "file",
+      "file": "getLogoDataUri().md",
+      "x": 4300,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_preview_emails_getlogodatauri",
+      "type": "file",
+      "file": "getLogoDataUri()_1.md",
+      "x": 4500,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_email_getmailtransporter",
+      "type": "file",
+      "file": "getMailTransporter().md",
+      "x": 4700,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_preview_emails_logouri",
+      "type": "file",
+      "file": "logoUri.md",
+      "x": 3700,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_nodemailer",
+      "type": "file",
+      "file": "nodemailer.md",
+      "x": 3900,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_nodemailer",
+      "type": "file",
+      "file": "nodemailer@9.1.1.md",
+      "x": 4100,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_preview_emails_outdir",
+      "type": "file",
+      "file": "outDir.md",
+      "x": 4300,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_patch_preloader",
+      "type": "file",
+      "file": "patch_preloader.js.md",
+      "x": 4500,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_patch_team",
+      "type": "file",
+      "file": "patch_team.js.md",
+      "x": 4700,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_preview_emails_path",
+      "type": "file",
+      "file": "path.md",
+      "x": 3700,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_preview_emails",
+      "type": "file",
+      "file": "preview-emails.js.md",
+      "x": 3900,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_preview_emails_previewindexpath",
+      "type": "file",
+      "file": "previewIndexPath.md",
+      "x": 4100,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_child_process",
+      "type": "file",
+      "file": "ref_child_process.md",
+      "x": 4300,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_fs",
+      "type": "file",
+      "file": "ref_fs.md",
+      "x": 4500,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_path",
+      "type": "file",
+      "file": "ref_path.md",
+      "x": 4700,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_api_email_preview_route_samplesubmissionen",
+      "type": "file",
+      "file": "sampleSubmissionEn.md",
+      "x": 3700,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_preview_emails_samplesubmissionen",
+      "type": "file",
+      "file": "sampleSubmissionEn_1.md",
+      "x": 3900,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_api_email_preview_route_samplesubmissionfr",
+      "type": "file",
+      "file": "sampleSubmissionFr.md",
+      "x": 4100,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_preview_emails_samplesubmissionfr",
+      "type": "file",
+      "file": "sampleSubmissionFr_1.md",
+      "x": 4300,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_email_sendcontactemails",
+      "type": "file",
+      "file": "sendContactEmails().md",
+      "x": 4500,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_preview_emails_execsync",
+      "type": "file",
+      "file": "{ execSync }.md",
+      "x": 4700,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "Command Menu & Map Search UI",
+      "x": 5080,
+      "y": 0,
+      "width": 1320,
+      "height": 720,
+      "color": "4"
+    },
+    {
+      "id": "n_components_ui_command_command",
+      "type": "file",
+      "file": "Command().md",
+      "x": 5100,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_command_commanddialog",
+      "type": "file",
+      "file": "CommandDialog().md",
+      "x": 5300,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_command_commandempty",
+      "type": "file",
+      "file": "CommandEmpty().md",
+      "x": 5500,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_command_commandgroup",
+      "type": "file",
+      "file": "CommandGroup().md",
+      "x": 5700,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_command_commandinput",
+      "type": "file",
+      "file": "CommandInput().md",
+      "x": 5900,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_command_commanditem",
+      "type": "file",
+      "file": "CommandItem().md",
+      "x": 6100,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_command_commandlist",
+      "type": "file",
+      "file": "CommandList().md",
+      "x": 5100,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_command_commandseparator",
+      "type": "file",
+      "file": "CommandSeparator().md",
+      "x": 5300,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_command_commandshortcut",
+      "type": "file",
+      "file": "CommandShortcut().md",
+      "x": 5500,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_dialog_dialog",
+      "type": "file",
+      "file": "Dialog().md",
+      "x": 5700,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_dialog_dialogclose",
+      "type": "file",
+      "file": "DialogClose().md",
+      "x": 5900,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_dialog_dialogcontent",
+      "type": "file",
+      "file": "DialogContent().md",
+      "x": 6100,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_dialog_dialogdescription",
+      "type": "file",
+      "file": "DialogDescription().md",
+      "x": 5100,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_dialog_dialogfooter",
+      "type": "file",
+      "file": "DialogFooter().md",
+      "x": 5300,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_dialog_dialogheader",
+      "type": "file",
+      "file": "DialogHeader().md",
+      "x": 5500,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_dialog_dialogoverlay",
+      "type": "file",
+      "file": "DialogOverlay().md",
+      "x": 5700,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_dialog_dialogportal",
+      "type": "file",
+      "file": "DialogPortal().md",
+      "x": 5900,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_dialog_dialogtitle",
+      "type": "file",
+      "file": "DialogTitle().md",
+      "x": 6100,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_dialog_dialogtrigger",
+      "type": "file",
+      "file": "DialogTrigger().md",
+      "x": 5100,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_search_mapsearch",
+      "type": "file",
+      "file": "MapSearch().md",
+      "x": 5300,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_popover_popover",
+      "type": "file",
+      "file": "Popover().md",
+      "x": 5500,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_popover_popoveranchor",
+      "type": "file",
+      "file": "PopoverAnchor().md",
+      "x": 5700,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_popover_popovercontent",
+      "type": "file",
+      "file": "PopoverContent().md",
+      "x": 5900,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_popover_popovertrigger",
+      "type": "file",
+      "file": "PopoverTrigger().md",
+      "x": 6100,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_search_premiumsearchprops",
+      "type": "file",
+      "file": "PremiumSearchProps.md",
+      "x": 5100,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_utils_cn",
+      "type": "file",
+      "file": "cn().md",
+      "x": 5300,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_command",
+      "type": "file",
+      "file": "command.tsx.md",
+      "x": 5500,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_dialog",
+      "type": "file",
+      "file": "dialog.tsx.md",
+      "x": 5700,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_utils",
+      "type": "file",
+      "file": "libutils.ts.md",
+      "x": 5900,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_map_map_search",
+      "type": "file",
+      "file": "map-search.tsx.md",
+      "x": 6100,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_ui_popover",
+      "type": "file",
+      "file": "popover.tsx.md",
+      "x": 5100,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "Build & Lint DevDependencies",
+      "x": 6480,
+      "y": 0,
+      "width": 1320,
+      "height": 620,
+      "color": "5"
+    },
+    {
+      "id": "n_ref_tailwindcss_postcss",
+      "type": "file",
+      "file": "@tailwindcsspostcss.md",
+      "x": 6500,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_tailwindcss_postcss",
+      "type": "file",
+      "file": "@tailwindcsspostcss@4.2.0.md",
+      "x": 6700,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_types_node",
+      "type": "file",
+      "file": "@typesnode.md",
+      "x": 6900,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_types_node",
+      "type": "file",
+      "file": "@typesnode@22.md",
+      "x": 7100,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_types_nodemailer",
+      "type": "file",
+      "file": "@typesnodemailer.md",
+      "x": 7300,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_types_nodemailer",
+      "type": "file",
+      "file": "@typesnodemailer@8.0.1.md",
+      "x": 7500,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_types_react",
+      "type": "file",
+      "file": "@typesreact.md",
+      "x": 6500,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_types_react_dom",
+      "type": "file",
+      "file": "@typesreact-dom.md",
+      "x": 6700,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_types_react_dom",
+      "type": "file",
+      "file": "@typesreact-dom@19.2.5.md",
+      "x": 6900,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_types_react",
+      "type": "file",
+      "file": "@typesreact@19.2.18.md",
+      "x": 7100,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies",
+      "type": "file",
+      "file": "devDependencies.md",
+      "x": 7300,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_eslint",
+      "type": "file",
+      "file": "eslint.md",
+      "x": 7500,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_eslint",
+      "type": "file",
+      "file": "eslint@10.9.1.md",
+      "x": 6500,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_husky",
+      "type": "file",
+      "file": "husky.md",
+      "x": 6700,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_husky",
+      "type": "file",
+      "file": "husky@9.1.7.md",
+      "x": 6900,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_name",
+      "type": "file",
+      "file": "name.md",
+      "x": 7100,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package",
+      "type": "file",
+      "file": "package.json.md",
+      "x": 7300,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_postcss",
+      "type": "file",
+      "file": "postcss.md",
+      "x": 7500,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_postcss",
+      "type": "file",
+      "file": "postcss@8.5.25.md",
+      "x": 6500,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_private",
+      "type": "file",
+      "file": "private.md",
+      "x": 6700,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_tailwindcss",
+      "type": "file",
+      "file": "tailwindcss.md",
+      "x": 6900,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_tailwindcss",
+      "type": "file",
+      "file": "tailwindcss@4.2.0.md",
+      "x": 7100,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_tw_animate_css",
+      "type": "file",
+      "file": "tw-animate-css.md",
+      "x": 7300,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_tw_animate_css",
+      "type": "file",
+      "file": "tw-animate-css@1.3.3.md",
+      "x": 7500,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_typescript",
+      "type": "file",
+      "file": "typescript.md",
+      "x": 6500,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_typescript",
+      "type": "file",
+      "file": "typescript@5.7.3.md",
+      "x": 6700,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_version",
+      "type": "file",
+      "file": "version.md",
+      "x": 6900,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Core Animation & Motion Libraries",
+      "x": 7880,
+      "y": 0,
+      "width": 1320,
+      "height": 620,
+      "color": "6"
+    },
+    {
+      "id": "n_package_dependencies_gsap_react",
+      "type": "file",
+      "file": "@gsapreact@2.1.2.md",
+      "x": 7900,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_types_flubber",
+      "type": "file",
+      "file": "@typesflubber.md",
+      "x": 8100,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_types_flubber",
+      "type": "file",
+      "file": "@typesflubber@0.4.0.md",
+      "x": 8300,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_types_three",
+      "type": "file",
+      "file": "@typesthree.md",
+      "x": 8500,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_types_three",
+      "type": "file",
+      "file": "@typesthree@0.184.1.md",
+      "x": 8700,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_vercel_analytics",
+      "type": "file",
+      "file": "@vercelanalytics.md",
+      "x": 8900,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_vercel_analytics",
+      "type": "file",
+      "file": "@vercelanalytics@1.6.1.md",
+      "x": 7900,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_autoprefixer",
+      "type": "file",
+      "file": "autoprefixer.md",
+      "x": 8100,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_autoprefixer",
+      "type": "file",
+      "file": "autoprefixer@10.4.20.md",
+      "x": 8300,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_clsx",
+      "type": "file",
+      "file": "clsx.md",
+      "x": 8500,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_clsx",
+      "type": "file",
+      "file": "clsx@2.1.1.md",
+      "x": 8700,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies",
+      "type": "file",
+      "file": "dependencies.md",
+      "x": 8900,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_flubber",
+      "type": "file",
+      "file": "flubber.md",
+      "x": 7900,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_flubber",
+      "type": "file",
+      "file": "flubber@0.4.2.md",
+      "x": 8100,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_framer_motion",
+      "type": "file",
+      "file": "framer-motion@12.39.0.md",
+      "x": 8300,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_gsap",
+      "type": "file",
+      "file": "gsap@3.15.0.md",
+      "x": 8500,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_lucide_react",
+      "type": "file",
+      "file": "lucide-react@0.564.0.md",
+      "x": 8700,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_mapbox_gl",
+      "type": "file",
+      "file": "mapbox-gl@3.24.0.md",
+      "x": 8900,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_next_intl",
+      "type": "file",
+      "file": "next-intl@4.13.2.md",
+      "x": 7900,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_next",
+      "type": "file",
+      "file": "next@16.3.3.md",
+      "x": 8100,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_pdfjs_dist",
+      "type": "file",
+      "file": "pdfjs-dist.md",
+      "x": 8300,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_pdfjs_dist",
+      "type": "file",
+      "file": "pdfjs-dist@6.0.227.md",
+      "x": 8500,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_react_dom",
+      "type": "file",
+      "file": "react-dom.md",
+      "x": 8700,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_react_dom",
+      "type": "file",
+      "file": "react-dom@19.2.8.md",
+      "x": 8900,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_react",
+      "type": "file",
+      "file": "react@19.2.8.md",
+      "x": 7900,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_tailwind_merge",
+      "type": "file",
+      "file": "tailwind-merge.md",
+      "x": 8100,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_tailwind_merge",
+      "type": "file",
+      "file": "tailwind-merge@3.3.1.md",
+      "x": 8300,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g6",
+      "type": "group",
+      "label": "WebGL Shaders & Liquid Glass Effects",
+      "x": 9280,
+      "y": 0,
+      "width": 1100,
+      "height": 620,
+      "color": "1"
+    },
+    {
+      "id": "n_components_liquid_glass_shader_utils_shaderdisplacementgenerator_constructor",
+      "type": "file",
+      "file": "dot-constructor().md",
+      "x": 9300,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_shader_utils_shaderdisplacementgenerator_destroy",
+      "type": "file",
+      "file": "dot-destroy().md",
+      "x": 9500,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_shader_utils_shaderdisplacementgenerator_getscale",
+      "type": "file",
+      "file": "dot-getScale().md",
+      "x": 9700,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_shader_utils_shaderdisplacementgenerator_updateshader",
+      "type": "file",
+      "file": "dot-updateShader().md",
+      "x": 9900,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_shader_utils_fragmentshadertype",
+      "type": "file",
+      "file": "FragmentShaderType.md",
+      "x": 10100,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_index_glasscontainer",
+      "type": "file",
+      "file": "GlassContainer.md",
+      "x": 9300,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_index_glassfilter",
+      "type": "file",
+      "file": "GlassFilter().md",
+      "x": 9500,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_index_liquidglass",
+      "type": "file",
+      "file": "LiquidGlass().md",
+      "x": 9700,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_index_liquidglassprops",
+      "type": "file",
+      "file": "LiquidGlassProps.md",
+      "x": 9900,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_shader_utils_shaderdisplacementgenerator",
+      "type": "file",
+      "file": "ShaderDisplacementGenerator.md",
+      "x": 10100,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_shader_utils_shaderoptions",
+      "type": "file",
+      "file": "ShaderOptions.md",
+      "x": 9300,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_shader_utils_vec2",
+      "type": "file",
+      "file": "Vec2.md",
+      "x": 9500,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_utils_displacementmap",
+      "type": "file",
+      "file": "displacementMap.md",
+      "x": 9700,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_shader_utils_fragmentshaders",
+      "type": "file",
+      "file": "fragmentShaders.md",
+      "x": 9900,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_index_generateshaderdisplacementmap",
+      "type": "file",
+      "file": "generateShaderDisplacementMap().md",
+      "x": 10100,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_index_getmap",
+      "type": "file",
+      "file": "getMap().md",
+      "x": 9300,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_index",
+      "type": "file",
+      "file": "index.tsx.md",
+      "x": 9500,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_shader_utils_length",
+      "type": "file",
+      "file": "length().md",
+      "x": 9700,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_utils",
+      "type": "file",
+      "file": "liquid-glassutils.ts.md",
+      "x": 9900,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_utils_polardisplacementmap",
+      "type": "file",
+      "file": "polarDisplacementMap.md",
+      "x": 10100,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_utils_prominentdisplacementmap",
+      "type": "file",
+      "file": "prominentDisplacementMap.md",
+      "x": 9300,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_shader_utils_roundedrectsdf",
+      "type": "file",
+      "file": "roundedRectSDF().md",
+      "x": 9500,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_shader_utils",
+      "type": "file",
+      "file": "shader-utils.ts.md",
+      "x": 9700,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_shader_utils_smoothstep",
+      "type": "file",
+      "file": "smoothStep().md",
+      "x": 9900,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_liquid_glass_shader_utils_texture",
+      "type": "file",
+      "file": "texture().md",
+      "x": 10100,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g7",
+      "type": "group",
+      "label": "Global Layout & Font Typography",
+      "x": 0,
+      "y": 1000,
+      "width": 1100,
+      "height": 620,
+      "color": "2"
+    },
+    {
+      "id": "n_components_cookie_toast_cookietoast",
+      "type": "file",
+      "file": "CookieToast().md",
+      "x": 20,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_footer_footer",
+      "type": "file",
+      "file": "Footer().md",
+      "x": 220,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_google_analytics_googleanalytics",
+      "type": "file",
+      "file": "GoogleAnalytics().md",
+      "x": 420,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_language_switch_provider_languageswitchprovider",
+      "type": "file",
+      "file": "LanguageSwitchProvider().md",
+      "x": 620,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_layout_rootlayout",
+      "type": "file",
+      "file": "RootLayout().md",
+      "x": 820,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_scroll_to_top_scrolltotop",
+      "type": "file",
+      "file": "ScrollToTop().md",
+      "x": 20,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_google_analytics_window",
+      "type": "file",
+      "file": "Window.md",
+      "x": 220,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_layout",
+      "type": "file",
+      "file": "localelayout.tsx.md",
+      "x": 420,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_globals",
+      "type": "file",
+      "file": "app_globals.md",
+      "x": 620,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_layout_bebasneue",
+      "type": "file",
+      "file": "bebasNeue.md",
+      "x": 820,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_layout_dmsans",
+      "type": "file",
+      "file": "dmSans.md",
+      "x": 20,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_footer",
+      "type": "file",
+      "file": "footer.tsx.md",
+      "x": 220,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_layout_generatemetadata",
+      "type": "file",
+      "file": "generateMetadata()_3.md",
+      "x": 420,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_google_analytics",
+      "type": "file",
+      "file": "google-analytics.tsx.md",
+      "x": 620,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_language_switch_provider_islanguageswitching",
+      "type": "file",
+      "file": "isLanguageSwitching.md",
+      "x": 820,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_language_switch_provider",
+      "type": "file",
+      "file": "language-switch-provider.tsx.md",
+      "x": 20,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_footer_linkstyle",
+      "type": "file",
+      "file": "linkStyle.md",
+      "x": 220,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_layout_playfairdisplay",
+      "type": "file",
+      "file": "playfairDisplay.md",
+      "x": 420,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_language_switch_provider_savedscrollposition",
+      "type": "file",
+      "file": "savedScrollPosition.md",
+      "x": 620,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_scroll_to_top",
+      "type": "file",
+      "file": "scroll-to-top.tsx.md",
+      "x": 820,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_layout_spacegrotesk",
+      "type": "file",
+      "file": "spaceGrotesk.md",
+      "x": 20,
+      "y": 1400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g8",
+      "type": "group",
+      "label": "Component & Path Aliases Config",
+      "x": 1840,
+      "y": 1000,
+      "width": 1100,
+      "height": 520,
+      "color": "3"
+    },
+    {
+      "id": "n_components_schema",
+      "type": "file",
+      "file": "$schema.md",
+      "x": 1860,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_registries_kokonutui",
+      "type": "file",
+      "file": "@kokonutui.md",
+      "x": 2060,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_aliases",
+      "type": "file",
+      "file": "aliases.md",
+      "x": 2260,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_tailwind_basecolor",
+      "type": "file",
+      "file": "baseColor.md",
+      "x": 2460,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_aliases_components",
+      "type": "file",
+      "file": "components.md",
+      "x": 2660,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components",
+      "type": "file",
+      "file": "components.json.md",
+      "x": 1860,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_tailwind_config",
+      "type": "file",
+      "file": "config.md",
+      "x": 2060,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_tailwind_css",
+      "type": "file",
+      "file": "css.md",
+      "x": 2260,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_tailwind_cssvariables",
+      "type": "file",
+      "file": "cssVariables.md",
+      "x": 2460,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_aliases_hooks",
+      "type": "file",
+      "file": "hooks.md",
+      "x": 2660,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_iconlibrary",
+      "type": "file",
+      "file": "iconLibrary.md",
+      "x": 1860,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_aliases_lib",
+      "type": "file",
+      "file": "lib.md",
+      "x": 2060,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_tailwind_prefix",
+      "type": "file",
+      "file": "prefix.md",
+      "x": 2260,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_registries",
+      "type": "file",
+      "file": "registries.md",
+      "x": 2460,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_rsc",
+      "type": "file",
+      "file": "rsc.md",
+      "x": 2660,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_style",
+      "type": "file",
+      "file": "style.md",
+      "x": 1860,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_tailwind",
+      "type": "file",
+      "file": "tailwind.md",
+      "x": 2060,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_tsx",
+      "type": "file",
+      "file": "tsx.md",
+      "x": 2260,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_aliases_ui",
+      "type": "file",
+      "file": "ui.md",
+      "x": 2460,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_aliases_utils",
+      "type": "file",
+      "file": "utils.md",
+      "x": 2660,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g9",
+      "type": "group",
+      "label": "TypeScript Compilation Settings",
+      "x": 3680,
+      "y": 1000,
+      "width": 1100,
+      "height": 520,
+      "color": "4"
+    },
+    {
+      "id": "n_tsconfig_compileroptions_allowjs",
+      "type": "file",
+      "file": "allowJs.md",
+      "x": 3700,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions",
+      "type": "file",
+      "file": "compilerOptions.md",
+      "x": 3900,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_esmoduleinterop",
+      "type": "file",
+      "file": "esModuleInterop.md",
+      "x": 4100,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_exclude",
+      "type": "file",
+      "file": "exclude.md",
+      "x": 4300,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_include",
+      "type": "file",
+      "file": "include.md",
+      "x": 4500,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_incremental",
+      "type": "file",
+      "file": "incremental.md",
+      "x": 3700,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_isolatedmodules",
+      "type": "file",
+      "file": "isolatedModules.md",
+      "x": 3900,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_jsx",
+      "type": "file",
+      "file": "jsx.md",
+      "x": 4100,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_lib",
+      "type": "file",
+      "file": "lib_1.md",
+      "x": 4300,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_module",
+      "type": "file",
+      "file": "module.md",
+      "x": 4500,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_moduleresolution",
+      "type": "file",
+      "file": "moduleResolution.md",
+      "x": 3700,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_noemit",
+      "type": "file",
+      "file": "noEmit.md",
+      "x": 3900,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_paths",
+      "type": "file",
+      "file": "paths.md",
+      "x": 4100,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_plugins",
+      "type": "file",
+      "file": "plugins.md",
+      "x": 4300,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_resolvejsonmodule",
+      "type": "file",
+      "file": "resolveJsonModule.md",
+      "x": 4500,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_skiplibcheck",
+      "type": "file",
+      "file": "skipLibCheck.md",
+      "x": 3700,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_strict",
+      "type": "file",
+      "file": "strict.md",
+      "x": 3900,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig_compileroptions_target",
+      "type": "file",
+      "file": "target.md",
+      "x": 4100,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tsconfig",
+      "type": "file",
+      "file": "tsconfig.json.md",
+      "x": 4300,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g10",
+      "type": "group",
+      "label": "Package Workspace & Native Builds",
+      "x": 5080,
+      "y": 1000,
+      "width": 1100,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "n_pnpm_workspace_allowbuilds_parcel_watcher",
+      "type": "file",
+      "file": "@parcelwatcher.md",
+      "x": 5100,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pnpm_workspace_allowbuilds_swc_core",
+      "type": "file",
+      "file": "@swccore.md",
+      "x": 5300,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pnpm_workspace_overrides_types_react",
+      "type": "file",
+      "file": "@typesreact_1.md",
+      "x": 5500,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pnpm_workspace_overrides_types_react_dom",
+      "type": "file",
+      "file": "@typesreact-dom_1.md",
+      "x": 5700,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pnpm_workspace_allowbuilds",
+      "type": "file",
+      "file": "allowBuilds.md",
+      "x": 5900,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pnpm_workspace_overrides_brace_expansion",
+      "type": "file",
+      "file": "brace-expansion_2.md",
+      "x": 5100,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pnpm_workspace_resolutions_brace_expansion",
+      "type": "file",
+      "file": "brace-expansion_3.md",
+      "x": 5300,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pnpm_workspace_minimumreleaseageexclude",
+      "type": "file",
+      "file": "minimumReleaseAgeExclude.md",
+      "x": 5500,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pnpm_workspace_overrides",
+      "type": "file",
+      "file": "overrides_1.md",
+      "x": 5700,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pnpm_workspace",
+      "type": "file",
+      "file": "pnpm-workspace.yaml.md",
+      "x": 5900,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pnpm_workspace_overrides_postcss",
+      "type": "file",
+      "file": "postcss_3.md",
+      "x": 5100,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pnpm_workspace_resolutions_postcss",
+      "type": "file",
+      "file": "postcss_4.md",
+      "x": 5300,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pnpm_workspace_resolutions",
+      "type": "file",
+      "file": "resolutions_1.md",
+      "x": 5500,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pnpm_workspace_allowbuilds_sharp",
+      "type": "file",
+      "file": "sharp_2.md",
+      "x": 5700,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pnpm_workspace_overrides_sharp",
+      "type": "file",
+      "file": "sharp_3.md",
+      "x": 5900,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pnpm_workspace_resolutions_sharp",
+      "type": "file",
+      "file": "sharp_4.md",
+      "x": 5100,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pnpm_workspace_allowbuilds_unrs_resolver",
+      "type": "file",
+      "file": "unrs-resolver.md",
+      "x": 5300,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g11",
+      "type": "group",
+      "label": "Case Studies & Technical Layouts",
+      "x": 6480,
+      "y": 1000,
+      "width": 880,
+      "height": 520,
+      "color": "6"
+    },
+    {
+      "id": "n_app_locale_resources_layout_resourceslayout",
+      "type": "file",
+      "file": "ResourcesLayout().md",
+      "x": 6500,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_stakeholder_convenings_layout_stakeholderconveningslayout",
+      "type": "file",
+      "file": "StakeholderConveningsLayout().md",
+      "x": 6700,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_technical_studies_layout_technicalstudieslayout",
+      "type": "file",
+      "file": "TechnicalStudiesLayout().md",
+      "x": 6900,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_terms_page_termspage",
+      "type": "file",
+      "file": "TermsPage().md",
+      "x": 7100,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_stakeholder_convenings_layout_generatemetadata",
+      "type": "file",
+      "file": "generateMetadata()_12.md",
+      "x": 6500,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_technical_studies_layout_generatemetadata",
+      "type": "file",
+      "file": "generateMetadata()_13.md",
+      "x": 6700,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_resources_layout_generatemetadata",
+      "type": "file",
+      "file": "generateMetadata()_14.md",
+      "x": 6900,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_next",
+      "type": "file",
+      "file": "next_1.md",
+      "x": 7100,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_resources_layout",
+      "type": "file",
+      "file": "resourceslayout.tsx.md",
+      "x": 6500,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_robots_robots",
+      "type": "file",
+      "file": "robots().md",
+      "x": 6700,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_robots",
+      "type": "file",
+      "file": "robots.ts.md",
+      "x": 6900,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_sitemap_sitemap",
+      "type": "file",
+      "file": "sitemap().md",
+      "x": 7100,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_sitemap",
+      "type": "file",
+      "file": "sitemap.ts.md",
+      "x": 6500,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_stakeholder_convenings_layout",
+      "type": "file",
+      "file": "stakeholder-conveningslayout.tsx.md",
+      "x": 6700,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_technical_studies_layout",
+      "type": "file",
+      "file": "technical-studieslayout.tsx.md",
+      "x": 6900,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_terms_page",
+      "type": "file",
+      "file": "termspage.tsx.md",
+      "x": 7100,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g12",
+      "type": "group",
+      "label": "Plant Gallery & Interactive Visuals",
+      "x": 7880,
+      "y": 1000,
+      "width": 880,
+      "height": 520,
+      "color": "1"
+    },
+    {
+      "id": "n_ref_react_three_drei",
+      "type": "file",
+      "file": "@react-threedrei.md",
+      "x": 7900,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_react_three_drei",
+      "type": "file",
+      "file": "@react-threedrei@10.7.7.md",
+      "x": 8100,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_react_three_fiber",
+      "type": "file",
+      "file": "@react-threefiber.md",
+      "x": 8300,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_react_three_fiber",
+      "type": "file",
+      "file": "@react-threefiber@9.6.1.md",
+      "x": 8500,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_gallery_page_gallerypage",
+      "type": "file",
+      "file": "GalleryPage().md",
+      "x": 7900,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_office_plants_gallery_officeplantsgallery",
+      "type": "file",
+      "file": "OfficePlantsGallery().md",
+      "x": 8100,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_office_plants_gallery_plantframe",
+      "type": "file",
+      "file": "PlantFrame().md",
+      "x": 8300,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_office_plants_gallery_settled_positions",
+      "type": "file",
+      "file": "SETTLED_POSITIONS.md",
+      "x": 8500,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_office_plants_gallery_easeincubic",
+      "type": "file",
+      "file": "easeInCubic().md",
+      "x": 7900,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_office_plants_gallery_easeoutcirc",
+      "type": "file",
+      "file": "easeOutCirc().md",
+      "x": 8100,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_gallery_page",
+      "type": "file",
+      "file": "gallerypage.tsx.md",
+      "x": 8300,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_office_plants_gallery",
+      "type": "file",
+      "file": "office-plants-gallery.tsx.md",
+      "x": 8500,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_office_plants_gallery_plantimages",
+      "type": "file",
+      "file": "plantImages.md",
+      "x": 7900,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_three",
+      "type": "file",
+      "file": "three.md",
+      "x": 8100,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_three",
+      "type": "file",
+      "file": "three@0.184.0.md",
+      "x": 8300,
+      "y": 1320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g13",
+      "type": "group",
+      "label": "Domain Architecture & System Goals",
+      "x": 9280,
+      "y": 1000,
+      "width": 880,
+      "height": 420,
+      "color": "2"
+    },
+    {
+      "id": "n_readme_agri_experience",
+      "type": "file",
+      "file": "Agri Experience Organization.md",
+      "x": 9300,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_i18n_pipeline",
+      "type": "file",
+      "file": "Bilingual i18n & Auto-Translate Pipeline.md",
+      "x": 9500,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_contact_email_system",
+      "type": "file",
+      "file": "Contact & Receipt Email Pipeline.md",
+      "x": 9700,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_esseta_case_study",
+      "type": "file",
+      "file": "ESSETA Seed Program Initiative.md",
+      "x": 9900,
+      "y": 1080,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_design_system",
+      "type": "file",
+      "file": "Editorial Design System.md",
+      "x": 9300,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_motion_design",
+      "type": "file",
+      "file": "High-Performance Motion Design.md",
+      "x": 9500,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_hostinger_deployment",
+      "type": "file",
+      "file": "Hostinger Production Deployment.md",
+      "x": 9700,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_interactive_map",
+      "type": "file",
+      "file": "Interactive Mapbox Map.md",
+      "x": 9900,
+      "y": 1160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_tech_stack",
+      "type": "file",
+      "file": "Next.js 16 Web Application Stack.md",
+      "x": 9300,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agents_nextjs_agent_rules",
+      "type": "file",
+      "file": "Next.js Agent Guidelines & Rules.md",
+      "x": 9500,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_resource_library",
+      "type": "file",
+      "file": "Resource Library & PDF Preview.md",
+      "x": 9700,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_readme_seed_systems",
+      "type": "file",
+      "file": "Seed Sector Transformation.md",
+      "x": 9900,
+      "y": 1240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g14",
+      "type": "group",
+      "label": "Resource Library & PDF Previews",
+      "x": 0,
+      "y": 1700,
+      "width": 880,
+      "height": 420,
+      "color": "3"
+    },
+    {
+      "id": "n_app_locale_resources_page_pdfpreview",
+      "type": "file",
+      "file": "PdfPreview.md",
+      "x": 20,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_pdf_preview_pdfpreview",
+      "type": "file",
+      "file": "PdfPreview().md",
+      "x": 220,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_public_downloads_publicdownload",
+      "type": "file",
+      "file": "PublicDownload.md",
+      "x": 420,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_resources_page_resourcescontent",
+      "type": "file",
+      "file": "ResourcesContent().md",
+      "x": 620,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_resources_page_resourcespage",
+      "type": "file",
+      "file": "ResourcesPage().md",
+      "x": 20,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_resources_page_categories",
+      "type": "file",
+      "file": "categories.md",
+      "x": 220,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_pdf_preview",
+      "type": "file",
+      "file": "pdf-preview.tsx.md",
+      "x": 420,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_public_downloads",
+      "type": "file",
+      "file": "public-downloads.ts.md",
+      "x": 620,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_lib_public_downloads_publicdownloads",
+      "type": "file",
+      "file": "publicDownloads.md",
+      "x": 20,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_react_pdf",
+      "type": "file",
+      "file": "react-pdf.md",
+      "x": 220,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_react_pdf",
+      "type": "file",
+      "file": "react-pdf@10.4.1.md",
+      "x": 420,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_resources_page",
+      "type": "file",
+      "file": "resourcespage.tsx.md",
+      "x": 620,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g15",
+      "type": "group",
+      "label": "Impact Alignment & SDG Accordions",
+      "x": 1840,
+      "y": 1700,
+      "width": 660,
+      "height": 420,
+      "color": "4"
+    },
+    {
+      "id": "n_components_motion_impact_alignment_accordionrow",
+      "type": "file",
+      "file": "AccordionRow().md",
+      "x": 1860,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_impact_alignment_accordionslice",
+      "type": "file",
+      "file": "AccordionSlice().md",
+      "x": 2060,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_impact_alignment_impactalignment",
+      "type": "file",
+      "file": "ImpactAlignment().md",
+      "x": 2260,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_impact_alignment_impactcard",
+      "type": "file",
+      "file": "ImpactCard.md",
+      "x": 1860,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_impact_alignment_displaysdgs",
+      "type": "file",
+      "file": "displaySdgs.md",
+      "x": 2060,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_impact_alignment",
+      "type": "file",
+      "file": "impact-alignment.tsx.md",
+      "x": 2260,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_impact_alignment_relevantsdgs",
+      "type": "file",
+      "file": "relevantSdgs.md",
+      "x": 1860,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_motion_impact_alignment_sdgdata",
+      "type": "file",
+      "file": "sdgData.md",
+      "x": 2060,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g16",
+      "type": "group",
+      "label": "NPM Scripts & Build Commands",
+      "x": 3680,
+      "y": 1700,
+      "width": 660,
+      "height": 420,
+      "color": "5"
+    },
+    {
+      "id": "n_package_scripts_build",
+      "type": "file",
+      "file": "build.md",
+      "x": 3700,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_dev",
+      "type": "file",
+      "file": "dev.md",
+      "x": 3900,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_lint",
+      "type": "file",
+      "file": "lint.md",
+      "x": 4100,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_prepare",
+      "type": "file",
+      "file": "prepare.md",
+      "x": 3700,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_preview_emails",
+      "type": "file",
+      "file": "previewemails.md",
+      "x": 3900,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts",
+      "type": "file",
+      "file": "scripts.md",
+      "x": 4100,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_start",
+      "type": "file",
+      "file": "start.md",
+      "x": 3700,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_scripts_translate",
+      "type": "file",
+      "file": "translate.md",
+      "x": 3900,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g17",
+      "type": "group",
+      "label": "Automated i18n Translation Script",
+      "x": 5080,
+      "y": 1700,
+      "width": 660,
+      "height": 420,
+      "color": "6"
+    },
+    {
+      "id": "n_scripts_auto_translate",
+      "type": "file",
+      "file": "auto-translate.js.md",
+      "x": 5100,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_auto_translate_clone",
+      "type": "file",
+      "file": "clone().md",
+      "x": 5300,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_auto_translate_fs",
+      "type": "file",
+      "file": "fs_2.md",
+      "x": 5500,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_auto_translate_https",
+      "type": "file",
+      "file": "https.md",
+      "x": 5100,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_auto_translate_main",
+      "type": "file",
+      "file": "main().md",
+      "x": 5300,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_https",
+      "type": "file",
+      "file": "ref_https.md",
+      "x": 5500,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_auto_translate_translatetext",
+      "type": "file",
+      "file": "translateText().md",
+      "x": 5100,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_auto_translate_main_traverseandtranslate",
+      "type": "file",
+      "file": "traverseAndTranslate().md",
+      "x": 5300,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g18",
+      "type": "group",
+      "label": "Navigation Header & Locale Switcher",
+      "x": 6480,
+      "y": 1700,
+      "width": 660,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "n_components_header_animatedhamburger",
+      "type": "file",
+      "file": "AnimatedHamburger().md",
+      "x": 6500,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_header_header",
+      "type": "file",
+      "file": "Header().md",
+      "x": 6700,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_header",
+      "type": "file",
+      "file": "header.tsx.md",
+      "x": 6900,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_header_navitems",
+      "type": "file",
+      "file": "navItems.md",
+      "x": 6500,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_language_switch_provider_triggerlanguageswitch",
+      "type": "file",
+      "file": "triggerLanguageSwitch().md",
+      "x": 6700,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_i18n_routing_usepathname",
+      "type": "file",
+      "file": "usePathname.md",
+      "x": 6900,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_i18n_routing_userouter",
+      "type": "file",
+      "file": "useRouter.md",
+      "x": 6500,
+      "y": 1940,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g19",
+      "type": "group",
+      "label": "Client & Partner Logo Showcase",
+      "x": 7880,
+      "y": 1700,
+      "width": 660,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_components_client_logos_clientlogo",
+      "type": "file",
+      "file": "ClientLogo.md",
+      "x": 7900,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_client_logos_clientlogos",
+      "type": "file",
+      "file": "ClientLogos().md",
+      "x": 8100,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_client_logos_logoitem",
+      "type": "file",
+      "file": "LogoItem().md",
+      "x": 8300,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_client_logos",
+      "type": "file",
+      "file": "client-logos.tsx.md",
+      "x": 7900,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_client_logos_row1logos",
+      "type": "file",
+      "file": "row1Logos.md",
+      "x": 8100,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_components_client_logos_row2logos",
+      "type": "file",
+      "file": "row2Logos.md",
+      "x": 8300,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g20",
+      "type": "group",
+      "label": "Dialog & Mapbox Type Integrations",
+      "x": 9280,
+      "y": 1700,
+      "width": 660,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_ref_radix_ui_react_dialog",
+      "type": "file",
+      "file": "@radix-uireact-dialog.md",
+      "x": 9300,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_radix_ui_react_dialog",
+      "type": "file",
+      "file": "@radix-uireact-dialog@1.1.15.md",
+      "x": 9500,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_types_mapbox_gl",
+      "type": "file",
+      "file": "@typesmapbox-gl.md",
+      "x": 9700,
+      "y": 1780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_types_mapbox_gl",
+      "type": "file",
+      "file": "@typesmapbox-gl@3.4.1.md",
+      "x": 9300,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_svgpath",
+      "type": "file",
+      "file": "svgpath.md",
+      "x": 9500,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_svgpath",
+      "type": "file",
+      "file": "svgpath@2.6.0.md",
+      "x": 9700,
+      "y": 1860,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g21",
+      "type": "group",
+      "label": "ESLint & Next.js Linter Config",
+      "x": 0,
+      "y": 2200,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_eslint_config_config",
+      "type": "file",
+      "file": "config_1.md",
+      "x": 20,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_ref_eslint_config_next",
+      "type": "file",
+      "file": "eslint-config-next.md",
+      "x": 220,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devdependencies_eslint_config_next",
+      "type": "file",
+      "file": "eslint-config-next@16.3.3.md",
+      "x": 20,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_eslint_config",
+      "type": "file",
+      "file": "eslint.config.mjs.md",
+      "x": 220,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g22",
+      "type": "group",
+      "label": "Next.js App Config & i18n Wrapper",
+      "x": 1840,
+      "y": 2200,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_next",
+      "type": "file",
+      "file": "next.md",
+      "x": 1860,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_next_config",
+      "type": "file",
+      "file": "next.config.mjs.md",
+      "x": 2060,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_next_config_nextconfig",
+      "type": "file",
+      "file": "nextConfig.md",
+      "x": 1860,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_next_config_withnextintl",
+      "type": "file",
+      "file": "withNextIntl.md",
+      "x": 2060,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g23",
+      "type": "group",
+      "label": "Next.js Auto-generated Type Declarations",
+      "x": 3680,
+      "y": 2200,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_next_env_d_rationale_6",
+      "type": "file",
+      "file": "NOTE This file should not be edited.md",
+      "x": 3700,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_next_env_d",
+      "type": "file",
+      "file": "next-env.d.ts.md",
+      "x": 3900,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_next_dev_types_root_params_d",
+      "type": "file",
+      "file": "next_dev_types_root_params_d.md",
+      "x": 3700,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_next_dev_types_routes_d",
+      "type": "file",
+      "file": "next_dev_types_routes_d.md",
+      "x": 3900,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g24",
+      "type": "group",
+      "label": "Package Manager Engine Constraints",
+      "x": 5080,
+      "y": 2200,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_package_devengines",
+      "type": "file",
+      "file": "devEngines.md",
+      "x": 5100,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_packagemanager_name",
+      "type": "file",
+      "file": "name_1.md",
+      "x": 5300,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_packagemanager_onfail",
+      "type": "file",
+      "file": "onFail.md",
+      "x": 5100,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_devengines_packagemanager",
+      "type": "file",
+      "file": "packageManager.md",
+      "x": 5300,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g25",
+      "type": "group",
+      "label": "Package Dependency Overrides",
+      "x": 6480,
+      "y": 2200,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_package_overrides_brace_expansion",
+      "type": "file",
+      "file": "brace-expansion_1.md",
+      "x": 6500,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_overrides",
+      "type": "file",
+      "file": "overrides.md",
+      "x": 6700,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_overrides_postcss",
+      "type": "file",
+      "file": "postcss_2.md",
+      "x": 6500,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_overrides_sharp",
+      "type": "file",
+      "file": "sharp_1.md",
+      "x": 6700,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g26",
+      "type": "group",
+      "label": "Package Resolution Overrides",
+      "x": 7880,
+      "y": 2200,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_package_resolutions_brace_expansion",
+      "type": "file",
+      "file": "brace-expansion.md",
+      "x": 7900,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_resolutions_postcss",
+      "type": "file",
+      "file": "postcss_1.md",
+      "x": 8100,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_resolutions",
+      "type": "file",
+      "file": "resolutions.md",
+      "x": 7900,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_resolutions_sharp",
+      "type": "file",
+      "file": "sharp.md",
+      "x": 8100,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g27",
+      "type": "group",
+      "label": "About Page Metadata Layout",
+      "x": 9280,
+      "y": 2200,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_app_locale_about_layout_aboutlayout",
+      "type": "file",
+      "file": "AboutLayout().md",
+      "x": 9300,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_about_layout",
+      "type": "file",
+      "file": "aboutlayout.tsx.md",
+      "x": 9500,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_about_layout_generatemetadata",
+      "type": "file",
+      "file": "generateMetadata().md",
+      "x": 9300,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g28",
+      "type": "group",
+      "label": "Contact Page Metadata Layout",
+      "x": 0,
+      "y": 2680,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_app_locale_contact_layout_contactlayout",
+      "type": "file",
+      "file": "ContactLayout().md",
+      "x": 20,
+      "y": 2760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_contact_layout",
+      "type": "file",
+      "file": "contactlayout.tsx.md",
+      "x": 220,
+      "y": 2760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_contact_layout_generatemetadata",
+      "type": "file",
+      "file": "generateMetadata()_1.md",
+      "x": 20,
+      "y": 2840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g29",
+      "type": "group",
+      "label": "Insights Page Metadata Layout",
+      "x": 1840,
+      "y": 2680,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_app_locale_insights_layout_insightslayout",
+      "type": "file",
+      "file": "InsightsLayout().md",
+      "x": 1860,
+      "y": 2760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_insights_layout_generatemetadata",
+      "type": "file",
+      "file": "generateMetadata()_2.md",
+      "x": 2060,
+      "y": 2760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_insights_layout",
+      "type": "file",
+      "file": "insightslayout.tsx.md",
+      "x": 1860,
+      "y": 2840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g30",
+      "type": "group",
+      "label": "Newsletter Page Metadata Layout",
+      "x": 3680,
+      "y": 2680,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_app_locale_newsletter_layout_newsletterlayout",
+      "type": "file",
+      "file": "NewsletterLayout().md",
+      "x": 3700,
+      "y": 2760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_newsletter_layout_generatemetadata",
+      "type": "file",
+      "file": "generateMetadata()_4.md",
+      "x": 3900,
+      "y": 2760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_newsletter_layout",
+      "type": "file",
+      "file": "newsletterlayout.tsx.md",
+      "x": 3700,
+      "y": 2840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g31",
+      "type": "group",
+      "label": "Impact Page Metadata Layout",
+      "x": 5080,
+      "y": 2680,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_app_locale_our_impact_layout_ourimpactlayout",
+      "type": "file",
+      "file": "OurImpactLayout().md",
+      "x": 5100,
+      "y": 2760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_impact_layout_generatemetadata",
+      "type": "file",
+      "file": "generateMetadata()_5.md",
+      "x": 5300,
+      "y": 2760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_impact_layout",
+      "type": "file",
+      "file": "our-impactlayout.tsx.md",
+      "x": 5100,
+      "y": 2840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g32",
+      "type": "group",
+      "label": "Team Page Metadata Layout",
+      "x": 6480,
+      "y": 2680,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_app_locale_our_team_layout_ourteamlayout",
+      "type": "file",
+      "file": "OurTeamLayout().md",
+      "x": 6500,
+      "y": 2760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_team_layout_generatemetadata",
+      "type": "file",
+      "file": "generateMetadata()_6.md",
+      "x": 6700,
+      "y": 2760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_team_layout",
+      "type": "file",
+      "file": "our-teamlayout.tsx.md",
+      "x": 6500,
+      "y": 2840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g33",
+      "type": "group",
+      "label": "Capacity Building Metadata Layout",
+      "x": 7880,
+      "y": 2680,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_app_locale_our_work_capacity_building_layout_capacitybuildinglayout",
+      "type": "file",
+      "file": "CapacityBuildingLayout().md",
+      "x": 7900,
+      "y": 2760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_capacity_building_layout",
+      "type": "file",
+      "file": "capacity-buildinglayout.tsx.md",
+      "x": 8100,
+      "y": 2760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_capacity_building_layout_generatemetadata",
+      "type": "file",
+      "file": "generateMetadata()_7.md",
+      "x": 7900,
+      "y": 2840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g34",
+      "type": "group",
+      "label": "Client Advisory Metadata Layout",
+      "x": 9280,
+      "y": 2680,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_app_locale_our_work_client_advisory_layout_clientadvisorylayout",
+      "type": "file",
+      "file": "ClientAdvisoryLayout().md",
+      "x": 9300,
+      "y": 2760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_client_advisory_layout",
+      "type": "file",
+      "file": "client-advisorylayout.tsx.md",
+      "x": 9500,
+      "y": 2760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_client_advisory_layout_generatemetadata",
+      "type": "file",
+      "file": "generateMetadata()_8.md",
+      "x": 9300,
+      "y": 2840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g35",
+      "type": "group",
+      "label": "Digital Platforms Metadata Layout",
+      "x": 0,
+      "y": 3160,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_app_locale_our_work_digital_platforms_layout_digitalplatformslayout",
+      "type": "file",
+      "file": "DigitalPlatformsLayout().md",
+      "x": 20,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_digital_platforms_layout",
+      "type": "file",
+      "file": "digital-platformslayout.tsx.md",
+      "x": 220,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_digital_platforms_layout_generatemetadata",
+      "type": "file",
+      "file": "generateMetadata()_9.md",
+      "x": 20,
+      "y": 3320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g36",
+      "type": "group",
+      "label": "Our Work Metadata Layout",
+      "x": 1840,
+      "y": 3160,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_app_locale_our_work_layout_ourworklayout",
+      "type": "file",
+      "file": "OurWorkLayout().md",
+      "x": 1860,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_layout_generatemetadata",
+      "type": "file",
+      "file": "generateMetadata()_10.md",
+      "x": 2060,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_layout",
+      "type": "file",
+      "file": "our-worklayout.tsx.md",
+      "x": 1860,
+      "y": 3320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g37",
+      "type": "group",
+      "label": "Project Implementation Metadata Layout",
+      "x": 3680,
+      "y": 3160,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_app_locale_our_work_project_implementation_layout_projectimplementationlayout",
+      "type": "file",
+      "file": "ProjectImplementationLayout().md",
+      "x": 3700,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_project_implementation_layout_generatemetadata",
+      "type": "file",
+      "file": "generateMetadata()_11.md",
+      "x": 3900,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_app_locale_our_work_project_implementation_layout",
+      "type": "file",
+      "file": "project-implementationlayout.tsx.md",
+      "x": 3700,
+      "y": 3320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g38",
+      "type": "group",
+      "label": "PostCSS & Tailwind Plugins",
+      "x": 5080,
+      "y": 3160,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_postcss_config_config",
+      "type": "file",
+      "file": "config_2.md",
+      "x": 5100,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_postcss_load_config",
+      "type": "file",
+      "file": "postcss-load-config.md",
+      "x": 5300,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_postcss_config",
+      "type": "file",
+      "file": "postcss.config.mjs.md",
+      "x": 5100,
+      "y": 3320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g39",
+      "type": "group",
+      "label": "Asset Optimization Shell Scripts",
+      "x": 6480,
+      "y": 3160,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_optimize_images",
+      "type": "file",
+      "file": "optimize_images.sh.md",
+      "x": 6500,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_optimize_images_sh__entry",
+      "type": "file",
+      "file": "optimize_images.sh script.md",
+      "x": 6700,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g40",
+      "type": "group",
+      "label": "Command Dialog Package Dependency",
+      "x": 7880,
+      "y": 3160,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_ref_cmdk",
+      "type": "file",
+      "file": "cmdk.md",
+      "x": 7900,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_cmdk",
+      "type": "file",
+      "file": "cmdk@1.1.1.md",
+      "x": 8100,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g41",
+      "type": "group",
+      "label": "Motion Library Package Dependency",
+      "x": 9280,
+      "y": 3160,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_ref_motion",
+      "type": "file",
+      "file": "motion.md",
+      "x": 9300,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_motion",
+      "type": "file",
+      "file": "motion@12.42.2.md",
+      "x": 9500,
+      "y": 3240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g42",
+      "type": "group",
+      "label": "Popover UI Package Dependency",
+      "x": 0,
+      "y": 3640,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_ref_radix_ui_react_popover",
+      "type": "file",
+      "file": "@radix-uireact-popover.md",
+      "x": 20,
+      "y": 3720,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_package_dependencies_radix_ui_react_popover",
+      "type": "file",
+      "file": "@radix-uireact-popover@1.1.15.md",
+      "x": 220,
+      "y": 3720,
+      "width": 180,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_app_locale_about_layout_app_locale_about_layout_aboutlayout",
+      "fromNode": "n_app_locale_about_layout",
+      "toNode": "n_app_locale_about_layout_aboutlayout",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_layout_app_locale_about_layout_generatemetadata",
+      "fromNode": "n_app_locale_about_layout",
+      "toNode": "n_app_locale_about_layout_generatemetadata",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_layout_ref_next",
+      "fromNode": "n_app_locale_about_layout",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_layout_ref_next_intl",
+      "fromNode": "n_app_locale_about_layout",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_page_app_locale_about_page_aboutpage",
+      "fromNode": "n_app_locale_about_page",
+      "toNode": "n_app_locale_about_page_aboutpage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_page_components_motion_scroll_accordion",
+      "fromNode": "n_app_locale_about_page",
+      "toNode": "n_components_motion_scroll_accordion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_page_components_motion_scroll_accordion_scrollaccordion",
+      "fromNode": "n_app_locale_about_page",
+      "toNode": "n_components_motion_scroll_accordion_scrollaccordion",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_page_components_motion_services_bento_grid",
+      "fromNode": "n_app_locale_about_page",
+      "toNode": "n_components_motion_services_bento_grid",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_page_components_motion_services_bento_grid_servicesbentogrid",
+      "fromNode": "n_app_locale_about_page",
+      "toNode": "n_components_motion_services_bento_grid_servicesbentogrid",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_page_components_ui_rolling_text",
+      "fromNode": "n_app_locale_about_page",
+      "toNode": "n_components_ui_rolling_text",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_page_components_ui_rolling_text_rollingtext",
+      "fromNode": "n_app_locale_about_page",
+      "toNode": "n_components_ui_rolling_text_rollingtext",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_page_i18n_routing",
+      "fromNode": "n_app_locale_about_page",
+      "toNode": "n_i18n_routing",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_page_i18n_routing_link",
+      "fromNode": "n_app_locale_about_page",
+      "toNode": "n_i18n_routing_link",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_page_ref_framer_motion",
+      "fromNode": "n_app_locale_about_page",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_page_ref_lucide_react",
+      "fromNode": "n_app_locale_about_page",
+      "toNode": "n_ref_lucide_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_page_ref_next",
+      "fromNode": "n_app_locale_about_page",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_page_ref_next_intl",
+      "fromNode": "n_app_locale_about_page",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_page_aboutpage_components_motion_scroll_accordion_scrollaccordion",
+      "fromNode": "n_app_locale_about_page_aboutpage",
+      "toNode": "n_components_motion_scroll_accordion_scrollaccordion",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_page_aboutpage_components_motion_services_bento_grid_servicesbentogrid",
+      "fromNode": "n_app_locale_about_page_aboutpage",
+      "toNode": "n_components_motion_services_bento_grid_servicesbentogrid",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_page_aboutpage_components_ui_rolling_text_rollingtext",
+      "fromNode": "n_app_locale_about_page_aboutpage",
+      "toNode": "n_components_ui_rolling_text_rollingtext",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_about_page_aboutpage_i18n_routing_link",
+      "fromNode": "n_app_locale_about_page_aboutpage",
+      "toNode": "n_i18n_routing_link",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_contact_layout_app_locale_contact_layout_contactlayout",
+      "fromNode": "n_app_locale_contact_layout",
+      "toNode": "n_app_locale_contact_layout_contactlayout",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_contact_layout_app_locale_contact_layout_generatemetadata",
+      "fromNode": "n_app_locale_contact_layout",
+      "toNode": "n_app_locale_contact_layout_generatemetadata",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_contact_layout_ref_next",
+      "fromNode": "n_app_locale_contact_layout",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_contact_layout_ref_next_intl",
+      "fromNode": "n_app_locale_contact_layout",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_contact_page_app_locale_contact_page_contactpage",
+      "fromNode": "n_app_locale_contact_page",
+      "toNode": "n_app_locale_contact_page_contactpage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_contact_page_components_ui_rolling_text",
+      "fromNode": "n_app_locale_contact_page",
+      "toNode": "n_components_ui_rolling_text",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_contact_page_components_ui_rolling_text_rollingtext",
+      "fromNode": "n_app_locale_contact_page",
+      "toNode": "n_components_ui_rolling_text_rollingtext",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_contact_page_ref_framer_motion",
+      "fromNode": "n_app_locale_contact_page",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_contact_page_ref_lucide_react",
+      "fromNode": "n_app_locale_contact_page",
+      "toNode": "n_ref_lucide_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_contact_page_ref_next_intl",
+      "fromNode": "n_app_locale_contact_page",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_contact_page_ref_react",
+      "fromNode": "n_app_locale_contact_page",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_contact_page_contactpage_components_ui_rolling_text_rollingtext",
+      "fromNode": "n_app_locale_contact_page_contactpage",
+      "toNode": "n_components_ui_rolling_text_rollingtext",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_gallery_page_app_locale_gallery_page_gallerypage",
+      "fromNode": "n_app_locale_gallery_page",
+      "toNode": "n_app_locale_gallery_page_gallerypage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_gallery_page_components_motion_office_plants_gallery",
+      "fromNode": "n_app_locale_gallery_page",
+      "toNode": "n_components_motion_office_plants_gallery",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_gallery_page_components_motion_office_plants_gallery_officeplantsgallery",
+      "fromNode": "n_app_locale_gallery_page",
+      "toNode": "n_components_motion_office_plants_gallery_officeplantsgallery",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_gallery_page_ref_next_intl",
+      "fromNode": "n_app_locale_gallery_page",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_gallery_page_gallerypage_components_motion_office_plants_gallery_officeplantsgallery",
+      "fromNode": "n_app_locale_gallery_page_gallerypage",
+      "toNode": "n_components_motion_office_plants_gallery_officeplantsgallery",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_insights_layout_app_locale_insights_layout_generatemetadata",
+      "fromNode": "n_app_locale_insights_layout",
+      "toNode": "n_app_locale_insights_layout_generatemetadata",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_insights_layout_app_locale_insights_layout_insightslayout",
+      "fromNode": "n_app_locale_insights_layout",
+      "toNode": "n_app_locale_insights_layout_insightslayout",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_insights_layout_ref_next",
+      "fromNode": "n_app_locale_insights_layout",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_insights_layout_ref_next_intl",
+      "fromNode": "n_app_locale_insights_layout",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_insights_page_app_locale_insights_page_insightspage",
+      "fromNode": "n_app_locale_insights_page",
+      "toNode": "n_app_locale_insights_page_insightspage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_insights_page_components_ui_rolling_text",
+      "fromNode": "n_app_locale_insights_page",
+      "toNode": "n_components_ui_rolling_text",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_insights_page_components_ui_rolling_text_rollingtext",
+      "fromNode": "n_app_locale_insights_page",
+      "toNode": "n_components_ui_rolling_text_rollingtext",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_insights_page_i18n_routing",
+      "fromNode": "n_app_locale_insights_page",
+      "toNode": "n_i18n_routing",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_insights_page_i18n_routing_link",
+      "fromNode": "n_app_locale_insights_page",
+      "toNode": "n_i18n_routing_link",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_insights_page_ref_framer_motion",
+      "fromNode": "n_app_locale_insights_page",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_insights_page_ref_lucide_react",
+      "fromNode": "n_app_locale_insights_page",
+      "toNode": "n_ref_lucide_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_insights_page_ref_next_intl",
+      "fromNode": "n_app_locale_insights_page",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_insights_page_insightspage_components_ui_rolling_text_rollingtext",
+      "fromNode": "n_app_locale_insights_page_insightspage",
+      "toNode": "n_components_ui_rolling_text_rollingtext",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_insights_page_insightspage_i18n_routing_link",
+      "fromNode": "n_app_locale_insights_page_insightspage",
+      "toNode": "n_i18n_routing_link",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_app_globals",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_app_globals",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_app_locale_layout_bebasneue",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_app_locale_layout_bebasneue",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_app_locale_layout_dmsans",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_app_locale_layout_dmsans",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_app_locale_layout_generatemetadata",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_app_locale_layout_generatemetadata",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_app_locale_layout_playfairdisplay",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_app_locale_layout_playfairdisplay",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_app_locale_layout_rootlayout",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_app_locale_layout_rootlayout",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_app_locale_layout_spacegrotesk",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_app_locale_layout_spacegrotesk",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_components_cookie_toast",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_components_cookie_toast",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_components_cookie_toast_cookietoast",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_components_cookie_toast_cookietoast",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_components_footer",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_components_footer",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_components_footer_footer",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_components_footer_footer",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_components_google_analytics",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_components_google_analytics",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_components_google_analytics_googleanalytics",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_components_google_analytics_googleanalytics",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_components_header",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_components_header",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_components_header_header",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_components_header_header",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_components_language_switch_provider",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_components_language_switch_provider",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_components_language_switch_provider_languageswitchprovider",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_components_language_switch_provider_languageswitchprovider",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_components_scroll_to_top",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_components_scroll_to_top",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_components_scroll_to_top_scrolltotop",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_components_scroll_to_top_scrolltotop",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_ref_next",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_ref_next_intl",
+      "fromNode": "n_app_locale_layout",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_rootlayout_components_cookie_toast_cookietoast",
+      "fromNode": "n_app_locale_layout_rootlayout",
+      "toNode": "n_components_cookie_toast_cookietoast",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_rootlayout_components_footer_footer",
+      "fromNode": "n_app_locale_layout_rootlayout",
+      "toNode": "n_components_footer_footer",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_rootlayout_components_google_analytics_googleanalytics",
+      "fromNode": "n_app_locale_layout_rootlayout",
+      "toNode": "n_components_google_analytics_googleanalytics",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_rootlayout_components_header_header",
+      "fromNode": "n_app_locale_layout_rootlayout",
+      "toNode": "n_components_header_header",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_rootlayout_components_language_switch_provider_languageswitchprovider",
+      "fromNode": "n_app_locale_layout_rootlayout",
+      "toNode": "n_components_language_switch_provider_languageswitchprovider",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_layout_rootlayout_components_scroll_to_top_scrolltotop",
+      "fromNode": "n_app_locale_layout_rootlayout",
+      "toNode": "n_components_scroll_to_top_scrolltotop",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_map_page_app_locale_map_page_mappage",
+      "fromNode": "n_app_locale_map_page",
+      "toNode": "n_app_locale_map_page_mappage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_map_page_components_map_interactive_mapbox",
+      "fromNode": "n_app_locale_map_page",
+      "toNode": "n_components_map_interactive_mapbox",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_map_page_components_map_interactive_mapbox_interactivemapbox",
+      "fromNode": "n_app_locale_map_page",
+      "toNode": "n_components_map_interactive_mapbox_interactivemapbox",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_map_page_mappage_components_map_interactive_mapbox_interactivemapbox",
+      "fromNode": "n_app_locale_map_page_mappage",
+      "toNode": "n_components_map_interactive_mapbox_interactivemapbox",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_newsletter_layout_app_locale_newsletter_layout_generatemetadata",
+      "fromNode": "n_app_locale_newsletter_layout",
+      "toNode": "n_app_locale_newsletter_layout_generatemetadata",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_newsletter_layout_app_locale_newsletter_layout_newsletterlayout",
+      "fromNode": "n_app_locale_newsletter_layout",
+      "toNode": "n_app_locale_newsletter_layout_newsletterlayout",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_newsletter_layout_ref_next",
+      "fromNode": "n_app_locale_newsletter_layout",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_newsletter_layout_ref_next_intl",
+      "fromNode": "n_app_locale_newsletter_layout",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_newsletter_page_app_locale_newsletter_page_newsletterpage",
+      "fromNode": "n_app_locale_newsletter_page",
+      "toNode": "n_app_locale_newsletter_page_newsletterpage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_newsletter_page_components_ui_rolling_text",
+      "fromNode": "n_app_locale_newsletter_page",
+      "toNode": "n_components_ui_rolling_text",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_newsletter_page_components_ui_rolling_text_rollingtext",
+      "fromNode": "n_app_locale_newsletter_page",
+      "toNode": "n_components_ui_rolling_text_rollingtext",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_newsletter_page_ref_framer_motion",
+      "fromNode": "n_app_locale_newsletter_page",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_newsletter_page_ref_lucide_react",
+      "fromNode": "n_app_locale_newsletter_page",
+      "toNode": "n_ref_lucide_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_newsletter_page_ref_next_intl",
+      "fromNode": "n_app_locale_newsletter_page",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_newsletter_page_ref_react",
+      "fromNode": "n_app_locale_newsletter_page",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_newsletter_page_newsletterpage_components_ui_rolling_text_rollingtext",
+      "fromNode": "n_app_locale_newsletter_page_newsletterpage",
+      "toNode": "n_components_ui_rolling_text_rollingtext",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_layout_app_locale_our_impact_layout_generatemetadata",
+      "fromNode": "n_app_locale_our_impact_layout",
+      "toNode": "n_app_locale_our_impact_layout_generatemetadata",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_layout_app_locale_our_impact_layout_ourimpactlayout",
+      "fromNode": "n_app_locale_our_impact_layout",
+      "toNode": "n_app_locale_our_impact_layout_ourimpactlayout",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_layout_ref_next",
+      "fromNode": "n_app_locale_our_impact_layout",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_layout_ref_next_intl",
+      "fromNode": "n_app_locale_our_impact_layout",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_page_app_locale_our_impact_page_ourimpactpage",
+      "fromNode": "n_app_locale_our_impact_page",
+      "toNode": "n_app_locale_our_impact_page_ourimpactpage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_page_components_interactive_map",
+      "fromNode": "n_app_locale_our_impact_page",
+      "toNode": "n_components_interactive_map",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_page_components_interactive_map_interactivemap",
+      "fromNode": "n_app_locale_our_impact_page",
+      "toNode": "n_components_interactive_map_interactivemap",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_page_components_motion_impact_alignment",
+      "fromNode": "n_app_locale_our_impact_page",
+      "toNode": "n_components_motion_impact_alignment",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_page_components_motion_impact_alignment_impactalignment",
+      "fromNode": "n_app_locale_our_impact_page",
+      "toNode": "n_components_motion_impact_alignment_impactalignment",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_page_components_ui_rolling_text",
+      "fromNode": "n_app_locale_our_impact_page",
+      "toNode": "n_components_ui_rolling_text",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_page_components_ui_rolling_text_rollingtext",
+      "fromNode": "n_app_locale_our_impact_page",
+      "toNode": "n_components_ui_rolling_text_rollingtext",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_page_i18n_routing",
+      "fromNode": "n_app_locale_our_impact_page",
+      "toNode": "n_i18n_routing",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_page_i18n_routing_link",
+      "fromNode": "n_app_locale_our_impact_page",
+      "toNode": "n_i18n_routing_link",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_page_ref_framer_motion",
+      "fromNode": "n_app_locale_our_impact_page",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_page_ref_lucide_react",
+      "fromNode": "n_app_locale_our_impact_page",
+      "toNode": "n_ref_lucide_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_page_ref_next_intl",
+      "fromNode": "n_app_locale_our_impact_page",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_page_ourimpactpage_components_interactive_map_interactivemap",
+      "fromNode": "n_app_locale_our_impact_page_ourimpactpage",
+      "toNode": "n_components_interactive_map_interactivemap",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_page_ourimpactpage_components_motion_impact_alignment_impactalignment",
+      "fromNode": "n_app_locale_our_impact_page_ourimpactpage",
+      "toNode": "n_components_motion_impact_alignment_impactalignment",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_page_ourimpactpage_components_ui_rolling_text_rollingtext",
+      "fromNode": "n_app_locale_our_impact_page_ourimpactpage",
+      "toNode": "n_components_ui_rolling_text_rollingtext",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_impact_page_ourimpactpage_i18n_routing_link",
+      "fromNode": "n_app_locale_our_impact_page_ourimpactpage",
+      "toNode": "n_i18n_routing_link",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_team_layout_app_locale_our_team_layout_generatemetadata",
+      "fromNode": "n_app_locale_our_team_layout",
+      "toNode": "n_app_locale_our_team_layout_generatemetadata",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_team_layout_app_locale_our_team_layout_ourteamlayout",
+      "fromNode": "n_app_locale_our_team_layout",
+      "toNode": "n_app_locale_our_team_layout_ourteamlayout",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_team_layout_ref_next",
+      "fromNode": "n_app_locale_our_team_layout",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_team_layout_ref_next_intl",
+      "fromNode": "n_app_locale_our_team_layout",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_team_page_app_locale_our_team_page_ourteampage",
+      "fromNode": "n_app_locale_our_team_page",
+      "toNode": "n_app_locale_our_team_page_ourteampage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_team_page_app_locale_our_team_page_teammember",
+      "fromNode": "n_app_locale_our_team_page",
+      "toNode": "n_app_locale_our_team_page_teammember",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_team_page_ref_framer_motion",
+      "fromNode": "n_app_locale_our_team_page",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_team_page_ref_lucide_react",
+      "fromNode": "n_app_locale_our_team_page",
+      "toNode": "n_ref_lucide_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_team_page_ref_next",
+      "fromNode": "n_app_locale_our_team_page",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_team_page_ref_next_intl",
+      "fromNode": "n_app_locale_our_team_page",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_team_page_ref_react",
+      "fromNode": "n_app_locale_our_team_page",
+      "toNode": "n_ref_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_capacity_building_layout_app_locale_our_work_capacity_building_layout_capacitybuildinglayout",
+      "fromNode": "n_app_locale_our_work_capacity_building_layout",
+      "toNode": "n_app_locale_our_work_capacity_building_layout_capacitybuildinglayout",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_capacity_building_layout_app_locale_our_work_capacity_building_layout_generatemetadata",
+      "fromNode": "n_app_locale_our_work_capacity_building_layout",
+      "toNode": "n_app_locale_our_work_capacity_building_layout_generatemetadata",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_capacity_building_layout_ref_next",
+      "fromNode": "n_app_locale_our_work_capacity_building_layout",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_capacity_building_layout_ref_next_intl",
+      "fromNode": "n_app_locale_our_work_capacity_building_layout",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_capacity_building_page_app_locale_our_work_capacity_building_page_capacitybuildingpage",
+      "fromNode": "n_app_locale_our_work_capacity_building_page",
+      "toNode": "n_app_locale_our_work_capacity_building_page_capacitybuildingpage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_capacity_building_page_components_ui_rolling_text",
+      "fromNode": "n_app_locale_our_work_capacity_building_page",
+      "toNode": "n_components_ui_rolling_text",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_capacity_building_page_components_ui_rolling_text_rollingtext",
+      "fromNode": "n_app_locale_our_work_capacity_building_page",
+      "toNode": "n_components_ui_rolling_text_rollingtext",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_capacity_building_page_i18n_routing",
+      "fromNode": "n_app_locale_our_work_capacity_building_page",
+      "toNode": "n_i18n_routing",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_capacity_building_page_i18n_routing_link",
+      "fromNode": "n_app_locale_our_work_capacity_building_page",
+      "toNode": "n_i18n_routing_link",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_capacity_building_page_ref_framer_motion",
+      "fromNode": "n_app_locale_our_work_capacity_building_page",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_capacity_building_page_ref_lucide_react",
+      "fromNode": "n_app_locale_our_work_capacity_building_page",
+      "toNode": "n_ref_lucide_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_capacity_building_page_ref_next",
+      "fromNode": "n_app_locale_our_work_capacity_building_page",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_capacity_building_page_ref_next_intl",
+      "fromNode": "n_app_locale_our_work_capacity_building_page",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_capacity_building_page_capacitybuildingpage_components_ui_rolling_text_rollingtext",
+      "fromNode": "n_app_locale_our_work_capacity_building_page_capacitybuildingpage",
+      "toNode": "n_components_ui_rolling_text_rollingtext",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_capacity_building_page_capacitybuildingpage_i18n_routing_link",
+      "fromNode": "n_app_locale_our_work_capacity_building_page_capacitybuildingpage",
+      "toNode": "n_i18n_routing_link",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_client_advisory_layout_app_locale_our_work_client_advisory_layout_clientadvisorylayout",
+      "fromNode": "n_app_locale_our_work_client_advisory_layout",
+      "toNode": "n_app_locale_our_work_client_advisory_layout_clientadvisorylayout",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_client_advisory_layout_app_locale_our_work_client_advisory_layout_generatemetadata",
+      "fromNode": "n_app_locale_our_work_client_advisory_layout",
+      "toNode": "n_app_locale_our_work_client_advisory_layout_generatemetadata",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_client_advisory_layout_ref_next",
+      "fromNode": "n_app_locale_our_work_client_advisory_layout",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_client_advisory_layout_ref_next_intl",
+      "fromNode": "n_app_locale_our_work_client_advisory_layout",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_client_advisory_page_app_locale_our_work_client_advisory_page_clientadvisorypage",
+      "fromNode": "n_app_locale_our_work_client_advisory_page",
+      "toNode": "n_app_locale_our_work_client_advisory_page_clientadvisorypage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_client_advisory_page_components_ui_rolling_text",
+      "fromNode": "n_app_locale_our_work_client_advisory_page",
+      "toNode": "n_components_ui_rolling_text",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_client_advisory_page_components_ui_rolling_text_rollingtext",
+      "fromNode": "n_app_locale_our_work_client_advisory_page",
+      "toNode": "n_components_ui_rolling_text_rollingtext",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_client_advisory_page_i18n_routing",
+      "fromNode": "n_app_locale_our_work_client_advisory_page",
+      "toNode": "n_i18n_routing",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_client_advisory_page_i18n_routing_link",
+      "fromNode": "n_app_locale_our_work_client_advisory_page",
+      "toNode": "n_i18n_routing_link",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_client_advisory_page_ref_framer_motion",
+      "fromNode": "n_app_locale_our_work_client_advisory_page",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_client_advisory_page_ref_lucide_react",
+      "fromNode": "n_app_locale_our_work_client_advisory_page",
+      "toNode": "n_ref_lucide_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_client_advisory_page_ref_next_intl",
+      "fromNode": "n_app_locale_our_work_client_advisory_page",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_client_advisory_page_clientadvisorypage_components_ui_rolling_text_rollingtext",
+      "fromNode": "n_app_locale_our_work_client_advisory_page_clientadvisorypage",
+      "toNode": "n_components_ui_rolling_text_rollingtext",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_client_advisory_page_clientadvisorypage_i18n_routing_link",
+      "fromNode": "n_app_locale_our_work_client_advisory_page_clientadvisorypage",
+      "toNode": "n_i18n_routing_link",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_digital_platforms_layout_app_locale_our_work_digital_platforms_layout_digitalplatformslayout",
+      "fromNode": "n_app_locale_our_work_digital_platforms_layout",
+      "toNode": "n_app_locale_our_work_digital_platforms_layout_digitalplatformslayout",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_digital_platforms_layout_app_locale_our_work_digital_platforms_layout_generatemetadata",
+      "fromNode": "n_app_locale_our_work_digital_platforms_layout",
+      "toNode": "n_app_locale_our_work_digital_platforms_layout_generatemetadata",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_digital_platforms_layout_ref_next",
+      "fromNode": "n_app_locale_our_work_digital_platforms_layout",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_digital_platforms_layout_ref_next_intl",
+      "fromNode": "n_app_locale_our_work_digital_platforms_layout",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_digital_platforms_page_app_locale_our_work_digital_platforms_page_digitalplatformspage",
+      "fromNode": "n_app_locale_our_work_digital_platforms_page",
+      "toNode": "n_app_locale_our_work_digital_platforms_page_digitalplatformspage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_digital_platforms_page_components_ui_rolling_text",
+      "fromNode": "n_app_locale_our_work_digital_platforms_page",
+      "toNode": "n_components_ui_rolling_text",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_digital_platforms_page_components_ui_rolling_text_rollingtext",
+      "fromNode": "n_app_locale_our_work_digital_platforms_page",
+      "toNode": "n_components_ui_rolling_text_rollingtext",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_digital_platforms_page_i18n_routing",
+      "fromNode": "n_app_locale_our_work_digital_platforms_page",
+      "toNode": "n_i18n_routing",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_digital_platforms_page_i18n_routing_link",
+      "fromNode": "n_app_locale_our_work_digital_platforms_page",
+      "toNode": "n_i18n_routing_link",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_digital_platforms_page_ref_framer_motion",
+      "fromNode": "n_app_locale_our_work_digital_platforms_page",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_digital_platforms_page_ref_lucide_react",
+      "fromNode": "n_app_locale_our_work_digital_platforms_page",
+      "toNode": "n_ref_lucide_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_digital_platforms_page_ref_next",
+      "fromNode": "n_app_locale_our_work_digital_platforms_page",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_digital_platforms_page_ref_next_intl",
+      "fromNode": "n_app_locale_our_work_digital_platforms_page",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_digital_platforms_page_digitalplatformspage_components_ui_rolling_text_rollingtext",
+      "fromNode": "n_app_locale_our_work_digital_platforms_page_digitalplatformspage",
+      "toNode": "n_components_ui_rolling_text_rollingtext",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_digital_platforms_page_digitalplatformspage_i18n_routing_link",
+      "fromNode": "n_app_locale_our_work_digital_platforms_page_digitalplatformspage",
+      "toNode": "n_i18n_routing_link",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_layout_app_locale_our_work_layout_generatemetadata",
+      "fromNode": "n_app_locale_our_work_layout",
+      "toNode": "n_app_locale_our_work_layout_generatemetadata",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_layout_app_locale_our_work_layout_ourworklayout",
+      "fromNode": "n_app_locale_our_work_layout",
+      "toNode": "n_app_locale_our_work_layout_ourworklayout",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_layout_ref_next",
+      "fromNode": "n_app_locale_our_work_layout",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_layout_ref_next_intl",
+      "fromNode": "n_app_locale_our_work_layout",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_page_app_locale_our_work_page_ourworkpage",
+      "fromNode": "n_app_locale_our_work_page",
+      "toNode": "n_app_locale_our_work_page_ourworkpage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_page_i18n_routing",
+      "fromNode": "n_app_locale_our_work_page",
+      "toNode": "n_i18n_routing",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_page_i18n_routing_link",
+      "fromNode": "n_app_locale_our_work_page",
+      "toNode": "n_i18n_routing_link",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_page_ref_lucide_react",
+      "fromNode": "n_app_locale_our_work_page",
+      "toNode": "n_ref_lucide_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_page_ref_next_intl",
+      "fromNode": "n_app_locale_our_work_page",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_page_ourworkpage_i18n_routing_link",
+      "fromNode": "n_app_locale_our_work_page_ourworkpage",
+      "toNode": "n_i18n_routing_link",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_project_implementation_layout_app_locale_our_work_project_implementation_layout_generatemetadata",
+      "fromNode": "n_app_locale_our_work_project_implementation_layout",
+      "toNode": "n_app_locale_our_work_project_implementation_layout_generatemetadata",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_project_implementation_layout_app_locale_our_work_project_implementation_layout_projectimplementationlayout",
+      "fromNode": "n_app_locale_our_work_project_implementation_layout",
+      "toNode": "n_app_locale_our_work_project_implementation_layout_projectimplementationlayout",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_project_implementation_layout_ref_next",
+      "fromNode": "n_app_locale_our_work_project_implementation_layout",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_project_implementation_layout_ref_next_intl",
+      "fromNode": "n_app_locale_our_work_project_implementation_layout",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_project_implementation_page_app_locale_our_work_project_implementation_page_projectimplementationpage",
+      "fromNode": "n_app_locale_our_work_project_implementation_page",
+      "toNode": "n_app_locale_our_work_project_implementation_page_projectimplementationpage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_project_implementation_page_components_ui_rolling_text",
+      "fromNode": "n_app_locale_our_work_project_implementation_page",
+      "toNode": "n_components_ui_rolling_text",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_project_implementation_page_components_ui_rolling_text_rollingtext",
+      "fromNode": "n_app_locale_our_work_project_implementation_page",
+      "toNode": "n_components_ui_rolling_text_rollingtext",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_project_implementation_page_i18n_routing",
+      "fromNode": "n_app_locale_our_work_project_implementation_page",
+      "toNode": "n_i18n_routing",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_project_implementation_page_i18n_routing_link",
+      "fromNode": "n_app_locale_our_work_project_implementation_page",
+      "toNode": "n_i18n_routing_link",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_project_implementation_page_ref_framer_motion",
+      "fromNode": "n_app_locale_our_work_project_implementation_page",
+      "toNode": "n_ref_framer_motion",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_project_implementation_page_ref_lucide_react",
+      "fromNode": "n_app_locale_our_work_project_implementation_page",
+      "toNode": "n_ref_lucide_react",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_project_implementation_page_ref_next_intl",
+      "fromNode": "n_app_locale_our_work_project_implementation_page",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_project_implementation_page_projectimplementationpage_components_ui_rolling_text_rollingtext",
+      "fromNode": "n_app_locale_our_work_project_implementation_page_projectimplementationpage",
+      "toNode": "n_components_ui_rolling_text_rollingtext",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_project_implementation_page_projectimplementationpage_i18n_routing_link",
+      "fromNode": "n_app_locale_our_work_project_implementation_page_projectimplementationpage",
+      "toNode": "n_i18n_routing_link",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_stakeholder_convenings_layout_app_locale_our_work_stakeholder_convenings_layout_generatemetadata",
+      "fromNode": "n_app_locale_our_work_stakeholder_convenings_layout",
+      "toNode": "n_app_locale_our_work_stakeholder_convenings_layout_generatemetadata",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_stakeholder_convenings_layout_app_locale_our_work_stakeholder_convenings_layout_stakeholderconveningslayout",
+      "fromNode": "n_app_locale_our_work_stakeholder_convenings_layout",
+      "toNode": "n_app_locale_our_work_stakeholder_convenings_layout_stakeholderconveningslayout",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_stakeholder_convenings_layout_ref_next",
+      "fromNode": "n_app_locale_our_work_stakeholder_convenings_layout",
+      "toNode": "n_ref_next",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_stakeholder_convenings_layout_ref_next_intl",
+      "fromNode": "n_app_locale_our_work_stakeholder_convenings_layout",
+      "toNode": "n_ref_next_intl",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_stakeholder_convenings_page_app_locale_our_work_stakeholder_convenings_page_stakeholderconveningspage",
+      "fromNode": "n_app_locale_our_work_stakeholder_convenings_page",
+      "toNode": "n_app_locale_our_work_stakeholder_convenings_page_stakeholderconveningspage",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_app_locale_our_work_stakeholder_convenings_page_components_ui_rolling_text",
+      "fromNode": "n_app_locale_our_work_stakeholder_convenings_page",
+      "toNode": "n_components_ui_rolling_text",
+      "label": "imports_from [EXTRACTED]"
+    }
+  ]
+}

@@ -169,9 +169,10 @@ export const MapHighlightedCountries: React.FC<MapHighlightedCountriesProps> = (
                 { hover: true }
               );
             }
+            const countryName = feature.properties?.name || feature.properties?.NAME || isoA2;
             hoveredCountryRef.current = isoA2 || null;
             if (setHoveredNameRef.current) {
-              setHoveredNameRef.current(name || null);
+              setHoveredNameRef.current(countryName || null);
             }
           }
           
@@ -278,6 +279,7 @@ export const MapHighlightedCountries: React.FC<MapHighlightedCountriesProps> = (
               }
 
               function executeAnimation() {
+                if (!map || !camera) return;
                 if (isZoomedInRef.current) {
                   map.easeTo({
                     center: camera.center,

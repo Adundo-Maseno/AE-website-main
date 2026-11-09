@@ -7,10 +7,11 @@ import { MapMarker } from './map-marker';
 import { MapPopup } from './map-popup';
 import { MapHighlightedCountries } from './map-highlighted-countries';
 import { MapAutoCenter } from './map-auto-center';
+import { MapActiveProjectFlyTo } from './map-active-project-fly-to';
 import { Building, Store, Coffee, Car, AlertCircle, MapPin, Navigation, Tag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import type { CountryProject } from '../interactive-map';
+import type { CountryProject } from './map-types';
 
 interface SelectedLocation {
   lng: number;
@@ -66,6 +67,12 @@ export const InteractiveMapbox: React.FC<InteractiveMapboxProps> = ({
     <div className="w-full h-full relative">
       <MapProvider onMapReady={onMapReady}>
         <MapAutoCenter selectedCountryName={selectedCountryName} />
+        <MapActiveProjectFlyTo
+          selectedCountryName={selectedCountryName}
+          activeProjects={activeProjects}
+          selectedProjectIndex={selectedProjectIndex}
+          cityCoordinates={cityCoordinates}
+        />
         <MapControls />
         
         <MapHighlightedCountries 

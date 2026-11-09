@@ -146,7 +146,7 @@ export default function DigitalPlatformsPage() {
             {/* Bento-style grid: first card (MbeguChoice) spans 2 cols */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {platforms.map((platform, idx) => {
-                const Icon = 'icon' in platform ? platform.icon : null
+                const Icon = ('icon' in platform ? (platform as { icon?: React.ComponentType<{ size?: number }> }).icon : null) as React.ComponentType<{ size?: number }> | null
                 const isScreenshot = platform.imageType === 'screenshot' && platform.image
                 const isLogo = platform.imageType === 'logo' && platform.image
                 const isFirst = idx === 0

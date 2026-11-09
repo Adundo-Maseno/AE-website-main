@@ -84,7 +84,7 @@ export const MapProvider: React.FC<MapProviderProps> = ({ children, initialOptio
             
             if (Array.isArray(newTextField)) {
               replaceLang(newTextField);
-              m.setLayoutProperty(layer.id, 'text-field', newTextField);
+              m.setLayoutProperty(layer.id, 'text-field', newTextField as any);
             } else if (typeof newTextField === 'string') {
               newTextField = newTextField.replace(/{name_en}/g, `{name_${lang}}`).replace(/{name}/g, `{name_${lang}}`);
               m.setLayoutProperty(layer.id, 'text-field', newTextField);

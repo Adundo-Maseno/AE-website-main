@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { useMap } from './map-context';
-import type { CountryProject } from '../interactive-map';
+import type { CountryProject } from './map-types';
 
 export interface MapActiveProjectFlyToProps {
   selectedCountryName?: string;

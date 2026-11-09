@@ -1,0 +1,1724 @@
+{
+  ".translation-cache.json": {
+    "mtime": 1794241851.9463072,
+    "seen": 1794245496.1980348,
+    "ast_hash": "4a9f461d24a05a3b58a6216f104a34b2",
+    "semantic_hash": "4a9f461d24a05a3b58a6216f104a34b2"
+  },
+  "africa.json": {
+    "mtime": 1794241852.0144796,
+    "seen": 1794245496.1980457,
+    "ast_hash": "527befe069216422846851d6af605fa0",
+    "semantic_hash": "527befe069216422846851d6af605fa0"
+  },
+  "app/[locale]/about/layout.tsx": {
+    "mtime": 1794241852.2635634,
+    "seen": 1794245496.1980507,
+    "ast_hash": "8d6363135cb0fbc2ce379a3a94398a87",
+    "semantic_hash": "8d6363135cb0fbc2ce379a3a94398a87"
+  },
+  "app/[locale]/about/page.tsx": {
+    "mtime": 1794241852.2713768,
+    "seen": 1794245496.198054,
+    "ast_hash": "7f2addae7a84e7c7200fde387a5ececd",
+    "semantic_hash": "7f2addae7a84e7c7200fde387a5ececd"
+  },
+  "app/[locale]/contact/layout.tsx": {
+    "mtime": 1794241852.285973,
+    "seen": 1794245496.1980567,
+    "ast_hash": "c5b3d6a94b3aae231975eb9659fafb33",
+    "semantic_hash": "c5b3d6a94b3aae231975eb9659fafb33"
+  },
+  "app/[locale]/contact/page.tsx": {
+    "mtime": 1794241852.2899902,
+    "seen": 1794245496.1980593,
+    "ast_hash": "4c417a13dd91f63e3afd97850f1572c6",
+    "semantic_hash": "4c417a13dd91f63e3afd97850f1572c6"
+  },
+  "app/[locale]/gallery/page.tsx": {
+    "mtime": 1794241852.3072095,
+    "seen": 1794245496.1980622,
+    "ast_hash": "e61e1d97cf452fcbea4c176b8fb50cdc",
+    "semantic_hash": "e61e1d97cf452fcbea4c176b8fb50cdc"
+  },
+  "app/[locale]/insights/layout.tsx": {
+    "mtime": 1794241852.3209214,
+    "seen": 1794245496.1980648,
+    "ast_hash": "2d91fb3804d0f98b59161fca5404fd04",
+    "semantic_hash": "2d91fb3804d0f98b59161fca5404fd04"
+  },
+  "app/[locale]/insights/page.tsx": {
+    "mtime": 1794241852.32679,
+    "seen": 1794245496.1980672,
+    "ast_hash": "7f2266e9bb0de1b0bd914c36ca2da369",
+    "semantic_hash": "7f2266e9bb0de1b0bd914c36ca2da369"
+  },
+  "app/[locale]/layout.tsx": {
+    "mtime": 1794241852.2338042,
+    "seen": 1794245496.1980693,
+    "ast_hash": "ebfe179b02461246c21cc21665741085",
+    "semantic_hash": "ebfe179b02461246c21cc21665741085"
+  },
+  "app/[locale]/map/page.tsx": {
+    "mtime": 1794241852.3426826,
+    "seen": 1794245496.1980717,
+    "ast_hash": "ad2eb1d65ce0a9bda73f827f46074e98",
+    "semantic_hash": "ad2eb1d65ce0a9bda73f827f46074e98"
+  },
+  "app/[locale]/newsletter/layout.tsx": {
+    "mtime": 1794241852.3512485,
+    "seen": 1794245496.1980743,
+    "ast_hash": "592fe42b224f2d58f59207ac861c426e",
+    "semantic_hash": "592fe42b224f2d58f59207ac861c426e"
+  },
+  "app/[locale]/newsletter/page.tsx": {
+    "mtime": 1794241852.3587763,
+    "seen": 1794245496.1980765,
+    "ast_hash": "8747793f1067f8b4d5723d3e04032748",
+    "semantic_hash": "8747793f1067f8b4d5723d3e04032748"
+  },
+  "app/[locale]/our-impact/layout.tsx": {
+    "mtime": 1794241852.3806455,
+    "seen": 1794245496.1980789,
+    "ast_hash": "ebdb36b8d219e752cc24457a487207f5",
+    "semantic_hash": "ebdb36b8d219e752cc24457a487207f5"
+  },
+  "app/[locale]/our-impact/page.tsx": {
+    "mtime": 1794241852.3866916,
+    "seen": 1794245496.1980813,
+    "ast_hash": "466708cdb2e78366da97e5b1074b99bc",
+    "semantic_hash": "466708cdb2e78366da97e5b1074b99bc"
+  },
+  "app/[locale]/our-team/layout.tsx": {
+    "mtime": 1794241852.4011035,
+    "seen": 1794245496.1980834,
+    "ast_hash": "15697c360e94a9032857fefbf7e8fb4d",
+    "semantic_hash": "15697c360e94a9032857fefbf7e8fb4d"
+  },
+  "app/[locale]/our-team/page.tsx": {
+    "mtime": 1794241852.406298,
+    "seen": 1794245496.1980853,
+    "ast_hash": "4ca9f724866931d51689a70fe5892429",
+    "semantic_hash": "4ca9f724866931d51689a70fe5892429"
+  },
+  "app/[locale]/our-work/capacity-building/layout.tsx": {
+    "mtime": 1794241852.4396858,
+    "seen": 1794245496.1980877,
+    "ast_hash": "bcf7ed115e288de35e5b4d8d0b64a745",
+    "semantic_hash": "bcf7ed115e288de35e5b4d8d0b64a745"
+  },
+  "app/[locale]/our-work/capacity-building/page.tsx": {
+    "mtime": 1794241852.4396858,
+    "seen": 1794245496.1980898,
+    "ast_hash": "da0d9c0bcbb24bf0cbd39c5a20b8d517",
+    "semantic_hash": "da0d9c0bcbb24bf0cbd39c5a20b8d517"
+  },
+  "app/[locale]/our-work/client-advisory/layout.tsx": {
+    "mtime": 1794241852.469038,
+    "seen": 1794245496.1980917,
+    "ast_hash": "ad634702db5cfe3e7028ec18ea0a4989",
+    "semantic_hash": "ad634702db5cfe3e7028ec18ea0a4989"
+  },
+  "app/[locale]/our-work/client-advisory/page.tsx": {
+    "mtime": 1794241852.4744165,
+    "seen": 1794245496.198094,
+    "ast_hash": "4a14c114a00f85c1318a557f90a4cbb8",
+    "semantic_hash": "4a14c114a00f85c1318a557f90a4cbb8"
+  },
+  "app/[locale]/our-work/digital-platforms/layout.tsx": {
+    "mtime": 1794241852.4922464,
+    "seen": 1794245496.1980958,
+    "ast_hash": "f9f098d9345c2c6ff5baf20ca6334841",
+    "semantic_hash": "f9f098d9345c2c6ff5baf20ca6334841"
+  },
+  "app/[locale]/our-work/digital-platforms/page.tsx": {
+    "mtime": 1794246443.8574297,
+    "seen": 1794246633.0763655,
+    "ast_hash": "6de875ef2cfcef037b815cafb1f79ebb",
+    "semantic_hash": ""
+  },
+  "app/[locale]/our-work/layout.tsx": {
+    "mtime": 1794241852.424146,
+    "seen": 1794245496.198101,
+    "ast_hash": "79dab3b37766ce16c1b6d26d38df3512",
+    "semantic_hash": "79dab3b37766ce16c1b6d26d38df3512"
+  },
+  "app/[locale]/our-work/page.tsx": {
+    "mtime": 1794241852.424146,
+    "seen": 1794245496.1981027,
+    "ast_hash": "fb31e254005899652690644126cd8145",
+    "semantic_hash": "fb31e254005899652690644126cd8145"
+  },
+  "app/[locale]/our-work/project-implementation/layout.tsx": {
+    "mtime": 1794241852.504542,
+    "seen": 1794245496.1981049,
+    "ast_hash": "108f129c66cd944565980b7a19b446f9",
+    "semantic_hash": "108f129c66cd944565980b7a19b446f9"
+  },
+  "app/[locale]/our-work/project-implementation/page.tsx": {
+    "mtime": 1794241852.518802,
+    "seen": 1794245496.1981072,
+    "ast_hash": "d8e72c5aba56155c73b94b987cb3718b",
+    "semantic_hash": "d8e72c5aba56155c73b94b987cb3718b"
+  },
+  "app/[locale]/our-work/stakeholder-convenings/layout.tsx": {
+    "mtime": 1794241852.5320423,
+    "seen": 1794245496.1981091,
+    "ast_hash": "2f14a7223db6a67b542f23bec489f2ce",
+    "semantic_hash": "2f14a7223db6a67b542f23bec489f2ce"
+  },
+  "app/[locale]/our-work/stakeholder-convenings/page.tsx": {
+    "mtime": 1794241852.5320423,
+    "seen": 1794245496.1981113,
+    "ast_hash": "df9c97f581747d67ff6cc906a397d6f1",
+    "semantic_hash": "df9c97f581747d67ff6cc906a397d6f1"
+  },
+  "app/[locale]/our-work/technical-studies/layout.tsx": {
+    "mtime": 1794241852.5628734,
+    "seen": 1794245496.1981132,
+    "ast_hash": "cc6d16cde0ee0419de7b1d3542644432",
+    "semantic_hash": "cc6d16cde0ee0419de7b1d3542644432"
+  },
+  "app/[locale]/our-work/technical-studies/page.tsx": {
+    "mtime": 1794241852.5713663,
+    "seen": 1794245496.1981153,
+    "ast_hash": "f240853a143d9332f8c76856af25ec5f",
+    "semantic_hash": "f240853a143d9332f8c76856af25ec5f"
+  },
+  "app/[locale]/page.tsx": {
+    "mtime": 1794241852.2517786,
+    "seen": 1794245496.1981175,
+    "ast_hash": "1aa6a6594abf13e9d4b0634c795abf8e",
+    "semantic_hash": "1aa6a6594abf13e9d4b0634c795abf8e"
+  },
+  "app/[locale]/privacy/page.tsx": {
+    "mtime": 1794241852.5852456,
+    "seen": 1794245496.1981194,
+    "ast_hash": "a20936f46bc9e10977f4f7d534f633fd",
+    "semantic_hash": "a20936f46bc9e10977f4f7d534f633fd"
+  },
+  "app/[locale]/resources/layout.tsx": {
+    "mtime": 1794241852.5993085,
+    "seen": 1794245496.1981215,
+    "ast_hash": "0c3f70934177fd5e4b9da27529dd02be",
+    "semantic_hash": "0c3f70934177fd5e4b9da27529dd02be"
+  },
+  "app/[locale]/resources/page.tsx": {
+    "mtime": 1794241852.60533,
+    "seen": 1794245496.1981237,
+    "ast_hash": "08c29a465967687c888cfcc285ce3439",
+    "semantic_hash": "08c29a465967687c888cfcc285ce3439"
+  },
+  "app/[locale]/terms/page.tsx": {
+    "mtime": 1794241852.6119342,
+    "seen": 1794245496.1981258,
+    "ast_hash": "fa6edd2fec8d230c545e8004b0cf464f",
+    "semantic_hash": "fa6edd2fec8d230c545e8004b0cf464f"
+  },
+  "app/api/contact/route.ts": {
+    "mtime": 1794241852.6424215,
+    "seen": 1794245496.1981275,
+    "ast_hash": "055bc0ac4a06d01bfc4e40248f4b6094",
+    "semantic_hash": "055bc0ac4a06d01bfc4e40248f4b6094"
+  },
+  "app/api/email-preview/route.ts": {
+    "mtime": 1794241852.6590648,
+    "seen": 1794245496.19813,
+    "ast_hash": "8dd0bb4713c88bfac2806b8faf4a6da8",
+    "semantic_hash": "8dd0bb4713c88bfac2806b8faf4a6da8"
+  },
+  "app/robots.ts": {
+    "mtime": 1794241852.2161603,
+    "seen": 1794245496.1981323,
+    "ast_hash": "c02a72f63b8e412e40deb6fcb13815dc",
+    "semantic_hash": "c02a72f63b8e412e40deb6fcb13815dc"
+  },
+  "app/sitemap.ts": {
+    "mtime": 1794241852.223953,
+    "seen": 1794245496.1981342,
+    "ast_hash": "379e53f9384af265ba424d11b531baa9",
+    "semantic_hash": "379e53f9384af265ba424d11b531baa9"
+  },
+  "components.json": {
+    "mtime": 1794241852.0144796,
+    "seen": 1794245496.1981363,
+    "ast_hash": "a1e61f056d2c0c6f1e4ef277a260dee7",
+    "semantic_hash": "a1e61f056d2c0c6f1e4ef277a260dee7"
+  },
+  "components/client-logos.tsx": {
+    "mtime": 1794241852.672398,
+    "seen": 1794245496.198138,
+    "ast_hash": "07da32059822646b2efd0ae29153743b",
+    "semantic_hash": "07da32059822646b2efd0ae29153743b"
+  },
+  "components/cookie-toast.tsx": {
+    "mtime": 1794241852.6746984,
+    "seen": 1794245496.1981401,
+    "ast_hash": "7c0ee0a065c2d76dde865498d658aa75",
+    "semantic_hash": "7c0ee0a065c2d76dde865498d658aa75"
+  },
+  "components/country-data.ts": {
+    "mtime": 1794246352.7091198,
+    "seen": 1794246633.0763955,
+    "ast_hash": "82f504d8a8d62bcf7b03eecf3aa6ab3b",
+    "semantic_hash": ""
+  },
+  "components/footer.tsx": {
+    "mtime": 1794241852.7014923,
+    "seen": 1794245496.1981454,
+    "ast_hash": "9e965a292da6d8d57444ecd13ef37918",
+    "semantic_hash": "9e965a292da6d8d57444ecd13ef37918"
+  },
+  "components/google-analytics.tsx": {
+    "mtime": 1794241852.710497,
+    "seen": 1794245496.1981473,
+    "ast_hash": "4733658849e3390246546733a28ea538",
+    "semantic_hash": "4733658849e3390246546733a28ea538"
+  },
+  "components/header.tsx": {
+    "mtime": 1794241852.7183332,
+    "seen": 1794245496.1981494,
+    "ast_hash": "49fe2855e57b43c221eca3c3c00791f8",
+    "semantic_hash": "49fe2855e57b43c221eca3c3c00791f8"
+  },
+  "components/interactive-map.tsx": {
+    "mtime": 1794246391.4720514,
+    "seen": 1794246633.0764012,
+    "ast_hash": "94003c1cbbbfdf086b5ef5f85d131173",
+    "semantic_hash": ""
+  },
+  "components/language-switch-provider.tsx": {
+    "mtime": 1794241852.7355502,
+    "seen": 1794245496.1981535,
+    "ast_hash": "589fd22637b9e5188845f5e21a5df6da",
+    "semantic_hash": "589fd22637b9e5188845f5e21a5df6da"
+  },
+  "components/liquid-glass/index.tsx": {
+    "mtime": 1794241852.7631786,
+    "seen": 1794245496.1981554,
+    "ast_hash": "166437dad563a152b0013794533e2d68",
+    "semantic_hash": "166437dad563a152b0013794533e2d68"
+  },
+  "components/liquid-glass/shader-utils.ts": {
+    "mtime": 1794241852.7717514,
+    "seen": 1794245496.1981575,
+    "ast_hash": "41a55dc88730754a82c3a0ae4ca312d7",
+    "semantic_hash": "41a55dc88730754a82c3a0ae4ca312d7"
+  },
+  "components/liquid-glass/utils.ts": {
+    "mtime": 1794241852.7857547,
+    "seen": 1794245496.1981597,
+    "ast_hash": "c57b3adf1e1b7529f4e6481e7d20dc0b",
+    "semantic_hash": "c57b3adf1e1b7529f4e6481e7d20dc0b"
+  },
+  "components/map/interactive-mapbox.tsx": {
+    "mtime": 1794246413.3188684,
+    "seen": 1794246633.076408,
+    "ast_hash": "04575e8d171f344e7fc4b50335dc5760",
+    "semantic_hash": ""
+  },
+  "components/map/map-active-project-fly-to.tsx": {
+    "mtime": 1794246396.8532188,
+    "seen": 1794246633.07641,
+    "ast_hash": "e5a996cfa43d23e59201d71bfef91043",
+    "semantic_hash": ""
+  },
+  "components/map/map-auto-center.tsx": {
+    "mtime": 1794241852.8174794,
+    "seen": 1794245496.1981654,
+    "ast_hash": "be24e2afdcec87f1bc792106d5473f95",
+    "semantic_hash": "be24e2afdcec87f1bc792106d5473f95"
+  },
+  "components/map/map-context.tsx": {
+    "mtime": 1794246455.8631177,
+    "seen": 1794246633.0764124,
+    "ast_hash": "20b1ee40cbaaf7420926a17baa54a446",
+    "semantic_hash": ""
+  },
+  "components/map/map-controls.tsx": {
+    "mtime": 1794241852.8335629,
+    "seen": 1794245496.1981697,
+    "ast_hash": "888f271b738b2f0d73146d5ef6765096",
+    "semantic_hash": "888f271b738b2f0d73146d5ef6765096"
+  },
+  "components/map/map-highlighted-countries.tsx": {
+    "mtime": 1794246473.8433783,
+    "seen": 1794246633.076415,
+    "ast_hash": "5c374a2109f6bb0c3b53a63d97871a9b",
+    "semantic_hash": ""
+  },
+  "components/map/map-marker.tsx": {
+    "mtime": 1794241852.8492856,
+    "seen": 1794245496.1981738,
+    "ast_hash": "baf1854d7768551838110df12e5f3d8c",
+    "semantic_hash": "baf1854d7768551838110df12e5f3d8c"
+  },
+  "components/map/map-popup.tsx": {
+    "mtime": 1794241852.8492856,
+    "seen": 1794245496.1981757,
+    "ast_hash": "5c30c99dee54c08485ba5e9d5931262d",
+    "semantic_hash": "5c30c99dee54c08485ba5e9d5931262d"
+  },
+  "components/map/map-search.tsx": {
+    "mtime": 1794241852.864983,
+    "seen": 1794245496.1981778,
+    "ast_hash": "e36709f17f90fb6bc60006e10a937d0e",
+    "semantic_hash": "e36709f17f90fb6bc60006e10a937d0e"
+  },
+  "components/map/map-utils.ts": {
+    "mtime": 1794241852.864983,
+    "seen": 1794245496.198241,
+    "ast_hash": "baf9993541e8b630ca17d49a0887a506",
+    "semantic_hash": "baf9993541e8b630ca17d49a0887a506"
+  },
+  "components/motion/impact-alignment.tsx": {
+    "mtime": 1794241852.8810475,
+    "seen": 1794245496.1982646,
+    "ast_hash": "b9b17f977f73b6bf5488e0f3b81d5bba",
+    "semantic_hash": "b9b17f977f73b6bf5488e0f3b81d5bba"
+  },
+  "components/motion/office-plants-gallery.tsx": {
+    "mtime": 1794241852.897738,
+    "seen": 1794245496.1982682,
+    "ast_hash": "0b9c30cef544598088c71334e0a81b99",
+    "semantic_hash": "0b9c30cef544598088c71334e0a81b99"
+  },
+  "components/motion/scroll-accordion.tsx": {
+    "mtime": 1794241852.897738,
+    "seen": 1794245496.1982694,
+    "ast_hash": "f4a90d9b4e7b3a855d3e509c0f7e4d23",
+    "semantic_hash": "f4a90d9b4e7b3a855d3e509c0f7e4d23"
+  },
+  "components/motion/services-bento-grid.tsx": {
+    "mtime": 1794241852.9140716,
+    "seen": 1794245496.1982708,
+    "ast_hash": "731acc52cebffc379cd94e8746a51fe4",
+    "semantic_hash": "731acc52cebffc379cd94e8746a51fe4"
+  },
+  "components/motion/why-agri-experience.tsx": {
+    "mtime": 1794241852.916078,
+    "seen": 1794245496.1982718,
+    "ast_hash": "5d141d15ca57eed9eb4e2934e595a3a9",
+    "semantic_hash": "5d141d15ca57eed9eb4e2934e595a3a9"
+  },
+  "components/pdf-preview.tsx": {
+    "mtime": 1794241852.737952,
+    "seen": 1794245496.1982727,
+    "ast_hash": "42eacd599f886baf4dcc92d96245a60b",
+    "semantic_hash": "42eacd599f886baf4dcc92d96245a60b"
+  },
+  "components/scroll-to-top.tsx": {
+    "mtime": 1794241852.737952,
+    "seen": 1794245496.198274,
+    "ast_hash": "3bf1599d3b99244bc36fbd02c49b2d5d",
+    "semantic_hash": "3bf1599d3b99244bc36fbd02c49b2d5d"
+  },
+  "components/ui/badge.tsx": {
+    "mtime": 1794241852.943483,
+    "seen": 1794245496.1982746,
+    "ast_hash": "c668163ef77ed404525a44bdad8d4149",
+    "semantic_hash": "c668163ef77ed404525a44bdad8d4149"
+  },
+  "components/ui/button.tsx": {
+    "mtime": 1794241852.9541562,
+    "seen": 1794245496.1982753,
+    "ast_hash": "601be4c42eeac3d93e0624fd9a795c15",
+    "semantic_hash": "601be4c42eeac3d93e0624fd9a795c15"
+  },
+  "components/ui/command.tsx": {
+    "mtime": 1794241852.9790006,
+    "seen": 1794245496.198276,
+    "ast_hash": "05f2f28c4223b32d8496c7f12af5df1d",
+    "semantic_hash": "05f2f28c4223b32d8496c7f12af5df1d"
+  },
+  "components/ui/dialog.tsx": {
+    "mtime": 1794241852.9979832,
+    "seen": 1794245496.1982772,
+    "ast_hash": "e161176c9b51776a8aa5637a635288d3",
+    "semantic_hash": "e161176c9b51776a8aa5637a635288d3"
+  },
+  "components/ui/popover.tsx": {
+    "mtime": 1794241853.0150197,
+    "seen": 1794245496.198278,
+    "ast_hash": "2cc3a66dc8b534b07b67166d450bf277",
+    "semantic_hash": "2cc3a66dc8b534b07b67166d450bf277"
+  },
+  "components/ui/rolling-text.tsx": {
+    "mtime": 1794241853.0228527,
+    "seen": 1794245496.198279,
+    "ast_hash": "541015b27b7ad87d4ac5fb4122be4abe",
+    "semantic_hash": "541015b27b7ad87d4ac5fb4122be4abe"
+  },
+  "eslint.config.mjs": {
+    "mtime": 1794241852.0258665,
+    "seen": 1794245496.1982796,
+    "ast_hash": "14e9a6917bc58d1930098368d3f46d59",
+    "semantic_hash": "14e9a6917bc58d1930098368d3f46d59"
+  },
+  "i18n/request.ts": {
+    "mtime": 1794241853.0228527,
+    "seen": 1794245496.1982803,
+    "ast_hash": "e341bae30f15183a6950bbe5f23ffeab",
+    "semantic_hash": "e341bae30f15183a6950bbe5f23ffeab"
+  },
+  "i18n/routing.ts": {
+    "mtime": 1794241853.0440485,
+    "seen": 1794245496.1982815,
+    "ast_hash": "08ad1a7ea29c650f54018049fe223335",
+    "semantic_hash": "08ad1a7ea29c650f54018049fe223335"
+  },
+  "lib/email.ts": {
+    "mtime": 1794241853.0559244,
+    "seen": 1794245496.1982822,
+    "ast_hash": "d594c822da231fedbbecfdfa9f763fc4",
+    "semantic_hash": "d594c822da231fedbbecfdfa9f763fc4"
+  },
+  "lib/public-downloads.ts": {
+    "mtime": 1794241853.062875,
+    "seen": 1794245496.1982832,
+    "ast_hash": "d8cf58baa27a47195d14637779e5c402",
+    "semantic_hash": "d8cf58baa27a47195d14637779e5c402"
+  },
+  "lib/utils.ts": {
+    "mtime": 1794241853.0709908,
+    "seen": 1794245496.1982844,
+    "ast_hash": "9a4cc6f9f3155ffdc1fa7c2c097f6429",
+    "semantic_hash": "9a4cc6f9f3155ffdc1fa7c2c097f6429"
+  },
+  "messages/en.json": {
+    "mtime": 1794241853.081257,
+    "seen": 1794245496.198285,
+    "ast_hash": "028c20253b444b310c04654cff8ca364",
+    "semantic_hash": "028c20253b444b310c04654cff8ca364"
+  },
+  "messages/fr.json": {
+    "mtime": 1794241853.0879893,
+    "seen": 1794245496.1982858,
+    "ast_hash": "17732181c0ece1c1336adac202bdb834",
+    "semantic_hash": "17732181c0ece1c1336adac202bdb834"
+  },
+  "next-env.d.ts": {
+    "mtime": 1794244661.904231,
+    "seen": 1794245496.1982865,
+    "ast_hash": "aa94238a90e7d04b7a47ecc3145ba6a0",
+    "semantic_hash": "aa94238a90e7d04b7a47ecc3145ba6a0"
+  },
+  "next.config.mjs": {
+    "mtime": 1794241852.0574667,
+    "seen": 1794245496.1982877,
+    "ast_hash": "025a3d35b230a754db4a302c788838e1",
+    "semantic_hash": "025a3d35b230a754db4a302c788838e1"
+  },
+  "optimize_images.sh": {
+    "mtime": 1794241852.0735886,
+    "seen": 1794245496.198293,
+    "ast_hash": "4c03eadd234f84f2d8a1fe8b96532db7",
+    "semantic_hash": "4c03eadd234f84f2d8a1fe8b96532db7"
+  },
+  "package.json": {
+    "mtime": 1794246502.1507242,
+    "seen": 1794246633.0764573,
+    "ast_hash": "64dd255386753d8d99bdab41d1b9daa2",
+    "semantic_hash": ""
+  },
+  "pnpm-workspace.yaml": {
+    "mtime": 1794241852.1372404,
+    "seen": 1794245496.1982994,
+    "ast_hash": "7aad49b5c5ce6ca7c67264f34a61bf0e",
+    "semantic_hash": "7aad49b5c5ce6ca7c67264f34a61bf0e"
+  },
+  "postcss.config.mjs": {
+    "mtime": 1794241852.153317,
+    "seen": 1794245496.1983001,
+    "ast_hash": "f82d40129ab70e95110c0470895b366c",
+    "semantic_hash": "f82d40129ab70e95110c0470895b366c"
+  },
+  "proxy.ts": {
+    "mtime": 1794241852.1690028,
+    "seen": 1794245496.198301,
+    "ast_hash": "2d668c2d308763f6aa82ec5bcd8a6ab5",
+    "semantic_hash": "2d668c2d308763f6aa82ec5bcd8a6ab5"
+  },
+  "scripts/auto-translate.js": {
+    "mtime": 1794241855.540823,
+    "seen": 1794245496.1983018,
+    "ast_hash": "7addbd12bdda01254d27af7fbf46f97a",
+    "semantic_hash": "7addbd12bdda01254d27af7fbf46f97a"
+  },
+  "scripts/preview-emails.js": {
+    "mtime": 1794241855.540823,
+    "seen": 1794245496.1983027,
+    "ast_hash": "d0631d629d624fbc2e9f8ce88392ae78",
+    "semantic_hash": "d0631d629d624fbc2e9f8ce88392ae78"
+  },
+  "tsconfig.json": {
+    "mtime": 1794241852.1690028,
+    "seen": 1794245496.1983035,
+    "ast_hash": "e968fc646a89bf556893764f5bc2dc70",
+    "semantic_hash": "e968fc646a89bf556893764f5bc2dc70"
+  },
+  "AGENTS.md": {
+    "mtime": 1794241851.9623272,
+    "seen": 1794245496.1983042,
+    "ast_hash": "01e8142356e15c3404e0d84c48187cd0",
+    "semantic_hash": "01e8142356e15c3404e0d84c48187cd0"
+  },
+  "README.md": {
+    "mtime": 1794241851.9843235,
+    "seen": 1794245496.1983051,
+    "ast_hash": "3897edc29dc81e41cd8f311360674071",
+    "semantic_hash": "3897edc29dc81e41cd8f311360674071"
+  },
+  "components/map/map-types.ts": {
+    "mtime": 1794246379.922668,
+    "seen": 1794246633.0764213,
+    "ast_hash": "c1db9fdb771a8889675c7fafae771990",
+    "semantic_hash": ""
+  },
+  "public/llms.txt": {
+    "mtime": 1794241853.3528044,
+    "seen": 1794246633.076469,
+    "ast_hash": "c5f7dcc9c2db6d63cefa3cfb36f58362",
+    "semantic_hash": ""
+  },
+  "public/resources/Agro-Dealer-Mapping-in-Twelve-Counties-in-Kenya.pdf": {
+    "mtime": 1794241854.7422216,
+    "seen": 1794246633.0764706,
+    "ast_hash": "325db54a388ec9f201826fb35239a224",
+    "semantic_hash": ""
+  },
+  "public/resources/Agrodealer-Baseline-Study.pdf": {
+    "mtime": 1794241854.792285,
+    "seen": 1794246633.0764718,
+    "ast_hash": "9a471e1b4257e45638db1f09638f8ccd",
+    "semantic_hash": ""
+  },
+  "public/resources/Assessment-to-Support-the-Promotion-of-Regional-Seed-Trade-in-East-Africa.pdf": {
+    "mtime": 1794241854.810217,
+    "seen": 1794246633.0764728,
+    "ast_hash": "be5ccbe0e02c7e2f48ef1629f69b03ae",
+    "semantic_hash": ""
+  },
+  "public/resources/Case-Study-County-Agrodealer-Association-Strengthening-in-Kenya.pdf": {
+    "mtime": 1794241854.8615446,
+    "seen": 1794246633.0764742,
+    "ast_hash": "c0d2ccd1019567ce80c0597f40f2fb07",
+    "semantic_hash": ""
+  },
+  "public/resources/Case-Study-MbeguChoice-Seed-Variety-IT-Platform.pdf": {
+    "mtime": 1794241854.8931434,
+    "seen": 1794246633.0764754,
+    "ast_hash": "8566178aada4c400d6359a3ea75a9524",
+    "semantic_hash": ""
+  },
+  "public/resources/Case-Study-Revising-Kenya\u2019s-Seed-Regulations.pdf": {
+    "mtime": 1794241854.9089217,
+    "seen": 1794246633.0764782,
+    "ast_hash": "b471447edfdaa4e477d92e2dc58d4e06",
+    "semantic_hash": ""
+  },
+  "public/resources/Case-Study-Scratch-Off-Labels-for-Certified-Seed-in-Kenya.pdf": {
+    "mtime": 1794241854.9526212,
+    "seen": 1794246633.0764792,
+    "ast_hash": "69c28e35212a6cd14e735bdba6e1f1c3",
+    "semantic_hash": ""
+  },
+  "public/resources/Case-Study-Strengthening-a-Seed-Trade-Association-in-Kenya.pdf": {
+    "mtime": 1794241854.9687464,
+    "seen": 1794246633.0764806,
+    "ast_hash": "e7811e5f30fec83f91bb70a068e97d16",
+    "semantic_hash": ""
+  },
+  "public/resources/Case-Study-The-African-Seed-Access-Index-TASAI-Pilot.pdf": {
+    "mtime": 1794241854.984569,
+    "seen": 1794246633.0764816,
+    "ast_hash": "e2b9e01afba91d593ad89f8bb73816e1",
+    "semantic_hash": ""
+  },
+  "public/resources/Crop-Seed-Company-Proposition-for-Improving-Current-Seed-Regulation-in-Kenya.pdf": {
+    "mtime": 1794241854.984569,
+    "seen": 1794246633.0764825,
+    "ast_hash": "c57c333a9480a22ca0e62e800dfe27a0",
+    "semantic_hash": ""
+  },
+  "public/resources/Empowering-Kenyan-Farmers-to-Report-Low-Quality-or-Fake-Seed-to-the-Regulator.pdf": {
+    "mtime": 1794241854.984569,
+    "seen": 1794246633.0764835,
+    "ast_hash": "918e40c713f54545c107018c3dc9cb41",
+    "semantic_hash": ""
+  },
+  "public/resources/Empowering-Tanzanias-Farmers-to-Report-Low-Quality-or-Fake-Seed-to-the-Regulator.pdf": {
+    "mtime": 1794241855.0077958,
+    "seen": 1794246633.076485,
+    "ast_hash": "11ff7a76515ab7aee450ed730184967d",
+    "semantic_hash": ""
+  },
+  "public/resources/Food-Security-Crop-Seed-in-Kenya-Part-1-Challenging-Trends-We-Cannot-Afford-to-Ignore.pdf": {
+    "mtime": 1794241855.0343874,
+    "seen": 1794246633.0764863,
+    "ast_hash": "2897a3afdee02155652008523eb159c4",
+    "semantic_hash": ""
+  },
+  "public/resources/Food-Security-Crop-Seed-in-Kenya-Part-2-Big-Payoffs-We-Cannot-Afford-to-Ignore.pdf": {
+    "mtime": 1794241855.0483217,
+    "seen": 1794246633.0764875,
+    "ast_hash": "c14bed3e668967dea9b2b64a4722e76c",
+    "semantic_hash": ""
+  },
+  "public/resources/Kenya-Seed-Industry-Study.pdf": {
+    "mtime": 1794241855.073894,
+    "seen": 1794246633.0764883,
+    "ast_hash": "3942a8dbfedb55b4d1830fa1c404c204",
+    "semantic_hash": ""
+  },
+  "public/resources/La-boite-a-outils-des-entreprises-semencieres-Africaines.pdf": {
+    "mtime": 1794241855.1120293,
+    "seen": 1794246633.0764894,
+    "ast_hash": "c3c78a4c0706c93f89a13365e4923653",
+    "semantic_hash": ""
+  },
+  "public/resources/Reaching-More-Farmers-with-High-Quality-Seed-for-Drought-Tolerant-Crops.pdf": {
+    "mtime": 1794241855.1545448,
+    "seen": 1794246633.0764904,
+    "ast_hash": "81da7e0e0203c742610290c60209678f",
+    "semantic_hash": ""
+  },
+  "public/resources/Scoping-Study-Agro-Dealer-Association-Development-in-Twelve-Counties-in-Kenya.pdf": {
+    "mtime": 1794241855.1676965,
+    "seen": 1794246633.0764916,
+    "ast_hash": "2247e339b0c3764af8305ed1fdc861a3",
+    "semantic_hash": ""
+  },
+  "public/resources/Scoping-Study-Horticulture-Seedling-Nurseries-as-a-Viable-Business-Model-in-Kenya.pdf": {
+    "mtime": 1794241855.1773577,
+    "seen": 1794246633.0764928,
+    "ast_hash": "bd2c53b36a5f8d5a41c60656025d9ff5",
+    "semantic_hash": ""
+  },
+  "public/resources/Scoping-Study-Pasture-and-Fodder-Planting-Materials-in-Kenya.pdf": {
+    "mtime": 1794241855.2059674,
+    "seen": 1794246633.0764937,
+    "ast_hash": "44e37e30d652a3c0c8e640636198cb42",
+    "semantic_hash": ""
+  },
+  "public/resources/Scoping-Study-Planting-Materials-for-Value-Chain-Crops-in-Kenya-banana-avocado-mango-pineapples-passion-fruit-sweet-potatoes-African-leafy-vegetables.pdf": {
+    "mtime": 1794241855.2235186,
+    "seen": 1794246633.0764947,
+    "ast_hash": "3ef5797dfa47c19531dcab6758f3b782",
+    "semantic_hash": ""
+  },
+  "public/resources/Seed-Company-Survey-and-Analysis-\u2013-Sub-Saharan-Africa.pdf": {
+    "mtime": 1794241855.2235186,
+    "seen": 1794246633.076496,
+    "ast_hash": "d241f6889561b41ba2916069d995c04b",
+    "semantic_hash": ""
+  },
+  "public/resources/The-African-Seed-Company-Toolbox-52-Tools-Every-Seed-Company-Manager-Should-Know-How-to-Use-ENGLISH.pdf": {
+    "mtime": 1794241855.326275,
+    "seen": 1794246633.076497,
+    "ast_hash": "a6c122cb015cf82e315b5d713a5ff71a",
+    "semantic_hash": ""
+  },
+  "public/resources/Variety-Identification-Number-VIN-System-Summary-Report-of-Scoping-Study.pdf": {
+    "mtime": 1794241855.3385265,
+    "seen": 1794246633.0764983,
+    "ast_hash": "cc9746e25c6e76c57dad129e0325e532",
+    "semantic_hash": ""
+  },
+  "public/AGRA.png": {
+    "mtime": 1794241853.1010132,
+    "seen": 1794246633.0764995,
+    "ast_hash": "c8a2a0bcba3446d7a86f3696e3b54f44",
+    "semantic_hash": ""
+  },
+  "public/Gates_Foundation_Logo.svg": {
+    "mtime": 1794241853.1010132,
+    "seen": 1794246633.0765004,
+    "ast_hash": "18d0c7af5d6ad2958f1696d4ef055e96",
+    "semantic_hash": ""
+  },
+  "public/M3.png": {
+    "mtime": 1794241853.116715,
+    "seen": 1794246633.0765016,
+    "ast_hash": "306390fcb7baf4d3dea00f5f96e5cb4b",
+    "semantic_hash": ""
+  },
+  "public/M3.webp": {
+    "mtime": 1794241853.1251755,
+    "seen": 1794246633.0765028,
+    "ast_hash": "10bdb673a520b4030f2c8ae43569b954",
+    "semantic_hash": ""
+  },
+  "public/Mbegu Choice.png": {
+    "mtime": 1794241853.1376424,
+    "seen": 1794246633.076504,
+    "ast_hash": "b5f117f70cb4afd9122023e2ae43639a",
+    "semantic_hash": ""
+  },
+  "public/Newsletters.svg": {
+    "mtime": 1794241853.1428125,
+    "seen": 1794246633.0765052,
+    "ast_hash": "51c2f4ce746c4757029240f5c13ba7c0",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/1.webp": {
+    "mtime": 1794241853.6588266,
+    "seen": 1794246633.0765061,
+    "ast_hash": "60e0897ee12f5877e9c7ff68167c3dec",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/10.webp": {
+    "mtime": 1794241853.6783423,
+    "seen": 1794246633.076507,
+    "ast_hash": "4d24e18cc26c142ad19ab18e94858f60",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/11.webp": {
+    "mtime": 1794241853.6843617,
+    "seen": 1794246633.076508,
+    "ast_hash": "920d24b7fac4669fb6110361e010051c",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/12.webp": {
+    "mtime": 1794241853.6883755,
+    "seen": 1794246633.0765092,
+    "ast_hash": "829dbdf64591af2a9404951a9faf376b",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/13.webp": {
+    "mtime": 1794241853.7040482,
+    "seen": 1794246633.0765102,
+    "ast_hash": "c00f2aab79871eaf278f5468802a1abf",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/14.webp": {
+    "mtime": 1794241853.7358234,
+    "seen": 1794246633.0765111,
+    "ast_hash": "9ad1ebe72a9f7ec72c1df3dcc0a33b0e",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/15.webp": {
+    "mtime": 1794241853.7556348,
+    "seen": 1794246633.0765126,
+    "ast_hash": "cf0f1433c095cbecb4bb7d577f2a3838",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/16.webp": {
+    "mtime": 1794241853.7576413,
+    "seen": 1794246633.0765135,
+    "ast_hash": "ffb8139a05c05aa3f0408063ce5d0fa9",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/17.webp": {
+    "mtime": 1794241853.7757585,
+    "seen": 1794246633.0765145,
+    "ast_hash": "386f5f5f191da3191416fff98553c977",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/2.webp": {
+    "mtime": 1794241853.7834897,
+    "seen": 1794246633.0765157,
+    "ast_hash": "073df8ec014020f33041f767700c4b5c",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/3.webp": {
+    "mtime": 1794241853.7922351,
+    "seen": 1794246633.0765169,
+    "ast_hash": "dd84dead81b08267e0d149573d21e7a8",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/4.2.webp": {
+    "mtime": 1794241853.7987678,
+    "seen": 1794246633.076518,
+    "ast_hash": "7ae47ae11397a247ebb424b567a45c89",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/4.webp": {
+    "mtime": 1794241853.8197372,
+    "seen": 1794246633.0765193,
+    "ast_hash": "55104dcc490eac89ea01ff16529c50cc",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/5.2.webp": {
+    "mtime": 1794241853.8484128,
+    "seen": 1794246633.0765202,
+    "ast_hash": "cbd5c692fb5465d80dd4e0cc50341b3a",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/5.webp": {
+    "mtime": 1794241853.858888,
+    "seen": 1794246633.0765214,
+    "ast_hash": "450bff7936a3d9b34edb74556cfe9d19",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/6.webp": {
+    "mtime": 1794241853.861665,
+    "seen": 1794246633.0765226,
+    "ast_hash": "e072bb42098cdf82b7508d7d2f373512",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/7.webp": {
+    "mtime": 1794241853.8773787,
+    "seen": 1794246633.0765235,
+    "ast_hash": "36631470cbf310d770dfc4b065a97977",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/8.webp": {
+    "mtime": 1794241853.8931446,
+    "seen": 1794246633.0765245,
+    "ast_hash": "22896e73ff168dfb567edd00502b603e",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/en/9.webp": {
+    "mtime": 1794241853.898702,
+    "seen": 1794246633.076526,
+    "ast_hash": "cdf3e1116949bf2a1430890f30954bea",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/fr/1.webp": {
+    "mtime": 1794241853.9093022,
+    "seen": 1794246633.0765266,
+    "ast_hash": "59a93827380638ca4f0babcfc67a282b",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/fr/10.webp": {
+    "mtime": 1794241853.9093022,
+    "seen": 1794246633.0765278,
+    "ast_hash": "83be7bd3a3bc5f8d54078a7975b647fd",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/fr/11.webp": {
+    "mtime": 1794241853.9249437,
+    "seen": 1794246633.0765288,
+    "ast_hash": "681935f74c0175fadafc3c573bfd2e19",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/fr/12.webp": {
+    "mtime": 1794241853.9249437,
+    "seen": 1794246633.07653,
+    "ast_hash": "74f252552e5756042741ef33ee9e9ac9",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/fr/13.webp": {
+    "mtime": 1794241853.940597,
+    "seen": 1794246633.076531,
+    "ast_hash": "04f50bd666085d5d9debe20f04ec0481",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/fr/14.webp": {
+    "mtime": 1794241853.9426053,
+    "seen": 1794246633.0765321,
+    "ast_hash": "a7710d8ca9431c5e52d4cabd08dfc7d9",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/fr/15.webp": {
+    "mtime": 1794241853.9426053,
+    "seen": 1794246633.076533,
+    "ast_hash": "e2b96aadf3f8c3cc762f412a3d1e17d9",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/fr/16.webp": {
+    "mtime": 1794241853.9565043,
+    "seen": 1794246633.0765343,
+    "ast_hash": "bc9e218dc9bce29b6b6d53112ec0fa1d",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/fr/17.webp": {
+    "mtime": 1794241853.9565043,
+    "seen": 1794246633.0765352,
+    "ast_hash": "cd38bd7247323a2fd964d9d3abd39ece",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/fr/2.webp": {
+    "mtime": 1794241853.9565043,
+    "seen": 1794246633.0765364,
+    "ast_hash": "e64bcc4abca6d6f49ea8e3ed2cfd2439",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/fr/3.webp": {
+    "mtime": 1794241853.9746735,
+    "seen": 1794246633.0765371,
+    "ast_hash": "ffef7fd81fd6b02a7e0e0b68fb51d55d",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/fr/4.webp": {
+    "mtime": 1794241853.9746735,
+    "seen": 1794246633.076538,
+    "ast_hash": "534004aff3b586688ec0f37b36d3590a",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/fr/5.webp": {
+    "mtime": 1794241853.9883227,
+    "seen": 1794246633.076539,
+    "ast_hash": "718b382be3d68c51b3c2b504dd3eb194",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/fr/6.webp": {
+    "mtime": 1794241853.9922576,
+    "seen": 1794246633.0765402,
+    "ast_hash": "d918804a533f51ef75b2e7ca956a686d",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/fr/7.webp": {
+    "mtime": 1794241853.9987185,
+    "seen": 1794246633.0765412,
+    "ast_hash": "40ffdf0d208dd1bffea47d01c4676cfe",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/fr/8.webp": {
+    "mtime": 1794241854.0040698,
+    "seen": 1794246633.0765421,
+    "ast_hash": "b2f530ac1cd794e3421d19689afd8165",
+    "semantic_hash": ""
+  },
+  "public/SDG-images/fr/9.webp": {
+    "mtime": 1794241854.0122273,
+    "seen": 1794246633.0765433,
+    "ast_hash": "37232c46ad9a6a7f309df17ca807a04d",
+    "semantic_hash": ""
+  },
+  "public/SDGs/SDG-1.svg": {
+    "mtime": 1794241854.0224266,
+    "seen": 1794246633.0765445,
+    "ast_hash": "40c4159aad6921fcadb1422188c3baa3",
+    "semantic_hash": ""
+  },
+  "public/SDGs/SDG-10.svg": {
+    "mtime": 1794241854.0224266,
+    "seen": 1794246633.0765455,
+    "ast_hash": "4163eeaf787b0a32f9abdea8022783d1",
+    "semantic_hash": ""
+  },
+  "public/SDGs/SDG-11.svg": {
+    "mtime": 1794241854.0355246,
+    "seen": 1794246633.0765462,
+    "ast_hash": "92d5494748879c7a215c7cfc5e82e919",
+    "semantic_hash": ""
+  },
+  "public/SDGs/SDG-12.svg": {
+    "mtime": 1794241854.0355246,
+    "seen": 1794246633.0765474,
+    "ast_hash": "55c5df6f5094462b03d88ad5be443880",
+    "semantic_hash": ""
+  },
+  "public/SDGs/SDG-13.svg": {
+    "mtime": 1794241854.0516794,
+    "seen": 1794246633.0765486,
+    "ast_hash": "0f8a39869d8a2f9eaecda1063350817c",
+    "semantic_hash": ""
+  },
+  "public/SDGs/SDG-14.svg": {
+    "mtime": 1794241854.0516794,
+    "seen": 1794246633.0765493,
+    "ast_hash": "e7cbe62e80f3cda7943278a73ca1681b",
+    "semantic_hash": ""
+  },
+  "public/SDGs/SDG-15.svg": {
+    "mtime": 1794241854.0673647,
+    "seen": 1794246633.0765505,
+    "ast_hash": "766db32e9f4ac022a06b31d6848e5023",
+    "semantic_hash": ""
+  },
+  "public/SDGs/SDG-16.svg": {
+    "mtime": 1794241854.0673647,
+    "seen": 1794246633.0765514,
+    "ast_hash": "2baaf4ab1d6477acc552bd6eae97fc58",
+    "semantic_hash": ""
+  },
+  "public/SDGs/SDG-17.svg": {
+    "mtime": 1794241854.0755768,
+    "seen": 1794246633.0765555,
+    "ast_hash": "b74288b2bf6dbfe9cadf7801ac1ef53d",
+    "semantic_hash": ""
+  },
+  "public/SDGs/SDG-2.svg": {
+    "mtime": 1794241854.083008,
+    "seen": 1794246633.0765564,
+    "ast_hash": "2155bc958c8a26ee15bb8ca5ded5cd45",
+    "semantic_hash": ""
+  },
+  "public/SDGs/SDG-3.svg": {
+    "mtime": 1794241854.0961742,
+    "seen": 1794246633.0765576,
+    "ast_hash": "2654a62f5943e7e69adefc4c377823d6",
+    "semantic_hash": ""
+  },
+  "public/SDGs/SDG-4.svg": {
+    "mtime": 1794241854.1026976,
+    "seen": 1794246633.0765586,
+    "ast_hash": "dde72148abdbfcc8a397a10d35bc997d",
+    "semantic_hash": ""
+  },
+  "public/SDGs/SDG-5.svg": {
+    "mtime": 1794241854.108718,
+    "seen": 1794246633.0765595,
+    "ast_hash": "f73981a538ad1543e96175eb063b5951",
+    "semantic_hash": ""
+  },
+  "public/SDGs/SDG-6.svg": {
+    "mtime": 1794241854.1162393,
+    "seen": 1794246633.0765607,
+    "ast_hash": "956a560748d5cec75dc3f4b680cac811",
+    "semantic_hash": ""
+  },
+  "public/SDGs/SDG-7.svg": {
+    "mtime": 1794241854.1222684,
+    "seen": 1794246633.0765617,
+    "ast_hash": "b0e988d96a0f7275a9441135b7566c3a",
+    "semantic_hash": ""
+  },
+  "public/SDGs/SDG-8.svg": {
+    "mtime": 1794241854.130155,
+    "seen": 1794246633.0765626,
+    "ast_hash": "adc41b5d3c9f86483068a107defdb59a",
+    "semantic_hash": ""
+  },
+  "public/SDGs/SDG-9.svg": {
+    "mtime": 1794241854.130155,
+    "seen": 1794246633.0765636,
+    "ast_hash": "5f0b1cbc30de3c9e6d5ac643b66bac54",
+    "semantic_hash": ""
+  },
+  "public/USAID-Identity.svg": {
+    "mtime": 1794241853.1551638,
+    "seen": 1794246633.076565,
+    "ast_hash": "12c6a60e723b74d0790573872bf99620",
+    "semantic_hash": ""
+  },
+  "public/Videos/hero-poster.jpg": {
+    "mtime": 1794241854.1463602,
+    "seen": 1794246633.0765662,
+    "ast_hash": "712bb68919238c2ccfb4937c0927708e",
+    "semantic_hash": ""
+  },
+  "public/adam-smith-international-logo.png": {
+    "mtime": 1794241853.1571698,
+    "seen": 1794246633.0765674,
+    "ast_hash": "57a9210b1b243dbb99913c166bdf67a8",
+    "semantic_hash": ""
+  },
+  "public/agdevco-logo.png": {
+    "mtime": 1794241853.1643429,
+    "seen": 1794246633.0765684,
+    "ast_hash": "cedb96275d75e4e3866735b4db98bceb",
+    "semantic_hash": ""
+  },
+  "public/agri-experience-logo.png": {
+    "mtime": 1794241853.175584,
+    "seen": 1794246633.0765693,
+    "ast_hash": "712c0886dd491176fe9478a3b4b9d09d",
+    "semantic_hash": ""
+  },
+  "public/agri-footer-landscape.jpg": {
+    "mtime": 1794241853.189693,
+    "seen": 1794246633.0765703,
+    "ast_hash": "597ea7eeccd92a5147f1dfdcfb59cecf",
+    "semantic_hash": ""
+  },
+  "public/apple-icon.png": {
+    "mtime": 1794241853.197866,
+    "seen": 1794246633.0765717,
+    "ast_hash": "a658ea73472254e6f8c3a7d97c5898d8",
+    "semantic_hash": ""
+  },
+  "public/cimmyt-logo.svg": {
+    "mtime": 1794241853.197866,
+    "seen": 1794246633.0765727,
+    "ast_hash": "a169169b1e62fdaecd88c15845889c0a",
+    "semantic_hash": ""
+  },
+  "public/crs-logo.png": {
+    "mtime": 1794241853.2119553,
+    "seen": 1794246633.0765736,
+    "ast_hash": "e0059ab4bef8cbb4f130d5f08e7f63b4",
+    "semantic_hash": ""
+  },
+  "public/elan-logo.png": {
+    "mtime": 1794241853.2279243,
+    "seen": 1794246633.0765748,
+    "ast_hash": "cca85826a349ede6a536093c3a168511",
+    "semantic_hash": ""
+  },
+  "public/favicon.svg": {
+    "mtime": 1794241853.2440834,
+    "seen": 1794246633.0765758,
+    "ast_hash": "63cbf433bbf3ba7a8167dc2be2d1287b",
+    "semantic_hash": ""
+  },
+  "public/flags/bf.png": {
+    "mtime": 1794241854.2923696,
+    "seen": 1794246633.076577,
+    "ast_hash": "10558b8b0dc33b5bdd705086dbf54373",
+    "semantic_hash": ""
+  },
+  "public/flags/bi.png": {
+    "mtime": 1794241854.2992373,
+    "seen": 1794246633.0765784,
+    "ast_hash": "049e8baba0b6f40637769aba2d787947",
+    "semantic_hash": ""
+  },
+  "public/flags/cd.png": {
+    "mtime": 1794241854.3074398,
+    "seen": 1794246633.0765793,
+    "ast_hash": "1b4a860c7d4f97d07676b295f5b4463f",
+    "semantic_hash": ""
+  },
+  "public/flags/cm.png": {
+    "mtime": 1794241854.3074398,
+    "seen": 1794246633.0765803,
+    "ast_hash": "eb8034b012663884a2628ab5ac429da6",
+    "semantic_hash": ""
+  },
+  "public/flags/et.png": {
+    "mtime": 1794241854.3204443,
+    "seen": 1794246633.0765815,
+    "ast_hash": "0c7a4b4cc6b931c8429163d87a335370",
+    "semantic_hash": ""
+  },
+  "public/flags/gh.png": {
+    "mtime": 1794241854.3204443,
+    "seen": 1794246633.0765824,
+    "ast_hash": "4b82a1737b3fe8b91ef37cece8f5b876",
+    "semantic_hash": ""
+  },
+  "public/flags/ke.png": {
+    "mtime": 1794241854.3358188,
+    "seen": 1794246633.0765834,
+    "ast_hash": "e1eec0b18eb12e6efa89332381301380",
+    "semantic_hash": ""
+  },
+  "public/flags/lr.png": {
+    "mtime": 1794241854.3422585,
+    "seen": 1794246633.0765843,
+    "ast_hash": "a566e5e22aede6bd2cc007cc7daf40ef",
+    "semantic_hash": ""
+  },
+  "public/flags/ml.png": {
+    "mtime": 1794241854.3518312,
+    "seen": 1794246633.0765855,
+    "ast_hash": "be3158104628990595835ce28407e515",
+    "semantic_hash": ""
+  },
+  "public/flags/mw.png": {
+    "mtime": 1794241854.3589742,
+    "seen": 1794246633.0765924,
+    "ast_hash": "50eaa873511479556a47cbdbfc3c1662",
+    "semantic_hash": ""
+  },
+  "public/flags/mz.png": {
+    "mtime": 1794241854.3589742,
+    "seen": 1794246633.0765934,
+    "ast_hash": "d8e1b5c452f118315add23486d614e5a",
+    "semantic_hash": ""
+  },
+  "public/flags/ng.png": {
+    "mtime": 1794241854.3675323,
+    "seen": 1794246633.0765946,
+    "ast_hash": "00ba6e7b349acf51f9b571660dd31392",
+    "semantic_hash": ""
+  },
+  "public/flags/rw.png": {
+    "mtime": 1794241854.3675323,
+    "seen": 1794246633.0765958,
+    "ast_hash": "d410b284f4b3d0ec3abb34fa435f587d",
+    "semantic_hash": ""
+  },
+  "public/flags/sl.png": {
+    "mtime": 1794241854.385547,
+    "seen": 1794246633.0765967,
+    "ast_hash": "cc01a579a946c3f2202104e99d671f72",
+    "semantic_hash": ""
+  },
+  "public/flags/sn.png": {
+    "mtime": 1794241854.3922045,
+    "seen": 1794246633.0765977,
+    "ast_hash": "68bfbfcdac07d7ab2f296c6a5abbb572",
+    "semantic_hash": ""
+  },
+  "public/flags/ss.png": {
+    "mtime": 1794241854.399205,
+    "seen": 1794246633.0765986,
+    "ast_hash": "268888a32c1fa0e7555336a734987c5e",
+    "semantic_hash": ""
+  },
+  "public/flags/tz.png": {
+    "mtime": 1794241854.399205,
+    "seen": 1794246633.0765996,
+    "ast_hash": "738094df3eb81d1c6ee0a025281ad713",
+    "semantic_hash": ""
+  },
+  "public/flags/ug.png": {
+    "mtime": 1794241854.4163747,
+    "seen": 1794246633.0766006,
+    "ast_hash": "553b5ffd9b2af1052419d8c62b132d2d",
+    "semantic_hash": ""
+  },
+  "public/flags/za.png": {
+    "mtime": 1794241854.4244013,
+    "seen": 1794246633.0766015,
+    "ast_hash": "54e539a22f1055e30ad1aca27da0c1e4",
+    "semantic_hash": ""
+  },
+  "public/flags/zm.png": {
+    "mtime": 1794241854.4301624,
+    "seen": 1794246633.0766027,
+    "ast_hash": "2e36bde2c12d90827fb0aaef5bb46d14",
+    "semantic_hash": ""
+  },
+  "public/flags/zw.png": {
+    "mtime": 1794241854.4361796,
+    "seen": 1794246633.0766037,
+    "ast_hash": "8aafa4f6c62be554c9a1ea37d596f2e8",
+    "semantic_hash": ""
+  },
+  "public/footer-landscape.jpg": {
+    "mtime": 1794241853.2590246,
+    "seen": 1794246633.0766044,
+    "ast_hash": "597ea7eeccd92a5147f1dfdcfb59cecf",
+    "semantic_hash": ""
+  },
+  "public/gatsby-logo.png": {
+    "mtime": 1794241853.2620585,
+    "seen": 1794246633.0766058,
+    "ast_hash": "b813c94457c1e5afa85dc3f0d58b90b4",
+    "semantic_hash": ""
+  },
+  "public/glenn-carstens-peters-piNf3C4TViA-unsplash.jpg": {
+    "mtime": 1794241853.2781541,
+    "seen": 1794246633.0766068,
+    "ast_hash": "b442ab23db6e76bb2b3f29ec46874c4e",
+    "semantic_hash": ""
+  },
+  "public/hero-bg.png": {
+    "mtime": 1794241853.2978504,
+    "seen": 1794246633.0766075,
+    "ast_hash": "796fec4fb47e13697e38042eb6a76da2",
+    "semantic_hash": ""
+  },
+  "public/hero-video-frame.jpg": {
+    "mtime": 1794241853.311215,
+    "seen": 1794246633.0766084,
+    "ast_hash": "429469af9bb0a428bbd279bf0bbd3d6e",
+    "semantic_hash": ""
+  },
+  "public/icon.svg": {
+    "mtime": 1794241853.3231795,
+    "seen": 1794246633.0766098,
+    "ast_hash": "5cc0ccd15a51fa041108352229f08d2f",
+    "semantic_hash": ""
+  },
+  "public/ifdc-logo.png": {
+    "mtime": 1794241853.3231795,
+    "seen": 1794246633.0766106,
+    "ast_hash": "eb5693a73032bfd11ed487ec82e547b2",
+    "semantic_hash": ""
+  },
+  "public/images/african-seed-company-toolbox-cover.jpg": {
+    "mtime": 1794241854.4480472,
+    "seen": 1794246633.0766115,
+    "ast_hash": "e5ffef4a9d7f13a19d6ef503e234dea8",
+    "semantic_hash": ""
+  },
+  "public/images/african-seed-company-toolbox-cover.png": {
+    "mtime": 1794241854.458338,
+    "seen": 1794246633.0766132,
+    "ast_hash": "9b3b89f5717076f74da4ba2da1b28921",
+    "semantic_hash": ""
+  },
+  "public/kalro-logo.png": {
+    "mtime": 1794241853.3388543,
+    "seen": 1794246633.0766141,
+    "ast_hash": "6da6c086b1a8632daa56d5446155ac86",
+    "semantic_hash": ""
+  },
+  "public/kephis-logo.png": {
+    "mtime": 1794241853.3388543,
+    "seen": 1794246633.0766156,
+    "ast_hash": "e6a5a0ce9cf6d69bbd9f05b9994d93a8",
+    "semantic_hash": ""
+  },
+  "public/loader-mask.svg": {
+    "mtime": 1794241853.361612,
+    "seen": 1794246633.0766168,
+    "ast_hash": "f4151fd5c1a4994eb4f277a0b5d0beff",
+    "semantic_hash": ""
+  },
+  "public/m3-logo.svg": {
+    "mtime": 1794241853.3676298,
+    "seen": 1794246633.0766177,
+    "ast_hash": "a775cfb190905deee4e24b3c6a3e2902",
+    "semantic_hash": ""
+  },
+  "public/m3-logo.webp": {
+    "mtime": 1794241853.3755848,
+    "seen": 1794246633.0766187,
+    "ast_hash": "10bdb673a520b4030f2c8ae43569b954",
+    "semantic_hash": ""
+  },
+  "public/mission-v2.jpg": {
+    "mtime": 1794241853.3865776,
+    "seen": 1794246633.0766199,
+    "ast_hash": "ce6097ae9bc3f12f0c47eadc05d70dd2",
+    "semantic_hash": ""
+  },
+  "public/moa-kenya-logo.png": {
+    "mtime": 1794241853.3978496,
+    "seen": 1794246633.076621,
+    "ast_hash": "a4dc6c90f6682e0ba83c1921d429db68",
+    "semantic_hash": ""
+  },
+  "public/moa-tanzania-logo.png": {
+    "mtime": 1794241853.4089074,
+    "seen": 1794246633.076622,
+    "ast_hash": "6ab1ebf94a7cc84b4739d4054210d8aa",
+    "semantic_hash": ""
+  },
+  "public/naro-logo.png": {
+    "mtime": 1794241853.4089074,
+    "seen": 1794246633.0766237,
+    "ast_hash": "c8405bde8d9b54c6c43fd8e540f0a6aa",
+    "semantic_hash": ""
+  },
+  "public/nasc-logo.svg": {
+    "mtime": 1794241853.4239783,
+    "seen": 1794246633.0766244,
+    "ast_hash": "a4d0da490901f0bd1cc20e158319a348",
+    "semantic_hash": ""
+  },
+  "public/nastag-logo.png": {
+    "mtime": 1794241853.436081,
+    "seen": 1794246633.0766253,
+    "ast_hash": "1beab5bfd69f36d1f20191accf2190a4",
+    "semantic_hash": ""
+  },
+  "public/office-plants/1.webp": {
+    "mtime": 1794241854.4819126,
+    "seen": 1794246633.0766268,
+    "ast_hash": "29fbaa6399296d4e30200f29e3d37125",
+    "semantic_hash": ""
+  },
+  "public/office-plants/10.webp": {
+    "mtime": 1794241854.4939227,
+    "seen": 1794246633.0766277,
+    "ast_hash": "340c7a4e8c888de8795239466d0d3c06",
+    "semantic_hash": ""
+  },
+  "public/office-plants/2.webp": {
+    "mtime": 1794241854.527488,
+    "seen": 1794246633.0766287,
+    "ast_hash": "e2a6dbc9986d76b29851837fd3dffe30",
+    "semantic_hash": ""
+  },
+  "public/office-plants/3.webp": {
+    "mtime": 1794241854.5461993,
+    "seen": 1794246633.0766294,
+    "ast_hash": "ab498414c50e4b380585c3cc1331e5e0",
+    "semantic_hash": ""
+  },
+  "public/office-plants/4.webp": {
+    "mtime": 1794241854.5522375,
+    "seen": 1794246633.0766306,
+    "ast_hash": "6d1bd575f6c027f11d0199d893b9f3f0",
+    "semantic_hash": ""
+  },
+  "public/office-plants/5.webp": {
+    "mtime": 1794241854.573049,
+    "seen": 1794246633.076634,
+    "ast_hash": "ea24eb7faa1f3783e8646ca69ee46df3",
+    "semantic_hash": ""
+  },
+  "public/office-plants/6.webp": {
+    "mtime": 1794241854.5975113,
+    "seen": 1794246633.076635,
+    "ast_hash": "7c21f9a41ed3d1415d65e4102638c0f0",
+    "semantic_hash": ""
+  },
+  "public/office-plants/7.webp": {
+    "mtime": 1794241854.6047976,
+    "seen": 1794246633.0766358,
+    "ast_hash": "39abd66abc9a572d9c842f48d5ee471d",
+    "semantic_hash": ""
+  },
+  "public/office-plants/8.webp": {
+    "mtime": 1794241854.6047976,
+    "seen": 1794246633.076637,
+    "ast_hash": "fed0739a2ceef49a74850c0274435861",
+    "semantic_hash": ""
+  },
+  "public/office-plants/9.webp": {
+    "mtime": 1794241854.6273437,
+    "seen": 1794246633.076638,
+    "ast_hash": "139334f41f96684cabcc27a3b59c9bdc",
+    "semantic_hash": ""
+  },
+  "public/our-mission-2026.jpg": {
+    "mtime": 1794241853.4433336,
+    "seen": 1794246633.076639,
+    "ast_hash": "c3abb74dcbca8a2d3457e6d4e96d4978",
+    "semantic_hash": ""
+  },
+  "public/our-mission.jpg": {
+    "mtime": 1794241853.4497354,
+    "seen": 1794246633.0766397,
+    "ast_hash": "ce6097ae9bc3f12f0c47eadc05d70dd2",
+    "semantic_hash": ""
+  },
+  "public/our-values.png": {
+    "mtime": 1794241853.4692132,
+    "seen": 1794246633.076641,
+    "ast_hash": "0b22ab9cbbfa47d60424327b3814d0f9",
+    "semantic_hash": ""
+  },
+  "public/our-vision-2026.jpg": {
+    "mtime": 1794241853.481945,
+    "seen": 1794246633.0766423,
+    "ast_hash": "97df77c83ed484cc28d6cac05be65f56",
+    "semantic_hash": ""
+  },
+  "public/our-vision.jpg": {
+    "mtime": 1794241853.4979858,
+    "seen": 1794246633.0766432,
+    "ast_hash": "0f2e910f6864e3d8e2f6694cc7017c02",
+    "semantic_hash": ""
+  },
+  "public/pexels-elvis-kambire-434351765-38025863.jpg": {
+    "mtime": 1794241853.5110197,
+    "seen": 1794246633.0766447,
+    "ast_hash": "ce6097ae9bc3f12f0c47eadc05d70dd2",
+    "semantic_hash": ""
+  },
+  "public/pexels-equalstock-27722065.jpg": {
+    "mtime": 1794241853.5219586,
+    "seen": 1794246633.0766454,
+    "ast_hash": "0f2e910f6864e3d8e2f6694cc7017c02",
+    "semantic_hash": ""
+  },
+  "public/pexels-flambo-388007-1112080.jpg": {
+    "mtime": 1794241853.5338075,
+    "seen": 1794246633.0766466,
+    "ast_hash": "597ea7eeccd92a5147f1dfdcfb59cecf",
+    "semantic_hash": ""
+  },
+  "public/pexels-halis-collu-2057418323-29219216.jpg": {
+    "mtime": 1794241853.5456119,
+    "seen": 1794246633.0766478,
+    "ast_hash": "0f2e910f6864e3d8e2f6694cc7017c02",
+    "semantic_hash": ""
+  },
+  "public/platforms/africa-crop-variety-catalogue.png": {
+    "mtime": 1794241854.6527436,
+    "seen": 1794246633.0766487,
+    "ast_hash": "414250c5bc595192fef7fbf7eb33eaae",
+    "semantic_hash": ""
+  },
+  "public/platforms/kenya-plant-variety-list.png": {
+    "mtime": 1794241854.6684499,
+    "seen": 1794246633.07665,
+    "ast_hash": "0dc0243354a78c9170bd4bba578f2a7f",
+    "semantic_hash": ""
+  },
+  "public/platforms/mbeguchoice.png": {
+    "mtime": 1794241854.6841657,
+    "seen": 1794246633.076651,
+    "ast_hash": "87685f758b8edf30ee715335fa3da3c1",
+    "semantic_hash": ""
+  },
+  "public/platforms/seed-sector-platform-kenya.png": {
+    "mtime": 1794241854.6994054,
+    "seen": 1794246633.0766523,
+    "ast_hash": "678131bd75ad28192cd1fd08dd7fc3b5",
+    "semantic_hash": ""
+  },
+  "public/platforms/tanzania-agri-inputs-platform.png": {
+    "mtime": 1794241854.7088661,
+    "seen": 1794246633.0766532,
+    "ast_hash": "2e50a3f64adfb53ae1295dc5088eafd7",
+    "semantic_hash": ""
+  },
+  "public/platforms/uganda-agri-inputs-platform.png": {
+    "mtime": 1794241854.715384,
+    "seen": 1794246633.0766544,
+    "ast_hash": "5d050cd181a2064d4d93c2dfead418d9",
+    "semantic_hash": ""
+  },
+  "public/resources/previews/preview-agrodealer-associations.jpg": {
+    "mtime": 1794241855.3503723,
+    "seen": 1794246633.0766556,
+    "ast_hash": "717279633a13b204cb805e54a7eb34ba",
+    "semantic_hash": ""
+  },
+  "public/resources/previews/preview-horticulture-nurseries.jpg": {
+    "mtime": 1794241855.3503723,
+    "seen": 1794246633.0766563,
+    "ast_hash": "33529741a58f6c7245f748a0edfc182b",
+    "semantic_hash": ""
+  },
+  "public/resources/previews/preview-pasture-fodder.jpg": {
+    "mtime": 1794241855.3754807,
+    "seen": 1794246633.0766578,
+    "ast_hash": "d9ed2ac5bd35a1f34b71f5b189362309",
+    "semantic_hash": ""
+  },
+  "public/resources/previews/preview-value-chain-crops.jpg": {
+    "mtime": 1794241855.3823295,
+    "seen": 1794246633.0766587,
+    "ast_hash": "20a81a0246a3e2e1261f845dde483f1d",
+    "semantic_hash": ""
+  },
+  "public/stak-logo.png": {
+    "mtime": 1794241853.5525742,
+    "seen": 1794246633.07666,
+    "ast_hash": "fd3109f8226847c296fe62124821072d",
+    "semantic_hash": ""
+  },
+  "public/tari-logo.png": {
+    "mtime": 1794241853.5773296,
+    "seen": 1794246633.076661,
+    "ast_hash": "03d847bd5ea88c8680f9e45953761e95",
+    "semantic_hash": ""
+  },
+  "public/tasta-logo-v2.png": {
+    "mtime": 1794241853.5773296,
+    "seen": 1794246633.0766633,
+    "ast_hash": "6ea62754977d3017d84e1de97e395ddd",
+    "semantic_hash": ""
+  },
+  "public/tasta-logo.png": {
+    "mtime": 1794241853.5932481,
+    "seen": 1794246633.0766647,
+    "ast_hash": "6ea62754977d3017d84e1de97e395ddd",
+    "semantic_hash": ""
+  },
+  "public/team/aline.png": {
+    "mtime": 1794241855.4023838,
+    "seen": 1794246633.0766656,
+    "ast_hash": "5e0454b628d15fe368e4296ec3651226",
+    "semantic_hash": ""
+  },
+  "public/team/claire.jpg": {
+    "mtime": 1794241855.4064038,
+    "seen": 1794246633.0766668,
+    "ast_hash": "4434be238829a111759b3b15324530d8",
+    "semantic_hash": ""
+  },
+  "public/team/claire2.jpg": {
+    "mtime": 1794241855.4140239,
+    "seen": 1794246633.0766678,
+    "ast_hash": "935ffa4c34e5338996c1f6ffda996de8",
+    "semantic_hash": ""
+  },
+  "public/team/denis.jpg": {
+    "mtime": 1794241855.4297066,
+    "seen": 1794246633.076669,
+    "ast_hash": "c8f35e9c72cfcd1ea6a8663c0bc39793",
+    "semantic_hash": ""
+  },
+  "public/team/denis2.jpg": {
+    "mtime": 1794241855.4417253,
+    "seen": 1794246633.0766702,
+    "ast_hash": "a4deb105812f57518bb6e653c440d1e7",
+    "semantic_hash": ""
+  },
+  "public/team/jayne.jpg": {
+    "mtime": 1794241855.4454794,
+    "seen": 1794246633.076671,
+    "ast_hash": "73662ca5432d880de1c3c2f23c590048",
+    "semantic_hash": ""
+  },
+  "public/team/jayne2.jpg": {
+    "mtime": 1794241855.4614213,
+    "seen": 1794246633.076672,
+    "ast_hash": "531b6659af9fe2491c7bcbdcc513dfe3",
+    "semantic_hash": ""
+  },
+  "public/team/kilonzo.jpg": {
+    "mtime": 1794241855.4614213,
+    "seen": 1794246633.0766733,
+    "ast_hash": "d10685c6239829e5d6194d128ef8c725",
+    "semantic_hash": ""
+  },
+  "public/team/kilonzo2.jpg": {
+    "mtime": 1794241855.4614213,
+    "seen": 1794246633.0766742,
+    "ast_hash": "5873289fedaf51ce4f43c71b29d73607",
+    "semantic_hash": ""
+  },
+  "public/team/moses.jpg": {
+    "mtime": 1794241855.481243,
+    "seen": 1794246633.0766754,
+    "ast_hash": "1c3929a7125369961016b6065bcebc97",
+    "semantic_hash": ""
+  },
+  "public/team/moses2.jpg": {
+    "mtime": 1794241855.4931521,
+    "seen": 1794246633.0766764,
+    "ast_hash": "e5c0442e8cab59929a1ee79abac44c34",
+    "semantic_hash": ""
+  },
+  "public/team/mulemia.jpg": {
+    "mtime": 1794241855.5045173,
+    "seen": 1794246633.0766773,
+    "ast_hash": "ff7d85bea5c2061de74dc9a27d48b1a9",
+    "semantic_hash": ""
+  },
+  "public/team/mulemia2.jpg": {
+    "mtime": 1794241855.5128925,
+    "seen": 1794246633.0766785,
+    "ast_hash": "54a6bccf14ea17ae2b5f013a559fe613",
+    "semantic_hash": ""
+  },
+  "public/team/ronald.jpg": {
+    "mtime": 1794241855.5247164,
+    "seen": 1794246633.0766797,
+    "ast_hash": "0d4efe52ed84f05ec3def5f6446a144b",
+    "semantic_hash": ""
+  },
+  "public/team/ronald2.jpg": {
+    "mtime": 1794241855.5247164,
+    "seen": 1794246633.0766807,
+    "ast_hash": "131691311ec2c7f56cfa584e191c4200",
+    "semantic_hash": ""
+  },
+  "public/tosci-logo.jpg": {
+    "mtime": 1794241853.6020954,
+    "seen": 1794246633.076682,
+    "ast_hash": "deb53c3ad4882ec52b8045479f256990",
+    "semantic_hash": ""
+  },
+  "public/tosci-logo.png": {
+    "mtime": 1794241853.613132,
+    "seen": 1794246633.0766835,
+    "ast_hash": "9ee8ac89d3d4b02f53ace17eb07e400d",
+    "semantic_hash": ""
+  },
+  "public/usta-logo.png": {
+    "mtime": 1794241853.624926,
+    "seen": 1794246633.0766845,
+    "ast_hash": "e44c2855d3a68cbfd919fc11141e6833",
+    "semantic_hash": ""
+  },
+  "public/vision-v2.jpg": {
+    "mtime": 1794241853.63613,
+    "seen": 1794246633.0766857,
+    "ast_hash": "0f2e910f6864e3d8e2f6694cc7017c02",
+    "semantic_hash": ""
+  },
+  "public/Videos/hero-video.mp4": {
+    "mtime": 1794241854.2188115,
+    "seen": 1794246633.0766866,
+    "ast_hash": "ce281c1d5a1a5540f1da914b63878946",
+    "semantic_hash": ""
+  },
+  "public/Videos/hero-video.webm": {
+    "mtime": 1794241854.2725005,
+    "seen": 1794246633.0766876,
+    "ast_hash": "55225ca9db219a595d7a3a7d40c8b062",
+    "semantic_hash": ""
+  },
+  "pnpm-lock.yaml": {
+    "mtime": 1794241852.1211462,
+    "seen": 1794246633.0766885,
+    "ast_hash": "e97f0a6e56b4b0e9e44ed960e31937d6",
+    "semantic_hash": ""
+  }
+}

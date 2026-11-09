@@ -1,0 +1,18 @@
+---
+source_file: "app/sitemap.ts"
+type: "code"
+community: "Case Studies & Technical Layouts"
+location: "L1"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Case_Studies__Technical_Layouts
+---
+
+# sitemap.ts
+
+## Connections
+- [[next_1]] - `imports_from` [EXTRACTED]
+- [[sitemap()]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Case_Studies__Technical_Layouts
