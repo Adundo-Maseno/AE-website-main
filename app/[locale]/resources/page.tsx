@@ -98,8 +98,8 @@ function ResourcesContent() {
                     onClick={() => handleCategoryChange(category)}
                     className={`group relative overflow-hidden inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ease-in-out ${
                       activeCategory === category
-                        ? 'bg-primary-green text-white shadow-md'
-                        : 'bg-mist text-deep-forest hover:bg-primary-green/10'
+                        ? 'bg-deep-forest text-white shadow-md'
+                        : 'bg-mist text-deep-forest hover:bg-black/5'
                     }`}
                   >
                     <RollingText>
@@ -127,22 +127,24 @@ function ResourcesContent() {
                   <PdfPreview pdfUrl={download.link} />
 
                   <div className="p-4 lg:p-5 flex flex-col flex-grow">
-                    <p className="text-sm font-bold text-primary-green tracking-wide mb-2 uppercase">{t(`downloads.${originalIdx}.client`)}</p>
+                    <p className="text-sm font-bold text-[#1b6b33] tracking-wide mb-2 uppercase">{t(`downloads.${originalIdx}.client`)}</p>
                     <p className="text-[14px] min-[1440px]:text-sm text-charcoal/70 font-light leading-relaxed mb-4 flex-grow">{t(`downloads.${originalIdx}.citation`)}</p>
                     <div className="flex flex-wrap gap-4 pt-3 border-t border-black/5 text-sm font-bold mt-auto">
                       <a
                         href={download.link}
-                        className="text-deep-forest hover:text-primary-green transition-colors inline-flex items-center gap-1"
+                        className="text-deep-forest hover:text-[#1b6b33] transition-colors inline-flex items-center gap-1"
                         download
+                        aria-label={`Download ${download.title} PDF`}
                       >
                         {t('download_pdf')} <ArrowRight size={14} />
                       </a>
                       {download.clientLink && (
                         <a
                           href={download.clientLink}
-                          className="text-deep-forest hover:text-primary-green transition-colors inline-flex items-center gap-1"
+                          className="text-deep-forest hover:text-[#1b6b33] transition-colors inline-flex items-center gap-1"
                           target="_blank"
                           rel="noreferrer"
+                          aria-label={`View external project link for ${download.title}`}
                         >
                           {t('client_link')} <ArrowRight size={14} />
                         </a>

@@ -112,3 +112,67 @@ export function BreadcrumbJsonLd({
   );
 }
 
+export function ResourcesJsonLd({
+  locale,
+  downloads
+}: {
+  locale: string;
+  downloads: Array<{
+    title: string;
+    link: string;
+    client: string;
+    citation: string;
+    category: string;
+  }>;
+}) {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ae-website-main.vercel.app';
+  const isFr = locale === 'fr';
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': `${siteUrl}/${locale}/resources#webpage`,
+    url: `${siteUrl}/${locale}/resources`,
+    name: isFr ? 'Ressources & Publications' : 'Resources & Publications',
+    description: isFr
+      ? 'Accédez aux rapports, études de cas et guides du domaine public publiés par Agri Experience.'
+      : 'Access public-domain reports, case studies, scoping studies, and toolkits curated by Agri Experience.',
+    isPartOf: {
+      '@type': 'WebSite',
+      '@id': `${siteUrl}/#website`,
+      name: 'Agri Experience',
+      url: siteUrl
+    },
+    about: {
+      '@type': 'Thing',
+      name: 'Seed Systems & Agricultural Development in Sub-Saharan Africa'
+    },
+    hasPart: downloads.map((d) => ({
+      '@type': 'DigitalDocument',
+      name: d.title,
+      headline: d.title,
+      description: d.citation,
+      encodingFormat: 'application/pdf',
+      url: `${siteUrl}${d.link}`,
+      author: {
+        '@type': 'Organization',
+        name: d.client || 'Agri Experience'
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Agri Experience',
+        url: siteUrl
+      },
+      genre: d.category,
+      inLanguage: 'en'
+    }))
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+

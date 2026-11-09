@@ -1,17 +1,17 @@
 # Graph Report - AE-website-main  (2026-11-09)
 
 ## Corpus Check
-- 99 files · ~131,345 words
+- 99 files · ~131,652 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 6 file(s) not represented in the graph (top: (none) 2, .example 1, .css 1)
 
 ## Summary
-- 501 nodes · 1015 edges · 37 communities (22 shown, 15 thin omitted)
+- 502 nodes · 1023 edges · 35 communities (21 shown, 14 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.83)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a1e2d238`
+- Built from commit: `9ea5f291`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -30,8 +30,8 @@
 - BreadcrumbJsonLd
 - office-plants-gallery.tsx
 - Agri Experience Organization
-- interactive-map.tsx
-- resources/page.tsx
+- header.tsx
+- language-switch-provider.tsx
 - scripts
 - next
 - client-logos.tsx
@@ -46,8 +46,8 @@
 ## God Nodes (most connected - your core abstractions)
 1. `next-intl` - 47 edges
 2. `react` - 39 edges
-3. `next` - 37 edges
-4. `Link` - 37 edges
+3. `Link` - 37 edges
+4. `next` - 37 edges
 5. `RollingText()` - 34 edges
 6. `lucide-react` - 32 edges
 7. `cn()` - 26 edges
@@ -56,29 +56,29 @@
 10. `InteractiveMapbox()` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Home()` --calls--> `ClientLogos()`  [EXTRACTED]
-  app/[locale]/page.tsx → components/client-logos.tsx
-- `Home()` --calls--> `WhyAgriExperience()`  [EXTRACTED]
-  app/[locale]/page.tsx → components/motion/why-agri-experience.tsx
-- `Header()` --calls--> `Link`  [EXTRACTED]
-  components/header.tsx → i18n/routing.ts
-- `MapPage()` --calls--> `InteractiveMapbox()`  [EXTRACTED]
-  app/[locale]/map/page.tsx → components/map/interactive-mapbox.tsx
-- `Badge()` --calls--> `cn()`  [EXTRACTED]
-  components/ui/badge.tsx → lib/utils.ts
+- `RootLayout()` --calls--> `CookieToast()`  [EXTRACTED]
+  app/[locale]/layout.tsx → components/cookie-toast.tsx
+- `RootLayout()` --calls--> `Footer()`  [EXTRACTED]
+  app/[locale]/layout.tsx → components/footer.tsx
+- `RootLayout()` --calls--> `Header()`  [EXTRACTED]
+  app/[locale]/layout.tsx → components/header.tsx
+- `RootLayout()` --calls--> `LanguageSwitchProvider()`  [EXTRACTED]
+  app/[locale]/layout.tsx → components/language-switch-provider.tsx
+- `RootLayout()` --calls--> `ScrollToTop()`  [EXTRACTED]
+  app/[locale]/layout.tsx → components/scroll-to-top.tsx
 
 ## Import Cycles
 - None detected.
 
-## Communities (37 total, 15 thin omitted)
+## Communities (35 total, 14 thin omitted)
 
 ### Community 0 - "react"
-Cohesion: 0.11
-Nodes (30): MapPage(), getCategoryIcon(), InteractiveMapbox(), SelectedLocation, MapActiveProjectFlyTo(), MapAutoCenter(), MapAutoCenterProps, MapContext (+22 more)
+Cohesion: 0.08
+Nodes (46): MapPage(), countrySeeds, countrySeedsFr, createGenericProjects(), getCountrySeeds(), cityCoordinates, InteractiveMap(), InteractiveMapbox (+38 more)
 
 ### Community 1 - "next-intl"
-Cohesion: 0.09
-Nodes (45): AboutPage(), ContactPage(), InsightsPage(), NewsletterPage(), OurImpactPage(), TeamMember, CapacityBuildingPage(), ClientAdvisoryPage() (+37 more)
+Cohesion: 0.08
+Nodes (49): AboutPage(), ContactPage(), InsightsPage(), NewsletterPage(), OurImpactPage(), TeamMember, CapacityBuildingPage(), ClientAdvisoryPage() (+41 more)
 
 ### Community 2 - "email.ts"
 Cohesion: 0.08
@@ -93,16 +93,16 @@ Cohesion: 0.09
 Nodes (31): devDependencies, eslint@10.9.1, husky@^9.1.7, postcss@^8.5.25, tailwindcss@^4.2.0, @tailwindcss/postcss@^4.2.0, tw-animate-css@1.3.3, @types/mapbox-gl@^3.4.1 (+23 more)
 
 ### Community 5 - "dependencies"
-Cohesion: 0.09
-Nodes (23): dependencies, clsx@^2.1.1, cmdk@1.1.1, framer-motion@^12.39.0, gsap@^3.15.0, @gsap/react@^2.1.2, lucide-react@^0.564.0, mapbox-gl@^3.24.0 (+15 more)
+Cohesion: 0.08
+Nodes (25): dependencies, clsx@^2.1.1, cmdk@1.1.1, framer-motion@^12.39.0, gsap@^3.15.0, @gsap/react@^2.1.2, lucide-react@^0.564.0, mapbox-gl@^3.24.0 (+17 more)
 
 ### Community 6 - "header.tsx"
-Cohesion: 0.12
-Nodes (16): generateShaderDisplacementMap(), getMap(), GlassContainer, GlassFilter(), LiquidGlass(), LiquidGlassProps, fragmentShaders, FragmentShaderType (+8 more)
+Cohesion: 0.13
+Nodes (15): generateShaderDisplacementMap(), getMap(), GlassContainer, GlassFilter(), LiquidGlassProps, fragmentShaders, FragmentShaderType, length() (+7 more)
 
 ### Community 7 - "header.tsx"
-Cohesion: 0.12
-Nodes (19): bebasNeue, dmSans, playfairDisplay, RootLayout(), spaceGrotesk, GoogleAnalytics(), Window, AnimatedHamburger() (+11 more)
+Cohesion: 0.17
+Nodes (11): bebasNeue, dmSans, playfairDisplay, RootLayout(), spaceGrotesk, GoogleAnalytics(), Window, JsonLd() (+3 more)
 
 ### Community 8 - "components.json"
 Cohesion: 0.10
@@ -117,8 +117,8 @@ Cohesion: 0.14
 Nodes (13): allowBuilds, @parcel/watcher, sharp, @swc/core, unrs-resolver, minimumReleaseAgeExclude, overrides, brace-expansion (+5 more)
 
 ### Community 11 - "BreadcrumbJsonLd"
-Cohesion: 0.23
-Nodes (5): AboutLayout(), OurImpactLayout(), OurWorkLayout(), ResourcesLayout(), BreadcrumbJsonLd()
+Cohesion: 0.18
+Nodes (8): AboutLayout(), OurImpactLayout(), OurWorkLayout(), ResourcesLayout(), BreadcrumbJsonLd(), ResourcesJsonLd(), PublicDownload, publicDownloads
 
 ### Community 12 - "office-plants-gallery.tsx"
 Cohesion: 0.18
@@ -128,13 +128,9 @@ Nodes (13): GalleryPage(), easeInCubic(), easeOutCirc(), OfficePlantsGallery(), 
 Cohesion: 0.20
 Nodes (12): Next.js Agent Guidelines & Rules, Agri Experience Organization, Contact & Receipt Email Pipeline, Editorial Design System, ESSETA Seed Program Initiative, Hostinger Production Deployment, Bilingual i18n & Auto-Translate Pipeline, Interactive Mapbox Map (+4 more)
 
-### Community 14 - "interactive-map.tsx"
-Cohesion: 0.20
-Nodes (16): countrySeeds, countrySeedsFr, createGenericProjects(), getCountrySeeds(), cityCoordinates, InteractiveMap(), InteractiveMapbox, InteractiveMapboxProps (+8 more)
-
-### Community 15 - "resources/page.tsx"
-Cohesion: 0.23
-Nodes (8): categories, PdfPreview, ResourcesContent(), ResourcesPage(), PublicDownload, publicDownloads, react-pdf@^10.4.1, react-pdf
+### Community 14 - "header.tsx"
+Cohesion: 0.43
+Nodes (7): AnimatedHamburger(), Header(), navItems, triggerLanguageSwitch(), LiquidGlass(), usePathname, useRouter
 
 ### Community 16 - "scripts"
 Cohesion: 0.25
@@ -163,22 +159,22 @@ Nodes (6): resolutions, brace-expansion, postcss, sharp, @types/react, @types/re
 ## Knowledge Gaps
 - **5 isolated node(s):** `Next.js Agent Guidelines & Rules`, `Editorial Design System`, `Hostinger Production Deployment`, `High-Performance Motion Design`, `Resource Library & PDF Preview`
   These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 183 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **15 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **14 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `next` connect `next` to `project-implementation/layout.tsx`, `next-intl`, `email.ts`, `stakeholder-convenings/layout.tsx`, `technical-studies/layout.tsx`, `package.json`, `dependencies`, `header.tsx`, `BreadcrumbJsonLd`, `interactive-map.tsx`, `resources/page.tsx`, `client-logos.tsx`, `contact/layout.tsx`, `insights/layout.tsx`, `newsletter/layout.tsx`, `capacity-building/layout.tsx`, `client-advisory/layout.tsx`, `digital-platforms/layout.tsx`?**
-  _High betweenness centrality (0.191) - this node is a cross-community bridge._
+- **Why does `next` connect `next` to `project-implementation/layout.tsx`, `next-intl`, `email.ts`, `stakeholder-convenings/layout.tsx`, `react`, `package.json`, `dependencies`, `header.tsx`, `BreadcrumbJsonLd`, `header.tsx`, `language-switch-provider.tsx`, `client-logos.tsx`, `our-team/layout.tsx`, `insights/layout.tsx`, `newsletter/layout.tsx`, `client-advisory/layout.tsx`, `digital-platforms/layout.tsx`?**
+  _High betweenness centrality (0.192) - this node is a cross-community bridge._
 - **What connects `Next.js Agent Guidelines & Rules`, `Editorial Design System`, `Hostinger Production Deployment` to the rest of the system?**
   _5 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `react` be split into smaller, more focused modules?**
-  _Cohesion score 0.11074197120708748 - nodes in this community are weakly interconnected._
-- **Why does `react` connect `react` to `next-intl`, `cn`, `package.json`, `dependencies`, `header.tsx`, `header.tsx`, `BreadcrumbJsonLd`, `office-plants-gallery.tsx`, `interactive-map.tsx`, `resources/page.tsx`?**
-  _High betweenness centrality (0.162) - this node is a cross-community bridge._
+  _Cohesion score 0.07680491551459294 - nodes in this community are weakly interconnected._
+- **Why does `react` connect `react` to `next-intl`, `cn`, `package.json`, `dependencies`, `header.tsx`, `header.tsx`, `BreadcrumbJsonLd`, `office-plants-gallery.tsx`, `header.tsx`, `language-switch-provider.tsx`?**
+  _High betweenness centrality (0.161) - this node is a cross-community bridge._
 - **Should `next-intl` be split into smaller, more focused modules?**
-  _Cohesion score 0.08531187122736418 - nodes in this community are weakly interconnected._
-- **Why does `next-intl` connect `next-intl` to `react`, `package.json`, `dependencies`, `header.tsx`, `BreadcrumbJsonLd`, `office-plants-gallery.tsx`, `interactive-map.tsx`, `resources/page.tsx`, `next`, `contact/layout.tsx`, `next.config.mjs`, `insights/layout.tsx`, `newsletter/layout.tsx`, `capacity-building/layout.tsx`, `client-advisory/layout.tsx`, `digital-platforms/layout.tsx`, `project-implementation/layout.tsx`, `stakeholder-convenings/layout.tsx`, `technical-studies/layout.tsx`?**
-  _High betweenness centrality (0.131) - this node is a cross-community bridge._
+  _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._
+- **Why does `next-intl` connect `next-intl` to `project-implementation/layout.tsx`, `stakeholder-convenings/layout.tsx`, `react`, `package.json`, `dependencies`, `header.tsx`, `BreadcrumbJsonLd`, `office-plants-gallery.tsx`, `header.tsx`, `next`, `our-team/layout.tsx`, `next.config.mjs`, `insights/layout.tsx`, `newsletter/layout.tsx`, `client-advisory/layout.tsx`, `digital-platforms/layout.tsx`?**
+  _High betweenness centrality (0.132) - this node is a cross-community bridge._
 - **Should `email.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.07823613086770982 - nodes in this community are weakly interconnected._

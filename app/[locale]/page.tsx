@@ -177,7 +177,7 @@ export default function Home() {
                   fill
                   priority
                   fetchPriority="high"
-                  sizes="(max-width: 767px) 100vw, 1px"
+                  sizes="100vw"
                   className="object-cover object-center"
                 />
               </div>
@@ -189,11 +189,11 @@ export default function Home() {
                   loop
                   muted
                   playsInline
-                  preload="metadata"
+                  preload="none"
                   poster="/hero-video-frame.webp"
                   className="absolute inset-0 w-full h-full object-cover object-center lg:object-[center_30%]"
                 >
-                  <source src="/Videos/hero-video.mp4" type="video/mp4" />
+                  <source src="/Videos/hero-video.mp4" type="video/mp4" media="(min-width: 768px)" />
                   <track kind="captions" src="/empty.vtt" srcLang="en" label="English" />
                 </video>
               </div>
