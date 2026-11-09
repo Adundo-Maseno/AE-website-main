@@ -14,7 +14,7 @@
   "12": "office-plants-gallery.tsx",
   "13": "Agri Experience Organization",
   "14": "interactive-map.tsx",
-  "15": "resources/page.tsx",
+  "15": "pdfjs-dist@^6.0.227",
   "16": "scripts",
   "17": "sw.js",
   "18": "next",

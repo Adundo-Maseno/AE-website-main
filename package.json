@@ -2,6 +2,7 @@
   "name": "agri-experience",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@9.15.4",
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
@@ -58,13 +59,26 @@
     "typescript": "5.7.3"
   },
   "resolutions": {
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.5",
     "brace-expansion": "latest",
     "postcss": "^8.5.25",
     "sharp": "latest"
   },
   "overrides": {
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.5",
     "brace-expansion": "latest",
     "postcss": "^8.5.25",
     "sharp": "latest"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "19.2.18",
+      "@types/react-dom": "19.2.5",
+      "brace-expansion": "latest",
+      "postcss": "^8.5.25",
+      "sharp": "latest"
+    }
   }
 }
