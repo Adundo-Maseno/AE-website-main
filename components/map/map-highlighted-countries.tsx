@@ -2,7 +2,8 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { useMap } from './map-context';
-import africaGeoJson from '@/africa.json';
+
+const AFRICA_GEOJSON_URL = '/data/africa.json';
 
 export interface MapHighlightedCountriesProps {
   onCountryClick?: (countryCode: string | null) => void;
@@ -107,7 +108,7 @@ export const MapHighlightedCountries: React.FC<MapHighlightedCountriesProps> = (
       if (!map.getSource('africa-countries')) {
         map.addSource('africa-countries', {
           type: 'geojson',
-          data: africaGeoJson as any,
+          data: AFRICA_GEOJSON_URL,
           promoteId: 'iso_a2'
         });
       }
@@ -138,7 +139,7 @@ export const MapHighlightedCountries: React.FC<MapHighlightedCountriesProps> = (
               0.45 // Lower base opacity since orange contrasts well
             ]
           }
-        }, 'waterway-label'); 
+        }, 'waterway-label');
       }
     };
 
@@ -147,15 +148,15 @@ export const MapHighlightedCountries: React.FC<MapHighlightedCountriesProps> = (
     } else {
       map.once('style.load', addLayers);
     }
-    
+
     const handleMouseMove = (e: any) => {
       if (e.features && e.features.length > 0) {
         const feature = e.features[0];
         const isoA2 = feature.properties?.iso_a2;
-        
+
         if (regionColors[isoA2]) {
           map.getCanvas().style.cursor = 'pointer';
-          
+
           if (isoA2 !== hoveredCountryRef.current) {
             if (hoveredCountryRef.current) {
               map.setFeatureState(
@@ -175,7 +176,7 @@ export const MapHighlightedCountries: React.FC<MapHighlightedCountriesProps> = (
               setHoveredNameRef.current(countryName || null);
             }
           }
-          
+
           if (setTooltipPosRef.current && e.point) {
             // Only follow mouse if a country is NOT actively selected.
             // When a country IS selected, the `render` event takes over to track the physical centroid.
@@ -222,7 +223,7 @@ export const MapHighlightedCountries: React.FC<MapHighlightedCountriesProps> = (
           const geom = feature.geometry;
           const type = geom.type;
           const coords = geom.coordinates;
-          
+
           if (type === 'Polygon') {
             coords.forEach((ring: any) => ring.forEach(update));
           } else if (type === 'MultiPolygon') {
@@ -233,26 +234,26 @@ export const MapHighlightedCountries: React.FC<MapHighlightedCountriesProps> = (
 
           if (minX !== Infinity) {
             activeCentroidRef.current = [(minX + maxX) / 2, (minY + maxY) / 2];
-            
+
             const isMobile = typeof window !== 'undefined' && window.innerWidth < 1024;
             const containerHeight = map.getContainer().clientHeight;
-            
+
             const bounds: mapboxgl.LngLatBoundsLike = [[minX, minY], [maxX, maxY]];
             const pitch = isMobile ? 0 : 45;
 
             // Desktop uses standard symmetric padding to center the selected country on screen
-            const basePadding = isMobile 
+            const basePadding = isMobile
               ? { top: 20, bottom: 20, left: 20, right: 20 }
               : { top: 60, bottom: 60, left: 60, right: 60 };
 
             const camera = map.cameraForBounds(bounds, { padding: basePadding });
-            
+
             if (camera && camera.zoom !== undefined) {
               if (isMobile) {
                 // The visible map area is the container height minus the 50vh bottom sheet
                 const bottomSheetHeight = window.innerHeight * 0.5;
                 const visibleHeight = Math.max(containerHeight - bottomSheetHeight, 100);
-                
+
                 // Adjust zoom mathematically so bounds fit in the smaller visible height
                 const ratio = visibleHeight / containerHeight;
                 camera.zoom = camera.zoom + Math.log2(ratio);
@@ -266,7 +267,7 @@ export const MapHighlightedCountries: React.FC<MapHighlightedCountriesProps> = (
                   const S = 512 * Math.pow(2, camera.zoom!);
                   // We want the country to appear 25% higher, so the camera must point 25% lower (South).
                   const shiftY = (containerHeight * 0.25) / S;
-                  
+
                   const merc = mapboxgl.default.MercatorCoordinate.fromLngLat(camera.center!);
                   merc.y += shiftY;
                   camera.center = merc.toLngLat();
@@ -305,10 +306,10 @@ export const MapHighlightedCountries: React.FC<MapHighlightedCountriesProps> = (
             isZoomedInRef.current = true;
           } else {
             activeCentroidRef.current = [e.lngLat.lng, e.lngLat.lat];
-            
+
             const isMobile = typeof window !== 'undefined' && window.innerWidth < 1024;
             const containerHeight = map.getContainer().clientHeight;
-            
+
             let targetCenter = e.lngLat;
             let targetZoom = isMobile ? 3.5 : 4.5;
             const pitch = isMobile ? 0 : 45;
@@ -319,7 +320,7 @@ export const MapHighlightedCountries: React.FC<MapHighlightedCountriesProps> = (
                 const shiftY = (containerHeight * 0.25) / S;
                 const merc = mapboxgl.default.MercatorCoordinate.fromLngLat(targetCenter);
                 merc.y += shiftY;
-                
+
                 map.flyTo({
                   center: merc.toLngLat(),
                   zoom: targetZoom,
@@ -352,7 +353,7 @@ export const MapHighlightedCountries: React.FC<MapHighlightedCountriesProps> = (
 
     const handleGlobalMapClick = (e: any) => {
       const features = map.queryRenderedFeatures(e.point, { layers: ['africa-countries-fill'] });
-      
+
       let clickedHighlightedCountry = false;
       if (features && features.length > 0) {
         const isoA2 = features[0].properties?.iso_a2;

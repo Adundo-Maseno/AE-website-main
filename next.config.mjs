@@ -12,7 +12,14 @@ const nextConfig = {
     minimumCacheTTL: 31536000,
     qualities: [75, 85],
   },
-  allowedDevOrigins: ['192.168.100.10', 'http://192.168.100.10:3000'],
+  allowedDevOrigins: [
+    'localhost',
+    'localhost:3000',
+    '127.0.0.1',
+    '127.0.0.1:3000',
+    '192.168.100.10',
+    '192.168.100.10:3000'
+  ],
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production' ? { exclude: ['error', 'warn'] } : false,
   },

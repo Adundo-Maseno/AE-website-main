@@ -84,6 +84,7 @@ import {getMessages} from 'next-intl/server';
 import LanguageSwitchProvider from '@/components/language-switch-provider'
 import GoogleAnalytics from '@/components/google-analytics'
 import CookieToast from '@/components/cookie-toast'
+import { ServiceWorkerCleanup } from '@/components/service-worker-cleanup'
 
 export default async function RootLayout({
   children,
@@ -101,6 +102,7 @@ export default async function RootLayout({
       className={`${playfairDisplay.variable} ${dmSans.variable} ${bebasNeue.variable} ${spaceGrotesk.variable} bg-background`}
     >
       <body suppressHydrationWarning className="font-dm-sans antialiased text-foreground">
+        <ServiceWorkerCleanup />
         <GoogleAnalytics />
         <NextIntlClientProvider messages={messages}>
           <LanguageSwitchProvider>

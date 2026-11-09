@@ -5,12 +5,6 @@
     "ast_hash": "4a9f461d24a05a3b58a6216f104a34b2",
     "semantic_hash": "4a9f461d24a05a3b58a6216f104a34b2"
   },
-  "africa.json": {
-    "mtime": 1794241852.0144796,
-    "seen": 1794245496.1980457,
-    "ast_hash": "527befe069216422846851d6af605fa0",
-    "semantic_hash": "527befe069216422846851d6af605fa0"
-  },
   "app/[locale]/about/layout.tsx": {
     "mtime": 1794241852.2635634,
     "seen": 1794245496.1980507,
@@ -54,10 +48,10 @@
     "semantic_hash": "7f2266e9bb0de1b0bd914c36ca2da369"
   },
   "app/[locale]/layout.tsx": {
-    "mtime": 1794241852.2338042,
-    "seen": 1794245496.1980693,
-    "ast_hash": "ebfe179b02461246c21cc21665741085",
-    "semantic_hash": "ebfe179b02461246c21cc21665741085"
+    "mtime": 1794247320.9117575,
+    "seen": 1794247383.8735924,
+    "ast_hash": "aa45f43bd127e347f8e300c94a5882ae",
+    "semantic_hash": ""
   },
   "app/[locale]/map/page.tsx": {
     "mtime": 1794241852.3426826,
@@ -132,8 +126,8 @@
     "semantic_hash": "f9f098d9345c2c6ff5baf20ca6334841"
   },
   "app/[locale]/our-work/digital-platforms/page.tsx": {
-    "mtime": 1794246443.8574297,
-    "seen": 1794246633.0763655,
+    "mtime": 1794246665.07206,
+    "seen": 1794247383.8757122,
     "ast_hash": "6de875ef2cfcef037b815cafb1f79ebb",
     "semantic_hash": ""
   },
@@ -258,9 +252,9 @@
     "semantic_hash": "7c0ee0a065c2d76dde865498d658aa75"
   },
   "components/country-data.ts": {
-    "mtime": 1794246352.7091198,
-    "seen": 1794246633.0763955,
-    "ast_hash": "82f504d8a8d62bcf7b03eecf3aa6ab3b",
+    "mtime": 1794246665.244828,
+    "seen": 1794247383.879615,
+    "ast_hash": "12e499871779e111c17ee7b9ec64d163",
     "semantic_hash": ""
   },
   "components/footer.tsx": {
@@ -282,8 +276,8 @@
     "semantic_hash": "49fe2855e57b43c221eca3c3c00791f8"
   },
   "components/interactive-map.tsx": {
-    "mtime": 1794246391.4720514,
-    "seen": 1794246633.0764012,
+    "mtime": 1794246665.5462809,
+    "seen": 1794247383.8801496,
     "ast_hash": "94003c1cbbbfdf086b5ef5f85d131173",
     "semantic_hash": ""
   },
@@ -312,14 +306,14 @@
     "semantic_hash": "c57b3adf1e1b7529f4e6481e7d20dc0b"
   },
   "components/map/interactive-mapbox.tsx": {
-    "mtime": 1794246413.3188684,
-    "seen": 1794246633.076408,
+    "mtime": 1794246665.75012,
+    "seen": 1794247383.880876,
     "ast_hash": "04575e8d171f344e7fc4b50335dc5760",
     "semantic_hash": ""
   },
   "components/map/map-active-project-fly-to.tsx": {
-    "mtime": 1794246396.8532188,
-    "seen": 1794246633.07641,
+    "mtime": 1794246665.850807,
+    "seen": 1794247383.8808777,
     "ast_hash": "e5a996cfa43d23e59201d71bfef91043",
     "semantic_hash": ""
   },
@@ -330,8 +324,8 @@
     "semantic_hash": "be24e2afdcec87f1bc792106d5473f95"
   },
   "components/map/map-context.tsx": {
-    "mtime": 1794246455.8631177,
-    "seen": 1794246633.0764124,
+    "mtime": 1794246666.098814,
+    "seen": 1794247383.881073,
     "ast_hash": "20b1ee40cbaaf7420926a17baa54a446",
     "semantic_hash": ""
   },
@@ -342,9 +336,9 @@
     "semantic_hash": "888f271b738b2f0d73146d5ef6765096"
   },
   "components/map/map-highlighted-countries.tsx": {
-    "mtime": 1794246473.8433783,
-    "seen": 1794246633.076415,
-    "ast_hash": "5c374a2109f6bb0c3b53a63d97871a9b",
+    "mtime": 1794247348.3949034,
+    "seen": 1794247383.881263,
+    "ast_hash": "626ec6599623d21035818da0bad5a84b",
     "semantic_hash": ""
   },
   "components/map/map-marker.tsx": {
@@ -504,10 +498,10 @@
     "semantic_hash": "aa94238a90e7d04b7a47ecc3145ba6a0"
   },
   "next.config.mjs": {
-    "mtime": 1794241852.0574667,
-    "seen": 1794245496.1982877,
-    "ast_hash": "025a3d35b230a754db4a302c788838e1",
-    "semantic_hash": "025a3d35b230a754db4a302c788838e1"
+    "mtime": 1794247327.5246167,
+    "seen": 1794247383.886537,
+    "ast_hash": "cd175d0f3e5ed436e14cba7ca2aaa245",
+    "semantic_hash": ""
   },
   "optimize_images.sh": {
     "mtime": 1794241852.0735886,
@@ -516,9 +510,9 @@
     "semantic_hash": "4c03eadd234f84f2d8a1fe8b96532db7"
   },
   "package.json": {
-    "mtime": 1794246502.1507242,
-    "seen": 1794246633.0764573,
-    "ast_hash": "64dd255386753d8d99bdab41d1b9daa2",
+    "mtime": 1794246666.526967,
+    "seen": 1794247383.8867514,
+    "ast_hash": "90ab6c8be5d5bad932bf1dee0174a822",
     "semantic_hash": ""
   },
   "pnpm-workspace.yaml": {
@@ -570,8 +564,8 @@
     "semantic_hash": "3897edc29dc81e41cd8f311360674071"
   },
   "components/map/map-types.ts": {
-    "mtime": 1794246379.922668,
-    "seen": 1794246633.0764213,
+    "mtime": 1794246666.2798457,
+    "seen": 1794247383.8818338,
     "ast_hash": "c1db9fdb771a8889675c7fafae771990",
     "semantic_hash": ""
   },
@@ -1713,6 +1707,18 @@
     "mtime": 1794241854.2725005,
     "seen": 1794246633.0766876,
     "ast_hash": "55225ca9db219a595d7a3a7d40c8b062",
+    "semantic_hash": ""
+  },
+  "components/service-worker-cleanup.tsx": {
+    "mtime": 1794247268.3549752,
+    "seen": 1794247383.883393,
+    "ast_hash": "2d507a424e543dd4acb7aca2b563606b",
+    "semantic_hash": ""
+  },
+  "public/sw.js": {
+    "mtime": 1794247232.5302594,
+    "seen": 1794247383.8873546,
+    "ast_hash": "b64bdac2b892c51e3a64396277bff33c",
     "semantic_hash": ""
   },
   "pnpm-lock.yaml": {
