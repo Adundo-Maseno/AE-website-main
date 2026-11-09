@@ -1,7 +1,7 @@
 # Graph Report - AE-website-main  (2026-11-09)
 
 ## Corpus Check
-- 99 files · ~131,652 words
+- 99 files · ~131,698 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 6 file(s) not represented in the graph (top: (none) 2, .example 1, .css 1)
 
@@ -11,7 +11,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9ea5f291`
+- Built from commit: `de12ad0c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -56,16 +56,16 @@
 10. `InteractiveMapbox()` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `RootLayout()` --calls--> `CookieToast()`  [EXTRACTED]
-  app/[locale]/layout.tsx → components/cookie-toast.tsx
-- `RootLayout()` --calls--> `Footer()`  [EXTRACTED]
-  app/[locale]/layout.tsx → components/footer.tsx
-- `RootLayout()` --calls--> `Header()`  [EXTRACTED]
-  app/[locale]/layout.tsx → components/header.tsx
-- `RootLayout()` --calls--> `LanguageSwitchProvider()`  [EXTRACTED]
-  app/[locale]/layout.tsx → components/language-switch-provider.tsx
-- `RootLayout()` --calls--> `ScrollToTop()`  [EXTRACTED]
-  app/[locale]/layout.tsx → components/scroll-to-top.tsx
+- `AboutLayout()` --calls--> `BreadcrumbJsonLd()`  [EXTRACTED]
+  app/[locale]/about/layout.tsx → components/json-ld.tsx
+- `OurImpactLayout()` --calls--> `BreadcrumbJsonLd()`  [EXTRACTED]
+  app/[locale]/our-impact/layout.tsx → components/json-ld.tsx
+- `OurWorkLayout()` --calls--> `BreadcrumbJsonLd()`  [EXTRACTED]
+  app/[locale]/our-work/layout.tsx → components/json-ld.tsx
+- `MapPage()` --calls--> `InteractiveMapbox()`  [EXTRACTED]
+  app/[locale]/map/page.tsx → components/map/interactive-mapbox.tsx
+- `OurImpactPage()` --calls--> `InteractiveMap()`  [EXTRACTED]
+  app/[locale]/our-impact/page.tsx → components/interactive-map.tsx
 
 ## Import Cycles
 - None detected.

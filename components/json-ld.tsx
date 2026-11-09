@@ -156,8 +156,19 @@ export function ResourcesJsonLd({
       url: `${siteUrl}${d.link}`,
       author: {
         '@type': 'Organization',
-        name: d.client || 'Agri Experience'
+        name: 'Agri Experience',
+        legalName: 'Agri Experience Ltd',
+        url: siteUrl
       },
+      creator: {
+        '@type': 'Organization',
+        name: 'Agri Experience',
+        url: siteUrl
+      },
+      funder: d.client ? {
+        '@type': 'Organization',
+        name: d.client
+      } : undefined,
       publisher: {
         '@type': 'Organization',
         name: 'Agri Experience',

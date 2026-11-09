@@ -126,7 +126,14 @@ function ResourcesContent() {
                     <PdfPreview pdfUrl={download.link} />
 
                     <div className="p-4 lg:p-5 flex flex-col flex-grow">
-                      <p className="text-sm font-bold text-[#1b6b33] tracking-wide mb-2 uppercase">{t(`downloads.${originalIdx}.client`)}</p>
+                      <div className="flex flex-wrap items-center gap-2 mb-2">
+                        <span className="text-[11px] font-bold tracking-wider uppercase px-2.5 py-0.5 rounded-full bg-deep-forest text-white">
+                          Agri Experience
+                        </span>
+                        <span className="text-xs font-semibold text-[#1b6b33] tracking-wide uppercase">
+                          {t(`downloads.${originalIdx}.client`)}
+                        </span>
+                      </div>
                       <p className="text-[14px] min-[1440px]:text-sm text-charcoal/70 font-light leading-relaxed mb-4 flex-grow">{t(`downloads.${originalIdx}.citation`)}</p>
                       <div className="flex flex-wrap gap-4 pt-3 border-t border-black/5 text-sm font-bold mt-auto">
                         <a
