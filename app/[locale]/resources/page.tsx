@@ -11,7 +11,7 @@ import { useTranslations } from 'next-intl'
 import { RollingText } from '@/components/ui/rolling-text'
 
 // Dynamically import PdfPreview with SSR disabled to fix "DOMMatrix is not defined" error
-const PdfPreview = dynamic(() => import('@/components/pdf-preview'), { 
+const PdfPreview = dynamic(() => import('@/components/pdf-preview'), {
   ssr: false,
   loading: () => (
     <div className="relative w-full rounded-xl overflow-hidden border border-primary-green/10 bg-mist flex flex-col items-center justify-center gap-3 animate-pulse aspect-[1/1.2]">
@@ -63,7 +63,7 @@ function ResourcesContent() {
     }
   }
 
-  const filteredDownloads = publicDownloads.filter(download => 
+  const filteredDownloads = publicDownloads.filter(download =>
     activeCategory === 'All' ? true : download.category === activeCategory
   )
 
@@ -96,11 +96,10 @@ function ResourcesContent() {
                   <button
                     key={category}
                     onClick={() => handleCategoryChange(category)}
-                    className={`group relative overflow-hidden inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ease-in-out ${
-                      activeCategory === category
+                    className={`group relative overflow-hidden inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ease-in-out ${activeCategory === category
                         ? 'bg-deep-forest text-white shadow-md'
                         : 'bg-mist text-deep-forest hover:bg-black/5'
-                    }`}
+                      }`}
                   >
                     <RollingText>
                       {getCategoryTranslation(category)}
@@ -115,44 +114,45 @@ function ResourcesContent() {
                 // Find index to get correct translation from the array
                 const originalIdx = publicDownloads.findIndex(d => d.title === download.title);
                 return (
-                <motion.div
-                  key={download.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{ duration: 0.6, delay: (originalIdx % 10) * 0.05 }}
-                  className="flex flex-col group border border-black/[0.04] rounded-2xl overflow-hidden hover:border-black/[0.08] transition-colors"
-                >
-                  {/* PDF first-page preview - sits flush against the border */}
-                  <PdfPreview pdfUrl={download.link} />
+                  <motion.div
+                    key={download.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-50px" }}
+                    transition={{ duration: 0.6, delay: (originalIdx % 10) * 0.05 }}
+                    className="flex flex-col group border border-black/[0.04] rounded-2xl overflow-hidden hover:border-black/[0.08] transition-colors"
+                  >
+                    {/* PDF first-page preview - sits flush against the border */}
+                    <PdfPreview pdfUrl={download.link} />
 
-                  <div className="p-4 lg:p-5 flex flex-col flex-grow">
-                    <p className="text-sm font-bold text-[#1b6b33] tracking-wide mb-2 uppercase">{t(`downloads.${originalIdx}.client`)}</p>
-                    <p className="text-[14px] min-[1440px]:text-sm text-charcoal/70 font-light leading-relaxed mb-4 flex-grow">{t(`downloads.${originalIdx}.citation`)}</p>
-                    <div className="flex flex-wrap gap-4 pt-3 border-t border-black/5 text-sm font-bold mt-auto">
-                      <a
-                        href={download.link}
-                        className="text-deep-forest hover:text-[#1b6b33] transition-colors inline-flex items-center gap-1"
-                        download
-                        aria-label={`Download ${download.title} PDF`}
-                      >
-                        {t('download_pdf')} <ArrowRight size={14} />
-                      </a>
-                      {download.clientLink && (
+                    <div className="p-4 lg:p-5 flex flex-col flex-grow">
+                      <p className="text-sm font-bold text-[#1b6b33] tracking-wide mb-2 uppercase">{t(`downloads.${originalIdx}.client`)}</p>
+                      <p className="text-[14px] min-[1440px]:text-sm text-charcoal/70 font-light leading-relaxed mb-4 flex-grow">{t(`downloads.${originalIdx}.citation`)}</p>
+                      <div className="flex flex-wrap gap-4 pt-3 border-t border-black/5 text-sm font-bold mt-auto">
                         <a
-                          href={download.clientLink}
+                          href={download.link}
                           className="text-deep-forest hover:text-[#1b6b33] transition-colors inline-flex items-center gap-1"
-                          target="_blank"
-                          rel="noreferrer"
-                          aria-label={`View external project link for ${download.title}`}
+                          download
+                          aria-label={`Download ${download.title} PDF`}
                         >
-                          {t('client_link')} <ArrowRight size={14} />
+                          {t('download_pdf')} <ArrowRight size={14} />
                         </a>
-                      )}
+                        {download.clientLink && (
+                          <a
+                            href={download.clientLink}
+                            className="text-deep-forest hover:text-[#1b6b33] transition-colors inline-flex items-center gap-1"
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label={`View external project link for ${download.title}`}
+                          >
+                            {t('client_link')} <ArrowRight size={14} />
+                          </a>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                </motion.div>
-              )})}
+                  </motion.div>
+                )
+              })}
             </div>
           </div>
         </section>
