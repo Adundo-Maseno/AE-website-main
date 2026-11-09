@@ -16,7 +16,7 @@ export default function CookieToast() {
     try {
       // Expose reset helper in browser console: window.resetCookieConsent()
       if (typeof window !== 'undefined') {
-        ;(window as any).resetCookieConsent = () => {
+        ; (window as any).resetCookieConsent = () => {
           localStorage.removeItem('cookie_consent')
           setVisible(true)
           console.log('Cookie consent cleared! Toast is now visible.')
