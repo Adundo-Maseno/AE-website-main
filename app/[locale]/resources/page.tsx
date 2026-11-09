@@ -92,20 +92,24 @@ function ResourcesContent() {
 
               {/* Filter Pills */}
               <div className="flex flex-wrap justify-center gap-3">
-                {categories.map((category) => (
-                  <button
-                    key={category}
-                    onClick={() => handleCategoryChange(category)}
-                    className={`group relative overflow-hidden inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ease-in-out ${activeCategory === category
-                        ? 'bg-deep-forest text-white shadow-md'
-                        : 'bg-mist text-deep-forest hover:bg-black/5'
+                {categories.map((category) => {
+                  const isActive = activeCategory === category
+                  return (
+                    <button
+                      key={category}
+                      onClick={() => handleCategoryChange(category)}
+                      className={`group relative overflow-hidden inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ease-in-out ${
+                        isActive
+                          ? 'bg-deep-forest text-white shadow-md'
+                          : 'bg-mist text-deep-forest hover:bg-black/5'
                       }`}
-                  >
-                    <RollingText>
-                      {getCategoryTranslation(category)}
-                    </RollingText>
-                  </button>
-                ))}
+                    >
+                      <RollingText>
+                        {getCategoryTranslation(category)}
+                      </RollingText>
+                    </button>
+                  )
+                })}
               </div>
             </motion.div>
 
