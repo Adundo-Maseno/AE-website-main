@@ -174,7 +174,8 @@ export default function Header() {
               alt="Agri Experience Logo"
               width={500}
               height={240}
-              priority
+              loading="eager"
+              decoding="async"
               style={{ width: 'auto' }}
               className="h-[3.5rem] lg:h-[4.5rem] w-auto block transition-transform group-hover:scale-105"
             />

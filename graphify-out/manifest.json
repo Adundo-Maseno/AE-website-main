@@ -180,10 +180,10 @@
     "semantic_hash": "f240853a143d9332f8c76856af25ec5f"
   },
   "app/[locale]/page.tsx": {
-    "mtime": 1794241852.2517786,
-    "seen": 1794245496.1981175,
-    "ast_hash": "1aa6a6594abf13e9d4b0634c795abf8e",
-    "semantic_hash": "1aa6a6594abf13e9d4b0634c795abf8e"
+    "mtime": 1794250786.3018723,
+    "seen": 1794250872.5473523,
+    "ast_hash": "191ae3020527c5911fa8fb1f07aa8978",
+    "semantic_hash": ""
   },
   "app/[locale]/privacy/page.tsx": {
     "mtime": 1794241852.5852456,
@@ -240,10 +240,10 @@
     "semantic_hash": "a1e61f056d2c0c6f1e4ef277a260dee7"
   },
   "components/client-logos.tsx": {
-    "mtime": 1794241852.672398,
-    "seen": 1794245496.198138,
-    "ast_hash": "07da32059822646b2efd0ae29153743b",
-    "semantic_hash": "07da32059822646b2efd0ae29153743b"
+    "mtime": 1794250686.7447944,
+    "seen": 1794250872.5492961,
+    "ast_hash": "11a8c3419a059c7c39f43ae24b6f0e24",
+    "semantic_hash": ""
   },
   "components/cookie-toast.tsx": {
     "mtime": 1794241852.6746984,
@@ -270,10 +270,10 @@
     "semantic_hash": "4733658849e3390246546733a28ea538"
   },
   "components/header.tsx": {
-    "mtime": 1794241852.7183332,
-    "seen": 1794245496.1981494,
-    "ast_hash": "49fe2855e57b43c221eca3c3c00791f8",
-    "semantic_hash": "49fe2855e57b43c221eca3c3c00791f8"
+    "mtime": 1794250801.9197114,
+    "seen": 1794250872.5501707,
+    "ast_hash": "d71e47904115da5fc35b20e4ece50f4f",
+    "semantic_hash": ""
   },
   "components/interactive-map.tsx": {
     "mtime": 1794246665.5462809,
@@ -498,9 +498,9 @@
     "semantic_hash": "aa94238a90e7d04b7a47ecc3145ba6a0"
   },
   "next.config.mjs": {
-    "mtime": 1794247508.6483333,
-    "seen": 1794248458.612586,
-    "ast_hash": "cd175d0f3e5ed436e14cba7ca2aaa245",
+    "mtime": 1794250818.6969514,
+    "seen": 1794250872.5606277,
+    "ast_hash": "68893b8235fa26ebfaf8e31d07446d55",
     "semantic_hash": ""
   },
   "optimize_images.sh": {
@@ -510,15 +510,15 @@
     "semantic_hash": "4c03eadd234f84f2d8a1fe8b96532db7"
   },
   "package.json": {
-    "mtime": 1794248906.5982444,
-    "seen": 1794248954.846872,
-    "ast_hash": "32a788bd8ae250f938d8a03ee1cce311",
+    "mtime": 1794249598.5154736,
+    "seen": 1794250872.5608819,
+    "ast_hash": "8a0024c2da33886c309c820f15fb4335",
     "semantic_hash": ""
   },
   "pnpm-workspace.yaml": {
-    "mtime": 1794248875.569475,
-    "seen": 1794248954.8468752,
-    "ast_hash": "d1241306dd3e0167aac12e923f1ca90e",
+    "mtime": 1794249355.4523463,
+    "seen": 1794250872.5608845,
+    "ast_hash": "8652a2f246e425e43cb20999f47f7aa1",
     "semantic_hash": ""
   },
   "postcss.config.mjs": {
@@ -1128,9 +1128,9 @@
     "semantic_hash": ""
   },
   "public/elan-logo.png": {
-    "mtime": 1794241853.2279243,
-    "seen": 1794246633.0765748,
-    "ast_hash": "cca85826a349ede6a536093c3a168511",
+    "mtime": 1794250673.556,
+    "seen": 1794250872.587897,
+    "ast_hash": "c4c8f7801a6f49c42436720fb0f445cc",
     "semantic_hash": ""
   },
   "public/favicon.svg": {
@@ -1284,15 +1284,15 @@
     "semantic_hash": ""
   },
   "public/hero-bg.png": {
-    "mtime": 1794241853.2978504,
-    "seen": 1794246633.0766075,
-    "ast_hash": "796fec4fb47e13697e38042eb6a76da2",
+    "mtime": 1794250675.944,
+    "seen": 1794250872.5951807,
+    "ast_hash": "eb837f746e09235da746c08af71483db",
     "semantic_hash": ""
   },
   "public/hero-video-frame.jpg": {
-    "mtime": 1794241853.311215,
-    "seen": 1794246633.0766084,
-    "ast_hash": "429469af9bb0a428bbd279bf0bbd3d6e",
+    "mtime": 1794250673.896,
+    "seen": 1794250872.595188,
+    "ast_hash": "c4bc3ec51be9a8d37fdd7160ef4a5492",
     "semantic_hash": ""
   },
   "public/icon.svg": {
@@ -1356,9 +1356,9 @@
     "semantic_hash": ""
   },
   "public/moa-kenya-logo.png": {
-    "mtime": 1794241853.3978496,
-    "seen": 1794246633.076621,
-    "ast_hash": "a4dc6c90f6682e0ba83c1921d429db68",
+    "mtime": 1794250673.418,
+    "seen": 1794250872.6002135,
+    "ast_hash": "4628e10b9f031e52c99cd482be6de0b5",
     "semantic_hash": ""
   },
   "public/moa-tanzania-logo.png": {
@@ -1380,9 +1380,9 @@
     "semantic_hash": ""
   },
   "public/nastag-logo.png": {
-    "mtime": 1794241853.436081,
-    "seen": 1794246633.0766253,
-    "ast_hash": "1beab5bfd69f36d1f20191accf2190a4",
+    "mtime": 1794250673.752,
+    "seen": 1794250872.6008933,
+    "ast_hash": "c26a74011669022e9caa5f375e60aad3",
     "semantic_hash": ""
   },
   "public/office-plants/1.webp": {
@@ -1566,9 +1566,9 @@
     "semantic_hash": ""
   },
   "public/tari-logo.png": {
-    "mtime": 1794241853.5773296,
-    "seen": 1794246633.076661,
-    "ast_hash": "03d847bd5ea88c8680f9e45953761e95",
+    "mtime": 1794250673.324,
+    "seen": 1794250872.615426,
+    "ast_hash": "9ac93237803804c4781294d72d0197fa",
     "semantic_hash": ""
   },
   "public/tasta-logo-v2.png": {
@@ -1727,10 +1727,16 @@
     "ast_hash": "6d9501db4fb21e168734f81c639e60d3",
     "semantic_hash": ""
   },
+  "public/hero-video-frame.webp": {
+    "mtime": 1794250712.135,
+    "seen": 1794250872.595194,
+    "ast_hash": "a3c26333d6c9a4f73722a630437fa569",
+    "semantic_hash": ""
+  },
   "pnpm-lock.yaml": {
-    "mtime": 1794241852.1211462,
-    "seen": 1794246633.0766885,
-    "ast_hash": "e97f0a6e56b4b0e9e44ed960e31937d6",
+    "mtime": 1794249387.8799305,
+    "seen": 1794250872.6308603,
+    "ast_hash": "540b61dc38d3371a11e21caba3854596",
     "semantic_hash": ""
   }
 }

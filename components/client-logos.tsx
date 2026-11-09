@@ -194,7 +194,7 @@ const LogoItem = ({ logo }: { logo: ClientLogo }) => (
         alt={logo.alt}
         width={320}
         height={100}
-        unoptimized
+        sizes="(max-width: 768px) 140px, 240px"
         className={`max-h-full max-w-full object-contain object-center grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-[filter,opacity] duration-300 mix-blend-multiply ${
           logo.imageClassName || ''
         }`}

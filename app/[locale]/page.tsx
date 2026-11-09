@@ -180,7 +180,7 @@ export default function Home() {
               {/* Mobile (< md): Instant LCP Image (Exact video frame screenshot) */}
               <div className="block md:hidden absolute inset-0 w-full h-full">
                 <Image
-                  src="/hero-video-frame.jpg"
+                  src="/hero-video-frame.webp"
                   alt="Agri Experience"
                   fill
                   priority
@@ -215,41 +215,30 @@ export default function Home() {
 
           <div className="relative z-10 max-w-[1400px] min-[1440px]:max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 w-full flex-1 flex flex-col justify-center">
             <div className="max-w-2xl xl:max-w-3xl 3xl:max-w-4xl space-y-6 lg:space-y-8">
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
+              <h1
                 className="font-serif tracking-tight pb-2 text-[#1A4D2E] font-bold leading-[1.15]"
                 style={{ fontSize: 'clamp(1.875rem, 1.2rem + 3.2vw, 3.75rem)' }}
               >
                 {t('hero_title_1')} <br />
                 {t('hero_title_2')} <br />
                 {t('hero_title_3')}
-              </motion.h1>
+              </h1>
 
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
+              <p
                 className="text-charcoal leading-relaxed font-normal max-w-xl xl:max-w-2xl"
                 style={{ fontSize: 'clamp(1rem, 0.9rem + 0.5vw, 1.5rem)' }}
               >
                 {t('hero_desc')}
-              </motion.p>
+              </p>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="pt-2"
-              >
+              <div className="pt-2">
                 <Link href="/our-impact" className="group relative overflow-hidden inline-flex items-center justify-center gap-3 px-6 py-3.5 lg:px-8 lg:py-4 bg-[#1A4D2E] text-white rounded-full font-bold transition duration-200 hover:bg-[#1A4D2E]/90 text-sm lg:text-base shadow-lg shadow-[#1A4D2E]/20 hover:shadow-xl hover:scale-[1.02]">
                   <RollingText className="gap-3">
                     {t('explore_impact')}
                     <ArrowRight size={18} className="transform rotate-[-45deg] group-hover:rotate-0 transition-transform duration-300 ease-out shrink-0" />
                   </RollingText>
                 </Link>
-              </motion.div>
+              </div>
 
               <motion.div
                 initial={{ opacity: 0 }}
