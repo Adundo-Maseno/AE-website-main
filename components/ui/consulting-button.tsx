@@ -31,7 +31,7 @@ export function ConsultingButton({
   disabled = false,
 }: ConsultingButtonProps) {
   const baseStyles =
-    'group relative overflow-hidden inline-flex items-center justify-center font-bold rounded-full transition-all duration-300 active:scale-95 cursor-pointer'
+    'group relative overflow-hidden inline-flex items-center justify-center font-bold rounded-full transition-all duration-300 active:scale-95 cursor-pointer select-none leading-none'
 
   const sizeStyles = {
     sm: 'text-xs px-5 py-2.5 gap-2',
@@ -55,20 +55,24 @@ export function ConsultingButton({
   const iconSizes = {
     sm: 13,
     md: 15,
-    lg: 18,
+    lg: 17,
   }
 
   const content = (
-    <RollingText className={`gap-2 items-center ${sizeStyles[size]}`}>
-      <span>{children}</span>
+    <span className="inline-flex items-center gap-2">
+      <RollingText className="leading-normal">
+        {children}
+      </RollingText>
       {icon && (
         <ArrowRight
           size={iconSizes[size]}
           className="transform rotate-[-45deg] group-hover:rotate-0 transition-transform duration-300 ease-out shrink-0"
         />
       )}
-    </RollingText>
+    </span>
   )
+
+  const combinedClass = `${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className}`
 
   if (href) {
     if (external) {
@@ -77,7 +81,7 @@ export function ConsultingButton({
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className={`${baseStyles} ${variantStyles[variant]} ${className}`}
+          className={combinedClass}
         >
           {content}
         </a>
@@ -87,7 +91,7 @@ export function ConsultingButton({
     return (
       <Link
         href={href}
-        className={`${baseStyles} ${variantStyles[variant]} ${className}`}
+        className={combinedClass}
       >
         {content}
       </Link>
@@ -99,7 +103,7 @@ export function ConsultingButton({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`${baseStyles} ${variantStyles[variant]} ${disabled ? 'opacity-50 cursor-not-allowed' : ''} ${className}`}
+      className={`${combinedClass} ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
     >
       {content}
     </button>

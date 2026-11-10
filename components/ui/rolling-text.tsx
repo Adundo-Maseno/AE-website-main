@@ -60,7 +60,7 @@ export function RollingText({ children, className = '' }: RollingTextProps) {
   };
 
   return (
-    <span className={`relative inline-flex overflow-hidden items-center ${className}`}>
+    <span className={`relative inline-flex overflow-hidden items-center h-[1.15em] leading-none ${className}`}>
       {React.Children.map(children, processNode)}
     </span>
   );
