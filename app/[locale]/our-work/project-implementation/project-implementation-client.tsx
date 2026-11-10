@@ -2,6 +2,7 @@
 
 import { RollingText } from '@/components/ui/rolling-text'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import {
   Tractor,
   Target,
@@ -13,19 +14,28 @@ import {
   CheckCircle2,
   Handshake,
   Shield,
+  Layers,
+  Calendar,
+  Building,
+  ExternalLink,
 } from 'lucide-react'
 import { Link } from '@/i18n/routing'
 import { useTranslations } from 'next-intl'
+import { ProjectItem } from '@/lib/services/projects-service'
 
 interface ProjectImplementationClientProps {
   initialHero?: {
     title?: string
     subtitle?: string
   }
+  projects?: ProjectItem[]
+  locale?: string
 }
 
 export default function ProjectImplementationClient({
   initialHero,
+  projects = [],
+  locale = 'en',
 }: ProjectImplementationClientProps) {
   const t = useTranslations('ProjectImplementation')
 
@@ -65,11 +75,42 @@ export default function ProjectImplementationClient({
     },
   ]
 
+  const reformPillars = [
+    {
+      num: '01',
+      title: t('cs_pillar1_title'),
+      desc: t('cs_pillar1_desc'),
+      icon: Sprout,
+    },
+    {
+      num: '02',
+      title: t('cs_pillar2_title'),
+      desc: t('cs_pillar2_desc'),
+      icon: Layers,
+    },
+    {
+      num: '03',
+      title: t('cs_pillar3_title'),
+      desc: t('cs_pillar3_desc'),
+      icon: Shield,
+    },
+    {
+      num: '04',
+      title: t('cs_pillar4_title'),
+      desc: t('cs_pillar4_desc'),
+      icon: Target,
+    },
+  ]
+
+  // Filter projects if custom ones exist
+  const customProjects = projects.filter(
+    (p) => !p.id.startsWith('static-') || p.id === 'static-feed-the-future'
+  )
+
   return (
     <main className="bg-white min-h-[100dvh]">
       {/* ─── Hero ─── */}
       <section className="relative w-full pt-16 lg:pt-28 pb-20 overflow-hidden">
-        {/* Background accents */}
         <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-deep-forest/[0.04] rounded-full blur-[120px] -translate-y-1/3 translate-x-1/4 pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary-green/[0.03] rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4 pointer-events-none" />
 
@@ -189,45 +230,206 @@ export default function ProjectImplementationClient({
         </div>
       </section>
 
-      {/* ─── Flagship Implementation Case Study: Tanzania Seed Systems Transformation ─── */}
+      {/* ─── Flagship Case Study: Redesigned with Photography & Editorial Dual-Column ─── */}
       <section className="w-full py-16 lg:py-24 bg-[#F4F8F0] border-y border-[#E0EAD8] overflow-hidden">
-        <div className="max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 space-y-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="space-y-6 max-w-4xl"
-          >
-            <h2
-              className="font-serif font-bold text-deep-forest tracking-tight pb-1"
-              style={{ fontSize: 'clamp(2rem, 1.4rem + 2.2vw, 3.5rem)' }}
-            >
-              {t('cs_title')}
-            </h2>
-
-            <div className="space-y-4 text-charcoal/85 font-normal leading-relaxed text-base sm:text-lg lg:text-[17px]">
-              <p>{t('cs_desc1')}</p>
-              <p>{t('cs_desc2')}</p>
-            </div>
-
-            <div className="pt-2 flex items-center justify-start">
-              <Link
-                href="/contact"
-                className="group relative overflow-hidden inline-flex items-center gap-2 px-8 py-3.5 bg-primary-green text-white rounded-full font-semibold text-sm hover:bg-primary-green/90 transition-all shadow-md"
+        <div className="max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 space-y-12">
+          {/* Top Title & Storytelling Header */}
+          <div className="flex flex-col lg:flex-row items-start justify-between gap-8 pb-4">
+            <div className="space-y-3 max-w-3xl">
+              <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary-green/10 text-primary-green text-xs font-bold uppercase tracking-wider">
+                Flagship Implementation Case Study
+              </span>
+              <h2
+                className="font-serif font-bold text-deep-forest tracking-tight pb-1"
+                style={{ fontSize: 'clamp(2rem, 1.4rem + 2.2vw, 3.5rem)' }}
               >
-                <RollingText className="gap-2">
-                  {t('cs_cta_btn')}
-                  <ArrowRight
-                    size={15}
-                    className="transform rotate-[-45deg] group-hover:rotate-0 transition-transform duration-300 ease-out shrink-0"
-                  />
-                </RollingText>
-              </Link>
+                {t('cs_title')}
+              </h2>
             </div>
-          </motion.div>
+            <div className="text-xs font-mono text-charcoal/60 bg-white/80 border border-black/[0.08] px-4 py-2 rounded-2xl backdrop-blur-xs self-start">
+              Multi-Year Systems Intervention • Tanzania
+            </div>
+          </div>
+
+          {/* Dual-Column Editorial Showcase with High-Impact Imagery */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* Visual Photography Column (5 cols) */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="lg:col-span-5 relative"
+            >
+              <div className="relative aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/5] rounded-[32px] overflow-hidden shadow-2xl border border-black/10 group">
+                <Image
+                  src="/pexels-equalstock-27722065.jpg"
+                  alt="Tanzania Seed Systems Transformation Field Implementation"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 42vw"
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-deep-forest/80 via-transparent to-transparent pointer-events-none" />
+
+                {/* Floating Badge on Image */}
+                <div className="absolute bottom-6 left-6 right-6 p-5 rounded-2xl bg-white/95 backdrop-blur-md border border-white/20 shadow-lg text-deep-forest space-y-1.5">
+                  <div className="flex items-center gap-2 text-[11px] font-bold text-primary-green uppercase tracking-wider">
+                    <Building size={13} />
+                    <span>USAID / CRS • Tanzania Ministry of Agriculture</span>
+                  </div>
+                  <p className="text-xs text-charcoal/80 font-medium leading-snug">
+                    Decentralizing seed inspection protocols and connecting 120,000+ smallholder farmers to certified seed varieties.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Narrative & 4 Reform Pillars Column (7 cols) */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.15 }}
+              className="lg:col-span-7 space-y-8"
+            >
+              <div className="space-y-4 text-charcoal/85 font-normal leading-relaxed text-base sm:text-lg">
+                <p>{t('cs_desc1')}</p>
+                <p>{t('cs_desc2')}</p>
+              </div>
+
+              {/* 4 Systemic Reform Pillars Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {reformPillars.map((pillar, idx) => {
+                  const Icon = pillar.icon
+                  return (
+                    <div
+                      key={idx}
+                      className="p-5 rounded-2xl bg-white border border-black/[0.06] hover:border-primary-green/40 hover:shadow-md transition-all duration-300 space-y-2 group"
+                    >
+                      <div className="flex items-center justify-between">
+                        <span className="font-mono text-xs font-bold text-primary-green">
+                          {pillar.num}
+                        </span>
+                        <div className="w-8 h-8 rounded-lg bg-primary-green/10 flex items-center justify-center text-primary-green group-hover:bg-primary-green group-hover:text-white transition-colors">
+                          <Icon size={16} />
+                        </div>
+                      </div>
+                      <h4 className="font-serif font-bold text-sm text-deep-forest leading-snug">
+                        {pillar.title}
+                      </h4>
+                      <p className="text-xs text-charcoal/70 font-light leading-relaxed">
+                        {pillar.desc}
+                      </p>
+                    </div>
+                  )
+                })}
+              </div>
+
+              <div className="pt-2 flex items-center gap-4">
+                <Link
+                  href="/contact"
+                  className="group relative overflow-hidden inline-flex items-center gap-2 px-8 py-3.5 bg-primary-green text-white rounded-full font-semibold text-sm hover:bg-primary-green/90 transition-all shadow-md"
+                >
+                  <RollingText className="gap-2">
+                    {t('cs_cta_btn')}
+                    <ArrowRight
+                      size={15}
+                      className="transform rotate-[-45deg] group-hover:rotate-0 transition-transform duration-300 ease-out shrink-0"
+                    />
+                  </RollingText>
+                </Link>
+                <Link
+                  href="/resources?tab=reports-analysis"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-deep-forest hover:text-primary-green transition-colors px-4 py-2"
+                >
+                  <span>Explore Technical Publications</span>
+                  <ArrowRight size={13} />
+                </Link>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
+
+      {/* ─── Dynamic CMS Projects Showcase (if additional projects exist) ─── */}
+      {customProjects.length > 0 && (
+        <section className="w-full py-16 bg-white border-b border-black/[0.06]">
+          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 space-y-8">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                <h3 className="font-serif font-bold text-2xl lg:text-3xl text-deep-forest tracking-tight">
+                  Featured Implementation Initiatives
+                </h3>
+                <p className="text-xs text-charcoal/70 mt-1">
+                  Active programs, value-chain interventions, and regional stakeholder deployments.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {customProjects.map((p) => {
+                const title = locale === 'fr' ? p.titleFr || p.titleEn : p.titleEn
+                const desc = locale === 'fr' ? p.descFr || p.descEn : p.descEn
+
+                return (
+                  <div
+                    key={p.id}
+                    className="group rounded-3xl bg-mist border border-mist hover:border-primary-green/30 hover:bg-white hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col"
+                  >
+                    {p.imageUrl && (
+                      <div className="relative w-full aspect-[16/10] overflow-hidden bg-white border-b border-black/[0.06]">
+                        <Image
+                          src={p.imageUrl}
+                          alt={title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                    )}
+
+                    <div className="p-6 flex flex-col flex-1 space-y-3">
+                      <div className="flex items-center justify-between gap-2 text-xs">
+                        {p.client && (
+                          <span className="font-bold text-primary-green uppercase tracking-wider text-[11px]">
+                            {p.client}
+                          </span>
+                        )}
+                        {p.year && (
+                          <span className="text-charcoal/50 text-[11px] font-mono">
+                            {p.year}
+                          </span>
+                        )}
+                      </div>
+
+                      <h4 className="font-serif font-bold text-lg text-deep-forest leading-snug group-hover:text-primary-green transition-colors">
+                        {title}
+                      </h4>
+
+                      <p className="text-xs text-charcoal/70 font-light leading-relaxed flex-1 line-clamp-3">
+                        {desc}
+                      </p>
+
+                      {p.link && (
+                        <div className="pt-3 border-t border-black/[0.06] mt-auto">
+                          <a
+                            href={p.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-xs font-bold text-primary-green hover:underline"
+                          >
+                            <span>View Initiative Details</span>
+                            <ExternalLink size={12} />
+                          </a>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ─── CTA Section ─── */}
       <section className="w-full">
@@ -277,4 +479,3 @@ export default function ProjectImplementationClient({
     </main>
   )
 }
-

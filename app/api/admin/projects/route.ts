@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
 
   try {
     const body = await req.json()
-    const { titleEn, titleFr, descEn, descFr, category, client, year, order } = body
+    const { titleEn, titleFr, descEn, descFr, category, client, year, imageUrl, link, order } = body
 
     if (!titleEn || !descEn || !category) {
       return NextResponse.json(
@@ -41,6 +41,8 @@ export async function POST(req: NextRequest) {
       category,
       client,
       year,
+      imageUrl,
+      link,
       order: typeof order === 'number' ? order : 0,
     })
 

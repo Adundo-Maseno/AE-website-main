@@ -2,18 +2,26 @@
 
 import { RollingText } from '@/components/ui/rolling-text'
 import { motion } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
+import Image from 'next/image'
+import { ArrowRight, Building, Calendar, ExternalLink, ShieldCheck } from 'lucide-react'
 import { Link } from '@/i18n/routing'
 import { useTranslations } from 'next-intl'
+import { ProjectItem } from '@/lib/services/projects-service'
 
 interface ClientAdvisoryClientProps {
   initialHero?: {
     title?: string
     subtitle?: string
   }
+  projects?: ProjectItem[]
+  locale?: string
 }
 
-export default function ClientAdvisoryClient({ initialHero }: ClientAdvisoryClientProps) {
+export default function ClientAdvisoryClient({
+  initialHero,
+  projects = [],
+  locale = 'en',
+}: ClientAdvisoryClientProps) {
   const t = useTranslations('ClientAdvisory')
 
   const heroSubtitle = initialHero?.subtitle || t('hero_subtitle')
@@ -71,11 +79,14 @@ export default function ClientAdvisoryClient({ initialHero }: ClientAdvisoryClie
     },
   ]
 
+  const customProjects = projects.filter(
+    (p) => !p.id.startsWith('static-') || p.id === 'static-national-variety-release'
+  )
+
   return (
     <main className="bg-white min-h-[100dvh]">
       {/* ─── Hero ─── */}
       <section className="relative w-full pt-16 lg:pt-28 pb-20 overflow-hidden">
-        {/* Luxury background accents */}
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-accent-gold/[0.04] rounded-full blur-[150px] -translate-y-1/3 translate-x-1/4 pointer-events-none" />
         <div className="absolute bottom-0 left-1/2 w-[600px] h-[400px] bg-warm-earth/40 rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2 pointer-events-none" />
 
@@ -236,71 +247,203 @@ export default function ClientAdvisoryClient({ initialHero }: ClientAdvisoryClie
         </div>
       </section>
 
-      {/* ─── Flagship Advisory Case Study: KEPHIS Regulatory Modernization ─── */}
+      {/* ─── Flagship Advisory Case Study: Redesigned with Photography & Editorial Spread ─── */}
       <section className="w-full py-16 lg:py-24 bg-[#F4F7EE] border-y border-[#E2E8D8] overflow-hidden">
-        <div className="max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 space-y-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="space-y-4 max-w-4xl"
-          >
-            <h2
-              className="font-serif font-bold text-deep-forest tracking-tight pb-1"
-              style={{ fontSize: 'clamp(2rem, 1.4rem + 2.2vw, 3.5rem)' }}
-            >
-              {t('cs_title')}
-            </h2>
-
-            <div className="space-y-3 text-charcoal/85 font-normal leading-relaxed text-base sm:text-lg lg:text-[17px]">
-              <p>{t('cs_desc1')}</p>
-              <p>{t('cs_desc2')}</p>
+        <div className="max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 space-y-12">
+          {/* Header */}
+          <div className="flex flex-col lg:flex-row items-start justify-between gap-8 pb-4">
+            <div className="space-y-3 max-w-3xl">
+              <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#435826]/10 text-[#435826] text-xs font-bold uppercase tracking-wider">
+                Flagship Regulatory Advisory
+              </span>
+              <h2
+                className="font-serif font-bold text-deep-forest tracking-tight pb-1"
+                style={{ fontSize: 'clamp(2rem, 1.4rem + 2.2vw, 3.5rem)' }}
+              >
+                {t('cs_title')}
+              </h2>
             </div>
-          </motion.div>
-
-          {/* 4 Strategic Advisory Impact Cards */}
-          <div>
-            <h3 className="text-lg sm:text-xl font-serif font-bold text-deep-forest mb-5 px-0.5">
-              {t('cs_section_title')}
-            </h3>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 lg:gap-4 xl:gap-5">
-              {regulatoryMilestones.map((milestone, idx) => (
-                <div
-                  key={idx}
-                  className="group flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-white border border-black/[0.06] hover:border-[#435826]/40 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                >
-                  <div>
-                    <h4 className="text-base sm:text-lg font-serif font-bold text-deep-forest mb-2.5 leading-snug group-hover:text-[#435826] transition-colors">
-                      {milestone.title}
-                    </h4>
-
-                    <p className="text-xs sm:text-[13.5px] text-charcoal/75 font-light leading-relaxed">
-                      {milestone.desc}
-                    </p>
-                  </div>
-                </div>
-              ))}
+            <div className="text-xs font-mono text-charcoal/60 bg-white/80 border border-black/[0.08] px-4 py-2 rounded-2xl backdrop-blur-xs self-start">
+              Policy & Institutional Advisory • KEPHIS Kenya
             </div>
           </div>
 
-          <div className="pt-2 flex items-center justify-start">
-            <Link
-              href="/contact"
-              className="group relative overflow-hidden inline-flex items-center gap-2 px-8 py-3.5 bg-[#435826] text-white rounded-full font-semibold text-sm hover:bg-[#34441B] transition-all shadow-md"
+          {/* Dual-Column Editorial Spread */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* Visual Photography Column */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="lg:col-span-5 relative"
             >
-              <RollingText className="gap-2">
-                {t('cs_cta_btn')}
-                <ArrowRight
-                  size={15}
-                  className="transform rotate-[-45deg] group-hover:rotate-0 transition-transform duration-300 ease-out shrink-0"
+              <div className="relative aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/5] rounded-[32px] overflow-hidden shadow-2xl border border-black/10 group">
+                <Image
+                  src="/pexels-elvis-kambire-434351765-38025863.jpg"
+                  alt="Certified seed field inspection and regulatory modernization"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 42vw"
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
-              </RollingText>
-            </Link>
+                <div className="absolute inset-0 bg-gradient-to-t from-deep-forest/80 via-transparent to-transparent pointer-events-none" />
+
+                {/* Floating Badge */}
+                <div className="absolute bottom-6 left-6 right-6 p-5 rounded-2xl bg-white/95 backdrop-blur-md border border-white/20 shadow-lg text-deep-forest space-y-1.5">
+                  <div className="flex items-center gap-2 text-[11px] font-bold text-[#435826] uppercase tracking-wider">
+                    <ShieldCheck size={14} />
+                    <span>KEPHIS • Ministry of Agriculture • STAK</span>
+                  </div>
+                  <p className="text-xs text-charcoal/80 font-medium leading-snug">
+                    Unlocking regulatory bottlenecks, gazetting private seed inspectors, and pioneering the standard seed class.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Narrative & 4 Milestone Impact Cards */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.15 }}
+              className="lg:col-span-7 space-y-8"
+            >
+              <div className="space-y-4 text-charcoal/85 font-normal leading-relaxed text-base sm:text-lg">
+                <p>{t('cs_desc1')}</p>
+                <p>{t('cs_desc2')}</p>
+              </div>
+
+              {/* 4 Strategic Advisory Impact Cards */}
+              <div>
+                <h3 className="text-sm font-bold text-deep-forest uppercase tracking-wider mb-4">
+                  {t('cs_section_title')}
+                </h3>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {regulatoryMilestones.map((milestone, idx) => (
+                    <div
+                      key={idx}
+                      className="group flex flex-col justify-between p-5 rounded-2xl bg-white border border-black/[0.06] hover:border-[#435826]/40 hover:shadow-md transition-all duration-300"
+                    >
+                      <div>
+                        <h4 className="text-sm font-serif font-bold text-deep-forest mb-1.5 leading-snug group-hover:text-[#435826] transition-colors">
+                          {milestone.title}
+                        </h4>
+                        <p className="text-xs text-charcoal/75 font-light leading-relaxed">
+                          {milestone.desc}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="pt-2 flex items-center gap-4">
+                <Link
+                  href="/contact"
+                  className="group relative overflow-hidden inline-flex items-center gap-2 px-8 py-3.5 bg-[#435826] text-white rounded-full font-semibold text-sm hover:bg-[#34441B] transition-all shadow-md"
+                >
+                  <RollingText className="gap-2">
+                    {t('cs_cta_btn')}
+                    <ArrowRight
+                      size={15}
+                      className="transform rotate-[-45deg] group-hover:rotate-0 transition-transform duration-300 ease-out shrink-0"
+                    />
+                  </RollingText>
+                </Link>
+                <Link
+                  href="/resources?tab=case-studies"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-deep-forest hover:text-[#435826] transition-colors px-4 py-2"
+                >
+                  <span>Read Regulatory Whitepapers</span>
+                  <ArrowRight size={13} />
+                </Link>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
+
+      {/* ─── Dynamic CMS Projects Showcase (if additional projects exist) ─── */}
+      {customProjects.length > 0 && (
+        <section className="w-full py-16 bg-white border-b border-black/[0.06]">
+          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 space-y-8">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                <h3 className="font-serif font-bold text-2xl lg:text-3xl text-deep-forest tracking-tight">
+                  Featured Advisory Engagements
+                </h3>
+                <p className="text-xs text-charcoal/70 mt-1">
+                  Strategic governance and regulatory advisory partnerships across Africa.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {customProjects.map((p) => {
+                const title = locale === 'fr' ? p.titleFr || p.titleEn : p.titleEn
+                const desc = locale === 'fr' ? p.descFr || p.descEn : p.descEn
+
+                return (
+                  <div
+                    key={p.id}
+                    className="group rounded-3xl bg-mist border border-mist hover:border-[#435826]/30 hover:bg-white hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col"
+                  >
+                    {p.imageUrl && (
+                      <div className="relative w-full aspect-[16/10] overflow-hidden bg-white border-b border-black/[0.06]">
+                        <Image
+                          src={p.imageUrl}
+                          alt={title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                    )}
+
+                    <div className="p-6 flex flex-col flex-1 space-y-3">
+                      <div className="flex items-center justify-between gap-2 text-xs">
+                        {p.client && (
+                          <span className="font-bold text-[#435826] uppercase tracking-wider text-[11px]">
+                            {p.client}
+                          </span>
+                        )}
+                        {p.year && (
+                          <span className="text-charcoal/50 text-[11px] font-mono">
+                            {p.year}
+                          </span>
+                        )}
+                      </div>
+
+                      <h4 className="font-serif font-bold text-lg text-deep-forest leading-snug group-hover:text-[#435826] transition-colors">
+                        {title}
+                      </h4>
+
+                      <p className="text-xs text-charcoal/70 font-light leading-relaxed flex-1 line-clamp-3">
+                        {desc}
+                      </p>
+
+                      {p.link && (
+                        <div className="pt-3 border-t border-black/[0.06] mt-auto">
+                          <a
+                            href={p.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-xs font-bold text-[#435826] hover:underline"
+                          >
+                            <span>Read Advisory Brief</span>
+                            <ExternalLink size={12} />
+                          </a>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ─── CTA Section ─── */}
       <section className="w-full">
@@ -350,4 +493,3 @@ export default function ClientAdvisoryClient({ initialHero }: ClientAdvisoryClie
     </main>
   )
 }
-

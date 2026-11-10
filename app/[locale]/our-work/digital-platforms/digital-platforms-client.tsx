@@ -12,15 +12,21 @@ interface DigitalPlatformsClientProps {
     title?: string
     subtitle?: string
   }
+  projects?: import('@/lib/services/projects-service').ProjectItem[]
+  locale?: string
 }
 
-export default function DigitalPlatformsClient({ initialHero }: DigitalPlatformsClientProps) {
+export default function DigitalPlatformsClient({
+  initialHero,
+  projects = [],
+  locale = 'en',
+}: DigitalPlatformsClientProps) {
   const t = useTranslations('DigitalPlatforms')
 
   const heroTitle = initialHero?.title || t('hero_title')
   const heroSubtitle = initialHero?.subtitle || t('hero_subtitle')
 
-  const platforms = [
+  const staticPlatforms = [
     {
       title: t('platforms.3.title'),
       description: `${t('platforms.3.description')} ${t('sp_desc')}`,
@@ -75,6 +81,23 @@ export default function DigitalPlatformsClient({ initialHero }: DigitalPlatforms
       tag: t('platforms.6.tag'),
     },
   ]
+
+  // If projects from CMS exist, map them with rich metadata
+  const platforms =
+    projects.length > 0
+      ? projects.map((p) => {
+          const isSvgOrLogo =
+            p.imageUrl?.endsWith('.svg') || p.imageUrl?.toLowerCase().includes('logo')
+          return {
+            title: locale === 'fr' ? p.titleFr || p.titleEn : p.titleEn,
+            description: locale === 'fr' ? p.descFr || p.descEn : p.descEn,
+            image: p.imageUrl || '/platforms/mbeguchoice.png',
+            imageType: (isSvgOrLogo ? 'logo' : 'screenshot') as 'screenshot' | 'logo',
+            tag: p.client || undefined,
+            link: p.link || undefined,
+          }
+        })
+      : staticPlatforms
 
   return (
     <main className="bg-white min-h-[100dvh]">

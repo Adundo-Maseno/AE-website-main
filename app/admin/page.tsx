@@ -24,6 +24,8 @@ import {
   Type,
   Compass,
   Plus,
+  Globe,
+  MapPin,
 } from 'lucide-react'
 
 export default async function AdminDashboardPage() {
@@ -311,6 +313,54 @@ export default async function AdminDashboardPage() {
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-xs text-[#0F2417]/50 font-mono">{expertiseCount} pillars</span>
+                <ArrowRight size={14} className="text-[#0F2417]/40 group-hover:translate-x-0.5 group-hover:text-[#0F2417] transition" />
+              </div>
+            </Link>
+
+            {/* Our Impact Narrative & SDGs */}
+            <Link
+              href="/admin/sections?tab=our-impact"
+              className="group flex items-center justify-between p-4 rounded-xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 transition shadow-xs"
+            >
+              <div className="flex items-center gap-3.5">
+                <div className="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] group-hover:bg-[#0F2417] group-hover:text-white transition">
+                  <Globe size={16} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-[#0F2417]">
+                    Our Impact & SDG Alignment
+                  </h3>
+                  <p className="text-xs text-[#0F2417]/60">
+                    Impact map introduction, SDG commitments, and collaboration CTA
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-[#0F2417]/50 font-mono">3 blocks</span>
+                <ArrowRight size={14} className="text-[#0F2417]/40 group-hover:translate-x-0.5 group-hover:text-[#0F2417] transition" />
+              </div>
+            </Link>
+
+            {/* Contact & Regional Office */}
+            <Link
+              href="/admin/sections?tab=contact"
+              className="group flex items-center justify-between p-4 rounded-xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 transition shadow-xs"
+            >
+              <div className="flex items-center gap-3.5">
+                <div className="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] group-hover:bg-[#0F2417] group-hover:text-white transition">
+                  <MapPin size={16} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-[#0F2417]">
+                    Contact Information & Headquarters
+                  </h3>
+                  <p className="text-xs text-[#0F2417]/60">
+                    Welcome headline, physical office address, phone and inquiry email
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-[#0F2417]/50 font-mono">2 blocks</span>
                 <ArrowRight size={14} className="text-[#0F2417]/40 group-hover:translate-x-0.5 group-hover:text-[#0F2417] transition" />
               </div>
             </Link>

@@ -166,10 +166,28 @@ export async function updateTeamMember(
     order?: number
   }>
 ): Promise<TeamMemberItem> {
-  const record = await prisma.teamMember.update({
-    where: { id },
-    data,
-  })
+  let record
+
+  if (id.startsWith('static-')) {
+    const existing = staticTeamMembers.find((m) => m.id === id)
+    record = await prisma.teamMember.create({
+      data: {
+        name: data.name ?? existing?.name ?? '',
+        roleEn: data.roleEn ?? existing?.roleEn ?? '',
+        roleFr: data.roleFr !== undefined ? data.roleFr : existing?.roleFr || null,
+        bioEn: data.bioEn !== undefined ? data.bioEn : existing?.bioEn || null,
+        bioFr: data.bioFr !== undefined ? data.bioFr : existing?.bioFr || null,
+        image: data.image !== undefined ? data.image : existing?.image || null,
+        hoverImage: data.hoverImage !== undefined ? data.hoverImage : existing?.hoverImage || null,
+        order: data.order ?? existing?.order ?? 0,
+      },
+    })
+  } else {
+    record = await prisma.teamMember.update({
+      where: { id },
+      data,
+    })
+  }
 
   revalidatePath('/[locale]/our-team', 'page')
   revalidatePath('/[locale]', 'layout')
@@ -178,6 +196,10 @@ export async function updateTeamMember(
 }
 
 export async function deleteTeamMember(id: string): Promise<boolean> {
+  if (id.startsWith('static-')) {
+    return true
+  }
+
   await prisma.teamMember.delete({
     where: { id },
   })

@@ -1,5 +1,6 @@
 import { Suspense } from 'react'
 import { getPageSections } from '@/lib/services/page-sections-service'
+import { getProjects } from '@/lib/services/projects-service'
 import TechnicalStudiesClient from './technical-studies-client'
 
 export const revalidate = 0 // Dynamic on-demand revalidation
@@ -12,6 +13,7 @@ export default async function TechnicalStudiesPage({
   const { locale } = await params
   const sections = await getPageSections('our-work')
   const sec = sections['technical_studies_hero']
+  const projects = await getProjects('technical-studies')
 
   const title = locale === 'fr' ? sec?.titleFr || sec?.titleEn : sec?.titleEn
   const subtitle = locale === 'fr' ? sec?.subtitleFr || sec?.subtitleEn : sec?.subtitleEn
@@ -23,6 +25,8 @@ export default async function TechnicalStudiesPage({
           title: title || undefined,
           subtitle: subtitle || undefined,
         }}
+        projects={projects}
+        locale={locale}
       />
     </Suspense>
   )

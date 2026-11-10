@@ -204,17 +204,34 @@ export default function AdminProjectsPage() {
                     </td>
 
                     <td className="py-4 px-5 max-w-lg">
-                      <div className="font-bold text-deep-forest text-sm leading-snug">
-                        {item.titleEn}
-                      </div>
-                      {item.titleFr && (
-                        <div className="text-[11px] text-charcoal/50 italic line-clamp-1 mt-0.5">
-                          FR: {item.titleFr}
+                      <div className="flex items-start gap-3">
+                        {item.imageUrl ? (
+                          <div className="relative w-12 h-10 rounded-lg overflow-hidden border border-black/10 shrink-0 bg-[#FAF9F5]">
+                            <img
+                              src={item.imageUrl}
+                              alt={item.titleEn}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        ) : (
+                          <div className="w-12 h-10 rounded-lg border border-dashed border-black/15 shrink-0 bg-[#FAF9F5] flex items-center justify-center text-charcoal/30">
+                            <Briefcase size={14} />
+                          </div>
+                        )}
+                        <div className="min-w-0">
+                          <div className="font-bold text-deep-forest text-sm leading-snug">
+                            {item.titleEn}
+                          </div>
+                          {item.titleFr && (
+                            <div className="text-[11px] text-charcoal/50 italic line-clamp-1 mt-0.5">
+                              FR: {item.titleFr}
+                            </div>
+                          )}
+                          <p className="text-charcoal/70 line-clamp-2 mt-1 text-xs leading-relaxed">
+                            {item.descEn}
+                          </p>
                         </div>
-                      )}
-                      <p className="text-charcoal/70 line-clamp-2 mt-1 text-xs leading-relaxed">
-                        {item.descEn}
-                      </p>
+                      </div>
                     </td>
 
                     <td className="py-4 px-5 whitespace-nowrap">

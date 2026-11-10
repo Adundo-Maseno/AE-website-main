@@ -2,19 +2,26 @@
 
 import { RollingText } from '@/components/ui/rolling-text'
 import { motion } from 'framer-motion'
-import { ArrowRight, Download } from 'lucide-react'
+import { ArrowRight, Download, ExternalLink, FileText } from 'lucide-react'
 import Image from 'next/image'
 import { Link } from '@/i18n/routing'
 import { useTranslations } from 'next-intl'
+import type { ProjectItem } from '@/lib/services/projects-service'
 
 interface TechnicalStudiesClientProps {
   initialHero?: {
     title?: string
     subtitle?: string
   }
+  projects?: ProjectItem[]
+  locale?: string
 }
 
-export default function TechnicalStudiesClient({ initialHero }: TechnicalStudiesClientProps) {
+export default function TechnicalStudiesClient({
+  initialHero,
+  projects = [],
+  locale = 'en',
+}: TechnicalStudiesClientProps) {
   const t = useTranslations('TechnicalStudies')
 
   const heroTitle = initialHero?.title || t('hero_title')
@@ -47,6 +54,11 @@ export default function TechnicalStudiesClient({ initialHero }: TechnicalStudies
       preview: '/resources/previews/preview-agrodealer-associations.jpg',
     },
   ]
+
+  // Filter out any default static kcdms duplicates if admin manages projects
+  const additionalStudies = projects.filter(
+    (p) => !p.id.includes('kcdms-pasture') && !p.id.includes('kcdms-value-chain')
+  )
 
   return (
     <main className="bg-white min-h-[100dvh]">
@@ -267,6 +279,91 @@ export default function TechnicalStudiesClient({ initialHero }: TechnicalStudies
           </div>
         </div>
       </section>
+
+      {/* ─── Dynamic CMS Technical Studies & Analytics ─── */}
+      {additionalStudies.length > 0 && (
+        <section className="w-full py-16 bg-[#F8FAF6] border-y border-black/[0.06]">
+          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 space-y-8">
+            <div className="space-y-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-primary-blue">
+                Analytical Assessments
+              </span>
+              <h3 className="font-serif font-bold text-2xl lg:text-3xl text-deep-forest tracking-tight">
+                Additional Technical Studies & Assessments
+              </h3>
+              <p className="text-xs text-charcoal/70">
+                Peer-reviewed methodologies, market scoping, and seed policy research delivered for institutional partners.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {additionalStudies.map((p) => {
+                const title = locale === 'fr' ? p.titleFr || p.titleEn : p.titleEn
+                const desc = locale === 'fr' ? p.descFr || p.descEn : p.descEn
+
+                return (
+                  <div
+                    key={p.id}
+                    className="group rounded-3xl bg-white border border-black/[0.08] hover:border-primary-blue/30 hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col"
+                  >
+                    {p.imageUrl ? (
+                      <div className="relative w-full aspect-[16/10] overflow-hidden bg-mist border-b border-black/[0.06]">
+                        <Image
+                          src={p.imageUrl}
+                          alt={title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                    ) : (
+                      <div className="relative w-full h-32 bg-primary-blue/5 border-b border-black/[0.06] flex items-center justify-center text-primary-blue/30">
+                        <FileText size={40} />
+                      </div>
+                    )}
+
+                    <div className="p-6 flex flex-col flex-1 space-y-3">
+                      <div className="flex items-center justify-between gap-2 text-xs">
+                        {p.client && (
+                          <span className="font-bold text-primary-blue uppercase tracking-wider text-[11px]">
+                            {p.client}
+                          </span>
+                        )}
+                        {p.year && (
+                          <span className="text-charcoal/50 text-[11px] font-mono">
+                            {p.year}
+                          </span>
+                        )}
+                      </div>
+
+                      <h4 className="font-serif font-bold text-lg text-deep-forest leading-snug group-hover:text-primary-blue transition-colors">
+                        {title}
+                      </h4>
+
+                      <p className="text-xs text-charcoal/70 font-light leading-relaxed flex-1 line-clamp-3">
+                        {desc}
+                      </p>
+
+                      {p.link && (
+                        <div className="pt-3 border-t border-black/[0.06] mt-auto">
+                          <a
+                            href={p.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-xs font-bold text-primary-blue hover:underline"
+                          >
+                            <span>Access Assessment</span>
+                            <ExternalLink size={12} />
+                          </a>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ─── CTA ─── */}
       <section className="w-full">

@@ -1,7 +1,8 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import { X, Globe, Briefcase, Calendar, Building, Hash } from 'lucide-react'
+import { useState, useEffect, useRef } from 'react'
+import Image from 'next/image'
+import { X, Globe, Briefcase, Calendar, Building, Hash, Upload, Image as ImageIcon, Link as LinkIcon, Trash2 } from 'lucide-react'
 import { ProjectItem } from '@/lib/services/projects-service'
 
 interface ProjectFormModalProps {
@@ -29,6 +30,7 @@ export default function ProjectFormModal({
   const [tab, setTab] = useState<'en' | 'fr'>('en')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [uploadingImage, setUploadingImage] = useState(false)
 
   const [titleEn, setTitleEn] = useState('')
   const [titleFr, setTitleFr] = useState('')
@@ -37,7 +39,11 @@ export default function ProjectFormModal({
   const [category, setCategory] = useState(PROJECT_CATEGORIES[0].value)
   const [client, setClient] = useState('')
   const [year, setYear] = useState('')
+  const [imageUrl, setImageUrl] = useState('')
+  const [link, setLink] = useState('')
   const [order, setOrder] = useState<number>(0)
+
+  const fileInputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     if (project) {
@@ -48,6 +54,8 @@ export default function ProjectFormModal({
       setCategory(project.category || PROJECT_CATEGORIES[0].value)
       setClient(project.client || '')
       setYear(project.year || '')
+      setImageUrl(project.imageUrl || '')
+      setLink(project.link || '')
       setOrder(project.order ?? 0)
     } else {
       setTitleEn('')
@@ -57,12 +65,47 @@ export default function ProjectFormModal({
       setCategory(PROJECT_CATEGORIES[0].value)
       setClient('')
       setYear('')
+      setImageUrl('')
+      setLink('')
       setOrder(0)
     }
     setError(null)
   }, [project, isOpen])
 
   if (!isOpen) return null
+
+  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+
+    setUploadingImage(true)
+    setError(null)
+
+    try {
+      const formData = new FormData()
+      formData.append('file', file)
+      formData.append('folder', 'projects')
+
+      const res = await fetch('/api/admin/upload', {
+        method: 'POST',
+        body: formData,
+      })
+
+      const data = await res.json()
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Upload failed')
+      }
+
+      setImageUrl(data.url)
+    } catch (err: any) {
+      setError(err.message || 'Image upload failed')
+    } finally {
+      setUploadingImage(false)
+      if (fileInputRef.current) {
+        fileInputRef.current.value = ''
+      }
+    }
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -87,13 +130,16 @@ export default function ProjectFormModal({
       category,
       client: client.trim() || undefined,
       year: year.trim() || undefined,
+      imageUrl: imageUrl.trim() || undefined,
+      link: link.trim() || undefined,
       order: Number(order) || 0,
     }
 
     try {
-      const url = project?.id && !project.id.startsWith('static-')
-        ? `/api/admin/projects/${project.id}`
-        : '/api/admin/projects'
+      const url =
+        project?.id && !project.id.startsWith('static-')
+          ? `/api/admin/projects/${project.id}`
+          : '/api/admin/projects'
       const method = project?.id && !project.id.startsWith('static-') ? 'PUT' : 'POST'
 
       const res = await fetch(url, {
@@ -108,73 +154,71 @@ export default function ProjectFormModal({
       onSuccess()
       onClose()
     } catch (err: any) {
-      setError(err.message || 'An unexpected error occurred')
+      setError(err.message || 'Error saving project')
     } finally {
       setLoading(false)
     }
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200">
-      <div className="relative w-full max-w-2xl bg-white rounded-3xl shadow-2xl border border-black/10 overflow-hidden flex flex-col max-h-[90vh]">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-xs overflow-y-auto">
+      <div className="w-full max-w-2xl bg-white rounded-3xl border border-black/10 shadow-2xl p-6 sm:p-8 my-8 relative">
         {/* Header */}
-        <div className="px-6 py-5 border-b border-black/5 flex items-center justify-between bg-[#FAFAF8]">
-          <div className="flex items-center gap-2.5">
-            <div className="p-2 rounded-xl bg-deep-forest text-white">
-              <Briefcase size={18} />
+        <div className="flex items-center justify-between pb-4 border-b border-black/5 mb-6">
+          <div className="flex items-center gap-3">
+            <div className="p-2.5 rounded-xl bg-deep-forest/5 text-deep-forest">
+              <Briefcase size={20} />
             </div>
             <div>
-              <h2 className="font-serif font-bold text-lg text-deep-forest">
+              <h2 className="font-serif font-bold text-xl text-deep-forest">
                 {project ? 'Edit Project / Case Study' : 'Add Project / Case Study'}
               </h2>
               <p className="text-xs text-charcoal/60">
-                Configure featured assignments and regional initiatives across pillars.
+                Manage case studies, digital platforms, and advisory initiatives with showcase photography.
               </p>
             </div>
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 rounded-full hover:bg-black/5 text-charcoal/60 hover:text-deep-forest transition-colors cursor-pointer"
-            aria-label="Close modal"
+            className="p-2 text-charcoal/40 hover:text-deep-forest rounded-full hover:bg-black/5 transition-colors cursor-pointer"
           >
             <X size={18} />
           </button>
         </div>
 
+        {error && (
+          <div className="mb-4 p-3 rounded-xl bg-red-50 border border-red-200 text-xs text-red-800">
+            {error}
+          </div>
+        )}
+
         {/* Language Tabs */}
-        <div className="flex border-b border-black/5 px-6 bg-white gap-4">
+        <div className="flex items-center gap-2 mb-6">
           <button
             type="button"
             onClick={() => setTab('en')}
-            className={`py-3 text-xs font-bold border-b-2 transition-colors flex items-center gap-1.5 cursor-pointer ${
+            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
               tab === 'en'
-                ? 'border-deep-forest text-deep-forest'
-                : 'border-transparent text-charcoal/50 hover:text-charcoal'
+                ? 'bg-deep-forest text-white'
+                : 'text-charcoal/60 hover:text-deep-forest hover:bg-black/5'
             }`}
           >
-            <Globe size={14} /> English Details (Primary)
+            <Globe size={13} /> English Details
           </button>
           <button
             type="button"
             onClick={() => setTab('fr')}
-            className={`py-3 text-xs font-bold border-b-2 transition-colors flex items-center gap-1.5 cursor-pointer ${
+            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
               tab === 'fr'
-                ? 'border-deep-forest text-deep-forest'
-                : 'border-transparent text-charcoal/50 hover:text-charcoal'
+                ? 'bg-deep-forest text-white'
+                : 'text-charcoal/60 hover:text-deep-forest hover:bg-black/5'
             }`}
           >
-            <Globe size={14} /> French Translations (Optional)
+            <Globe size={13} /> French Details
           </button>
         </div>
 
-        {/* Form Body */}
-        <form onSubmit={handleSubmit} className="flex-1 overflow-y-auto p-6 space-y-4">
-          {error && (
-            <div className="p-3.5 rounded-xl bg-red-50 border border-red-200 text-xs text-red-800">
-              {error}
-            </div>
-          )}
-
+        <form onSubmit={handleSubmit} className="space-y-4">
           {tab === 'en' ? (
             <div className="space-y-4">
               <div>
@@ -186,7 +230,7 @@ export default function ProjectFormModal({
                   required
                   value={titleEn}
                   onChange={(e) => setTitleEn(e.target.value)}
-                  placeholder="e.g. MbeguChoice Variety Selector"
+                  placeholder="e.g. Tanzania Seed Systems Transformation"
                   className="w-full px-3.5 py-2 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs"
                 />
               </div>
@@ -217,10 +261,83 @@ export default function ProjectFormModal({
                     type="text"
                     value={client}
                     onChange={(e) => setClient(e.target.value)}
-                    placeholder="e.g. USAID / CRS"
+                    placeholder="e.g. USAID / CRS / Ministry of Agriculture"
                     className="w-full px-3.5 py-2 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs"
                   />
                 </div>
+              </div>
+
+              {/* Featured Case Study Image Upload */}
+              <div>
+                <label className="block text-xs font-bold text-deep-forest mb-1 flex items-center gap-1">
+                  <ImageIcon size={12} /> Case Study Featured Image / Photography
+                </label>
+                <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
+                  <div className="flex-1 w-full relative">
+                    <input
+                      type="text"
+                      value={imageUrl}
+                      onChange={(e) => setImageUrl(e.target.value)}
+                      placeholder="/uploads/projects/... or /pexels-equalstock-27722065.jpg"
+                      className="w-full px-3.5 py-2 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs"
+                    />
+                  </div>
+
+                  <input
+                    type="file"
+                    ref={fileInputRef}
+                    onChange={handleFileUpload}
+                    accept="image/jpeg,image/png,image/webp,image/avif"
+                    className="hidden"
+                  />
+
+                  <button
+                    type="button"
+                    onClick={() => fileInputRef.current?.click()}
+                    disabled={uploadingImage}
+                    className="px-3.5 py-2 rounded-xl bg-deep-forest/10 hover:bg-deep-forest/20 text-deep-forest text-xs font-bold flex items-center gap-1.5 transition-colors cursor-pointer shrink-0 disabled:opacity-50"
+                  >
+                    <Upload size={13} />
+                    <span>{uploadingImage ? 'Uploading...' : 'Upload Photo'}</span>
+                  </button>
+
+                  {imageUrl && (
+                    <button
+                      type="button"
+                      onClick={() => setImageUrl('')}
+                      className="p-2 text-red-600 hover:bg-red-50 rounded-xl transition-colors cursor-pointer"
+                      title="Clear image"
+                    >
+                      <Trash2 size={14} />
+                    </button>
+                  )}
+                </div>
+
+                {imageUrl && (
+                  <div className="mt-2.5 relative w-28 h-18 rounded-xl overflow-hidden border border-black/10 bg-[#FAF9F5]">
+                    <Image
+                      src={imageUrl}
+                      alt="Project preview"
+                      fill
+                      className="object-cover"
+                      unoptimized
+                    />
+                  </div>
+                )}
+              </div>
+
+              {/* External Link */}
+              <div>
+                <label className="block text-xs font-bold text-deep-forest mb-1 flex items-center gap-1">
+                  <LinkIcon size={12} /> External Case Study / Live Platform URL
+                </label>
+                <input
+                  type="text"
+                  value={link}
+                  onChange={(e) => setLink(e.target.value)}
+                  placeholder="https://... or /resources/..."
+                  className="w-full px-3.5 py-2 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs"
+                />
               </div>
 
               <div>
@@ -318,4 +435,3 @@ export default function ProjectFormModal({
     </div>
   )
 }
-

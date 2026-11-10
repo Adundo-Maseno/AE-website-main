@@ -12,18 +12,26 @@ import {
   ArrowRight,
   Target,
   Download,
+  ExternalLink,
 } from 'lucide-react'
 import { Link } from '@/i18n/routing'
 import { useTranslations } from 'next-intl'
+import type { ProjectItem } from '@/lib/services/projects-service'
 
 interface CapacityBuildingClientProps {
   initialHero?: {
     title?: string
     subtitle?: string
   }
+  projects?: ProjectItem[]
+  locale?: string
 }
 
-export default function CapacityBuildingClient({ initialHero }: CapacityBuildingClientProps) {
+export default function CapacityBuildingClient({
+  initialHero,
+  projects = [],
+  locale = 'en',
+}: CapacityBuildingClientProps) {
   const t = useTranslations('CapacityBuilding')
 
   const heroSubtitle = initialHero?.subtitle || t('hero_subtitle')
@@ -304,6 +312,89 @@ export default function CapacityBuildingClient({ initialHero }: CapacityBuilding
           </div>
         </div>
       </section>
+
+      {/* ===== DYNAMIC CMS CAPACITY BUILDING INITIATIVES ===== */}
+      {projects.length > 0 && (
+        <section className="w-full py-20 bg-white border-b border-black/[0.06]">
+          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 space-y-10">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#9A3412]">
+                  Training & Curricula
+                </span>
+                <h3 className="font-serif font-bold text-3xl lg:text-4xl text-deep-forest tracking-tight mt-1">
+                  Institutional Training Programs & Toolkits
+                </h3>
+              </div>
+              <p className="text-xs text-charcoal/60 max-w-md">
+                Field-tested management tools, inspector accreditation, and agri-enterprise training programs developed by Agri Experience.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {projects.map((p) => {
+                const title = locale === 'fr' ? p.titleFr || p.titleEn : p.titleEn
+                const desc = locale === 'fr' ? p.descFr || p.descEn : p.descEn
+
+                return (
+                  <div
+                    key={p.id}
+                    className="group rounded-3xl bg-mist border border-mist hover:border-[#9A3412]/30 hover:bg-white hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col"
+                  >
+                    {p.imageUrl && (
+                      <div className="relative w-full aspect-[16/10] overflow-hidden bg-white border-b border-black/[0.06]">
+                        <Image
+                          src={p.imageUrl}
+                          alt={title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                    )}
+
+                    <div className="p-6 sm:p-7 flex flex-col flex-1 space-y-3">
+                      <div className="flex items-center justify-between gap-2 text-xs">
+                        {p.client && (
+                          <span className="font-bold text-[#9A3412] uppercase tracking-wider text-[11px]">
+                            {p.client}
+                          </span>
+                        )}
+                        {p.year && (
+                          <span className="text-charcoal/50 text-[11px] font-mono">
+                            {p.year}
+                          </span>
+                        )}
+                      </div>
+
+                      <h4 className="font-serif font-bold text-lg text-deep-forest leading-snug group-hover:text-[#9A3412] transition-colors">
+                        {title}
+                      </h4>
+
+                      <p className="text-xs text-charcoal/70 font-light leading-relaxed flex-1 line-clamp-3">
+                        {desc}
+                      </p>
+
+                      {p.link && (
+                        <div className="pt-3 border-t border-black/[0.06] mt-auto">
+                          <a
+                            href={p.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-xs font-bold text-[#9A3412] hover:underline"
+                          >
+                            <span>Access Training / Guide</span>
+                            <ExternalLink size={12} />
+                          </a>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ===== CTA ===== */}
       <section className="w-full relative overflow-hidden">

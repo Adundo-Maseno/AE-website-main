@@ -11,6 +11,9 @@ interface ImpactPageContentProps {
   ctaTitle?: string
   ctaDesc?: string
   ctaButton?: string
+  sdgsTitle?: string
+  sdgsTag?: string
+  sdgsDesc?: string
   locale: string
 }
 
@@ -18,6 +21,9 @@ export default function ImpactPageContent({
   ctaTitle,
   ctaDesc,
   ctaButton,
+  sdgsTitle,
+  sdgsTag,
+  sdgsDesc,
   locale,
 }: ImpactPageContentProps) {
   const t = useTranslations('OurImpact')
@@ -29,7 +35,11 @@ export default function ImpactPageContent({
   return (
     <main className="bg-white min-h-[100dvh]">
       <InteractiveMap />
-      <ImpactAlignment />
+      <ImpactAlignment
+        initialTitle={sdgsTitle}
+        initialTag={sdgsTag}
+        initialDesc={sdgsDesc}
+      />
 
       {/* Dynamic CTA Banner */}
       <section className="w-full py-10 lg:py-20 bg-deep-forest text-white overflow-hidden relative">

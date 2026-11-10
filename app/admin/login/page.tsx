@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
-import { Lock, Mail, Eye, EyeOff, ArrowRight, AlertCircle, CheckCircle2, ShieldCheck } from 'lucide-react'
+import { Lock, Mail, Eye, EyeOff, ArrowRight, AlertCircle, CheckCircle2 } from 'lucide-react'
 
 export default function AdminLoginPage() {
   const router = useRouter()
@@ -42,11 +42,6 @@ export default function AdminLoginPage() {
     }
   }
 
-  const fillDefaultCredentials = () => {
-    setEmail('admin@agriexperience.com')
-    setPassword('AgriExp2026!MasterKey')
-  }
-
   return (
     <div className="min-h-screen flex items-center justify-center p-4 sm:p-6 bg-[#FAF9F5] relative overflow-hidden">
       <div className="w-full max-w-md bg-white rounded-3xl border border-black/[0.08] shadow-[0_4px_20px_rgba(0,0,0,0.03)] p-8 sm:p-10 relative z-10">
@@ -66,7 +61,7 @@ export default function AdminLoginPage() {
             Publishing Desk Sign In
           </h1>
           <p className="text-xs text-charcoal/70 mt-1.5 leading-relaxed">
-            Enter your authorized credentials to manage publications, team rosters, and case studies.
+            Enter your authorized administrative credentials to access the editorial console.
           </p>
         </div>
 
@@ -96,7 +91,7 @@ export default function AdminLoginPage() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="admin@agriexperience.com"
+                placeholder="admin@agri-experience.com"
                 className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs bg-white text-deep-forest placeholder:text-charcoal/40"
               />
             </div>
@@ -143,19 +138,10 @@ export default function AdminLoginPage() {
           </button>
         </form>
 
-        {/* Demo Helper Box */}
         <div className="mt-8 pt-6 border-t border-black/[0.06] text-center">
-          <p className="text-[11px] text-charcoal/60 mb-2">
-            Administrator credentials:
+          <p className="text-[11px] text-charcoal/50">
+            Protected by multi-factor session encryption.
           </p>
-          <button
-            type="button"
-            onClick={fillDefaultCredentials}
-            className="text-xs font-bold text-deep-forest hover:underline inline-flex items-center gap-1.5 cursor-pointer bg-[#FAF9F5] px-3.5 py-1.5 rounded-full border border-black/[0.08]"
-          >
-            <ShieldCheck size={13} className="text-emerald-700" />
-            <span>Use Default Credentials</span>
-          </button>
         </div>
       </div>
     </div>

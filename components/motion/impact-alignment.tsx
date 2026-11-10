@@ -258,10 +258,22 @@ function AccordionRow({
 // Main Export
 // ────────────────────────────────────────────
 
-export default function ImpactAlignment() {
+export default function ImpactAlignment({
+  initialTitle,
+  initialTag,
+  initialDesc,
+}: {
+  initialTitle?: string
+  initialTag?: string
+  initialDesc?: string
+} = {}) {
   const [activeSdg, setActiveSdg] = useState("");
   const t = useTranslations("OurImpact");
   const locale = useLocale();
+
+  const title = initialTitle || t("sdgs.header_title");
+  const tag = initialTag || t("sdgs.header_tag");
+  const desc = initialDesc || t("sdgs.header_desc");
 
   return (
     <section className="w-full py-16 lg:py-16 bg-white relative overflow-hidden">
@@ -279,7 +291,7 @@ export default function ImpactAlignment() {
             transition={{ duration: 0.5 }}
             className="inline-block text-sm font-semibold uppercase tracking-widest text-primary-green mb-3"
           >
-            {t("sdgs.header_tag")}
+            {tag}
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -288,7 +300,7 @@ export default function ImpactAlignment() {
             className="font-serif font-bold text-deep-forest mb-4"
             style={{ fontSize: 'clamp(2.25rem, 2rem + 1vw, 3rem)' }}
           >
-            {t("sdgs.header_title")}
+            {title}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -296,7 +308,7 @@ export default function ImpactAlignment() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-base sm:text-lg lg:text-xl text-charcoal/85 font-normal max-w-2xl mx-auto leading-relaxed"
           >
-            {t("sdgs.header_desc")}
+            {desc}
           </motion.p>
         </div>
 

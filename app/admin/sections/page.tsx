@@ -201,6 +201,17 @@ const SECTION_CONFIGS = [
     subtitleLabel: 'Impact Lead Subtitle',
   },
   {
+    key: 'our_impact_sdgs',
+    page: 'our-impact',
+    title: 'Sustainable Development Goals (SDGs) Alignment Header',
+    desc: 'Section headline, category tag, and narrative introducing the SDG alignment cards.',
+    hasTitle: true,
+    hasSubtitle: true,
+    hasContent: true,
+    subtitleLabel: 'Header Eyebrow Tagline (e.g. Sustainable Development Goals)',
+    contentLabel: 'Narrative Lead Description',
+  },
+  {
     key: 'our_impact_cta',
     page: 'our-impact',
     title: 'Our Impact: Bottom CTA Banner',
@@ -269,6 +280,12 @@ export default function AdminSectionsPage() {
   }
 
   useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const p = new URLSearchParams(window.location.search).get('tab')
+      if (p && ['home', 'about', 'our-work', 'our-impact', 'contact'].includes(p)) {
+        setActiveTab(p as PageTabKey)
+      }
+    }
     fetchSections()
   }, [])
 
