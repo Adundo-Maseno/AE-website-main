@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import AdminHeader from '@/components/admin/admin-header'
 import { Target, Plus, Edit2, Trash2, Globe, Hash, Link as LinkIcon } from 'lucide-react'
 import { ExpertisePillarData } from '@/lib/services/expertise-service'
 import ExpertiseFormModal from '@/components/admin/expertise-form-modal'
@@ -58,23 +57,15 @@ export default function AdminExpertisePage() {
 
   return (
     <div className="min-h-screen bg-[#FAF9F5] text-[#0F2417] flex flex-col font-sans">
-      <AdminHeader />
-
       <main className="flex-1 max-w-[1400px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
         {/* Title Bar */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-[#0F2417]/10">
           <div>
-            <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-[#0F2417]/60 font-mono mb-1">
-              <Target size={14} className="text-[#C29B38]" />
-              <span>Editorial Desk 11</span>
-              <span>/</span>
-              <span>Core Capabilities & Expertise</span>
-            </div>
             <h1 className="font-serif text-2xl lg:text-3xl font-bold tracking-tight text-[#0F2417]">
               Our Expertise & Capabilities
             </h1>
             <p className="text-sm text-[#0F2417]/70 mt-1 max-w-2xl">
-              Manage the 5 core capability cards featured on the /about page Bento Grid and cross-linked to specialized work domains.
+              Core capability domains featured on the About page and cross-linked to specialized service areas.
             </p>
           </div>
 

@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import AdminHeader from '@/components/admin/admin-header'
 import { Award, Plus, Edit2, Trash2, Globe, Hash } from 'lucide-react'
 import { WhyAgriCardData } from '@/lib/services/why-agri-service'
 import WhyAgriFormModal from '@/components/admin/why-agri-form-modal'
@@ -58,23 +57,15 @@ export default function AdminWhyAgriPage() {
 
   return (
     <div className="min-h-screen bg-[#FAF9F5] text-[#0F2417] flex flex-col font-sans">
-      <AdminHeader />
-
       <main className="flex-1 max-w-[1400px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
         {/* Title Bar */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-[#0F2417]/10">
           <div>
-            <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-[#0F2417]/60 font-mono mb-1">
-              <Award size={14} className="text-[#C29B38]" />
-              <span>Editorial Desk 10</span>
-              <span>/</span>
-              <span>Why Agri Experience Advantage</span>
-            </div>
             <h1 className="font-serif text-2xl lg:text-3xl font-bold tracking-tight text-[#0F2417]">
               Why Agri Experience
             </h1>
             <p className="text-sm text-[#0F2417]/70 mt-1 max-w-2xl">
-              Manage the 5 competitive advantage cards presented across the interactive horizontal sequence and the Why Agri Experience section.
+              Competitive advantage pillars featured in the horizontal sequence and advantage grid.
             </p>
           </div>
 

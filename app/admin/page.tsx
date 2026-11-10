@@ -16,21 +16,14 @@ import {
   Users,
   Briefcase,
   ArrowRight,
-  Database,
-  CheckCircle2,
-  AlertTriangle,
-  Upload,
   ExternalLink,
-  ShieldCheck,
-  Globe2,
   Handshake,
   Sparkles,
   Award,
   Target,
   Type,
   Compass,
-  Camera,
-  Settings,
+  Plus,
 } from 'lucide-react'
 
 export default async function AdminDashboardPage() {
@@ -40,463 +33,545 @@ export default async function AdminDashboardPage() {
   }
 
   const dbConnected = await isDatabaseConnected()
+
   let resourcesCount = publicDownloads.length
   let teamCount = staticTeamMembers.length
   let projectsCount = staticProjects.length
   let insightsCount = 3
   let countriesCount = 12
-  let galleryCount = 4
   let sectionsCount = 11
   let partnersCount = staticPartners.length
   let beliefsCount = staticBeliefs.length
   let whyAgriCount = staticWhyAgriCards.length
   let expertiseCount = staticExpertisePillars.length
-  let isDbData = false
+  let recentResources: any[] = []
+  let recentTeam: any[] = []
 
   if (dbConnected) {
     try {
-      const [r, t, p, ins, map, gal, sec, part, bel, why, exp] = await Promise.all([
+      const [r, t, p, ins, map, sec, part, bel, why, exp, recR, recT] = await Promise.all([
         prisma.resource.count(),
         prisma.teamMember.count(),
         prisma.project.count(),
         prisma.insight.count(),
         prisma.mapCountryData.count(),
-        prisma.galleryItem.count(),
         prisma.pageSection.count(),
         prisma.partner.count(),
         prisma.coreBelief.count(),
         prisma.whyAgriCard.count(),
         prisma.expertisePillar.count(),
+        prisma.resource.findMany({ take: 5, orderBy: { createdAt: 'desc' } }),
+        prisma.teamMember.findMany({ take: 5, orderBy: { order: 'asc' } }),
       ])
-      if (r > 0) { resourcesCount = r; isDbData = true; }
+      if (r > 0) resourcesCount = r
       if (t > 0) teamCount = t
       if (p > 0) projectsCount = p
       if (ins > 0) insightsCount = ins
       if (map > 0) countriesCount = map
-      if (gal > 0) galleryCount = gal
       if (sec > 0) sectionsCount = sec
       if (part > 0) partnersCount = part
       if (bel > 0) beliefsCount = bel
       if (why > 0) whyAgriCount = why
       if (exp > 0) expertiseCount = exp
+      recentResources = recR
+      recentTeam = recT
     } catch {
       // Fallback
     }
   }
 
-  const today = new Intl.DateTimeFormat('en-US', {
-    weekday: 'long',
-    month: 'long',
+  if (recentResources.length === 0) {
+    recentResources = publicDownloads.slice(0, 5).map((d, i) => ({
+      id: `fallback-${i}`,
+      titleEn: d.title,
+      client: d.client,
+      category: d.category,
+    }))
+  }
+
+  if (recentTeam.length === 0) {
+    recentTeam = staticTeamMembers.slice(0, 5)
+  }
+
+  const today = new Intl.DateTimeFormat('en-GB', {
     day: 'numeric',
+    month: 'long',
     year: 'numeric',
   }).format(new Date())
 
   return (
-    <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
-      {/* Editorial Welcome Header */}
-      <div className="relative overflow-hidden rounded-3xl bg-[#FAF9F5] border border-black/[0.08] p-6 sm:p-10 shadow-xs">
-        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 relative z-10">
-          <div className="space-y-2 max-w-3xl">
-            <div className="flex flex-wrap items-center gap-2.5">
-              <span className="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-deep-forest text-white">
-                Agri Experience CMS
-              </span>
-              <span className="text-xs text-charcoal/60 font-medium font-mono">
-                {today}
-              </span>
-            </div>
-            <h1 className="font-serif font-bold text-3xl sm:text-4xl text-deep-forest tracking-tight">
-              Unified Editorial & Site Publishing Desk
-            </h1>
-            <p className="text-xs sm:text-sm text-charcoal/75 leading-relaxed">
-              Every content element on the website is 100% dynamic and synchronized to Supabase PostgreSQL: hero taglines, vision & mission, partner logos, core beliefs, Why Agri Experience advantages, expertise capabilities, research reports, and team rosters.
-            </p>
-          </div>
-
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full lg:w-auto">
-            <SeedButton />
-          </div>
-        </div>
-      </div>
-
-      {/* Database Connection Heartbeat Banner */}
-      {dbConnected ? (
-        <div className="p-4 rounded-2xl bg-emerald-50/80 border border-emerald-200/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-emerald-950">
-          <div className="flex items-center gap-2.5 font-medium">
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-600" />
-            </span>
-            <span>
-              <strong>Supabase PostgreSQL Active:</strong> All 12 editorial content domains are live and dynamic. Edits take effect immediately.
+    <div className="max-w-[1400px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
+      {/* Editorial Masthead */}
+      <section className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-[#0F2417]/10">
+        <div className="space-y-1.5 max-w-2xl">
+          <div className="flex items-center gap-2.5 text-xs text-[#0F2417]/60">
+            <span>{today}</span>
+            <span>·</span>
+            <span className="flex items-center gap-1.5 font-medium text-emerald-800">
+              <span className="w-2 h-2 rounded-full bg-emerald-600 inline-block" />
+              {dbConnected ? 'Supabase PostgreSQL live' : 'Resilient static fallback'}
             </span>
           </div>
-          <div className="text-[11px] text-emerald-800 font-semibold flex items-center gap-1.5 self-end sm:self-auto">
-            <ShieldCheck size={14} /> Database Session Synced
-          </div>
-        </div>
-      ) : (
-        <div className="p-4 rounded-2xl bg-amber-50 border border-amber-200 flex items-start gap-3 text-xs text-amber-900">
-          <AlertTriangle size={18} className="text-amber-600 shrink-0 mt-0.5" />
-          <div>
-            <span className="font-bold">Hybrid Fallback Mode:</span> No database connection string is active in this environment. Serving resilient static data.
-          </div>
-        </div>
-      )}
 
-      {/* Content & Brand Desks (New Core Section requested by User) */}
-      <div className="space-y-4">
-        <div className="flex items-center justify-between">
-          <div>
-            <h2 className="font-serif font-bold text-xl text-deep-forest">
-              Dynamic Brand & Page Content Desks
-            </h2>
-            <p className="text-xs text-charcoal/60">
-              Manage taglines, philosophy statements, organizational vision, partner networks, and service pillars
-            </p>
-          </div>
-        </div>
+          <h1 className="font-serif text-3xl sm:text-4xl font-bold tracking-tight text-[#0F2417]">
+            Publishing Desk
+          </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
-          {/* Desk: Page Sections & Taglines */}
-          <Link
-            href="/admin/sections"
-            className="group p-5 rounded-2xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
-          >
-            <div>
-              <div className="flex items-center justify-between mb-3">
-                <div className="w-9 h-9 rounded-xl bg-mist flex items-center justify-center text-deep-forest group-hover:bg-deep-forest group-hover:text-white transition-colors">
-                  <Type size={18} />
-                </div>
-                <span className="font-serif font-bold text-xl text-deep-forest">
-                  {sectionsCount}
-                </span>
-              </div>
-              <h3 className="font-serif font-bold text-sm text-deep-forest">
-                Taglines & Vision
-              </h3>
-              <p className="text-[11px] text-charcoal/70 leading-relaxed mt-1">
-                Hero headlines, Vision, Mission, Goal & CTA taglines.
-              </p>
-            </div>
-            <div className="pt-3 mt-3 border-t border-black/[0.06] flex items-center justify-between text-[11px] font-bold text-deep-forest">
-              <span>Edit Sections</span>
-              <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Link>
-
-          {/* Desk: Our Partners */}
-          <Link
-            href="/admin/partners"
-            className="group p-5 rounded-2xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
-          >
-            <div>
-              <div className="flex items-center justify-between mb-3">
-                <div className="w-9 h-9 rounded-xl bg-mist flex items-center justify-center text-deep-forest group-hover:bg-deep-forest group-hover:text-white transition-colors">
-                  <Handshake size={18} />
-                </div>
-                <span className="font-serif font-bold text-xl text-deep-forest">
-                  {partnersCount}
-                </span>
-              </div>
-              <h3 className="font-serif font-bold text-sm text-deep-forest">
-                Our Partners
-              </h3>
-              <p className="text-[11px] text-charcoal/70 leading-relaxed mt-1">
-                Client logos, government ministries, and regulators.
-              </p>
-            </div>
-            <div className="pt-3 mt-3 border-t border-black/[0.06] flex items-center justify-between text-[11px] font-bold text-deep-forest">
-              <span>Manage Logos</span>
-              <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Link>
-
-          {/* Desk: What We Believe */}
-          <Link
-            href="/admin/beliefs"
-            className="group p-5 rounded-2xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
-          >
-            <div>
-              <div className="flex items-center justify-between mb-3">
-                <div className="w-9 h-9 rounded-xl bg-mist flex items-center justify-center text-deep-forest group-hover:bg-deep-forest group-hover:text-white transition-colors">
-                  <Sparkles size={18} />
-                </div>
-                <span className="font-serif font-bold text-xl text-deep-forest">
-                  {beliefsCount}
-                </span>
-              </div>
-              <h3 className="font-serif font-bold text-sm text-deep-forest">
-                What We Believe
-              </h3>
-              <p className="text-[11px] text-charcoal/70 leading-relaxed mt-1">
-                4 core agricultural philosophy statements.
-              </p>
-            </div>
-            <div className="pt-3 mt-3 border-t border-black/[0.06] flex items-center justify-between text-[11px] font-bold text-deep-forest">
-              <span>Manage Beliefs</span>
-              <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Link>
-
-          {/* Desk: Why Agri Experience */}
-          <Link
-            href="/admin/why-agri"
-            className="group p-5 rounded-2xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
-          >
-            <div>
-              <div className="flex items-center justify-between mb-3">
-                <div className="w-9 h-9 rounded-xl bg-mist flex items-center justify-center text-deep-forest group-hover:bg-deep-forest group-hover:text-white transition-colors">
-                  <Award size={18} />
-                </div>
-                <span className="font-serif font-bold text-xl text-deep-forest">
-                  {whyAgriCount}
-                </span>
-              </div>
-              <h3 className="font-serif font-bold text-sm text-deep-forest">
-                Why Agri Experience
-              </h3>
-              <p className="text-[11px] text-charcoal/70 leading-relaxed mt-1">
-                5 competitive advantage pillars and cards.
-              </p>
-            </div>
-            <div className="pt-3 mt-3 border-t border-black/[0.06] flex items-center justify-between text-[11px] font-bold text-deep-forest">
-              <span>Manage Cards</span>
-              <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Link>
-
-          {/* Desk: Our Expertise */}
-          <Link
-            href="/admin/expertise"
-            className="group p-5 rounded-2xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
-          >
-            <div>
-              <div className="flex items-center justify-between mb-3">
-                <div className="w-9 h-9 rounded-xl bg-mist flex items-center justify-center text-deep-forest group-hover:bg-deep-forest group-hover:text-white transition-colors">
-                  <Target size={18} />
-                </div>
-                <span className="font-serif font-bold text-xl text-deep-forest">
-                  {expertiseCount}
-                </span>
-              </div>
-              <h3 className="font-serif font-bold text-sm text-deep-forest">
-                Our Expertise
-              </h3>
-              <p className="text-[11px] text-charcoal/70 leading-relaxed mt-1">
-                5 service domains featured on the Bento Grid.
-              </p>
-            </div>
-            <div className="pt-3 mt-3 border-t border-black/[0.06] flex items-center justify-between text-[11px] font-bold text-deep-forest">
-              <span>Manage Domains</span>
-              <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Link>
-
-          {/* Desk: Settings & Metrics */}
-          <Link
-            href="/admin/settings"
-            className="group p-5 rounded-2xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
-          >
-            <div>
-              <div className="flex items-center justify-between mb-3">
-                <div className="w-9 h-9 rounded-xl bg-mist flex items-center justify-center text-deep-forest group-hover:bg-deep-forest group-hover:text-white transition-colors">
-                  <Settings size={18} />
-                </div>
-                <span className="font-serif font-bold text-sm text-deep-forest">
-                  Live Stats
-                </span>
-              </div>
-              <h3 className="font-serif font-bold text-sm text-deep-forest">
-                Impact & Settings
-              </h3>
-              <p className="text-[11px] text-charcoal/70 leading-relaxed mt-1">
-                350+ Projects, 22 Countries, Contact Info.
-              </p>
-            </div>
-            <div className="pt-3 mt-3 border-t border-black/[0.06] flex items-center justify-between text-[11px] font-bold text-deep-forest">
-              <span>Configure</span>
-              <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Link>
-        </div>
-      </div>
-
-      {/* Primary Publishing Desks */}
-      <div className="space-y-4">
-        <div>
-          <h2 className="font-serif font-bold text-xl text-deep-forest">
-            Editorial Publishing Desks
-          </h2>
-          <p className="text-xs text-charcoal/60">
-            Manage long-form editorial records, research downloads, case studies, and field assets
+          <p className="text-sm text-[#0F2417]/70 leading-relaxed">
+            Manage public website copy, partner institutions, research publications, and the leadership roster.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Module 1: Team & Leadership */}
-          <Link
-            href="/admin/team"
-            className="group p-6 rounded-3xl bg-white border border-black/[0.08] hover:border-black/25 shadow-xs hover:shadow-lg transition-all flex flex-col justify-between"
-          >
-            <div>
-              <div className="flex items-center justify-between mb-4">
-                <div className="w-12 h-12 rounded-2xl bg-mist flex items-center justify-center text-deep-forest group-hover:bg-deep-forest group-hover:text-white transition-colors shadow-xs">
-                  <Users size={22} />
-                </div>
-                <span className="font-serif font-bold text-2xl sm:text-3xl text-deep-forest">
-                  {teamCount}
-                </span>
-              </div>
-              <h3 className="font-serif font-bold text-xl text-deep-forest mb-2">
-                Team Profiles & Dual Photography
-              </h3>
-              <p className="text-xs text-charcoal/70 leading-relaxed mb-6">
-                Manage members with primary & hover portrait uploads, bilingual executive bios, and hierarchy sorting.
-              </p>
-            </div>
-            <div className="pt-4 border-t border-black/[0.06] flex items-center justify-between text-xs font-bold text-deep-forest">
-              <span>Manage Team Roster</span>
-              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Link>
-
-          {/* Module 2: Publications & Reports */}
+        {/* Masthead Action Strip */}
+        <div className="flex items-center gap-2.5 shrink-0">
           <Link
             href="/admin/resources"
-            className="group p-6 rounded-3xl bg-white border border-black/[0.08] hover:border-black/25 shadow-xs hover:shadow-lg transition-all flex flex-col justify-between"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold bg-[#0F2417] text-[#FAF9F5] hover:bg-[#0F2417]/90 transition shadow-xs"
           >
-            <div>
-              <div className="flex items-center justify-between mb-4">
-                <div className="w-12 h-12 rounded-2xl bg-mist flex items-center justify-center text-deep-forest group-hover:bg-deep-forest group-hover:text-white transition-colors shadow-xs">
-                  <FileText size={22} />
-                </div>
-                <span className="font-serif font-bold text-2xl sm:text-3xl text-deep-forest">
-                  {resourcesCount}
-                </span>
-              </div>
-              <h3 className="font-serif font-bold text-xl text-deep-forest mb-2">
-                Publications & PDF Downloads
-              </h3>
-              <p className="text-xs text-charcoal/70 leading-relaxed mb-6">
-                Curate all 24 verified seed system reports, toolkits, and client citations across 4 categories.
-              </p>
-            </div>
-            <div className="pt-4 border-t border-black/[0.06] flex items-center justify-between text-xs font-bold text-deep-forest">
-              <span>Manage Publications</span>
-              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-            </div>
+            <Plus size={14} />
+            <span>New Publication</span>
           </Link>
 
-          {/* Module 3: Projects & Pillars */}
           <Link
-            href="/admin/projects"
-            className="group p-6 rounded-3xl bg-white border border-black/[0.08] hover:border-black/25 shadow-xs hover:shadow-lg transition-all flex flex-col justify-between"
+            href="/admin/team"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold bg-white border border-[#0F2417]/15 text-[#0F2417] hover:bg-[#0F2417]/5 transition"
           >
-            <div>
-              <div className="flex items-center justify-between mb-4">
-                <div className="w-12 h-12 rounded-2xl bg-mist flex items-center justify-center text-deep-forest group-hover:bg-deep-forest group-hover:text-white transition-colors shadow-xs">
-                  <Briefcase size={22} />
-                </div>
-                <span className="font-serif font-bold text-2xl sm:text-3xl text-deep-forest">
-                  {projectsCount}
-                </span>
-              </div>
-              <h3 className="font-serif font-bold text-xl text-deep-forest mb-2">
-                Work Pillars & Case Studies
-              </h3>
-              <p className="text-xs text-charcoal/70 leading-relaxed mb-6">
-                Digital platforms (MbeguChoice, M3, RIMI), regional seed trade studies, and advisory initiatives.
-              </p>
-            </div>
-            <div className="pt-4 border-t border-black/[0.06] flex items-center justify-between text-xs font-bold text-deep-forest">
-              <span>Manage Case Studies</span>
-              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-            </div>
+            <Plus size={14} />
+            <span>Add Member</span>
           </Link>
 
-          {/* Module 4: Insights */}
-          <Link
-            href="/admin/insights"
-            className="group p-6 rounded-3xl bg-white border border-black/[0.08] hover:border-black/25 shadow-xs hover:shadow-lg transition-all flex flex-col justify-between"
-          >
-            <div>
-              <div className="flex items-center justify-between mb-4">
-                <div className="w-12 h-12 rounded-2xl bg-mist flex items-center justify-center text-deep-forest group-hover:bg-deep-forest group-hover:text-white transition-colors shadow-xs">
-                  <Sparkles size={22} />
-                </div>
-                <span className="font-serif font-bold text-2xl sm:text-3xl text-deep-forest">
-                  {insightsCount}
-                </span>
-              </div>
-              <h3 className="font-serif font-bold text-xl text-deep-forest mb-2">
-                Insights & Field Breakthroughs
-              </h3>
-              <p className="text-xs text-charcoal/70 leading-relaxed mb-6">
-                Publish articles on regulatory transparency, breeder training, and drought-tolerant seed rollouts.
-              </p>
-            </div>
-            <div className="pt-4 border-t border-black/[0.06] flex items-center justify-between text-xs font-bold text-deep-forest">
-              <span>Manage Insights</span>
-              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Link>
-
-          {/* Module 5: Pan-African Map */}
-          <Link
-            href="/admin/map"
-            className="group p-6 rounded-3xl bg-white border border-black/[0.08] hover:border-black/25 shadow-xs hover:shadow-lg transition-all flex flex-col justify-between"
-          >
-            <div>
-              <div className="flex items-center justify-between mb-4">
-                <div className="w-12 h-12 rounded-2xl bg-mist flex items-center justify-center text-deep-forest group-hover:bg-deep-forest group-hover:text-white transition-colors shadow-xs">
-                  <Compass size={22} />
-                </div>
-                <span className="font-serif font-bold text-2xl sm:text-3xl text-deep-forest">
-                  {countriesCount}
-                </span>
-              </div>
-              <h3 className="font-serif font-bold text-xl text-deep-forest mb-2">
-                Pan-African Map Footprint
-              </h3>
-              <p className="text-xs text-charcoal/70 leading-relaxed mb-6">
-                Configure country telemetry, active projects count, work done, and regional engagement tiers.
-              </p>
-            </div>
-            <div className="pt-4 border-t border-black/[0.06] flex items-center justify-between text-xs font-bold text-deep-forest">
-              <span>Manage Map Countries</span>
-              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Link>
-
-          {/* Module 6: Photography Gallery */}
-          <Link
-            href="/admin/gallery"
-            className="group p-6 rounded-3xl bg-white border border-black/[0.08] hover:border-black/25 shadow-xs hover:shadow-lg transition-all flex flex-col justify-between"
-          >
-            <div>
-              <div className="flex items-center justify-between mb-4">
-                <div className="w-12 h-12 rounded-2xl bg-mist flex items-center justify-center text-deep-forest group-hover:bg-deep-forest group-hover:text-white transition-colors shadow-xs">
-                  <Camera size={22} />
-                </div>
-                <span className="font-serif font-bold text-2xl sm:text-3xl text-deep-forest">
-                  {galleryCount}
-                </span>
-              </div>
-              <h3 className="font-serif font-bold text-xl text-deep-forest mb-2">
-                Field Photography Gallery
-              </h3>
-              <p className="text-xs text-charcoal/70 leading-relaxed mb-6">
-                Upload authentic photography from field seed trials, agrodealer workshops, and regional convenings.
-              </p>
-            </div>
-            <div className="pt-4 border-t border-black/[0.06] flex items-center justify-between text-xs font-bold text-deep-forest">
-              <span>Manage Gallery</span>
-              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Link>
+          <SeedButton />
         </div>
-      </div>
+      </section>
+
+      {/* Telemetry Strip */}
+      <section className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div className="bg-white border border-[#0F2417]/10 rounded-xl p-5 shadow-xs">
+          <span className="text-xs text-[#0F2417]/60 font-medium block">Publications & Reports</span>
+          <div className="flex items-baseline gap-2 mt-2">
+            <span className="font-serif text-3xl font-bold text-[#0F2417]">{resourcesCount}</span>
+            <span className="text-[11px] text-[#0F2417]/50">verified PDFs</span>
+          </div>
+        </div>
+
+        <div className="bg-white border border-[#0F2417]/10 rounded-xl p-5 shadow-xs">
+          <span className="text-xs text-[#0F2417]/60 font-medium block">Leadership Roster</span>
+          <div className="flex items-baseline gap-2 mt-2">
+            <span className="font-serif text-3xl font-bold text-[#0F2417]">{teamCount}</span>
+            <span className="text-[11px] text-[#0F2417]/50">dual portraits</span>
+          </div>
+        </div>
+
+        <div className="bg-white border border-[#0F2417]/10 rounded-xl p-5 shadow-xs">
+          <span className="text-xs text-[#0F2417]/60 font-medium block">Partner Network</span>
+          <div className="flex items-baseline gap-2 mt-2">
+            <span className="font-serif text-3xl font-bold text-[#0F2417]">{partnersCount}</span>
+            <span className="text-[11px] text-[#0F2417]/50">institutions</span>
+          </div>
+        </div>
+
+        <div className="bg-white border border-[#0F2417]/10 rounded-xl p-5 shadow-xs">
+          <span className="text-xs text-[#0F2417]/60 font-medium block">Dynamic Copy Blocks</span>
+          <div className="flex items-baseline gap-2 mt-2">
+            <span className="font-serif text-3xl font-bold text-[#0F2417]">{sectionsCount}</span>
+            <span className="text-[11px] text-[#0F2417]/50">bilingual sections</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Two Balanced Editorial Columns */}
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* Column 1: Site Content & Brand Narrative */}
+        <div className="space-y-4">
+          <div className="flex items-center justify-between pb-2 border-b border-[#0F2417]/10">
+            <div>
+              <h2 className="font-serif text-lg font-bold text-[#0F2417]">
+                Site Content & Brand Narrative
+              </h2>
+              <p className="text-xs text-[#0F2417]/60">
+                Core narrative, vision, philosophy, and institutional collaborators
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-2.5">
+            {/* Taglines, Vision, Mission & Goals */}
+            <Link
+              href="/admin/sections"
+              className="group flex items-center justify-between p-4 rounded-xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 transition shadow-xs"
+            >
+              <div className="flex items-center gap-3.5">
+                <div className="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] group-hover:bg-[#0F2417] group-hover:text-white transition">
+                  <Type size={16} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-[#0F2417]">
+                    Page Taglines, Vision & Mission
+                  </h3>
+                  <p className="text-xs text-[#0F2417]/60">
+                    Hero headlines, vision, mission, and strategic goal copy
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-[#0F2417]/50 font-mono">{sectionsCount} sections</span>
+                <ArrowRight size={14} className="text-[#0F2417]/40 group-hover:translate-x-0.5 group-hover:text-[#0F2417] transition" />
+              </div>
+            </Link>
+
+            {/* Our Partners */}
+            <Link
+              href="/admin/partners"
+              className="group flex items-center justify-between p-4 rounded-xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 transition shadow-xs"
+            >
+              <div className="flex items-center gap-3.5">
+                <div className="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] group-hover:bg-[#0F2417] group-hover:text-white transition">
+                  <Handshake size={16} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-[#0F2417]">
+                    Our Partners & Institutional Network
+                  </h3>
+                  <p className="text-xs text-[#0F2417]/60">
+                    Donors, ministries, seed regulators, and research organizations
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-[#0F2417]/50 font-mono">{partnersCount} logos</span>
+                <ArrowRight size={14} className="text-[#0F2417]/40 group-hover:translate-x-0.5 group-hover:text-[#0F2417] transition" />
+              </div>
+            </Link>
+
+            {/* What We Believe */}
+            <Link
+              href="/admin/beliefs"
+              className="group flex items-center justify-between p-4 rounded-xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 transition shadow-xs"
+            >
+              <div className="flex items-center gap-3.5">
+                <div className="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] group-hover:bg-[#0F2417] group-hover:text-white transition">
+                  <Sparkles size={16} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-[#0F2417]">
+                    What We Believe
+                  </h3>
+                  <p className="text-xs text-[#0F2417]/60">
+                    Four foundational agricultural philosophy statements
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-[#0F2417]/50 font-mono">{beliefsCount} statements</span>
+                <ArrowRight size={14} className="text-[#0F2417]/40 group-hover:translate-x-0.5 group-hover:text-[#0F2417] transition" />
+              </div>
+            </Link>
+
+            {/* Why Agri Experience */}
+            <Link
+              href="/admin/why-agri"
+              className="group flex items-center justify-between p-4 rounded-xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 transition shadow-xs"
+            >
+              <div className="flex items-center gap-3.5">
+                <div className="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] group-hover:bg-[#0F2417] group-hover:text-white transition">
+                  <Award size={16} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-[#0F2417]">
+                    Why Agri Experience
+                  </h3>
+                  <p className="text-xs text-[#0F2417]/60">
+                    Five competitive advantage pillars and interactive cards
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-[#0F2417]/50 font-mono">{whyAgriCount} cards</span>
+                <ArrowRight size={14} className="text-[#0F2417]/40 group-hover:translate-x-0.5 group-hover:text-[#0F2417] transition" />
+              </div>
+            </Link>
+
+            {/* Our Expertise */}
+            <Link
+              href="/admin/expertise"
+              className="group flex items-center justify-between p-4 rounded-xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 transition shadow-xs"
+            >
+              <div className="flex items-center gap-3.5">
+                <div className="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] group-hover:bg-[#0F2417] group-hover:text-white transition">
+                  <Target size={16} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-[#0F2417]">
+                    Capabilities & Core Expertise
+                  </h3>
+                  <p className="text-xs text-[#0F2417]/60">
+                    Five service domains featured in the About page bento grid
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-[#0F2417]/50 font-mono">{expertiseCount} pillars</span>
+                <ArrowRight size={14} className="text-[#0F2417]/40 group-hover:translate-x-0.5 group-hover:text-[#0F2417] transition" />
+              </div>
+            </Link>
+          </div>
+        </div>
+
+        {/* Column 2: Publishing & Media Records */}
+        <div className="space-y-4">
+          <div className="flex items-center justify-between pb-2 border-b border-[#0F2417]/10">
+            <div>
+              <h2 className="font-serif text-lg font-bold text-[#0F2417]">
+                Publishing & Media Records
+              </h2>
+              <p className="text-xs text-[#0F2417]/60">
+                Team rosters, publications, case studies, and telemetry
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-2.5">
+            {/* Team */}
+            <Link
+              href="/admin/team"
+              className="group flex items-center justify-between p-4 rounded-xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 transition shadow-xs"
+            >
+              <div className="flex items-center gap-3.5">
+                <div className="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] group-hover:bg-[#0F2417] group-hover:text-white transition">
+                  <Users size={16} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-[#0F2417]">
+                    Team Profiles & Photography
+                  </h3>
+                  <p className="text-xs text-[#0F2417]/60">
+                    Manage executive portraits (primary & hover) and bilingual bios
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-[#0F2417]/50 font-mono">{teamCount} members</span>
+                <ArrowRight size={14} className="text-[#0F2417]/40 group-hover:translate-x-0.5 group-hover:text-[#0F2417] transition" />
+              </div>
+            </Link>
+
+            {/* Publications */}
+            <Link
+              href="/admin/resources"
+              className="group flex items-center justify-between p-4 rounded-xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 transition shadow-xs"
+            >
+              <div className="flex items-center gap-3.5">
+                <div className="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] group-hover:bg-[#0F2417] group-hover:text-white transition">
+                  <FileText size={16} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-[#0F2417]">
+                    Publications & Resources
+                  </h3>
+                  <p className="text-xs text-[#0F2417]/60">
+                    Verified seed system research papers and PDF downloads
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-[#0F2417]/50 font-mono">{resourcesCount} PDFs</span>
+                <ArrowRight size={14} className="text-[#0F2417]/40 group-hover:translate-x-0.5 group-hover:text-[#0F2417] transition" />
+              </div>
+            </Link>
+
+            {/* Projects & Case Studies */}
+            <Link
+              href="/admin/projects"
+              className="group flex items-center justify-between p-4 rounded-xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 transition shadow-xs"
+            >
+              <div className="flex items-center gap-3.5">
+                <div className="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] group-hover:bg-[#0F2417] group-hover:text-white transition">
+                  <Briefcase size={16} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-[#0F2417]">
+                    Pillars & Case Studies
+                  </h3>
+                  <p className="text-xs text-[#0F2417]/60">
+                    Digital platforms (MbeguChoice, M3, RIMI) and client studies
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-[#0F2417]/50 font-mono">{projectsCount} studies</span>
+                <ArrowRight size={14} className="text-[#0F2417]/40 group-hover:translate-x-0.5 group-hover:text-[#0F2417] transition" />
+              </div>
+            </Link>
+
+            {/* Insights */}
+            <Link
+              href="/admin/insights"
+              className="group flex items-center justify-between p-4 rounded-xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 transition shadow-xs"
+            >
+              <div className="flex items-center gap-3.5">
+                <div className="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] group-hover:bg-[#0F2417] group-hover:text-white transition">
+                  <Sparkles size={16} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-[#0F2417]">
+                    Insights & Field Breakthroughs
+                  </h3>
+                  <p className="text-xs text-[#0F2417]/60">
+                    Breeder education, market introductions, and policy articles
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-[#0F2417]/50 font-mono">{insightsCount} stories</span>
+                <ArrowRight size={14} className="text-[#0F2417]/40 group-hover:translate-x-0.5 group-hover:text-[#0F2417] transition" />
+              </div>
+            </Link>
+
+            {/* Map Footprint */}
+            <Link
+              href="/admin/map"
+              className="group flex items-center justify-between p-4 rounded-xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 transition shadow-xs"
+            >
+              <div className="flex items-center gap-3.5">
+                <div className="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] group-hover:bg-[#0F2417] group-hover:text-white transition">
+                  <Compass size={16} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-[#0F2417]">
+                    Pan-African Map Footprint
+                  </h3>
+                  <p className="text-xs text-[#0F2417]/60">
+                    Country project counts, regional telemetry, and work done
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-[#0F2417]/50 font-mono">{countriesCount} countries</span>
+                <ArrowRight size={14} className="text-[#0F2417]/40 group-hover:translate-x-0.5 group-hover:text-[#0F2417] transition" />
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Split Inspection View: Publications Table & Active Leadership Snapshot */}
+      <section className="grid grid-cols-1 lg:grid-cols-3 gap-8 pt-4">
+        {/* Left 2 Cols: Publications Roster Table */}
+        <div className="lg:col-span-2 bg-white border border-[#0F2417]/10 rounded-2xl p-6 shadow-xs space-y-4">
+          <div className="flex items-center justify-between pb-3 border-b border-[#0F2417]/10">
+            <div>
+              <h3 className="font-serif font-bold text-base text-[#0F2417]">
+                Recent Publications & Reports
+              </h3>
+              <p className="text-xs text-[#0F2417]/60">
+                Latest research documents live in the public download repository
+              </p>
+            </div>
+            <Link
+              href="/admin/resources"
+              className="text-xs font-semibold text-[#0F2417] hover:underline inline-flex items-center gap-1"
+            >
+              <span>View all {resourcesCount}</span>
+              <ArrowRight size={12} />
+            </Link>
+          </div>
+
+          <div className="overflow-x-auto">
+            <table className="w-full text-left text-xs">
+              <thead>
+                <tr className="border-b border-stone-100 text-[#0F2417]/50 uppercase tracking-wider font-mono text-[10px]">
+                  <th className="py-2.5 font-medium">Title</th>
+                  <th className="py-2.5 font-medium">Category</th>
+                  <th className="py-2.5 font-medium">Client / Sponsor</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-stone-100">
+                {recentResources.map((item) => (
+                  <tr key={item.id} className="hover:bg-stone-50/60 transition">
+                    <td className="py-3 font-medium text-[#0F2417] max-w-xs truncate pr-4">
+                      {item.titleEn}
+                    </td>
+                    <td className="py-3 text-stone-600 whitespace-nowrap pr-4">
+                      <span className="px-2 py-0.5 rounded-full bg-stone-100 text-stone-700 text-[11px]">
+                        {item.category}
+                      </span>
+                    </td>
+                    <td className="py-3 text-stone-600 whitespace-nowrap">
+                      {item.client}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* Right 1 Col: Active Team Members */}
+        <div className="bg-white border border-[#0F2417]/10 rounded-2xl p-6 shadow-xs space-y-4 flex flex-col justify-between">
+          <div>
+            <div className="flex items-center justify-between pb-3 border-b border-[#0F2417]/10">
+              <div>
+                <h3 className="font-serif font-bold text-base text-[#0F2417]">
+                  Leadership Roster
+                </h3>
+                <p className="text-xs text-[#0F2417]/60">
+                  Featured team members on /our-team
+                </p>
+              </div>
+              <Link
+                href="/admin/team"
+                className="text-xs font-semibold text-[#0F2417] hover:underline inline-flex items-center gap-1"
+              >
+                <span>Edit roster</span>
+                <ArrowRight size={12} />
+              </Link>
+            </div>
+
+            <div className="divide-y divide-stone-100 mt-2">
+              {recentTeam.map((member) => (
+                <div key={member.id} className="py-3 flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-3 min-w-0">
+                    <div className="relative w-9 h-9 rounded-full overflow-hidden bg-stone-100 border border-stone-200 shrink-0">
+                      {member.image ? (
+                        <Image
+                          src={member.image}
+                          alt={member.name}
+                          fill
+                          sizes="36px"
+                          className="object-cover"
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center font-bold text-[#0F2417]/40 text-xs">
+                          {member.name.charAt(0)}
+                        </div>
+                      )}
+                    </div>
+                    <div className="min-w-0">
+                      <p className="font-semibold text-xs text-[#0F2417] truncate">{member.name}</p>
+                      <p className="text-[11px] text-stone-500 truncate">{member.roleEn}</p>
+                    </div>
+                  </div>
+                  <span className="text-[10px] font-mono text-stone-400 shrink-0">
+                    #{member.order}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="pt-4 border-t border-stone-100 flex items-center justify-between text-xs text-stone-500">
+            <span>Dual photo uploads active</span>
+            <Link
+              href="/en/our-team"
+              target="_blank"
+              className="inline-flex items-center gap-1 text-[#0F2417] font-semibold hover:underline"
+            >
+              <span>Live view</span>
+              <ExternalLink size={11} />
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

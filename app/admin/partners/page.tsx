@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import AdminHeader from '@/components/admin/admin-header'
 import { Handshake, Plus, Search, Edit2, Trash2, ExternalLink, Layers, CheckCircle2 } from 'lucide-react'
 import { PartnerData } from '@/lib/services/partners-service'
 import PartnerFormModal from '@/components/admin/partner-form-modal'
@@ -74,23 +73,15 @@ export default function AdminPartnersPage() {
 
   return (
     <div className="min-h-screen bg-[#FAF9F5] text-[#0F2417] flex flex-col font-sans">
-      <AdminHeader />
-
       <main className="flex-1 max-w-[1400px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
         {/* Title Bar */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-[#0F2417]/10">
           <div>
-            <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-[#0F2417]/60 font-mono mb-1">
-              <Handshake size={14} className="text-[#C29B38]" />
-              <span>Editorial Desk 08</span>
-              <span>/</span>
-              <span>Our Partners & Collaborators</span>
-            </div>
             <h1 className="font-serif text-2xl lg:text-3xl font-bold tracking-tight text-[#0F2417]">
-              Partners & Institutional Network
+              Our Partners & Collaborators
             </h1>
             <p className="text-sm text-[#0F2417]/70 mt-1 max-w-2xl">
-              Manage client logos, government ministries, regional seed regulators, and development institutions featured on the home marquee.
+              Curate donor organizations, government ministries, national seed trade associations, and breeding institutions.
             </p>
           </div>
 

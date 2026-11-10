@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import AdminHeader from '@/components/admin/admin-header'
 import { Type, Sparkles, Globe, Eye, Save, CheckCircle2, AlertCircle } from 'lucide-react'
 
 interface SectionRecord {
@@ -203,23 +202,15 @@ export default function AdminSectionsPage() {
 
   return (
     <div className="min-h-screen bg-[#FAF9F5] text-[#0F2417] flex flex-col font-sans">
-      <AdminHeader />
-
       <main className="flex-1 max-w-[1400px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
         {/* Title Bar */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-[#0F2417]/10">
           <div>
-            <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-[#0F2417]/60 font-mono mb-1">
-              <Type size={14} className="text-[#C29B38]" />
-              <span>Editorial Desk 07</span>
-              <span>/</span>
-              <span>Page Taglines, Vision, Mission & Goals</span>
-            </div>
             <h1 className="font-serif text-2xl lg:text-3xl font-bold tracking-tight text-[#0F2417]">
-              Page Content, Hero Taglines & Vision
+              Page Taglines, Vision & Mission
             </h1>
             <p className="text-sm text-[#0F2417]/70 mt-1 max-w-2xl">
-              Manage every editorial headline, philosophy statement, vision, mission, and strategic goal across the public website.
+              Edit the hero headlines, lead descriptions, vision, mission, and strategic goal copy published on the live site.
             </p>
           </div>
 

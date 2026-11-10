@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import AdminHeader from '@/components/admin/admin-header'
 import { Sparkles, Plus, Edit2, Trash2, Globe, Hash } from 'lucide-react'
 import { BeliefData } from '@/lib/services/beliefs-service'
 import BeliefFormModal from '@/components/admin/belief-form-modal'
@@ -58,23 +57,15 @@ export default function AdminBeliefsPage() {
 
   return (
     <div className="min-h-screen bg-[#FAF9F5] text-[#0F2417] flex flex-col font-sans">
-      <AdminHeader />
-
       <main className="flex-1 max-w-[1400px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
         {/* Title Bar */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-[#0F2417]/10">
           <div>
-            <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-[#0F2417]/60 font-mono mb-1">
-              <Sparkles size={14} className="text-[#C29B38]" />
-              <span>Editorial Desk 09</span>
-              <span>/</span>
-              <span>Core Beliefs & Philosophy</span>
-            </div>
             <h1 className="font-serif text-2xl lg:text-3xl font-bold tracking-tight text-[#0F2417]">
               What We Believe
             </h1>
             <p className="text-sm text-[#0F2417]/70 mt-1 max-w-2xl">
-              Manage the 4 foundational philosophy statements featured in the pinned horizontal sequence and philosophy cards on the home page.
+              Foundational agricultural philosophy statements published on the home page.
             </p>
           </div>
 
