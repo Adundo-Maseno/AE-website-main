@@ -138,11 +138,10 @@ export default function AdminPartnersPage() {
               <button
                 key={cat}
                 onClick={() => setCategoryFilter(cat)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition ${
-                  categoryFilter === cat
+                className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition ${categoryFilter === cat
                     ? 'bg-[#0F2417] text-[#FAF9F5]'
                     : 'bg-white border border-[#0F2417]/10 text-[#0F2417]/70 hover:bg-[#0F2417]/5'
-                }`}
+                  }`}
               >
                 {cat === 'ALL' ? 'All Sectors' : CATEGORY_LABELS[cat] || cat}
               </button>
@@ -194,11 +193,10 @@ export default function AdminPartnersPage() {
                       {CATEGORY_LABELS[partner.category] || partner.category}
                     </span>
                     <span
-                      className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${
-                        partner.active
+                      className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${partner.active
                           ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
                           : 'bg-stone-100 text-stone-500'
-                      }`}
+                        }`}
                     >
                       {partner.active ? '● Live' : '○ Hidden'}
                     </span>
