@@ -69,24 +69,143 @@ model Insight {
   id          String   @id @default(cuid())
   titleEn     String
   titleFr     String?
-  slug        String   @unique
-  contentEn   String   @db.Text
+  summaryEn   String?  @db.Text
+  summaryFr   String?  @db.Text
+  contentEn   String?  @db.Text
   contentFr   String?  @db.Text
+  link        String?
   author      String?
+  order       Int      @default(0)
   publishedAt DateTime @default(now())
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 
-  @@index([slug])
+  @@index([order])
 }
 
 model MapCountryData {
   id                  String   @id @default(cuid())
   countryCode         String   @unique
   countryName         String
+  region              String?
   activeProjectsCount Int      @default(0)
+  engagement          Int      @default(0)
+  overviewEn          String?  @db.Text
+  overviewFr          String?  @db.Text
+  workDone            String?  @db.Text
+  focus               String?  @db.Text
+  impact              String?  @db.Text
+  locations           String?  @db.Text
   detailsEn           String?  @db.Text
   detailsFr           String?  @db.Text
   updatedAt           DateTime @updatedAt
+
+  @@index([countryCode])
 }
+
+model GalleryItem {
+  id        String   @id @default(cuid())
+  titleEn   String
+  titleFr   String?
+  captionEn String?  @db.Text
+  captionFr String?  @db.Text
+  imageUrl  String
+  category  String   @default("Field Work")
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([category])
+  @@index([order])
+}
+
+model SiteSettings {
+  id                   String   @id @default("global")
+  projectsManagedCount String   @default("350+")
+  countriesCount       String   @default("22")
+  seedCompaniesCount   String   @default("100+")
+  yearsExperience      String   @default("25+")
+  contactEmail         String   @default("info@agri-experience.com")
+  contactPhone         String   @default("+254 (20) 2626888")
+  officeAddress        String   @default("Watermark Business Park, Spring Court, Karen, P.O. Box 1720 - 00606, Nairobi")
+  linkedinUrl          String   @default("https://www.linkedin.com/company/agri-experience-ltd/")
+  updatedAt            DateTime @updatedAt
+}
+
+model PageSection {
+  id         String   @id @default(cuid())
+  sectionKey String   @unique // e.g. "home_hero", "about_hero", "about_vision", "about_mission", "about_goal", "why_agri_header", "beliefs_header", "partners_header", "expertise_header", "home_cta", "about_cta"
+  page       String   // "home" | "about" | "impact" | "contact" | "general"
+  titleEn    String?
+  titleFr    String?
+  subtitleEn String?  @db.Text
+  subtitleFr String?  @db.Text
+  contentEn  String?  @db.Text
+  contentFr  String?  @db.Text
+  mediaUrl   String?
+  extraJson  String?  @db.Text // JSON for extra data e.g. stats, bullets, button labels
+  updatedAt  DateTime @updatedAt
+
+  @@index([page])
+}
+
+model Partner {
+  id         String   @id @default(cuid())
+  name       String
+  logoUrl    String
+  websiteUrl String?
+  category   String   @default("development_partners") // "development_partners" | "government" | "regulators" | "breeding_institutions" | "private_sector"
+  row        Int      @default(1)
+  order      Int      @default(0)
+  active     Boolean  @default(true)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([category])
+  @@index([order])
+}
+
+model CoreBelief {
+  id        String   @id @default(cuid())
+  titleEn   String
+  titleFr   String?
+  textEn    String   @db.Text
+  textFr    String?  @db.Text
+  order     Int      @default(0)
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([order])
+}
+
+model WhyAgriCard {
+  id        String   @id @default(cuid())
+  titleEn   String?
+  titleFr   String?
+  textEn    String   @db.Text
+  textFr    String?  @db.Text
+  order     Int      @default(0)
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([order])
+}
+
+model ExpertisePillar {
+  id        String   @id @default(cuid())
+  titleEn   String
+  titleFr   String?
+  descEn    String   @db.Text
+  descFr    String?  @db.Text
+  route     String   @default("/our-work")
+  order     Int      @default(0)
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([order])
+}
+
 

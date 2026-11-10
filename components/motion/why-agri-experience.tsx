@@ -1,22 +1,51 @@
 'use client'
 
-import { useRef } from 'react';
-import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { useRef } from 'react'
+import { motion } from 'framer-motion'
+import { useTranslations, useLocale } from 'next-intl'
+import { WhyAgriCardData } from '@/lib/services/why-agri-service'
+import { PageSectionData } from '@/lib/services/page-sections-service'
 
-export default function WhyAgriExperience() {
-  const t = useTranslations('WhyAgriExperience');
-  const sectionRef = useRef(null);
+interface WhyAgriExperienceProps {
+  initialCards?: WhyAgriCardData[]
+  headerData?: PageSectionData
+}
 
-  const cards = [
+export default function WhyAgriExperience({ initialCards, headerData }: WhyAgriExperienceProps = {}) {
+  const t = useTranslations('WhyAgriExperience')
+  const locale = useLocale()
+  const sectionRef = useRef(null)
+
+  const defaultCards = [
     { text: t('card_1') },
     { text: t('card_2') },
     { text: t('card_3') },
     { text: t('card_4') },
     { text: t('card_5') }
-  ];
+  ]
 
-  const bgColors = ['bg-gray-100/90', 'bg-gray-50/90', 'bg-[#FAFAFA]/90', 'bg-[#FDFDFD]/90', 'bg-white/90'];
+  const displayCards =
+    initialCards && initialCards.length > 0
+      ? initialCards.map((c) => ({
+          text: locale === 'fr' && c.textFr ? c.textFr : c.textEn,
+        }))
+      : defaultCards
+
+  const title =
+    headerData
+      ? locale === 'fr' && headerData.titleFr
+        ? headerData.titleFr
+        : headerData.titleEn || t('title')
+      : t('title')
+
+  const subtitle =
+    headerData
+      ? locale === 'fr' && headerData.subtitleFr
+        ? headerData.subtitleFr
+        : headerData.subtitleEn || t('subtitle')
+      : t('subtitle')
+
+  const bgColors = ['bg-gray-100/90', 'bg-gray-50/90', 'bg-[#FAFAFA]/90', 'bg-[#FDFDFD]/90', 'bg-white/90']
 
   return (
     <section ref={sectionRef} className="w-full py-16 lg:py-40 bg-mist relative overflow-visible">
@@ -47,7 +76,7 @@ export default function WhyAgriExperience() {
             viewport={{ once: true, margin: "-100px" }}
             className="inline-block text-sm font-bold uppercase tracking-widest text-primary-green mb-2"
           >
-            {t('subtitle')}
+            {subtitle}
           </motion.span>
           <motion.h2 
             initial={{ opacity: 0, y: 30 }}
@@ -56,7 +85,7 @@ export default function WhyAgriExperience() {
             transition={{ delay: 0.1 }}
             className="text-3xl sm:text-4xl lg:text-6xl font-serif text-deep-forest font-bold tracking-tight"
           >
-            {t('title')}
+            {title}
           </motion.h2>
           <motion.div 
             initial={{ opacity: 0, scaleX: 0 }}
@@ -68,7 +97,7 @@ export default function WhyAgriExperience() {
         </div>
 
         <div className="flex flex-col gap-6 pb-16 pt-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 lg:gap-12 md:pb-16 md:pt-12">
-          {cards.map((item, idx) => (
+          {displayCards.map((item, idx) => (
             <div
               key={idx}
               style={{ 

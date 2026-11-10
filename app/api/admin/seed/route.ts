@@ -3,6 +3,10 @@ import { prisma, isDatabaseConnected } from '@/lib/db'
 import { publicDownloads } from '@/lib/public-downloads'
 import { staticTeamMembers } from '@/lib/services/team-service'
 import { staticProjects } from '@/lib/services/projects-service'
+import { staticInsights } from '@/lib/services/insights-service'
+import { countrySeeds } from '@/components/country-data'
+import { staticGalleryItems } from '@/lib/services/gallery-service'
+import { defaultSiteSettings } from '@/lib/services/settings-service'
 import { DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD } from '@/lib/auth'
 import frMessages from '@/messages/fr.json'
 import bcrypt from 'bcryptjs'
@@ -23,6 +27,10 @@ export async function POST() {
     let resourcesSeeded = 0
     let teamSeeded = 0
     let projectsSeeded = 0
+    let insightsSeeded = 0
+    let countriesSeeded = 0
+    let gallerySeeded = 0
+    let settingsSeeded = 0
 
     // 1. Seed Superadmin if none exists
     const existingAdmin = await prisma.adminUser.findFirst()
@@ -101,17 +109,106 @@ export async function POST() {
       }
     }
 
+    // 5. Seed Insights if empty
+    const insightCount = await prisma.insight.count()
+    if (insightCount === 0) {
+      for (const ins of staticInsights) {
+        await prisma.insight.create({
+          data: {
+            titleEn: ins.titleEn,
+            titleFr: ins.titleFr || null,
+            summaryEn: ins.summaryEn || null,
+            summaryFr: ins.summaryFr || null,
+            contentEn: ins.contentEn || null,
+            contentFr: ins.contentFr || null,
+            link: ins.link || null,
+            author: ins.author || null,
+            order: ins.order,
+          },
+        })
+        insightsSeeded++
+      }
+    }
+
+    // 6. Seed MapCountryData if empty
+    const mapCount = await prisma.mapCountryData.count()
+    if (mapCount === 0) {
+      for (const c of countrySeeds) {
+        await prisma.mapCountryData.create({
+          data: {
+            countryCode: c.code,
+            countryName: c.name,
+            region: c.region,
+            activeProjectsCount: c.projects,
+            engagement: c.engagement,
+            overviewEn: c.overview,
+            overviewFr: null,
+            workDone: JSON.stringify(c.workDone),
+            focus: JSON.stringify(c.focus),
+            impact: JSON.stringify(c.impact),
+            locations: JSON.stringify(c.locations),
+          },
+        })
+        countriesSeeded++
+      }
+    }
+
+    // 7. Seed GalleryItems if empty
+    const galleryCount = await prisma.galleryItem.count()
+    if (galleryCount === 0) {
+      for (const g of staticGalleryItems) {
+        await prisma.galleryItem.create({
+          data: {
+            titleEn: g.titleEn,
+            titleFr: g.titleFr || null,
+            captionEn: g.captionEn || null,
+            captionFr: g.captionFr || null,
+            imageUrl: g.imageUrl,
+            category: g.category,
+            order: g.order,
+          },
+        })
+        gallerySeeded++
+      }
+    }
+
+    // 8. Seed SiteSettings if empty
+    const settingsCount = await prisma.siteSettings.count()
+    if (settingsCount === 0) {
+      await prisma.siteSettings.create({
+        data: {
+          projectsManagedCount: defaultSiteSettings.projectsManagedCount,
+          countriesCount: defaultSiteSettings.countriesCount,
+          seedCompaniesCount: defaultSiteSettings.seedCompaniesCount,
+          yearsExperience: defaultSiteSettings.yearsExperience,
+          contactEmail: defaultSiteSettings.contactEmail,
+          contactPhone: defaultSiteSettings.contactPhone,
+          officeAddress: defaultSiteSettings.officeAddress,
+          linkedinUrl: defaultSiteSettings.linkedinUrl,
+        },
+      })
+      settingsSeeded++
+    }
+
     return NextResponse.json({
       success: true,
-      message: 'Seed completed successfully',
+      message: 'Seed completed successfully across all domains',
       stats: {
         adminCreated,
         resourcesSeeded,
         teamSeeded,
         projectsSeeded,
+        insightsSeeded,
+        countriesSeeded,
+        gallerySeeded,
+        settingsSeeded,
         totalResources: resourceCount === 0 ? resourcesSeeded : resourceCount,
         totalTeam: teamCount === 0 ? teamSeeded : teamCount,
         totalProjects: projectCount === 0 ? projectsSeeded : projectCount,
+        totalInsights: insightCount === 0 ? insightsSeeded : insightCount,
+        totalCountries: mapCount === 0 ? countriesSeeded : mapCount,
+        totalGallery: galleryCount === 0 ? gallerySeeded : galleryCount,
+        totalSettings: settingsCount === 0 ? settingsSeeded : settingsCount,
       },
     })
   } catch (err: any) {

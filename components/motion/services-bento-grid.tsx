@@ -3,7 +3,9 @@
 import React from 'react'
 import { ArrowRight } from 'lucide-react'
 import { Link } from '@/i18n/routing'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
+import { ExpertisePillarData } from '@/lib/services/expertise-service'
+import { PageSectionData } from '@/lib/services/page-sections-service'
 
 export interface ServicePillar {
   key: string
@@ -37,7 +39,7 @@ function BentoCard({ pillar }: BentoCardProps) {
         </p>
       </div>
 
-      {/* Bottom Footer: Aligned in exact same row across all cards */}
+      {/* Bottom Footer */}
       <div className="pt-5 lg:pt-6 mt-auto flex items-center justify-end border-t border-stone-100">
         <Link
           href={pillar.route}
@@ -51,40 +53,57 @@ function BentoCard({ pillar }: BentoCardProps) {
   )
 }
 
-export default function ServicesBentoGrid() {
+interface ServicesBentoGridProps {
+  initialPillars?: ExpertisePillarData[]
+  headerData?: PageSectionData
+}
+
+export default function ServicesBentoGrid({ initialPillars, headerData }: ServicesBentoGridProps = {}) {
   const t = useTranslations('About')
+  const locale = useLocale()
 
   const cardLayouts = [
-    {
-      gridClass: 'md:col-span-2',
-      route: '/our-work/project-implementation',
-    },
-    {
-      gridClass: 'md:col-span-2',
-      route: '/our-work/client-advisory',
-    },
-    {
-      gridClass: 'md:col-span-2',
-      route: '/our-work/capacity-building',
-    },
-    {
-      gridClass: 'md:col-span-2',
-      route: '/our-work/technical-studies',
-    },
-    {
-      gridClass: 'md:col-span-2 md:col-start-2',
-      route: '/our-work/digital-platforms',
-    },
+    { gridClass: 'md:col-span-2', route: '/our-work/project-implementation' },
+    { gridClass: 'md:col-span-2', route: '/our-work/client-advisory' },
+    { gridClass: 'md:col-span-2', route: '/our-work/capacity-building' },
+    { gridClass: 'md:col-span-2', route: '/our-work/client-advisory' },
+    { gridClass: 'md:col-span-2 md:col-start-2', route: '/our-work/project-implementation' },
   ]
 
-  const rawCards = (t.raw('expertise_cards') as Array<{ title: string; desc: string }>) || []
-  const pillars: ServicePillar[] = rawCards.slice(0, 5).map((card, idx) => ({
-    key: String(idx),
-    title: card.title,
-    desc: card.desc,
-    gridClass: cardLayouts[idx]?.gridClass || 'md:col-span-2',
-    route: cardLayouts[idx]?.route || '/our-work',
-  }))
+  let pillars: ServicePillar[] = []
+
+  if (initialPillars && initialPillars.length > 0) {
+    pillars = initialPillars.filter((p) => p.active).map((p, idx) => ({
+      key: p.id,
+      title: locale === 'fr' && p.titleFr ? p.titleFr : p.titleEn,
+      desc: locale === 'fr' && p.descFr ? p.descFr : p.descEn,
+      gridClass: cardLayouts[idx]?.gridClass || 'md:col-span-2',
+      route: p.route || cardLayouts[idx]?.route || '/our-work',
+    }))
+  } else {
+    const rawCards = (t.raw('expertise_cards') as Array<{ title: string; desc: string }>) || []
+    pillars = rawCards.slice(0, 5).map((card, idx) => ({
+      key: String(idx),
+      title: card.title,
+      desc: card.desc,
+      gridClass: cardLayouts[idx]?.gridClass || 'md:col-span-2',
+      route: cardLayouts[idx]?.route || '/our-work',
+    }))
+  }
+
+  const title =
+    headerData
+      ? locale === 'fr' && headerData.titleFr
+        ? headerData.titleFr
+        : headerData.titleEn || t('expertise_title')
+      : t('expertise_title')
+
+  const desc =
+    headerData
+      ? locale === 'fr' && headerData.subtitleFr
+        ? headerData.subtitleFr
+        : headerData.subtitleEn || t('expertise_desc')
+      : t('expertise_desc')
 
   return (
     <section className="w-full py-12 md:py-16 lg:py-20 2xl:py-24 bg-[#F8F6F0] relative border-t border-stone-200/60 overflow-hidden">
@@ -97,10 +116,10 @@ export default function ServicesBentoGrid() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-14 gap-6 md:gap-8">
           <div className="max-w-2xl space-y-4">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#0F1A15] tracking-tight pb-1 leading-tight">
-              {t('expertise_title')}
+              {title}
             </h2>
             <p className="text-lg sm:text-xl lg:text-2xl text-stone-700 font-normal leading-relaxed">
-              {t('expertise_desc')}
+              {desc}
             </p>
           </div>
 

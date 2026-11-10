@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import { PartnerData } from '@/lib/services/partners-service'
 
 interface ClientLogo {
   name: string
@@ -9,6 +10,10 @@ interface ClientLogo {
   href: string
   containerClassName?: string
   imageClassName?: string
+}
+
+export interface ClientLogosProps {
+  initialPartners?: PartnerData[]
 }
 
 const row1Logos: ClientLogo[] = [
@@ -203,9 +208,34 @@ const LogoItem = ({ logo }: { logo: ClientLogo }) => (
   </a>
 )
 
-export default function ClientLogos() {
-  const topRepeated = [...row1Logos, ...row1Logos]
-  const bottomRepeated = [...row2Logos, ...row2Logos]
+export default function ClientLogos({ initialPartners }: ClientLogosProps = {}) {
+  let r1 = row1Logos
+  let r2 = row2Logos
+
+  if (initialPartners && initialPartners.length > 0) {
+    const p1 = initialPartners
+      .filter((p) => p.row === 1 && p.active)
+      .map((p) => ({
+        name: p.name,
+        src: p.logoUrl,
+        alt: p.name,
+        href: p.websiteUrl || '#',
+      }))
+    const p2 = initialPartners
+      .filter((p) => p.row === 2 && p.active)
+      .map((p) => ({
+        name: p.name,
+        src: p.logoUrl,
+        alt: p.name,
+        href: p.websiteUrl || '#',
+      }))
+
+    if (p1.length > 0) r1 = p1
+    if (p2.length > 0) r2 = p2
+  }
+
+  const topRepeated = [...r1, ...r1]
+  const bottomRepeated = [...r2, ...r2]
 
   return (
     <div className="relative w-full flex flex-col pt-4 pb-8 md:py-12 overflow-hidden">
