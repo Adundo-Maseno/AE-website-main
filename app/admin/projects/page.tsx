@@ -5,7 +5,7 @@ import {
   Briefcase,
   Plus,
   Search,
-  Edit2,
+  Edit3,
   Trash2,
   RefreshCw,
   AlertCircle,
@@ -93,45 +93,48 @@ export default function AdminProjectsPage() {
   })
 
   return (
-    <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
-      {/* Top action header */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-black/5">
+    <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+      {/* Editorial Header Banner */}
+      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-black/[0.08]">
         <div>
-          <div className="flex items-center gap-2">
-            <h1 className="font-serif font-bold text-2xl sm:text-3xl text-deep-forest tracking-tight">
-              Projects & Case Studies
-            </h1>
-            <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-mist text-deep-forest border border-black/5">
-              {projects.length}
+          <div className="flex items-center gap-2.5 mb-1.5">
+            <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-deep-forest text-white">
+              Work Pillars & Programs
+            </span>
+            <span className="text-xs font-semibold text-charcoal/60">
+              {projects.length} Case Studies & Assignments
             </span>
           </div>
-          <p className="text-xs sm:text-sm text-charcoal/70 mt-1">
-            Manage pillar initiatives, digital platforms (MbeguChoice, M3), and donor programs.
+          <h1 className="font-serif font-bold text-3xl sm:text-4xl text-deep-forest tracking-tight">
+            Case Studies & Pillar Assignments
+          </h1>
+          <p className="text-xs sm:text-sm text-charcoal/70 mt-1 max-w-2xl leading-relaxed">
+            Manage flagship digital platforms (MbeguChoice, M3, RIMI), regional trade diagnostics, and agricultural capacity-building initiatives.
           </p>
         </div>
 
-        <div className="flex items-center gap-2.5">
+        <div className="flex items-center gap-3 w-full sm:w-auto">
           <button
             onClick={fetchProjects}
-            className="p-2.5 rounded-xl border border-black/10 hover:bg-black/5 text-charcoal/70 transition-colors cursor-pointer"
+            className="p-2.5 rounded-full border border-black/10 hover:bg-black/[0.04] text-charcoal/70 transition-colors cursor-pointer"
             title="Refresh list"
-            aria-label="Refresh list"
+            aria-label="Refresh projects list"
           >
             <RefreshCw size={16} className={loading ? 'animate-spin' : ''} />
           </button>
 
           <button
             onClick={handleCreate}
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-deep-forest hover:bg-[#153e25] text-white text-xs font-bold shadow-xs transition-colors cursor-pointer"
+            className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-deep-forest hover:bg-[#153e25] text-white text-xs font-bold shadow-xs hover:shadow-md transition-all cursor-pointer whitespace-nowrap"
           >
             <Plus size={16} />
-            Add Project
+            Add Case Study
           </button>
         </div>
       </div>
 
       {error && (
-        <div className="p-4 rounded-xl bg-red-50 border border-red-200 flex items-start gap-3 text-xs text-red-800">
+        <div className="p-4 rounded-2xl bg-red-50 border border-red-200 flex items-start gap-3 text-xs text-red-800">
           <AlertCircle size={16} className="text-red-600 shrink-0 mt-0.5" />
           <p>{error}</p>
         </div>
@@ -140,16 +143,15 @@ export default function AdminProjectsPage() {
       {/* Filter and Search Bar */}
       <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
         {/* Pillar Filter Pills */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0 scrollbar-none">
+        <div className="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0 scrollbar-none">
           {PILLARS.map((pillar) => (
             <button
               key={pillar.value}
               onClick={() => setSelectedPillar(pillar.value)}
-              className={`px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer ${
-                selectedPillar === pillar.value
+              className={`px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all cursor-pointer ${selectedPillar === pillar.value
                   ? 'bg-deep-forest text-white shadow-xs'
-                  : 'bg-white border border-black/5 text-charcoal/70 hover:bg-black/5'
-              }`}
+                  : 'bg-white border border-black/[0.08] text-charcoal/70 hover:bg-black/[0.04]'
+                }`}
             >
               {pillar.label}
             </button>
@@ -157,27 +159,27 @@ export default function AdminProjectsPage() {
         </div>
 
         {/* Search Input */}
-        <div className="relative w-full md:w-72">
-          <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-charcoal/40" />
+        <div className="relative w-full md:w-80">
+          <Search size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-charcoal/40" />
           <input
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search projects..."
-            className="w-full pl-9 pr-3.5 py-1.5 rounded-xl border border-black/10 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs bg-white"
+            placeholder="Search projects by title, client, or topic..."
+            className="w-full pl-9 pr-4 py-2 rounded-full border border-black/10 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs bg-white shadow-xs"
           />
         </div>
       </div>
 
       {/* Table */}
-      <div className="bg-white rounded-2xl border border-black/5 shadow-xs overflow-hidden">
+      <div className="bg-white rounded-3xl border border-black/[0.08] shadow-xs overflow-hidden">
         {loading && projects.length === 0 ? (
-          <div className="py-20 text-center text-xs text-charcoal/60">
-            <RefreshCw size={24} className="animate-spin mx-auto mb-2 text-deep-forest/40" />
+          <div className="py-24 text-center text-xs text-charcoal/60">
+            <RefreshCw size={24} className="animate-spin mx-auto mb-3 text-deep-forest/40" />
             Loading projects...
           </div>
         ) : filteredProjects.length === 0 ? (
-          <div className="py-16 text-center text-xs text-charcoal/60">
+          <div className="py-20 text-center text-xs text-charcoal/60">
             <Briefcase size={32} className="mx-auto mb-2 text-charcoal/20" />
             No projects found in this pillar.
           </div>
@@ -185,25 +187,23 @@ export default function AdminProjectsPage() {
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse text-xs">
               <thead>
-                <tr className="border-b border-black/5 bg-[#FAFAF8] text-charcoal/70 font-semibold uppercase tracking-wider text-[11px]">
-                  <th className="py-3 px-4 w-12 text-center">Order</th>
-                  <th className="py-3 px-4">Title & Description</th>
-                  <th className="py-3 px-4">Pillar</th>
-                  <th className="py-3 px-4">Client / Partner</th>
-                  <th className="py-3 px-4">Timeline</th>
-                  <th className="py-3 px-4 text-right">Actions</th>
+                <tr className="border-b border-black/[0.06] bg-[#FAF9F5] text-charcoal/70 font-semibold uppercase tracking-wider text-[11px]">
+                  <th className="py-4 px-5 w-12 text-center">Rank</th>
+                  <th className="py-4 px-5">Title & Description</th>
+                  <th className="py-4 px-5">Pillar</th>
+                  <th className="py-4 px-5">Client / Partner</th>
+                  <th className="py-4 px-5">Timeline</th>
+                  <th className="py-4 px-5 text-right">Actions</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-black/5">
+              <tbody className="divide-y divide-black/[0.06]">
                 {filteredProjects.map((item) => (
                   <tr key={item.id} className="hover:bg-mist/30 transition-colors">
-                    <td className="py-3.5 px-4 text-center font-bold text-charcoal/40">
-                      <span className="inline-flex items-center justify-center w-6 h-6 rounded-md bg-black/5 text-[11px]">
-                        {item.order}
-                      </span>
+                    <td className="py-4 px-5 text-center font-bold text-charcoal/50">
+                      #{item.order}
                     </td>
 
-                    <td className="py-3.5 px-4 max-w-md">
+                    <td className="py-4 px-5 max-w-lg">
                       <div className="font-bold text-deep-forest text-sm leading-snug">
                         {item.titleEn}
                       </div>
@@ -212,20 +212,20 @@ export default function AdminProjectsPage() {
                           FR: {item.titleFr}
                         </div>
                       )}
-                      <p className="text-charcoal/65 line-clamp-2 mt-1 text-xs">
+                      <p className="text-charcoal/70 line-clamp-2 mt-1 text-xs leading-relaxed">
                         {item.descEn}
                       </p>
                     </td>
 
-                    <td className="py-3.5 px-4 whitespace-nowrap">
-                      <span className="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-mist text-deep-forest border border-black/5 capitalize">
+                    <td className="py-4 px-5 whitespace-nowrap">
+                      <span className="px-3 py-1 rounded-full text-[11px] font-semibold bg-mist text-deep-forest border border-black/[0.06] capitalize">
                         {item.category.replace('-', ' ')}
                       </span>
                     </td>
 
-                    <td className="py-3.5 px-4 max-w-xs">
+                    <td className="py-4 px-5 max-w-xs">
                       {item.client ? (
-                        <span className="text-[11px] font-semibold text-[#1b6b33]">
+                        <span className="text-xs font-semibold text-[#1b6b33]">
                           {item.client}
                         </span>
                       ) : (
@@ -233,7 +233,7 @@ export default function AdminProjectsPage() {
                       )}
                     </td>
 
-                    <td className="py-3.5 px-4 whitespace-nowrap">
+                    <td className="py-4 px-5 whitespace-nowrap">
                       {item.year ? (
                         <span className="text-xs text-charcoal/70 flex items-center gap-1">
                           <Calendar size={12} className="text-charcoal/40" />
@@ -244,23 +244,21 @@ export default function AdminProjectsPage() {
                       )}
                     </td>
 
-                    <td className="py-3.5 px-4 text-right whitespace-nowrap">
+                    <td className="py-4 px-5 text-right whitespace-nowrap">
                       <div className="inline-flex items-center gap-1">
                         <button
                           onClick={() => handleEdit(item)}
-                          className="p-1.5 rounded-lg text-charcoal/60 hover:text-deep-forest hover:bg-black/5 transition-colors cursor-pointer"
-                          title="Edit"
-                          aria-label="Edit project"
+                          className="p-2 rounded-lg text-charcoal/60 hover:text-deep-forest hover:bg-black/[0.04] transition-colors cursor-pointer"
+                          title="Edit project"
                         >
-                          <Edit2 size={14} />
+                          <Edit3 size={15} />
                         </button>
                         <button
                           onClick={() => handleDelete(item.id, item.titleEn)}
-                          className="p-1.5 rounded-lg text-charcoal/60 hover:text-red-700 hover:bg-red-50 transition-colors cursor-pointer"
-                          title="Delete"
-                          aria-label="Delete project"
+                          className="p-2 rounded-lg text-charcoal/60 hover:text-red-700 hover:bg-red-50 transition-colors cursor-pointer"
+                          title="Delete project"
                         >
-                          <Trash2 size={14} />
+                          <Trash2 size={15} />
                         </button>
                       </div>
                     </td>
@@ -281,4 +279,3 @@ export default function AdminProjectsPage() {
     </div>
   )
 }
-

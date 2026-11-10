@@ -5,12 +5,13 @@ import {
   FileText,
   Plus,
   Search,
-  Edit2,
+  Edit3,
   Trash2,
   ExternalLink,
   Download,
   AlertCircle,
   RefreshCw,
+  FolderOpen,
 } from 'lucide-react'
 import ResourceFormModal from '@/components/admin/resource-form-modal'
 import { ResourceItem } from '@/lib/services/resources-service'
@@ -89,27 +90,30 @@ export default function AdminResourcesPage() {
   })
 
   return (
-    <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
-      {/* Top action header */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-black/5">
+    <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+      {/* Editorial Header Banner */}
+      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-black/[0.08]">
         <div>
-          <div className="flex items-center gap-2">
-            <h1 className="font-serif font-bold text-2xl sm:text-3xl text-deep-forest tracking-tight">
-              Resources & Publications
-            </h1>
-            <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-mist text-deep-forest border border-black/5">
-              {resources.length}
+          <div className="flex items-center gap-2.5 mb-1.5">
+            <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-deep-forest text-white">
+              Publications Library
+            </span>
+            <span className="text-xs font-semibold text-charcoal/60">
+              {resources.length} Documents Published
             </span>
           </div>
-          <p className="text-xs sm:text-sm text-charcoal/70 mt-1">
-            Manage public domain reports, studies, and download links with instant public site sync.
+          <h1 className="font-serif font-bold text-3xl sm:text-4xl text-deep-forest tracking-tight">
+            Publications & Digital Downloads
+          </h1>
+          <p className="text-xs sm:text-sm text-charcoal/70 mt-1 max-w-2xl leading-relaxed">
+            Manage public domain seed sector studies, client partner advisories, and technical reports with instant public cache invalidation.
           </p>
         </div>
 
-        <div className="flex items-center gap-2.5">
+        <div className="flex items-center gap-3 w-full sm:w-auto">
           <button
             onClick={fetchResources}
-            className="p-2.5 rounded-xl border border-black/10 hover:bg-black/5 text-charcoal/70 transition-colors cursor-pointer"
+            className="p-2.5 rounded-full border border-black/10 hover:bg-black/[0.04] text-charcoal/70 transition-colors cursor-pointer"
             title="Refresh list"
             aria-label="Refresh list"
           >
@@ -118,16 +122,16 @@ export default function AdminResourcesPage() {
 
           <button
             onClick={handleCreate}
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-deep-forest hover:bg-[#153e25] text-white text-xs font-bold shadow-xs transition-colors cursor-pointer"
+            className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-deep-forest hover:bg-[#153e25] text-white text-xs font-bold shadow-xs hover:shadow-md transition-all cursor-pointer whitespace-nowrap"
           >
             <Plus size={16} />
-            Add Publication
+            Publish New Resource
           </button>
         </div>
       </div>
 
       {error && (
-        <div className="p-4 rounded-xl bg-red-50 border border-red-200 flex items-start gap-3 text-xs text-red-800">
+        <div className="p-4 rounded-2xl bg-red-50 border border-red-200 flex items-start gap-3 text-xs text-red-800">
           <AlertCircle size={16} className="text-red-600 shrink-0 mt-0.5" />
           <p>{error}</p>
         </div>
@@ -136,15 +140,15 @@ export default function AdminResourcesPage() {
       {/* Filter and Search Bar */}
       <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
         {/* Category Filter Pills */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0 scrollbar-none">
+        <div className="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0 scrollbar-none">
           {CATEGORIES.map((cat) => (
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer ${
+              className={`px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all cursor-pointer ${
                 selectedCategory === cat
                   ? 'bg-deep-forest text-white shadow-xs'
-                  : 'bg-white border border-black/5 text-charcoal/70 hover:bg-black/5'
+                  : 'bg-white border border-black/[0.08] text-charcoal/70 hover:bg-black/[0.04]'
               }`}
             >
               {cat}
@@ -153,46 +157,46 @@ export default function AdminResourcesPage() {
         </div>
 
         {/* Search Input */}
-        <div className="relative w-full md:w-72">
-          <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-charcoal/40" />
+        <div className="relative w-full md:w-80">
+          <Search size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-charcoal/40" />
           <input
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search publications..."
-            className="w-full pl-9 pr-3.5 py-1.5 rounded-xl border border-black/10 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs bg-white"
+            placeholder="Search by title, partner, citation..."
+            className="w-full pl-9 pr-4 py-2 rounded-full border border-black/10 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs bg-white shadow-xs"
           />
         </div>
       </div>
 
       {/* Publications Table */}
-      <div className="bg-white rounded-2xl border border-black/5 shadow-xs overflow-hidden">
+      <div className="bg-white rounded-3xl border border-black/[0.08] shadow-xs overflow-hidden">
         {loading && resources.length === 0 ? (
-          <div className="py-20 text-center text-xs text-charcoal/60">
-            <RefreshCw size={24} className="animate-spin mx-auto mb-2 text-deep-forest/40" />
-            Loading publications...
+          <div className="py-24 text-center text-xs text-charcoal/60">
+            <RefreshCw size={24} className="animate-spin mx-auto mb-3 text-deep-forest/40" />
+            Loading publications library...
           </div>
         ) : filteredResources.length === 0 ? (
-          <div className="py-16 text-center text-xs text-charcoal/60">
+          <div className="py-20 text-center text-xs text-charcoal/60">
             <FileText size={32} className="mx-auto mb-2 text-charcoal/20" />
-            No publications found matching your criteria.
+            No publications found matching your filter criteria.
           </div>
         ) : (
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse text-xs">
               <thead>
-                <tr className="border-b border-black/5 bg-[#FAFAF8] text-charcoal/70 font-semibold uppercase tracking-wider text-[11px]">
-                  <th className="py-3 px-4">Title & Citation</th>
-                  <th className="py-3 px-4">Category</th>
-                  <th className="py-3 px-4">Client / Partner</th>
-                  <th className="py-3 px-4">Link</th>
-                  <th className="py-3 px-4 text-right">Actions</th>
+                <tr className="border-b border-black/[0.06] bg-[#FAF9F5] text-charcoal/70 font-semibold uppercase tracking-wider text-[11px]">
+                  <th className="py-4 px-5">Title & Citation</th>
+                  <th className="py-4 px-5">Category</th>
+                  <th className="py-4 px-5">Client / Partner</th>
+                  <th className="py-4 px-5">File</th>
+                  <th className="py-4 px-5 text-right">Actions</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-black/5">
+              <tbody className="divide-y divide-black/[0.06]">
                 {filteredResources.map((item) => (
                   <tr key={item.id} className="hover:bg-mist/30 transition-colors">
-                    <td className="py-3.5 px-4 max-w-md">
+                    <td className="py-4 px-5 max-w-lg">
                       <div className="font-bold text-deep-forest text-sm leading-snug line-clamp-2">
                         {item.titleEn}
                       </div>
@@ -201,53 +205,51 @@ export default function AdminResourcesPage() {
                           FR: {item.titleFr}
                         </div>
                       )}
-                      <div className="text-charcoal/60 line-clamp-1 mt-1 text-[11px]">
+                      <div className="text-charcoal/60 line-clamp-2 mt-1 text-[11px] leading-relaxed">
                         {item.citationEn}
                       </div>
                     </td>
 
-                    <td className="py-3.5 px-4 whitespace-nowrap">
-                      <span className="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-mist text-deep-forest border border-black/5">
+                    <td className="py-4 px-5 whitespace-nowrap">
+                      <span className="px-3 py-1 rounded-full text-[11px] font-semibold bg-mist text-deep-forest border border-black/[0.06]">
                         {item.category}
                       </span>
                     </td>
 
-                    <td className="py-3.5 px-4 max-w-xs">
-                      <span className="text-[11px] font-semibold text-[#1b6b33] line-clamp-2">
+                    <td className="py-4 px-5 max-w-xs">
+                      <span className="text-xs font-semibold text-[#1b6b33] line-clamp-2">
                         {item.client}
                       </span>
                     </td>
 
-                    <td className="py-3.5 px-4 whitespace-nowrap">
+                    <td className="py-4 px-5 whitespace-nowrap">
                       <a
                         href={item.link}
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-flex items-center gap-1 text-deep-forest hover:underline"
+                        className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#FAF9F5] hover:bg-mist text-deep-forest border border-black/[0.06] transition-colors"
                         title={item.link}
                       >
-                        <Download size={13} />
+                        <Download size={12} />
                         PDF
                       </a>
                     </td>
 
-                    <td className="py-3.5 px-4 text-right whitespace-nowrap">
+                    <td className="py-4 px-5 text-right whitespace-nowrap">
                       <div className="inline-flex items-center gap-1">
                         <button
                           onClick={() => handleEdit(item)}
-                          className="p-1.5 rounded-lg text-charcoal/60 hover:text-deep-forest hover:bg-black/5 transition-colors cursor-pointer"
-                          title="Edit"
-                          aria-label="Edit publication"
+                          className="p-2 rounded-lg text-charcoal/60 hover:text-deep-forest hover:bg-black/[0.04] transition-colors cursor-pointer"
+                          title="Edit publication"
                         >
-                          <Edit2 size={14} />
+                          <Edit3 size={15} />
                         </button>
                         <button
                           onClick={() => handleDelete(item.id, item.titleEn)}
-                          className="p-1.5 rounded-lg text-charcoal/60 hover:text-red-700 hover:bg-red-50 transition-colors cursor-pointer"
-                          title="Delete"
-                          aria-label="Delete publication"
+                          className="p-2 rounded-lg text-charcoal/60 hover:text-red-700 hover:bg-red-50 transition-colors cursor-pointer"
+                          title="Delete publication"
                         >
-                          <Trash2 size={14} />
+                          <Trash2 size={15} />
                         </button>
                       </div>
                     </td>
@@ -269,4 +271,3 @@ export default function AdminResourcesPage() {
     </div>
   )
 }
-

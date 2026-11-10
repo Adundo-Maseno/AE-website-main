@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Database, RefreshCw, CheckCircle2, AlertCircle } from 'lucide-react'
+import { Database, CheckCircle2, AlertCircle, RefreshCw } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 
 export default function SeedButton() {
@@ -10,7 +10,7 @@ export default function SeedButton() {
   const router = useRouter()
 
   const handleSeed = async () => {
-    if (!confirm('This will seed existing static site data (resources, team, projects) into the database if empty. Proceed?')) {
+    if (!confirm('This will seed default site publications, team members, and case studies into the connected database if empty. Proceed?')) {
       return
     }
 
@@ -27,7 +27,7 @@ export default function SeedButton() {
 
       setMessage({
         type: 'success',
-        text: `Success: Seeded ${data.stats?.resourcesSeeded || 0} resources, ${data.stats?.teamSeeded || 0} team members.`,
+        text: `Database synchronized successfully with ${data.stats?.totalResources || 0} publications, ${data.stats?.totalTeam || 0} team members, and ${data.stats?.totalProjects || 0} case studies.`,
       })
       router.refresh()
     } catch (err: any) {
@@ -42,24 +42,28 @@ export default function SeedButton() {
       <button
         onClick={handleSeed}
         disabled={loading}
-        className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-mist hover:bg-black/5 text-deep-forest border border-black/10 text-xs font-bold transition-all cursor-pointer disabled:opacity-50"
+        className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-[#FAF9F5] text-deep-forest border border-black/[0.12] text-xs font-bold shadow-xs hover:shadow-md transition-all cursor-pointer disabled:opacity-50 whitespace-nowrap"
       >
-        <Database size={14} className={loading ? 'animate-spin' : ''} />
-        {loading ? 'Seeding Database...' : 'Seed / Sync Default Site Data'}
+        {loading ? (
+          <RefreshCw size={14} className="animate-spin text-deep-forest" />
+        ) : (
+          <Database size={14} className="text-deep-forest" />
+        )}
+        <span>{loading ? 'Synchronizing...' : 'Sync Default Data'}</span>
       </button>
 
       {message && (
         <div
-          className={`p-2.5 rounded-lg text-xs flex items-center gap-2 ${
+          className={`p-3 rounded-2xl text-xs flex items-center gap-2 ${
             message.type === 'success'
-              ? 'bg-green-50 text-green-800 border border-green-200'
-              : 'bg-red-50 text-red-800 border border-red-200'
+              ? 'bg-emerald-50 text-emerald-900 border border-emerald-200'
+              : 'bg-red-50 text-red-900 border border-red-200'
           }`}
         >
           {message.type === 'success' ? (
-            <CheckCircle2 size={14} className="text-green-600 shrink-0" />
+            <CheckCircle2 size={15} className="text-emerald-600 shrink-0" />
           ) : (
-            <AlertCircle size={14} className="text-red-600 shrink-0" />
+            <AlertCircle size={15} className="text-red-600 shrink-0" />
           )}
           <span>{message.text}</span>
         </div>
@@ -67,4 +71,3 @@ export default function SeedButton() {
     </div>
   )
 }
-

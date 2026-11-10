@@ -1,8 +1,10 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { X, Globe, User, Image as ImageIcon, Hash } from 'lucide-react'
+import Image from 'next/image'
+import { X, Globe, User, Hash, Sparkles } from 'lucide-react'
 import { TeamMemberItem } from '@/lib/services/team-service'
+import ImageUploader from './image-uploader'
 
 interface TeamFormModalProps {
   isOpen: boolean
@@ -78,10 +80,12 @@ export default function TeamFormModal({
     }
 
     try {
-      const url = member?.id && !member.id.startsWith('static-')
-        ? `/api/admin/team/${member.id}`
-        : '/api/admin/team'
-      const method = member?.id && !member.id.startsWith('static-') ? 'PUT' : 'POST'
+      const url =
+        member?.id && !member.id.startsWith('static-')
+          ? `/api/admin/team/${member.id}`
+          : '/api/admin/team'
+      const method =
+        member?.id && !member.id.startsWith('static-') ? 'PUT' : 'POST'
 
       const res = await fetch(url, {
         method,
@@ -102,26 +106,26 @@ export default function TeamFormModal({
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200">
-      <div className="relative w-full max-w-2xl bg-white rounded-3xl shadow-2xl border border-black/10 overflow-hidden flex flex-col max-h-[90vh]">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-charcoal/60 backdrop-blur-xs animate-in fade-in duration-200">
+      <div className="relative w-full max-w-3xl bg-white rounded-3xl shadow-2xl border border-black/[0.08] overflow-hidden flex flex-col max-h-[92vh]">
         {/* Header */}
-        <div className="px-6 py-5 border-b border-black/5 flex items-center justify-between bg-[#FAFAF8]">
-          <div className="flex items-center gap-2.5">
-            <div className="p-2 rounded-xl bg-deep-forest text-white">
+        <div className="px-6 py-5 border-b border-black/[0.06] flex items-center justify-between bg-[#FAF9F5]">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-deep-forest text-white flex items-center justify-center shadow-xs">
               <User size={18} />
             </div>
             <div>
-              <h2 className="font-serif font-bold text-lg text-deep-forest">
-                {member ? 'Edit Team Member' : 'Add Team Member'}
+              <h2 className="font-serif font-bold text-lg text-deep-forest tracking-tight">
+                {member ? 'Edit Team Profile' : 'Add Team Member'}
               </h2>
               <p className="text-xs text-charcoal/60">
-                Manage leadership & expert profiles with bilingual translations.
+                Configure profile photography, leadership titles, and bilingual bios.
               </p>
             </div>
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 rounded-full hover:bg-black/5 text-charcoal/60 hover:text-deep-forest transition-colors cursor-pointer"
+            className="p-2 rounded-full hover:bg-black/[0.04] text-charcoal/60 hover:text-deep-forest transition-colors cursor-pointer"
             aria-label="Close modal"
           >
             <X size={18} />
@@ -129,118 +133,118 @@ export default function TeamFormModal({
         </div>
 
         {/* Language Tabs */}
-        <div className="flex border-b border-black/5 px-6 bg-white gap-4">
+        <div className="flex border-b border-black/[0.06] px-6 bg-white gap-6">
           <button
             type="button"
             onClick={() => setTab('en')}
-            className={`py-3 text-xs font-bold border-b-2 transition-colors flex items-center gap-1.5 cursor-pointer ${
+            className={`py-3 text-xs font-bold border-b-2 transition-all flex items-center gap-2 cursor-pointer ${
               tab === 'en'
                 ? 'border-deep-forest text-deep-forest'
                 : 'border-transparent text-charcoal/50 hover:text-charcoal'
             }`}
           >
-            <Globe size={14} /> English Details (Primary)
+            <Globe size={13} /> English Profile (Primary)
           </button>
           <button
             type="button"
             onClick={() => setTab('fr')}
-            className={`py-3 text-xs font-bold border-b-2 transition-colors flex items-center gap-1.5 cursor-pointer ${
+            className={`py-3 text-xs font-bold border-b-2 transition-all flex items-center gap-2 cursor-pointer ${
               tab === 'fr'
                 ? 'border-deep-forest text-deep-forest'
                 : 'border-transparent text-charcoal/50 hover:text-charcoal'
             }`}
           >
-            <Globe size={14} /> French Translations (Optional)
+            <Globe size={13} /> French Translation (Optional)
           </button>
         </div>
 
         {/* Form Body */}
-        <form onSubmit={handleSubmit} className="flex-1 overflow-y-auto p-6 space-y-4">
+        <form onSubmit={handleSubmit} className="flex-1 overflow-y-auto p-6 space-y-6">
           {error && (
             <div className="p-3.5 rounded-xl bg-red-50 border border-red-200 text-xs text-red-800">
               {error}
             </div>
           )}
 
-          {tab === 'en' ? (
-            <div className="space-y-4">
-              <div>
-                <label className="block text-xs font-bold text-deep-forest mb-1">
-                  Full Name *
-                </label>
-                <input
-                  type="text"
-                  required
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  placeholder="e.g. Dr. Aline O'Connor"
-                  className="w-full px-3.5 py-2 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs"
+          {tab === 'en' && (
+            <div className="space-y-5">
+              {/* Photo Upload Section */}
+              <div className="p-4 rounded-2xl bg-[#FAF9F5] border border-black/[0.06] space-y-3">
+                <ImageUploader
+                  value={image}
+                  onChange={setImage}
+                  label="Profile Portrait Photograph"
+                  hint="Upload a high-resolution photo, drag & drop from your computer, or pick from the gallery."
+                  folder="team"
                 />
               </div>
 
-              <div>
-                <label className="block text-xs font-bold text-deep-forest mb-1">
-                  Role / Title (English) *
-                </label>
-                <input
-                  type="text"
-                  required
-                  value={roleEn}
-                  onChange={(e) => setRoleEn(e.target.value)}
-                  placeholder="e.g. Managing Director & Founder"
-                  className="w-full px-3.5 py-2 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs"
-                />
-              </div>
-
-              <div>
-                <label className="block text-xs font-bold text-deep-forest mb-1">
-                  Bio / Background (English)
-                </label>
-                <textarea
-                  rows={4}
-                  value={bioEn}
-                  onChange={(e) => setBioEn(e.target.value)}
-                  placeholder="Describe experience, leadership, and seed systems specialization..."
-                  className="w-full px-3.5 py-2 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs resize-none"
-                />
-              </div>
-
+              {/* Identity & Role */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-bold text-deep-forest mb-1 flex items-center gap-1">
-                    <ImageIcon size={12} /> Photo Path or URL
+                  <label className="block text-xs font-bold text-deep-forest mb-1">
+                    Full Name *
                   </label>
                   <input
                     type="text"
-                    value={image}
-                    onChange={(e) => setImage(e.target.value)}
-                    placeholder="/team/aline.png"
-                    className="w-full px-3.5 py-2 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs"
+                    required
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="e.g. Mulemia Maina"
+                    className="w-full px-3.5 py-2.5 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs bg-white"
                   />
-                  <p className="text-[10px] text-charcoal/50 mt-1">
-                    Local static image path in `/public/team/` or external HTTPS URL.
-                  </p>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold text-deep-forest mb-1 flex items-center gap-1">
-                    <Hash size={12} /> Display Order
+                  <label className="block text-xs font-bold text-deep-forest mb-1">
+                    Role / Title (English) *
                   </label>
                   <input
-                    type="number"
-                    value={order}
-                    onChange={(e) => setOrder(parseInt(e.target.value, 10) || 0)}
-                    placeholder="1"
-                    className="w-full px-3.5 py-2 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs"
+                    type="text"
+                    required
+                    value={roleEn}
+                    onChange={(e) => setRoleEn(e.target.value)}
+                    placeholder="e.g. Managing Director"
+                    className="w-full px-3.5 py-2.5 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs bg-white"
                   />
-                  <p className="text-[10px] text-charcoal/50 mt-1">
-                    Lower numbers appear first on the public website.
-                  </p>
                 </div>
               </div>
+
+              {/* English Bio */}
+              <div>
+                <label className="block text-xs font-bold text-deep-forest mb-1">
+                  Biography & Background (English)
+                </label>
+                <textarea
+                  rows={5}
+                  value={bioEn}
+                  onChange={(e) => setBioEn(e.target.value)}
+                  placeholder="Detail years of experience, seed sector leadership, and institutional engagements..."
+                  className="w-full px-3.5 py-2.5 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs bg-white resize-none leading-relaxed"
+                />
+              </div>
+
+              {/* Order index */}
+              <div className="w-full sm:w-1/2">
+                <label className="block text-xs font-bold text-deep-forest mb-1 flex items-center gap-1">
+                  <Hash size={12} /> Display Order (Rank)
+                </label>
+                <input
+                  type="number"
+                  value={order}
+                  onChange={(e) => setOrder(parseInt(e.target.value, 10) || 0)}
+                  placeholder="1"
+                  className="w-full px-3.5 py-2 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs bg-white"
+                />
+                <p className="text-[11px] text-charcoal/50 mt-1">
+                  1 appears first (Managing Director / Founding Director), 2 second, etc.
+                </p>
+              </div>
             </div>
-          ) : (
-            <div className="space-y-4">
+          )}
+
+          {tab === 'fr' && (
+            <div className="space-y-5">
               <div>
                 <label className="block text-xs font-bold text-deep-forest mb-1">
                   Role / Title (French)
@@ -249,42 +253,42 @@ export default function TeamFormModal({
                   type="text"
                   value={roleFr}
                   onChange={(e) => setRoleFr(e.target.value)}
-                  placeholder="e.g. Directrice générale et fondatrice"
-                  className="w-full px-3.5 py-2 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs"
+                  placeholder="e.g. Directrice générale"
+                  className="w-full px-3.5 py-2.5 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs bg-white"
                 />
               </div>
 
               <div>
                 <label className="block text-xs font-bold text-deep-forest mb-1">
-                  Bio / Background (French)
+                  Biography & Background (French)
                 </label>
                 <textarea
-                  rows={5}
+                  rows={7}
                   value={bioFr}
                   onChange={(e) => setBioFr(e.target.value)}
                   placeholder="Traduction française du profil professionnel..."
-                  className="w-full px-3.5 py-2 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs resize-none"
+                  className="w-full px-3.5 py-2.5 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs bg-white resize-none leading-relaxed"
                 />
               </div>
             </div>
           )}
 
           {/* Footer actions */}
-          <div className="pt-4 border-t border-black/5 flex items-center justify-end gap-3">
+          <div className="pt-4 border-t border-black/[0.06] flex items-center justify-end gap-3">
             <button
               type="button"
               onClick={onClose}
               disabled={loading}
-              className="px-4 py-2 rounded-xl border border-black/10 hover:bg-black/5 text-xs font-semibold text-charcoal/70 transition-colors cursor-pointer"
+              className="px-4 py-2.5 rounded-full border border-black/15 hover:bg-black/[0.04] text-xs font-semibold text-charcoal/70 transition-colors cursor-pointer"
             >
               Cancel
             </button>
             <button
               type="submit"
               disabled={loading}
-              className="px-5 py-2 rounded-xl bg-deep-forest hover:bg-[#153e25] text-white text-xs font-bold shadow-xs transition-colors cursor-pointer disabled:opacity-50"
+              className="px-6 py-2.5 rounded-full bg-deep-forest hover:bg-[#153e25] text-white text-xs font-bold shadow-xs hover:shadow-md transition-all cursor-pointer disabled:opacity-50"
             >
-              {loading ? 'Saving...' : member ? 'Update Member' : 'Create Member'}
+              {loading ? 'Saving Changes...' : member ? 'Update Profile' : 'Create Profile'}
             </button>
           </div>
         </form>
@@ -292,4 +296,3 @@ export default function TeamFormModal({
     </div>
   )
 }
-

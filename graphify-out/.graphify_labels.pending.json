@@ -26,15 +26,10 @@
   "24": "packageManager",
   "25": "overrides",
   "26": "resolutions",
-  "27": "insights/layout.tsx",
-  "28": "resources-service.ts",
+  "27": "team/[id]/route.ts",
   "29": "our-team-content.tsx",
-  "30": "client-advisory/layout.tsx",
   "31": "projects/page.tsx",
-  "32": "project-implementation/layout.tsx",
-  "33": "admin/resources/page.tsx",
-  "34": "admin/layout.tsx",
-  "35": "projects/route.ts",
+  "33": "resources-service.ts",
   "38": "postcss.config.mjs",
   "39": "optimize_images.sh"
 }
