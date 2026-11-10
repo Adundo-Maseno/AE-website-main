@@ -60,7 +60,8 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
 
   // Group 1: Content & Brand Desks
   const contentItems = [
-    { label: 'Page Taglines & Vision', href: '/admin/sections', icon: Type, desc: 'Hero headlines, vision, mission, and goal copy' },
+    { label: 'Page Taglines & Narratives', href: '/admin/sections', icon: Type, desc: 'Hero headlines, vision, mission, and pillar copy' },
+    { label: 'Impact Metrics & Contact Info', href: '/admin/settings', icon: Settings, desc: 'Pan-African numbers, head office address & email' },
     { label: 'Our Partners', href: '/admin/partners', icon: Handshake, desc: 'Institutional collaborator & donor logos' },
     { label: 'What We Believe', href: '/admin/beliefs', icon: Sparkles, desc: 'Foundational agricultural philosophy' },
     { label: 'Why Agri Experience', href: '/admin/why-agri', icon: Award, desc: 'Competitive advantage cards and sequence' },
