@@ -34,16 +34,17 @@ model Resource {
 }
 
 model TeamMember {
-  id        String   @id @default(cuid())
-  name      String
-  roleEn    String
-  roleFr    String?
-  bioEn     String?  @db.Text
-  bioFr     String?  @db.Text
-  image     String?
-  order     Int      @default(0)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id         String   @id @default(cuid())
+  name       String
+  roleEn     String
+  roleFr     String?
+  bioEn      String?  @db.Text
+  bioFr      String?  @db.Text
+  image      String?
+  hoverImage String?
+  order      Int      @default(0)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
 
   @@index([order])
 }

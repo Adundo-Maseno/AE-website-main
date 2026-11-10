@@ -83,6 +83,7 @@ export default function AdminTeamPage() {
   })
 
   const withPhotosCount = team.filter((m) => !!m.image).length
+  const withDualPhotosCount = team.filter((m) => !!m.image && !!m.hoverImage).length
   const bilingualCount = team.filter((m) => !!m.roleFr || !!m.bioFr).length
 
   return (
@@ -145,10 +146,10 @@ export default function AdminTeamPage() {
         <div className="p-4 rounded-2xl bg-white border border-black/[0.06] shadow-xs flex items-center justify-between">
           <div>
             <p className="text-[11px] font-semibold text-charcoal/60 uppercase tracking-wider">
-              Portraits Active
+              Dual Portraits Active
             </p>
             <p className="font-serif font-bold text-2xl text-deep-forest mt-0.5">
-              {withPhotosCount} of {team.length}
+              {withDualPhotosCount} of {team.length}
             </p>
           </div>
           <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center">
@@ -236,16 +237,29 @@ export default function AdminTeamPage() {
               key={member.id}
               className="group bg-white rounded-3xl border border-black/[0.08] overflow-hidden shadow-[0_2px_4px_rgba(0,0,0,0.02)] hover:shadow-lg hover:border-black/20 transition-all flex flex-col justify-between"
             >
-              {/* Photo Canvas */}
+              {/* Photo Canvas with Interactive Hover Preview */}
               <div className="relative w-full aspect-[4/5] bg-[#EFEFEF] overflow-hidden">
                 {member.image ? (
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 300px"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+                  <>
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 300px"
+                      className={`object-cover transition-all duration-500 ${
+                        member.hoverImage ? 'group-hover:opacity-0 group-hover:scale-105' : 'group-hover:scale-105'
+                      }`}
+                    />
+                    {member.hoverImage && (
+                      <Image
+                        src={member.hoverImage}
+                        alt={`${member.name} alternate`}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 300px"
+                        className="object-cover absolute inset-0 opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                      />
+                    )}
+                  </>
                 ) : (
                   <div className="w-full h-full flex flex-col items-center justify-center text-charcoal/30 gap-2">
                     <span className="font-serif text-5xl font-bold">{member.name.charAt(0)}</span>
@@ -258,11 +272,44 @@ export default function AdminTeamPage() {
                   #{member.order}
                 </span>
 
+                {/* Dual Photos Badge */}
+                {member.image && member.hoverImage ? (
+                  <span className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-emerald-600/90 backdrop-blur-md text-white text-[9px] font-bold tracking-wider uppercase flex items-center gap-1">
+                    <CheckCircle2 size={10} /> 2 Photos
+                  </span>
+                ) : member.image ? (
+                  <span className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-black/40 backdrop-blur-md text-white text-[9px] font-semibold">
+                    1 Photo
+                  </span>
+                ) : null}
+
+                {/* Dual Photo Thumbnails Indicator */}
+                {member.image && (
+                  <div className="absolute bottom-3 left-3 flex items-center gap-1.5 p-1 rounded-xl bg-black/60 backdrop-blur-md">
+                    <div
+                      className="relative w-5 h-5 rounded-md overflow-hidden border border-white/60 shrink-0"
+                      title="Primary headshot"
+                    >
+                      <Image src={member.image} alt="Primary" fill className="object-cover" sizes="20px" />
+                    </div>
+                    {member.hoverImage ? (
+                      <div
+                        className="relative w-5 h-5 rounded-md overflow-hidden border border-white/60 shrink-0"
+                        title="Hover alternate headshot"
+                      >
+                        <Image src={member.hoverImage} alt="Hover" fill className="object-cover" sizes="20px" />
+                      </div>
+                    ) : (
+                      <span className="text-[9px] text-white/70 px-1 font-mono">No Hover</span>
+                    )}
+                  </div>
+                )}
+
                 {/* Edit Button overlay on hover */}
                 <button
                   onClick={() => handleEdit(member)}
                   className="absolute bottom-3 right-3 p-2.5 rounded-full bg-white/95 text-deep-forest shadow-md hover:bg-deep-forest hover:text-white transition-all cursor-pointer opacity-90 group-hover:opacity-100"
-                  title="Edit member & photo"
+                  title="Edit member & both photos"
                 >
                   <Edit3 size={15} />
                 </button>
@@ -336,21 +383,47 @@ export default function AdminTeamPage() {
 
                     <td className="py-4 px-5">
                       <div className="flex items-center gap-3">
-                        <div className="relative w-11 h-11 rounded-full overflow-hidden bg-[#FAFAF8] border border-black/[0.08] shrink-0">
-                          {member.image ? (
-                            <Image
-                              src={member.image}
-                              alt={member.name}
-                              fill
-                              sizes="44px"
-                              className="object-cover"
-                            />
-                          ) : (
-                            <div className="w-full h-full flex items-center justify-center font-bold text-deep-forest/40">
-                              {member.name.charAt(0)}
-                            </div>
-                          )}
+                        {/* Dual Avatar Display */}
+                        <div className="flex items-center -space-x-2 shrink-0">
+                          <div
+                            className="relative w-10 h-10 rounded-full overflow-hidden bg-[#FAFAF8] border-2 border-white shadow-xs z-10"
+                            title="Primary headshot"
+                          >
+                            {member.image ? (
+                              <Image
+                                src={member.image}
+                                alt={`${member.name} Primary`}
+                                fill
+                                sizes="40px"
+                                className="object-cover"
+                              />
+                            ) : (
+                              <div className="w-full h-full flex items-center justify-center font-bold text-deep-forest/40 text-xs">
+                                {member.name.charAt(0)}
+                              </div>
+                            )}
+                          </div>
+
+                          <div
+                            className="relative w-10 h-10 rounded-full overflow-hidden bg-[#EFEFEF] border-2 border-white shadow-xs"
+                            title="Interactive hover headshot"
+                          >
+                            {member.hoverImage ? (
+                              <Image
+                                src={member.hoverImage}
+                                alt={`${member.name} Hover`}
+                                fill
+                                sizes="40px"
+                                className="object-cover"
+                              />
+                            ) : (
+                              <div className="w-full h-full flex items-center justify-center text-[9px] font-bold text-charcoal/40 bg-black/5">
+                                --
+                              </div>
+                            )}
+                          </div>
                         </div>
+
                         <div>
                           <div className="font-bold text-deep-forest text-sm">
                             {member.name}
@@ -374,13 +447,17 @@ export default function AdminTeamPage() {
                     </td>
 
                     <td className="py-4 px-5 whitespace-nowrap">
-                      {member.image ? (
+                      {member.image && member.hoverImage ? (
                         <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
-                          <CheckCircle2 size={11} /> Photo Active
+                          <CheckCircle2 size={11} /> 2 Photos Active
+                        </span>
+                      ) : member.image ? (
+                        <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-full border border-blue-100">
+                          1 Photo Active
                         </span>
                       ) : (
                         <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-amber-700 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-100">
-                          Missing Photo
+                          Missing Photos
                         </span>
                       )}
                     </td>

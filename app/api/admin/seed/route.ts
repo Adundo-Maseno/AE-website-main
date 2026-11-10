@@ -73,6 +73,7 @@ export async function POST() {
             bioEn: m.bioEn || null,
             bioFr: m.bioFr || null,
             image: m.image || null,
+            hoverImage: m.hoverImage || null,
             order: m.order,
           },
         })

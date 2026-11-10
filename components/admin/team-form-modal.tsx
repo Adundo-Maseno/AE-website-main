@@ -29,6 +29,7 @@ export default function TeamFormModal({
   const [bioEn, setBioEn] = useState('')
   const [bioFr, setBioFr] = useState('')
   const [image, setImage] = useState('')
+  const [hoverImage, setHoverImage] = useState('')
   const [order, setOrder] = useState<number>(0)
 
   useEffect(() => {
@@ -39,6 +40,7 @@ export default function TeamFormModal({
       setBioEn(member.bioEn || '')
       setBioFr(member.bioFr || '')
       setImage(member.image || '')
+      setHoverImage(member.hoverImage || '')
       setOrder(member.order ?? 0)
     } else {
       setName('')
@@ -47,6 +49,7 @@ export default function TeamFormModal({
       setBioEn('')
       setBioFr('')
       setImage('')
+      setHoverImage('')
       setOrder(0)
     }
     setError(null)
@@ -76,6 +79,7 @@ export default function TeamFormModal({
       bioEn: bioEn.trim() || undefined,
       bioFr: bioFr.trim() || undefined,
       image: image.trim() || undefined,
+      hoverImage: hoverImage.trim() || undefined,
       order: Number(order) || 0,
     }
 
@@ -168,15 +172,57 @@ export default function TeamFormModal({
 
           {tab === 'en' && (
             <div className="space-y-5">
-              {/* Photo Upload Section */}
-              <div className="p-4 rounded-2xl bg-[#FAF9F5] border border-black/[0.06] space-y-3">
-                <ImageUploader
-                  value={image}
-                  onChange={setImage}
-                  label="Profile Portrait Photograph"
-                  hint="Upload a high-resolution photo, drag & drop from your computer, or pick from the gallery."
-                  folder="team"
-                />
+              {/* Dual Photography Upload Section */}
+              <div className="p-4 rounded-2xl bg-[#FAF9F5] border border-black/[0.06] space-y-4">
+                <div className="flex items-center justify-between pb-2 border-b border-black/[0.06]">
+                  <div>
+                    <h3 className="text-xs font-bold uppercase tracking-wider text-deep-forest">
+                      Photography & Portraits: 2 Images per Member
+                    </h3>
+                    <p className="text-[11px] text-charcoal/60 mt-0.5">
+                      Configure both the primary headshot and the secondary interactive photo that reveals on hover.
+                    </p>
+                  </div>
+                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-deep-forest text-white">
+                    Dual Photos
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {/* Photo 1: Primary Headshot */}
+                  <div className="p-3.5 rounded-xl bg-white border border-black/[0.06] space-y-2">
+                    <div className="flex items-center gap-1.5 text-deep-forest">
+                      <span className="w-4 h-4 rounded-full bg-deep-forest text-white text-[10px] font-bold flex items-center justify-center">
+                        1
+                      </span>
+                      <span className="text-xs font-bold">Primary Portrait (Default View)</span>
+                    </div>
+                    <ImageUploader
+                      value={image}
+                      onChange={setImage}
+                      label=""
+                      hint="Main portrait displayed on initial card load across all devices."
+                      folder="team"
+                    />
+                  </div>
+
+                  {/* Photo 2: Hover Alternate */}
+                  <div className="p-3.5 rounded-xl bg-white border border-black/[0.06] space-y-2">
+                    <div className="flex items-center gap-1.5 text-deep-forest">
+                      <span className="w-4 h-4 rounded-full bg-[#1b6b33] text-white text-[10px] font-bold flex items-center justify-center">
+                        2
+                      </span>
+                      <span className="text-xs font-bold">Secondary Portrait (Interactive Hover)</span>
+                    </div>
+                    <ImageUploader
+                      value={hoverImage}
+                      onChange={setHoverImage}
+                      label=""
+                      hint="Alternate expressive portrait revealed when visitors hover over the member card."
+                      folder="team"
+                    />
+                  </div>
+                </div>
               </div>
 
               {/* Identity & Role */}

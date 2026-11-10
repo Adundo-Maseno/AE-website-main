@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
 
   try {
     const body = await req.json()
-    const { name, roleEn, roleFr, bioEn, bioFr, image, order } = body
+    const { name, roleEn, roleFr, bioEn, bioFr, image, hoverImage, order } = body
 
     if (!name || !roleEn) {
       return NextResponse.json(
@@ -38,6 +38,7 @@ export async function POST(req: NextRequest) {
       bioEn,
       bioFr,
       image,
+      hoverImage,
       order: typeof order === 'number' ? order : 0,
     })
 

@@ -119,7 +119,7 @@ export default function OurTeamContent({
       role,
       bio,
       image: item.image || config.image || '/team/placeholder.jpg',
-      hoverImage: config.hoverImage,
+      hoverImage: item.hoverImage || config.hoverImage,
       imagePosition: config.imagePosition,
       hoverImagePosition: config.hoverImagePosition,
       projects,
