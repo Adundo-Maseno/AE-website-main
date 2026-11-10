@@ -5,6 +5,7 @@ import { Link } from '@/i18n/routing'
 import { ArrowRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { InsightItem } from '@/lib/services/insights-service'
+import { ConsultingCTA } from '@/components/ui/consulting-cta'
 
 export default function InsightsContent({
   locale,
@@ -93,25 +94,19 @@ export default function InsightsContent({
       </section>
 
       {/* CTA */}
-      <section className="w-full py-10 lg:py-16 bg-mist border-t border-mist">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5 lg:space-y-6">
-          <h2 className="font-serif text-2xl sm:text-3xl text-deep-forest font-bold">
-            {t('cta_title')}
-          </h2>
-          <p className="text-charcoal/80 text-sm sm:text-base leading-relaxed">
-            {t('cta_desc')}
-          </p>
-          <div>
-            <Link
-              href="/resources"
-              className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-deep-forest text-white font-medium hover:bg-primary-green transition-colors text-sm shadow-sm"
-            >
-              {t('view_results')}
-              <ArrowRight size={16} />
-            </Link>
-          </div>
-        </div>
-      </section>
+      <ConsultingCTA
+        tag={t('title')}
+        title={t('cta_title')}
+        description={t('cta_desc')}
+        primaryButton={{
+          label: t('view_results'),
+          href: '/resources',
+        }}
+        secondaryButton={{
+          label: 'Contact Our Advisory Team',
+          href: '/contact',
+        }}
+      />
     </main>
   )
 }

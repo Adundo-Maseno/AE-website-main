@@ -7,6 +7,7 @@ import Image from 'next/image'
 import { Link } from '@/i18n/routing'
 import { ScrollAccordion } from '@/components/motion/scroll-accordion'
 import ServicesBentoGrid from '@/components/motion/services-bento-grid'
+import { ConsultingCTA } from '@/components/ui/consulting-cta'
 import { useTranslations, useLocale } from 'next-intl'
 import { PageSectionData } from '@/lib/services/page-sections-service'
 import { ExpertisePillarData } from '@/lib/services/expertise-service'
@@ -163,28 +164,19 @@ export default function AboutContent({ initialSections, initialPillars }: AboutC
       </section>
 
       {/* CTA */}
-      <section className="w-full py-10 lg:py-20 bg-mist">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 text-center space-y-6 lg:space-y-10">
-          <h2 className="text-deep-forest text-2xl sm:text-3xl lg:text-5xl font-serif">{ctaTitle}</h2>
-          <p className="text-lg lg:text-2xl text-charcoal/80 font-light leading-relaxed">
-            {ctaDesc}
-          </p>
-          <div className="flex flex-row flex-wrap gap-3 sm:gap-6 justify-center pt-2 sm:pt-6">
-            <Link
-              href="/contact"
-              className="overflow-hidden relative group inline-flex items-center justify-center gap-1.5 sm:gap-2 px-5 py-3 sm:px-8 sm:py-4 bg-deep-forest text-white rounded-full font-bold text-sm sm:text-base transition duration-200 hover:scale-[1.02] hover:shadow-xl hover:shadow-deep-forest/20"
-            >
-              <RollingText className="gap-1.5 sm:gap-2">
-                {ctaBtn}
-                <ArrowRight
-                  size={18}
-                  className="sm:w-5 sm:h-5 transform rotate-[-45deg] group-hover:rotate-0 transition-transform duration-300 ease-out shrink-0"
-                />
-              </RollingText>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <ConsultingCTA
+        tag="Agri Experience Partnership"
+        title={ctaTitle}
+        description={ctaDesc}
+        primaryButton={{
+          label: ctaBtn,
+          href: '/contact',
+        }}
+        secondaryButton={{
+          label: 'Explore Our Work',
+          href: '/our-work',
+        }}
+      />
     </main>
   )
 }

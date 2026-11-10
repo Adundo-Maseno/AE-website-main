@@ -26,6 +26,7 @@ import {
 } from 'lucide-react'
 import { Link } from '@/i18n/routing'
 import { RollingText } from '@/components/ui/rolling-text'
+import { ConsultingCTA } from '@/components/ui/consulting-cta'
 import type { ProjectItem } from '@/lib/services/projects-service'
 import type { SiteSettingsData } from '@/lib/services/settings-service'
 
@@ -690,49 +691,19 @@ export default function OurWorkClient({
       </section>
 
       {/* ─── 5. EXECUTIVE COMMISSION & CONSULTATION CTA ─── */}
-      <section className="w-full relative overflow-hidden bg-deep-forest text-white py-20 lg:py-28">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(58,180,74,0.18),_transparent_60%)] pointer-events-none" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(194,155,56,0.12),_transparent_60%)] pointer-events-none" />
-
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative z-10 text-center space-y-8">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-white text-xs font-semibold uppercase tracking-wider">
-            <span>Collaborate With Agri Experience</span>
-          </div>
-
-          <h2
-            className="font-serif font-bold text-white tracking-tight max-w-4xl mx-auto leading-tight"
-            style={{ fontSize: 'clamp(2.25rem, 1.8rem + 2.5vw, 4.5rem)' }}
-          >
-            Ready to Partner on Resilient Agricultural Transformation?
-          </h2>
-
-          <p className="text-white/80 font-normal text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-            Whether you are commissioning a technical scoping study, seeking advisory on seed policy reform, or deploying open-access digital platforms, our senior specialists are ready to collaborate.
-          </p>
-
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 px-9 py-4 rounded-full bg-white text-deep-forest hover:bg-primary-green hover:text-white transition-all duration-300 font-bold text-sm shadow-xl"
-            >
-              <RollingText className="gap-2">
-                Initiate a Consultation
-                <ArrowRight size={16} />
-              </RollingText>
-            </Link>
-
-            <Link
-              href="/resources"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-white/25 text-white hover:bg-white/10 transition-colors font-bold text-sm"
-            >
-              <RollingText className="gap-2">
-                Browse Research Publications
-                <ExternalLink size={15} />
-              </RollingText>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <ConsultingCTA
+        tag="Collaborate With Agri Experience"
+        title="Ready to Partner on Resilient Agricultural Transformation?"
+        description="Whether you are commissioning a technical scoping study, seeking advisory on seed policy reform, or deploying open-access digital platforms, our senior specialists are ready to collaborate."
+        primaryButton={{
+          label: 'Initiate a Consultation',
+          href: '/contact',
+        }}
+        secondaryButton={{
+          label: 'Browse Research Publications',
+          href: '/resources',
+        }}
+      />
     </main>
   )
 }

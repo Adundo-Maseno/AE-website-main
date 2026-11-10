@@ -13,6 +13,7 @@ import { PageSectionData } from '@/lib/services/page-sections-service'
 import { BeliefData } from '@/lib/services/beliefs-service'
 import { WhyAgriCardData } from '@/lib/services/why-agri-service'
 import { PartnerData } from '@/lib/services/partners-service'
+import { ConsultingCTA } from '@/components/ui/consulting-cta'
 
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -586,64 +587,19 @@ export default function HomeContent({
         </section>
 
         {/* Premium CTA Section */}
-        <section className="relative w-full py-10 sm:py-20 lg:py-32 bg-deep-forest text-white overflow-hidden z-20">
-          <div className="absolute inset-0 opacity-10 pointer-events-none">
-            <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,var(--accent-gold)_0%,transparent_70%)]" />
-          </div>
-
-          <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 text-center">
-            <div className="flex flex-col items-center gap-4 lg:gap-8">
-              <div className="overflow-hidden pb-4 -mb-4">
-                <motion.h2
-                  initial={{ y: '100%' }}
-                  whileInView={{ y: 0 }}
-                  transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-                  viewport={{ once: true }}
-                  className="text-3xl sm:text-4xl lg:text-5xl font-serif text-white font-bold tracking-tight"
-                >
-                  {ctaTitle}
-                </motion.h2>
-              </div>
-
-              <div className="overflow-hidden pb-4 -mb-4">
-                <motion.p
-                  initial={{ y: '100%' }}
-                  whileInView={{ y: 0 }}
-                  transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
-                  viewport={{ once: true }}
-                  className="text-base sm:text-lg lg:text-2xl text-white/80 font-light leading-relaxed"
-                >
-                  {ctaDesc}
-                </motion.p>
-              </div>
-
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="flex flex-row flex-wrap gap-3 sm:gap-6 justify-center mt-2 lg:mt-4"
-              >
-                <Link
-                  href="/contact"
-                  className="group relative overflow-hidden inline-flex items-center justify-center px-4 py-3 sm:px-10 sm:py-5 bg-primary-green text-white rounded-full font-bold text-xs sm:text-lg transition duration-200 shadow-2xl shadow-primary-green/20"
-                >
-                  <RollingText>
-                    {ctaBtn1}
-                  </RollingText>
-                </Link>
-                <Link
-                  href="/our-work"
-                  className="group relative overflow-hidden inline-flex items-center justify-center px-4 py-3 sm:px-10 sm:py-5 border-2 border-white/30 text-white rounded-full font-bold text-xs sm:text-lg hover:bg-white/10 transition duration-200 backdrop-blur-sm"
-                >
-                  <RollingText>
-                    {t('cta_btn_2')}
-                  </RollingText>
-                </Link>
-              </motion.div>
-            </div>
-          </div>
-        </section>
+        <ConsultingCTA
+          tag="Pan-African Agricultural Partnerships"
+          title={ctaTitle}
+          description={ctaDesc}
+          primaryButton={{
+            label: ctaBtn1,
+            href: '/contact',
+          }}
+          secondaryButton={{
+            label: t('cta_btn_2'),
+            href: '/our-work',
+          }}
+        />
       </main>
     </>
   )

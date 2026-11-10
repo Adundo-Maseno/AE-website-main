@@ -1,9 +1,10 @@
-import { InteractiveMapbox } from '@/components/map/interactive-mapbox';
+import { redirect } from 'next/navigation'
 
-export default function MapPage() {
-  return (
-    <div className="w-full min-h-[100dvh]">
-      <InteractiveMapbox />
-    </div>
-  );
+export default async function MapPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  redirect(`/${locale}/our-impact`)
 }
