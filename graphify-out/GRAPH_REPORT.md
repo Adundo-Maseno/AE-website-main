@@ -1,7 +1,7 @@
 # Graph Report - AE-website-main  (2026-11-10)
 
 ## Corpus Check
-- 127 files · ~142,736 words
+- 127 files · ~143,693 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 7 file(s) not represented in the graph (top: (none) 2, .example 1, .css 1)
 
@@ -11,7 +11,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `957e7813`
+- Built from commit: `d52bccb7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -63,16 +63,16 @@
 10. `compilerOptions` - 16 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `AdminLayout()` --calls--> `getSession()`  [EXTRACTED]
-  app/admin/layout.tsx → lib/auth.ts
-- `AdminDashboardPage()` --calls--> `getSession()`  [EXTRACTED]
-  app/admin/page.tsx → lib/auth.ts
 - `GET()` --calls--> `getSession()`  [EXTRACTED]
   app/api/admin/auth/session/route.ts → lib/auth.ts
 - `POST()` --calls--> `getSession()`  [EXTRACTED]
   app/api/admin/projects/route.ts → lib/auth.ts
 - `PUT()` --calls--> `getSession()`  [EXTRACTED]
   app/api/admin/resources/[id]/route.ts → lib/auth.ts
+- `DELETE()` --calls--> `getSession()`  [EXTRACTED]
+  app/api/admin/resources/[id]/route.ts → lib/auth.ts
+- `GET()` --calls--> `getResources()`  [EXTRACTED]
+  app/api/admin/resources/route.ts → lib/services/resources-service.ts
 
 ## Import Cycles
 - None detected.

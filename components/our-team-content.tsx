@@ -60,6 +60,12 @@ const STATIC_IMAGE_CONFIG: Record<string, Partial<TeamCard>> = {
     imagePosition: '54% 31%',
     hoverImagePosition: '57% 24%',
   },
+  nicholas: {
+    image: '/team/kilonzo2.jpg',
+    hoverImage: '/team/kilonzo.jpg',
+    imagePosition: '48% 36%',
+    hoverImagePosition: '52% 24%',
+  },
   kilonzo: {
     image: '/team/kilonzo2.jpg',
     hoverImage: '/team/kilonzo.jpg',
