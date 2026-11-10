@@ -1,15 +1,15 @@
-import type { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
-import { BreadcrumbJsonLd, ResourcesJsonLd } from '@/components/json-ld';
-import { publicDownloads } from '@/lib/public-downloads';
+import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
+import { BreadcrumbJsonLd, ResourcesJsonLd } from '@/components/json-ld'
+import { getResources } from '@/lib/services/resources-service'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'Metadata' });
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ae-website-main.vercel.app';
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'Metadata' })
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ae-website-main.vercel.app'
 
-  const title = t('resources_title');
-  const description = t('resources_desc');
+  const title = t('resources_title')
+  const description = t('resources_desc')
 
   return {
     title,
@@ -53,17 +53,27 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       title,
       description,
     },
-  };
+  }
 }
 
 export default async function ResourcesLayout({
   children,
   params
 }: {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  children: React.ReactNode
+  params: Promise<{ locale: string }>
 }) {
-  const { locale } = await params;
+  const { locale } = await params
+  const resources = await getResources()
+
+  const downloads = resources.map((r) => ({
+    title: locale === 'fr' && r.titleFr ? r.titleFr : r.titleEn,
+    link: r.link,
+    client: r.client,
+    citation: locale === 'fr' && r.citationFr ? r.citationFr : r.citationEn,
+    category: r.category,
+  }))
+
   return (
     <>
       <BreadcrumbJsonLd
@@ -72,8 +82,8 @@ export default async function ResourcesLayout({
           { name: locale === 'fr' ? 'Ressources' : 'Resources', url: `/${locale}/resources` },
         ]}
       />
-      <ResourcesJsonLd locale={locale} downloads={publicDownloads} />
+      <ResourcesJsonLd locale={locale} downloads={downloads} />
       {children}
     </>
-  );
+  )
 }

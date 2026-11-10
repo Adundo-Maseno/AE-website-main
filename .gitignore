@@ -33,3 +33,6 @@ public/SDG-images/*.psd
 
 # Ignore massive 4K source video
 public/12158327_3840_2160_30fps.mp4
+
+# Graphify AST cache
+graphify-out/cache/

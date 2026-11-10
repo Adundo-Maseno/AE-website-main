@@ -1,0 +1,223 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+import { useSearchParams } from 'next/navigation'
+import { publicDownloads } from '@/lib/public-downloads'
+import { ResourceItem } from '@/lib/services/resources-service'
+import { motion } from 'framer-motion'
+import { Link } from '@/i18n/routing'
+import { ArrowRight, FileText } from 'lucide-react'
+import dynamic from 'next/dynamic'
+import { useTranslations } from 'next-intl'
+import { RollingText } from '@/components/ui/rolling-text'
+
+// Dynamically import PdfPreview with SSR disabled
+const PdfPreview = dynamic(() => import('@/components/pdf-preview'), {
+  ssr: false,
+  loading: () => (
+    <div className="relative w-full rounded-xl overflow-hidden border border-primary-green/10 bg-mist flex flex-col items-center justify-center gap-3 animate-pulse aspect-[1/1.2]">
+      <FileText size={32} className="text-primary-green/30" />
+      <div className="h-2 w-2/3 rounded-full bg-primary-green/10" />
+      <div className="h-2 w-1/2 rounded-full bg-primary-green/10" />
+    </div>
+  )
+})
+
+const categories = ['All', 'Reports & Analysis', 'Case Studies', 'Scoping Studies', 'Toolkits & Guides']
+
+export default function ResourcesContent({
+  locale,
+  initialResources,
+}: {
+  locale: string
+  initialResources: ResourceItem[]
+}) {
+  const t = useTranslations('Resources')
+  const searchParams = useSearchParams()
+  const [activeCategory, setActiveCategory] = useState('All')
+
+  // Automatically activate the requested tab/category on load (e.g. ?tab=case-studies)
+  useEffect(() => {
+    const rawParam = searchParams?.get('tab') || searchParams?.get('category')
+    if (rawParam) {
+      const normalized = rawParam.toLowerCase().replace(/[^a-z0-9]/g, '')
+      const matched = categories.find(
+        (cat) => cat.toLowerCase().replace(/[^a-z0-9]/g, '') === normalized
+      )
+      if (matched) {
+        setActiveCategory(matched)
+      }
+    }
+  }, [searchParams])
+
+  // Using the index of the category to pull the translated string since the keys map 1:1 with English
+  const getCategoryTranslation = (cat: string) => {
+    const idx = categories.indexOf(cat)
+    return idx >= 0 ? t(`categories.${idx}`) : cat
+  }
+
+  const handleCategoryChange = (cat: string) => {
+    setActiveCategory(cat)
+    if (typeof window !== 'undefined') {
+      const url = new URL(window.location.href)
+      if (cat === 'All') {
+        url.searchParams.delete('tab')
+        url.searchParams.delete('category')
+      } else {
+        url.searchParams.set('tab', cat.toLowerCase().replace(/\s+/g, '-'))
+      }
+      window.history.replaceState(null, '', url.toString())
+    }
+  }
+
+  const filteredDownloads = initialResources.filter((download) =>
+    activeCategory === 'All' ? true : download.category === activeCategory
+  )
+
+  return (
+    <main className="bg-white min-h-[100dvh]">
+      {/* Downloads */}
+      <section className="w-full pt-16 lg:pt-28 pb-10 bg-white relative">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="space-y-8 text-center mb-16"
+          >
+            <h1
+              className="font-serif text-deep-forest font-bold tracking-tight pb-2"
+              style={{ fontSize: 'clamp(1.875rem, 1.4rem + 2.4vw, 4.5rem)' }}
+            >
+              {t('title')}
+            </h1>
+            <p className="text-base sm:text-lg lg:text-xl text-charcoal/85 max-w-3xl mx-auto leading-relaxed font-normal mb-8 lg:mb-12">
+              {t('subtitle')}
+            </p>
+
+            {/* Filter Pills */}
+            <div className="flex flex-wrap justify-center gap-3">
+              {categories.map((category) => {
+                const isActive = activeCategory === category
+                return (
+                  <button
+                    key={category}
+                    onClick={() => handleCategoryChange(category)}
+                    className={`group relative overflow-hidden inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ease-in-out ${
+                      isActive
+                        ? 'bg-deep-forest text-white shadow-md'
+                        : 'bg-mist text-deep-forest hover:bg-black/5'
+                    }`}
+                  >
+                    <RollingText>
+                      {getCategoryTranslation(category)}
+                    </RollingText>
+                  </button>
+                )
+              })}
+            </div>
+          </motion.div>
+
+          <div className="grid grid-cols-1 min-[480px]:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {filteredDownloads.map((download, idx) => {
+              // Find index in static downloads for legacy translation mapping if available
+              const originalIdx = publicDownloads.findIndex(
+                (d) => d.title === download.titleEn
+              )
+
+              const title =
+                locale === 'fr' && download.titleFr
+                  ? download.titleFr
+                  : download.titleEn
+
+              const citation =
+                locale === 'fr' && download.citationFr
+                  ? download.citationFr
+                  : originalIdx >= 0 && locale === 'fr'
+                  ? t(`downloads.${originalIdx}.citation`)
+                  : download.citationEn
+
+              const client =
+                originalIdx >= 0 && locale === 'fr'
+                  ? t(`downloads.${originalIdx}.client`)
+                  : download.client
+
+              return (
+                <motion.div
+                  key={download.id || download.titleEn}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: '-50px' }}
+                  transition={{ duration: 0.6, delay: (idx % 10) * 0.05 }}
+                  className="flex flex-col group border border-black/[0.04] rounded-2xl overflow-hidden hover:border-black/[0.08] transition-colors"
+                >
+                  {/* PDF first-page preview */}
+                  <PdfPreview pdfUrl={download.link} />
+
+                  <div className="p-4 lg:p-5 flex flex-col flex-grow">
+                    <div className="flex flex-wrap items-center gap-2 mb-2">
+                      <span className="text-[11px] font-bold tracking-wider uppercase px-2.5 py-0.5 rounded-full bg-deep-forest text-white">
+                        Agri Experience
+                      </span>
+                      <span className="text-xs font-semibold text-[#1b6b33] tracking-wide uppercase">
+                        {client}
+                      </span>
+                    </div>
+                    <p className="text-[14px] min-[1440px]:text-sm text-charcoal/70 font-light leading-relaxed mb-4 flex-grow">
+                      {citation}
+                    </p>
+                    <div className="flex flex-wrap gap-4 pt-3 border-t border-black/5 text-sm font-bold mt-auto">
+                      <a
+                        href={download.link}
+                        className="text-deep-forest hover:text-[#1b6b33] transition-colors inline-flex items-center gap-1"
+                        download
+                        aria-label={`Download ${title} PDF`}
+                      >
+                        {t('download_pdf')} <ArrowRight size={14} />
+                      </a>
+                      {download.clientLink && (
+                        <a
+                          href={download.clientLink}
+                          className="text-deep-forest hover:text-[#1b6b33] transition-colors inline-flex items-center gap-1"
+                          target="_blank"
+                          rel="noreferrer"
+                          aria-label={`View external project link for ${title}`}
+                        >
+                          {t('client_link')} <ArrowRight size={14} />
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </motion.div>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="w-full py-10 lg:py-16 xl:py-20 bg-mist border-t border-mist">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 lg:space-y-8">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-deep-forest">
+            {t('cta_title')}
+          </h2>
+          <p className="text-lg lg:text-xl text-charcoal/80 font-light leading-relaxed">
+            {t('cta_desc')}
+          </p>
+          <div className="flex flex-row flex-wrap gap-3 sm:gap-6 justify-center pt-2 sm:pt-6">
+            <Link
+              href="/contact"
+              className="group relative overflow-hidden inline-flex items-center justify-center gap-1.5 sm:gap-2 px-5 py-3 sm:px-8 sm:py-4 bg-deep-forest text-white rounded-full font-bold text-sm sm:text-base transition duration-200 hover:bg-deep-forest/90"
+            >
+              <RollingText className="gap-1.5 sm:gap-2">
+                {t('contact_us')}
+                <ArrowRight size={18} className="sm:w-5 sm:h-5" />
+              </RollingText>
+            </Link>
+          </div>
+        </div>
+      </section>
+    </main>
+  )
+}

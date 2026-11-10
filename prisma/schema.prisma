@@ -1,0 +1,89 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model AdminUser {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  name         String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Resource {
+  id          String   @id @default(cuid())
+  titleEn     String
+  titleFr     String?
+  link        String
+  client      String
+  citationEn  String
+  citationFr  String?
+  clientLink  String?
+  category    String   // "Reports & Analysis" | "Case Studies" | "Scoping Studies" | "Toolkits & Guides"
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([category])
+}
+
+model TeamMember {
+  id        String   @id @default(cuid())
+  name      String
+  roleEn    String
+  roleFr    String?
+  bioEn     String?  @db.Text
+  bioFr     String?  @db.Text
+  image     String?
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([order])
+}
+
+model Project {
+  id          String   @id @default(cuid())
+  titleEn     String
+  titleFr     String?
+  descEn      String   @db.Text
+  descFr      String?  @db.Text
+  category    String   // "digital-platforms" | "technical-studies" | "project-implementation" | "client-advisory" | "capacity-building" | "stakeholder-convenings"
+  client      String?
+  year        String?
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([category])
+}
+
+model Insight {
+  id          String   @id @default(cuid())
+  titleEn     String
+  titleFr     String?
+  slug        String   @unique
+  contentEn   String   @db.Text
+  contentFr   String?  @db.Text
+  author      String?
+  publishedAt DateTime @default(now())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([slug])
+}
+
+model MapCountryData {
+  id                  String   @id @default(cuid())
+  countryCode         String   @unique
+  countryName         String
+  activeProjectsCount Int      @default(0)
+  detailsEn           String?  @db.Text
+  detailsFr           String?  @db.Text
+  updatedAt           DateTime @updatedAt
+}
