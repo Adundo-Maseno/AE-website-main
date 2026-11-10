@@ -95,28 +95,59 @@ export default async function OurWorkPage({
     (locale === 'fr'
       ? sections['digital_platforms_hero']?.titleFr || sections['digital_platforms_hero']?.titleEn
       : sections['digital_platforms_hero']?.titleEn) || t('c1_title')
+  const dpSubtitle =
+    locale === 'fr'
+      ? sections['digital_platforms_hero']?.subtitleFr || sections['digital_platforms_hero']?.subtitleEn
+      : sections['digital_platforms_hero']?.subtitleEn
+
   const tsTitle =
     (locale === 'fr'
       ? sections['technical_studies_hero']?.titleFr || sections['technical_studies_hero']?.titleEn
       : sections['technical_studies_hero']?.titleEn) || t('c2_title')
+  const tsSubtitle =
+    locale === 'fr'
+      ? sections['technical_studies_hero']?.subtitleFr || sections['technical_studies_hero']?.subtitleEn
+      : sections['technical_studies_hero']?.subtitleEn
+
   const piTitle =
     (locale === 'fr'
       ? sections['project_implementation_hero']?.titleFr ||
         sections['project_implementation_hero']?.titleEn
       : sections['project_implementation_hero']?.titleEn) || t('c3_title')
+  const piSubtitle =
+    locale === 'fr'
+      ? sections['project_implementation_hero']?.subtitleFr ||
+        sections['project_implementation_hero']?.subtitleEn
+      : sections['project_implementation_hero']?.subtitleEn
+
   const caTitle =
     (locale === 'fr'
       ? sections['client_advisory_hero']?.titleFr || sections['client_advisory_hero']?.titleEn
       : sections['client_advisory_hero']?.titleEn) || t('c4_title')
+  const caSubtitle =
+    locale === 'fr'
+      ? sections['client_advisory_hero']?.subtitleFr || sections['client_advisory_hero']?.subtitleEn
+      : sections['client_advisory_hero']?.subtitleEn
+
   const cbTitle =
     (locale === 'fr'
       ? sections['capacity_building_hero']?.titleFr || sections['capacity_building_hero']?.titleEn
       : sections['capacity_building_hero']?.titleEn) || t('c5_title')
+  const cbSubtitle =
+    locale === 'fr'
+      ? sections['capacity_building_hero']?.subtitleFr || sections['capacity_building_hero']?.subtitleEn
+      : sections['capacity_building_hero']?.subtitleEn
+
   const scTitle =
     (locale === 'fr'
       ? sections['stakeholder_convenings_hero']?.titleFr ||
         sections['stakeholder_convenings_hero']?.titleEn
       : sections['stakeholder_convenings_hero']?.titleEn) || t('c6_title')
+  const scSubtitle =
+    locale === 'fr'
+      ? sections['stakeholder_convenings_hero']?.subtitleFr ||
+        sections['stakeholder_convenings_hero']?.subtitleEn
+      : sections['stakeholder_convenings_hero']?.subtitleEn
 
   // Comprehensive JSON-LD Structured Data for Elite Consulting Practice
   const jsonLd = {
@@ -234,6 +265,14 @@ export default async function OurWorkPage({
             clientAdvisory: caTitle,
             capacityBuilding: cbTitle,
             stakeholderConvenings: scTitle,
+          }}
+          pillarSubtitles={{
+            digitalPlatforms: dpSubtitle,
+            technicalStudies: tsSubtitle,
+            projectImplementation: piSubtitle,
+            clientAdvisory: caSubtitle,
+            capacityBuilding: cbSubtitle,
+            stakeholderConvenings: scSubtitle,
           }}
         />
       </Suspense>
