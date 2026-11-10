@@ -114,3 +114,4 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
     </header>
   )
 }
+

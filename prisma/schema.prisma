@@ -87,3 +87,4 @@ model MapCountryData {
   detailsFr           String?  @db.Text
   updatedAt           DateTime @updatedAt
 }
+

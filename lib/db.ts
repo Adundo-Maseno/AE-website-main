@@ -24,3 +24,4 @@ export async function isDatabaseConnected(): Promise<boolean> {
     return false
   }
 }
+
