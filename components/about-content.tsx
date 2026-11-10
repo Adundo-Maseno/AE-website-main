@@ -188,3 +188,4 @@ export default function AboutContent({ initialSections, initialPillars }: AboutC
     </main>
   )
 }
+

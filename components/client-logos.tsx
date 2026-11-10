@@ -189,9 +189,8 @@ const LogoItem = ({ logo }: { logo: ClientLogo }) => (
     target="_blank"
     rel="noopener noreferrer"
     aria-label={logo.name}
-    className={`group flex items-center justify-center shrink-0 mx-6 sm:mx-8 md:mx-10 lg:mx-12 xl:mx-14 h-14 sm:h-18 md:h-22 lg:h-24 transition-transform duration-300 hover:-translate-y-1 ${
-      logo.containerClassName || 'w-36 sm:w-44 md:w-52 lg:w-60'
-    }`}
+    className={`group flex items-center justify-center shrink-0 mx-6 sm:mx-8 md:mx-10 lg:mx-12 xl:mx-14 h-14 sm:h-18 md:h-22 lg:h-24 transition-transform duration-300 hover:-translate-y-1 ${logo.containerClassName || 'w-36 sm:w-44 md:w-52 lg:w-60'
+      }`}
   >
     <div className="relative w-full h-full flex items-center justify-center">
       <Image
@@ -200,9 +199,8 @@ const LogoItem = ({ logo }: { logo: ClientLogo }) => (
         width={320}
         height={100}
         sizes="(max-width: 768px) 140px, 240px"
-        className={`max-h-full max-w-full object-contain object-center grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-[filter,opacity] duration-300 mix-blend-multiply ${
-          logo.imageClassName || ''
-        }`}
+        className={`max-h-full max-w-full object-contain object-center grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-[filter,opacity] duration-300 mix-blend-multiply ${logo.imageClassName || ''
+          }`}
       />
     </div>
   </a>
@@ -243,7 +241,8 @@ export default function ClientLogos({ initialPartners }: ClientLogosProps = {}) 
       <div className="absolute inset-y-0 left-0 w-16 sm:w-24 md:w-36 bg-gradient-to-r from-mist to-transparent z-10 pointer-events-none" />
       <div className="absolute inset-y-0 right-0 w-16 sm:w-24 md:w-36 bg-gradient-to-l from-mist to-transparent z-10 pointer-events-none" />
 
-      <style dangerouslySetInnerHTML={{__html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @keyframes marquee-left {
           0% { transform: translate3d(0, 0, 0); }
           100% { transform: translate3d(-50%, 0, 0); }

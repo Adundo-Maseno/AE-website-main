@@ -122,3 +122,4 @@ export async function deleteWhyAgriCard(id: string): Promise<boolean> {
   revalidatePath('/', 'layout')
   return true
 }
+

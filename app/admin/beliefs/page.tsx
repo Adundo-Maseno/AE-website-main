@@ -82,22 +82,20 @@ export default function AdminBeliefsPage() {
             <div className="flex items-center gap-1 bg-white border border-[#0F2417]/15 rounded-xl p-1 shadow-sm">
               <button
                 onClick={() => setLangTab('en')}
-                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 ${
-                  langTab === 'en'
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 ${langTab === 'en'
                     ? 'bg-[#0F2417] text-[#FAF9F5]'
                     : 'text-[#0F2417]/70 hover:text-[#0F2417]'
-                }`}
+                  }`}
               >
                 <Globe size={13} />
                 English
               </button>
               <button
                 onClick={() => setLangTab('fr')}
-                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 ${
-                  langTab === 'fr'
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 ${langTab === 'fr'
                     ? 'bg-[#0F2417] text-[#FAF9F5]'
                     : 'text-[#0F2417]/70 hover:text-[#0F2417]'
-                }`}
+                  }`}
               >
                 <Globe size={13} />
                 Français
@@ -143,11 +141,10 @@ export default function AdminBeliefsPage() {
                         <span className="text-xs font-mono text-[#0F2417]/50">Order: {b.order}</span>
                       </div>
                       <span
-                        className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${
-                          b.active
+                        className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${b.active
                             ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
                             : 'bg-stone-100 text-stone-500'
-                        }`}
+                          }`}
                       >
                         {b.active ? '● Live Active' : '○ Hidden'}
                       </span>
@@ -210,3 +207,4 @@ export default function AdminBeliefsPage() {
     </div>
   )
 }
+

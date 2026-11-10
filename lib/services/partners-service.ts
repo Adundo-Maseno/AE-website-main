@@ -298,3 +298,4 @@ export async function deletePartner(id: string): Promise<boolean> {
   revalidatePath('/', 'layout')
   return true
 }
+

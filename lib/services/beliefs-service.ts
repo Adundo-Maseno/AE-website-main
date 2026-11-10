@@ -113,3 +113,4 @@ export async function deleteBelief(id: string): Promise<boolean> {
   revalidatePath('/', 'layout')
   return true
 }
+

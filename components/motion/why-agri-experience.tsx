@@ -27,8 +27,8 @@ export default function WhyAgriExperience({ initialCards, headerData }: WhyAgriE
   const displayCards =
     initialCards && initialCards.length > 0
       ? initialCards.map((c) => ({
-          text: locale === 'fr' && c.textFr ? c.textFr : c.textEn,
-        }))
+        text: locale === 'fr' && c.textFr ? c.textFr : c.textEn,
+      }))
       : defaultCards
 
   const title =
@@ -61,16 +61,16 @@ export default function WhyAgriExperience({ initialCards, headerData }: WhyAgriE
       `}</style>
 
       {/* Dynamic Background Elements */}
-      <div 
+      <div
         className="absolute top-0 right-0 w-[600px] h-[600px] bg-[radial-gradient(circle_at_center,var(--warm-earth)_0%,transparent_60%)] opacity-20 blur-3xl pointer-events-none rounded-full translate-x-1/4 -translate-y-1/4"
       />
-      <div 
+      <div
         className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[radial-gradient(circle_at_center,var(--primary-green)_0%,transparent_60%)] opacity-[0.05] blur-3xl pointer-events-none rounded-full -translate-x-1/4 translate-y-1/4"
       />
 
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative z-10">
         <div className="text-center mb-16 space-y-4">
-          <motion.span 
+          <motion.span
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -78,7 +78,7 @@ export default function WhyAgriExperience({ initialCards, headerData }: WhyAgriE
           >
             {subtitle}
           </motion.span>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -87,7 +87,7 @@ export default function WhyAgriExperience({ initialCards, headerData }: WhyAgriE
           >
             {title}
           </motion.h2>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scaleX: 0 }}
             whileInView={{ opacity: 1, scaleX: 1 }}
             viewport={{ once: true }}
@@ -100,7 +100,7 @@ export default function WhyAgriExperience({ initialCards, headerData }: WhyAgriE
           {displayCards.map((item, idx) => (
             <div
               key={idx}
-              style={{ 
+              style={{
                 top: `calc(100px + ${idx * 16}px)`,
                 zIndex: idx,
               }}
@@ -119,7 +119,7 @@ export default function WhyAgriExperience({ initialCards, headerData }: WhyAgriE
               >
                 {/* Card Hover Gradient */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
+
                 <div className="relative z-10">
                   <p className="text-base sm:text-lg lg:text-xl text-charcoal/80 font-medium leading-relaxed">{item.text}</p>
                 </div>

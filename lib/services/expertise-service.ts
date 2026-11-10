@@ -128,3 +128,4 @@ export async function deleteExpertisePillar(id: string): Promise<boolean> {
   revalidatePath('/', 'layout')
   return true
 }
+
