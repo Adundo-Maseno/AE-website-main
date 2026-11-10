@@ -8,9 +8,11 @@ const ALLOWED_MIME_TYPES = [
   'image/png',
   'image/webp',
   'image/avif',
+  'application/pdf',
 ]
 
-const MAX_FILE_SIZE = 5 * 1024 * 1024 // 5MB
+const MAX_IMAGE_SIZE = 5 * 1024 * 1024 // 5MB
+const MAX_PDF_SIZE = 30 * 1024 * 1024 // 30MB for reports & studies
 
 export async function POST(req: NextRequest) {
   const session = await getSession()
@@ -29,14 +31,16 @@ export async function POST(req: NextRequest) {
 
     if (!ALLOWED_MIME_TYPES.includes(file.type)) {
       return NextResponse.json(
-        { error: 'Only JPG, PNG, WebP, and AVIF images are permitted.' },
+        { error: 'Only JPG, PNG, WebP, AVIF images and PDF documents are permitted.' },
         { status: 400 }
       )
     }
 
-    if (file.size > MAX_FILE_SIZE) {
+    const maxSize = file.type === 'application/pdf' ? MAX_PDF_SIZE : MAX_IMAGE_SIZE
+    if (file.size > maxSize) {
+      const limitMb = Math.round(maxSize / (1024 * 1024))
       return NextResponse.json(
-        { error: 'File size exceeds 5MB limit.' },
+        { error: `File size exceeds the ${limitMb}MB limit.` },
         { status: 400 }
       )
     }
@@ -45,7 +49,7 @@ export async function POST(req: NextRequest) {
     const buffer = Buffer.from(bytes)
 
     const rawName = file.name.replace(/[^a-zA-Z0-9.-]/g, '_').toLowerCase()
-    const ext = path.extname(rawName) || '.jpg'
+    const ext = path.extname(rawName) || (file.type === 'application/pdf' ? '.pdf' : '.jpg')
     const baseName = path.basename(rawName, ext).slice(0, 30)
     const timestamp = Date.now()
     const filename = `${baseName}-${timestamp}${ext}`

@@ -4,6 +4,7 @@ import { publicDownloads } from '@/lib/public-downloads'
 import { staticTeamMembers } from '@/lib/services/team-service'
 import { staticProjects } from '@/lib/services/projects-service'
 import { DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD } from '@/lib/auth'
+import frMessages from '@/messages/fr.json'
 import bcrypt from 'bcryptjs'
 
 export async function POST() {
@@ -40,15 +41,18 @@ export async function POST() {
     // 2. Seed Resources from publicDownloads if empty
     const resourceCount = await prisma.resource.count()
     if (resourceCount === 0) {
-      for (const item of publicDownloads) {
+      const frDownloads: Record<string, any> = (frMessages as any).Resources?.downloads || {}
+      for (let i = 0; i < publicDownloads.length; i++) {
+        const item = publicDownloads[i]
+        const frItem = frDownloads[i] || frDownloads[String(i)]
         await prisma.resource.create({
           data: {
             titleEn: item.title,
-            titleFr: null,
+            titleFr: frItem?.title || null,
             link: item.link,
             client: item.client,
             citationEn: item.citation,
-            citationFr: null,
+            citationFr: frItem?.citation || null,
             clientLink: item.clientLink || null,
             category: item.category,
           },

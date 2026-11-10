@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { X, Save, AlertCircle } from 'lucide-react'
 import { ResourceItem } from '@/lib/services/resources-service'
+import PdfUploader from '@/components/admin/pdf-uploader'
 
 const CATEGORIES = [
   'Reports & Analysis',
@@ -254,33 +255,22 @@ export default function ResourceFormModal({
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-charcoal/80 mb-1.5">
-                PDF Download URL / Path *
-              </label>
-              <input
-                type="text"
-                required
-                value={link}
-                onChange={(e) => setLink(e.target.value)}
-                placeholder="/resources/document-name.pdf"
-                className="w-full px-3.5 py-2.5 rounded-xl border border-black/10 focus:border-deep-forest focus:ring-2 focus:ring-deep-forest/10 outline-none text-sm bg-white"
-              />
-            </div>
+          {/* PDF Attachment Uploader & Archive Picker */}
+          <div className="pt-2">
+            <PdfUploader value={link} onChange={setLink} />
+          </div>
 
-            <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-charcoal/80 mb-1.5">
-                External Client Link <span className="text-charcoal/40 font-normal lowercase">(optional)</span>
-              </label>
-              <input
-                type="url"
-                value={clientLink}
-                onChange={(e) => setClientLink(e.target.value)}
-                placeholder="https://client-website.org/project"
-                className="w-full px-3.5 py-2.5 rounded-xl border border-black/10 focus:border-deep-forest focus:ring-2 focus:ring-deep-forest/10 outline-none text-sm bg-white"
-              />
-            </div>
+          <div className="pt-1">
+            <label className="block text-xs font-bold uppercase tracking-wider text-charcoal/80 mb-1.5">
+              External Client Link <span className="text-charcoal/40 font-normal lowercase">(optional)</span>
+            </label>
+            <input
+              type="url"
+              value={clientLink}
+              onChange={(e) => setClientLink(e.target.value)}
+              placeholder="https://client-website.org/project"
+              className="w-full px-3.5 py-2.5 rounded-xl border border-black/10 focus:border-deep-forest focus:ring-2 focus:ring-deep-forest/10 outline-none text-sm bg-white"
+            />
           </div>
 
           <div className="flex items-center justify-end gap-3 pt-6 border-t border-black/5 mt-6">
