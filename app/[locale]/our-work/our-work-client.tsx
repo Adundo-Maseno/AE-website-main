@@ -19,22 +19,26 @@ import {
   Award,
   CheckCircle2,
   TrendingUp,
+  Download,
+  FolderOpen,
 } from 'lucide-react'
 import { Link } from '@/i18n/routing'
 import { RollingText } from '@/components/ui/rolling-text'
 import type { ProjectItem } from '@/lib/services/projects-service'
 import type { SiteSettingsData } from '@/lib/services/settings-service'
 
-interface PillarItem {
+interface PillarDefinition {
   id: string
   number: string
   title: string
   category: string
+  slug: string
   link: string
-  image: string
+  heroImage: string
   description: string
-  deliverables: string[]
-  statsHighlight: string
+  methodology: string
+  coreOutputs: string[]
+  clientSponsors: string[]
 }
 
 interface OurWorkClientProps {
@@ -61,195 +65,137 @@ export default function OurWorkClient({
   locale = 'en',
   pillarTitles,
 }: OurWorkClientProps) {
-  const [activeWorkflowIndex, setActiveWorkflowIndex] = useState(0)
-  const [selectedCaseStudyCategory, setSelectedCaseStudyCategory] = useState<string>('all')
+  const [activePillarFilter, setActivePillarFilter] = useState<string>('all')
 
-  // The 6 Strategic Consulting Pillars
-  const pillars: PillarItem[] = [
+  // The Six Core Pillars with Complete Advisory Metadata
+  const pillars: PillarDefinition[] = [
     {
       id: 'digital-platforms',
       number: '01',
       title: pillarTitles.digitalPlatforms,
       category: 'Technology & Open Data',
+      slug: 'digital-platforms',
       link: '/our-work/digital-platforms',
-      image: '/platforms/mbeguchoice.png',
+      heroImage: '/platforms/mbeguchoice.png',
       description:
-        'Pioneering digital public infrastructure that connects breeders, regulators, and smallholder farmers with verified seed data and market transparency.',
-      deliverables: [
-        'MbeguChoice Variety Selector',
-        'Africa Crop Variety Catalogue (ACVC)',
-        'Kenya Plant Variety List Gazette API',
-        'Mulika Mbegu Mbovu (M3) SMS Counterfeit Reporting',
+        'Pioneering digital public infrastructure, open data catalogs, and mobile feedback systems that connect breeders, national regulators, agrodealers, and smallholder farmers with verified crop variety information and market transparency.',
+      methodology:
+        'Database architecture, API gazette integration, user-centric mobile UI design (USSD/web), and real-time farmer feedback loops.',
+      coreOutputs: [
+        'National crop variety selectors (MbeguChoice)',
+        'Regional agronomic variety databases (ACVC)',
+        'Official gazetted seed registries & APIs (KPVL)',
+        'Anti-counterfeit SMS reporting solutions (M3)',
       ],
-      statsHighlight: '6 Digital Platforms Deployed Across 4 Nations',
+      clientSponsors: ['KEPHIS', 'USAID', 'AGRA', 'Kenya Markets Trust', 'TOSCI'],
     },
     {
       id: 'technical-studies',
       number: '02',
       title: pillarTitles.technicalStudies,
       category: 'Market Diagnostics & Evidence',
+      slug: 'technical-studies',
       link: '/our-work/technical-studies',
-      image: '/resources/previews/preview-pasture-fodder.jpg',
+      heroImage: '/resources/previews/preview-pasture-fodder.jpg',
       description:
-        'Empirical, peer-reviewed market diagnostics, feasibility assessments, and value chain analyses that translate intricate systemic barriers into actionable roadmaps.',
-      deliverables: [
-        'Pasture & Fodder Commercial Seed Scoping',
-        'Horticulture Nursery Viability Business Models',
-        'Value Chain Crop Planting Material Diagnostics',
-        'Agrodealer Association Institutional Assessments',
+        'Empirical market diagnostics, commercial feasibility studies, and value chain assessments that uncover systemic market bottlenecks and provide evidence-based roadmaps for institutional and private sector investment.',
+      methodology:
+        'Field sampling across high-potential agricultural counties, stakeholder interviews, policy audits, financial modeling, and peer-reviewed scoping.',
+      coreOutputs: [
+        'Commercial fodder and pasture seed market scoping',
+        'Private horticulture seedling nursery business models',
+        'Vegetative value-chain crop planting material diagnostics',
+        'Agrodealer association institutional assessments',
       ],
-      statsHighlight: '15+ Comprehensive Scoping Reports Published',
+      clientSponsors: ['USAID KCDMS', 'RTI International', 'ACTESA / COMESA'],
     },
     {
       id: 'project-implementation',
       number: '03',
       title: pillarTitles.projectImplementation,
       category: 'Field Systems Reform',
+      slug: 'project-implementation',
       link: '/our-work/project-implementation',
-      image: '/pexels-equalstock-27722065.jpg',
+      heroImage: '/pexels-equalstock-27722065.jpg',
       description:
-        'Hands-on operational management and program delivery that transforms high-level development strategies into verified on-the-ground seed sector reforms.',
-      deliverables: [
-        'Tanzania Multi-Year Seed Systems Transformation',
-        'Decentralized Private Seed Inspection Pilots',
-        'Standard Seed Class Commercial Multiplication',
-        'Last-Mile Agrodealer Distribution Networks',
+        'Multi-year field program management, regulatory restructuring, and supply chain deployment that translates high-level development strategies into verified, measurable seed sector transformation on the ground.',
+      methodology:
+        'Institutional restructuring, decentralized quality assurance, authorized inspector training, public-private operational alignment, and last-mile agrodealer distribution.',
+      coreOutputs: [
+        'Tanzania Seed Systems Transformation multi-year reform',
+        'Decentralization of TOSCI inspector verification protocols',
+        'Authorized private inspector pilot programs',
+        'Standard seed class commercial multiplication rollouts',
       ],
-      statsHighlight: '120,000+ Smallholders Reached with Quality Seed',
+      clientSponsors: ['USAID', 'CRS', 'Ministry of Agriculture Tanzania', 'Feed the Future'],
     },
     {
       id: 'client-advisory',
       number: '04',
       title: pillarTitles.clientAdvisory,
       category: 'Strategic & Regulatory Reform',
+      slug: 'client-advisory',
       link: '/our-work/client-advisory',
-      image: '/pexels-elvis-kambire-434351765-38025863.jpg',
+      heroImage: '/pexels-elvis-kambire-434351765-38025863.jpg',
       description:
-        'High-level counsel assisting ministries of agriculture, regulatory bodies, and development partners to streamline variety release and modernize policy.',
-      deliverables: [
-        'KEPHIS Regulatory Modernization Advisory',
-        'National Variety Release Protocol Streamlining',
-        'COMESA Regional Seed Trade Harmonization',
-        'Public-Private Seed Partnership Governance',
+        'High-level strategic counsel assisting ministries of agriculture, national seed authorities, and international development organizations in streamlining variety release protocols, removing regulatory friction, and crafting public-private frameworks.',
+      methodology:
+        'Legislative drafting, regulatory impact assessments, comparative regional benchmarking, and public-private dialogue architecture.',
+      coreOutputs: [
+        'KEPHIS regulatory modernization and authorized inspector frameworks',
+        'National variety release timeframe streamlining strategies',
+        'Regional seed trade and quarantine protocol harmonization',
+        'Public-private seed enterprise partnership governance',
       ],
-      statsHighlight: '25+ Years High-Stakes Institutional Counsel',
+      clientSponsors: ['KEPHIS', 'STAK', 'Ministry of Agriculture Kenya', 'AGRA'],
     },
     {
       id: 'capacity-building',
       number: '05',
       title: pillarTitles.capacityBuilding,
       category: 'Executive Leadership & Training',
+      slug: 'capacity-building',
       link: '/our-work/capacity-building',
-      image: '/images/african-seed-company-toolbox-cover.jpg',
+      heroImage: '/images/african-seed-company-toolbox-cover.jpg',
       description:
-        'World-class management curricula, practical field toolkits, and accreditation training strengthening the next generation of African seed enterprises.',
-      deliverables: [
-        'The African Seed Company Toolbox (52 Tools)',
-        'Authorized Private Inspector Accreditation',
-        'Seed Outgrower & Association Management Modules',
-        'Women & Youth Seed Entrepreneurship Tracks',
+        'Standardized management toolkits, accredited professional training, and practical operational guides engineered to build world-class leadership capacity across emerging African seed enterprises, outgrowers, and regulatory inspectors.',
+      methodology:
+        'Interactive case-method workshops, practical field evaluation modules, financial tools, and institutional accreditation exams.',
+      coreOutputs: [
+        'The African Seed Company Toolbox (52 Tools) with Gates Foundation',
+        'Authorized Seed Inspector accreditation curriculum',
+        'Seed outgrower management and contracting modules',
+        'Women and youth agri-enterprise leadership development',
       ],
-      statsHighlight: '100+ Seed Companies Trained Across SSA',
+      clientSponsors: ['Bill & Melinda Gates Foundation', 'KEPHIS', 'AGRA', 'STAK'],
     },
     {
       id: 'stakeholder-convenings',
       number: '06',
       title: pillarTitles.stakeholderConvenings,
       category: 'High-Trust Neutral Forums',
+      slug: 'stakeholder-convenings',
       link: '/our-work/stakeholder-convenings',
-      image: '/glenn-carstens-peters-piNf3C4TViA-unsplash.jpg',
+      heroImage: '/glenn-carstens-peters-piNf3C4TViA-unsplash.jpg',
       description:
-        'Neutral, evidence-based mediation and roundtables bringing together public regulators, private seed enterprises, and civil society to unlock policy deadlocks.',
-      deliverables: [
-        'Seed Industry Policy & Trade Roundtables',
-        'Cross-Border Quarantine & Movement Symposia',
-        'Regional Seed Association Working Groups',
-        'Government-Breeder Consensus Frameworks',
+        'Neutral, high-trust mediation and multi-stakeholder roundtables uniting public regulators, commercial seed companies, research institutes, and farmer advocates to break policy deadlocks and achieve consensus on critical seed reforms.',
+      methodology:
+        'Chatham House rule roundtables, technical briefing papers, structured dispute resolution, and joint public-private action plans.',
+      coreOutputs: [
+        'National Seed Industry Policy & Trade Roundtables',
+        'Cross-border seed quarantine and movement symposia',
+        'Regulator-breeder commercialization consultations',
+        'Regional seed association consensus declarations',
       ],
-      statsHighlight: '100% Key National Seed Companies Represented',
+      clientSponsors: ['Kenya Markets Trust', 'STAK', 'East African Seed Regulators'],
     },
   ]
 
-  // The 6-Stage Transformation Workflow / System Graph
-  const workflowStages = [
-    {
-      stage: '01',
-      title: 'Empirical Diagnostics & Scoping',
-      pillar: 'Technical Studies',
-      icon: Target,
-      summary:
-        'Rigorous baseline research and market mapping across target value chains to uncover systemic bottlenecks, informal seed flows, and commercial potential.',
-      inputs: 'Field sampling, stakeholder interviews, policy audits, agro-ecological data',
-      outcomes: 'Published scoping studies, investment memos, priority intervention matrices',
-    },
-    {
-      stage: '02',
-      title: 'Regulatory & Policy Architecture',
-      pillar: 'Client Advisory',
-      icon: Award,
-      summary:
-        'Structuring legislative amendments, simplified variety release protocols, and authorized inspection regulations with ministries and national seed boards.',
-      inputs: 'Draft DDLs, regional trade treaties (COMESA/SADC), regulator capacity audits',
-      outcomes: 'Gazetted standards, private inspector authorizations, reduced variety release latency',
-    },
-    {
-      stage: '03',
-      title: 'Decentralized Field Implementation',
-      pillar: 'Project Implementation',
-      icon: TrendingUp,
-      summary:
-        'Execution of multi-year field programs, managing decentralized certification hubs, breeder seed multiplication, and agrodealer licensing.',
-      inputs: 'Foundation seed access, certified inspectors, regional logistics coordination',
-      outcomes: 'Operational commercial supply chains, farmer adoption of certified seed',
-    },
-    {
-      stage: '04',
-      title: 'Digital Public Infrastructure',
-      pillar: 'Digital Platforms',
-      icon: MonitorSmartphone,
-      summary:
-        'Deploying open-access digital platforms, online variety selectors, and SMS feedback channels to eliminate market information asymmetries.',
-      inputs: 'National variety gazettes, breeder performance data, USSD shortcodes',
-      outcomes: 'Farmer decision-support tools (MbeguChoice), real-time counterfeit reporting (M3)',
-    },
-    {
-      stage: '05',
-      title: 'Enterprise & Institutional Capacity',
-      pillar: 'Capacity Building',
-      icon: BookOpen,
-      summary:
-        'Embedding management excellence into local seed companies, farmer associations, and inspection agencies using tested management toolkits.',
-      inputs: 'African Seed Company Toolbox (52 Tools), accredited trainer curriculum',
-      outcomes: 'Self-sustaining seed enterprises, qualified authorized private inspectors',
-    },
-    {
-      stage: '06',
-      title: 'Multi-Stakeholder Alignment & Scale',
-      pillar: 'Stakeholder Convenings',
-      icon: Users,
-      summary:
-        'Convening neutral, Chatham-House style roundtables with regulators, private seed leaders, and donors to break trade bottlenecks and review impact.',
-      inputs: 'Trade dispute dossiers, regional quarantine lists, cross-sector working groups',
-      outcomes: 'Bilateral seed trade pacts, policy harmonizations, sustained multi-actor trust',
-    },
-  ]
-
-  // Filter case studies
-  const filteredProjects =
-    selectedCaseStudyCategory === 'all'
-      ? projects
-      : projects.filter((p) => p.category === selectedCaseStudyCategory)
-
-  // Categories list for tabs
-  const categories = [
-    { id: 'all', label: 'All Assignments' },
-    { id: 'project-implementation', label: 'Implementation' },
-    { id: 'client-advisory', label: 'Advisory' },
-    { id: 'digital-platforms', label: 'Digital Platforms' },
-    { id: 'technical-studies', label: 'Technical Studies' },
-    { id: 'capacity-building', label: 'Capacity Building' },
-    { id: 'stakeholder-convenings', label: 'Convenings' },
-  ]
+  // Filter pillars if single filter selected
+  const visiblePillars =
+    activePillarFilter === 'all'
+      ? pillars
+      : pillars.filter((p) => p.slug === activePillarFilter)
 
   return (
     <main className="bg-[#FAF9F5] min-h-[100dvh] text-deep-forest selection:bg-primary-green selection:text-white">
@@ -261,7 +207,7 @@ export default function OurWorkClient({
 
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative z-10">
           <div className="flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-20">
-            {/* Left Narrative */}
+            {/* Left Column: Heading and Mission */}
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
@@ -275,7 +221,7 @@ export default function OurWorkClient({
 
               <h1
                 className="font-serif font-bold text-deep-forest tracking-tight leading-[1.08]"
-                style={{ fontSize: 'clamp(2.25rem, 1.8rem + 2.8vw, 5rem)' }}
+                style={{ fontSize: 'clamp(2.25rem, 1.8rem + 2.8vw, 4.75rem)' }}
               >
                 {heroTitle}
               </h1>
@@ -284,30 +230,27 @@ export default function OurWorkClient({
                 {heroSubtitle}
               </p>
 
-              {/* Jump Anchor Strip */}
-              <div className="flex flex-wrap items-center gap-2.5 pt-4 text-xs font-medium">
-                <a
-                  href="#pillars"
-                  className="px-4 py-2 rounded-full bg-white border border-black/10 hover:border-deep-forest hover:bg-deep-forest hover:text-white transition-all duration-200 shadow-xs"
-                >
-                  6 Strategic Pillars ↓
-                </a>
-                <a
-                  href="#framework"
-                  className="px-4 py-2 rounded-full bg-white border border-black/10 hover:border-deep-forest hover:bg-deep-forest hover:text-white transition-all duration-200 shadow-xs"
-                >
-                  Transformation Framework ↓
-                </a>
-                <a
-                  href="#case-studies"
-                  className="px-4 py-2 rounded-full bg-white border border-black/10 hover:border-deep-forest hover:bg-deep-forest hover:text-white transition-all duration-200 shadow-xs"
-                >
-                  Flagship Case Studies ↓
-                </a>
+              {/* Jump Navigation to the 6 Pillars */}
+              <div className="pt-2">
+                <span className="text-[11px] font-mono uppercase tracking-wider text-charcoal/50 block mb-2.5">
+                  Direct Jump to Advisory Practice:
+                </span>
+                <div className="flex flex-wrap gap-2 text-xs">
+                  {pillars.map((p) => (
+                    <a
+                      key={p.id}
+                      href={`#pillar-${p.slug}`}
+                      className="px-3.5 py-1.5 rounded-full bg-white border border-black/10 hover:border-deep-forest hover:bg-deep-forest hover:text-white transition-all duration-200 shadow-xs font-medium"
+                    >
+                      <span className="text-primary-green font-mono mr-1">#{p.number}</span>
+                      <span>{p.title}</span>
+                    </a>
+                  ))}
+                </div>
               </div>
             </motion.div>
 
-            {/* Right Telemetry Column: High-Credibility Institutional Track Record */}
+            {/* Right Column: Track Record Telemetry Strip */}
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
@@ -320,7 +263,7 @@ export default function OurWorkClient({
                     Institutional Record
                   </span>
                   <h2 className="font-serif font-bold text-xl text-deep-forest mt-0.5">
-                    Demonstrated Impact at Scale
+                    Demonstrated Impact Across Africa
                   </h2>
                 </div>
 
@@ -378,367 +321,255 @@ export default function OurWorkClient({
         </div>
       </section>
 
-      {/* ─── 2. THE 6 STRATEGIC CONSULTING PILLARS ─── */}
-      <section id="pillars" className="w-full py-20 lg:py-28">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 space-y-14">
-          {/* Section Heading */}
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 border-b border-black/[0.08]">
-            <div className="space-y-2 max-w-2xl">
-              <span className="text-xs font-mono font-bold uppercase tracking-wider text-primary-green">
-                Practice Architecture
-              </span>
-              <h2
-                className="font-serif font-bold text-deep-forest tracking-tight leading-tight"
-                style={{ fontSize: 'clamp(2rem, 1.5rem + 1.8vw, 3.5rem)' }}
-              >
-                Six Core Advisory Practices
-              </h2>
-            </div>
-            <p className="text-xs sm:text-sm text-charcoal/70 max-w-md leading-relaxed">
-              Every assignment integrates specialized policy rigor, commercial acumen, and digital infrastructure to build resilient, farmer-first seed ecosystems.
-            </p>
-          </div>
-
-          {/* Pillars 3x2 Editorial Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {pillars.map((pillar, idx) => (
-              <motion.article
-                key={pillar.id}
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: idx * 0.08 }}
-                className="group rounded-[32px] bg-white border border-black/[0.08] hover:border-deep-forest/40 hover:shadow-[0_20px_50px_rgba(15,36,23,0.08)] transition-all duration-300 flex flex-col overflow-hidden"
-              >
-                {/* Visual Media Header with Photography/Platform Preview */}
-                <div className="relative w-full aspect-[16/10] overflow-hidden bg-[#F0EDE4] border-b border-black/[0.06]">
-                  <Image
-                    src={pillar.image}
-                    alt={pillar.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-deep-forest/70 via-transparent to-transparent pointer-events-none" />
-
-                  {/* Top Floating Badge */}
-                  <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
-                    <span className="font-mono text-xs font-bold px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-deep-forest shadow-xs">
-                      Pillar {pillar.number}
-                    </span>
-                    <span className="text-[11px] font-semibold uppercase tracking-wider px-3 py-1 rounded-full bg-deep-forest/80 backdrop-blur-md text-white">
-                      {pillar.category}
-                    </span>
-                  </div>
-
-                  {/* Bottom Stats Highlight on Image */}
-                  <div className="absolute bottom-3 left-4 right-4 text-[11px] font-medium text-white/95 truncate drop-shadow-sm">
-                    {pillar.statsHighlight}
-                  </div>
-                </div>
-
-                {/* Editorial Body */}
-                <div className="p-6 sm:p-7 flex flex-col flex-1 justify-between space-y-6">
-                  <div className="space-y-3">
-                    <h3 className="font-serif font-bold text-xl sm:text-2xl text-deep-forest group-hover:text-primary-green transition-colors leading-snug">
-                      {pillar.title}
-                    </h3>
-                    <p className="text-xs sm:text-[13.5px] text-charcoal/80 font-normal leading-relaxed line-clamp-3">
-                      {pillar.description}
-                    </p>
-                  </div>
-
-                  {/* Tangible Consulting Outputs */}
-                  <div className="space-y-2 pt-4 border-t border-black/[0.06]">
-                    <span className="text-[10px] font-mono uppercase tracking-wider text-charcoal/50 block">
-                      Core Interventions:
-                    </span>
-                    <ul className="space-y-1.5 text-xs text-charcoal/85">
-                      {pillar.deliverables.slice(0, 3).map((item, dIdx) => (
-                        <li key={dIdx} className="flex items-start gap-2">
-                          <CheckCircle2 size={13} className="text-primary-green shrink-0 mt-0.5" />
-                          <span className="line-clamp-1">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Bottom Practice Portal Link */}
-                  <div className="pt-4 border-t border-black/[0.06] mt-auto">
-                    <Link
-                      href={pillar.link}
-                      className="group/link flex items-center justify-between w-full text-xs font-bold text-deep-forest hover:text-primary-green transition-colors"
-                    >
-                      <span className="tracking-wide">Explore Practice & Case Studies</span>
-                      <div className="w-8 h-8 rounded-full bg-deep-forest/5 group-hover/link:bg-deep-forest group-hover/link:text-white flex items-center justify-center transition-all">
-                        <ArrowRight
-                          size={14}
-                          className="transform rotate-[-45deg] group-hover/link:rotate-0 transition-transform duration-300"
-                        />
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-              </motion.article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ─── 3. THE TRANSFORMATION CYCLE / SYSTEM ARCHITECTURE WORKFLOW GRAPH ─── */}
-      <section id="framework" className="w-full py-20 lg:py-28 bg-[#F3EFE6] border-y border-black/[0.08]">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 space-y-14">
-          <div className="max-w-3xl space-y-3">
-            <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#C29B38]">
-              System Design & Engagement Model
+      {/* ─── 2. ARCHITECTURAL PILLAR GRAPH & INTERACTIVE MATRIX ─── */}
+      <section className="sticky top-16 z-30 w-full bg-[#FAF9F5]/95 backdrop-blur-md border-b border-black/[0.08] py-4 transition-all">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+          <div className="flex items-center justify-between gap-4 overflow-x-auto no-scrollbar">
+            <span className="text-xs font-mono font-bold uppercase tracking-wider text-charcoal/60 shrink-0">
+              Filter Practice:
             </span>
-            <h2
-              className="font-serif font-bold text-deep-forest tracking-tight leading-tight"
-              style={{ fontSize: 'clamp(2rem, 1.5rem + 1.8vw, 3.5rem)' }}
-            >
-              The Seed Systems Transformation Cycle
-            </h2>
-            <p className="text-sm sm:text-base text-charcoal/80 leading-relaxed font-normal">
-              Sustainable seed sector development cannot occur in isolation. Our integrated methodology unites diagnostic research, regulatory modernization, digital platforms, and high-trust dialogue.
-            </p>
-          </div>
-
-          {/* Workflow Stepper Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
-            {workflowStages.map((wf, idx) => {
-              const Icon = wf.icon
-              const isActive = activeWorkflowIndex === idx
-
-              return (
+            <div className="flex items-center gap-2 shrink-0">
+              <button
+                type="button"
+                onClick={() => setActivePillarFilter('all')}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all cursor-pointer ${
+                  activePillarFilter === 'all'
+                    ? 'bg-deep-forest text-white shadow-xs'
+                    : 'bg-white text-charcoal/70 border border-black/10 hover:border-black/30'
+                }`}
+              >
+                All 6 Pillars
+              </button>
+              {pillars.map((p) => (
                 <button
-                  key={wf.stage}
+                  key={p.id}
                   type="button"
-                  onClick={() => setActiveWorkflowIndex(idx)}
-                  className={`text-left p-4 sm:p-5 rounded-2xl border transition-all duration-300 cursor-pointer flex flex-col justify-between ${
-                    isActive
-                      ? 'bg-deep-forest text-white border-deep-forest shadow-lg scale-[1.02]'
-                      : 'bg-white text-deep-forest border-black/10 hover:border-deep-forest/40 hover:bg-white/90'
+                  onClick={() => setActivePillarFilter(p.slug)}
+                  className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all cursor-pointer flex items-center gap-1.5 ${
+                    activePillarFilter === p.slug
+                      ? 'bg-deep-forest text-white shadow-xs'
+                      : 'bg-white text-charcoal/70 border border-black/10 hover:border-black/30'
                   }`}
                 >
-                  <div className="flex items-center justify-between w-full mb-4">
-                    <span
-                      className={`font-mono text-xs font-bold ${
-                        isActive ? 'text-[#C29B38]' : 'text-charcoal/40'
-                      }`}
-                    >
-                      PHASE {wf.stage}
-                    </span>
-                    <Icon size={16} className={isActive ? 'text-white' : 'text-primary-green'} />
-                  </div>
-                  <div className="space-y-1">
-                    <h3 className="font-serif font-bold text-sm leading-snug line-clamp-2">
-                      {wf.title}
-                    </h3>
-                    <p
-                      className={`text-[11px] line-clamp-1 ${
-                        isActive ? 'text-white/70' : 'text-charcoal/60'
-                      }`}
-                    >
-                      {wf.pillar}
-                    </p>
-                  </div>
-                </button>
-              )
-            })}
-          </div>
-
-          {/* Active Phase Deep Dive Card */}
-          <AnimatePresence mode="wait">
-            {workflowStages[activeWorkflowIndex] && (
-              <motion.div
-                key={activeWorkflowIndex}
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -16 }}
-                transition={{ duration: 0.35 }}
-                className="p-8 sm:p-10 lg:p-12 rounded-[36px] bg-white border border-black/[0.08] shadow-[0_15px_40px_rgba(0,0,0,0.04)] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center"
-              >
-                <div className="lg:col-span-7 space-y-5">
-                  <div className="flex items-center gap-3">
-                    <span className="font-mono text-xs font-bold px-3 py-1 rounded-full bg-deep-forest text-white">
-                      Phase {workflowStages[activeWorkflowIndex].stage}
-                    </span>
-                    <span className="text-xs font-bold uppercase tracking-wider text-primary-green">
-                      {workflowStages[activeWorkflowIndex].pillar}
-                    </span>
-                  </div>
-
-                  <h3 className="font-serif font-bold text-2xl sm:text-3xl text-deep-forest">
-                    {workflowStages[activeWorkflowIndex].title}
-                  </h3>
-
-                  <p className="text-sm sm:text-base text-charcoal/85 leading-relaxed font-normal">
-                    {workflowStages[activeWorkflowIndex].summary}
-                  </p>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-black/[0.06]">
-                    <div className="space-y-1">
-                      <span className="text-[10px] font-mono uppercase tracking-wider text-charcoal/50">
-                        Primary Client Inputs:
-                      </span>
-                      <p className="text-xs text-deep-forest font-medium">
-                        {workflowStages[activeWorkflowIndex].inputs}
-                      </p>
-                    </div>
-
-                    <div className="space-y-1">
-                      <span className="text-[10px] font-mono uppercase tracking-wider text-charcoal/50">
-                        Sustainable Deliverables:
-                      </span>
-                      <p className="text-xs text-primary-green font-medium">
-                        {workflowStages[activeWorkflowIndex].outcomes}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="lg:col-span-5 bg-[#FAF9F5] border border-black/[0.08] rounded-2xl p-6 sm:p-7 space-y-4">
-                  <div className="flex items-center gap-2 text-xs font-bold text-deep-forest uppercase tracking-wider">
-                    <CheckCircle2 size={15} className="text-primary-green" />
-                    <span>How This Drives Systemic Scale</span>
-                  </div>
-                  <p className="text-xs text-charcoal/80 leading-relaxed font-light">
-                    Agri Experience ensures that analytical recommendations do not remain on paper. By transitioning directly from evidence (Phase 01) through policy reform (Phase 02) into digital tools (Phase 04) and stakeholder consensus (Phase 06), we secure irreversible institutional ownership.
-                  </p>
-                  <div className="pt-2">
-                    <Link
-                      href="/contact"
-                      className="inline-flex items-center gap-2 text-xs font-bold text-deep-forest hover:text-primary-green transition-colors"
-                    >
-                      <span>Commission a Diagnostic or Advisory Program</span>
-                      <ArrowRight size={13} />
-                    </Link>
-                  </div>
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
-      </section>
-
-      {/* ─── 4. CROSS-PILLAR FLAGSHIP CASE STUDIES ─── */}
-      <section id="case-studies" className="w-full py-20 lg:py-28">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 space-y-12">
-          {/* Section Header & Category Filters */}
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-6 border-b border-black/[0.08]">
-            <div className="space-y-2">
-              <span className="text-xs font-mono font-bold uppercase tracking-wider text-primary-green">
-                Evidence of Execution
-              </span>
-              <h2
-                className="font-serif font-bold text-deep-forest tracking-tight"
-                style={{ fontSize: 'clamp(2rem, 1.5rem + 1.8vw, 3.5rem)' }}
-              >
-                Flagship Case Studies & Engagements
-              </h2>
-            </div>
-
-            {/* Filter Pills */}
-            <div className="flex flex-wrap gap-2 text-xs">
-              {categories.map((c) => (
-                <button
-                  key={c.id}
-                  type="button"
-                  onClick={() => setSelectedCaseStudyCategory(c.id)}
-                  className={`px-3.5 py-1.5 rounded-full border transition-all cursor-pointer font-medium ${
-                    selectedCaseStudyCategory === c.id
-                      ? 'bg-deep-forest text-white border-deep-forest'
-                      : 'bg-white text-charcoal/70 border-black/10 hover:border-black/30'
-                  }`}
-                >
-                  {c.label}
+                  <span className="font-mono text-[10px] opacity-60">#{p.number}</span>
+                  <span>{p.title}</span>
                 </button>
               ))}
             </div>
           </div>
-
-          {/* Case Studies Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProjects.slice(0, 9).map((p) => {
-              const title = locale === 'fr' ? p.titleFr || p.titleEn : p.titleEn
-              const desc = locale === 'fr' ? p.descFr || p.descEn : p.descEn
-
-              return (
-                <div
-                  key={p.id}
-                  className="group rounded-3xl bg-white border border-black/[0.08] hover:border-deep-forest/40 hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col"
-                >
-                  {p.imageUrl && (
-                    <div className="relative w-full aspect-[16/10] overflow-hidden bg-[#F0EDE4] border-b border-black/[0.06]">
-                      <Image
-                        src={p.imageUrl}
-                        alt={title}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                    </div>
-                  )}
-
-                  <div className="p-6 sm:p-7 flex flex-col flex-1 space-y-4">
-                    <div className="flex items-center justify-between gap-2 text-xs">
-                      {p.client && (
-                        <span className="font-bold text-primary-green uppercase tracking-wider text-[11px] truncate">
-                          {p.client}
-                        </span>
-                      )}
-                      {p.year && (
-                        <span className="text-charcoal/50 text-[11px] font-mono shrink-0">
-                          {p.year}
-                        </span>
-                      )}
-                    </div>
-
-                    <h3 className="font-serif font-bold text-lg text-deep-forest leading-snug group-hover:text-primary-green transition-colors">
-                      {title}
-                    </h3>
-
-                    <p className="text-xs text-charcoal/75 font-light leading-relaxed flex-1 line-clamp-3">
-                      {desc}
-                    </p>
-
-                    {p.link && (
-                      <div className="pt-3 border-t border-black/[0.06] mt-auto">
-                        <a
-                          href={p.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 text-xs font-bold text-deep-forest hover:text-primary-green transition-colors"
-                        >
-                          <span>Open Assignment Details</span>
-                          <ExternalLink size={12} />
-                        </a>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-
-          {/* Bottom Link to Resource Library */}
-          <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-black/[0.08]">
-            <p className="text-xs text-charcoal/70">
-              Need access to complete project dossiers, scoping study PDFs, or presentation slides?
-            </p>
-            <Link
-              href="/resources"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-deep-forest text-white font-bold text-xs hover:bg-deep-forest/90 transition-all shadow-xs"
-            >
-              <RollingText className="gap-2">
-                Explore Full Resource & Publications Library
-                <ArrowRight size={14} />
-              </RollingText>
-            </Link>
-          </div>
         </div>
       </section>
 
-      {/* ─── 5. PAN-AFRICAN GEOGRAPHIC REACH & IMPACT MAP TEASER ─── */}
+      {/* ─── 3. THE 6 PILLARS WITH NESTED CASE STUDIES ─── */}
+      <div className="space-y-24 lg:space-y-36 py-20 lg:py-28">
+        {visiblePillars.map((pillar, pIdx) => {
+          // Get specific projects/case studies belonging to this pillar
+          const pillarProjects = projects.filter((proj) => proj.category === pillar.slug)
+
+          return (
+            <section
+              key={pillar.id}
+              id={`pillar-${pillar.slug}`}
+              className="scroll-mt-36 w-full"
+            >
+              <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 space-y-12">
+                {/* Pillar Header Card: Dual-Column Magazine Layout */}
+                <div className="rounded-[40px] bg-white border border-black/[0.08] shadow-[0_15px_40px_rgba(0,0,0,0.03)] overflow-hidden">
+                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center p-8 sm:p-10 lg:p-12">
+                    {/* Left: Visual Photography / Platform Screenshot */}
+                    <div className="lg:col-span-5 relative">
+                      <div className="relative aspect-[16/11] rounded-[28px] overflow-hidden bg-[#F0EDE4] border border-black/[0.08] shadow-md group">
+                        <Image
+                          src={pillar.heroImage}
+                          alt={pillar.title}
+                          fill
+                          sizes="(max-width: 1024px) 100vw, 40vw"
+                          className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-deep-forest/80 via-transparent to-transparent pointer-events-none" />
+
+                        {/* Top Badges */}
+                        <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
+                          <span className="font-mono text-xs font-bold px-3 py-1 rounded-full bg-white/95 text-deep-forest shadow-xs">
+                            Pillar {pillar.number}
+                          </span>
+                          <span className="text-[11px] font-semibold uppercase tracking-wider px-3 py-1 rounded-full bg-deep-forest/85 text-white">
+                            {pillar.category}
+                          </span>
+                        </div>
+
+                        {/* Bottom Partner Sponsors */}
+                        <div className="absolute bottom-4 left-4 right-4 text-[11px] text-white/90">
+                          <span className="font-mono uppercase text-[10px] text-white/60 block">Key Partners:</span>
+                          <p className="font-medium truncate drop-shadow-sm">
+                            {pillar.clientSponsors.join(' • ')}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Right: Narrative, Scope, and Practice Portal Action */}
+                    <div className="lg:col-span-7 space-y-6">
+                      <div className="space-y-3">
+                        <div className="flex items-center gap-2">
+                          <span className="font-mono text-xs font-bold text-primary-green uppercase tracking-wider">
+                            Pillar {pillar.number} Practice Dossier
+                          </span>
+                        </div>
+                        <h2
+                          className="font-serif font-bold text-deep-forest tracking-tight leading-tight"
+                          style={{ fontSize: 'clamp(1.875rem, 1.4rem + 1.8vw, 3.25rem)' }}
+                        >
+                          {pillar.title}
+                        </h2>
+                        <p className="text-sm sm:text-base text-charcoal/85 leading-relaxed font-normal">
+                          {pillar.description}
+                        </p>
+                      </div>
+
+                      {/* Methodology & Interventions Grid */}
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-black/[0.06]">
+                        <div className="space-y-2">
+                          <span className="text-[10px] font-mono uppercase tracking-wider text-charcoal/50 block">
+                            Core Advisory Scope:
+                          </span>
+                          <ul className="space-y-1.5 text-xs text-charcoal/80">
+                            {pillar.coreOutputs.map((out, oIdx) => (
+                              <li key={oIdx} className="flex items-start gap-2">
+                                <CheckCircle2 size={13} className="text-primary-green shrink-0 mt-0.5" />
+                                <span className="line-clamp-1">{out}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        <div className="space-y-2 bg-[#FAF9F5] p-4 rounded-2xl border border-black/[0.06]">
+                          <span className="text-[10px] font-mono uppercase tracking-wider text-charcoal/50 block">
+                            Delivery Methodology:
+                          </span>
+                          <p className="text-xs text-charcoal/80 leading-relaxed font-light">
+                            {pillar.methodology}
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Practice Portal Deep-Dive Button */}
+                      <div className="pt-2 flex flex-wrap items-center gap-4">
+                        <Link
+                          href={pillar.link}
+                          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-deep-forest text-white hover:bg-deep-forest/90 font-bold text-xs transition-all shadow-xs"
+                        >
+                          <RollingText className="gap-2">
+                            <span>Open Dedicated {pillar.title} Practice Portal</span>
+                            <ArrowRight size={14} />
+                          </RollingText>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Nested Case Studies Under This Specific Pillar */}
+                <div className="space-y-6">
+                  <div className="flex items-center justify-between pb-3 border-b border-black/[0.08]">
+                    <div className="flex items-center gap-2.5">
+                      <FolderOpen size={16} className="text-primary-green" />
+                      <h3 className="font-serif font-bold text-xl sm:text-2xl text-deep-forest">
+                        Case Studies & Field Assignments: {pillar.title}
+                      </h3>
+                    </div>
+                    <span className="text-xs font-mono text-charcoal/60 bg-white border border-black/[0.08] px-3 py-1 rounded-full">
+                      {pillarProjects.length} Verified {pillarProjects.length === 1 ? 'Record' : 'Records'}
+                    </span>
+                  </div>
+
+                  {pillarProjects.length > 0 ? (
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                      {pillarProjects.map((project) => {
+                        const title = locale === 'fr' ? project.titleFr || project.titleEn : project.titleEn
+                        const desc = locale === 'fr' ? project.descFr || project.descEn : project.descEn
+
+                        return (
+                          <article
+                            key={project.id}
+                            className="group rounded-3xl bg-white border border-black/[0.08] hover:border-deep-forest/40 hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between"
+                          >
+                            {/* Case Study Image Thumbnail */}
+                            {project.imageUrl && (
+                              <div className="relative w-full aspect-[16/10] overflow-hidden bg-[#F0EDE4] border-b border-black/[0.06]">
+                                <Image
+                                  src={project.imageUrl}
+                                  alt={title}
+                                  fill
+                                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
+                              </div>
+                            )}
+
+                            {/* Case Study Metadata & Narrative */}
+                            <div className="p-6 sm:p-7 flex flex-col flex-1 space-y-4">
+                              <div className="flex items-center justify-between gap-2 text-xs">
+                                {project.client && (
+                                  <span className="font-bold text-primary-green uppercase tracking-wider text-[11px] truncate">
+                                    {project.client}
+                                  </span>
+                                )}
+                                {project.year && (
+                                  <span className="text-charcoal/50 text-[11px] font-mono shrink-0">
+                                    {project.year}
+                                  </span>
+                                )}
+                              </div>
+
+                              <h4 className="font-serif font-bold text-lg text-deep-forest leading-snug group-hover:text-primary-green transition-colors">
+                                {title}
+                              </h4>
+
+                              <p className="text-xs text-charcoal/75 font-light leading-relaxed flex-1 line-clamp-3">
+                                {desc}
+                              </p>
+
+                              {project.link && (
+                                <div className="pt-3 border-t border-black/[0.06] mt-auto">
+                                  <a
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-1.5 text-xs font-bold text-deep-forest hover:text-primary-green transition-colors"
+                                  >
+                                    <span>Access Case Study & Documentation</span>
+                                    <ExternalLink size={12} />
+                                  </a>
+                                </div>
+                              )}
+                            </div>
+                          </article>
+                        )
+                      })}
+                    </div>
+                  ) : (
+                    <div className="p-8 rounded-2xl bg-white border border-dashed border-black/15 text-center space-y-2">
+                      <p className="text-xs text-charcoal/60">
+                        Institutional projects for this pillar are managed via the CMS.
+                      </p>
+                      <Link
+                        href={pillar.link}
+                        className="inline-flex items-center gap-1.5 text-xs font-bold text-primary-green hover:underline"
+                      >
+                        <span>View Pillar Portal</span>
+                        <ArrowRight size={12} />
+                      </Link>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </section>
+          )
+        })}
+      </div>
+
+      {/* ─── 4. PAN-AFRICAN GEOGRAPHIC REACH & CONTINENTAL MAP ─── */}
       <section className="w-full py-20 bg-[#F4F7EE] border-y border-black/[0.08]">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
@@ -801,7 +632,7 @@ export default function OurWorkClient({
         </div>
       </section>
 
-      {/* ─── 6. EXECUTIVE ENGAGEMENT / COMMISSION CONSULTATION CTA ─── */}
+      {/* ─── 5. EXECUTIVE COMMISSION & CONSULTATION CTA ─── */}
       <section className="w-full relative overflow-hidden bg-deep-forest text-white py-20 lg:py-28">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(58,180,74,0.18),_transparent_60%)] pointer-events-none" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(194,155,56,0.12),_transparent_60%)] pointer-events-none" />
@@ -848,4 +679,3 @@ export default function OurWorkClient({
     </main>
   )
 }
-
