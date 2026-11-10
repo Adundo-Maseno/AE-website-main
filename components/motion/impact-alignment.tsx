@@ -74,11 +74,10 @@ function AccordionSlice({
     <div
       onMouseEnter={onHover}
       onClick={onClick}
-      className={`relative overflow-hidden rounded-2xl cursor-pointer transition-all duration-[500ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${
-        isActive 
-          ? 'h-[300px] lg:h-auto lg:flex-[6_0_0%]' 
+      className={`relative overflow-hidden rounded-2xl cursor-pointer transition-all duration-[500ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${isActive
+          ? 'h-[300px] lg:h-auto lg:flex-[6_0_0%]'
           : 'h-[72px] lg:h-auto lg:flex-[1_1_0%]'
-      }`}
+        }`}
     >
       {/* ─── Background image placeholder ─── */}
       <div className="absolute inset-0 bg-mist overflow-hidden">
@@ -129,11 +128,10 @@ function AccordionSlice({
         <motion.div
           layout
           initial={false}
-          className={`absolute overflow-hidden flex items-center justify-center ${
-            isActive
+          className={`absolute overflow-hidden flex items-center justify-center ${isActive
               ? "top-0 left-5 lg:left-8 w-24 h-40 lg:w-32 lg:h-48 rounded-b-2xl items-end pb-4 lg:pb-6"
               : "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full aspect-square rounded-none pb-0"
-          }`}
+            }`}
           style={{
             backgroundColor: isActive ? card.color || "#1A4D2E" : "transparent"
           }}
