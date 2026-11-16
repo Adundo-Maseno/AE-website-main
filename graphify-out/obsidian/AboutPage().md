@@ -1,21 +1,20 @@
 ---
 source_file: "app/[locale]/about/page.tsx"
 type: "code"
-community: "Main Marketing Pages & Views"
-location: "L12"
+community: "About & Services Bento Grid"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Marketing_Pages__Views
+  - community/About__Services_Bento_Grid
 ---
 
 # AboutPage()
 
 ## Connections
-- [[Link]] - `calls` [EXTRACTED]
-- [[RollingText()]] - `calls` [EXTRACTED]
-- [[ScrollAccordion()]] - `calls` [EXTRACTED]
-- [[ServicesBentoGrid()]] - `calls` [EXTRACTED]
+- [[AboutContent()]] - `calls` [EXTRACTED]
 - [[aboutpage.tsx]] - `contains` [EXTRACTED]
+- [[getExpertisePillars()]] - `calls` [EXTRACTED]
+- [[getPageSections()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Marketing_Pages__Views
+#graphify/code #graphify/EXTRACTED #community/About__Services_Bento_Grid

@@ -1,18 +1,18 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Dialog & Mapbox Type Integrations"
-location: "L28"
+community: "Dev Dependencies & Tooling"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dialog__Mapbox_Type_Integrations
+  - community/Dev_Dependencies__Tooling
 ---
 
 # @types/mapbox-gl@^3.4.1
 
 ## Connections
 - [[@typesmapbox-gl]] - `declares` [EXTRACTED]
-- [[dependencies]] - `contains` [EXTRACTED]
+- [[devDependencies]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dialog__Mapbox_Type_Integrations
+#graphify/code #graphify/EXTRACTED #community/Dev_Dependencies__Tooling

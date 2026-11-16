@@ -1,18 +1,18 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Package Manager Engine Constraints"
-location: "L5"
+community: "Package Manager Engine Spec"
+location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Package_Manager_Engine_Constraints
+  - community/Package_Manager_Engine_Spec
 ---
 
 # devEngines
 
 ## Connections
 - [[package.json]] - `contains` [EXTRACTED]
-- [[packageManager]] - `contains` [EXTRACTED]
+- [[packageManager_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Package_Manager_Engine_Constraints
+#graphify/code #graphify/EXTRACTED #community/Package_Manager_Engine_Spec

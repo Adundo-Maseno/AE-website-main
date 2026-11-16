@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Build & Lint DevDependencies"
-location: "L57"
+community: "Dev Dependencies & Tooling"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Build__Lint_DevDependencies
+  - community/Dev_Dependencies__Tooling
 ---
 
 # @types/react-dom@19.2.5
@@ -15,4 +15,4 @@ tags:
 - [[@typesreact-dom]] - `declares` [EXTRACTED]
 - [[devDependencies]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Build__Lint_DevDependencies
+#graphify/code #graphify/EXTRACTED #community/Dev_Dependencies__Tooling

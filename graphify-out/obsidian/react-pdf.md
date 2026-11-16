@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Resource Library & PDF Previews"
-location: "L47"
+community: "Runtime Package Dependencies"
+location: "L45"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Resource_Library__PDF_Previews
+  - community/Runtime_Package_Dependencies
 ---
 
 # react-pdf
@@ -16,4 +16,4 @@ tags:
 - [[pdf-preview.tsx]] - `imports_from` [EXTRACTED]
 - [[react-pdf@10.4.1]] - `declares` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Resource_Library__PDF_Previews
+#graphify/concept #graphify/EXTRACTED #community/Runtime_Package_Dependencies

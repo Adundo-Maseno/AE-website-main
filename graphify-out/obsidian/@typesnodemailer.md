@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Build & Lint DevDependencies"
-location: "L55"
+community: "Dev Dependencies & Tooling"
+location: "L54"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Build__Lint_DevDependencies
+  - community/Dev_Dependencies__Tooling
 ---
 
 # @types/nodemailer
@@ -15,4 +15,4 @@ tags:
 - [[@typesnodemailer@8.0.1]] - `declares` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Build__Lint_DevDependencies
+#graphify/concept #graphify/EXTRACTED #community/Dev_Dependencies__Tooling

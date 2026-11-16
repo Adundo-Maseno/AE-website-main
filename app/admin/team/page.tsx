@@ -20,6 +20,11 @@ import {
 import TeamFormModal from '@/components/admin/team-form-modal'
 import { TeamMemberItem } from '@/lib/services/team-service'
 
+const shouldUnoptimize = (url: string) => {
+  const clean = url.split('?')[0].toLowerCase()
+  return clean.endsWith('.svg') || url.startsWith('/uploads/') || /^https?:\/\//i.test(url)
+}
+
 export default function AdminTeamPage() {
   const [team, setTeam] = useState<TeamMemberItem[]>([])
   const [loading, setLoading] = useState(true)
@@ -246,6 +251,7 @@ export default function AdminTeamPage() {
                       alt={member.name}
                       fill
                       sizes="(max-width: 768px) 100vw, 300px"
+                      unoptimized={shouldUnoptimize(member.image)}
                       className={`object-cover transition-all duration-500 ${
                         member.hoverImage ? 'group-hover:opacity-0 group-hover:scale-105' : 'group-hover:scale-105'
                       }`}
@@ -256,6 +262,7 @@ export default function AdminTeamPage() {
                         alt={`${member.name} alternate`}
                         fill
                         sizes="(max-width: 768px) 100vw, 300px"
+                        unoptimized={shouldUnoptimize(member.hoverImage)}
                         className="object-cover absolute inset-0 opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
                       />
                     )}
@@ -290,14 +297,14 @@ export default function AdminTeamPage() {
                       className="relative w-5 h-5 rounded-md overflow-hidden border border-white/60 shrink-0"
                       title="Primary headshot"
                     >
-                      <Image src={member.image} alt="Primary" fill className="object-cover" sizes="20px" />
+                      <Image src={member.image} alt="Primary" fill unoptimized={shouldUnoptimize(member.image)} className="object-cover" sizes="20px" />
                     </div>
                     {member.hoverImage ? (
                       <div
                         className="relative w-5 h-5 rounded-md overflow-hidden border border-white/60 shrink-0"
                         title="Hover alternate headshot"
                       >
-                        <Image src={member.hoverImage} alt="Hover" fill className="object-cover" sizes="20px" />
+                        <Image src={member.hoverImage} alt="Hover" fill unoptimized={shouldUnoptimize(member.hoverImage)} className="object-cover" sizes="20px" />
                       </div>
                     ) : (
                       <span className="text-[9px] text-white/70 px-1 font-mono">No Hover</span>
@@ -395,6 +402,7 @@ export default function AdminTeamPage() {
                                 alt={`${member.name} Primary`}
                                 fill
                                 sizes="40px"
+                                unoptimized={shouldUnoptimize(member.image)}
                                 className="object-cover"
                               />
                             ) : (
@@ -414,6 +422,7 @@ export default function AdminTeamPage() {
                                 alt={`${member.name} Hover`}
                                 fill
                                 sizes="40px"
+                                unoptimized={shouldUnoptimize(member.hoverImage)}
                                 className="object-cover"
                               />
                             ) : (

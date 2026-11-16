@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "API Routes & Email Pipeline"
-location: "L43"
+community: "Runtime Package Dependencies"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Routes__Email_Pipeline
+  - community/Runtime_Package_Dependencies
 ---
 
 # nodemailer@^9.1.1
@@ -15,4 +15,4 @@ tags:
 - [[dependencies]] - `contains` [EXTRACTED]
 - [[nodemailer]] - `declares` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Routes__Email_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Runtime_Package_Dependencies

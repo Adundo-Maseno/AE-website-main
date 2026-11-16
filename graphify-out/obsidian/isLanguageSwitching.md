@@ -1,12 +1,12 @@
 ---
 source_file: "components/language-switch-provider.tsx"
 type: "code"
-community: "Global Layout & Font Typography"
+community: "App Layouts & Global Shell"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Global_Layout__Font_Typography
+  - community/App_Layouts__Global_Shell
 ---
 
 # isLanguageSwitching
@@ -15,4 +15,4 @@ tags:
 - [[language-switch-provider.tsx]] - `contains` [EXTRACTED]
 - [[scroll-to-top.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Global_Layout__Font_Typography
+#graphify/code #graphify/EXTRACTED #community/App_Layouts__Global_Shell

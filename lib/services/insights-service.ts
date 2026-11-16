@@ -1,5 +1,6 @@
 import { prisma, isDatabaseConnected } from '@/lib/db'
 import { revalidatePath } from 'next/cache'
+import { createSeedGuard, stripManagedFields } from './service-utils'
 
 export interface InsightItem {
   id: string
@@ -71,6 +72,47 @@ export async function getInsights(): Promise<InsightItem[]> {
   return staticInsights
 }
 
+const seedGuard = createSeedGuard(async () => {
+  const count = await prisma.insight.count()
+  if (count === 0) {
+    await prisma.insight.createMany({
+      data: staticInsights.map((ins) => ({
+        titleEn: ins.titleEn,
+        titleFr: ins.titleFr || null,
+        summaryEn: ins.summaryEn || null,
+        summaryFr: ins.summaryFr || null,
+        contentEn: ins.contentEn || null,
+        contentFr: ins.contentFr || null,
+        link: ins.link || null,
+        author: ins.author || null,
+        order: ins.order,
+      })),
+    })
+  }
+})
+
+/**
+ * Hydrates the Insight table from static defaults when empty.
+ */
+async function ensureSeeded(): Promise<boolean> {
+  return seedGuard()
+}
+
+async function resolveInsightId(id: string): Promise<string> {
+  if (!id.startsWith('static-')) return id
+  const existing = staticInsights.find((ins) => ins.id === id)
+  if (!existing) {
+    throw new Error(`Insight not found for static id: ${id}`)
+  }
+  const dbRecord = await prisma.insight.findFirst({
+    where: { titleEn: existing.titleEn },
+  })
+  if (!dbRecord) {
+    throw new Error(`Insight "${existing.titleEn}" not found in database`)
+  }
+  return dbRecord.id
+}
+
 export async function createInsight(data: {
   titleEn: string
   titleFr?: string
@@ -82,6 +124,9 @@ export async function createInsight(data: {
   author?: string
   order?: number
 }): Promise<InsightItem> {
+  const connected = await ensureSeeded()
+  if (!connected) throw new Error('Database is not connected')
+
   const record = await prisma.insight.create({
     data: {
       titleEn: data.titleEn,
@@ -116,9 +161,13 @@ export async function updateInsight(
     order?: number
   }>
 ): Promise<InsightItem> {
+  const connected = await ensureSeeded()
+  if (!connected) throw new Error('Database is not connected')
+
+  const targetId = await resolveInsightId(id)
   const record = await prisma.insight.update({
-    where: { id },
-    data,
+    where: { id: targetId },
+    data: stripManagedFields(data),
   })
 
   revalidatePath('/[locale]/insights', 'page')
@@ -128,8 +177,12 @@ export async function updateInsight(
 }
 
 export async function deleteInsight(id: string): Promise<boolean> {
+  const connected = await ensureSeeded()
+  if (!connected) throw new Error('Database is not connected')
+
+  const targetId = await resolveInsightId(id)
   await prisma.insight.delete({
-    where: { id },
+    where: { id: targetId },
   })
 
   revalidatePath('/[locale]/insights', 'page')

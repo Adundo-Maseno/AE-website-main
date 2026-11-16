@@ -1,19 +1,20 @@
 ---
 source_file: "app/[locale]/our-work/digital-platforms/page.tsx"
 type: "code"
-community: "Main Marketing Pages & Views"
-location: "L10"
+community: "Our Work Pillar Pages"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Marketing_Pages__Views
+  - community/Our_Work_Pillar_Pages
 ---
 
 # DigitalPlatformsPage()
 
 ## Connections
-- [[Link]] - `calls` [EXTRACTED]
-- [[RollingText()]] - `calls` [EXTRACTED]
+- [[DigitalPlatformsClient()]] - `calls` [EXTRACTED]
 - [[digital-platformspage.tsx]] - `contains` [EXTRACTED]
+- [[getPageSections()]] - `calls` [EXTRACTED]
+- [[getProjects()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Marketing_Pages__Views
+#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Pages

@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-team/layout.tsx"
 type: "code"
-community: "Team Page Metadata Layout"
+community: "Localized Metadata & Home Sections"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Team_Page_Metadata_Layout
+  - community/Localized_Metadata__Home_Sections
 ---
 
 # OurTeamLayout()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[our-teamlayout.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Team_Page_Metadata_Layout
+#graphify/code #graphify/EXTRACTED #community/Localized_Metadata__Home_Sections

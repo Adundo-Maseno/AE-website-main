@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Build & Lint DevDependencies"
+community: "Dev Dependencies & Tooling"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Build__Lint_DevDependencies
+  - community/Dev_Dependencies__Tooling
 ---
 
 # husky@^9.1.7
@@ -15,4 +15,4 @@ tags:
 - [[devDependencies]] - `contains` [EXTRACTED]
 - [[husky]] - `declares` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Build__Lint_DevDependencies
+#graphify/code #graphify/EXTRACTED #community/Dev_Dependencies__Tooling

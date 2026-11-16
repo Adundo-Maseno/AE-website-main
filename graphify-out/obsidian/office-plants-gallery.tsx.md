@@ -1,12 +1,12 @@
 ---
 source_file: "components/motion/office-plants-gallery.tsx"
 type: "code"
-community: "Plant Gallery & Interactive Visuals"
+community: "Field Gallery CMS & Showcase"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Plant_Gallery__Interactive_Visuals
+  - community/Field_Gallery_CMS__Showcase
 ---
 
 # office-plants-gallery.tsx
@@ -17,13 +17,13 @@ tags:
 - [[OfficePlantsGallery()]] - `contains` [EXTRACTED]
 - [[PlantFrame()]] - `contains` [EXTRACTED]
 - [[SETTLED_POSITIONS]] - `contains` [EXTRACTED]
+- [[localegallerypage.tsx]] - `imports_from` [EXTRACTED]
 - [[easeInCubic()]] - `contains` [EXTRACTED]
 - [[easeOutCirc()]] - `contains` [EXTRACTED]
 - [[framer-motion]] - `imports_from` [EXTRACTED]
-- [[gallerypage.tsx]] - `imports_from` [EXTRACTED]
 - [[lucide-react]] - `imports_from` [EXTRACTED]
 - [[plantImages]] - `contains` [EXTRACTED]
 - [[react]] - `imports_from` [EXTRACTED]
 - [[three]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Plant_Gallery__Interactive_Visuals
+#graphify/code #graphify/EXTRACTED #community/Field_Gallery_CMS__Showcase

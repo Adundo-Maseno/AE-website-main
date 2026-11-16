@@ -1,12 +1,12 @@
 ---
 source_file: "i18n/routing.ts"
 type: "code"
-community: "Main Marketing Pages & Views"
+community: "Header Navigation & i18n Routing"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Marketing_Pages__Views
+  - community/Header_Navigation__i18n_Routing
 ---
 
 # routing
@@ -16,4 +16,4 @@ tags:
 - [[request.ts]] - `imports` [EXTRACTED]
 - [[routing.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Marketing_Pages__Views
+#graphify/code #graphify/EXTRACTED #community/Header_Navigation__i18n_Routing

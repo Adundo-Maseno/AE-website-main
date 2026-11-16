@@ -1,12 +1,12 @@
 ---
-source_file: "app/[locale]/resources/page.tsx"
+source_file: "components/resources-content.tsx"
 type: "code"
-community: "Resource Library & PDF Previews"
-location: "L27"
+community: "Footer Settings & PDF Preview"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resource_Library__PDF_Previews
+  - community/Footer_Settings__PDF_Preview
 ---
 
 # ResourcesContent()
@@ -16,6 +16,7 @@ tags:
 - [[PdfPreview]] - `calls` [EXTRACTED]
 - [[ResourcesPage()]] - `calls` [EXTRACTED]
 - [[RollingText()]] - `calls` [EXTRACTED]
-- [[resourcespage.tsx]] - `contains` [EXTRACTED]
+- [[localeresourcespage.tsx]] - `imports` [EXTRACTED]
+- [[resources-content.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resource_Library__PDF_Previews
+#graphify/code #graphify/EXTRACTED #community/Footer_Settings__PDF_Preview

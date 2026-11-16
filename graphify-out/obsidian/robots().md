@@ -1,12 +1,12 @@
 ---
 source_file: "app/robots.ts"
 type: "code"
-community: "Case Studies & Technical Layouts"
+community: "Team & Page Sections API"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Case_Studies__Technical_Layouts
+  - community/Team__Page_Sections_API
 ---
 
 # robots()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[robots.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Case_Studies__Technical_Layouts
+#graphify/code #graphify/EXTRACTED #community/Team__Page_Sections_API

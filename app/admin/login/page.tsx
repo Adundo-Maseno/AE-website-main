@@ -33,8 +33,7 @@ export default function AdminLoginPage() {
       }
 
       setSuccess(true)
-      router.push('/admin')
-      router.refresh()
+      window.location.href = '/admin'
     } catch (err: any) {
       setError(err.message || 'Authentication failed. Please verify credentials.')
     } finally {

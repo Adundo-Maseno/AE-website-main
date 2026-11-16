@@ -1,12 +1,12 @@
 ---
 source_file: "components/google-analytics.tsx"
 type: "code"
-community: "Global Layout & Font Typography"
+community: "App Layouts & Global Shell"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Global_Layout__Font_Typography
+  - community/App_Layouts__Global_Shell
 ---
 
 # Window
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[google-analytics.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Global_Layout__Font_Typography
+#graphify/code #graphify/EXTRACTED #community/App_Layouts__Global_Shell

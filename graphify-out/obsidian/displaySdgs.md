@@ -1,12 +1,12 @@
 ---
 source_file: "components/motion/impact-alignment.tsx"
 type: "code"
-community: "Impact Alignment & SDG Accordions"
+community: "Impact Page & SDG Alignment"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Impact_Alignment__SDG_Accordions
+  - community/Impact_Page__SDG_Alignment
 ---
 
 # displaySdgs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[impact-alignment.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Impact_Alignment__SDG_Accordions
+#graphify/code #graphify/EXTRACTED #community/Impact_Page__SDG_Alignment

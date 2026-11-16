@@ -1,11 +1,11 @@
 ---
 source_file: "postcss-load-config"
 type: "code"
-community: "PostCSS & Tailwind Plugins"
+community: "PostCSS Tailwind Configuration"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PostCSS__Tailwind_Plugins
+  - community/PostCSS_Tailwind_Configuration
 ---
 
 # postcss-load-config
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[postcss.config.mjs]] - `dynamic_import` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PostCSS__Tailwind_Plugins
+#graphify/code #graphify/EXTRACTED #community/PostCSS_Tailwind_Configuration

@@ -17,7 +17,7 @@ export default function CountryFormModal({
   onSuccess,
   country,
 }: CountryFormModalProps) {
-  const isEditing = Boolean(country && !country.id.startsWith('static-'))
+  const isEditing = Boolean(country?.id)
 
   const [tab, setTab] = useState<'en' | 'fr'>('en')
   const [countryCode, setCountryCode] = useState('')

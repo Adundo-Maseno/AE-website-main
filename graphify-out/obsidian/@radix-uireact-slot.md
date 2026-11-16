@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Interactive Map & Country GeoData"
-location: "L24"
+community: "Runtime Package Dependencies"
+location: "L27"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Interactive_Map__Country_GeoData
+  - community/Runtime_Package_Dependencies
 ---
 
 # @radix-ui/react-slot
@@ -17,4 +17,4 @@ tags:
 - [[button.tsx]] - `imports_from` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Interactive_Map__Country_GeoData
+#graphify/concept #graphify/EXTRACTED #community/Runtime_Package_Dependencies

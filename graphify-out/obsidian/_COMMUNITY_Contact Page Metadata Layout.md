@@ -22,8 +22,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Case Studies & Technical Layouts]]
-- 1 edge to [[_COMMUNITY_Main Marketing Pages & Views]]
+- 1 edge to [[_COMMUNITY_Team & Page Sections API]]
+- 1 edge to [[_COMMUNITY_Localized Metadata & Home Sections]]
 
 ## Top bridge nodes
 - [[contactlayout.tsx]] - degree 4, connects to 2 communities

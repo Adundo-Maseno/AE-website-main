@@ -1,18 +1,18 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Core Animation & Motion Libraries"
-location: "L29"
+community: "Dev Dependencies & Tooling"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Core_Animation__Motion_Libraries
+  - community/Dev_Dependencies__Tooling
 ---
 
 # @types/three@^0.184.1
 
 ## Connections
 - [[@typesthree]] - `declares` [EXTRACTED]
-- [[dependencies]] - `contains` [EXTRACTED]
+- [[devDependencies]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Core_Animation__Motion_Libraries
+#graphify/code #graphify/EXTRACTED #community/Dev_Dependencies__Tooling

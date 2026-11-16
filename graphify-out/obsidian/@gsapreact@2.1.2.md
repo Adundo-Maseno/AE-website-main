@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Core Animation & Motion Libraries"
-location: "L21"
+community: "Runtime Package Dependencies"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Core_Animation__Motion_Libraries
+  - community/Runtime_Package_Dependencies
 ---
 
 # @gsap/react@^2.1.2
@@ -15,4 +15,4 @@ tags:
 - [[@gsapreact]] - `declares` [EXTRACTED]
 - [[dependencies]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Core_Animation__Motion_Libraries
+#graphify/code #graphify/EXTRACTED #community/Runtime_Package_Dependencies

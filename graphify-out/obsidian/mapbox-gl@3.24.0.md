@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Core Animation & Motion Libraries"
-location: "L39"
+community: "Interactive Impact Map & Services"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Core_Animation__Motion_Libraries
+  - community/Interactive_Impact_Map__Services
 ---
 
 # mapbox-gl@^3.24.0
@@ -15,4 +15,4 @@ tags:
 - [[dependencies]] - `contains` [EXTRACTED]
 - [[mapbox-gl_1]] - `declares` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Core_Animation__Motion_Libraries
+#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services

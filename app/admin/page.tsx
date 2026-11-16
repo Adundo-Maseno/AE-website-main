@@ -10,6 +10,7 @@ import { staticPartners } from '@/lib/services/partners-service'
 import { staticBeliefs } from '@/lib/services/beliefs-service'
 import { staticWhyAgriCards } from '@/lib/services/why-agri-service'
 import { staticExpertisePillars } from '@/lib/services/expertise-service'
+import { staticGalleryItems } from '@/lib/services/gallery-service'
 import SeedButton from '@/components/admin/seed-button'
 import {
   FileText,
@@ -26,6 +27,7 @@ import {
   Plus,
   Globe,
   MapPin,
+  Image as ImageIcon,
 } from 'lucide-react'
 
 export default async function AdminDashboardPage() {
@@ -41,17 +43,18 @@ export default async function AdminDashboardPage() {
   let projectsCount = staticProjects.length
   let insightsCount = 3
   let countriesCount = 12
-  let sectionsCount = 11
+  let sectionsCount = 23
   let partnersCount = staticPartners.length
   let beliefsCount = staticBeliefs.length
   let whyAgriCount = staticWhyAgriCards.length
   let expertiseCount = staticExpertisePillars.length
+  let galleryCount = staticGalleryItems.length
   let recentResources: any[] = []
   let recentTeam: any[] = []
 
   if (dbConnected) {
     try {
-      const [r, t, p, ins, map, sec, part, bel, why, exp, recR, recT] = await Promise.all([
+      const [r, t, p, ins, map, sec, part, bel, why, exp, gal, recR, recT] = await Promise.all([
         prisma.resource.count(),
         prisma.teamMember.count(),
         prisma.project.count(),
@@ -62,6 +65,7 @@ export default async function AdminDashboardPage() {
         prisma.coreBelief.count(),
         prisma.whyAgriCard.count(),
         prisma.expertisePillar.count(),
+        prisma.galleryItem.count(),
         prisma.resource.findMany({ take: 5, orderBy: { createdAt: 'desc' } }),
         prisma.teamMember.findMany({ take: 5, orderBy: { order: 'asc' } }),
       ])
@@ -75,6 +79,7 @@ export default async function AdminDashboardPage() {
       if (bel > 0) beliefsCount = bel
       if (why > 0) whyAgriCount = why
       if (exp > 0) expertiseCount = exp
+      if (gal > 0) galleryCount = gal
       recentResources = recR
       recentTeam = recT
     } catch {
@@ -477,6 +482,30 @@ export default async function AdminDashboardPage() {
               </div>
             </Link>
 
+            {/* Field Gallery */}
+            <Link
+              href="/admin/gallery"
+              className="group flex items-center justify-between p-4 rounded-xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 transition shadow-xs"
+            >
+              <div className="flex items-center gap-3.5">
+                <div className="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] group-hover:bg-[#0F2417] group-hover:text-white transition">
+                  <ImageIcon size={16} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-[#0F2417]">
+                    Field Gallery & Photography
+                  </h3>
+                  <p className="text-xs text-[#0F2417]/60">
+                    Field trials, training workshops, and certification photos
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs text-[#0F2417]/50 font-mono">{galleryCount} photos</span>
+                <ArrowRight size={14} className="text-[#0F2417]/40 group-hover:translate-x-0.5 group-hover:text-[#0F2417] transition" />
+              </div>
+            </Link>
+
             {/* Map Footprint */}
             <Link
               href="/admin/map"
@@ -588,6 +617,11 @@ export default async function AdminDashboardPage() {
                           alt={member.name}
                           fill
                           sizes="36px"
+                          unoptimized={
+                            member.image.toLowerCase().split('?')[0].endsWith('.svg') ||
+                            member.image.startsWith('/uploads/') ||
+                            /^https?:\/\//i.test(member.image)
+                          }
                           className="object-cover"
                         />
                       ) : (

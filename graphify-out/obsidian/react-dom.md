@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Core Animation & Motion Libraries"
-location: "L46"
+community: "Runtime Package Dependencies"
+location: "L44"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Core_Animation__Motion_Libraries
+  - community/Runtime_Package_Dependencies
 ---
 
 # react-dom
@@ -17,4 +17,4 @@ tags:
 - [[package.json]] - `imports` [EXTRACTED]
 - [[react-dom@19.2.8]] - `declares` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Core_Animation__Motion_Libraries
+#graphify/concept #graphify/EXTRACTED #community/Runtime_Package_Dependencies

@@ -1,11 +1,11 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Domain Architecture & System Goals"
+community: "Agri Experience Architecture Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Domain_Architecture__System_Goals
+  - community/Agri_Experience_Architecture_Docs
 ---
 
 # Interactive Mapbox Map
@@ -14,4 +14,4 @@ tags:
 - [[Agri Experience Organization]] - `references` [EXTRACTED]
 - [[Next.js 16 Web Application Stack]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Domain_Architecture__System_Goals
+#graphify/document #graphify/EXTRACTED #community/Agri_Experience_Architecture_Docs

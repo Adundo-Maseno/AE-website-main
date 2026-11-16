@@ -1,6 +1,7 @@
 import { prisma, isDatabaseConnected } from '@/lib/db'
-import { countrySeeds } from '@/components/country-data'
+import { countrySeeds, countrySeedsFr } from '@/components/country-data'
 import { revalidatePath } from 'next/cache'
+import { createSeedGuard, stripManagedFields } from './service-utils'
 
 export interface CountryItem {
   id: string
@@ -50,9 +51,54 @@ export async function getCountries(): Promise<CountryItem[]> {
   }))
 }
 
+const seedGuard = createSeedGuard(async () => {
+  const count = await prisma.mapCountryData.count()
+  if (count === 0) {
+    const frOverviewByCode = new Map(
+      countrySeedsFr.map((c) => [c.code.toUpperCase(), c.overview])
+    )
+    await prisma.mapCountryData.createMany({
+      data: countrySeeds.map((c) => ({
+        countryCode: c.code.toUpperCase().trim(),
+        countryName: c.name.trim(),
+        region: c.region || null,
+        activeProjectsCount: c.projects ?? 0,
+        engagement: c.engagement ?? 0,
+        overviewEn: c.overview || null,
+        overviewFr: frOverviewByCode.get(c.code.toUpperCase()) || null,
+        workDone: JSON.stringify(c.workDone),
+        focus: JSON.stringify(c.focus),
+        impact: JSON.stringify(c.impact),
+        locations: JSON.stringify(c.locations),
+      })),
+      skipDuplicates: true,
+    })
+  }
+})
+
+/**
+ * Hydrates the MapCountryData table from countrySeeds when empty.
+ */
+async function ensureSeeded(): Promise<boolean> {
+  return seedGuard()
+}
+
+async function resolveCountryId(id: string): Promise<string> {
+  if (!id.startsWith('static-')) return id
+  const code = id.replace('static-', '').toUpperCase()
+  const dbRecord = await prisma.mapCountryData.findFirst({
+    where: { countryCode: code },
+  })
+  if (!dbRecord) {
+    throw new Error(`Country "${code}" not found in database`)
+  }
+  return dbRecord.id
+}
+
 export async function updateCountry(
   id: string,
   data: Partial<{
+    countryCode: string
     countryName: string
     region: string
     activeProjectsCount: number
@@ -65,9 +111,18 @@ export async function updateCountry(
     locations: string
   }>
 ): Promise<CountryItem> {
+  const connected = await ensureSeeded()
+  if (!connected) throw new Error('Database is not connected')
+
+  const targetId = await resolveCountryId(id)
+  const cleanData = stripManagedFields(data)
+  if (typeof cleanData.countryCode === 'string') {
+    cleanData.countryCode = cleanData.countryCode.toUpperCase().trim()
+  }
+
   const record = await prisma.mapCountryData.update({
-    where: { id },
-    data,
+    where: { id: targetId },
+    data: cleanData,
   })
 
   revalidatePath('/[locale]/map', 'page')
@@ -89,6 +144,9 @@ export async function createCountry(data: {
   impact?: string
   locations?: string
 }): Promise<CountryItem> {
+  const connected = await ensureSeeded()
+  if (!connected) throw new Error('Database is not connected')
+
   const record = await prisma.mapCountryData.create({
     data: {
       countryCode: data.countryCode.toUpperCase().trim(),
@@ -112,8 +170,12 @@ export async function createCountry(data: {
 }
 
 export async function deleteCountry(id: string): Promise<boolean> {
+  const connected = await ensureSeeded()
+  if (!connected) throw new Error('Database is not connected')
+
+  const targetId = await resolveCountryId(id)
   await prisma.mapCountryData.delete({
-    where: { id },
+    where: { id: targetId },
   })
 
   revalidatePath('/[locale]/map', 'page')

@@ -1,12 +1,12 @@
 ---
 source_file: "lib/public-downloads.ts"
 type: "code"
-community: "Resource Library & PDF Previews"
+community: "Resources Library & Metadata Layouts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resource_Library__PDF_Previews
+  - community/Resources_Library__Metadata_Layouts
 ---
 
 # PublicDownload
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[public-downloads.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resource_Library__PDF_Previews
+#graphify/code #graphify/EXTRACTED #community/Resources_Library__Metadata_Layouts

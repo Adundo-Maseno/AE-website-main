@@ -1,18 +1,20 @@
 ---
-source_file: "app/api/contact/route.ts"
+source_file: "app/api/admin/auth/change-password/route.ts"
 type: "code"
-community: "API Routes & Email Pipeline"
-location: "L6"
+community: "Admin Session & JWT Auth"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Routes__Email_Pipeline
+  - community/Admin_Session__JWT_Auth
 ---
 
 # POST()
 
 ## Connections
-- [[contactroute.ts]] - `contains` [EXTRACTED]
-- [[sendContactEmails()]] - `calls` [EXTRACTED]
+- [[change-passwordroute.ts]] - `contains` [EXTRACTED]
+- [[getSession()]] - `calls` [EXTRACTED]
+- [[isDatabaseConnected()]] - `calls` [EXTRACTED]
+- [[signSessionToken()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Routes__Email_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Admin_Session__JWT_Auth

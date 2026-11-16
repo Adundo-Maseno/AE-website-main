@@ -1924,5 +1924,2279 @@
     "seen": 1794288569.9215376,
     "ast_hash": "97d14b9077499fda2b6f8b490344cfa7",
     "semantic_hash": ""
+  },
+  "D:\\AE-website-main\\.translation-cache.json": {
+    "mtime": 1794806246.6452153,
+    "seen": 1794808219.946076,
+    "ast_hash": "6eca75900e8e2eb51b6070d96bcd1c30",
+    "semantic_hash": "6eca75900e8e2eb51b6070d96bcd1c30"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\about\\layout.tsx": {
+    "mtime": 1794248486.4375935,
+    "seen": 1794808219.9460855,
+    "ast_hash": "70cdeea83fd68389fdc4b8307fc72ec2",
+    "semantic_hash": "70cdeea83fd68389fdc4b8307fc72ec2"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\about\\page.tsx": {
+    "mtime": 1794300771.5627992,
+    "seen": 1794808219.946089,
+    "ast_hash": "4a2ca6b7ec2234bf4da66993d431dd1a",
+    "semantic_hash": "4a2ca6b7ec2234bf4da66993d431dd1a"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\contact\\layout.tsx": {
+    "mtime": 1794241852.285973,
+    "seen": 1794808219.9460907,
+    "ast_hash": "c5b3d6a94b3aae231975eb9659fafb33",
+    "semantic_hash": "c5b3d6a94b3aae231975eb9659fafb33"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\contact\\page.tsx": {
+    "mtime": 1794307661.1754284,
+    "seen": 1794808219.9460926,
+    "ast_hash": "a5e55c9191478a53b0235f297e0e6a3c",
+    "semantic_hash": "a5e55c9191478a53b0235f297e0e6a3c"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\gallery\\page.tsx": {
+    "mtime": 1794807804.1728938,
+    "seen": 1794808219.9460938,
+    "ast_hash": "46e55a72dac641dd0d784aaa29c2b04b",
+    "semantic_hash": "46e55a72dac641dd0d784aaa29c2b04b"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\insights\\layout.tsx": {
+    "mtime": 1794241852.3209214,
+    "seen": 1794808219.9460957,
+    "ast_hash": "2d91fb3804d0f98b59161fca5404fd04",
+    "semantic_hash": "2d91fb3804d0f98b59161fca5404fd04"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\insights\\page.tsx": {
+    "mtime": 1794298255.5089617,
+    "seen": 1794808219.946097,
+    "ast_hash": "b95eaf42a3bd7658df63b4ed6df8eaf7",
+    "semantic_hash": "b95eaf42a3bd7658df63b4ed6df8eaf7"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\layout.tsx": {
+    "mtime": 1794807753.156928,
+    "seen": 1794808219.9460983,
+    "ast_hash": "8174e57e54ce970517dda7427b24b032",
+    "semantic_hash": "8174e57e54ce970517dda7427b24b032"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\map\\page.tsx": {
+    "mtime": 1794807802.1132853,
+    "seen": 1794808219.9461,
+    "ast_hash": "716bc2585e9e8cfab26fa46f284c7d69",
+    "semantic_hash": "716bc2585e9e8cfab26fa46f284c7d69"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\newsletter\\layout.tsx": {
+    "mtime": 1794241852.3512485,
+    "seen": 1794808219.9461014,
+    "ast_hash": "592fe42b224f2d58f59207ac861c426e",
+    "semantic_hash": "592fe42b224f2d58f59207ac861c426e"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\newsletter\\page.tsx": {
+    "mtime": 1794241852.3587763,
+    "seen": 1794808219.9461036,
+    "ast_hash": "8747793f1067f8b4d5723d3e04032748",
+    "semantic_hash": "8747793f1067f8b4d5723d3e04032748"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-impact\\layout.tsx": {
+    "mtime": 1794248486.519549,
+    "seen": 1794808219.9461048,
+    "ast_hash": "537d6fc590ebff993a04a6c7e286480b",
+    "semantic_hash": "537d6fc590ebff993a04a6c7e286480b"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-impact\\page.tsx": {
+    "mtime": 1794807800.5080657,
+    "seen": 1794808219.9461064,
+    "ast_hash": "6e14b875062c9062e843ab2019d220ae",
+    "semantic_hash": "6e14b875062c9062e843ab2019d220ae"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-team\\layout.tsx": {
+    "mtime": 1794241852.4011035,
+    "seen": 1794808219.9461076,
+    "ast_hash": "15697c360e94a9032857fefbf7e8fb4d",
+    "semantic_hash": "15697c360e94a9032857fefbf7e8fb4d"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-team\\page.tsx": {
+    "mtime": 1794288799.0352101,
+    "seen": 1794808219.9461088,
+    "ast_hash": "7b449a57c834ec35a35a10427a9cbcf8",
+    "semantic_hash": "7b449a57c834ec35a35a10427a9cbcf8"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\capacity-building\\capacity-building-client.tsx": {
+    "mtime": 1794313465.7114017,
+    "seen": 1794808219.9461105,
+    "ast_hash": "dc5791b8796983f9208b1f63d689462c",
+    "semantic_hash": "dc5791b8796983f9208b1f63d689462c"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\capacity-building\\layout.tsx": {
+    "mtime": 1794241852.4396858,
+    "seen": 1794808219.9461117,
+    "ast_hash": "bcf7ed115e288de35e5b4d8d0b64a745",
+    "semantic_hash": "bcf7ed115e288de35e5b4d8d0b64a745"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\capacity-building\\page.tsx": {
+    "mtime": 1794312002.933861,
+    "seen": 1794808219.946113,
+    "ast_hash": "63754ccdb7ff80f9232a9b455da9cf1b",
+    "semantic_hash": "63754ccdb7ff80f9232a9b455da9cf1b"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\client-advisory\\client-advisory-client.tsx": {
+    "mtime": 1794313466.6429152,
+    "seen": 1794808219.946114,
+    "ast_hash": "261da7dc422ae1dd24ce4cd9ced25e37",
+    "semantic_hash": "261da7dc422ae1dd24ce4cd9ced25e37"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\client-advisory\\layout.tsx": {
+    "mtime": 1794241852.469038,
+    "seen": 1794808219.9461157,
+    "ast_hash": "ad634702db5cfe3e7028ec18ea0a4989",
+    "semantic_hash": "ad634702db5cfe3e7028ec18ea0a4989"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\client-advisory\\page.tsx": {
+    "mtime": 1794313466.9695866,
+    "seen": 1794808219.9461224,
+    "ast_hash": "7ae140abc4da548f92a97f4164f8ef3f",
+    "semantic_hash": "7ae140abc4da548f92a97f4164f8ef3f"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\digital-platforms\\digital-platforms-client.tsx": {
+    "mtime": 1794806246.6452153,
+    "seen": 1794808219.946124,
+    "ast_hash": "f0c8525434c31611c57c1c8af551c1b5",
+    "semantic_hash": "f0c8525434c31611c57c1c8af551c1b5"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\digital-platforms\\layout.tsx": {
+    "mtime": 1794241852.4922464,
+    "seen": 1794808219.9461253,
+    "ast_hash": "f9f098d9345c2c6ff5baf20ca6334841",
+    "semantic_hash": "f9f098d9345c2c6ff5baf20ca6334841"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\digital-platforms\\page.tsx": {
+    "mtime": 1794312144.676529,
+    "seen": 1794808219.9461267,
+    "ast_hash": "564435ecb9bf0dd6439d88052931924b",
+    "semantic_hash": "564435ecb9bf0dd6439d88052931924b"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\layout.tsx": {
+    "mtime": 1794248486.5684571,
+    "seen": 1794808219.946128,
+    "ast_hash": "6da664c28927e9f2018d0532c540a748",
+    "semantic_hash": "6da664c28927e9f2018d0532c540a748"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\page.tsx": {
+    "mtime": 1794806246.6452153,
+    "seen": 1794808219.9461288,
+    "ast_hash": "c054ad1640b67787d12c49db3f1094e0",
+    "semantic_hash": "c054ad1640b67787d12c49db3f1094e0"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\project-implementation\\layout.tsx": {
+    "mtime": 1794241852.504542,
+    "seen": 1794808219.9461305,
+    "ast_hash": "108f129c66cd944565980b7a19b446f9",
+    "semantic_hash": "108f129c66cd944565980b7a19b446f9"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\project-implementation\\page.tsx": {
+    "mtime": 1794313467.497201,
+    "seen": 1794808219.9461317,
+    "ast_hash": "a85bdeaefefb7410a74f955942944129",
+    "semantic_hash": "a85bdeaefefb7410a74f955942944129"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\project-implementation\\project-implementation-client.tsx": {
+    "mtime": 1794313467.6761422,
+    "seen": 1794808219.946133,
+    "ast_hash": "e99b77b7e3b523da91ed2ace9aeb7758",
+    "semantic_hash": "e99b77b7e3b523da91ed2ace9aeb7758"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\stakeholder-convenings\\layout.tsx": {
+    "mtime": 1794241852.5320423,
+    "seen": 1794808219.9461346,
+    "ast_hash": "2f14a7223db6a67b542f23bec489f2ce",
+    "semantic_hash": "2f14a7223db6a67b542f23bec489f2ce"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\stakeholder-convenings\\page.tsx": {
+    "mtime": 1794311752.0604517,
+    "seen": 1794808219.9461355,
+    "ast_hash": "d6d05517042a2e19c01cdf3488ff9e96",
+    "semantic_hash": "d6d05517042a2e19c01cdf3488ff9e96"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\stakeholder-convenings\\stakeholder-convenings-client.tsx": {
+    "mtime": 1794313468.1089888,
+    "seen": 1794808219.9461365,
+    "ast_hash": "ebca43e8144eb5510d6998fa248cf201",
+    "semantic_hash": "ebca43e8144eb5510d6998fa248cf201"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\technical-studies\\layout.tsx": {
+    "mtime": 1794241852.5628734,
+    "seen": 1794808219.946138,
+    "ast_hash": "cc6d16cde0ee0419de7b1d3542644432",
+    "semantic_hash": "cc6d16cde0ee0419de7b1d3542644432"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\technical-studies\\page.tsx": {
+    "mtime": 1794311893.9378436,
+    "seen": 1794808219.9461389,
+    "ast_hash": "553d1ccee51782b58f3b25b19715f8de",
+    "semantic_hash": "553d1ccee51782b58f3b25b19715f8de"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\our-work\\technical-studies\\technical-studies-client.tsx": {
+    "mtime": 1794313468.3376412,
+    "seen": 1794808219.94614,
+    "ast_hash": "78c0acb1ca0afb186b63a096d9f638d0",
+    "semantic_hash": "78c0acb1ca0afb186b63a096d9f638d0"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\page.tsx": {
+    "mtime": 1794300771.684049,
+    "seen": 1794808219.9461412,
+    "ast_hash": "b29ca80055a7614248c0df4887d7f711",
+    "semantic_hash": "b29ca80055a7614248c0df4887d7f711"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\privacy\\page.tsx": {
+    "mtime": 1794241852.5852456,
+    "seen": 1794808219.9461424,
+    "ast_hash": "a20936f46bc9e10977f4f7d534f633fd",
+    "semantic_hash": "a20936f46bc9e10977f4f7d534f633fd"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\resources\\layout.tsx": {
+    "mtime": 1794288799.5402863,
+    "seen": 1794808219.9461434,
+    "ast_hash": "9bf23b42526c147fd311053bf138e8e9",
+    "semantic_hash": "9bf23b42526c147fd311053bf138e8e9"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\resources\\page.tsx": {
+    "mtime": 1794288799.7354586,
+    "seen": 1794808219.9461448,
+    "ast_hash": "8deec8ab1276e09616e5199c37ef6266",
+    "semantic_hash": "8deec8ab1276e09616e5199c37ef6266"
+  },
+  "D:\\AE-website-main\\app\\[locale]\\terms\\page.tsx": {
+    "mtime": 1794241852.6119342,
+    "seen": 1794808219.9461458,
+    "ast_hash": "fa6edd2fec8d230c545e8004b0cf464f",
+    "semantic_hash": "fa6edd2fec8d230c545e8004b0cf464f"
+  },
+  "D:\\AE-website-main\\app\\admin\\beliefs\\page.tsx": {
+    "mtime": 1794301517.1311321,
+    "seen": 1794808219.9461474,
+    "ast_hash": "1486cdae8975f62a9aa9a337890de3b8",
+    "semantic_hash": "1486cdae8975f62a9aa9a337890de3b8"
+  },
+  "D:\\AE-website-main\\app\\admin\\expertise\\page.tsx": {
+    "mtime": 1794301517.3127744,
+    "seen": 1794808219.9461486,
+    "ast_hash": "88e36b8e8befaedd30c2cd5c60748e45",
+    "semantic_hash": "88e36b8e8befaedd30c2cd5c60748e45"
+  },
+  "D:\\AE-website-main\\app\\admin\\gallery\\page.tsx": {
+    "mtime": 1794807723.3248122,
+    "seen": 1794808219.9461493,
+    "ast_hash": "44d5128e5f8bbbd5d31f388275efef13",
+    "semantic_hash": "44d5128e5f8bbbd5d31f388275efef13"
+  },
+  "D:\\AE-website-main\\app\\admin\\insights\\page.tsx": {
+    "mtime": 1794298255.596847,
+    "seen": 1794808219.9461505,
+    "ast_hash": "718d8b79d6436c28e9b9d8fc681549f8",
+    "semantic_hash": "718d8b79d6436c28e9b9d8fc681549f8"
+  },
+  "D:\\AE-website-main\\app\\admin\\layout.tsx": {
+    "mtime": 1794288799.8884792,
+    "seen": 1794808219.946152,
+    "ast_hash": "5e146fe2b5e14bf3f3d0e20260477fdb",
+    "semantic_hash": "5e146fe2b5e14bf3f3d0e20260477fdb"
+  },
+  "D:\\AE-website-main\\app\\admin\\login\\page.tsx": {
+    "mtime": 1794807558.8818803,
+    "seen": 1794808219.9461532,
+    "ast_hash": "0deae705f04e597461edef33bd79f928",
+    "semantic_hash": "0deae705f04e597461edef33bd79f928"
+  },
+  "D:\\AE-website-main\\app\\admin\\map\\page.tsx": {
+    "mtime": 1794298214.1107018,
+    "seen": 1794808219.9461546,
+    "ast_hash": "1b66c5760261ba1e481169bea7aabc95",
+    "semantic_hash": "1b66c5760261ba1e481169bea7aabc95"
+  },
+  "D:\\AE-website-main\\app\\admin\\page.tsx": {
+    "mtime": 1794807742.374185,
+    "seen": 1794808219.9461555,
+    "ast_hash": "592a1cfad77989498ee96a3d023ac576",
+    "semantic_hash": "592a1cfad77989498ee96a3d023ac576"
+  },
+  "D:\\AE-website-main\\app\\admin\\partners\\page.tsx": {
+    "mtime": 1794807630.2957213,
+    "seen": 1794808219.9461567,
+    "ast_hash": "7bb8d067754fd2b1191f8557d3bb77b5",
+    "semantic_hash": "7bb8d067754fd2b1191f8557d3bb77b5"
+  },
+  "D:\\AE-website-main\\app\\admin\\projects\\page.tsx": {
+    "mtime": 1794313468.7825465,
+    "seen": 1794808219.946158,
+    "ast_hash": "ff1d23479bfe372d47474b5767cd7da2",
+    "semantic_hash": "ff1d23479bfe372d47474b5767cd7da2"
+  },
+  "D:\\AE-website-main\\app\\admin\\resources\\page.tsx": {
+    "mtime": 1794292862.3890824,
+    "seen": 1794808219.9461591,
+    "ast_hash": "64bcfe0415e366d076cecc3e7af01c47",
+    "semantic_hash": "64bcfe0415e366d076cecc3e7af01c47"
+  },
+  "D:\\AE-website-main\\app\\admin\\sections\\page.tsx": {
+    "mtime": 1794807680.6329992,
+    "seen": 1794808219.94616,
+    "ast_hash": "eeef91fb2238600f5ebb46fde3aeb357",
+    "semantic_hash": "eeef91fb2238600f5ebb46fde3aeb357"
+  },
+  "D:\\AE-website-main\\app\\admin\\settings\\page.tsx": {
+    "mtime": 1794313469.005992,
+    "seen": 1794808219.9461615,
+    "ast_hash": "2d79f56dae8d990ed3ebcf899f4cb850",
+    "semantic_hash": "2d79f56dae8d990ed3ebcf899f4cb850"
+  },
+  "D:\\AE-website-main\\app\\admin\\team\\page.tsx": {
+    "mtime": 1794807748.4043274,
+    "seen": 1794808219.9461627,
+    "ast_hash": "7bae2a5a38ac3097f934c34b7ce50f64",
+    "semantic_hash": "7bae2a5a38ac3097f934c34b7ce50f64"
+  },
+  "D:\\AE-website-main\\app\\admin\\why-agri\\page.tsx": {
+    "mtime": 1794301518.3582048,
+    "seen": 1794808219.9461637,
+    "ast_hash": "3837e8439354ab94e5808529c7481012",
+    "semantic_hash": "3837e8439354ab94e5808529c7481012"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\auth\\change-password\\route.ts": {
+    "mtime": 1794313464.5920897,
+    "seen": 1794808219.946165,
+    "ast_hash": "e38b523faf66dcab462ba61b7cf4949b",
+    "semantic_hash": "e38b523faf66dcab462ba61b7cf4949b"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\auth\\login\\route.ts": {
+    "mtime": 1794288797.4819553,
+    "seen": 1794808219.946166,
+    "ast_hash": "5c2ef4c296ece3d62d76e32d79e2a23b",
+    "semantic_hash": "5c2ef4c296ece3d62d76e32d79e2a23b"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\auth\\logout\\route.ts": {
+    "mtime": 1794288797.5465553,
+    "seen": 1794808219.9461672,
+    "ast_hash": "01bea19cb0e4bf5fb54d7d8e8d7f2f15",
+    "semantic_hash": "01bea19cb0e4bf5fb54d7d8e8d7f2f15"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\auth\\session\\route.ts": {
+    "mtime": 1794288797.6132097,
+    "seen": 1794808219.9461687,
+    "ast_hash": "ca58788d3ae915beb67f88bd65e63497",
+    "semantic_hash": "ca58788d3ae915beb67f88bd65e63497"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\beliefs\\[id]\\route.ts": {
+    "mtime": 1794807560.9719784,
+    "seen": 1794808219.9461696,
+    "ast_hash": "802d6699b750c1d5201b10bd78d83ff4",
+    "semantic_hash": "802d6699b750c1d5201b10bd78d83ff4"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\beliefs\\route.ts": {
+    "mtime": 1794807559.5909514,
+    "seen": 1794808219.9461708,
+    "ast_hash": "e4defb06025a822d4ad6dc676ff69ac8",
+    "semantic_hash": "e4defb06025a822d4ad6dc676ff69ac8"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\expertise\\[id]\\route.ts": {
+    "mtime": 1794807566.2985623,
+    "seen": 1794808219.9461722,
+    "ast_hash": "65e2153d3585c7d399197a78d94ec6ec",
+    "semantic_hash": "65e2153d3585c7d399197a78d94ec6ec"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\expertise\\route.ts": {
+    "mtime": 1794807565.08886,
+    "seen": 1794808219.9461732,
+    "ast_hash": "84e868fc7f02e60485f94f9e5154367a",
+    "semantic_hash": "84e868fc7f02e60485f94f9e5154367a"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\gallery-items\\[id]\\route.ts": {
+    "mtime": 1794807596.219498,
+    "seen": 1794808219.9461749,
+    "ast_hash": "99c141ff2665658582b03c74123f21d4",
+    "semantic_hash": "99c141ff2665658582b03c74123f21d4"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\gallery-items\\route.ts": {
+    "mtime": 1794807594.9294026,
+    "seen": 1794808219.946176,
+    "ast_hash": "886b28fc677940d8c557840f0476e44a",
+    "semantic_hash": "886b28fc677940d8c557840f0476e44a"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\gallery\\route.ts": {
+    "mtime": 1794807599.2682714,
+    "seen": 1794808219.946177,
+    "ast_hash": "530d8cdb444455a9a9e1d81b8dd9f5fd",
+    "semantic_hash": "530d8cdb444455a9a9e1d81b8dd9f5fd"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\insights\\[id]\\route.ts": {
+    "mtime": 1794298215.1663485,
+    "seen": 1794808219.9461782,
+    "ast_hash": "4c07cab8e8a0225e3dd40a1af86fbd2c",
+    "semantic_hash": "4c07cab8e8a0225e3dd40a1af86fbd2c"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\insights\\route.ts": {
+    "mtime": 1794807591.9183643,
+    "seen": 1794808219.9461796,
+    "ast_hash": "23816520e4f59d36014dbaca38af6364",
+    "semantic_hash": "23816520e4f59d36014dbaca38af6364"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\map\\[id]\\route.ts": {
+    "mtime": 1794298255.8795438,
+    "seen": 1794808219.9461808,
+    "ast_hash": "a4230e7d38b0aca40c53790bc5ef96d7",
+    "semantic_hash": "a4230e7d38b0aca40c53790bc5ef96d7"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\map\\route.ts": {
+    "mtime": 1794807593.5938008,
+    "seen": 1794808219.9461823,
+    "ast_hash": "2e91a4262f07e1a55304a64e329b5529",
+    "semantic_hash": "2e91a4262f07e1a55304a64e329b5529"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\partners\\[id]\\route.ts": {
+    "mtime": 1794807558.1912487,
+    "seen": 1794808219.9461832,
+    "ast_hash": "4638aa1546c2811862906320b3954ee6",
+    "semantic_hash": "4638aa1546c2811862906320b3954ee6"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\partners\\route.ts": {
+    "mtime": 1794807556.4738564,
+    "seen": 1794808219.9461842,
+    "ast_hash": "7747b335c1a8b18bf473e112719a91ed",
+    "semantic_hash": "7747b335c1a8b18bf473e112719a91ed"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\pdf-gallery\\route.ts": {
+    "mtime": 1794294343.436519,
+    "seen": 1794808219.9461856,
+    "ast_hash": "6dd47a559537b4cac601d13e719d17e5",
+    "semantic_hash": "6dd47a559537b4cac601d13e719d17e5"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\projects\\[id]\\route.ts": {
+    "mtime": 1794288797.6784196,
+    "seen": 1794808219.9461865,
+    "ast_hash": "1d162cd545ee7540e67617085c5c1380",
+    "semantic_hash": "1d162cd545ee7540e67617085c5c1380"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\projects\\route.ts": {
+    "mtime": 1794807587.5233176,
+    "seen": 1794808219.9461875,
+    "ast_hash": "c52332a17af7a38690c3a8568bb133fc",
+    "semantic_hash": "c52332a17af7a38690c3a8568bb133fc"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\resources\\[id]\\route.ts": {
+    "mtime": 1794288797.9874625,
+    "seen": 1794808219.9461887,
+    "ast_hash": "d44db2fb10026325f0ba093ca959bf2b",
+    "semantic_hash": "d44db2fb10026325f0ba093ca959bf2b"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\resources\\route.ts": {
+    "mtime": 1794807590.330977,
+    "seen": 1794808219.9461899,
+    "ast_hash": "398176f08df1ab55ba27e7b5b1d4e42e",
+    "semantic_hash": "398176f08df1ab55ba27e7b5b1d4e42e"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\sections\\route.ts": {
+    "mtime": 1794807553.9805079,
+    "seen": 1794808219.9461915,
+    "ast_hash": "d7fa0073566c8ad4795f43bfd4811d92",
+    "semantic_hash": "d7fa0073566c8ad4795f43bfd4811d92"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\seed\\route.ts": {
+    "mtime": 1794807627.3579946,
+    "seen": 1794808219.946193,
+    "ast_hash": "89d980fcb8b86bb770b2b6d18d547bab",
+    "semantic_hash": "89d980fcb8b86bb770b2b6d18d547bab"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\settings\\route.ts": {
+    "mtime": 1794807555.3181744,
+    "seen": 1794808219.9461942,
+    "ast_hash": "5e67595918ccad68da20af502588d5e9",
+    "semantic_hash": "5e67595918ccad68da20af502588d5e9"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\team\\[id]\\route.ts": {
+    "mtime": 1794288798.3558974,
+    "seen": 1794808219.9461951,
+    "ast_hash": "c2ea28d5eee10f35eef5b0b335689cbe",
+    "semantic_hash": "c2ea28d5eee10f35eef5b0b335689cbe"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\team\\route.ts": {
+    "mtime": 1794807588.7643201,
+    "seen": 1794808219.9461966,
+    "ast_hash": "0075ce1a9b36e35eb939f1d9d37c6bdc",
+    "semantic_hash": "0075ce1a9b36e35eb939f1d9d37c6bdc"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\upload\\route.ts": {
+    "mtime": 1794807597.706153,
+    "seen": 1794808219.9461977,
+    "ast_hash": "87f12129fc90fc17815fc81df8a1870c",
+    "semantic_hash": "87f12129fc90fc17815fc81df8a1870c"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\why-agri\\[id]\\route.ts": {
+    "mtime": 1794807563.5022209,
+    "seen": 1794808219.9461992,
+    "ast_hash": "ce5b5881104f27be6f1bf615ba1bd68d",
+    "semantic_hash": "ce5b5881104f27be6f1bf615ba1bd68d"
+  },
+  "D:\\AE-website-main\\app\\api\\admin\\why-agri\\route.ts": {
+    "mtime": 1794807562.174572,
+    "seen": 1794808219.9462006,
+    "ast_hash": "b8dd2dc3596f7028cc7bcb0b6acbaba2",
+    "semantic_hash": "b8dd2dc3596f7028cc7bcb0b6acbaba2"
+  },
+  "D:\\AE-website-main\\app\\api\\contact\\route.ts": {
+    "mtime": 1794241852.6424215,
+    "seen": 1794808219.9462016,
+    "ast_hash": "055bc0ac4a06d01bfc4e40248f4b6094",
+    "semantic_hash": "055bc0ac4a06d01bfc4e40248f4b6094"
+  },
+  "D:\\AE-website-main\\app\\api\\email-preview\\route.ts": {
+    "mtime": 1794241852.6590648,
+    "seen": 1794808219.946203,
+    "ast_hash": "8dd0bb4713c88bfac2806b8faf4a6da8",
+    "semantic_hash": "8dd0bb4713c88bfac2806b8faf4a6da8"
+  },
+  "D:\\AE-website-main\\app\\robots.ts": {
+    "mtime": 1794241852.2161603,
+    "seen": 1794808219.946204,
+    "ast_hash": "c02a72f63b8e412e40deb6fcb13815dc",
+    "semantic_hash": "c02a72f63b8e412e40deb6fcb13815dc"
+  },
+  "D:\\AE-website-main\\app\\sitemap.ts": {
+    "mtime": 1794252289.09957,
+    "seen": 1794808219.9462051,
+    "ast_hash": "948955f5d5cbc81ba4db09388ca169a7",
+    "semantic_hash": "948955f5d5cbc81ba4db09388ca169a7"
+  },
+  "D:\\AE-website-main\\components.json": {
+    "mtime": 1794241852.0144796,
+    "seen": 1794808219.9462066,
+    "ast_hash": "a1e61f056d2c0c6f1e4ef277a260dee7",
+    "semantic_hash": "a1e61f056d2c0c6f1e4ef277a260dee7"
+  },
+  "D:\\AE-website-main\\components\\about-content.tsx": {
+    "mtime": 1794806246.6560102,
+    "seen": 1794808219.9462075,
+    "ast_hash": "86be0e864616eecd89c715007a4c80f3",
+    "semantic_hash": "86be0e864616eecd89c715007a4c80f3"
+  },
+  "D:\\AE-website-main\\components\\admin\\admin-header.tsx": {
+    "mtime": 1794807556.8597608,
+    "seen": 1794808219.9462087,
+    "ast_hash": "7b073a35098cb6a77a1ee565d5ad68d0",
+    "semantic_hash": "7b073a35098cb6a77a1ee565d5ad68d0"
+  },
+  "D:\\AE-website-main\\components\\admin\\belief-form-modal.tsx": {
+    "mtime": 1794807622.4868908,
+    "seen": 1794808219.9462101,
+    "ast_hash": "c95fb723f83385692a2089b73f3912f5",
+    "semantic_hash": "c95fb723f83385692a2089b73f3912f5"
+  },
+  "D:\\AE-website-main\\components\\admin\\country-form-modal.tsx": {
+    "mtime": 1794807606.3893938,
+    "seen": 1794808219.9462113,
+    "ast_hash": "2ef9b5e0069e329b5a49f216fc936da2",
+    "semantic_hash": "2ef9b5e0069e329b5a49f216fc936da2"
+  },
+  "D:\\AE-website-main\\components\\admin\\expertise-form-modal.tsx": {
+    "mtime": 1794807628.672494,
+    "seen": 1794808219.9462125,
+    "ast_hash": "824d4d8aba2d694c60811e18eb735768",
+    "semantic_hash": "824d4d8aba2d694c60811e18eb735768"
+  },
+  "D:\\AE-website-main\\components\\admin\\gallery-form-modal.tsx": {
+    "mtime": 1794807722.230995,
+    "seen": 1794808219.946214,
+    "ast_hash": "4fb360602f7c9ce7adc3edde8f25f845",
+    "semantic_hash": "4fb360602f7c9ce7adc3edde8f25f845"
+  },
+  "D:\\AE-website-main\\components\\admin\\image-uploader.tsx": {
+    "mtime": 1794807586.6059456,
+    "seen": 1794808219.9462152,
+    "ast_hash": "55b84565f74bcf05ce95879831ab3e7b",
+    "semantic_hash": "55b84565f74bcf05ce95879831ab3e7b"
+  },
+  "D:\\AE-website-main\\components\\admin\\insight-form-modal.tsx": {
+    "mtime": 1794807605.1551735,
+    "seen": 1794808219.946216,
+    "ast_hash": "d6f8ced3add31a926f0a8191ef1cea82",
+    "semantic_hash": "d6f8ced3add31a926f0a8191ef1cea82"
+  },
+  "D:\\AE-website-main\\components\\admin\\partner-form-modal.tsx": {
+    "mtime": 1794807611.2536705,
+    "seen": 1794808219.9462173,
+    "ast_hash": "d96dd9353a6c62c63eb48cf1d65df494",
+    "semantic_hash": "d96dd9353a6c62c63eb48cf1d65df494"
+  },
+  "D:\\AE-website-main\\components\\admin\\pdf-uploader.tsx": {
+    "mtime": 1794294343.7064962,
+    "seen": 1794808219.9462185,
+    "ast_hash": "97fbfd6750de781b7e682168dc29bf19",
+    "semantic_hash": "97fbfd6750de781b7e682168dc29bf19"
+  },
+  "D:\\AE-website-main\\components\\admin\\project-form-modal.tsx": {
+    "mtime": 1794807593.9133518,
+    "seen": 1794808219.9462197,
+    "ast_hash": "2457b427a2e223cc58bf4ab28696750e",
+    "semantic_hash": "2457b427a2e223cc58bf4ab28696750e"
+  },
+  "D:\\AE-website-main\\components\\admin\\resource-form-modal.tsx": {
+    "mtime": 1794807603.425143,
+    "seen": 1794808219.9462209,
+    "ast_hash": "fc0b3d3bfb650109f488008176de60f6",
+    "semantic_hash": "fc0b3d3bfb650109f488008176de60f6"
+  },
+  "D:\\AE-website-main\\components\\admin\\seed-button.tsx": {
+    "mtime": 1794807728.7644258,
+    "seen": 1794808219.946222,
+    "ast_hash": "a32bd7ce2bf97b32d798d9811b7d3124",
+    "semantic_hash": "a32bd7ce2bf97b32d798d9811b7d3124"
+  },
+  "D:\\AE-website-main\\components\\admin\\team-form-modal.tsx": {
+    "mtime": 1794807602.113549,
+    "seen": 1794808219.9462233,
+    "ast_hash": "dd1c40ea7a0cfcd34389ef1f3bcb3526",
+    "semantic_hash": "dd1c40ea7a0cfcd34389ef1f3bcb3526"
+  },
+  "D:\\AE-website-main\\components\\admin\\why-agri-form-modal.tsx": {
+    "mtime": 1794807625.2763495,
+    "seen": 1794808219.9462245,
+    "ast_hash": "90d6eb8c267e41c92f8c5903560a81c8",
+    "semantic_hash": "90d6eb8c267e41c92f8c5903560a81c8"
+  },
+  "D:\\AE-website-main\\components\\client-logos.tsx": {
+    "mtime": 1794300773.3419657,
+    "seen": 1794808219.9462254,
+    "ast_hash": "30878cc15fb90c7abf57f75c0daf1919",
+    "semantic_hash": "30878cc15fb90c7abf57f75c0daf1919"
+  },
+  "D:\\AE-website-main\\components\\contact\\contact-client-content.tsx": {
+    "mtime": 1794306393.0406108,
+    "seen": 1794808219.9462264,
+    "ast_hash": "abe5fd5d9027338e4518ffb16df71d72",
+    "semantic_hash": "abe5fd5d9027338e4518ffb16df71d72"
+  },
+  "D:\\AE-website-main\\components\\cookie-toast.tsx": {
+    "mtime": 1794252289.1657343,
+    "seen": 1794808219.9462278,
+    "ast_hash": "076a09d112d67f34cc2778ab1279ac5f",
+    "semantic_hash": "076a09d112d67f34cc2778ab1279ac5f"
+  },
+  "D:\\AE-website-main\\components\\country-data.ts": {
+    "mtime": 1794246665.244828,
+    "seen": 1794808219.9462287,
+    "ast_hash": "12e499871779e111c17ee7b9ec64d163",
+    "semantic_hash": "12e499871779e111c17ee7b9ec64d163"
+  },
+  "D:\\AE-website-main\\components\\footer.tsx": {
+    "mtime": 1794807763.077775,
+    "seen": 1794808219.94623,
+    "ast_hash": "0d6206f6264d9b8f08f7b343bf3b54b4",
+    "semantic_hash": "0d6206f6264d9b8f08f7b343bf3b54b4"
+  },
+  "D:\\AE-website-main\\components\\google-analytics.tsx": {
+    "mtime": 1794254925.5377183,
+    "seen": 1794808219.9462311,
+    "ast_hash": "1807a499c842d7cdfbdd325ad2d0398e",
+    "semantic_hash": "1807a499c842d7cdfbdd325ad2d0398e"
+  },
+  "D:\\AE-website-main\\components\\header.tsx": {
+    "mtime": 1794251913.7899942,
+    "seen": 1794808219.9462323,
+    "ast_hash": "62f182a85e5cc38bfd75c5ad2be50b81",
+    "semantic_hash": "62f182a85e5cc38bfd75c5ad2be50b81"
+  },
+  "D:\\AE-website-main\\components\\home-content.tsx": {
+    "mtime": 1794806246.6560102,
+    "seen": 1794808219.9462333,
+    "ast_hash": "8249e4b0bfe5ec358e1c3a8486dfe58d",
+    "semantic_hash": "8249e4b0bfe5ec358e1c3a8486dfe58d"
+  },
+  "D:\\AE-website-main\\components\\impact\\impact-page-content.tsx": {
+    "mtime": 1794807806.2066085,
+    "seen": 1794808219.9462347,
+    "ast_hash": "b69b6431cdd0b348f0293f9825394c99",
+    "semantic_hash": "b69b6431cdd0b348f0293f9825394c99"
+  },
+  "D:\\AE-website-main\\components\\insights-content.tsx": {
+    "mtime": 1794806246.6560102,
+    "seen": 1794808219.9462357,
+    "ast_hash": "1b78fac94885d5519c7a5e3a9f16a792",
+    "semantic_hash": "1b78fac94885d5519c7a5e3a9f16a792"
+  },
+  "D:\\AE-website-main\\components\\interactive-map.tsx": {
+    "mtime": 1794807814.2646778,
+    "seen": 1794808219.9462368,
+    "ast_hash": "7fce6bb1c56a292b993f0776fcd9b400",
+    "semantic_hash": "7fce6bb1c56a292b993f0776fcd9b400"
+  },
+  "D:\\AE-website-main\\components\\json-ld.tsx": {
+    "mtime": 1794255519.4000642,
+    "seen": 1794808219.946238,
+    "ast_hash": "5261160d631cf7158329ce5e5ff02f64",
+    "semantic_hash": "5261160d631cf7158329ce5e5ff02f64"
+  },
+  "D:\\AE-website-main\\components\\language-switch-provider.tsx": {
+    "mtime": 1794241852.7355502,
+    "seen": 1794808219.946239,
+    "ast_hash": "589fd22637b9e5188845f5e21a5df6da",
+    "semantic_hash": "589fd22637b9e5188845f5e21a5df6da"
+  },
+  "D:\\AE-website-main\\components\\liquid-glass\\index.tsx": {
+    "mtime": 1794252289.4008574,
+    "seen": 1794808219.9462402,
+    "ast_hash": "d8c017496f435e3d1fc5655eef9fa2fa",
+    "semantic_hash": "d8c017496f435e3d1fc5655eef9fa2fa"
+  },
+  "D:\\AE-website-main\\components\\liquid-glass\\shader-utils.ts": {
+    "mtime": 1794241852.7717514,
+    "seen": 1794808219.9462414,
+    "ast_hash": "41a55dc88730754a82c3a0ae4ca312d7",
+    "semantic_hash": "41a55dc88730754a82c3a0ae4ca312d7"
+  },
+  "D:\\AE-website-main\\components\\liquid-glass\\utils.ts": {
+    "mtime": 1794241852.7857547,
+    "seen": 1794808219.9462423,
+    "ast_hash": "c57b3adf1e1b7529f4e6481e7d20dc0b",
+    "semantic_hash": "c57b3adf1e1b7529f4e6481e7d20dc0b"
+  },
+  "D:\\AE-website-main\\components\\map\\interactive-mapbox.tsx": {
+    "mtime": 1794246665.75012,
+    "seen": 1794808219.9462435,
+    "ast_hash": "04575e8d171f344e7fc4b50335dc5760",
+    "semantic_hash": "04575e8d171f344e7fc4b50335dc5760"
+  },
+  "D:\\AE-website-main\\components\\map\\map-active-project-fly-to.tsx": {
+    "mtime": 1794246665.850807,
+    "seen": 1794808219.9462447,
+    "ast_hash": "e5a996cfa43d23e59201d71bfef91043",
+    "semantic_hash": "e5a996cfa43d23e59201d71bfef91043"
+  },
+  "D:\\AE-website-main\\components\\map\\map-auto-center.tsx": {
+    "mtime": 1794241852.8174794,
+    "seen": 1794808219.946246,
+    "ast_hash": "be24e2afdcec87f1bc792106d5473f95",
+    "semantic_hash": "be24e2afdcec87f1bc792106d5473f95"
+  },
+  "D:\\AE-website-main\\components\\map\\map-context.tsx": {
+    "mtime": 1794246666.098814,
+    "seen": 1794808219.9462469,
+    "ast_hash": "20b1ee40cbaaf7420926a17baa54a446",
+    "semantic_hash": "20b1ee40cbaaf7420926a17baa54a446"
+  },
+  "D:\\AE-website-main\\components\\map\\map-controls.tsx": {
+    "mtime": 1794241852.8335629,
+    "seen": 1794808219.9462483,
+    "ast_hash": "888f271b738b2f0d73146d5ef6765096",
+    "semantic_hash": "888f271b738b2f0d73146d5ef6765096"
+  },
+  "D:\\AE-website-main\\components\\map\\map-highlighted-countries.tsx": {
+    "mtime": 1794247508.5988495,
+    "seen": 1794808219.9462495,
+    "ast_hash": "5a45959d16b742b464e09b0eff06f662",
+    "semantic_hash": "5a45959d16b742b464e09b0eff06f662"
+  },
+  "D:\\AE-website-main\\components\\map\\map-marker.tsx": {
+    "mtime": 1794241852.8492856,
+    "seen": 1794808219.9462504,
+    "ast_hash": "baf1854d7768551838110df12e5f3d8c",
+    "semantic_hash": "baf1854d7768551838110df12e5f3d8c"
+  },
+  "D:\\AE-website-main\\components\\map\\map-popup.tsx": {
+    "mtime": 1794241852.8492856,
+    "seen": 1794808219.9462519,
+    "ast_hash": "5c30c99dee54c08485ba5e9d5931262d",
+    "semantic_hash": "5c30c99dee54c08485ba5e9d5931262d"
+  },
+  "D:\\AE-website-main\\components\\map\\map-search.tsx": {
+    "mtime": 1794241852.864983,
+    "seen": 1794808219.9462528,
+    "ast_hash": "e36709f17f90fb6bc60006e10a937d0e",
+    "semantic_hash": "e36709f17f90fb6bc60006e10a937d0e"
+  },
+  "D:\\AE-website-main\\components\\map\\map-types.ts": {
+    "mtime": 1794246666.2798457,
+    "seen": 1794808219.946254,
+    "ast_hash": "c1db9fdb771a8889675c7fafae771990",
+    "semantic_hash": "c1db9fdb771a8889675c7fafae771990"
+  },
+  "D:\\AE-website-main\\components\\map\\map-utils.ts": {
+    "mtime": 1794241852.864983,
+    "seen": 1794808219.9462552,
+    "ast_hash": "baf9993541e8b630ca17d49a0887a506",
+    "semantic_hash": "baf9993541e8b630ca17d49a0887a506"
+  },
+  "D:\\AE-website-main\\components\\motion\\impact-alignment.tsx": {
+    "mtime": 1794313477.0803885,
+    "seen": 1794808219.9462562,
+    "ast_hash": "75eb24526d37235ac2122b458300071a",
+    "semantic_hash": "75eb24526d37235ac2122b458300071a"
+  },
+  "D:\\AE-website-main\\components\\motion\\office-plants-gallery.tsx": {
+    "mtime": 1794241852.897738,
+    "seen": 1794808219.9462574,
+    "ast_hash": "0b9c30cef544598088c71334e0a81b99",
+    "semantic_hash": "0b9c30cef544598088c71334e0a81b99"
+  },
+  "D:\\AE-website-main\\components\\motion\\scroll-accordion.tsx": {
+    "mtime": 1794241852.897738,
+    "seen": 1794808219.9462588,
+    "ast_hash": "f4a90d9b4e7b3a855d3e509c0f7e4d23",
+    "semantic_hash": "f4a90d9b4e7b3a855d3e509c0f7e4d23"
+  },
+  "D:\\AE-website-main\\components\\motion\\services-bento-grid.tsx": {
+    "mtime": 1794806246.6560102,
+    "seen": 1794808219.9462597,
+    "ast_hash": "8c6d352832b5b0fc9f2c0b3f7093ccf2",
+    "semantic_hash": "8c6d352832b5b0fc9f2c0b3f7093ccf2"
+  },
+  "D:\\AE-website-main\\components\\motion\\why-agri-experience.tsx": {
+    "mtime": 1794300773.5728588,
+    "seen": 1794808219.9462607,
+    "ast_hash": "4fcc966ea60c6e1e614ce32ed4865e5c",
+    "semantic_hash": "4fcc966ea60c6e1e614ce32ed4865e5c"
+  },
+  "D:\\AE-website-main\\components\\our-team-content.tsx": {
+    "mtime": 1794296218.2005134,
+    "seen": 1794808219.9462621,
+    "ast_hash": "b93ebf73f2c7bebae29c4a9d519a56cd",
+    "semantic_hash": "b93ebf73f2c7bebae29c4a9d519a56cd"
+  },
+  "D:\\AE-website-main\\components\\pdf-preview.tsx": {
+    "mtime": 1794241852.737952,
+    "seen": 1794808219.946263,
+    "ast_hash": "42eacd599f886baf4dcc92d96245a60b",
+    "semantic_hash": "42eacd599f886baf4dcc92d96245a60b"
+  },
+  "D:\\AE-website-main\\components\\resources-content.tsx": {
+    "mtime": 1794288805.9042122,
+    "seen": 1794808219.9462643,
+    "ast_hash": "02a74e41d6db1b463ae0f1d4458e6f91",
+    "semantic_hash": "02a74e41d6db1b463ae0f1d4458e6f91"
+  },
+  "D:\\AE-website-main\\components\\scroll-to-top.tsx": {
+    "mtime": 1794241852.737952,
+    "seen": 1794808219.9462655,
+    "ast_hash": "3bf1599d3b99244bc36fbd02c49b2d5d",
+    "semantic_hash": "3bf1599d3b99244bc36fbd02c49b2d5d"
+  },
+  "D:\\AE-website-main\\components\\service-worker-cleanup.tsx": {
+    "mtime": 1794247420.5272028,
+    "seen": 1794808219.9462664,
+    "ast_hash": "98671fada3a8e8ed73b5b6c770bcc5a2",
+    "semantic_hash": "98671fada3a8e8ed73b5b6c770bcc5a2"
+  },
+  "D:\\AE-website-main\\components\\ui\\badge.tsx": {
+    "mtime": 1794241852.943483,
+    "seen": 1794808219.9462676,
+    "ast_hash": "c668163ef77ed404525a44bdad8d4149",
+    "semantic_hash": "c668163ef77ed404525a44bdad8d4149"
+  },
+  "D:\\AE-website-main\\components\\ui\\button.tsx": {
+    "mtime": 1794241852.9541562,
+    "seen": 1794808219.9462686,
+    "ast_hash": "601be4c42eeac3d93e0624fd9a795c15",
+    "semantic_hash": "601be4c42eeac3d93e0624fd9a795c15"
+  },
+  "D:\\AE-website-main\\components\\ui\\command.tsx": {
+    "mtime": 1794241852.9790006,
+    "seen": 1794808219.9462698,
+    "ast_hash": "05f2f28c4223b32d8496c7f12af5df1d",
+    "semantic_hash": "05f2f28c4223b32d8496c7f12af5df1d"
+  },
+  "D:\\AE-website-main\\components\\ui\\dialog.tsx": {
+    "mtime": 1794241852.9979832,
+    "seen": 1794808219.946271,
+    "ast_hash": "e161176c9b51776a8aa5637a635288d3",
+    "semantic_hash": "e161176c9b51776a8aa5637a635288d3"
+  },
+  "D:\\AE-website-main\\components\\ui\\popover.tsx": {
+    "mtime": 1794241853.0150197,
+    "seen": 1794808219.9462724,
+    "ast_hash": "2cc3a66dc8b534b07b67166d450bf277",
+    "semantic_hash": "2cc3a66dc8b534b07b67166d450bf277"
+  },
+  "D:\\AE-website-main\\components\\ui\\rolling-text.tsx": {
+    "mtime": 1794806246.659767,
+    "seen": 1794808219.9462733,
+    "ast_hash": "a63104ad3519057fdc3a1952290f5f1e",
+    "semantic_hash": "a63104ad3519057fdc3a1952290f5f1e"
+  },
+  "D:\\AE-website-main\\eslint.config.mjs": {
+    "mtime": 1794241852.0258665,
+    "seen": 1794808219.9462745,
+    "ast_hash": "14e9a6917bc58d1930098368d3f46d59",
+    "semantic_hash": "14e9a6917bc58d1930098368d3f46d59"
+  },
+  "D:\\AE-website-main\\i18n\\request.ts": {
+    "mtime": 1794241853.0228527,
+    "seen": 1794808219.9462755,
+    "ast_hash": "e341bae30f15183a6950bbe5f23ffeab",
+    "semantic_hash": "e341bae30f15183a6950bbe5f23ffeab"
+  },
+  "D:\\AE-website-main\\i18n\\routing.ts": {
+    "mtime": 1794241853.0440485,
+    "seen": 1794808219.946277,
+    "ast_hash": "08ad1a7ea29c650f54018049fe223335",
+    "semantic_hash": "08ad1a7ea29c650f54018049fe223335"
+  },
+  "D:\\AE-website-main\\lib\\auth.ts": {
+    "mtime": 1794288800.6112027,
+    "seen": 1794808219.946278,
+    "ast_hash": "f751b8b1dcc374651a217a2fba59ae23",
+    "semantic_hash": "f751b8b1dcc374651a217a2fba59ae23"
+  },
+  "D:\\AE-website-main\\lib\\db.ts": {
+    "mtime": 1794288800.8164587,
+    "seen": 1794808219.9462795,
+    "ast_hash": "5998ebc2d8ad5fbd6b353aaa11689cfa",
+    "semantic_hash": "5998ebc2d8ad5fbd6b353aaa11689cfa"
+  },
+  "D:\\AE-website-main\\lib\\email.ts": {
+    "mtime": 1794241853.0559244,
+    "seen": 1794808219.9462805,
+    "ast_hash": "d594c822da231fedbbecfdfa9f763fc4",
+    "semantic_hash": "d594c822da231fedbbecfdfa9f763fc4"
+  },
+  "D:\\AE-website-main\\lib\\public-downloads.ts": {
+    "mtime": 1794241853.062875,
+    "seen": 1794808219.9462817,
+    "ast_hash": "d8cf58baa27a47195d14637779e5c402",
+    "semantic_hash": "d8cf58baa27a47195d14637779e5c402"
+  },
+  "D:\\AE-website-main\\lib\\services\\beliefs-service.ts": {
+    "mtime": 1794807708.4035437,
+    "seen": 1794808219.946283,
+    "ast_hash": "18cd1ca4efa7ad3d386d127f2d55fdd7",
+    "semantic_hash": "18cd1ca4efa7ad3d386d127f2d55fdd7"
+  },
+  "D:\\AE-website-main\\lib\\services\\expertise-service.ts": {
+    "mtime": 1794807716.4407465,
+    "seen": 1794808219.946284,
+    "ast_hash": "a1f8c801d8100e1197f03b2662c2a7bf",
+    "semantic_hash": "a1f8c801d8100e1197f03b2662c2a7bf"
+  },
+  "D:\\AE-website-main\\lib\\services\\gallery-service.ts": {
+    "mtime": 1794807795.467869,
+    "seen": 1794808219.946285,
+    "ast_hash": "1fb6657ca7226dfe2f5764fb9fc81693",
+    "semantic_hash": "1fb6657ca7226dfe2f5764fb9fc81693"
+  },
+  "D:\\AE-website-main\\lib\\services\\insights-service.ts": {
+    "mtime": 1794807789.5993302,
+    "seen": 1794808219.946286,
+    "ast_hash": "24db2bd7000c54197c1d757f33049cb4",
+    "semantic_hash": "24db2bd7000c54197c1d757f33049cb4"
+  },
+  "D:\\AE-website-main\\lib\\services\\map-service.ts": {
+    "mtime": 1794807792.3495426,
+    "seen": 1794808219.9462874,
+    "ast_hash": "ceef8e947b2a7232835ae2d488d396f3",
+    "semantic_hash": "ceef8e947b2a7232835ae2d488d396f3"
+  },
+  "D:\\AE-website-main\\lib\\services\\page-sections-service.ts": {
+    "mtime": 1794807701.73642,
+    "seen": 1794808219.9462883,
+    "ast_hash": "ad7cfec466919e6f4980855f1f5caaf5",
+    "semantic_hash": "ad7cfec466919e6f4980855f1f5caaf5"
+  },
+  "D:\\AE-website-main\\lib\\services\\partners-service.ts": {
+    "mtime": 1794807705.2148502,
+    "seen": 1794808219.9462898,
+    "ast_hash": "17bfcbb3038611b89b89217c16690cbf",
+    "semantic_hash": "17bfcbb3038611b89b89217c16690cbf"
+  },
+  "D:\\AE-website-main\\lib\\services\\projects-service.ts": {
+    "mtime": 1794807780.2608144,
+    "seen": 1794808219.9462912,
+    "ast_hash": "82d4831582c2822d772d6dd67e569e0e",
+    "semantic_hash": "82d4831582c2822d772d6dd67e569e0e"
+  },
+  "D:\\AE-website-main\\lib\\services\\resources-service.ts": {
+    "mtime": 1794807786.5942657,
+    "seen": 1794808219.9462924,
+    "ast_hash": "7450e1f28c97906eb363d30ab97c276f",
+    "semantic_hash": "7450e1f28c97906eb363d30ab97c276f"
+  },
+  "D:\\AE-website-main\\lib\\services\\service-utils.ts": {
+    "mtime": 1794807680.2818933,
+    "seen": 1794808219.9462938,
+    "ast_hash": "84f0c23680b4e331f681efc447776b1c",
+    "semantic_hash": "84f0c23680b4e331f681efc447776b1c"
+  },
+  "D:\\AE-website-main\\lib\\services\\settings-service.ts": {
+    "mtime": 1794298219.4801304,
+    "seen": 1794808219.9462953,
+    "ast_hash": "18aed85c7f3bec3ee24e9089e436b787",
+    "semantic_hash": "18aed85c7f3bec3ee24e9089e436b787"
+  },
+  "D:\\AE-website-main\\lib\\services\\team-service.ts": {
+    "mtime": 1794807783.290323,
+    "seen": 1794808219.946297,
+    "ast_hash": "7d6fb170455facb2e14864a824074cc1",
+    "semantic_hash": "7d6fb170455facb2e14864a824074cc1"
+  },
+  "D:\\AE-website-main\\lib\\services\\why-agri-service.ts": {
+    "mtime": 1794807711.6800797,
+    "seen": 1794808219.9462981,
+    "ast_hash": "755306423433fecf5c5132db9787b1e7",
+    "semantic_hash": "755306423433fecf5c5132db9787b1e7"
+  },
+  "D:\\AE-website-main\\lib\\utils.ts": {
+    "mtime": 1794241853.0709908,
+    "seen": 1794808219.946299,
+    "ast_hash": "9a4cc6f9f3155ffdc1fa7c2c097f6429",
+    "semantic_hash": "9a4cc6f9f3155ffdc1fa7c2c097f6429"
+  },
+  "D:\\AE-website-main\\messages\\en.json": {
+    "mtime": 1794806246.659767,
+    "seen": 1794808219.9463005,
+    "ast_hash": "39d7c07e149ff035217a0918095831b5",
+    "semantic_hash": "39d7c07e149ff035217a0918095831b5"
+  },
+  "D:\\AE-website-main\\messages\\fr.json": {
+    "mtime": 1794806246.659767,
+    "seen": 1794808219.9463017,
+    "ast_hash": "68df3473cffe531979e8e1198d54b6aa",
+    "semantic_hash": "68df3473cffe531979e8e1198d54b6aa"
+  },
+  "D:\\AE-website-main\\next-env.d.ts": {
+    "mtime": 1794804903.5354464,
+    "seen": 1794808219.946303,
+    "ast_hash": "0e4a65e8b2b9aa3ed0f8957b9406bd41",
+    "semantic_hash": "0e4a65e8b2b9aa3ed0f8957b9406bd41"
+  },
+  "D:\\AE-website-main\\next.config.mjs": {
+    "mtime": 1794288806.15968,
+    "seen": 1794808219.946304,
+    "ast_hash": "d6b3bfbccb4e1a4af31afaf274f94e70",
+    "semantic_hash": "d6b3bfbccb4e1a4af31afaf274f94e70"
+  },
+  "D:\\AE-website-main\\optimize_images.sh": {
+    "mtime": 1794241852.0735886,
+    "seen": 1794808219.9463053,
+    "ast_hash": "4c03eadd234f84f2d8a1fe8b96532db7",
+    "semantic_hash": "4c03eadd234f84f2d8a1fe8b96532db7"
+  },
+  "D:\\AE-website-main\\package.json": {
+    "mtime": 1794288806.2405787,
+    "seen": 1794808219.9463065,
+    "ast_hash": "6cd2a83a11ea593a5d44711218814150",
+    "semantic_hash": "6cd2a83a11ea593a5d44711218814150"
+  },
+  "D:\\AE-website-main\\pnpm-workspace.yaml": {
+    "mtime": 1794287267.6015568,
+    "seen": 1794808219.9463077,
+    "ast_hash": "cefc7b31362139940ce623175f1984e0",
+    "semantic_hash": "cefc7b31362139940ce623175f1984e0"
+  },
+  "D:\\AE-website-main\\postcss.config.mjs": {
+    "mtime": 1794241852.153317,
+    "seen": 1794808219.9463089,
+    "ast_hash": "f82d40129ab70e95110c0470895b366c",
+    "semantic_hash": "f82d40129ab70e95110c0470895b366c"
+  },
+  "D:\\AE-website-main\\proxy.ts": {
+    "mtime": 1794241852.1690028,
+    "seen": 1794808219.9463098,
+    "ast_hash": "2d668c2d308763f6aa82ec5bcd8a6ab5",
+    "semantic_hash": "2d668c2d308763f6aa82ec5bcd8a6ab5"
+  },
+  "D:\\AE-website-main\\public\\data\\africa.json": {
+    "mtime": 1794241852.0144796,
+    "seen": 1794808219.9463112,
+    "ast_hash": "527befe069216422846851d6af605fa0",
+    "semantic_hash": "527befe069216422846851d6af605fa0"
+  },
+  "D:\\AE-website-main\\public\\sw.js": {
+    "mtime": 1794247420.636225,
+    "seen": 1794808219.9463122,
+    "ast_hash": "1156c365f14d2167fd839543556235dc",
+    "semantic_hash": "1156c365f14d2167fd839543556235dc"
+  },
+  "D:\\AE-website-main\\scripts\\auto-translate.js": {
+    "mtime": 1794241855.540823,
+    "seen": 1794808219.9463131,
+    "ast_hash": "7addbd12bdda01254d27af7fbf46f97a",
+    "semantic_hash": "7addbd12bdda01254d27af7fbf46f97a"
+  },
+  "D:\\AE-website-main\\scripts\\preview-emails.js": {
+    "mtime": 1794241855.540823,
+    "seen": 1794808219.9463146,
+    "ast_hash": "d0631d629d624fbc2e9f8ce88392ae78",
+    "semantic_hash": "d0631d629d624fbc2e9f8ce88392ae78"
+  },
+  "D:\\AE-website-main\\tsconfig.json": {
+    "mtime": 1794241852.1690028,
+    "seen": 1794808219.9463158,
+    "ast_hash": "e968fc646a89bf556893764f5bc2dc70",
+    "semantic_hash": "e968fc646a89bf556893764f5bc2dc70"
+  },
+  "D:\\AE-website-main\\AGENTS.md": {
+    "mtime": 1794241851.9623272,
+    "seen": 1794808219.9463167,
+    "ast_hash": "01e8142356e15c3404e0d84c48187cd0",
+    "semantic_hash": "01e8142356e15c3404e0d84c48187cd0"
+  },
+  "D:\\AE-website-main\\README.md": {
+    "mtime": 1794241851.9843235,
+    "seen": 1794808219.9463181,
+    "ast_hash": "3897edc29dc81e41cd8f311360674071",
+    "semantic_hash": "3897edc29dc81e41cd8f311360674071"
+  },
+  "D:\\AE-website-main\\public\\llms.txt": {
+    "mtime": 1794241853.3528044,
+    "seen": 1794808219.946319,
+    "ast_hash": "c5f7dcc9c2db6d63cefa3cfb36f58362",
+    "semantic_hash": "c5f7dcc9c2db6d63cefa3cfb36f58362"
+  },
+  "D:\\AE-website-main\\public\\resources\\Agro-Dealer-Mapping-in-Twelve-Counties-in-Kenya.pdf": {
+    "mtime": 1794241854.7422216,
+    "seen": 1794808219.9463203,
+    "ast_hash": "325db54a388ec9f201826fb35239a224",
+    "semantic_hash": "325db54a388ec9f201826fb35239a224"
+  },
+  "D:\\AE-website-main\\public\\resources\\Agrodealer-Baseline-Study.pdf": {
+    "mtime": 1794241854.792285,
+    "seen": 1794808219.9463215,
+    "ast_hash": "9a471e1b4257e45638db1f09638f8ccd",
+    "semantic_hash": "9a471e1b4257e45638db1f09638f8ccd"
+  },
+  "D:\\AE-website-main\\public\\resources\\Assessment-to-Support-the-Promotion-of-Regional-Seed-Trade-in-East-Africa.pdf": {
+    "mtime": 1794241854.810217,
+    "seen": 1794808219.9463227,
+    "ast_hash": "be5ccbe0e02c7e2f48ef1629f69b03ae",
+    "semantic_hash": "be5ccbe0e02c7e2f48ef1629f69b03ae"
+  },
+  "D:\\AE-website-main\\public\\resources\\Case-Study-County-Agrodealer-Association-Strengthening-in-Kenya.pdf": {
+    "mtime": 1794241854.8615446,
+    "seen": 1794808219.9463246,
+    "ast_hash": "c0d2ccd1019567ce80c0597f40f2fb07",
+    "semantic_hash": "c0d2ccd1019567ce80c0597f40f2fb07"
+  },
+  "D:\\AE-website-main\\public\\resources\\Case-Study-MbeguChoice-Seed-Variety-IT-Platform.pdf": {
+    "mtime": 1794241854.8931434,
+    "seen": 1794808219.9463255,
+    "ast_hash": "8566178aada4c400d6359a3ea75a9524",
+    "semantic_hash": "8566178aada4c400d6359a3ea75a9524"
+  },
+  "D:\\AE-website-main\\public\\resources\\Case-Study-Revising-Kenyas-Seed-Regulations.pdf": {
+    "mtime": 1794241854.9089217,
+    "seen": 1794808219.9463265,
+    "ast_hash": "b471447edfdaa4e477d92e2dc58d4e06",
+    "semantic_hash": "b471447edfdaa4e477d92e2dc58d4e06"
+  },
+  "D:\\AE-website-main\\public\\resources\\Case-Study-Revising-Kenya\u2019s-Seed-Regulations.pdf": {
+    "mtime": 1794241854.9089217,
+    "seen": 1794808219.9463305,
+    "ast_hash": "b471447edfdaa4e477d92e2dc58d4e06",
+    "semantic_hash": "b471447edfdaa4e477d92e2dc58d4e06"
+  },
+  "D:\\AE-website-main\\public\\resources\\Case-Study-Scratch-Off-Labels-for-Certified-Seed-in-Kenya.pdf": {
+    "mtime": 1794241854.9526212,
+    "seen": 1794808219.9463947,
+    "ast_hash": "69c28e35212a6cd14e735bdba6e1f1c3",
+    "semantic_hash": "69c28e35212a6cd14e735bdba6e1f1c3"
+  },
+  "D:\\AE-website-main\\public\\resources\\Case-Study-Strengthening-a-Seed-Trade-Association-in-Kenya.pdf": {
+    "mtime": 1794241854.9687464,
+    "seen": 1794808219.946399,
+    "ast_hash": "e7811e5f30fec83f91bb70a068e97d16",
+    "semantic_hash": "e7811e5f30fec83f91bb70a068e97d16"
+  },
+  "D:\\AE-website-main\\public\\resources\\Case-Study-The-African-Seed-Access-Index-TASAI-Pilot.pdf": {
+    "mtime": 1794241854.984569,
+    "seen": 1794808219.9464016,
+    "ast_hash": "e2b9e01afba91d593ad89f8bb73816e1",
+    "semantic_hash": "e2b9e01afba91d593ad89f8bb73816e1"
+  },
+  "D:\\AE-website-main\\public\\resources\\Crop-Seed-Company-Proposition-for-Improving-Current-Seed-Regulation-in-Kenya.pdf": {
+    "mtime": 1794241854.984569,
+    "seen": 1794808219.946404,
+    "ast_hash": "c57c333a9480a22ca0e62e800dfe27a0",
+    "semantic_hash": "c57c333a9480a22ca0e62e800dfe27a0"
+  },
+  "D:\\AE-website-main\\public\\resources\\Empowering-Kenyan-Farmers-to-Report-Low-Quality-or-Fake-Seed-to-the-Regulator.pdf": {
+    "mtime": 1794241854.984569,
+    "seen": 1794808219.9464061,
+    "ast_hash": "918e40c713f54545c107018c3dc9cb41",
+    "semantic_hash": "918e40c713f54545c107018c3dc9cb41"
+  },
+  "D:\\AE-website-main\\public\\resources\\Empowering-Tanzanias-Farmers-to-Report-Low-Quality-or-Fake-Seed-to-the-Regulator.pdf": {
+    "mtime": 1794241855.0077958,
+    "seen": 1794808219.9464078,
+    "ast_hash": "11ff7a76515ab7aee450ed730184967d",
+    "semantic_hash": "11ff7a76515ab7aee450ed730184967d"
+  },
+  "D:\\AE-website-main\\public\\resources\\Food-Security-Crop-Seed-in-Kenya-Part-1-Challenging-Trends-We-Cannot-Afford-to-Ignore.pdf": {
+    "mtime": 1794241855.0343874,
+    "seen": 1794808219.94641,
+    "ast_hash": "2897a3afdee02155652008523eb159c4",
+    "semantic_hash": "2897a3afdee02155652008523eb159c4"
+  },
+  "D:\\AE-website-main\\public\\resources\\Food-Security-Crop-Seed-in-Kenya-Part-2-Big-Payoffs-We-Cannot-Afford-to-Ignore.pdf": {
+    "mtime": 1794241855.0483217,
+    "seen": 1794808219.9464114,
+    "ast_hash": "c14bed3e668967dea9b2b64a4722e76c",
+    "semantic_hash": "c14bed3e668967dea9b2b64a4722e76c"
+  },
+  "D:\\AE-website-main\\public\\resources\\Kenya-Seed-Industry-Study.pdf": {
+    "mtime": 1794241855.073894,
+    "seen": 1794808219.9464133,
+    "ast_hash": "3942a8dbfedb55b4d1830fa1c404c204",
+    "semantic_hash": "3942a8dbfedb55b4d1830fa1c404c204"
+  },
+  "D:\\AE-website-main\\public\\resources\\La-boite-a-outils-des-entreprises-semencieres-Africaines.pdf": {
+    "mtime": 1794241855.1120293,
+    "seen": 1794808219.9464147,
+    "ast_hash": "c3c78a4c0706c93f89a13365e4923653",
+    "semantic_hash": "c3c78a4c0706c93f89a13365e4923653"
+  },
+  "D:\\AE-website-main\\public\\resources\\Reaching-More-Farmers-with-High-Quality-Seed-for-Drought-Tolerant-Crops.pdf": {
+    "mtime": 1794241855.1545448,
+    "seen": 1794808219.9464166,
+    "ast_hash": "81da7e0e0203c742610290c60209678f",
+    "semantic_hash": "81da7e0e0203c742610290c60209678f"
+  },
+  "D:\\AE-website-main\\public\\resources\\Scoping-Study-Agro-Dealer-Association-Development-in-Twelve-Counties-in-Kenya.pdf": {
+    "mtime": 1794241855.1676965,
+    "seen": 1794808219.9464176,
+    "ast_hash": "2247e339b0c3764af8305ed1fdc861a3",
+    "semantic_hash": "2247e339b0c3764af8305ed1fdc861a3"
+  },
+  "D:\\AE-website-main\\public\\resources\\Scoping-Study-Horticulture-Seedling-Nurseries-as-a-Viable-Business-Model-in-Kenya.pdf": {
+    "mtime": 1794241855.1773577,
+    "seen": 1794808219.9464195,
+    "ast_hash": "bd2c53b36a5f8d5a41c60656025d9ff5",
+    "semantic_hash": "bd2c53b36a5f8d5a41c60656025d9ff5"
+  },
+  "D:\\AE-website-main\\public\\resources\\Scoping-Study-Pasture-and-Fodder-Planting-Materials-in-Kenya.pdf": {
+    "mtime": 1794241855.2059674,
+    "seen": 1794808219.9464207,
+    "ast_hash": "44e37e30d652a3c0c8e640636198cb42",
+    "semantic_hash": "44e37e30d652a3c0c8e640636198cb42"
+  },
+  "D:\\AE-website-main\\public\\resources\\Scoping-Study-Planting-Materials-for-Value-Chain-Crops-in-Kenya-banana-avocado-mango-pineapples-passion-fruit-sweet-potatoes-African-leafy-vegetables.pdf": {
+    "mtime": 1794241855.2235186,
+    "seen": 1794808219.946422,
+    "ast_hash": "3ef5797dfa47c19531dcab6758f3b782",
+    "semantic_hash": "3ef5797dfa47c19531dcab6758f3b782"
+  },
+  "D:\\AE-website-main\\public\\resources\\Seed-Company-Survey-and-Analysis-Sub-Saharan-Africa.pdf": {
+    "mtime": 1794241855.2235186,
+    "seen": 1794808219.9464233,
+    "ast_hash": "d241f6889561b41ba2916069d995c04b",
+    "semantic_hash": "d241f6889561b41ba2916069d995c04b"
+  },
+  "D:\\AE-website-main\\public\\resources\\Seed-Company-Survey-and-Analysis-\u2013-Sub-Saharan-Africa.pdf": {
+    "mtime": 1794241855.2235186,
+    "seen": 1794808219.9464252,
+    "ast_hash": "d241f6889561b41ba2916069d995c04b",
+    "semantic_hash": "d241f6889561b41ba2916069d995c04b"
+  },
+  "D:\\AE-website-main\\public\\resources\\The-African-Seed-Company-Toolbox-52-Tools-Every-Seed-Company-Manager-Should-Know-How-to-Use-ENGLISH.pdf": {
+    "mtime": 1794241855.326275,
+    "seen": 1794808219.9464269,
+    "ast_hash": "a6c122cb015cf82e315b5d713a5ff71a",
+    "semantic_hash": "a6c122cb015cf82e315b5d713a5ff71a"
+  },
+  "D:\\AE-website-main\\public\\resources\\Variety-Identification-Number-VIN-System-Summary-Report-of-Scoping-Study.pdf": {
+    "mtime": 1794241855.3385265,
+    "seen": 1794808219.9464283,
+    "ast_hash": "cc9746e25c6e76c57dad129e0325e532",
+    "semantic_hash": "cc9746e25c6e76c57dad129e0325e532"
+  },
+  "D:\\AE-website-main\\public\\AGRA.png": {
+    "mtime": 1794241853.1010132,
+    "seen": 1794808219.9464295,
+    "ast_hash": "c8a2a0bcba3446d7a86f3696e3b54f44",
+    "semantic_hash": "c8a2a0bcba3446d7a86f3696e3b54f44"
+  },
+  "D:\\AE-website-main\\public\\Gates_Foundation_Logo.svg": {
+    "mtime": 1794241853.1010132,
+    "seen": 1794808219.9464307,
+    "ast_hash": "18d0c7af5d6ad2958f1696d4ef055e96",
+    "semantic_hash": "18d0c7af5d6ad2958f1696d4ef055e96"
+  },
+  "D:\\AE-website-main\\public\\M3.png": {
+    "mtime": 1794241853.116715,
+    "seen": 1794808219.946432,
+    "ast_hash": "306390fcb7baf4d3dea00f5f96e5cb4b",
+    "semantic_hash": "306390fcb7baf4d3dea00f5f96e5cb4b"
+  },
+  "D:\\AE-website-main\\public\\M3.webp": {
+    "mtime": 1794241853.1251755,
+    "seen": 1794808219.9464333,
+    "ast_hash": "10bdb673a520b4030f2c8ae43569b954",
+    "semantic_hash": "10bdb673a520b4030f2c8ae43569b954"
+  },
+  "D:\\AE-website-main\\public\\Mbegu Choice.png": {
+    "mtime": 1794241853.1376424,
+    "seen": 1794808219.9464343,
+    "ast_hash": "b5f117f70cb4afd9122023e2ae43639a",
+    "semantic_hash": "b5f117f70cb4afd9122023e2ae43639a"
+  },
+  "D:\\AE-website-main\\public\\Newsletters.svg": {
+    "mtime": 1794241853.1428125,
+    "seen": 1794808219.9464357,
+    "ast_hash": "51c2f4ce746c4757029240f5c13ba7c0",
+    "semantic_hash": "51c2f4ce746c4757029240f5c13ba7c0"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\1.webp": {
+    "mtime": 1794241853.6588266,
+    "seen": 1794808219.9464366,
+    "ast_hash": "60e0897ee12f5877e9c7ff68167c3dec",
+    "semantic_hash": "60e0897ee12f5877e9c7ff68167c3dec"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\10.webp": {
+    "mtime": 1794241853.6783423,
+    "seen": 1794808219.9464378,
+    "ast_hash": "4d24e18cc26c142ad19ab18e94858f60",
+    "semantic_hash": "4d24e18cc26c142ad19ab18e94858f60"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\11.webp": {
+    "mtime": 1794241853.6843617,
+    "seen": 1794808219.9464395,
+    "ast_hash": "920d24b7fac4669fb6110361e010051c",
+    "semantic_hash": "920d24b7fac4669fb6110361e010051c"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\12.webp": {
+    "mtime": 1794241853.6883755,
+    "seen": 1794808219.9464405,
+    "ast_hash": "829dbdf64591af2a9404951a9faf376b",
+    "semantic_hash": "829dbdf64591af2a9404951a9faf376b"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\13.webp": {
+    "mtime": 1794241853.7040482,
+    "seen": 1794808219.9464421,
+    "ast_hash": "c00f2aab79871eaf278f5468802a1abf",
+    "semantic_hash": "c00f2aab79871eaf278f5468802a1abf"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\14.webp": {
+    "mtime": 1794241853.7358234,
+    "seen": 1794808219.9464436,
+    "ast_hash": "9ad1ebe72a9f7ec72c1df3dcc0a33b0e",
+    "semantic_hash": "9ad1ebe72a9f7ec72c1df3dcc0a33b0e"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\15.webp": {
+    "mtime": 1794241853.7556348,
+    "seen": 1794808219.9464445,
+    "ast_hash": "cf0f1433c095cbecb4bb7d577f2a3838",
+    "semantic_hash": "cf0f1433c095cbecb4bb7d577f2a3838"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\16.webp": {
+    "mtime": 1794241853.7576413,
+    "seen": 1794808219.946446,
+    "ast_hash": "ffb8139a05c05aa3f0408063ce5d0fa9",
+    "semantic_hash": "ffb8139a05c05aa3f0408063ce5d0fa9"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\17.webp": {
+    "mtime": 1794241853.7757585,
+    "seen": 1794808219.9464471,
+    "ast_hash": "386f5f5f191da3191416fff98553c977",
+    "semantic_hash": "386f5f5f191da3191416fff98553c977"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\2.webp": {
+    "mtime": 1794241853.7834897,
+    "seen": 1794808219.9464483,
+    "ast_hash": "073df8ec014020f33041f767700c4b5c",
+    "semantic_hash": "073df8ec014020f33041f767700c4b5c"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\3.webp": {
+    "mtime": 1794241853.7922351,
+    "seen": 1794808219.9464495,
+    "ast_hash": "dd84dead81b08267e0d149573d21e7a8",
+    "semantic_hash": "dd84dead81b08267e0d149573d21e7a8"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\4.2.webp": {
+    "mtime": 1794241853.7987678,
+    "seen": 1794808219.9464507,
+    "ast_hash": "7ae47ae11397a247ebb424b567a45c89",
+    "semantic_hash": "7ae47ae11397a247ebb424b567a45c89"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\4.webp": {
+    "mtime": 1794241853.8197372,
+    "seen": 1794808219.9464524,
+    "ast_hash": "55104dcc490eac89ea01ff16529c50cc",
+    "semantic_hash": "55104dcc490eac89ea01ff16529c50cc"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\5.2.webp": {
+    "mtime": 1794241853.8484128,
+    "seen": 1794808219.9464538,
+    "ast_hash": "cbd5c692fb5465d80dd4e0cc50341b3a",
+    "semantic_hash": "cbd5c692fb5465d80dd4e0cc50341b3a"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\5.webp": {
+    "mtime": 1794241853.858888,
+    "seen": 1794808219.9464548,
+    "ast_hash": "450bff7936a3d9b34edb74556cfe9d19",
+    "semantic_hash": "450bff7936a3d9b34edb74556cfe9d19"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\6.webp": {
+    "mtime": 1794241853.861665,
+    "seen": 1794808219.946456,
+    "ast_hash": "e072bb42098cdf82b7508d7d2f373512",
+    "semantic_hash": "e072bb42098cdf82b7508d7d2f373512"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\7.webp": {
+    "mtime": 1794241853.8773787,
+    "seen": 1794808219.946458,
+    "ast_hash": "36631470cbf310d770dfc4b065a97977",
+    "semantic_hash": "36631470cbf310d770dfc4b065a97977"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\8.webp": {
+    "mtime": 1794241853.8931446,
+    "seen": 1794808219.9464593,
+    "ast_hash": "22896e73ff168dfb567edd00502b603e",
+    "semantic_hash": "22896e73ff168dfb567edd00502b603e"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\en\\9.webp": {
+    "mtime": 1794241853.898702,
+    "seen": 1794808219.9464607,
+    "ast_hash": "cdf3e1116949bf2a1430890f30954bea",
+    "semantic_hash": "cdf3e1116949bf2a1430890f30954bea"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\fr\\1.webp": {
+    "mtime": 1794241853.9093022,
+    "seen": 1794808219.946462,
+    "ast_hash": "59a93827380638ca4f0babcfc67a282b",
+    "semantic_hash": "59a93827380638ca4f0babcfc67a282b"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\fr\\10.webp": {
+    "mtime": 1794241853.9093022,
+    "seen": 1794808219.946464,
+    "ast_hash": "83be7bd3a3bc5f8d54078a7975b647fd",
+    "semantic_hash": "83be7bd3a3bc5f8d54078a7975b647fd"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\fr\\11.webp": {
+    "mtime": 1794241853.9249437,
+    "seen": 1794808219.9464662,
+    "ast_hash": "681935f74c0175fadafc3c573bfd2e19",
+    "semantic_hash": "681935f74c0175fadafc3c573bfd2e19"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\fr\\12.webp": {
+    "mtime": 1794241853.9249437,
+    "seen": 1794808219.9464688,
+    "ast_hash": "74f252552e5756042741ef33ee9e9ac9",
+    "semantic_hash": "74f252552e5756042741ef33ee9e9ac9"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\fr\\13.webp": {
+    "mtime": 1794241853.940597,
+    "seen": 1794808219.946471,
+    "ast_hash": "04f50bd666085d5d9debe20f04ec0481",
+    "semantic_hash": "04f50bd666085d5d9debe20f04ec0481"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\fr\\14.webp": {
+    "mtime": 1794241853.9426053,
+    "seen": 1794808219.9465122,
+    "ast_hash": "a7710d8ca9431c5e52d4cabd08dfc7d9",
+    "semantic_hash": "a7710d8ca9431c5e52d4cabd08dfc7d9"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\fr\\15.webp": {
+    "mtime": 1794241853.9426053,
+    "seen": 1794808219.94652,
+    "ast_hash": "e2b96aadf3f8c3cc762f412a3d1e17d9",
+    "semantic_hash": "e2b96aadf3f8c3cc762f412a3d1e17d9"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\fr\\16.webp": {
+    "mtime": 1794241853.9565043,
+    "seen": 1794808219.946523,
+    "ast_hash": "bc9e218dc9bce29b6b6d53112ec0fa1d",
+    "semantic_hash": "bc9e218dc9bce29b6b6d53112ec0fa1d"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\fr\\17.webp": {
+    "mtime": 1794241853.9565043,
+    "seen": 1794808219.9465258,
+    "ast_hash": "cd38bd7247323a2fd964d9d3abd39ece",
+    "semantic_hash": "cd38bd7247323a2fd964d9d3abd39ece"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\fr\\2.webp": {
+    "mtime": 1794241853.9565043,
+    "seen": 1794808219.9465284,
+    "ast_hash": "e64bcc4abca6d6f49ea8e3ed2cfd2439",
+    "semantic_hash": "e64bcc4abca6d6f49ea8e3ed2cfd2439"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\fr\\3.webp": {
+    "mtime": 1794241853.9746735,
+    "seen": 1794808219.9465308,
+    "ast_hash": "ffef7fd81fd6b02a7e0e0b68fb51d55d",
+    "semantic_hash": "ffef7fd81fd6b02a7e0e0b68fb51d55d"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\fr\\4.webp": {
+    "mtime": 1794241853.9746735,
+    "seen": 1794808219.9465344,
+    "ast_hash": "534004aff3b586688ec0f37b36d3590a",
+    "semantic_hash": "534004aff3b586688ec0f37b36d3590a"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\fr\\5.webp": {
+    "mtime": 1794241853.9883227,
+    "seen": 1794808219.9465373,
+    "ast_hash": "718b382be3d68c51b3c2b504dd3eb194",
+    "semantic_hash": "718b382be3d68c51b3c2b504dd3eb194"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\fr\\6.webp": {
+    "mtime": 1794241853.9922576,
+    "seen": 1794808219.9465394,
+    "ast_hash": "d918804a533f51ef75b2e7ca956a686d",
+    "semantic_hash": "d918804a533f51ef75b2e7ca956a686d"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\fr\\7.webp": {
+    "mtime": 1794241853.9987185,
+    "seen": 1794808219.946542,
+    "ast_hash": "40ffdf0d208dd1bffea47d01c4676cfe",
+    "semantic_hash": "40ffdf0d208dd1bffea47d01c4676cfe"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\fr\\8.webp": {
+    "mtime": 1794241854.0040698,
+    "seen": 1794808219.9465444,
+    "ast_hash": "b2f530ac1cd794e3421d19689afd8165",
+    "semantic_hash": "b2f530ac1cd794e3421d19689afd8165"
+  },
+  "D:\\AE-website-main\\public\\SDG-images\\fr\\9.webp": {
+    "mtime": 1794241854.0122273,
+    "seen": 1794808219.9465463,
+    "ast_hash": "37232c46ad9a6a7f309df17ca807a04d",
+    "semantic_hash": "37232c46ad9a6a7f309df17ca807a04d"
+  },
+  "D:\\AE-website-main\\public\\SDGs\\SDG-1.svg": {
+    "mtime": 1794241854.0224266,
+    "seen": 1794808219.946549,
+    "ast_hash": "40c4159aad6921fcadb1422188c3baa3",
+    "semantic_hash": "40c4159aad6921fcadb1422188c3baa3"
+  },
+  "D:\\AE-website-main\\public\\SDGs\\SDG-10.svg": {
+    "mtime": 1794241854.0224266,
+    "seen": 1794808219.9465513,
+    "ast_hash": "4163eeaf787b0a32f9abdea8022783d1",
+    "semantic_hash": "4163eeaf787b0a32f9abdea8022783d1"
+  },
+  "D:\\AE-website-main\\public\\SDGs\\SDG-11.svg": {
+    "mtime": 1794241854.0355246,
+    "seen": 1794808219.946554,
+    "ast_hash": "92d5494748879c7a215c7cfc5e82e919",
+    "semantic_hash": "92d5494748879c7a215c7cfc5e82e919"
+  },
+  "D:\\AE-website-main\\public\\SDGs\\SDG-12.svg": {
+    "mtime": 1794241854.0355246,
+    "seen": 1794808219.946556,
+    "ast_hash": "55c5df6f5094462b03d88ad5be443880",
+    "semantic_hash": "55c5df6f5094462b03d88ad5be443880"
+  },
+  "D:\\AE-website-main\\public\\SDGs\\SDG-13.svg": {
+    "mtime": 1794241854.0516794,
+    "seen": 1794808219.9465587,
+    "ast_hash": "0f8a39869d8a2f9eaecda1063350817c",
+    "semantic_hash": "0f8a39869d8a2f9eaecda1063350817c"
+  },
+  "D:\\AE-website-main\\public\\SDGs\\SDG-14.svg": {
+    "mtime": 1794241854.0516794,
+    "seen": 1794808219.9465616,
+    "ast_hash": "e7cbe62e80f3cda7943278a73ca1681b",
+    "semantic_hash": "e7cbe62e80f3cda7943278a73ca1681b"
+  },
+  "D:\\AE-website-main\\public\\SDGs\\SDG-15.svg": {
+    "mtime": 1794241854.0673647,
+    "seen": 1794808219.9465644,
+    "ast_hash": "766db32e9f4ac022a06b31d6848e5023",
+    "semantic_hash": "766db32e9f4ac022a06b31d6848e5023"
+  },
+  "D:\\AE-website-main\\public\\SDGs\\SDG-16.svg": {
+    "mtime": 1794241854.0673647,
+    "seen": 1794808219.9465668,
+    "ast_hash": "2baaf4ab1d6477acc552bd6eae97fc58",
+    "semantic_hash": "2baaf4ab1d6477acc552bd6eae97fc58"
+  },
+  "D:\\AE-website-main\\public\\SDGs\\SDG-17.svg": {
+    "mtime": 1794241854.0755768,
+    "seen": 1794808219.9465692,
+    "ast_hash": "b74288b2bf6dbfe9cadf7801ac1ef53d",
+    "semantic_hash": "b74288b2bf6dbfe9cadf7801ac1ef53d"
+  },
+  "D:\\AE-website-main\\public\\SDGs\\SDG-2.svg": {
+    "mtime": 1794241854.083008,
+    "seen": 1794808219.946572,
+    "ast_hash": "2155bc958c8a26ee15bb8ca5ded5cd45",
+    "semantic_hash": "2155bc958c8a26ee15bb8ca5ded5cd45"
+  },
+  "D:\\AE-website-main\\public\\SDGs\\SDG-3.svg": {
+    "mtime": 1794241854.0961742,
+    "seen": 1794808219.9465747,
+    "ast_hash": "2654a62f5943e7e69adefc4c377823d6",
+    "semantic_hash": "2654a62f5943e7e69adefc4c377823d6"
+  },
+  "D:\\AE-website-main\\public\\SDGs\\SDG-4.svg": {
+    "mtime": 1794241854.1026976,
+    "seen": 1794808219.946577,
+    "ast_hash": "dde72148abdbfcc8a397a10d35bc997d",
+    "semantic_hash": "dde72148abdbfcc8a397a10d35bc997d"
+  },
+  "D:\\AE-website-main\\public\\SDGs\\SDG-5.svg": {
+    "mtime": 1794241854.108718,
+    "seen": 1794808219.9465797,
+    "ast_hash": "f73981a538ad1543e96175eb063b5951",
+    "semantic_hash": "f73981a538ad1543e96175eb063b5951"
+  },
+  "D:\\AE-website-main\\public\\SDGs\\SDG-6.svg": {
+    "mtime": 1794241854.1162393,
+    "seen": 1794808219.9465826,
+    "ast_hash": "956a560748d5cec75dc3f4b680cac811",
+    "semantic_hash": "956a560748d5cec75dc3f4b680cac811"
+  },
+  "D:\\AE-website-main\\public\\SDGs\\SDG-7.svg": {
+    "mtime": 1794241854.1222684,
+    "seen": 1794808219.9465852,
+    "ast_hash": "b0e988d96a0f7275a9441135b7566c3a",
+    "semantic_hash": "b0e988d96a0f7275a9441135b7566c3a"
+  },
+  "D:\\AE-website-main\\public\\SDGs\\SDG-8.svg": {
+    "mtime": 1794241854.130155,
+    "seen": 1794808219.946587,
+    "ast_hash": "adc41b5d3c9f86483068a107defdb59a",
+    "semantic_hash": "adc41b5d3c9f86483068a107defdb59a"
+  },
+  "D:\\AE-website-main\\public\\SDGs\\SDG-9.svg": {
+    "mtime": 1794241854.130155,
+    "seen": 1794808219.9465897,
+    "ast_hash": "5f0b1cbc30de3c9e6d5ac643b66bac54",
+    "semantic_hash": "5f0b1cbc30de3c9e6d5ac643b66bac54"
+  },
+  "D:\\AE-website-main\\public\\USAID-Identity.svg": {
+    "mtime": 1794241853.1551638,
+    "seen": 1794808219.946592,
+    "ast_hash": "12c6a60e723b74d0790573872bf99620",
+    "semantic_hash": "12c6a60e723b74d0790573872bf99620"
+  },
+  "D:\\AE-website-main\\public\\Videos\\hero-poster.jpg": {
+    "mtime": 1794241854.1463602,
+    "seen": 1794808219.946594,
+    "ast_hash": "712bb68919238c2ccfb4937c0927708e",
+    "semantic_hash": "712bb68919238c2ccfb4937c0927708e"
+  },
+  "D:\\AE-website-main\\public\\adam-smith-international-logo.png": {
+    "mtime": 1794241853.1571698,
+    "seen": 1794808219.9465969,
+    "ast_hash": "57a9210b1b243dbb99913c166bdf67a8",
+    "semantic_hash": "57a9210b1b243dbb99913c166bdf67a8"
+  },
+  "D:\\AE-website-main\\public\\agdevco-logo.png": {
+    "mtime": 1794241853.1643429,
+    "seen": 1794808219.9465992,
+    "ast_hash": "cedb96275d75e4e3866735b4db98bceb",
+    "semantic_hash": "cedb96275d75e4e3866735b4db98bceb"
+  },
+  "D:\\AE-website-main\\public\\agri-experience-logo.png": {
+    "mtime": 1794241853.175584,
+    "seen": 1794808219.9466019,
+    "ast_hash": "712c0886dd491176fe9478a3b4b9d09d",
+    "semantic_hash": "712c0886dd491176fe9478a3b4b9d09d"
+  },
+  "D:\\AE-website-main\\public\\agri-footer-landscape.jpg": {
+    "mtime": 1794241853.189693,
+    "seen": 1794808219.9466038,
+    "ast_hash": "597ea7eeccd92a5147f1dfdcfb59cecf",
+    "semantic_hash": "597ea7eeccd92a5147f1dfdcfb59cecf"
+  },
+  "D:\\AE-website-main\\public\\apple-icon.png": {
+    "mtime": 1794241853.197866,
+    "seen": 1794808219.9466052,
+    "ast_hash": "a658ea73472254e6f8c3a7d97c5898d8",
+    "semantic_hash": "a658ea73472254e6f8c3a7d97c5898d8"
+  },
+  "D:\\AE-website-main\\public\\cimmyt-logo.svg": {
+    "mtime": 1794241853.197866,
+    "seen": 1794808219.9466076,
+    "ast_hash": "a169169b1e62fdaecd88c15845889c0a",
+    "semantic_hash": "a169169b1e62fdaecd88c15845889c0a"
+  },
+  "D:\\AE-website-main\\public\\crs-logo.png": {
+    "mtime": 1794241853.2119553,
+    "seen": 1794808219.94661,
+    "ast_hash": "e0059ab4bef8cbb4f130d5f08e7f63b4",
+    "semantic_hash": "e0059ab4bef8cbb4f130d5f08e7f63b4"
+  },
+  "D:\\AE-website-main\\public\\elan-logo.png": {
+    "mtime": 1794250673.556,
+    "seen": 1794808219.946612,
+    "ast_hash": "c4c8f7801a6f49c42436720fb0f445cc",
+    "semantic_hash": "c4c8f7801a6f49c42436720fb0f445cc"
+  },
+  "D:\\AE-website-main\\public\\favicon.svg": {
+    "mtime": 1794241853.2440834,
+    "seen": 1794808219.946614,
+    "ast_hash": "63cbf433bbf3ba7a8167dc2be2d1287b",
+    "semantic_hash": "63cbf433bbf3ba7a8167dc2be2d1287b"
+  },
+  "D:\\AE-website-main\\public\\flags\\bf.png": {
+    "mtime": 1794241854.2923696,
+    "seen": 1794808219.9466162,
+    "ast_hash": "10558b8b0dc33b5bdd705086dbf54373",
+    "semantic_hash": "10558b8b0dc33b5bdd705086dbf54373"
+  },
+  "D:\\AE-website-main\\public\\flags\\bi.png": {
+    "mtime": 1794241854.2992373,
+    "seen": 1794808219.9466186,
+    "ast_hash": "049e8baba0b6f40637769aba2d787947",
+    "semantic_hash": "049e8baba0b6f40637769aba2d787947"
+  },
+  "D:\\AE-website-main\\public\\flags\\cd.png": {
+    "mtime": 1794241854.3074398,
+    "seen": 1794808219.9466205,
+    "ast_hash": "1b4a860c7d4f97d07676b295f5b4463f",
+    "semantic_hash": "1b4a860c7d4f97d07676b295f5b4463f"
+  },
+  "D:\\AE-website-main\\public\\flags\\cm.png": {
+    "mtime": 1794241854.3074398,
+    "seen": 1794808219.9466221,
+    "ast_hash": "eb8034b012663884a2628ab5ac429da6",
+    "semantic_hash": "eb8034b012663884a2628ab5ac429da6"
+  },
+  "D:\\AE-website-main\\public\\flags\\et.png": {
+    "mtime": 1794241854.3204443,
+    "seen": 1794808219.9466245,
+    "ast_hash": "0c7a4b4cc6b931c8429163d87a335370",
+    "semantic_hash": "0c7a4b4cc6b931c8429163d87a335370"
+  },
+  "D:\\AE-website-main\\public\\flags\\gh.png": {
+    "mtime": 1794241854.3204443,
+    "seen": 1794808219.9466267,
+    "ast_hash": "4b82a1737b3fe8b91ef37cece8f5b876",
+    "semantic_hash": "4b82a1737b3fe8b91ef37cece8f5b876"
+  },
+  "D:\\AE-website-main\\public\\flags\\ke.png": {
+    "mtime": 1794241854.3358188,
+    "seen": 1794808219.9466286,
+    "ast_hash": "e1eec0b18eb12e6efa89332381301380",
+    "semantic_hash": "e1eec0b18eb12e6efa89332381301380"
+  },
+  "D:\\AE-website-main\\public\\flags\\lr.png": {
+    "mtime": 1794241854.3422585,
+    "seen": 1794808219.946631,
+    "ast_hash": "a566e5e22aede6bd2cc007cc7daf40ef",
+    "semantic_hash": "a566e5e22aede6bd2cc007cc7daf40ef"
+  },
+  "D:\\AE-website-main\\public\\flags\\ml.png": {
+    "mtime": 1794241854.3518312,
+    "seen": 1794808219.9466326,
+    "ast_hash": "be3158104628990595835ce28407e515",
+    "semantic_hash": "be3158104628990595835ce28407e515"
+  },
+  "D:\\AE-website-main\\public\\flags\\mw.png": {
+    "mtime": 1794241854.3589742,
+    "seen": 1794808219.946635,
+    "ast_hash": "50eaa873511479556a47cbdbfc3c1662",
+    "semantic_hash": "50eaa873511479556a47cbdbfc3c1662"
+  },
+  "D:\\AE-website-main\\public\\flags\\mz.png": {
+    "mtime": 1794241854.3589742,
+    "seen": 1794808219.9466374,
+    "ast_hash": "d8e1b5c452f118315add23486d614e5a",
+    "semantic_hash": "d8e1b5c452f118315add23486d614e5a"
+  },
+  "D:\\AE-website-main\\public\\flags\\ng.png": {
+    "mtime": 1794241854.3675323,
+    "seen": 1794808219.9466398,
+    "ast_hash": "00ba6e7b349acf51f9b571660dd31392",
+    "semantic_hash": "00ba6e7b349acf51f9b571660dd31392"
+  },
+  "D:\\AE-website-main\\public\\flags\\rw.png": {
+    "mtime": 1794241854.3675323,
+    "seen": 1794808219.9466424,
+    "ast_hash": "d410b284f4b3d0ec3abb34fa435f587d",
+    "semantic_hash": "d410b284f4b3d0ec3abb34fa435f587d"
+  },
+  "D:\\AE-website-main\\public\\flags\\sl.png": {
+    "mtime": 1794241854.385547,
+    "seen": 1794808219.9466445,
+    "ast_hash": "cc01a579a946c3f2202104e99d671f72",
+    "semantic_hash": "cc01a579a946c3f2202104e99d671f72"
+  },
+  "D:\\AE-website-main\\public\\flags\\sn.png": {
+    "mtime": 1794241854.3922045,
+    "seen": 1794808219.946648,
+    "ast_hash": "68bfbfcdac07d7ab2f296c6a5abbb572",
+    "semantic_hash": "68bfbfcdac07d7ab2f296c6a5abbb572"
+  },
+  "D:\\AE-website-main\\public\\flags\\ss.png": {
+    "mtime": 1794241854.399205,
+    "seen": 1794808219.94665,
+    "ast_hash": "268888a32c1fa0e7555336a734987c5e",
+    "semantic_hash": "268888a32c1fa0e7555336a734987c5e"
+  },
+  "D:\\AE-website-main\\public\\flags\\tz.png": {
+    "mtime": 1794241854.399205,
+    "seen": 1794808219.9466524,
+    "ast_hash": "738094df3eb81d1c6ee0a025281ad713",
+    "semantic_hash": "738094df3eb81d1c6ee0a025281ad713"
+  },
+  "D:\\AE-website-main\\public\\flags\\ug.png": {
+    "mtime": 1794241854.4163747,
+    "seen": 1794808219.9466548,
+    "ast_hash": "553b5ffd9b2af1052419d8c62b132d2d",
+    "semantic_hash": "553b5ffd9b2af1052419d8c62b132d2d"
+  },
+  "D:\\AE-website-main\\public\\flags\\za.png": {
+    "mtime": 1794241854.4244013,
+    "seen": 1794808219.946657,
+    "ast_hash": "54e539a22f1055e30ad1aca27da0c1e4",
+    "semantic_hash": "54e539a22f1055e30ad1aca27da0c1e4"
+  },
+  "D:\\AE-website-main\\public\\flags\\zm.png": {
+    "mtime": 1794241854.4301624,
+    "seen": 1794808219.9466593,
+    "ast_hash": "2e36bde2c12d90827fb0aaef5bb46d14",
+    "semantic_hash": "2e36bde2c12d90827fb0aaef5bb46d14"
+  },
+  "D:\\AE-website-main\\public\\flags\\zw.png": {
+    "mtime": 1794241854.4361796,
+    "seen": 1794808219.9466612,
+    "ast_hash": "8aafa4f6c62be554c9a1ea37d596f2e8",
+    "semantic_hash": "8aafa4f6c62be554c9a1ea37d596f2e8"
+  },
+  "D:\\AE-website-main\\public\\footer-landscape.jpg": {
+    "mtime": 1794241853.2590246,
+    "seen": 1794808219.9466636,
+    "ast_hash": "597ea7eeccd92a5147f1dfdcfb59cecf",
+    "semantic_hash": "597ea7eeccd92a5147f1dfdcfb59cecf"
+  },
+  "D:\\AE-website-main\\public\\gatsby-logo.png": {
+    "mtime": 1794241853.2620585,
+    "seen": 1794808219.9466662,
+    "ast_hash": "b813c94457c1e5afa85dc3f0d58b90b4",
+    "semantic_hash": "b813c94457c1e5afa85dc3f0d58b90b4"
+  },
+  "D:\\AE-website-main\\public\\glenn-carstens-peters-piNf3C4TViA-unsplash.jpg": {
+    "mtime": 1794241853.2781541,
+    "seen": 1794808219.9466686,
+    "ast_hash": "b442ab23db6e76bb2b3f29ec46874c4e",
+    "semantic_hash": "b442ab23db6e76bb2b3f29ec46874c4e"
+  },
+  "D:\\AE-website-main\\public\\hero-bg.png": {
+    "mtime": 1794250675.944,
+    "seen": 1794808219.946671,
+    "ast_hash": "eb837f746e09235da746c08af71483db",
+    "semantic_hash": "eb837f746e09235da746c08af71483db"
+  },
+  "D:\\AE-website-main\\public\\hero-video-frame.jpg": {
+    "mtime": 1794250673.896,
+    "seen": 1794808219.9466734,
+    "ast_hash": "c4bc3ec51be9a8d37fdd7160ef4a5492",
+    "semantic_hash": "c4bc3ec51be9a8d37fdd7160ef4a5492"
+  },
+  "D:\\AE-website-main\\public\\hero-video-frame.webp": {
+    "mtime": 1794250712.135,
+    "seen": 1794808219.9466758,
+    "ast_hash": "a3c26333d6c9a4f73722a630437fa569",
+    "semantic_hash": "a3c26333d6c9a4f73722a630437fa569"
+  },
+  "D:\\AE-website-main\\public\\icon.svg": {
+    "mtime": 1794241853.3231795,
+    "seen": 1794808219.9466782,
+    "ast_hash": "5cc0ccd15a51fa041108352229f08d2f",
+    "semantic_hash": "5cc0ccd15a51fa041108352229f08d2f"
+  },
+  "D:\\AE-website-main\\public\\ifdc-logo.png": {
+    "mtime": 1794241853.3231795,
+    "seen": 1794808219.9466805,
+    "ast_hash": "eb5693a73032bfd11ed487ec82e547b2",
+    "semantic_hash": "eb5693a73032bfd11ed487ec82e547b2"
+  },
+  "D:\\AE-website-main\\public\\images\\african-seed-company-toolbox-cover.jpg": {
+    "mtime": 1794241854.4480472,
+    "seen": 1794808219.9466836,
+    "ast_hash": "e5ffef4a9d7f13a19d6ef503e234dea8",
+    "semantic_hash": "e5ffef4a9d7f13a19d6ef503e234dea8"
+  },
+  "D:\\AE-website-main\\public\\images\\african-seed-company-toolbox-cover.png": {
+    "mtime": 1794241854.458338,
+    "seen": 1794808219.9466863,
+    "ast_hash": "9b3b89f5717076f74da4ba2da1b28921",
+    "semantic_hash": "9b3b89f5717076f74da4ba2da1b28921"
+  },
+  "D:\\AE-website-main\\public\\kalro-logo.png": {
+    "mtime": 1794241853.3388543,
+    "seen": 1794808219.9466884,
+    "ast_hash": "6da6c086b1a8632daa56d5446155ac86",
+    "semantic_hash": "6da6c086b1a8632daa56d5446155ac86"
+  },
+  "D:\\AE-website-main\\public\\kephis-logo.png": {
+    "mtime": 1794241853.3388543,
+    "seen": 1794808219.9466903,
+    "ast_hash": "e6a5a0ce9cf6d69bbd9f05b9994d93a8",
+    "semantic_hash": "e6a5a0ce9cf6d69bbd9f05b9994d93a8"
+  },
+  "D:\\AE-website-main\\public\\loader-mask.svg": {
+    "mtime": 1794241853.361612,
+    "seen": 1794808219.946693,
+    "ast_hash": "f4151fd5c1a4994eb4f277a0b5d0beff",
+    "semantic_hash": "f4151fd5c1a4994eb4f277a0b5d0beff"
+  },
+  "D:\\AE-website-main\\public\\m3-logo.svg": {
+    "mtime": 1794241853.3676298,
+    "seen": 1794808219.9467118,
+    "ast_hash": "a775cfb190905deee4e24b3c6a3e2902",
+    "semantic_hash": "a775cfb190905deee4e24b3c6a3e2902"
+  },
+  "D:\\AE-website-main\\public\\m3-logo.webp": {
+    "mtime": 1794241853.3755848,
+    "seen": 1794808219.9467146,
+    "ast_hash": "10bdb673a520b4030f2c8ae43569b954",
+    "semantic_hash": "10bdb673a520b4030f2c8ae43569b954"
+  },
+  "D:\\AE-website-main\\public\\mission-v2.jpg": {
+    "mtime": 1794241853.3865776,
+    "seen": 1794808219.9467173,
+    "ast_hash": "ce6097ae9bc3f12f0c47eadc05d70dd2",
+    "semantic_hash": "ce6097ae9bc3f12f0c47eadc05d70dd2"
+  },
+  "D:\\AE-website-main\\public\\moa-kenya-logo.png": {
+    "mtime": 1794250673.418,
+    "seen": 1794808219.9467194,
+    "ast_hash": "4628e10b9f031e52c99cd482be6de0b5",
+    "semantic_hash": "4628e10b9f031e52c99cd482be6de0b5"
+  },
+  "D:\\AE-website-main\\public\\moa-tanzania-logo.png": {
+    "mtime": 1794241853.4089074,
+    "seen": 1794808219.946722,
+    "ast_hash": "6ab1ebf94a7cc84b4739d4054210d8aa",
+    "semantic_hash": "6ab1ebf94a7cc84b4739d4054210d8aa"
+  },
+  "D:\\AE-website-main\\public\\naro-logo.png": {
+    "mtime": 1794241853.4089074,
+    "seen": 1794808219.9467242,
+    "ast_hash": "c8405bde8d9b54c6c43fd8e540f0a6aa",
+    "semantic_hash": "c8405bde8d9b54c6c43fd8e540f0a6aa"
+  },
+  "D:\\AE-website-main\\public\\nasc-logo.svg": {
+    "mtime": 1794241853.4239783,
+    "seen": 1794808219.946726,
+    "ast_hash": "a4d0da490901f0bd1cc20e158319a348",
+    "semantic_hash": "a4d0da490901f0bd1cc20e158319a348"
+  },
+  "D:\\AE-website-main\\public\\nastag-logo.png": {
+    "mtime": 1794250673.752,
+    "seen": 1794808219.9467282,
+    "ast_hash": "c26a74011669022e9caa5f375e60aad3",
+    "semantic_hash": "c26a74011669022e9caa5f375e60aad3"
+  },
+  "D:\\AE-website-main\\public\\office-plants\\1.webp": {
+    "mtime": 1794241854.4819126,
+    "seen": 1794808219.9467306,
+    "ast_hash": "29fbaa6399296d4e30200f29e3d37125",
+    "semantic_hash": "29fbaa6399296d4e30200f29e3d37125"
+  },
+  "D:\\AE-website-main\\public\\office-plants\\10.webp": {
+    "mtime": 1794241854.4939227,
+    "seen": 1794808219.9467328,
+    "ast_hash": "340c7a4e8c888de8795239466d0d3c06",
+    "semantic_hash": "340c7a4e8c888de8795239466d0d3c06"
+  },
+  "D:\\AE-website-main\\public\\office-plants\\2.webp": {
+    "mtime": 1794241854.527488,
+    "seen": 1794808219.9467354,
+    "ast_hash": "e2a6dbc9986d76b29851837fd3dffe30",
+    "semantic_hash": "e2a6dbc9986d76b29851837fd3dffe30"
+  },
+  "D:\\AE-website-main\\public\\office-plants\\3.webp": {
+    "mtime": 1794241854.5461993,
+    "seen": 1794808219.9467378,
+    "ast_hash": "ab498414c50e4b380585c3cc1331e5e0",
+    "semantic_hash": "ab498414c50e4b380585c3cc1331e5e0"
+  },
+  "D:\\AE-website-main\\public\\office-plants\\4.webp": {
+    "mtime": 1794241854.5522375,
+    "seen": 1794808219.94674,
+    "ast_hash": "6d1bd575f6c027f11d0199d893b9f3f0",
+    "semantic_hash": "6d1bd575f6c027f11d0199d893b9f3f0"
+  },
+  "D:\\AE-website-main\\public\\office-plants\\5.webp": {
+    "mtime": 1794241854.573049,
+    "seen": 1794808219.9467425,
+    "ast_hash": "ea24eb7faa1f3783e8646ca69ee46df3",
+    "semantic_hash": "ea24eb7faa1f3783e8646ca69ee46df3"
+  },
+  "D:\\AE-website-main\\public\\office-plants\\6.webp": {
+    "mtime": 1794241854.5975113,
+    "seen": 1794808219.946745,
+    "ast_hash": "7c21f9a41ed3d1415d65e4102638c0f0",
+    "semantic_hash": "7c21f9a41ed3d1415d65e4102638c0f0"
+  },
+  "D:\\AE-website-main\\public\\office-plants\\7.webp": {
+    "mtime": 1794241854.6047976,
+    "seen": 1794808219.9467473,
+    "ast_hash": "39abd66abc9a572d9c842f48d5ee471d",
+    "semantic_hash": "39abd66abc9a572d9c842f48d5ee471d"
+  },
+  "D:\\AE-website-main\\public\\office-plants\\8.webp": {
+    "mtime": 1794241854.6047976,
+    "seen": 1794808219.94675,
+    "ast_hash": "fed0739a2ceef49a74850c0274435861",
+    "semantic_hash": "fed0739a2ceef49a74850c0274435861"
+  },
+  "D:\\AE-website-main\\public\\office-plants\\9.webp": {
+    "mtime": 1794241854.6273437,
+    "seen": 1794808219.9467518,
+    "ast_hash": "139334f41f96684cabcc27a3b59c9bdc",
+    "semantic_hash": "139334f41f96684cabcc27a3b59c9bdc"
+  },
+  "D:\\AE-website-main\\public\\our-mission-2026.jpg": {
+    "mtime": 1794241853.4433336,
+    "seen": 1794808219.9467542,
+    "ast_hash": "c3abb74dcbca8a2d3457e6d4e96d4978",
+    "semantic_hash": "c3abb74dcbca8a2d3457e6d4e96d4978"
+  },
+  "D:\\AE-website-main\\public\\our-mission.jpg": {
+    "mtime": 1794241853.4497354,
+    "seen": 1794808219.9467564,
+    "ast_hash": "ce6097ae9bc3f12f0c47eadc05d70dd2",
+    "semantic_hash": "ce6097ae9bc3f12f0c47eadc05d70dd2"
+  },
+  "D:\\AE-website-main\\public\\our-values.png": {
+    "mtime": 1794241853.4692132,
+    "seen": 1794808219.9467585,
+    "ast_hash": "0b22ab9cbbfa47d60424327b3814d0f9",
+    "semantic_hash": "0b22ab9cbbfa47d60424327b3814d0f9"
+  },
+  "D:\\AE-website-main\\public\\our-vision-2026.jpg": {
+    "mtime": 1794241853.481945,
+    "seen": 1794808219.946761,
+    "ast_hash": "97df77c83ed484cc28d6cac05be65f56",
+    "semantic_hash": "97df77c83ed484cc28d6cac05be65f56"
+  },
+  "D:\\AE-website-main\\public\\our-vision.jpg": {
+    "mtime": 1794241853.4979858,
+    "seen": 1794808219.9467635,
+    "ast_hash": "0f2e910f6864e3d8e2f6694cc7017c02",
+    "semantic_hash": "0f2e910f6864e3d8e2f6694cc7017c02"
+  },
+  "D:\\AE-website-main\\public\\pexels-elvis-kambire-434351765-38025863.jpg": {
+    "mtime": 1794241853.5110197,
+    "seen": 1794808219.946766,
+    "ast_hash": "ce6097ae9bc3f12f0c47eadc05d70dd2",
+    "semantic_hash": "ce6097ae9bc3f12f0c47eadc05d70dd2"
+  },
+  "D:\\AE-website-main\\public\\pexels-equalstock-27722065.jpg": {
+    "mtime": 1794241853.5219586,
+    "seen": 1794808219.9467692,
+    "ast_hash": "0f2e910f6864e3d8e2f6694cc7017c02",
+    "semantic_hash": "0f2e910f6864e3d8e2f6694cc7017c02"
+  },
+  "D:\\AE-website-main\\public\\pexels-flambo-388007-1112080.jpg": {
+    "mtime": 1794241853.5338075,
+    "seen": 1794808219.9467716,
+    "ast_hash": "597ea7eeccd92a5147f1dfdcfb59cecf",
+    "semantic_hash": "597ea7eeccd92a5147f1dfdcfb59cecf"
+  },
+  "D:\\AE-website-main\\public\\pexels-halis-collu-2057418323-29219216.jpg": {
+    "mtime": 1794241853.5456119,
+    "seen": 1794808219.9467745,
+    "ast_hash": "0f2e910f6864e3d8e2f6694cc7017c02",
+    "semantic_hash": "0f2e910f6864e3d8e2f6694cc7017c02"
+  },
+  "D:\\AE-website-main\\public\\platforms\\africa-crop-variety-catalogue.png": {
+    "mtime": 1794241854.6527436,
+    "seen": 1794808219.9467766,
+    "ast_hash": "414250c5bc595192fef7fbf7eb33eaae",
+    "semantic_hash": "414250c5bc595192fef7fbf7eb33eaae"
+  },
+  "D:\\AE-website-main\\public\\platforms\\kenya-plant-variety-list.png": {
+    "mtime": 1794241854.6684499,
+    "seen": 1794808219.9467797,
+    "ast_hash": "0dc0243354a78c9170bd4bba578f2a7f",
+    "semantic_hash": "0dc0243354a78c9170bd4bba578f2a7f"
+  },
+  "D:\\AE-website-main\\public\\platforms\\mbeguchoice.png": {
+    "mtime": 1794241854.6841657,
+    "seen": 1794808219.9467816,
+    "ast_hash": "87685f758b8edf30ee715335fa3da3c1",
+    "semantic_hash": "87685f758b8edf30ee715335fa3da3c1"
+  },
+  "D:\\AE-website-main\\public\\platforms\\seed-sector-platform-kenya.png": {
+    "mtime": 1794241854.6994054,
+    "seen": 1794808219.9467845,
+    "ast_hash": "678131bd75ad28192cd1fd08dd7fc3b5",
+    "semantic_hash": "678131bd75ad28192cd1fd08dd7fc3b5"
+  },
+  "D:\\AE-website-main\\public\\platforms\\tanzania-agri-inputs-platform.png": {
+    "mtime": 1794241854.7088661,
+    "seen": 1794808219.9467866,
+    "ast_hash": "2e50a3f64adfb53ae1295dc5088eafd7",
+    "semantic_hash": "2e50a3f64adfb53ae1295dc5088eafd7"
+  },
+  "D:\\AE-website-main\\public\\platforms\\uganda-agri-inputs-platform.png": {
+    "mtime": 1794241854.715384,
+    "seen": 1794808219.9467885,
+    "ast_hash": "5d050cd181a2064d4d93c2dfead418d9",
+    "semantic_hash": "5d050cd181a2064d4d93c2dfead418d9"
+  },
+  "D:\\AE-website-main\\public\\resources\\previews\\preview-agrodealer-associations.jpg": {
+    "mtime": 1794241855.3503723,
+    "seen": 1794808219.9467914,
+    "ast_hash": "717279633a13b204cb805e54a7eb34ba",
+    "semantic_hash": "717279633a13b204cb805e54a7eb34ba"
+  },
+  "D:\\AE-website-main\\public\\resources\\previews\\preview-horticulture-nurseries.jpg": {
+    "mtime": 1794241855.3503723,
+    "seen": 1794808219.9467945,
+    "ast_hash": "33529741a58f6c7245f748a0edfc182b",
+    "semantic_hash": "33529741a58f6c7245f748a0edfc182b"
+  },
+  "D:\\AE-website-main\\public\\resources\\previews\\preview-pasture-fodder.jpg": {
+    "mtime": 1794241855.3754807,
+    "seen": 1794808219.9467967,
+    "ast_hash": "d9ed2ac5bd35a1f34b71f5b189362309",
+    "semantic_hash": "d9ed2ac5bd35a1f34b71f5b189362309"
+  },
+  "D:\\AE-website-main\\public\\resources\\previews\\preview-value-chain-crops.jpg": {
+    "mtime": 1794241855.3823295,
+    "seen": 1794808219.9467986,
+    "ast_hash": "20a81a0246a3e2e1261f845dde483f1d",
+    "semantic_hash": "20a81a0246a3e2e1261f845dde483f1d"
+  },
+  "D:\\AE-website-main\\public\\stak-logo.png": {
+    "mtime": 1794241853.5525742,
+    "seen": 1794808219.9468007,
+    "ast_hash": "fd3109f8226847c296fe62124821072d",
+    "semantic_hash": "fd3109f8226847c296fe62124821072d"
+  },
+  "D:\\AE-website-main\\public\\tari-logo.png": {
+    "mtime": 1794250673.324,
+    "seen": 1794808219.9468026,
+    "ast_hash": "9ac93237803804c4781294d72d0197fa",
+    "semantic_hash": "9ac93237803804c4781294d72d0197fa"
+  },
+  "D:\\AE-website-main\\public\\tasta-logo-v2.png": {
+    "mtime": 1794241853.5773296,
+    "seen": 1794808219.9468048,
+    "ast_hash": "6ea62754977d3017d84e1de97e395ddd",
+    "semantic_hash": "6ea62754977d3017d84e1de97e395ddd"
+  },
+  "D:\\AE-website-main\\public\\tasta-logo.png": {
+    "mtime": 1794241853.5932481,
+    "seen": 1794808219.9468071,
+    "ast_hash": "6ea62754977d3017d84e1de97e395ddd",
+    "semantic_hash": "6ea62754977d3017d84e1de97e395ddd"
+  },
+  "D:\\AE-website-main\\public\\team\\aline.png": {
+    "mtime": 1794241855.4023838,
+    "seen": 1794808219.9468093,
+    "ast_hash": "5e0454b628d15fe368e4296ec3651226",
+    "semantic_hash": "5e0454b628d15fe368e4296ec3651226"
+  },
+  "D:\\AE-website-main\\public\\team\\claire.jpg": {
+    "mtime": 1794241855.4064038,
+    "seen": 1794808219.9468114,
+    "ast_hash": "4434be238829a111759b3b15324530d8",
+    "semantic_hash": "4434be238829a111759b3b15324530d8"
+  },
+  "D:\\AE-website-main\\public\\team\\claire2.jpg": {
+    "mtime": 1794241855.4140239,
+    "seen": 1794808219.946814,
+    "ast_hash": "935ffa4c34e5338996c1f6ffda996de8",
+    "semantic_hash": "935ffa4c34e5338996c1f6ffda996de8"
+  },
+  "D:\\AE-website-main\\public\\team\\denis.jpg": {
+    "mtime": 1794241855.4297066,
+    "seen": 1794808219.9468164,
+    "ast_hash": "c8f35e9c72cfcd1ea6a8663c0bc39793",
+    "semantic_hash": "c8f35e9c72cfcd1ea6a8663c0bc39793"
+  },
+  "D:\\AE-website-main\\public\\team\\denis2.jpg": {
+    "mtime": 1794241855.4417253,
+    "seen": 1794808219.9468663,
+    "ast_hash": "a4deb105812f57518bb6e653c440d1e7",
+    "semantic_hash": "a4deb105812f57518bb6e653c440d1e7"
+  },
+  "D:\\AE-website-main\\public\\team\\jayne.jpg": {
+    "mtime": 1794241855.4454794,
+    "seen": 1794808219.9468684,
+    "ast_hash": "73662ca5432d880de1c3c2f23c590048",
+    "semantic_hash": "73662ca5432d880de1c3c2f23c590048"
+  },
+  "D:\\AE-website-main\\public\\team\\jayne2.jpg": {
+    "mtime": 1794241855.4614213,
+    "seen": 1794808219.946871,
+    "ast_hash": "531b6659af9fe2491c7bcbdcc513dfe3",
+    "semantic_hash": "531b6659af9fe2491c7bcbdcc513dfe3"
+  },
+  "D:\\AE-website-main\\public\\team\\kilonzo.jpg": {
+    "mtime": 1794241855.4614213,
+    "seen": 1794808219.9468732,
+    "ast_hash": "d10685c6239829e5d6194d128ef8c725",
+    "semantic_hash": "d10685c6239829e5d6194d128ef8c725"
+  },
+  "D:\\AE-website-main\\public\\team\\kilonzo2.jpg": {
+    "mtime": 1794241855.4614213,
+    "seen": 1794808219.9468758,
+    "ast_hash": "5873289fedaf51ce4f43c71b29d73607",
+    "semantic_hash": "5873289fedaf51ce4f43c71b29d73607"
+  },
+  "D:\\AE-website-main\\public\\team\\moses.jpg": {
+    "mtime": 1794241855.481243,
+    "seen": 1794808219.9468782,
+    "ast_hash": "1c3929a7125369961016b6065bcebc97",
+    "semantic_hash": "1c3929a7125369961016b6065bcebc97"
+  },
+  "D:\\AE-website-main\\public\\team\\moses2.jpg": {
+    "mtime": 1794241855.4931521,
+    "seen": 1794808219.9468806,
+    "ast_hash": "e5c0442e8cab59929a1ee79abac44c34",
+    "semantic_hash": "e5c0442e8cab59929a1ee79abac44c34"
+  },
+  "D:\\AE-website-main\\public\\team\\mulemia.jpg": {
+    "mtime": 1794241855.5045173,
+    "seen": 1794808219.9468827,
+    "ast_hash": "ff7d85bea5c2061de74dc9a27d48b1a9",
+    "semantic_hash": "ff7d85bea5c2061de74dc9a27d48b1a9"
+  },
+  "D:\\AE-website-main\\public\\team\\mulemia2.jpg": {
+    "mtime": 1794241855.5128925,
+    "seen": 1794808219.946885,
+    "ast_hash": "54a6bccf14ea17ae2b5f013a559fe613",
+    "semantic_hash": "54a6bccf14ea17ae2b5f013a559fe613"
+  },
+  "D:\\AE-website-main\\public\\team\\ronald.jpg": {
+    "mtime": 1794241855.5247164,
+    "seen": 1794808219.9468873,
+    "ast_hash": "0d4efe52ed84f05ec3def5f6446a144b",
+    "semantic_hash": "0d4efe52ed84f05ec3def5f6446a144b"
+  },
+  "D:\\AE-website-main\\public\\team\\ronald2.jpg": {
+    "mtime": 1794241855.5247164,
+    "seen": 1794808219.9468896,
+    "ast_hash": "131691311ec2c7f56cfa584e191c4200",
+    "semantic_hash": "131691311ec2c7f56cfa584e191c4200"
+  },
+  "D:\\AE-website-main\\public\\tosci-logo.jpg": {
+    "mtime": 1794241853.6020954,
+    "seen": 1794808219.9468923,
+    "ast_hash": "deb53c3ad4882ec52b8045479f256990",
+    "semantic_hash": "deb53c3ad4882ec52b8045479f256990"
+  },
+  "D:\\AE-website-main\\public\\tosci-logo.png": {
+    "mtime": 1794241853.613132,
+    "seen": 1794808219.9468944,
+    "ast_hash": "9ee8ac89d3d4b02f53ace17eb07e400d",
+    "semantic_hash": "9ee8ac89d3d4b02f53ace17eb07e400d"
+  },
+  "D:\\AE-website-main\\public\\usta-logo.png": {
+    "mtime": 1794241853.624926,
+    "seen": 1794808219.9468977,
+    "ast_hash": "e44c2855d3a68cbfd919fc11141e6833",
+    "semantic_hash": "e44c2855d3a68cbfd919fc11141e6833"
+  },
+  "D:\\AE-website-main\\public\\vision-v2.jpg": {
+    "mtime": 1794241853.63613,
+    "seen": 1794808219.9468997,
+    "ast_hash": "0f2e910f6864e3d8e2f6694cc7017c02",
+    "semantic_hash": "0f2e910f6864e3d8e2f6694cc7017c02"
+  },
+  "D:\\AE-website-main\\public\\Videos\\hero-video.mp4": {
+    "mtime": 1794241854.2188115,
+    "seen": 1794808219.9469018,
+    "ast_hash": "ce281c1d5a1a5540f1da914b63878946",
+    "semantic_hash": "ce281c1d5a1a5540f1da914b63878946"
+  },
+  "D:\\AE-website-main\\public\\Videos\\hero-video.webm": {
+    "mtime": 1794241854.2725005,
+    "seen": 1794808219.9469042,
+    "ast_hash": "55225ca9db219a595d7a3a7d40c8b062",
+    "semantic_hash": "55225ca9db219a595d7a3a7d40c8b062"
   }
 }

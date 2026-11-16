@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Dialog & Mapbox Type Integrations"
-location: "L28"
+community: "Dev Dependencies & Tooling"
+location: "L52"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Dialog__Mapbox_Type_Integrations
+  - community/Dev_Dependencies__Tooling
 ---
 
 # @types/mapbox-gl
@@ -15,4 +15,4 @@ tags:
 - [[@typesmapbox-gl@3.4.1]] - `declares` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Dialog__Mapbox_Type_Integrations
+#graphify/concept #graphify/EXTRACTED #community/Dev_Dependencies__Tooling

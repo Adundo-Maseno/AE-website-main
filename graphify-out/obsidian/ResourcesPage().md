@@ -1,18 +1,19 @@
 ---
 source_file: "app/[locale]/resources/page.tsx"
 type: "code"
-community: "Resource Library & PDF Previews"
-location: "L185"
+community: "Resources Library & Metadata Layouts"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resource_Library__PDF_Previews
+  - community/Resources_Library__Metadata_Layouts
 ---
 
 # ResourcesPage()
 
 ## Connections
 - [[ResourcesContent()]] - `calls` [EXTRACTED]
-- [[resourcespage.tsx]] - `contains` [EXTRACTED]
+- [[localeresourcespage.tsx]] - `contains` [EXTRACTED]
+- [[getResources()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resource_Library__PDF_Previews
+#graphify/code #graphify/EXTRACTED #community/Resources_Library__Metadata_Layouts

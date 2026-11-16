@@ -26,6 +26,7 @@ export default function PartnerFormModal({
   onSuccess,
   partner,
 }: PartnerFormModalProps) {
+  const isEditing = Boolean(partner?.id)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
@@ -82,8 +83,8 @@ export default function PartnerFormModal({
     }
 
     try {
-      const url = partner ? `/api/admin/partners/${partner.id}` : '/api/admin/partners'
-      const method = partner ? 'PUT' : 'POST'
+      const url = isEditing && partner?.id ? `/api/admin/partners/${partner.id}` : '/api/admin/partners'
+      const method = isEditing && partner?.id ? 'PUT' : 'POST'
       const res = await fetch(url, {
         method,
         headers: { 'Content-Type': 'application/json' },
@@ -160,6 +161,7 @@ export default function PartnerFormModal({
               value={logoUrl}
               onChange={(url) => setLogoUrl(url)}
               label="Select or upload partner logo image"
+              folder="partners"
             />
           </div>
 

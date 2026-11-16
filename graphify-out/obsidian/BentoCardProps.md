@@ -1,12 +1,12 @@
 ---
 source_file: "components/motion/services-bento-grid.tsx"
 type: "code"
-community: "Main Marketing Pages & Views"
-location: "L16"
+community: "About & Services Bento Grid"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Marketing_Pages__Views
+  - community/About__Services_Bento_Grid
 ---
 
 # BentoCardProps
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[services-bento-grid.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Marketing_Pages__Views
+#graphify/code #graphify/EXTRACTED #community/About__Services_Bento_Grid

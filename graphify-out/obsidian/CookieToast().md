@@ -1,12 +1,12 @@
 ---
 source_file: "components/cookie-toast.tsx"
 type: "code"
-community: "Global Layout & Font Typography"
+community: "About & Services Bento Grid"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Global_Layout__Font_Typography
+  - community/About__Services_Bento_Grid
 ---
 
 # CookieToast()
@@ -17,4 +17,4 @@ tags:
 - [[localelayout.tsx]] - `imports` [EXTRACTED]
 - [[cookie-toast.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Global_Layout__Font_Typography
+#graphify/code #graphify/EXTRACTED #community/About__Services_Bento_Grid

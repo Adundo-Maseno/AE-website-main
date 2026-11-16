@@ -1,12 +1,12 @@
 ---
 source_file: "pnpm-workspace.yaml"
 type: "code"
-community: "Package Workspace & Native Builds"
-location: "L2"
+community: "pnpm Build & Workspace Rules"
+location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Package_Workspace__Native_Builds
+  - community/pnpm_Build__Workspace_Rules
 ---
 
 # @parcel/watcher
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[allowBuilds]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Package_Workspace__Native_Builds
+#graphify/code #graphify/EXTRACTED #community/pnpm_Build__Workspace_Rules

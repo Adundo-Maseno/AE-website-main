@@ -1,21 +1,26 @@
 ---
 source_file: "components/motion/why-agri-experience.tsx"
 type: "code"
-community: "Main Marketing Pages & Views"
+community: "Localized Metadata & Home Sections"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Marketing_Pages__Views
+  - community/Localized_Metadata__Home_Sections
 ---
 
 # why-agri-experience.tsx
 
 ## Connections
+- [[PageSectionData]] - `imports` [EXTRACTED]
+- [[WhyAgriCardData]] - `imports` [EXTRACTED]
 - [[WhyAgriExperience()]] - `contains` [EXTRACTED]
-- [[localepage.tsx]] - `imports_from` [EXTRACTED]
+- [[WhyAgriExperienceProps]] - `contains` [EXTRACTED]
 - [[framer-motion]] - `imports_from` [EXTRACTED]
+- [[home-content.tsx]] - `imports_from` [EXTRACTED]
 - [[next-intl]] - `imports_from` [EXTRACTED]
+- [[page-sections-service.ts]] - `imports_from` [EXTRACTED]
 - [[react]] - `imports_from` [EXTRACTED]
+- [[why-agri-service.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Marketing_Pages__Views
+#graphify/code #graphify/EXTRACTED #community/Localized_Metadata__Home_Sections

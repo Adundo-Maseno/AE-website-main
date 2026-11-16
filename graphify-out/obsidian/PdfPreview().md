@@ -1,12 +1,12 @@
 ---
 source_file: "components/pdf-preview.tsx"
 type: "code"
-community: "Resource Library & PDF Previews"
+community: "Footer Settings & PDF Preview"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resource_Library__PDF_Previews
+  - community/Footer_Settings__PDF_Preview
 ---
 
 # PdfPreview()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[pdf-preview.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resource_Library__PDF_Previews
+#graphify/code #graphify/EXTRACTED #community/Footer_Settings__PDF_Preview

@@ -1,12 +1,12 @@
 ---
 source_file: "components/motion/impact-alignment.tsx"
 type: "code"
-community: "Impact Alignment & SDG Accordions"
+community: "Impact Page & SDG Alignment"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Impact_Alignment__SDG_Accordions
+  - community/Impact_Page__SDG_Alignment
 ---
 
 # impact-alignment.tsx
@@ -18,12 +18,12 @@ tags:
 - [[ImpactCard]] - `contains` [EXTRACTED]
 - [[displaySdgs]] - `contains` [EXTRACTED]
 - [[framer-motion]] - `imports_from` [EXTRACTED]
+- [[impact-page-content.tsx]] - `imports_from` [EXTRACTED]
 - [[lucide-react]] - `imports_from` [EXTRACTED]
 - [[next_1]] - `imports_from` [EXTRACTED]
 - [[next-intl]] - `imports_from` [EXTRACTED]
-- [[our-impactpage.tsx]] - `imports_from` [EXTRACTED]
 - [[react]] - `imports_from` [EXTRACTED]
 - [[relevantSdgs]] - `contains` [EXTRACTED]
 - [[sdgData]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Impact_Alignment__SDG_Accordions
+#graphify/code #graphify/EXTRACTED #community/Impact_Page__SDG_Alignment

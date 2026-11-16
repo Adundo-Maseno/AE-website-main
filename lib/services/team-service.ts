@@ -1,5 +1,6 @@
 import { prisma, isDatabaseConnected } from '@/lib/db'
 import { revalidatePath } from 'next/cache'
+import { createSeedGuard, stripManagedFields } from './service-utils'
 
 export interface TeamMemberItem {
   id: string
@@ -124,6 +125,46 @@ export async function getTeamMembers(): Promise<TeamMemberItem[]> {
   return staticTeamMembers
 }
 
+const seedGuard = createSeedGuard(async () => {
+  const count = await prisma.teamMember.count()
+  if (count === 0) {
+    await prisma.teamMember.createMany({
+      data: staticTeamMembers.map((m) => ({
+        name: m.name,
+        roleEn: m.roleEn,
+        roleFr: m.roleFr || null,
+        bioEn: m.bioEn || null,
+        bioFr: m.bioFr || null,
+        image: m.image || null,
+        hoverImage: m.hoverImage || null,
+        order: m.order,
+      })),
+    })
+  }
+})
+
+/**
+ * Hydrates the TeamMember table from static defaults when empty.
+ */
+async function ensureSeeded(): Promise<boolean> {
+  return seedGuard()
+}
+
+async function resolveTeamMemberId(id: string): Promise<string> {
+  if (!id.startsWith('static-')) return id
+  const existing = staticTeamMembers.find((m) => m.id === id)
+  if (!existing) {
+    throw new Error(`Team member not found for static id: ${id}`)
+  }
+  const dbRecord = await prisma.teamMember.findFirst({
+    where: { name: existing.name },
+  })
+  if (!dbRecord) {
+    throw new Error(`Team member "${existing.name}" not found in database`)
+  }
+  return dbRecord.id
+}
+
 export async function createTeamMember(data: {
   name: string
   roleEn: string
@@ -134,6 +175,9 @@ export async function createTeamMember(data: {
   hoverImage?: string
   order?: number
 }): Promise<TeamMemberItem> {
+  const connected = await ensureSeeded()
+  if (!connected) throw new Error('Database is not connected')
+
   const record = await prisma.teamMember.create({
     data: {
       name: data.name,
@@ -166,28 +210,14 @@ export async function updateTeamMember(
     order?: number
   }>
 ): Promise<TeamMemberItem> {
-  let record
+  const connected = await ensureSeeded()
+  if (!connected) throw new Error('Database is not connected')
 
-  if (id.startsWith('static-')) {
-    const existing = staticTeamMembers.find((m) => m.id === id)
-    record = await prisma.teamMember.create({
-      data: {
-        name: data.name ?? existing?.name ?? '',
-        roleEn: data.roleEn ?? existing?.roleEn ?? '',
-        roleFr: data.roleFr !== undefined ? data.roleFr : existing?.roleFr || null,
-        bioEn: data.bioEn !== undefined ? data.bioEn : existing?.bioEn || null,
-        bioFr: data.bioFr !== undefined ? data.bioFr : existing?.bioFr || null,
-        image: data.image !== undefined ? data.image : existing?.image || null,
-        hoverImage: data.hoverImage !== undefined ? data.hoverImage : existing?.hoverImage || null,
-        order: data.order ?? existing?.order ?? 0,
-      },
-    })
-  } else {
-    record = await prisma.teamMember.update({
-      where: { id },
-      data,
-    })
-  }
+  const targetId = await resolveTeamMemberId(id)
+  const record = await prisma.teamMember.update({
+    where: { id: targetId },
+    data: stripManagedFields(data),
+  })
 
   revalidatePath('/[locale]/our-team', 'page')
   revalidatePath('/[locale]', 'layout')
@@ -196,12 +226,12 @@ export async function updateTeamMember(
 }
 
 export async function deleteTeamMember(id: string): Promise<boolean> {
-  if (id.startsWith('static-')) {
-    return true
-  }
+  const connected = await ensureSeeded()
+  if (!connected) throw new Error('Database is not connected')
 
+  const targetId = await resolveTeamMemberId(id)
   await prisma.teamMember.delete({
-    where: { id },
+    where: { id: targetId },
   })
 
   revalidatePath('/[locale]/our-team', 'page')

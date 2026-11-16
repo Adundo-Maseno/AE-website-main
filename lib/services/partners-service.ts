@@ -1,5 +1,6 @@
 import { prisma, isDatabaseConnected } from '@/lib/db'
 import { revalidatePath } from 'next/cache'
+import { createSeedGuard, stripManagedFields } from './service-utils'
 
 export interface PartnerData {
   id: string
@@ -272,29 +273,65 @@ export async function getAllPartnersAdmin(): Promise<PartnerData[]> {
   return staticPartners
 }
 
+const seedGuard = createSeedGuard(async () => {
+  const count = await prisma.partner.count()
+  if (count === 0) {
+    await prisma.partner.createMany({
+      data: staticPartners.map((item) => stripManagedFields(item)),
+    })
+  }
+})
+
+/**
+ * Hydrates the Partner table from static defaults when empty.
+ */
+async function ensureSeeded(): Promise<boolean> {
+  return seedGuard()
+}
+
+async function resolvePartnerId(id: string): Promise<string> {
+  if (!id.startsWith('p-')) return id
+  const staticItem = staticPartners.find((p) => p.id === id)
+  if (!staticItem) {
+    throw new Error(`Partner not found for static id: ${id}`)
+  }
+  const dbRecord = await prisma.partner.findFirst({
+    where: { name: staticItem.name },
+  })
+  if (!dbRecord) {
+    throw new Error(`Partner "${staticItem.name}" not found in database`)
+  }
+  return dbRecord.id
+}
+
 export async function createPartner(data: Omit<PartnerData, 'id'>): Promise<PartnerData> {
-  const connected = await isDatabaseConnected()
+  const connected = await ensureSeeded()
   if (!connected) throw new Error('Database is not connected')
 
-  const record = await prisma.partner.create({ data })
+  const record = await prisma.partner.create({ data: stripManagedFields(data) })
   revalidatePath('/', 'layout')
   return record
 }
 
 export async function updatePartner(id: string, data: Partial<PartnerData>): Promise<PartnerData> {
-  const connected = await isDatabaseConnected()
+  const connected = await ensureSeeded()
   if (!connected) throw new Error('Database is not connected')
 
-  const record = await prisma.partner.update({ where: { id }, data })
+  const targetId = await resolvePartnerId(id)
+  const record = await prisma.partner.update({
+    where: { id: targetId },
+    data: stripManagedFields(data),
+  })
   revalidatePath('/', 'layout')
   return record
 }
 
 export async function deletePartner(id: string): Promise<boolean> {
-  const connected = await isDatabaseConnected()
+  const connected = await ensureSeeded()
   if (!connected) throw new Error('Database is not connected')
 
-  await prisma.partner.delete({ where: { id } })
+  const targetId = await resolvePartnerId(id)
+  await prisma.partner.delete({ where: { id: targetId } })
   revalidatePath('/', 'layout')
   return true
 }

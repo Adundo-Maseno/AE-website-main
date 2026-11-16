@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Build & Lint DevDependencies"
-location: "L64"
+community: "Dev Dependencies & Tooling"
+location: "L65"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Build__Lint_DevDependencies
+  - community/Dev_Dependencies__Tooling
 ---
 
 # typescript
@@ -15,4 +15,4 @@ tags:
 - [[package.json]] - `imports` [EXTRACTED]
 - [[typescript@5.7.3]] - `declares` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Build__Lint_DevDependencies
+#graphify/concept #graphify/EXTRACTED #community/Dev_Dependencies__Tooling

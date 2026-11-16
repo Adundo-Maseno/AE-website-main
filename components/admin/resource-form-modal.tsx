@@ -25,7 +25,7 @@ export default function ResourceFormModal({
   onSuccess,
   resource,
 }: ResourceFormModalProps) {
-  const isEditing = Boolean(resource && !resource.id.startsWith('static-'))
+  const isEditing = Boolean(resource?.id)
 
   const [activeTab, setActiveTab] = useState<'en' | 'fr'>('en')
   const [titleEn, setTitleEn] = useState('')

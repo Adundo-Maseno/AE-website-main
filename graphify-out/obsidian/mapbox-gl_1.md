@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Interactive Map & Country GeoData"
-location: "L39"
+community: "Interactive Impact Map & Services"
+location: "L38"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Interactive_Map__Country_GeoData
+  - community/Interactive_Impact_Map__Services
 ---
 
 # mapbox-gl
@@ -19,4 +19,4 @@ tags:
 - [[mapbox-gl@3.24.0]] - `declares` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Interactive_Map__Country_GeoData
+#graphify/concept #graphify/EXTRACTED #community/Interactive_Impact_Map__Services

@@ -1,12 +1,12 @@
 ---
 source_file: "components/footer.tsx"
 type: "code"
-community: "Global Layout & Font Typography"
-location: "L12"
+community: "Footer Settings & PDF Preview"
+location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Global_Layout__Font_Typography
+  - community/Footer_Settings__PDF_Preview
 ---
 
 # Footer()
@@ -17,4 +17,4 @@ tags:
 - [[localelayout.tsx]] - `imports` [EXTRACTED]
 - [[footer.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Global_Layout__Font_Typography
+#graphify/code #graphify/EXTRACTED #community/Footer_Settings__PDF_Preview

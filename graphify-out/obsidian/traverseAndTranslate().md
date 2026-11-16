@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/auto-translate.js"
 type: "code"
-community: "Automated i18n Translation Script"
+community: "i18n Auto-Translation Script"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Automated_i18n_Translation_Script
+  - community/i18n_Auto-Translation_Script
 ---
 
 # traverseAndTranslate()
@@ -16,4 +16,4 @@ tags:
 - [[translateText()]] - `calls` [EXTRACTED]
 - [[traverseAndTranslate()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Automated_i18n_Translation_Script
+#graphify/code #graphify/EXTRACTED #community/i18n_Auto-Translation_Script

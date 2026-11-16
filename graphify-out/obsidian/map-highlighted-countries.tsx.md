@@ -1,12 +1,12 @@
 ---
 source_file: "components/map/map-highlighted-countries.tsx"
 type: "code"
-community: "Interactive Map & Country GeoData"
+community: "Interactive Impact Map & Services"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Map__Country_GeoData
+  - community/Interactive_Impact_Map__Services
 ---
 
 # map-highlighted-countries.tsx
@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[MapHighlightedCountries()]] - `contains` [EXTRACTED]
 - [[MapHighlightedCountriesProps]] - `contains` [EXTRACTED]
-- [[africa]] - `imports_from` [EXTRACTED]
 - [[interactive-mapbox.tsx]] - `imports_from` [EXTRACTED]
 - [[map-context.tsx]] - `imports_from` [EXTRACTED]
 - [[mapbox-gl]] - `dynamic_import` [EXTRACTED]
@@ -22,4 +21,4 @@ tags:
 - [[regionColors]] - `contains` [EXTRACTED]
 - [[useMap()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Map__Country_GeoData
+#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services

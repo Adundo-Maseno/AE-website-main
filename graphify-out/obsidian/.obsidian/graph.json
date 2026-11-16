@@ -1,304 +1,409 @@
 {
   "colorGroups": [
     {
-      "query": "tag:#community/Interactive_Map__Country_GeoData",
+      "query": "tag:#community/Interactive_Impact_Map__Services",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/Main_Marketing_Pages__Views",
+      "query": "tag:#community/Admin_Media__Content_Modals",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/API_Routes__Email_Pipeline",
+      "query": "tag:#community/Resources_Library__Metadata_Layouts",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/Command_Menu__Map_Search_UI",
+      "query": "tag:#community/Dev_Dependencies__Tooling",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/Build__Lint_DevDependencies",
+      "query": "tag:#community/App_Layouts__Global_Shell",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/Core_Animation__Motion_Libraries",
+      "query": "tag:#community/Map_Search__Dialog_Primitives",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/WebGL_Shaders__Liquid_Glass_Effects",
+      "query": "tag:#community/Runtime_Package_Dependencies",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/Global_Layout__Font_Typography",
+      "query": "tag:#community/Field_Gallery_CMS__Showcase",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/Component__Path_Aliases_Config",
+      "query": "tag:#community/Our_Work_Pillar_Pages",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/TypeScript_Compilation_Settings",
+      "query": "tag:#community/Our_Work_Client_Views",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/Package_Workspace__Native_Builds",
+      "query": "tag:#community/Team__Page_Sections_API",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/Case_Studies__Technical_Layouts",
+      "query": "tag:#community/Liquid_Glass_Shader_Effects",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/Plant_Gallery__Interactive_Visuals",
+      "query": "tag:#community/About__Services_Bento_Grid",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/Domain_Architecture__System_Goals",
+      "query": "tag:#community/Shadcn_UI_Registry_Config",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/Resource_Library__PDF_Previews",
+      "query": "tag:#community/Protected_Admin_CRUD_Routes",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/Impact_Alignment__SDG_Accordions",
+      "query": "tag:#community/TypeScript_Compiler_Configuration",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/NPM_Scripts__Build_Commands",
+      "query": "tag:#community/Admin_Dashboard__DB_Seeding",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/Automated_i18n_Translation_Script",
+      "query": "tag:#community/Partners_Service__API_Routes",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/Navigation_Header__Locale_Switcher",
+      "query": "tag:#community/Localized_Metadata__Home_Sections",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/Client__Partner_Logo_Showcase",
+      "query": "tag:#community/pnpm_Build__Workspace_Rules",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/Dialog__Mapbox_Type_Integrations",
+      "query": "tag:#community/Admin_Session__JWT_Auth",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/ESLint__Nextjs_Linter_Config",
+      "query": "tag:#community/Contact__Email_Templates",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/Nextjs_App_Config__i18n_Wrapper",
+      "query": "tag:#community/Beliefs__Why-Agri_Admin_UI",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/Nextjs_Auto-generated_Type_Declarations",
+      "query": "tag:#community/Beliefs_Service__API_Routes",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/Package_Manager_Engine_Constraints",
+      "query": "tag:#community/Expertise_Pillars_Service__API",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/Package_Dependency_Overrides",
+      "query": "tag:#community/Insights_Service__API_Routes",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/Package_Resolution_Overrides",
+      "query": "tag:#community/Why-Agri_Service__API_Routes",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/About_Page_Metadata_Layout",
+      "query": "tag:#community/Header_Navigation__i18n_Routing",
       "color": {
         "a": 1,
         "rgb": 16752039
+      }
+    },
+    {
+      "query": "tag:#community/Footer_Settings__PDF_Preview",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/Media_Upload__Gallery_Scanning",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/Agri_Experience_Architecture_Docs",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/Email_Preview_CLI_Script",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/Impact_Page__SDG_Alignment",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/Package_Build__Dev_Scripts",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/Home_Page_Data_Hydration",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/i18n_Auto-Translation_Script",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/Admin_Expertise_Management_UI",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
+      }
+    },
+    {
+      "query": "tag:#community/Admin_Insights_Management_UI",
+      "color": {
+        "a": 1,
+        "rgb": 16752039
+      }
+    },
+    {
+      "query": "tag:#community/GSAP_Scroll_Accordion_Motion",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/Core_UI__3D_Libraries",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/Package_Version_Overrides",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/Package_Dependency_Resolutions",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/Public_Insights_Page__Content",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/ESLint_Nextjs_Configuration",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/Nextjs__Intl_Configuration",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/Nextjs_Type_Declarations",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/Package_Manager_Engine_Spec",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
       }
     },
     {
       "query": "tag:#community/Contact_Page_Metadata_Layout",
       "color": {
         "a": 1,
-        "rgb": 10253663
+        "rgb": 16752039
       }
     },
     {
       "query": "tag:#community/Insights_Page_Metadata_Layout",
       "color": {
         "a": 1,
-        "rgb": 12234924
+        "rgb": 10253663
       }
     },
     {
       "query": "tag:#community/Newsletter_Page_Metadata_Layout",
       "color": {
         "a": 1,
-        "rgb": 5142951
-      }
-    },
-    {
-      "query": "tag:#community/Impact_Page_Metadata_Layout",
-      "color": {
-        "a": 1,
-        "rgb": 15896107
-      }
-    },
-    {
-      "query": "tag:#community/Team_Page_Metadata_Layout",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
+        "rgb": 12234924
       }
     },
     {
       "query": "tag:#community/Capacity_Building_Metadata_Layout",
       "color": {
         "a": 1,
-        "rgb": 7780274
-      }
-    },
-    {
-      "query": "tag:#community/Client_Advisory_Metadata_Layout",
-      "color": {
-        "a": 1,
-        "rgb": 5873999
+        "rgb": 5142951
       }
     },
     {
       "query": "tag:#community/Digital_Platforms_Metadata_Layout",
       "color": {
         "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/Stakeholder_Convenings_Metadata_Layout",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/PostCSS_Tailwind_Configuration",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/Image_Optimization_Shell_Script",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/Radix_Dialog_Package_Dependency",
+      "color": {
+        "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/Our_Work_Metadata_Layout",
+      "query": "tag:#community/React_Three_Fiber_Dependency",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/Project_Implementation_Metadata_Layout",
+      "query": "tag:#community/Service_Worker_Registration",
       "color": {
         "a": 1,
         "rgb": 16752039
-      }
-    },
-    {
-      "query": "tag:#community/PostCSS__Tailwind_Plugins",
-      "color": {
-        "a": 1,
-        "rgb": 10253663
-      }
-    },
-    {
-      "query": "tag:#community/Asset_Optimization_Shell_Scripts",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/Command_Dialog_Package_Dependency",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
-      }
-    },
-    {
-      "query": "tag:#community/Motion_Library_Package_Dependency",
-      "color": {
-        "a": 1,
-        "rgb": 15896107
-      }
-    },
-    {
-      "query": "tag:#community/Popover_UI_Package_Dependency",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
       }
     }
   ]

@@ -23,6 +23,7 @@ import {
 import { Link } from '@/i18n/routing'
 import { useTranslations, useLocale } from 'next-intl'
 import { getCountrySeeds, createGenericProjects } from './country-data'
+import type { CountryItem } from '@/lib/services/map-service'
 
 const InteractiveMapbox = dynamic(
   () => import('./map/interactive-mapbox').then((mod) => mod.InteractiveMapbox),
@@ -624,11 +625,144 @@ const createGenericProjects = (country: DetailedCountryRecord): CountryProject[]
 const buildCountryProjectsOriginal = (country: DetailedCountryRecord): CountryProject[] => country.projectBlueprints ?? createGenericProjects(country)
 */
 
-export default function InteractiveMap() {
+function parseCountryList(raw?: string | null, fallback: string[] = []): string[] {
+  if (!raw) return fallback
+  const trimmed = raw.trim()
+  if (!trimmed) return fallback
+  try {
+    const parsed = JSON.parse(trimmed)
+    if (Array.isArray(parsed)) {
+      return parsed.map((item) => String(item).trim()).filter(Boolean)
+    }
+  } catch {
+    // Fallback to comma-separated parsing
+  }
+  const items = trimmed
+    .split(',')
+    .map((s) => s.trim())
+    .filter(Boolean)
+  return items.length > 0 ? items : fallback
+}
+
+interface InteractiveMapProps {
+  cmsCountries?: CountryItem[]
+  heroTitle?: string
+  heroSubtitle?: string
+}
+
+export default function InteractiveMap({
+  cmsCountries,
+  heroTitle,
+  heroSubtitle,
+}: InteractiveMapProps = {}) {
   const t = useTranslations('InteractiveMap')
   const locale = useLocale()
-  
-  const countrySeeds = useMemo(() => getCountrySeeds(locale), [locale])
+
+  const countrySeeds = useMemo(() => {
+    const baseSeeds = getCountrySeeds(locale)
+    const englishSeeds = locale === 'fr' ? getCountrySeeds('en') : baseSeeds
+    if (!cmsCountries || cmsCountries.length === 0) {
+      return baseSeeds
+    }
+
+    const matchedCmsIds = new Set<string>()
+    const mergedSeeds = baseSeeds.map((base) => {
+      const enBase = englishSeeds.find((item) => item.code === base.code)
+      const cms = cmsCountries.find(
+        (item) =>
+          item.countryCode?.toUpperCase() === base.code.toUpperCase() ||
+          item.countryName?.toLowerCase() === base.name.toLowerCase() ||
+          (enBase && item.countryName?.toLowerCase() === enBase.name.toLowerCase()) ||
+          (base.geoName && item.countryName?.toLowerCase() === base.geoName.toLowerCase())
+      )
+      if (!cms) return base
+      matchedCmsIds.add(cms.id)
+
+      const projects =
+        typeof cms.activeProjectsCount === 'number' ? cms.activeProjectsCount : base.projects
+      const engagement =
+        typeof cms.engagement === 'number' ? cms.engagement : base.engagement
+
+      let overview = base.overview
+      if (locale === 'fr') {
+        if (cms.overviewFr) {
+          overview = cms.overviewFr
+        } else if (cms.overviewEn && enBase && cms.overviewEn !== enBase.overview) {
+          overview = cms.overviewEn
+        }
+      } else if (cms.overviewEn) {
+        overview = cms.overviewEn
+      }
+
+      const workDoneParsed = parseCountryList(cms.workDone, base.workDone)
+      const workDone =
+        locale === 'fr' &&
+        enBase &&
+        workDoneParsed.join('|') === enBase.workDone.join('|')
+          ? base.workDone
+          : workDoneParsed.length > 0
+            ? workDoneParsed
+            : base.workDone
+
+      const focus = parseCountryList(cms.focus, base.focus)
+      const impact = parseCountryList(cms.impact, base.impact)
+      const locations = parseCountryList(cms.locations, base.locations)
+
+      const stats = base.stats.map((stat, idx) => {
+        if (idx === 0) return { ...stat, value: String(projects) }
+        if (idx === 1 && /reach|engag|train|touch|person/i.test(stat.label)) {
+          return { ...stat, value: formatFarmers(engagement) }
+        }
+        return stat
+      })
+
+      return {
+        ...base,
+        name: locale === 'fr' ? base.name : cms.countryName || base.name,
+        region: cms.region || base.region,
+        projects,
+        engagement,
+        overview,
+        workDone,
+        focus,
+        impact,
+        locations,
+        stats,
+      }
+    })
+
+    for (const cms of cmsCountries) {
+      if (matchedCmsIds.has(cms.id)) continue
+      const projects = cms.activeProjectsCount ?? 0
+      const engagement = cms.engagement ?? 0
+      const overview =
+        (locale === 'fr' ? cms.overviewFr || cms.overviewEn : cms.overviewEn) || ''
+      mergedSeeds.push({
+        name: cms.countryName,
+        code: cms.countryCode.toUpperCase(),
+        region: cms.region || 'East Africa',
+        projects,
+        engagement,
+        overview,
+        workDone: parseCountryList(cms.workDone, []),
+        focus: parseCountryList(cms.focus, []),
+        impact: parseCountryList(cms.impact, []),
+        locations: parseCountryList(cms.locations, []),
+        stats: [
+          {
+            label: locale === 'fr' ? 'Projets actifs' : 'Active projects',
+            value: String(projects),
+          },
+          {
+            label: locale === 'fr' ? 'Engagement' : 'Engagement',
+            value: formatFarmers(engagement),
+          },
+        ],
+      })
+    }
+
+    return mergedSeeds
+  }, [locale, cmsCountries])
   const countriesData = useMemo(() => Object.fromEntries(countrySeeds.map((c) => [c.name, c])) as Record<string, DetailedCountryRecord>, [countrySeeds])
   const countriesByGeoName = useMemo(() => Object.fromEntries(countrySeeds.map((c) => [c.geoName ?? c.name, c])) as Record<string, DetailedCountryRecord>, [countrySeeds])
   
@@ -683,7 +817,9 @@ export default function InteractiveMap() {
       return
     }
     
-    const country = Object.values(countriesData).find(c => c.code === countryCode)
+    const country = Object.values(countriesData).find(
+      (c) => c.code.toUpperCase() === countryCode.toUpperCase()
+    )
     if (country) {
       setSelectedCountry(country)
       setSelectedProjectIndex(null)
@@ -695,8 +831,26 @@ export default function InteractiveMap() {
     <section className="w-full relative bg-primary-ivory h-[100vh] h-[100dvh] min-h-[550px] md:min-h-[750px] lg:min-h-[850px] flex flex-col overflow-hidden">
       {/* Main Interactive Workspace — full bleed, edge to edge */}
       <div className="relative flex-1 flex flex-col w-full h-full overflow-hidden" ref={containerRef}>
-        
-
+        {(heroTitle || heroSubtitle) && (
+          <div
+            className={`absolute top-4 left-4 right-4 sm:right-auto sm:top-6 sm:left-6 z-20 pointer-events-none max-w-md transition-opacity duration-300 ${
+              selectedCountry ? 'opacity-0' : 'opacity-100'
+            }`}
+          >
+            <div className="bg-white/80 backdrop-blur-md border border-deep-forest/10 rounded-2xl px-4 py-3 sm:px-5 sm:py-4 shadow-sm">
+              {heroTitle && (
+                <h1 className="font-serif font-bold text-deep-forest text-xl sm:text-2xl lg:text-3xl tracking-tight leading-tight">
+                  {heroTitle}
+                </h1>
+              )}
+              {heroSubtitle && (
+                <p className="text-xs sm:text-sm text-charcoal/80 leading-relaxed mt-1">
+                  {heroSubtitle}
+                </p>
+              )}
+            </div>
+          </div>
+        )}
 
         {/* Map Canvas - scales with flex-1 */}
         <div className="flex-1 relative h-full w-full transition-all duration-500 ease-in-out">
@@ -787,6 +941,9 @@ export default function InteractiveMap() {
                     <img 
                       src={`/flags/${selectedCountry.code.toLowerCase()}.png`}
                       alt={`${selectedCountry.code} flag`} 
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none'
+                      }}
                       className="w-8 h-8 lg:w-10 lg:h-10 object-contain shrink-0 drop-shadow-sm"
                     />
                     {selectedCountry.name}
@@ -806,16 +963,44 @@ export default function InteractiveMap() {
 
               {/* Scrollable Content */}
               <div className="flex-1 overflow-y-auto px-6 pt-5 pb-7 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-                <div className="space-y-6">
+                <div className="space-y-4">
+
+                  {/* Key Metrics */}
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="rounded-xl border border-white/10 bg-white/5 p-3">
+                      <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-white/60">
+                        <Briefcase size={12} className="text-accent-gold" />
+                        {locale === 'fr' ? 'Projets actifs' : 'Active Projects'}
+                      </div>
+                      <div className="mt-1 text-xl font-serif font-bold text-white">
+                        {selectedCountry.projects}
+                      </div>
+                    </div>
+                    <div className="rounded-xl border border-white/10 bg-white/5 p-3">
+                      <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-white/60">
+                        <Users size={12} className="text-accent-gold" />
+                        {locale === 'fr' ? 'Agriculteurs touchés' : 'Farmers Reached'}
+                      </div>
+                      <div className="mt-1 text-xl font-serif font-bold text-white">
+                        {formatFarmers(selectedCountry.engagement)}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Overview */}
+                  {selectedCountry.overview && (
+                    <p className="text-sm leading-relaxed text-white/85">
+                      {selectedCountry.overview}
+                    </p>
+                  )}
 
                   {/* Work Done Details */}
-                  <div className="pt-2">
-                    {/* Work Done Card */}
+                  {(selectedCountry.workDone || []).length > 0 && (
                     <div className="rounded-xl border border-white/10 bg-white/5 p-4 shadow-sm">
-                      <div className="text-sm font-bold uppercase tracking-widest text-accent-gold/90 mb-4 flex items-center gap-2">
+                      <div className="text-sm font-bold uppercase tracking-widest text-accent-gold/90 mb-3 flex items-center gap-2">
                         <Target size={16} /> {t('work_done') || 'Work Done'}
                       </div>
-                      <ul className="space-y-3">
+                      <ul className="space-y-2.5">
                         {(selectedCountry.workDone || []).map((work, i) => (
                           <li key={`work-${i}`} className="flex items-start gap-3 text-sm leading-relaxed text-white/80">
                             <div className="w-1.5 h-1.5 rounded-full bg-accent-gold/40 mt-1.5 shrink-0" />
@@ -824,7 +1009,63 @@ export default function InteractiveMap() {
                         ))}
                       </ul>
                     </div>
-                  </div>
+                  )}
+
+                  {/* Focus Areas */}
+                  {selectedCountry.focus && selectedCountry.focus.length > 0 && (
+                    <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                      <div className="text-xs font-bold uppercase tracking-widest text-accent-gold/90 mb-2.5 flex items-center gap-2">
+                        <Sparkles size={14} /> {locale === 'fr' ? 'Domaines clés' : 'Focus Areas'}
+                      </div>
+                      <div className="flex flex-wrap gap-1.5">
+                        {selectedCountry.focus.map((item, i) => (
+                          <span
+                            key={`focus-${i}`}
+                            className="rounded-full bg-white/10 border border-white/10 px-2.5 py-1 text-xs text-white/85"
+                          >
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Key Impacts */}
+                  {selectedCountry.impact && selectedCountry.impact.length > 0 && (
+                    <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                      <div className="text-xs font-bold uppercase tracking-widest text-accent-gold/90 mb-2.5 flex items-center gap-2">
+                        <TrendingUp size={14} /> {locale === 'fr' ? 'Impacts clés' : 'Key Impacts'}
+                      </div>
+                      <ul className="space-y-2">
+                        {selectedCountry.impact.map((item, i) => (
+                          <li key={`impact-${i}`} className="flex items-start gap-2.5 text-sm leading-relaxed text-white/80">
+                            <div className="w-1.5 h-1.5 rounded-full bg-accent-gold/40 mt-1.5 shrink-0" />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* Key Locations */}
+                  {selectedCountry.locations && selectedCountry.locations.length > 0 && (
+                    <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                      <div className="text-xs font-bold uppercase tracking-widest text-accent-gold/90 mb-2.5 flex items-center gap-2">
+                        <MapPin size={14} /> {locale === 'fr' ? 'Pôles clés' : 'Key Locations'}
+                      </div>
+                      <div className="flex flex-wrap gap-1.5">
+                        {selectedCountry.locations.map((loc, i) => (
+                          <span
+                            key={`loc-${i}`}
+                            className="inline-flex items-center gap-1 rounded-full bg-white/10 border border-white/10 px-2.5 py-1 text-xs text-white/85"
+                          >
+                            <MapPin size={10} className="text-accent-gold/80" />
+                            {loc}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
 
                 </div>
               </div>

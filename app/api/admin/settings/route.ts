@@ -1,7 +1,13 @@
 import { NextResponse } from 'next/server'
+import { getSession } from '@/lib/auth'
 import { getSiteSettings, updateSiteSettings } from '@/lib/services/settings-service'
 
 export async function GET() {
+  const session = await getSession()
+  if (!session) {
+    return NextResponse.json({ success: false, error: 'Unauthorized' }, { status: 401 })
+  }
+
   try {
     const settings = await getSiteSettings()
     return NextResponse.json({ success: true, settings })
@@ -11,6 +17,11 @@ export async function GET() {
 }
 
 export async function PUT(request: Request) {
+  const session = await getSession()
+  if (!session) {
+    return NextResponse.json({ success: false, error: 'Unauthorized' }, { status: 401 })
+  }
+
   try {
     const body = await request.json()
     const updated = await updateSiteSettings(body)

@@ -3,6 +3,11 @@ import { getSession } from '@/lib/auth'
 import { getInsights, createInsight } from '@/lib/services/insights-service'
 
 export async function GET() {
+  const session = await getSession()
+  if (!session) {
+    return NextResponse.json({ success: false, error: 'Unauthorized' }, { status: 401 })
+  }
+
   try {
     const insights = await getInsights()
     return NextResponse.json({ insights })

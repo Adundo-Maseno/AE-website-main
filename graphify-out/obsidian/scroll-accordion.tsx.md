@@ -1,12 +1,12 @@
 ---
 source_file: "components/motion/scroll-accordion.tsx"
 type: "code"
-community: "Main Marketing Pages & Views"
+community: "GSAP Scroll Accordion Motion"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Marketing_Pages__Views
+  - community/GSAP_Scroll_Accordion_Motion
 ---
 
 # scroll-accordion.tsx
@@ -17,7 +17,7 @@ tags:
 - [[MobileFallbackAccordion()]] - `contains` [EXTRACTED]
 - [[RollingText()]] - `imports` [EXTRACTED]
 - [[ScrollAccordion()]] - `contains` [EXTRACTED]
-- [[aboutpage.tsx]] - `imports_from` [EXTRACTED]
+- [[about-content.tsx]] - `imports_from` [EXTRACTED]
 - [[cn()]] - `imports` [EXTRACTED]
 - [[framer-motion]] - `imports_from` [EXTRACTED]
 - [[gsap]] - `imports_from` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[rolling-text.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Marketing_Pages__Views
+#graphify/code #graphify/EXTRACTED #community/GSAP_Scroll_Accordion_Motion

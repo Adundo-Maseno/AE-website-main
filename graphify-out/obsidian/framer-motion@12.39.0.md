@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Core Animation & Motion Libraries"
-location: "L36"
+community: "Runtime Package Dependencies"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Core_Animation__Motion_Libraries
+  - community/Runtime_Package_Dependencies
 ---
 
 # framer-motion@^12.39.0
@@ -15,4 +15,4 @@ tags:
 - [[dependencies]] - `contains` [EXTRACTED]
 - [[framer-motion]] - `declares` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Core_Animation__Motion_Libraries
+#graphify/code #graphify/EXTRACTED #community/Runtime_Package_Dependencies

@@ -1,21 +1,21 @@
 ---
 source_file: "lib/email.ts"
 type: "code"
-community: "API Routes & Email Pipeline"
+community: "Contact & Email Templates"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Routes__Email_Pipeline
+  - community/Contact__Email_Templates
 ---
 
 # generateRespondentAcknowledgmentEmail()
 
 ## Connections
-- [[GET()]] - `calls` [EXTRACTED]
+- [[GET()_15]] - `calls` [EXTRACTED]
 - [[email-previewroute.ts]] - `imports` [EXTRACTED]
 - [[email.ts]] - `contains` [EXTRACTED]
 - [[escapeHtml()]] - `calls` [EXTRACTED]
 - [[sendContactEmails()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Routes__Email_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Contact__Email_Templates

@@ -1,9 +1,9 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
-import Image from 'next/image'
-import { X, Globe, Briefcase, Calendar, Building, Hash, Upload, Image as ImageIcon, Link as LinkIcon, Trash2 } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { X, Globe, Briefcase, Calendar, Building, Hash, Link as LinkIcon } from 'lucide-react'
 import { ProjectItem } from '@/lib/services/projects-service'
+import ImageUploader from './image-uploader'
 
 interface ProjectFormModalProps {
   isOpen: boolean
@@ -27,10 +27,10 @@ export default function ProjectFormModal({
   onSuccess,
   project,
 }: ProjectFormModalProps) {
+  const isEditing = Boolean(project?.id)
   const [tab, setTab] = useState<'en' | 'fr'>('en')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const [uploadingImage, setUploadingImage] = useState(false)
 
   const [titleEn, setTitleEn] = useState('')
   const [titleFr, setTitleFr] = useState('')
@@ -42,8 +42,6 @@ export default function ProjectFormModal({
   const [imageUrl, setImageUrl] = useState('')
   const [link, setLink] = useState('')
   const [order, setOrder] = useState<number>(0)
-
-  const fileInputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     if (project) {
@@ -74,39 +72,6 @@ export default function ProjectFormModal({
 
   if (!isOpen) return null
 
-  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0]
-    if (!file) return
-
-    setUploadingImage(true)
-    setError(null)
-
-    try {
-      const formData = new FormData()
-      formData.append('file', file)
-      formData.append('folder', 'projects')
-
-      const res = await fetch('/api/admin/upload', {
-        method: 'POST',
-        body: formData,
-      })
-
-      const data = await res.json()
-      if (!res.ok || !data.success) {
-        throw new Error(data.error || 'Upload failed')
-      }
-
-      setImageUrl(data.url)
-    } catch (err: any) {
-      setError(err.message || 'Image upload failed')
-    } finally {
-      setUploadingImage(false)
-      if (fileInputRef.current) {
-        fileInputRef.current.value = ''
-      }
-    }
-  }
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setError(null)
@@ -136,11 +101,10 @@ export default function ProjectFormModal({
     }
 
     try {
-      const url =
-        project?.id && !project.id.startsWith('static-')
-          ? `/api/admin/projects/${project.id}`
-          : '/api/admin/projects'
-      const method = project?.id && !project.id.startsWith('static-') ? 'PUT' : 'POST'
+      const url = isEditing && project?.id
+        ? `/api/admin/projects/${project.id}`
+        : '/api/admin/projects'
+      const method = isEditing && project?.id ? 'PUT' : 'POST'
 
       const res = await fetch(url, {
         method,
@@ -268,63 +232,12 @@ export default function ProjectFormModal({
               </div>
 
               {/* Featured Case Study Image Upload */}
-              <div>
-                <label className="block text-xs font-bold text-deep-forest mb-1 flex items-center gap-1">
-                  <ImageIcon size={12} /> Case Study Featured Image / Photography
-                </label>
-                <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
-                  <div className="flex-1 w-full relative">
-                    <input
-                      type="text"
-                      value={imageUrl}
-                      onChange={(e) => setImageUrl(e.target.value)}
-                      placeholder="/uploads/projects/... or /pexels-equalstock-27722065.jpg"
-                      className="w-full px-3.5 py-2 rounded-xl border border-black/15 focus:border-deep-forest focus:ring-1 focus:ring-deep-forest/20 outline-none text-xs"
-                    />
-                  </div>
-
-                  <input
-                    type="file"
-                    ref={fileInputRef}
-                    onChange={handleFileUpload}
-                    accept="image/jpeg,image/png,image/webp,image/avif"
-                    className="hidden"
-                  />
-
-                  <button
-                    type="button"
-                    onClick={() => fileInputRef.current?.click()}
-                    disabled={uploadingImage}
-                    className="px-3.5 py-2 rounded-xl bg-deep-forest/10 hover:bg-deep-forest/20 text-deep-forest text-xs font-bold flex items-center gap-1.5 transition-colors cursor-pointer shrink-0 disabled:opacity-50"
-                  >
-                    <Upload size={13} />
-                    <span>{uploadingImage ? 'Uploading...' : 'Upload Photo'}</span>
-                  </button>
-
-                  {imageUrl && (
-                    <button
-                      type="button"
-                      onClick={() => setImageUrl('')}
-                      className="p-2 text-red-600 hover:bg-red-50 rounded-xl transition-colors cursor-pointer"
-                      title="Clear image"
-                    >
-                      <Trash2 size={14} />
-                    </button>
-                  )}
-                </div>
-
-                {imageUrl && (
-                  <div className="mt-2.5 relative w-28 h-18 rounded-xl overflow-hidden border border-black/10 bg-[#FAF9F5]">
-                    <Image
-                      src={imageUrl}
-                      alt="Project preview"
-                      fill
-                      className="object-cover"
-                      unoptimized
-                    />
-                  </div>
-                )}
-              </div>
+              <ImageUploader
+                value={imageUrl}
+                onChange={setImageUrl}
+                label="Case Study Featured Image / Photography"
+                folder="projects"
+              />
 
               {/* External Link */}
               <div>

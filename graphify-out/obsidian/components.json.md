@@ -1,12 +1,12 @@
 ---
 source_file: "components.json"
 type: "code"
-community: "Component & Path Aliases Config"
+community: "Shadcn UI Registry Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Component__Path_Aliases_Config
+  - community/Shadcn_UI_Registry_Config
 ---
 
 # components.json
@@ -21,4 +21,4 @@ tags:
 - [[tailwind]] - `contains` [EXTRACTED]
 - [[tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Component__Path_Aliases_Config
+#graphify/code #graphify/EXTRACTED #community/Shadcn_UI_Registry_Config

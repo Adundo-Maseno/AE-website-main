@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Plant Gallery & Interactive Visuals"
-location: "L25"
+community: "Runtime Package Dependencies"
+location: "L28"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Plant_Gallery__Interactive_Visuals
+  - community/Runtime_Package_Dependencies
 ---
 
 # @react-three/drei
@@ -16,4 +16,4 @@ tags:
 - [[office-plants-gallery.tsx]] - `imports_from` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Plant_Gallery__Interactive_Visuals
+#graphify/concept #graphify/EXTRACTED #community/Runtime_Package_Dependencies

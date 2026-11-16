@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Core Animation & Motion Libraries"
-location: "L42"
+community: "Runtime Package Dependencies"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Core_Animation__Motion_Libraries
+  - community/Runtime_Package_Dependencies
 ---
 
 # next-intl@^4.13.2
@@ -15,4 +15,4 @@ tags:
 - [[dependencies]] - `contains` [EXTRACTED]
 - [[next-intl]] - `declares` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Core_Animation__Motion_Libraries
+#graphify/code #graphify/EXTRACTED #community/Runtime_Package_Dependencies

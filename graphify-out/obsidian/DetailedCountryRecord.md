@@ -1,12 +1,12 @@
 ---
-source_file: "components/interactive-map.tsx"
+source_file: "components/map/map-types.ts"
 type: "code"
-community: "Interactive Map & Country GeoData"
-location: "L65"
+community: "Interactive Impact Map & Services"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Map__Country_GeoData
+  - community/Interactive_Impact_Map__Services
 ---
 
 # DetailedCountryRecord
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[CountryRecord]] - `inherits` [EXTRACTED]
 - [[country-data.ts]] - `imports` [EXTRACTED]
-- [[interactive-map.tsx]] - `contains` [EXTRACTED]
+- [[interactive-map.tsx]] - `imports` [EXTRACTED]
+- [[map-types.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Map__Country_GeoData
+#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services

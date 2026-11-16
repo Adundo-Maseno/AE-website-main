@@ -1,19 +1,19 @@
 ---
 source_file: "components/motion/why-agri-experience.tsx"
 type: "code"
-community: "Main Marketing Pages & Views"
-location: "L7"
+community: "Localized Metadata & Home Sections"
+location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Marketing_Pages__Views
+  - community/Localized_Metadata__Home_Sections
 ---
 
 # WhyAgriExperience()
 
 ## Connections
-- [[Home()]] - `calls` [EXTRACTED]
-- [[localepage.tsx]] - `imports` [EXTRACTED]
+- [[HomeContent()]] - `calls` [EXTRACTED]
+- [[home-content.tsx]] - `imports` [EXTRACTED]
 - [[why-agri-experience.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Marketing_Pages__Views
+#graphify/code #graphify/EXTRACTED #community/Localized_Metadata__Home_Sections

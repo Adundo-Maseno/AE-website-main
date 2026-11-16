@@ -1,5 +1,6 @@
 import { prisma, isDatabaseConnected } from '@/lib/db'
 import { revalidatePath } from 'next/cache'
+import { createSeedGuard, stripManagedFields } from './service-utils'
 
 export interface BeliefData {
   id: string
@@ -87,29 +88,65 @@ export async function getAllBeliefsAdmin(): Promise<BeliefData[]> {
   return staticBeliefs
 }
 
+const seedGuard = createSeedGuard(async () => {
+  const count = await prisma.coreBelief.count()
+  if (count === 0) {
+    await prisma.coreBelief.createMany({
+      data: staticBeliefs.map((item) => stripManagedFields(item)),
+    })
+  }
+})
+
+/**
+ * Hydrates the CoreBelief table from static defaults when empty.
+ */
+async function ensureSeeded(): Promise<boolean> {
+  return seedGuard()
+}
+
+async function resolveBeliefId(id: string): Promise<string> {
+  if (!id.startsWith('b-')) return id
+  const staticItem = staticBeliefs.find((b) => b.id === id)
+  if (!staticItem) {
+    throw new Error(`Belief not found for static id: ${id}`)
+  }
+  const dbRecord =
+    (await prisma.coreBelief.findFirst({ where: { titleEn: staticItem.titleEn } })) ??
+    (await prisma.coreBelief.findFirst({ where: { order: staticItem.order } }))
+  if (!dbRecord) {
+    throw new Error(`Belief "${staticItem.titleEn}" not found in database`)
+  }
+  return dbRecord.id
+}
+
 export async function createBelief(data: Omit<BeliefData, 'id'>): Promise<BeliefData> {
-  const connected = await isDatabaseConnected()
+  const connected = await ensureSeeded()
   if (!connected) throw new Error('Database is not connected')
 
-  const record = await prisma.coreBelief.create({ data })
+  const record = await prisma.coreBelief.create({ data: stripManagedFields(data) })
   revalidatePath('/', 'layout')
   return record
 }
 
 export async function updateBelief(id: string, data: Partial<BeliefData>): Promise<BeliefData> {
-  const connected = await isDatabaseConnected()
+  const connected = await ensureSeeded()
   if (!connected) throw new Error('Database is not connected')
 
-  const record = await prisma.coreBelief.update({ where: { id }, data })
+  const targetId = await resolveBeliefId(id)
+  const record = await prisma.coreBelief.update({
+    where: { id: targetId },
+    data: stripManagedFields(data),
+  })
   revalidatePath('/', 'layout')
   return record
 }
 
 export async function deleteBelief(id: string): Promise<boolean> {
-  const connected = await isDatabaseConnected()
+  const connected = await ensureSeeded()
   if (!connected) throw new Error('Database is not connected')
 
-  await prisma.coreBelief.delete({ where: { id } })
+  const targetId = await resolveBeliefId(id)
+  await prisma.coreBelief.delete({ where: { id: targetId } })
   revalidatePath('/', 'layout')
   return true
 }

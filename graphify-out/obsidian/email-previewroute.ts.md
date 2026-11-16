@@ -1,19 +1,19 @@
 ---
 source_file: "app/api/email-preview/route.ts"
 type: "code"
-community: "API Routes & Email Pipeline"
+community: "Contact & Email Templates"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Routes__Email_Pipeline
+  - community/Contact__Email_Templates
 ---
 
 # email-preview/route.ts
 
 ## Connections
 - [[ContactSubmission]] - `imports` [EXTRACTED]
-- [[GET()]] - `contains` [EXTRACTED]
+- [[GET()_15]] - `contains` [EXTRACTED]
 - [[email.ts]] - `imports_from` [EXTRACTED]
 - [[generateRespondentAcknowledgmentEmail()]] - `imports` [EXTRACTED]
 - [[generateTeamNotificationEmail()]] - `imports` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[sampleSubmissionEn]] - `contains` [EXTRACTED]
 - [[sampleSubmissionFr]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Routes__Email_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Contact__Email_Templates

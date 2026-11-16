@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Package Dependency Overrides"
-location: "L72"
+community: "Package Version Overrides"
+location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Package_Dependency_Overrides
+  - community/Package_Version_Overrides
 ---
 
 # brace-expansion
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[overrides]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Package_Dependency_Overrides
+#graphify/code #graphify/EXTRACTED #community/Package_Version_Overrides

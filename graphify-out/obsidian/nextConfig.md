@@ -1,12 +1,12 @@
 ---
 source_file: "next.config.mjs"
 type: "code"
-community: "Next.js App Config & i18n Wrapper"
+community: "Next.js & Intl Configuration"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Nextjs_App_Config__i18n_Wrapper
+  - community/Nextjs__Intl_Configuration
 ---
 
 # nextConfig
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[next.config.mjs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Nextjs_App_Config__i18n_Wrapper
+#graphify/code #graphify/EXTRACTED #community/Nextjs__Intl_Configuration

@@ -1,12 +1,12 @@
 ---
 source_file: "components/cookie-toast.tsx"
 type: "code"
-community: "Main Marketing Pages & Views"
+community: "About & Services Bento Grid"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Marketing_Pages__Views
+  - community/About__Services_Bento_Grid
 ---
 
 # cookie-toast.tsx
@@ -21,4 +21,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[routing.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Marketing_Pages__Views
+#graphify/code #graphify/EXTRACTED #community/About__Services_Bento_Grid

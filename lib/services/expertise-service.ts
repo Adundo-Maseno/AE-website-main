@@ -1,5 +1,6 @@
 import { prisma, isDatabaseConnected } from '@/lib/db'
 import { revalidatePath } from 'next/cache'
+import { createSeedGuard, stripManagedFields } from './service-utils'
 
 export interface ExpertisePillarData {
   id: string
@@ -51,7 +52,7 @@ export const staticExpertisePillars: ExpertisePillarData[] = [
     titleFr: 'Conseil stratégique, suivi, évaluation et apprentissage (MEL)',
     descEn: 'Conducting thematic studies, assessments, feasibility analyses, and strategic planning to support investment decisions and agricultural transformation programs. Designing comprehensive MEL frameworks and learning processes to measure project performance, outcomes, and impact.',
     descFr: 'Réalisation d’études thématiques, d’évaluations, d’analyses de faisabilité et de planification stratégique pour soutenir les programmes de transformation agricole.',
-    route: '/our-work/client-advisory',
+    route: '/our-work/technical-studies',
     order: 4,
     active: true,
   },
@@ -61,8 +62,18 @@ export const staticExpertisePillars: ExpertisePillarData[] = [
     titleFr: 'Plateformes numériques',
     descEn: 'Designing, developing, and implementing web and mobile platforms, databases, dashboards, and information systems that improve data management, service delivery, collaboration, and decision-making across the seed sector.',
     descFr: 'Conception, développement et déploiement de plateformes web et mobiles, bases de données et tableaux de bord pour la gouvernance de données semencières.',
-    route: '/our-work/project-implementation',
+    route: '/our-work/digital-platforms',
     order: 5,
+    active: true,
+  },
+  {
+    id: 'exp-6',
+    titleEn: 'Stakeholder Convenings and Learning Trips',
+    titleFr: 'Rencontres multipartites et voyages d’apprentissage',
+    descEn: 'Designing, facilitating, and managing multi-stakeholder roundtables, cross-border learning trips, policy dialogues, and partnership forums that align regulators, private seed enterprises, and development partners.',
+    descFr: 'Conception, animation et gestion de tables rondes multipartites, de voyages d’apprentissage transfrontaliers, de dialogues politiques et de forums de partenariat alignant régulateurs, entreprises semencières et partenaires au développement.',
+    route: '/our-work/stakeholder-convenings',
+    order: 6,
     active: true,
   },
 ]
@@ -102,29 +113,69 @@ export async function getAllExpertisePillarsAdmin(): Promise<ExpertisePillarData
   return staticExpertisePillars
 }
 
+const seedGuard = createSeedGuard(async () => {
+  const count = await prisma.expertisePillar.count()
+  if (count === 0) {
+    await prisma.expertisePillar.createMany({
+      data: staticExpertisePillars.map((item) => stripManagedFields(item)),
+    })
+  }
+})
+
+/**
+ * Hydrates the ExpertisePillar table from static defaults when empty.
+ */
+async function ensureSeeded(): Promise<boolean> {
+  return seedGuard()
+}
+
+async function resolveExpertiseId(id: string): Promise<string> {
+  if (!id.startsWith('exp-')) return id
+  const staticItem = staticExpertisePillars.find((p) => p.id === id)
+  if (!staticItem) {
+    throw new Error(`Expertise pillar not found for static id: ${id}`)
+  }
+  const dbRecord =
+    (await prisma.expertisePillar.findFirst({
+      where: { order: staticItem.order, titleEn: staticItem.titleEn },
+    })) ??
+    (await prisma.expertisePillar.findFirst({
+      where: { order: staticItem.order },
+    }))
+  if (!dbRecord) {
+    throw new Error(`Expertise pillar "${staticItem.titleEn}" not found in database`)
+  }
+  return dbRecord.id
+}
+
 export async function createExpertisePillar(data: Omit<ExpertisePillarData, 'id'>): Promise<ExpertisePillarData> {
-  const connected = await isDatabaseConnected()
+  const connected = await ensureSeeded()
   if (!connected) throw new Error('Database is not connected')
 
-  const record = await prisma.expertisePillar.create({ data })
+  const record = await prisma.expertisePillar.create({ data: stripManagedFields(data) })
   revalidatePath('/', 'layout')
   return record
 }
 
 export async function updateExpertisePillar(id: string, data: Partial<ExpertisePillarData>): Promise<ExpertisePillarData> {
-  const connected = await isDatabaseConnected()
+  const connected = await ensureSeeded()
   if (!connected) throw new Error('Database is not connected')
 
-  const record = await prisma.expertisePillar.update({ where: { id }, data })
+  const targetId = await resolveExpertiseId(id)
+  const record = await prisma.expertisePillar.update({
+    where: { id: targetId },
+    data: stripManagedFields(data),
+  })
   revalidatePath('/', 'layout')
   return record
 }
 
 export async function deleteExpertisePillar(id: string): Promise<boolean> {
-  const connected = await isDatabaseConnected()
+  const connected = await ensureSeeded()
   if (!connected) throw new Error('Database is not connected')
 
-  await prisma.expertisePillar.delete({ where: { id } })
+  const targetId = await resolveExpertiseId(id)
+  await prisma.expertisePillar.delete({ where: { id: targetId } })
   revalidatePath('/', 'layout')
   return true
 }

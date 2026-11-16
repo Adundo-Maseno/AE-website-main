@@ -12,9 +12,12 @@ interface ExpertiseFormModalProps {
 }
 
 const ROUTE_OPTIONS = [
+  { value: '/our-work/digital-platforms', label: 'Digital Platforms' },
+  { value: '/our-work/technical-studies', label: 'Technical Studies' },
   { value: '/our-work/project-implementation', label: 'Project Implementation' },
   { value: '/our-work/client-advisory', label: 'Client Advisory' },
   { value: '/our-work/capacity-building', label: 'Capacity Building' },
+  { value: '/our-work/stakeholder-convenings', label: 'Stakeholder Convenings' },
   { value: '/our-work', label: 'Our Work (General)' },
   { value: '/our-impact', label: 'Our Impact' },
 ]
@@ -25,6 +28,7 @@ export default function ExpertiseFormModal({
   onSuccess,
   pillar,
 }: ExpertiseFormModalProps) {
+  const isEditing = Boolean(pillar?.id)
   const [tab, setTab] = useState<'en' | 'fr'>('en')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -82,8 +86,8 @@ export default function ExpertiseFormModal({
     }
 
     try {
-      const url = pillar ? `/api/admin/expertise/${pillar.id}` : '/api/admin/expertise'
-      const method = pillar ? 'PUT' : 'POST'
+      const url = isEditing && pillar?.id ? `/api/admin/expertise/${pillar.id}` : '/api/admin/expertise'
+      const method = isEditing && pillar?.id ? 'PUT' : 'POST'
       const res = await fetch(url, {
         method,
         headers: { 'Content-Type': 'application/json' },

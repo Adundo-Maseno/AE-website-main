@@ -1,12 +1,12 @@
 ---
 source_file: "lib/email.ts"
 type: "code"
-community: "API Routes & Email Pipeline"
+community: "Contact & Email Templates"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Routes__Email_Pipeline
+  - community/Contact__Email_Templates
 ---
 
 # email.ts
@@ -25,4 +25,4 @@ tags:
 - [[ref_path]] - `imports_from` [EXTRACTED]
 - [[sendContactEmails()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Routes__Email_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Contact__Email_Templates

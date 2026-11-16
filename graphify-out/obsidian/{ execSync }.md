@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/preview-emails.js"
 type: "code"
-community: "API Routes & Email Pipeline"
+community: "Email Preview CLI Script"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Routes__Email_Pipeline
+  - community/Email_Preview_CLI_Script
 ---
 
 # { execSync }
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[preview-emails.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Routes__Email_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Email_Preview_CLI_Script

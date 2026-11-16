@@ -1,18 +1,19 @@
 ---
 source_file: "app/[locale]/map/page.tsx"
 type: "code"
-community: "Interactive Map & Country GeoData"
-location: "L3"
+community: "Interactive Impact Map & Services"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Map__Country_GeoData
+  - community/Interactive_Impact_Map__Services
 ---
 
 # MapPage()
 
 ## Connections
-- [[InteractiveMapbox()]] - `calls` [EXTRACTED]
-- [[mappage.tsx]] - `contains` [EXTRACTED]
+- [[InteractiveMap()]] - `calls` [EXTRACTED]
+- [[localemappage.tsx]] - `contains` [EXTRACTED]
+- [[getCountries()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Map__Country_GeoData
+#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services

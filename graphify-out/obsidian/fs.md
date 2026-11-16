@@ -1,17 +1,17 @@
 ---
-source_file: "patch_preloader.js"
+source_file: "scripts/auto-translate.js"
 type: "code"
-community: "API Routes & Email Pipeline"
+community: "i18n Auto-Translation Script"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Routes__Email_Pipeline
+  - community/i18n_Auto-Translation_Script
 ---
 
 # fs
 
 ## Connections
-- [[patch_preloader.js]] - `contains` [EXTRACTED]
+- [[auto-translate.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Routes__Email_Pipeline
+#graphify/code #graphify/EXTRACTED #community/i18n_Auto-Translation_Script

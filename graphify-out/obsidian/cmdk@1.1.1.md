@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Command Dialog Package Dependency"
-location: "L34"
+community: "Runtime Package Dependencies"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Command_Dialog_Package_Dependency
+  - community/Runtime_Package_Dependencies
 ---
 
 # cmdk@1.1.1
@@ -15,4 +15,4 @@ tags:
 - [[cmdk]] - `declares` [EXTRACTED]
 - [[dependencies]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Command_Dialog_Package_Dependency
+#graphify/code #graphify/EXTRACTED #community/Runtime_Package_Dependencies

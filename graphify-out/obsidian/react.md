@@ -1,32 +1,56 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Interactive Map & Country GeoData"
-location: "L45"
+community: "Interactive Impact Map & Services"
+location: "L43"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Interactive_Map__Country_GeoData
+  - community/Interactive_Impact_Map__Services
 ---
 
 # react
 
 ## Connections
+- [[localeinsightspage.tsx]] - `imports_from` [EXTRACTED]
+- [[localemappage.tsx]] - `imports_from` [EXTRACTED]
 - [[localepage.tsx]] - `imports_from` [EXTRACTED]
+- [[localeresourcespage.tsx]] - `imports_from` [EXTRACTED]
+- [[aboutpage.tsx]] - `imports_from` [EXTRACTED]
+- [[admin-header.tsx]] - `imports_from` [EXTRACTED]
+- [[admingallerypage.tsx]] - `imports_from` [EXTRACTED]
+- [[admininsightspage.tsx]] - `imports_from` [EXTRACTED]
+- [[adminmappage.tsx]] - `imports_from` [EXTRACTED]
+- [[adminresourcespage.tsx]] - `imports_from` [EXTRACTED]
 - [[badge.tsx]] - `imports_from` [EXTRACTED]
+- [[belief-form-modal.tsx]] - `imports_from` [EXTRACTED]
+- [[beliefspage.tsx]] - `imports_from` [EXTRACTED]
 - [[button.tsx]] - `imports_from` [EXTRACTED]
+- [[capacity-buildingpage.tsx]] - `imports_from` [EXTRACTED]
+- [[client-advisorypage.tsx]] - `imports_from` [EXTRACTED]
 - [[command.tsx]] - `imports_from` [EXTRACTED]
+- [[contact-client-content.tsx]] - `imports_from` [EXTRACTED]
 - [[contactpage.tsx]] - `imports_from` [EXTRACTED]
 - [[cookie-toast.tsx]] - `imports_from` [EXTRACTED]
+- [[country-form-modal.tsx]] - `imports_from` [EXTRACTED]
 - [[dialog.tsx]] - `imports_from` [EXTRACTED]
+- [[digital-platformspage.tsx]] - `imports_from` [EXTRACTED]
+- [[expertise-form-modal.tsx]] - `imports_from` [EXTRACTED]
+- [[expertisepage.tsx]] - `imports_from` [EXTRACTED]
 - [[footer.tsx]] - `imports_from` [EXTRACTED]
+- [[gallery-form-modal.tsx]] - `imports_from` [EXTRACTED]
 - [[google-analytics.tsx]] - `imports_from` [EXTRACTED]
 - [[header.tsx]] - `imports_from` [EXTRACTED]
+- [[home-content.tsx]] - `imports_from` [EXTRACTED]
+- [[image-uploader.tsx]] - `imports_from` [EXTRACTED]
 - [[impact-alignment.tsx]] - `imports_from` [EXTRACTED]
 - [[index.tsx]] - `imports_from` [EXTRACTED]
+- [[insight-form-modal.tsx]] - `imports_from` [EXTRACTED]
 - [[interactive-map.tsx]] - `imports_from` [EXTRACTED]
 - [[interactive-mapbox.tsx]] - `imports_from` [EXTRACTED]
+- [[json-ld.tsx]] - `imports_from` [EXTRACTED]
 - [[language-switch-provider.tsx]] - `imports_from` [EXTRACTED]
+- [[loginpage.tsx]] - `imports_from` [EXTRACTED]
 - [[map-active-project-fly-to.tsx]] - `imports_from` [EXTRACTED]
 - [[map-auto-center.tsx]] - `imports_from` [EXTRACTED]
 - [[map-context.tsx]] - `imports_from` [EXTRACTED]
@@ -37,17 +61,36 @@ tags:
 - [[map-search.tsx]] - `imports_from` [EXTRACTED]
 - [[newsletterpage.tsx]] - `imports_from` [EXTRACTED]
 - [[office-plants-gallery.tsx]] - `imports_from` [EXTRACTED]
+- [[our-impactpage.tsx]] - `imports_from` [EXTRACTED]
+- [[our-team-content.tsx]] - `imports_from` [EXTRACTED]
 - [[our-teampage.tsx]] - `imports_from` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
+- [[partner-form-modal.tsx]] - `imports_from` [EXTRACTED]
+- [[partnerspage.tsx]] - `imports_from` [EXTRACTED]
 - [[pdf-preview.tsx]] - `imports_from` [EXTRACTED]
+- [[pdf-uploader.tsx]] - `imports_from` [EXTRACTED]
 - [[popover.tsx]] - `imports_from` [EXTRACTED]
 - [[privacypage.tsx]] - `imports_from` [EXTRACTED]
+- [[project-form-modal.tsx]] - `imports_from` [EXTRACTED]
+- [[project-implementationpage.tsx]] - `imports_from` [EXTRACTED]
+- [[projectspage.tsx]] - `imports_from` [EXTRACTED]
 - [[react@19.2.8]] - `declares` [EXTRACTED]
-- [[resourcespage.tsx]] - `imports_from` [EXTRACTED]
+- [[resource-form-modal.tsx]] - `imports_from` [EXTRACTED]
+- [[resources-content.tsx]] - `imports_from` [EXTRACTED]
 - [[rolling-text.tsx]] - `imports_from` [EXTRACTED]
 - [[scroll-accordion.tsx]] - `imports_from` [EXTRACTED]
 - [[scroll-to-top.tsx]] - `imports_from` [EXTRACTED]
+- [[sectionspage.tsx]] - `imports_from` [EXTRACTED]
+- [[seed-button.tsx]] - `imports_from` [EXTRACTED]
+- [[service-worker-cleanup.tsx]] - `imports_from` [EXTRACTED]
 - [[services-bento-grid.tsx]] - `imports_from` [EXTRACTED]
+- [[settingspage.tsx]] - `imports_from` [EXTRACTED]
+- [[stakeholder-conveningspage.tsx]] - `imports_from` [EXTRACTED]
+- [[team-form-modal.tsx]] - `imports_from` [EXTRACTED]
+- [[teampage.tsx]] - `imports_from` [EXTRACTED]
+- [[technical-studiespage.tsx]] - `imports_from` [EXTRACTED]
 - [[why-agri-experience.tsx]] - `imports_from` [EXTRACTED]
+- [[why-agri-form-modal.tsx]] - `imports_from` [EXTRACTED]
+- [[why-agripage.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Interactive_Map__Country_GeoData
+#graphify/concept #graphify/EXTRACTED #community/Interactive_Impact_Map__Services

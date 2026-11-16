@@ -3,6 +3,11 @@ import { getSession } from '@/lib/auth'
 import { getCountries, createCountry } from '@/lib/services/map-service'
 
 export async function GET() {
+  const session = await getSession()
+  if (!session) {
+    return NextResponse.json({ success: false, error: 'Unauthorized' }, { status: 401 })
+  }
+
   try {
     const countries = await getCountries()
     return NextResponse.json({ countries })

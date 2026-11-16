@@ -3,6 +3,11 @@ import { getSession } from '@/lib/auth'
 import { getProjects, createProject } from '@/lib/services/projects-service'
 
 export async function GET(req: NextRequest) {
+  const session = await getSession()
+  if (!session) {
+    return NextResponse.json({ success: false, error: 'Unauthorized' }, { status: 401 })
+  }
+
   try {
     const { searchParams } = new URL(req.url)
     const category = searchParams.get('category') || undefined

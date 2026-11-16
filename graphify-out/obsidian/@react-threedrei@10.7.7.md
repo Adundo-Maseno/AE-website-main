@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Plant Gallery & Interactive Visuals"
-location: "L25"
+community: "Runtime Package Dependencies"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Plant_Gallery__Interactive_Visuals
+  - community/Runtime_Package_Dependencies
 ---
 
 # @react-three/drei@^10.7.7
@@ -15,4 +15,4 @@ tags:
 - [[@react-threedrei]] - `declares` [EXTRACTED]
 - [[dependencies]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Plant_Gallery__Interactive_Visuals
+#graphify/code #graphify/EXTRACTED #community/Runtime_Package_Dependencies

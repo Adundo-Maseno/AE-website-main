@@ -1,12 +1,12 @@
 ---
 source_file: "components/pdf-preview.tsx"
 type: "code"
-community: "Resource Library & PDF Previews"
+community: "Footer Settings & PDF Preview"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resource_Library__PDF_Previews
+  - community/Footer_Settings__PDF_Preview
 ---
 
 # pdf-preview.tsx
@@ -17,6 +17,6 @@ tags:
 - [[lucide-react]] - `imports_from` [EXTRACTED]
 - [[react]] - `imports_from` [EXTRACTED]
 - [[react-pdf]] - `imports_from` [EXTRACTED]
-- [[resourcespage.tsx]] - `dynamic_import` [EXTRACTED]
+- [[resources-content.tsx]] - `dynamic_import` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resource_Library__PDF_Previews
+#graphify/code #graphify/EXTRACTED #community/Footer_Settings__PDF_Preview

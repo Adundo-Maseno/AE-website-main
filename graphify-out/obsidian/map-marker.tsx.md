@@ -1,12 +1,12 @@
 ---
 source_file: "components/map/map-marker.tsx"
 type: "code"
-community: "Interactive Map & Country GeoData"
+community: "Interactive Impact Map & Services"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Map__Country_GeoData
+  - community/Interactive_Impact_Map__Services
 ---
 
 # map-marker.tsx
@@ -20,4 +20,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[useMap()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Map__Country_GeoData
+#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services

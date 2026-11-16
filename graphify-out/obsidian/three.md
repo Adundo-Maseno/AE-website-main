@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Plant Gallery & Interactive Visuals"
-location: "L50"
+community: "Core UI & 3D Libraries"
+location: "L47"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Plant_Gallery__Interactive_Visuals
+  - community/Core_UI__3D_Libraries
 ---
 
 # three
@@ -16,4 +16,4 @@ tags:
 - [[package.json]] - `imports` [EXTRACTED]
 - [[three@0.184.0]] - `declares` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Plant_Gallery__Interactive_Visuals
+#graphify/concept #graphify/EXTRACTED #community/Core_UI__3D_Libraries

@@ -1,12 +1,12 @@
 ---
 source_file: "components/map/map-search.tsx"
 type: "code"
-community: "Command Menu & Map Search UI"
+community: "Map Search & Dialog Primitives"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Command_Menu__Map_Search_UI
+  - community/Map_Search__Dialog_Primitives
 ---
 
 # MapSearch()
@@ -24,4 +24,4 @@ tags:
 - [[interactive-map.tsx]] - `imports` [EXTRACTED]
 - [[map-search.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Command_Menu__Map_Search_UI
+#graphify/code #graphify/EXTRACTED #community/Map_Search__Dialog_Primitives

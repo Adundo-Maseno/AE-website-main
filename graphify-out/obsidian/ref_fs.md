@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "API Routes & Email Pipeline"
+community: "Media Upload & Gallery Scanning"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/API_Routes__Email_Pipeline
+  - community/Media_Upload__Gallery_Scanning
 ---
 
 # ref_fs
@@ -14,8 +14,9 @@ tags:
 - [[auto-translate.js]] - `imports_from` [EXTRACTED]
 - [[email-previewroute.ts]] - `imports_from` [EXTRACTED]
 - [[email.ts]] - `imports_from` [EXTRACTED]
-- [[patch_preloader.js]] - `imports_from` [EXTRACTED]
-- [[patch_team.js]] - `imports_from` [EXTRACTED]
+- [[galleryroute.ts]] - `imports_from` [EXTRACTED]
+- [[pdf-galleryroute.ts]] - `imports_from` [EXTRACTED]
 - [[preview-emails.js]] - `imports_from` [EXTRACTED]
+- [[uploadroute.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/API_Routes__Email_Pipeline
+#graphify/concept #graphify/EXTRACTED #community/Media_Upload__Gallery_Scanning

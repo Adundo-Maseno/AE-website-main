@@ -24,6 +24,7 @@ import {
   Layers,
   Globe,
   MapPin,
+  Image as ImageIcon,
 } from 'lucide-react'
 
 export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
@@ -35,6 +36,14 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
 
   const contentRef = useRef<HTMLDivElement>(null)
   const publishingRef = useRef<HTMLDivElement>(null)
+
+  const isUnauthenticated = !adminEmail && pathname !== '/admin/login'
+
+  useEffect(() => {
+    if (isUnauthenticated) {
+      router.replace('/admin/login')
+    }
+  }, [isUnauthenticated, router])
 
   // Close dropdowns on outside click
   useEffect(() => {
@@ -78,14 +87,36 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
     { label: 'Publications & Reports', href: '/admin/resources', icon: FileText, desc: 'Verified downloadable seed sector PDFs' },
     { label: 'Case Studies & Pillars', href: '/admin/projects', icon: Briefcase, desc: 'Digital platforms & advisory initiatives' },
     { label: 'Field Insights', href: '/admin/insights', icon: Sparkles, desc: 'Regulatory articles & research breakthroughs' },
+    { label: 'Field Gallery', href: '/admin/gallery', icon: ImageIcon, desc: 'Curated field photography & activity gallery' },
     { label: 'Pan-African Map', href: '/admin/map', icon: Compass, desc: 'Regional footprint & country project data' },
   ]
 
-  const isContentActive = contentItems.some((item) => pathname.startsWith(item.href))
+  const isContentActive = contentItems.some((item) => pathname.startsWith(item.href.split('?')[0]))
   const isPublishingActive = publishingItems.some((item) => pathname.startsWith(item.href))
 
   // Do not render nav header on login page
   if (pathname === '/admin/login') return null
+
+  // Block client-side /admin/* interaction when unauthenticated
+  if (isUnauthenticated) {
+    return (
+      <div
+        role="status"
+        aria-live="polite"
+        className="fixed inset-0 z-[100] bg-[#FAF9F5] flex items-center justify-center p-6"
+      >
+        <div className="w-full max-w-sm bg-white border border-[#0F2417]/10 rounded-2xl shadow-lg p-8 text-center space-y-3">
+          <div className="w-8 h-8 rounded-full border-2 border-[#0F2417]/20 border-t-[#0F2417] animate-spin mx-auto" />
+          <p className="font-serif font-bold text-lg text-[#0F2417]">
+            Session Required
+          </p>
+          <p className="text-xs text-[#0F2417]/70">
+            Redirecting to login...
+          </p>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <header className="sticky top-0 z-50 w-full bg-[#FAF9F5] border-b border-[#0F2417]/10 transition-colors">

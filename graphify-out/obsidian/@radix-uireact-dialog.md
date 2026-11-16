@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Dialog & Mapbox Type Integrations"
-location: "L22"
+community: "Radix Dialog Package Dependency"
+location: "L25"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Dialog__Mapbox_Type_Integrations
+  - community/Radix_Dialog_Package_Dependency
 ---
 
 # @radix-ui/react-dialog
@@ -16,4 +16,4 @@ tags:
 - [[dialog.tsx]] - `imports_from` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Dialog__Mapbox_Type_Integrations
+#graphify/concept #graphify/EXTRACTED #community/Radix_Dialog_Package_Dependency

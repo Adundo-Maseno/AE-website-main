@@ -1,12 +1,12 @@
 ---
 source_file: "next-env.d.ts"
 type: "rationale"
-community: "Next.js Auto-generated Type Declarations"
+community: "Next.js Type Declarations"
 location: "L6"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Nextjs_Auto-generated_Type_Declarations
+  - community/Nextjs_Type_Declarations
 ---
 
 # NOTE: This file should not be edited
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[next-env.d.ts]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Nextjs_Auto-generated_Type_Declarations
+#graphify/rationale #graphify/EXTRACTED #community/Nextjs_Type_Declarations

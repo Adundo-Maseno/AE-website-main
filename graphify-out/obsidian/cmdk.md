@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Command Dialog Package Dependency"
-location: "L34"
+community: "Runtime Package Dependencies"
+location: "L33"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Command_Dialog_Package_Dependency
+  - community/Runtime_Package_Dependencies
 ---
 
 # cmdk
@@ -16,4 +16,4 @@ tags:
 - [[command.tsx]] - `imports_from` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Command_Dialog_Package_Dependency
+#graphify/concept #graphify/EXTRACTED #community/Runtime_Package_Dependencies

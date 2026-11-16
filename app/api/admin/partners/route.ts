@@ -1,7 +1,13 @@
 import { NextResponse } from 'next/server'
+import { getSession } from '@/lib/auth'
 import { getAllPartnersAdmin, createPartner } from '@/lib/services/partners-service'
 
 export async function GET() {
+  const session = await getSession()
+  if (!session) {
+    return NextResponse.json({ success: false, error: 'Unauthorized' }, { status: 401 })
+  }
+
   try {
     const partners = await getAllPartnersAdmin()
     return NextResponse.json({ success: true, partners })
@@ -11,6 +17,11 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
+  const session = await getSession()
+  if (!session) {
+    return NextResponse.json({ success: false, error: 'Unauthorized' }, { status: 401 })
+  }
+
   try {
     const body = await request.json()
     if (!body.name || !body.logoUrl) {

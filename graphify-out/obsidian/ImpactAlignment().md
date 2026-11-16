@@ -1,20 +1,20 @@
 ---
 source_file: "components/motion/impact-alignment.tsx"
 type: "code"
-community: "Impact Alignment & SDG Accordions"
-location: "L261"
+community: "Impact Page & SDG Alignment"
+location: "L259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Impact_Alignment__SDG_Accordions
+  - community/Impact_Page__SDG_Alignment
 ---
 
 # ImpactAlignment()
 
 ## Connections
 - [[AccordionRow()]] - `calls` [EXTRACTED]
-- [[OurImpactPage()]] - `calls` [EXTRACTED]
+- [[ImpactPageContent()]] - `calls` [EXTRACTED]
 - [[impact-alignment.tsx]] - `contains` [EXTRACTED]
-- [[our-impactpage.tsx]] - `imports` [EXTRACTED]
+- [[impact-page-content.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Impact_Alignment__SDG_Accordions
+#graphify/code #graphify/EXTRACTED #community/Impact_Page__SDG_Alignment

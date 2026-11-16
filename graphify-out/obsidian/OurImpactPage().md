@@ -1,21 +1,20 @@
 ---
 source_file: "app/[locale]/our-impact/page.tsx"
 type: "code"
-community: "Main Marketing Pages & Views"
-location: "L11"
+community: "Interactive Impact Map & Services"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Marketing_Pages__Views
+  - community/Interactive_Impact_Map__Services
 ---
 
 # OurImpactPage()
 
 ## Connections
-- [[ImpactAlignment()]] - `calls` [EXTRACTED]
-- [[InteractiveMap()]] - `calls` [EXTRACTED]
-- [[Link]] - `calls` [EXTRACTED]
-- [[RollingText()]] - `calls` [EXTRACTED]
+- [[ImpactPageContent()]] - `calls` [EXTRACTED]
+- [[getCountries()]] - `calls` [EXTRACTED]
+- [[getPageSections()]] - `calls` [EXTRACTED]
 - [[our-impactpage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Marketing_Pages__Views
+#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services

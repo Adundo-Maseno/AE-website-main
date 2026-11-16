@@ -17,7 +17,7 @@ export default function InsightFormModal({
   onSuccess,
   insight,
 }: InsightFormModalProps) {
-  const isEditing = Boolean(insight && !insight.id.startsWith('static-'))
+  const isEditing = Boolean(insight?.id)
 
   const [tab, setTab] = useState<'en' | 'fr'>('en')
   const [titleEn, setTitleEn] = useState('')

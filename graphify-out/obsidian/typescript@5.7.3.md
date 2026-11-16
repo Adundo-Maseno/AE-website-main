@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Build & Lint DevDependencies"
-location: "L64"
+community: "Dev Dependencies & Tooling"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Build__Lint_DevDependencies
+  - community/Dev_Dependencies__Tooling
 ---
 
 # typescript@5.7.3
@@ -15,4 +15,4 @@ tags:
 - [[devDependencies]] - `contains` [EXTRACTED]
 - [[typescript]] - `declares` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Build__Lint_DevDependencies
+#graphify/code #graphify/EXTRACTED #community/Dev_Dependencies__Tooling

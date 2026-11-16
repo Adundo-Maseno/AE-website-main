@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "Automated i18n Translation Script"
+community: "i18n Auto-Translation Script"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Automated_i18n_Translation_Script
+  - community/i18n_Auto-Translation_Script
 ---
 
 # ref_https
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[auto-translate.js]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Automated_i18n_Translation_Script
+#graphify/concept #graphify/EXTRACTED #community/i18n_Auto-Translation_Script

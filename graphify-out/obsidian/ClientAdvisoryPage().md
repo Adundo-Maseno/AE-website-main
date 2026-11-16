@@ -1,19 +1,20 @@
 ---
 source_file: "app/[locale]/our-work/client-advisory/page.tsx"
 type: "code"
-community: "Main Marketing Pages & Views"
-location: "L9"
+community: "Our Work Pillar Pages"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Marketing_Pages__Views
+  - community/Our_Work_Pillar_Pages
 ---
 
 # ClientAdvisoryPage()
 
 ## Connections
-- [[Link]] - `calls` [EXTRACTED]
-- [[RollingText()]] - `calls` [EXTRACTED]
+- [[ClientAdvisoryClient()]] - `calls` [EXTRACTED]
 - [[client-advisorypage.tsx]] - `contains` [EXTRACTED]
+- [[getPageSections()]] - `calls` [EXTRACTED]
+- [[getProjects()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Marketing_Pages__Views
+#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Pages

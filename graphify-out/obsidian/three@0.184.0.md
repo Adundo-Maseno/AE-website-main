@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Plant Gallery & Interactive Visuals"
-location: "L50"
+community: "Core UI & 3D Libraries"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Plant_Gallery__Interactive_Visuals
+  - community/Core_UI__3D_Libraries
 ---
 
 # three@^0.184.0
@@ -15,4 +15,4 @@ tags:
 - [[dependencies]] - `contains` [EXTRACTED]
 - [[three]] - `declares` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Plant_Gallery__Interactive_Visuals
+#graphify/code #graphify/EXTRACTED #community/Core_UI__3D_Libraries

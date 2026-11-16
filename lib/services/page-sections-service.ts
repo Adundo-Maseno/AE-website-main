@@ -182,6 +182,16 @@ export const defaultPageSections: Record<string, PageSectionData> = {
     subtitleEn: 'Measurable change in seed systems, farmer productivity, and institutional capacity.',
     subtitleFr: 'Des changements mesurables dans les systèmes semenciers, la productivité agricole et les capacités institutionnelles.',
   },
+  our_impact_sdgs: {
+    sectionKey: 'our_impact_sdgs',
+    page: 'our-impact',
+    titleEn: 'Contributing to Sustainable Development Goals',
+    titleFr: 'Contribuer aux Objectifs de Développement Durable',
+    subtitleEn: 'Global Alignment',
+    subtitleFr: 'Alignement mondial',
+    contentEn: 'Our seed systems interventions directly advance food security, climate resilience, and inclusive rural prosperity across sub-Saharan Africa.',
+    contentFr: 'Nos interventions sur les systèmes semenciers font progresser directement la sécurité alimentaire, la résilience climatique et la prospérité rurale inclusive en Afrique subsaharienne.',
+  },
   our_impact_cta: {
     sectionKey: 'our_impact_cta',
     page: 'our-impact',

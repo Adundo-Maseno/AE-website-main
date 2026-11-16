@@ -1,5 +1,6 @@
 import { prisma, isDatabaseConnected } from '@/lib/db'
 import { revalidatePath } from 'next/cache'
+import { createSeedGuard, stripManagedFields } from './service-utils'
 
 export interface WhyAgriCardData {
   id: string
@@ -96,29 +97,69 @@ export async function getAllWhyAgriCardsAdmin(): Promise<WhyAgriCardData[]> {
   return staticWhyAgriCards
 }
 
+const seedGuard = createSeedGuard(async () => {
+  const count = await prisma.whyAgriCard.count()
+  if (count === 0) {
+    await prisma.whyAgriCard.createMany({
+      data: staticWhyAgriCards.map((item) => stripManagedFields(item)),
+    })
+  }
+})
+
+/**
+ * Hydrates the WhyAgriCard table from static defaults when empty.
+ */
+async function ensureSeeded(): Promise<boolean> {
+  return seedGuard()
+}
+
+async function resolveWhyAgriId(id: string): Promise<string> {
+  if (!id.startsWith('wa-')) return id
+  const staticItem = staticWhyAgriCards.find((c) => c.id === id)
+  if (!staticItem) {
+    throw new Error(`Why Agri card not found for static id: ${id}`)
+  }
+  const dbRecord =
+    (await prisma.whyAgriCard.findFirst({
+      where: { order: staticItem.order, titleEn: staticItem.titleEn ?? undefined },
+    })) ??
+    (await prisma.whyAgriCard.findFirst({
+      where: { order: staticItem.order },
+    }))
+  if (!dbRecord) {
+    throw new Error(`Why Agri card #${staticItem.order} not found in database`)
+  }
+  return dbRecord.id
+}
+
 export async function createWhyAgriCard(data: Omit<WhyAgriCardData, 'id'>): Promise<WhyAgriCardData> {
-  const connected = await isDatabaseConnected()
+  const connected = await ensureSeeded()
   if (!connected) throw new Error('Database is not connected')
 
-  const record = await prisma.whyAgriCard.create({ data })
+  const record = await prisma.whyAgriCard.create({ data: stripManagedFields(data) })
   revalidatePath('/', 'layout')
   return record
 }
 
 export async function updateWhyAgriCard(id: string, data: Partial<WhyAgriCardData>): Promise<WhyAgriCardData> {
-  const connected = await isDatabaseConnected()
+  const connected = await ensureSeeded()
   if (!connected) throw new Error('Database is not connected')
 
-  const record = await prisma.whyAgriCard.update({ where: { id }, data })
+  const targetId = await resolveWhyAgriId(id)
+  const record = await prisma.whyAgriCard.update({
+    where: { id: targetId },
+    data: stripManagedFields(data),
+  })
   revalidatePath('/', 'layout')
   return record
 }
 
 export async function deleteWhyAgriCard(id: string): Promise<boolean> {
-  const connected = await isDatabaseConnected()
+  const connected = await ensureSeeded()
   if (!connected) throw new Error('Database is not connected')
 
-  await prisma.whyAgriCard.delete({ where: { id } })
+  const targetId = await resolveWhyAgriId(id)
+  await prisma.whyAgriCard.delete({ where: { id: targetId } })
   revalidatePath('/', 'layout')
   return true
 }

@@ -3,6 +3,11 @@ import { getSession } from '@/lib/auth'
 import { getResources, createResource } from '@/lib/services/resources-service'
 
 export async function GET() {
+  const session = await getSession()
+  if (!session) {
+    return NextResponse.json({ success: false, error: 'Unauthorized' }, { status: 401 })
+  }
+
   try {
     const resources = await getResources()
     return NextResponse.json({ resources })

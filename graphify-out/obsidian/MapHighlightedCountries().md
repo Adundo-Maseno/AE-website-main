@@ -1,12 +1,12 @@
 ---
 source_file: "components/map/map-highlighted-countries.tsx"
 type: "code"
-community: "Interactive Map & Country GeoData"
-location: "L37"
+community: "Interactive Impact Map & Services"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Map__Country_GeoData
+  - community/Interactive_Impact_Map__Services
 ---
 
 # MapHighlightedCountries()
@@ -19,4 +19,4 @@ tags:
 - [[mapbox-gl_1]] - `imports_from` [EXTRACTED]
 - [[useMap()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Map__Country_GeoData
+#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services

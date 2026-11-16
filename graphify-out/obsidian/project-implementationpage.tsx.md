@@ -1,24 +1,25 @@
 ---
 source_file: "app/[locale]/our-work/project-implementation/page.tsx"
 type: "code"
-community: "Main Marketing Pages & Views"
+community: "Our Work Pillar Pages"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Marketing_Pages__Views
+  - community/Our_Work_Pillar_Pages
 ---
 
 # project-implementation/page.tsx
 
 ## Connections
-- [[Link]] - `imports` [EXTRACTED]
+- [[ProjectImplementationClient()]] - `imports` [EXTRACTED]
 - [[ProjectImplementationPage()]] - `contains` [EXTRACTED]
-- [[RollingText()]] - `imports` [EXTRACTED]
-- [[framer-motion]] - `imports_from` [EXTRACTED]
-- [[lucide-react]] - `imports_from` [EXTRACTED]
-- [[next-intl]] - `imports_from` [EXTRACTED]
-- [[rolling-text.tsx]] - `imports_from` [EXTRACTED]
-- [[routing.ts]] - `imports_from` [EXTRACTED]
+- [[getPageSections()]] - `imports` [EXTRACTED]
+- [[getProjects()]] - `imports` [EXTRACTED]
+- [[page-sections-service.ts]] - `imports_from` [EXTRACTED]
+- [[project-implementation-client.tsx]] - `imports_from` [EXTRACTED]
+- [[projects-service.ts]] - `imports_from` [EXTRACTED]
+- [[react]] - `imports_from` [EXTRACTED]
+- [[revalidate_11]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Marketing_Pages__Views
+#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Pages

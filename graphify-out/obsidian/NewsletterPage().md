@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/newsletter/page.tsx"
 type: "code"
-community: "Main Marketing Pages & Views"
+community: "Our Work Client Views"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Marketing_Pages__Views
+  - community/Our_Work_Client_Views
 ---
 
 # NewsletterPage()
@@ -15,4 +15,4 @@ tags:
 - [[RollingText()]] - `calls` [EXTRACTED]
 - [[newsletterpage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Marketing_Pages__Views
+#graphify/code #graphify/EXTRACTED #community/Our_Work_Client_Views

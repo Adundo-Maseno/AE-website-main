@@ -1,12 +1,12 @@
 ---
 source_file: "components/ui/badge.tsx"
 type: "code"
-community: "Interactive Map & Country GeoData"
+community: "Interactive Impact Map & Services"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Map__Country_GeoData
+  - community/Interactive_Impact_Map__Services
 ---
 
 # Badge()
@@ -18,4 +18,4 @@ tags:
 - [[cn()]] - `calls` [EXTRACTED]
 - [[interactive-mapbox.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Map__Country_GeoData
+#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services

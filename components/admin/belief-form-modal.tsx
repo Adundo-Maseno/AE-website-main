@@ -17,6 +17,7 @@ export default function BeliefFormModal({
   onSuccess,
   belief,
 }: BeliefFormModalProps) {
+  const isEditing = Boolean(belief?.id)
   const [tab, setTab] = useState<'en' | 'fr'>('en')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -70,8 +71,8 @@ export default function BeliefFormModal({
     }
 
     try {
-      const url = belief ? `/api/admin/beliefs/${belief.id}` : '/api/admin/beliefs'
-      const method = belief ? 'PUT' : 'POST'
+      const url = isEditing && belief?.id ? `/api/admin/beliefs/${belief.id}` : '/api/admin/beliefs'
+      const method = isEditing && belief?.id ? 'PUT' : 'POST'
       const res = await fetch(url, {
         method,
         headers: { 'Content-Type': 'application/json' },

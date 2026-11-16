@@ -1,12 +1,12 @@
 ---
 source_file: "components/liquid-glass/index.tsx"
 type: "code"
-community: "WebGL Shaders & Liquid Glass Effects"
-location: "L258"
+community: "Liquid Glass Shader Effects"
+location: "L259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebGL_Shaders__Liquid_Glass_Effects
+  - community/Liquid_Glass_Shader_Effects
 ---
 
 # LiquidGlassProps
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[index.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebGL_Shaders__Liquid_Glass_Effects
+#graphify/code #graphify/EXTRACTED #community/Liquid_Glass_Shader_Effects

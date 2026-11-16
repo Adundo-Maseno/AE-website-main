@@ -1,12 +1,12 @@
 ---
 source_file: "components/map/map-search.tsx"
 type: "code"
-community: "Command Menu & Map Search UI"
+community: "Map Search & Dialog Primitives"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Command_Menu__Map_Search_UI
+  - community/Map_Search__Dialog_Primitives
 ---
 
 # map-search.tsx
@@ -29,4 +29,4 @@ tags:
 - [[popover.tsx]] - `imports_from` [EXTRACTED]
 - [[react]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Command_Menu__Map_Search_UI
+#graphify/code #graphify/EXTRACTED #community/Map_Search__Dialog_Primitives

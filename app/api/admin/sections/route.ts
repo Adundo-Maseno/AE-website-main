@@ -1,7 +1,13 @@
 import { NextResponse } from 'next/server'
+import { getSession } from '@/lib/auth'
 import { getPageSections, upsertPageSection } from '@/lib/services/page-sections-service'
 
 export async function GET(request: Request) {
+  const session = await getSession()
+  if (!session) {
+    return NextResponse.json({ success: false, error: 'Unauthorized' }, { status: 401 })
+  }
+
   try {
     const { searchParams } = new URL(request.url)
     const page = searchParams.get('page') || undefined
@@ -13,6 +19,11 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
+  const session = await getSession()
+  if (!session) {
+    return NextResponse.json({ success: false, error: 'Unauthorized' }, { status: 401 })
+  }
+
   try {
     const body = await request.json()
     if (!body.sectionKey || !body.page) {

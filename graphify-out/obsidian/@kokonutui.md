@@ -1,12 +1,12 @@
 ---
 source_file: "components.json"
 type: "code"
-community: "Component & Path Aliases Config"
+community: "Shadcn UI Registry Config"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Component__Path_Aliases_Config
+  - community/Shadcn_UI_Registry_Config
 ---
 
 # @kokonutui
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[registries]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Component__Path_Aliases_Config
+#graphify/code #graphify/EXTRACTED #community/Shadcn_UI_Registry_Config

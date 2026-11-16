@@ -1,20 +1,20 @@
 ---
 source_file: "components/client-logos.tsx"
 type: "code"
-community: "Client & Partner Logo Showcase"
-location: "L206"
+community: "Admin Media & Content Modals"
+location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Client__Partner_Logo_Showcase
+  - community/Admin_Media__Content_Modals
 ---
 
 # ClientLogos()
 
 ## Connections
-- [[Home()]] - `calls` [EXTRACTED]
+- [[HomeContent()]] - `calls` [EXTRACTED]
 - [[LogoItem()]] - `calls` [EXTRACTED]
-- [[localepage.tsx]] - `imports` [EXTRACTED]
 - [[client-logos.tsx]] - `contains` [EXTRACTED]
+- [[home-content.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Client__Partner_Logo_Showcase
+#graphify/code #graphify/EXTRACTED #community/Admin_Media__Content_Modals

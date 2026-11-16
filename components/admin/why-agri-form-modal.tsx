@@ -17,6 +17,7 @@ export default function WhyAgriFormModal({
   onSuccess,
   card,
 }: WhyAgriFormModalProps) {
+  const isEditing = Boolean(card?.id)
   const [tab, setTab] = useState<'en' | 'fr'>('en')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -70,8 +71,8 @@ export default function WhyAgriFormModal({
     }
 
     try {
-      const url = card ? `/api/admin/why-agri/${card.id}` : '/api/admin/why-agri'
-      const method = card ? 'PUT' : 'POST'
+      const url = isEditing && card?.id ? `/api/admin/why-agri/${card.id}` : '/api/admin/why-agri'
+      const method = isEditing && card?.id ? 'PUT' : 'POST'
       const res = await fetch(url, {
         method,
         headers: { 'Content-Type': 'application/json' },

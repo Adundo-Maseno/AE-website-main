@@ -1,12 +1,12 @@
 ---
 source_file: "components/map/map-utils.ts"
 type: "code"
-community: "Interactive Map & Country GeoData"
+community: "Interactive Impact Map & Services"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Map__Country_GeoData
+  - community/Interactive_Impact_Map__Services
 ---
 
 # getOptimalZoom()
@@ -18,4 +18,4 @@ tags:
 - [[map-auto-center.tsx]] - `imports` [EXTRACTED]
 - [[map-utils.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Map__Country_GeoData
+#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services

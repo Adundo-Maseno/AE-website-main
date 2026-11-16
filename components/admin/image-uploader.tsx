@@ -1,14 +1,12 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import Image from 'next/image'
 import {
   Upload,
-  Image as ImageIcon,
   Check,
   X,
   RefreshCw,
-  FolderOpen,
   Link2,
 } from 'lucide-react'
 
@@ -18,6 +16,11 @@ interface ImageUploaderProps {
   label: string
   hint?: string
   folder?: string
+}
+
+const shouldUnoptimize = (url: string) => {
+  const clean = url.split('?')[0].toLowerCase()
+  return clean.endsWith('.svg') || url.startsWith('/uploads/') || /^https?:\/\//i.test(url)
 }
 
 export default function ImageUploader({
@@ -37,10 +40,10 @@ export default function ImageUploader({
 
   const fileInputRef = useRef<HTMLInputElement>(null)
 
-  const loadGallery = async () => {
+  const loadGallery = useCallback(async () => {
     setGalleryLoading(true)
     try {
-      const res = await fetch('/api/admin/gallery')
+      const res = await fetch(`/api/admin/gallery?folder=${encodeURIComponent(folder)}`)
       const data = await res.json()
       if (res.ok && data.images) {
         setGalleryImages(data.images)
@@ -50,13 +53,13 @@ export default function ImageUploader({
     } finally {
       setGalleryLoading(false)
     }
-  }
+  }, [folder])
 
   useEffect(() => {
-    if (activeMode === 'gallery' && galleryImages.length === 0) {
+    if (activeMode === 'gallery') {
       loadGallery()
     }
-  }, [activeMode])
+  }, [activeMode, loadGallery])
 
   const handleFileUpload = async (file: File) => {
     setError(null)
@@ -72,13 +75,16 @@ export default function ImageUploader({
         body: formData,
       })
       const data = await res.json()
-      if (!res.ok) throw new Error(data.error || 'Failed to upload photo')
+      if (!res.ok) throw new Error(data.error || 'Failed to upload image')
 
       onChange(data.url)
     } catch (err: any) {
       setError(err.message || 'Upload failed')
     } finally {
       setUploading(false)
+      if (fileInputRef.current) {
+        fileInputRef.current.value = ''
+      }
     }
   }
 
@@ -139,20 +145,21 @@ export default function ImageUploader({
       {/* Current Photo Preview Bar */}
       {value ? (
         <div className="flex items-center justify-between p-3 rounded-2xl bg-white border border-black/[0.08] shadow-xs">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 min-w-0">
             <div className="relative w-12 h-12 rounded-xl overflow-hidden bg-[#FAFAF8] border border-black/[0.08] shrink-0">
               <Image
                 src={value}
-                alt="Selected portrait"
+                alt="Selected image"
                 fill
                 sizes="48px"
+                unoptimized={shouldUnoptimize(value)}
                 className="object-cover"
               />
             </div>
             <div className="min-w-0">
               <p className="text-xs font-bold text-deep-forest truncate">{value}</p>
               <span className="text-[10px] text-emerald-700 font-semibold inline-flex items-center gap-1">
-                <Check size={11} /> Photo Active
+                <Check size={11} /> Image Active
               </span>
             </div>
           </div>
@@ -160,7 +167,7 @@ export default function ImageUploader({
             type="button"
             onClick={() => onChange('')}
             className="p-1.5 rounded-lg text-charcoal/40 hover:text-red-700 hover:bg-red-50 transition-colors cursor-pointer"
-            title="Remove photo"
+            title="Remove image"
           >
             <X size={15} />
           </button>
@@ -186,7 +193,7 @@ export default function ImageUploader({
           <input
             ref={fileInputRef}
             type="file"
-            accept="image/png,image/jpeg,image/webp,image/avif"
+            accept="image/png,image/jpeg,image/webp,image/avif,image/svg+xml,.svg"
             className="hidden"
             onChange={(e) => {
               if (e.target.files && e.target.files[0]) {
@@ -205,10 +212,10 @@ export default function ImageUploader({
             </div>
             <div>
               <p className="text-xs font-bold text-deep-forest">
-                {uploading ? 'Uploading portrait...' : 'Click to upload or drag & drop'}
+                {uploading ? 'Uploading image...' : 'Click to upload or drag & drop'}
               </p>
               <p className="text-[11px] text-charcoal/50 mt-0.5">
-                PNG, JPG, WebP, or AVIF (Max 5MB)
+                PNG, JPG, WebP, AVIF, or SVG (Max 5MB)
               </p>
             </div>
           </div>
@@ -220,7 +227,7 @@ export default function ImageUploader({
         <div className="rounded-2xl border border-black/[0.08] bg-white p-3 space-y-2">
           <div className="flex items-center justify-between pb-1 border-b border-black/[0.04]">
             <span className="text-[11px] font-semibold text-charcoal/60">
-              Select existing team portrait:
+              Select existing image ({folder}):
             </span>
             <button
               type="button"
@@ -255,6 +262,7 @@ export default function ImageUploader({
                       alt="Thumbnail"
                       fill
                       sizes="60px"
+                      unoptimized={shouldUnoptimize(img)}
                       className="object-cover"
                     />
                     {isSelected && (

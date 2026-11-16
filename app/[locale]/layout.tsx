@@ -6,28 +6,25 @@ import Footer from '@/components/footer'
 
 const playfairDisplay = Playfair_Display({ 
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
   variable: '--font-playfair',
   display: 'swap',
 })
 
 const dmSans = DM_Sans({ 
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
   variable: '--font-dm-sans',
   display: 'swap',
 })
 
 const bebasNeue = Bebas_Neue({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: '400',
   variable: '--font-bebas',
   display: 'swap',
 })
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
   variable: '--font-space-grotesk',
   display: 'swap',
 })
@@ -99,6 +96,7 @@ import GoogleAnalytics from '@/components/google-analytics'
 import CookieToast from '@/components/cookie-toast'
 import { ServiceWorkerCleanup } from '@/components/service-worker-cleanup'
 import { JsonLd } from '@/components/json-ld'
+import { getSiteSettings } from '@/lib/services/settings-service'
 
 export default async function RootLayout({
   children,
@@ -108,7 +106,10 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
-  const messages = await getMessages();
+  const [messages, settings] = await Promise.all([
+    getMessages(),
+    getSiteSettings(),
+  ]);
   return (
     <html
       lang={locale}
@@ -124,7 +125,7 @@ export default async function RootLayout({
             <ScrollToTop />
             <Header />
             {children}
-            <Footer />
+            <Footer settings={settings} />
             <CookieToast />
           </LanguageSwitchProvider>
         </NextIntlClientProvider>

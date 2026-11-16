@@ -1,18 +1,21 @@
 ---
 source_file: "lib/public-downloads.ts"
 type: "code"
-community: "Resource Library & PDF Previews"
+community: "Resources Library & Metadata Layouts"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resource_Library__PDF_Previews
+  - community/Resources_Library__Metadata_Layouts
 ---
 
 # publicDownloads
 
 ## Connections
+- [[adminpage.tsx]] - `imports` [EXTRACTED]
 - [[public-downloads.ts]] - `contains` [EXTRACTED]
-- [[resourcespage.tsx]] - `imports` [EXTRACTED]
+- [[resources-content.tsx]] - `imports` [EXTRACTED]
+- [[resources-service.ts]] - `imports` [EXTRACTED]
+- [[seedroute.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resource_Library__PDF_Previews
+#graphify/code #graphify/EXTRACTED #community/Resources_Library__Metadata_Layouts

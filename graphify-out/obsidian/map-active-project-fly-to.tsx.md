@@ -1,12 +1,12 @@
 ---
 source_file: "components/map/map-active-project-fly-to.tsx"
 type: "code"
-community: "Interactive Map & Country GeoData"
+community: "Interactive Impact Map & Services"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Map__Country_GeoData
+  - community/Interactive_Impact_Map__Services
 ---
 
 # map-active-project-fly-to.tsx
@@ -15,9 +15,10 @@ tags:
 - [[CountryProject]] - `imports` [EXTRACTED]
 - [[MapActiveProjectFlyTo()]] - `contains` [EXTRACTED]
 - [[MapActiveProjectFlyToProps]] - `contains` [EXTRACTED]
-- [[interactive-map.tsx]] - `imports_from` [EXTRACTED]
+- [[interactive-mapbox.tsx]] - `imports_from` [EXTRACTED]
 - [[map-context.tsx]] - `imports_from` [EXTRACTED]
+- [[map-types.ts]] - `imports_from` [EXTRACTED]
 - [[react]] - `imports_from` [EXTRACTED]
 - [[useMap()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Map__Country_GeoData
+#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services

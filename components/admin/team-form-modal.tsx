@@ -84,12 +84,11 @@ export default function TeamFormModal({
     }
 
     try {
-      const url =
-        member?.id && !member.id.startsWith('static-')
-          ? `/api/admin/team/${member.id}`
-          : '/api/admin/team'
-      const method =
-        member?.id && !member.id.startsWith('static-') ? 'PUT' : 'POST'
+      const isEditing = Boolean(member?.id)
+      const url = isEditing && member?.id
+        ? `/api/admin/team/${member.id}`
+        : '/api/admin/team'
+      const method = isEditing && member?.id ? 'PUT' : 'POST'
 
       const res = await fetch(url, {
         method,

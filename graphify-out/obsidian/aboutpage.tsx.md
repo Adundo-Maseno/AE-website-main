@@ -1,29 +1,25 @@
 ---
 source_file: "app/[locale]/about/page.tsx"
 type: "code"
-community: "Main Marketing Pages & Views"
+community: "About & Services Bento Grid"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Marketing_Pages__Views
+  - community/About__Services_Bento_Grid
 ---
 
 # about/page.tsx
 
 ## Connections
+- [[AboutContent()]] - `imports` [EXTRACTED]
 - [[AboutPage()]] - `contains` [EXTRACTED]
-- [[Link]] - `imports` [EXTRACTED]
-- [[RollingText()]] - `imports` [EXTRACTED]
-- [[ScrollAccordion()]] - `imports` [EXTRACTED]
-- [[ServicesBentoGrid()]] - `imports` [EXTRACTED]
-- [[framer-motion]] - `imports_from` [EXTRACTED]
-- [[lucide-react]] - `imports_from` [EXTRACTED]
-- [[next_1]] - `imports_from` [EXTRACTED]
-- [[next-intl]] - `imports_from` [EXTRACTED]
-- [[rolling-text.tsx]] - `imports_from` [EXTRACTED]
-- [[routing.ts]] - `imports_from` [EXTRACTED]
-- [[scroll-accordion.tsx]] - `imports_from` [EXTRACTED]
-- [[services-bento-grid.tsx]] - `imports_from` [EXTRACTED]
+- [[about-content.tsx]] - `imports_from` [EXTRACTED]
+- [[expertise-service.ts]] - `imports_from` [EXTRACTED]
+- [[getExpertisePillars()]] - `imports` [EXTRACTED]
+- [[getPageSections()]] - `imports` [EXTRACTED]
+- [[page-sections-service.ts]] - `imports_from` [EXTRACTED]
+- [[react]] - `imports_from` [EXTRACTED]
+- [[revalidate]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Marketing_Pages__Views
+#graphify/code #graphify/EXTRACTED #community/About__Services_Bento_Grid

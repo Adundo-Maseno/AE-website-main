@@ -1,50 +1,48 @@
 ---
 source_file: "components/ui/rolling-text.tsx"
 type: "code"
-community: "Main Marketing Pages & Views"
+community: "Our Work Client Views"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Marketing_Pages__Views
+  - community/Our_Work_Client_Views
 ---
 
 # RollingText()
 
 ## Connections
-- [[AboutPage()]] - `calls` [EXTRACTED]
+- [[AboutContent()]] - `calls` [EXTRACTED]
 - [[Button()]] - `calls` [EXTRACTED]
-- [[CapacityBuildingPage()]] - `calls` [EXTRACTED]
-- [[ClientAdvisoryPage()]] - `calls` [EXTRACTED]
-- [[ContactPage()]] - `calls` [EXTRACTED]
+- [[CapacityBuildingClient()]] - `calls` [EXTRACTED]
+- [[ClientAdvisoryClient()]] - `calls` [EXTRACTED]
+- [[ContactClientContent()]] - `calls` [EXTRACTED]
 - [[DesktopStickyAccordion()]] - `calls` [EXTRACTED]
-- [[DigitalPlatformsPage()]] - `calls` [EXTRACTED]
+- [[DigitalPlatformsClient()]] - `calls` [EXTRACTED]
 - [[Header()]] - `calls` [EXTRACTED]
-- [[Home()]] - `calls` [EXTRACTED]
-- [[InsightsPage()]] - `calls` [EXTRACTED]
+- [[HomeContent()]] - `calls` [EXTRACTED]
+- [[ImpactPageContent()]] - `calls` [EXTRACTED]
 - [[MobileFallbackAccordion()]] - `calls` [EXTRACTED]
 - [[NewsletterPage()]] - `calls` [EXTRACTED]
-- [[OurImpactPage()]] - `calls` [EXTRACTED]
-- [[ProjectImplementationPage()]] - `calls` [EXTRACTED]
+- [[ProjectImplementationClient()]] - `calls` [EXTRACTED]
 - [[ResourcesContent()]] - `calls` [EXTRACTED]
-- [[StakeholderConveningsPage()]] - `calls` [EXTRACTED]
-- [[TechnicalStudiesPage()]] - `calls` [EXTRACTED]
-- [[localepage.tsx]] - `imports` [EXTRACTED]
-- [[aboutpage.tsx]] - `imports` [EXTRACTED]
+- [[StakeholderConveningsClient()]] - `calls` [EXTRACTED]
+- [[TechnicalStudiesClient()]] - `calls` [EXTRACTED]
+- [[about-content.tsx]] - `imports` [EXTRACTED]
 - [[button.tsx]] - `imports` [EXTRACTED]
-- [[capacity-buildingpage.tsx]] - `imports` [EXTRACTED]
-- [[client-advisorypage.tsx]] - `imports` [EXTRACTED]
-- [[contactpage.tsx]] - `imports` [EXTRACTED]
-- [[digital-platformspage.tsx]] - `imports` [EXTRACTED]
+- [[capacity-building-client.tsx]] - `imports` [EXTRACTED]
+- [[client-advisory-client.tsx]] - `imports` [EXTRACTED]
+- [[contact-client-content.tsx]] - `imports` [EXTRACTED]
+- [[digital-platforms-client.tsx]] - `imports` [EXTRACTED]
 - [[header.tsx]] - `imports` [EXTRACTED]
-- [[insightspage.tsx]] - `imports` [EXTRACTED]
+- [[home-content.tsx]] - `imports` [EXTRACTED]
+- [[impact-page-content.tsx]] - `imports` [EXTRACTED]
 - [[newsletterpage.tsx]] - `imports` [EXTRACTED]
-- [[our-impactpage.tsx]] - `imports` [EXTRACTED]
-- [[project-implementationpage.tsx]] - `imports` [EXTRACTED]
-- [[resourcespage.tsx]] - `imports` [EXTRACTED]
+- [[project-implementation-client.tsx]] - `imports` [EXTRACTED]
+- [[resources-content.tsx]] - `imports` [EXTRACTED]
 - [[rolling-text.tsx]] - `contains` [EXTRACTED]
 - [[scroll-accordion.tsx]] - `imports` [EXTRACTED]
-- [[stakeholder-conveningspage.tsx]] - `imports` [EXTRACTED]
-- [[technical-studiespage.tsx]] - `imports` [EXTRACTED]
+- [[stakeholder-convenings-client.tsx]] - `imports` [EXTRACTED]
+- [[technical-studies-client.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Marketing_Pages__Views
+#graphify/code #graphify/EXTRACTED #community/Our_Work_Client_Views

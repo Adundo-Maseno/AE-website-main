@@ -1,20 +1,18 @@
 ---
-source_file: "app/api/email-preview/route.ts"
+source_file: "app/api/admin/auth/session/route.ts"
 type: "code"
-community: "API Routes & Email Pipeline"
-location: "L41"
+community: "Protected Admin CRUD Routes"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Routes__Email_Pipeline
+  - community/Protected_Admin_CRUD_Routes
 ---
 
 # GET()
 
 ## Connections
-- [[email-previewroute.ts]] - `contains` [EXTRACTED]
-- [[generateRespondentAcknowledgmentEmail()]] - `calls` [EXTRACTED]
-- [[generateTeamNotificationEmail()]] - `calls` [EXTRACTED]
-- [[getLogoDataUri()]] - `calls` [EXTRACTED]
+- [[getSession()]] - `calls` [EXTRACTED]
+- [[sessionroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Routes__Email_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Protected_Admin_CRUD_Routes

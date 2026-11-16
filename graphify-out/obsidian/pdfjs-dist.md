@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Core Animation & Motion Libraries"
-location: "L44"
+community: "Runtime Package Dependencies"
+location: "L42"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Core_Animation__Motion_Libraries
+  - community/Runtime_Package_Dependencies
 ---
 
 # pdfjs-dist
@@ -15,4 +15,4 @@ tags:
 - [[package.json]] - `imports` [EXTRACTED]
 - [[pdfjs-dist@6.0.227]] - `declares` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Core_Animation__Motion_Libraries
+#graphify/concept #graphify/EXTRACTED #community/Runtime_Package_Dependencies

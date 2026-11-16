@@ -174,6 +174,11 @@ export default function AdminPartnersPage() {
                         alt={partner.name}
                         width={140}
                         height={60}
+                        unoptimized={
+                          partner.logoUrl.toLowerCase().split('?')[0].endsWith('.svg') ||
+                          partner.logoUrl.startsWith('/uploads/') ||
+                          /^https?:\/\//i.test(partner.logoUrl)
+                        }
                         className="max-h-16 w-auto object-contain transition group-hover:scale-105"
                       />
                     ) : (

@@ -3,18 +3,32 @@
 import { useState, useEffect } from 'react'
 import { Link } from '@/i18n/routing'
 import Image from 'next/image'
-import { ArrowRight, Linkedin } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import type { SiteSettingsData } from '@/lib/services/settings-service'
 
-const linkStyle: React.CSSProperties = { color: '#999', fontSize: '13px', textDecoration: 'none', fontWeight: 300 }
 const linkHoverClass = 'footer-nav-link'
 
-export default function Footer() {
+interface FooterProps {
+  settings?: SiteSettingsData
+}
+
+export default function Footer({ settings }: FooterProps = {}) {
   const t = useTranslations('Footer')
   const [year, setYear] = useState(2026)
   const [email, setEmail] = useState('')
   const [submitted, setSubmitted] = useState(false)
   const [mounted, setMounted] = useState(false)
+
+  const contactEmail = settings?.contactEmail || 'info@agri-experience.com'
+  const contactPhone = settings?.contactPhone || '+254 (20) 2626888'
+  const phoneHref = `tel:${contactPhone.replace(/[^+\d]/g, '') || '+254202626888'}`
+  const officeAddress =
+    settings?.officeAddress ||
+    'Watermark Business Park, Spring Court, Karen, P.O. Box 1720 - 00606, Nairobi'
+  const addressHref = `https://maps.google.com/?q=${encodeURIComponent(officeAddress)}`
+  const linkedinUrl =
+    settings?.linkedinUrl || 'https://www.linkedin.com/company/agri-experience-ltd/'
 
   useEffect(() => {
     setMounted(true)
@@ -108,7 +122,7 @@ export default function Footer() {
 
                 {/* Social */}
                 <div style={{ marginTop: '24px', display: 'flex' }}>
-                  <Link href="https://www.linkedin.com/company/agri-experience-ltd/" target="_blank" rel="noopener noreferrer"
+                  <a href={linkedinUrl} target="_blank" rel="noopener noreferrer"
                     aria-label={t('aria_linkedin')}
                     style={{
                       width: '48px', height: '48px', borderRadius: '12px',
@@ -123,7 +137,7 @@ export default function Footer() {
                     <svg width="18" height="18" viewBox="0 0 20 20" fill="white" aria-hidden="true">
                       <path d="M4.94 2.07A2.07 2.07 0 112.87 4.14 2.07 2.07 0 014.94 2.07zM2.07 6.75h3.56v11.45H2.07V6.75zm5.3 0h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04s-2.14 1.45-2.14 2.94v5.67H7.37V6.75z"/>
                     </svg>
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -194,14 +208,14 @@ export default function Footer() {
                 <p style={{ color: '#ffffff', fontWeight: 700, fontSize: '14px', marginBottom: '16px' }}>{t('get_in_touch')}</p>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '11px', marginBottom: '24px' }}>
                   <li>
-                    <a href="mailto:info@agri-experience.com" className={linkHoverClass}>info@agri-experience.com</a>
+                    <a href={`mailto:${contactEmail}`} className={linkHoverClass}>{contactEmail}</a>
                   </li>
                   <li>
-                    <a href="tel:+254202626888" className={linkHoverClass}>+254 (20) 2626888</a>
+                    <a href={phoneHref} className={linkHoverClass}>{contactPhone}</a>
                   </li>
                   <li>
-                    <a href="https://maps.google.com/?q=Watermark+Business+Park+Spring+Court,+Karen,+Nairobi,+Kenya" target="_blank" rel="noopener noreferrer" className={linkHoverClass}>
-                      Watermark Business Park<br/>Spring Court, Karen<br/>P.O. Box 1720 - 00606, Nairobi
+                    <a href={addressHref} target="_blank" rel="noopener noreferrer" className={linkHoverClass}>
+                      <span className="whitespace-pre-line">{officeAddress}</span>
                     </a>
                   </li>
                 </ul>
@@ -279,7 +293,7 @@ export default function Footer() {
             
             {/* Social */}
             <div style={{ marginTop: '24px', display: 'flex' }}>
-              <Link href="https://www.linkedin.com/company/agri-experience-ltd/" target="_blank" rel="noopener noreferrer"
+              <a href={linkedinUrl} target="_blank" rel="noopener noreferrer"
                 aria-label={t('aria_linkedin')}
                 style={{
                   width: '48px', height: '48px', borderRadius: '12px',
@@ -293,7 +307,7 @@ export default function Footer() {
                 <svg width="18" height="18" viewBox="0 0 20 20" fill="white" aria-hidden="true">
                   <path d="M4.94 2.07A2.07 2.07 0 112.87 4.14 2.07 2.07 0 014.94 2.07zM2.07 6.75h3.56v11.45H2.07V6.75zm5.3 0h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04s-2.14 1.45-2.14 2.94v5.67H7.37V6.75z"/>
                 </svg>
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -354,14 +368,14 @@ export default function Footer() {
             <p style={{ color: '#fff', fontWeight: 700, fontSize: '13px', marginBottom: '12px' }}>{t('get_in_touch')}</p>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <li>
-                <a href="mailto:info@agri-experience.com" className={linkHoverClass} style={{ display: 'block', padding: '4px 0' }}>info@agri-experience.com</a>
+                <a href={`mailto:${contactEmail}`} className={linkHoverClass} style={{ display: 'block', padding: '4px 0' }}>{contactEmail}</a>
               </li>
               <li>
-                <a href="tel:+254202626888" className={linkHoverClass} style={{ display: 'block', padding: '4px 0' }}>+254 (20) 2626888</a>
+                <a href={phoneHref} className={linkHoverClass} style={{ display: 'block', padding: '4px 0' }}>{contactPhone}</a>
               </li>
               <li>
-                <a href="https://maps.google.com/?q=Watermark+Business+Park+Spring+Court,+Karen,+Nairobi,+Kenya" target="_blank" rel="noopener noreferrer" className={linkHoverClass} style={{ display: 'block', padding: '4px 0', lineHeight: 1.5 }}>
-                  Watermark Business Park<br/>Spring Court, Karen<br/>P.O. Box 1720 - 00606, Nairobi
+                <a href={addressHref} target="_blank" rel="noopener noreferrer" className={linkHoverClass} style={{ display: 'block', padding: '4px 0', lineHeight: 1.5 }}>
+                  <span className="whitespace-pre-line">{officeAddress}</span>
                 </a>
               </li>
             </ul>

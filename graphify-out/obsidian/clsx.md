@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Core Animation & Motion Libraries"
-location: "L33"
+community: "Runtime Package Dependencies"
+location: "L32"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Core_Animation__Motion_Libraries
+  - community/Runtime_Package_Dependencies
 ---
 
 # clsx
@@ -16,4 +16,4 @@ tags:
 - [[libutils.ts]] - `imports_from` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Core_Animation__Motion_Libraries
+#graphify/concept #graphify/EXTRACTED #community/Runtime_Package_Dependencies

@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Popover UI Package Dependency"
-location: "L23"
+community: "Runtime Package Dependencies"
+location: "L26"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Popover_UI_Package_Dependency
+  - community/Runtime_Package_Dependencies
 ---
 
 # @radix-ui/react-popover
@@ -16,4 +16,4 @@ tags:
 - [[package.json]] - `imports` [EXTRACTED]
 - [[popover.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Popover_UI_Package_Dependency
+#graphify/concept #graphify/EXTRACTED #community/Runtime_Package_Dependencies

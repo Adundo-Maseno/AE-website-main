@@ -1,32 +1,29 @@
 ---
 source_file: "app/[locale]/page.tsx"
 type: "code"
-community: "Main Marketing Pages & Views"
+community: "Home Page Data Hydration"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Marketing_Pages__Views
+  - community/Home_Page_Data_Hydration
 ---
 
 # [locale]/page.tsx
 
 ## Connections
-- [[@gsapreact]] - `imports_from` [EXTRACTED]
-- [[ClientLogos()]] - `imports` [EXTRACTED]
-- [[Home()]] - `contains` [EXTRACTED]
-- [[Link]] - `imports` [EXTRACTED]
-- [[RollingText()]] - `imports` [EXTRACTED]
-- [[WhyAgriExperience()]] - `imports` [EXTRACTED]
-- [[client-logos.tsx]] - `imports_from` [EXTRACTED]
-- [[framer-motion]] - `imports_from` [EXTRACTED]
-- [[gsap]] - `imports_from` [EXTRACTED]
-- [[lucide-react]] - `imports_from` [EXTRACTED]
-- [[next_1]] - `imports_from` [EXTRACTED]
-- [[next-intl]] - `imports_from` [EXTRACTED]
+- [[HomeContent()]] - `imports` [EXTRACTED]
+- [[HomePage()]] - `contains` [EXTRACTED]
+- [[beliefs-service.ts]] - `imports_from` [EXTRACTED]
+- [[getBeliefs()]] - `imports` [EXTRACTED]
+- [[getPageSections()]] - `imports` [EXTRACTED]
+- [[getPartners()]] - `imports` [EXTRACTED]
+- [[getWhyAgriCards()]] - `imports` [EXTRACTED]
+- [[home-content.tsx]] - `imports_from` [EXTRACTED]
+- [[page-sections-service.ts]] - `imports_from` [EXTRACTED]
+- [[partners-service.ts]] - `imports_from` [EXTRACTED]
 - [[react]] - `imports_from` [EXTRACTED]
-- [[rolling-text.tsx]] - `imports_from` [EXTRACTED]
-- [[routing.ts]] - `imports_from` [EXTRACTED]
-- [[why-agri-experience.tsx]] - `imports_from` [EXTRACTED]
+- [[revalidate_14]] - `contains` [EXTRACTED]
+- [[why-agri-service.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Marketing_Pages__Views
+#graphify/code #graphify/EXTRACTED #community/Home_Page_Data_Hydration

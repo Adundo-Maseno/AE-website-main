@@ -1,12 +1,12 @@
 ---
 source_file: "components/liquid-glass/shader-utils.ts"
 type: "code"
-community: "WebGL Shaders & Liquid Glass Effects"
+community: "Liquid Glass Shader Effects"
 location: "L127"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/WebGL_Shaders__Liquid_Glass_Effects
+  - community/Liquid_Glass_Shader_Effects
 ---
 
 # .destroy()
@@ -15,4 +15,4 @@ tags:
 - [[ShaderDisplacementGenerator]] - `method` [EXTRACTED]
 - [[generateShaderDisplacementMap()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/WebGL_Shaders__Liquid_Glass_Effects
+#graphify/code #graphify/INFERRED #community/Liquid_Glass_Shader_Effects

@@ -1,12 +1,12 @@
 ---
 source_file: "components/liquid-glass/shader-utils.ts"
 type: "code"
-community: "WebGL Shaders & Liquid Glass Effects"
+community: "Liquid Glass Shader Effects"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebGL_Shaders__Liquid_Glass_Effects
+  - community/Liquid_Glass_Shader_Effects
 ---
 
 # shader-utils.ts
@@ -23,4 +23,4 @@ tags:
 - [[smoothStep()]] - `contains` [EXTRACTED]
 - [[texture()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebGL_Shaders__Liquid_Glass_Effects
+#graphify/code #graphify/EXTRACTED #community/Liquid_Glass_Shader_Effects

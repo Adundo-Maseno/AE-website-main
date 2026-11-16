@@ -6,8 +6,12 @@ import { ArrowRight } from 'lucide-react'
 import { Link } from '@/i18n/routing'
 import { useTranslations } from 'next-intl'
 import { RollingText } from '@/components/ui/rolling-text'
+import type { CountryItem } from '@/lib/services/map-service'
 
 interface ImpactPageContentProps {
+  cmsCountries?: CountryItem[]
+  heroTitle?: string
+  heroSubtitle?: string
   ctaTitle?: string
   ctaDesc?: string
   ctaButton?: string
@@ -18,6 +22,9 @@ interface ImpactPageContentProps {
 }
 
 export default function ImpactPageContent({
+  cmsCountries,
+  heroTitle,
+  heroSubtitle,
   ctaTitle,
   ctaDesc,
   ctaButton,
@@ -34,7 +41,11 @@ export default function ImpactPageContent({
 
   return (
     <main className="bg-white min-h-[100dvh]">
-      <InteractiveMap />
+      <InteractiveMap
+        cmsCountries={cmsCountries}
+        heroTitle={heroTitle}
+        heroSubtitle={heroSubtitle}
+      />
       <ImpactAlignment
         initialTitle={sdgsTitle}
         initialTag={sdgsTag}

@@ -1,21 +1,21 @@
 ---
 source_file: "components/motion/scroll-accordion.tsx"
 type: "code"
-community: "Main Marketing Pages & Views"
+community: "GSAP Scroll Accordion Motion"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Marketing_Pages__Views
+  - community/GSAP_Scroll_Accordion_Motion
 ---
 
 # ScrollAccordion()
 
 ## Connections
-- [[AboutPage()]] - `calls` [EXTRACTED]
+- [[AboutContent()]] - `calls` [EXTRACTED]
 - [[DesktopStickyAccordion()]] - `calls` [EXTRACTED]
 - [[MobileFallbackAccordion()]] - `calls` [EXTRACTED]
-- [[aboutpage.tsx]] - `imports` [EXTRACTED]
+- [[about-content.tsx]] - `imports` [EXTRACTED]
 - [[scroll-accordion.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Marketing_Pages__Views
+#graphify/code #graphify/EXTRACTED #community/GSAP_Scroll_Accordion_Motion

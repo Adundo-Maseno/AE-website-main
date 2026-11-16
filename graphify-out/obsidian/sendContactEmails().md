@@ -1,18 +1,18 @@
 ---
 source_file: "lib/email.ts"
 type: "code"
-community: "API Routes & Email Pipeline"
+community: "Contact & Email Templates"
 location: "L386"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Routes__Email_Pipeline
+  - community/Contact__Email_Templates
 ---
 
 # sendContactEmails()
 
 ## Connections
-- [[POST()]] - `calls` [EXTRACTED]
+- [[POST()_16]] - `calls` [EXTRACTED]
 - [[contactroute.ts]] - `imports` [EXTRACTED]
 - [[email.ts]] - `contains` [EXTRACTED]
 - [[generateRespondentAcknowledgmentEmail()]] - `calls` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[getLogoAttachment()]] - `calls` [EXTRACTED]
 - [[getMailTransporter()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Routes__Email_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Contact__Email_Templates

@@ -1,5 +1,6 @@
 import { prisma, isDatabaseConnected } from '@/lib/db'
 import { revalidatePath } from 'next/cache'
+import { createSeedGuard, stripManagedFields } from './service-utils'
 
 export interface GalleryItemData {
   id: string
@@ -74,6 +75,45 @@ export async function getGalleryItems(): Promise<GalleryItemData[]> {
   return staticGalleryItems
 }
 
+const seedGuard = createSeedGuard(async () => {
+  const count = await prisma.galleryItem.count()
+  if (count === 0) {
+    await prisma.galleryItem.createMany({
+      data: staticGalleryItems.map((g) => ({
+        titleEn: g.titleEn,
+        titleFr: g.titleFr || null,
+        captionEn: g.captionEn || null,
+        captionFr: g.captionFr || null,
+        imageUrl: g.imageUrl,
+        category: g.category,
+        order: g.order,
+      })),
+    })
+  }
+})
+
+/**
+ * Hydrates the GalleryItem table from static defaults when empty.
+ */
+async function ensureSeeded(): Promise<boolean> {
+  return seedGuard()
+}
+
+async function resolveGalleryItemId(id: string): Promise<string> {
+  if (!id.startsWith('static-')) return id
+  const existing = staticGalleryItems.find((g) => g.id === id)
+  if (!existing) {
+    throw new Error(`Gallery item not found for static id: ${id}`)
+  }
+  const dbRecord = await prisma.galleryItem.findFirst({
+    where: { titleEn: existing.titleEn },
+  })
+  if (!dbRecord) {
+    throw new Error(`Gallery item "${existing.titleEn}" not found in database`)
+  }
+  return dbRecord.id
+}
+
 export async function createGalleryItem(data: {
   titleEn: string
   titleFr?: string
@@ -83,6 +123,9 @@ export async function createGalleryItem(data: {
   category?: string
   order?: number
 }): Promise<GalleryItemData> {
+  const connected = await ensureSeeded()
+  if (!connected) throw new Error('Database is not connected')
+
   const record = await prisma.galleryItem.create({
     data: {
       titleEn: data.titleEn,
@@ -113,9 +156,13 @@ export async function updateGalleryItem(
     order: number
   }>
 ): Promise<GalleryItemData> {
+  const connected = await ensureSeeded()
+  if (!connected) throw new Error('Database is not connected')
+
+  const targetId = await resolveGalleryItemId(id)
   const record = await prisma.galleryItem.update({
-    where: { id },
-    data,
+    where: { id: targetId },
+    data: stripManagedFields(data),
   })
 
   revalidatePath('/[locale]/gallery', 'page')
@@ -125,8 +172,12 @@ export async function updateGalleryItem(
 }
 
 export async function deleteGalleryItem(id: string): Promise<boolean> {
+  const connected = await ensureSeeded()
+  if (!connected) throw new Error('Database is not connected')
+
+  const targetId = await resolveGalleryItemId(id)
   await prisma.galleryItem.delete({
-    where: { id },
+    where: { id: targetId },
   })
 
   revalidatePath('/[locale]/gallery', 'page')

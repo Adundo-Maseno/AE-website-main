@@ -1,12 +1,12 @@
 ---
 source_file: "eslint.config.mjs"
 type: "code"
-community: "ESLint & Next.js Linter Config"
+community: "ESLint Next.js Configuration"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESLint__Nextjs_Linter_Config
+  - community/ESLint_Nextjs_Configuration
 ---
 
 # config
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[eslint.config.mjs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESLint__Nextjs_Linter_Config
+#graphify/code #graphify/EXTRACTED #community/ESLint_Nextjs_Configuration

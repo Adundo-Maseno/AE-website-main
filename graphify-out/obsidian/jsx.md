@@ -1,12 +1,12 @@
 ---
 source_file: "tsconfig.json"
 type: "code"
-community: "TypeScript Compilation Settings"
+community: "TypeScript Compiler Configuration"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TypeScript_Compilation_Settings
+  - community/TypeScript_Compiler_Configuration
 ---
 
 # jsx
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[compilerOptions]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TypeScript_Compilation_Settings
+#graphify/code #graphify/EXTRACTED #community/TypeScript_Compiler_Configuration

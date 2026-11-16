@@ -7,15 +7,26 @@ import { staticInsights } from '@/lib/services/insights-service'
 import { countrySeeds } from '@/components/country-data'
 import { staticGalleryItems } from '@/lib/services/gallery-service'
 import { defaultSiteSettings } from '@/lib/services/settings-service'
-import { DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD } from '@/lib/auth'
+import { staticPartners } from '@/lib/services/partners-service'
+import { staticBeliefs } from '@/lib/services/beliefs-service'
+import { staticWhyAgriCards } from '@/lib/services/why-agri-service'
+import { staticExpertisePillars } from '@/lib/services/expertise-service'
+import { defaultPageSections } from '@/lib/services/page-sections-service'
+import { getSession, DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD } from '@/lib/auth'
 import frMessages from '@/messages/fr.json'
 import bcrypt from 'bcryptjs'
 
 export async function POST() {
+  const session = await getSession()
+  if (!session) {
+    return NextResponse.json({ success: false, error: 'Unauthorized' }, { status: 401 })
+  }
+
   const connected = await isDatabaseConnected()
   if (!connected) {
     return NextResponse.json(
       {
+        success: false,
         error: 'Database is not connected. Please verify DATABASE_URL is configured.',
       },
       { status: 503 }
@@ -31,6 +42,11 @@ export async function POST() {
     let countriesSeeded = 0
     let gallerySeeded = 0
     let settingsSeeded = 0
+    let partnersSeeded = 0
+    let beliefsSeeded = 0
+    let whyAgriSeeded = 0
+    let expertiseSeeded = 0
+    let sectionsSeeded = 0
 
     // 1. Seed Superadmin if none exists
     const existingAdmin = await prisma.adminUser.findFirst()
@@ -102,6 +118,8 @@ export async function POST() {
             category: p.category,
             client: p.client || null,
             year: p.year || null,
+            imageUrl: p.imageUrl || null,
+            link: p.link || null,
             order: p.order,
           },
         })
@@ -190,6 +208,102 @@ export async function POST() {
       settingsSeeded++
     }
 
+    // 9. Seed Partners if empty
+    const partnerCount = await prisma.partner.count()
+    if (partnerCount === 0) {
+      for (const p of staticPartners) {
+        await prisma.partner.create({
+          data: {
+            name: p.name,
+            logoUrl: p.logoUrl,
+            websiteUrl: p.websiteUrl || null,
+            category: p.category,
+            row: p.row,
+            order: p.order,
+            active: p.active,
+          },
+        })
+        partnersSeeded++
+      }
+    }
+
+    // 10. Seed CoreBeliefs if empty
+    const beliefCount = await prisma.coreBelief.count()
+    if (beliefCount === 0) {
+      for (const b of staticBeliefs) {
+        await prisma.coreBelief.create({
+          data: {
+            titleEn: b.titleEn,
+            titleFr: b.titleFr || null,
+            textEn: b.textEn,
+            textFr: b.textFr || null,
+            order: b.order,
+            active: b.active,
+          },
+        })
+        beliefsSeeded++
+      }
+    }
+
+    // 11. Seed WhyAgriCards if empty
+    const whyAgriCount = await prisma.whyAgriCard.count()
+    if (whyAgriCount === 0) {
+      for (const w of staticWhyAgriCards) {
+        await prisma.whyAgriCard.create({
+          data: {
+            titleEn: w.titleEn || null,
+            titleFr: w.titleFr || null,
+            textEn: w.textEn,
+            textFr: w.textFr || null,
+            order: w.order,
+            active: w.active,
+          },
+        })
+        whyAgriSeeded++
+      }
+    }
+
+    // 12. Seed ExpertisePillars if empty
+    const expertiseCount = await prisma.expertisePillar.count()
+    if (expertiseCount === 0) {
+      for (const e of staticExpertisePillars) {
+        await prisma.expertisePillar.create({
+          data: {
+            titleEn: e.titleEn,
+            titleFr: e.titleFr || null,
+            descEn: e.descEn,
+            descFr: e.descFr || null,
+            route: e.route,
+            order: e.order,
+            active: e.active,
+          },
+        })
+        expertiseSeeded++
+      }
+    }
+
+    // 13. Seed PageSections if empty
+    const sectionCount = await prisma.pageSection.count()
+    if (sectionCount === 0) {
+      for (const s of Object.values(defaultPageSections)) {
+        await prisma.pageSection.create({
+          data: {
+            sectionKey: s.sectionKey,
+            page: s.page,
+            titleEn: s.titleEn || null,
+            titleFr: s.titleFr || null,
+            subtitleEn: s.subtitleEn || null,
+            subtitleFr: s.subtitleFr || null,
+            contentEn: s.contentEn || null,
+            contentFr: s.contentFr || null,
+            mediaUrl: s.mediaUrl || null,
+            extraJson: s.extraJson || null,
+          },
+        })
+        sectionsSeeded++
+      }
+    }
+
     return NextResponse.json({
       success: true,
       message: 'Seed completed successfully across all domains',
@@ -202,6 +316,11 @@ export async function POST() {
         countriesSeeded,
         gallerySeeded,
         settingsSeeded,
+        partnersSeeded,
+        beliefsSeeded,
+        whyAgriSeeded,
+        expertiseSeeded,
+        sectionsSeeded,
         totalResources: resourceCount === 0 ? resourcesSeeded : resourceCount,
         totalTeam: teamCount === 0 ? teamSeeded : teamCount,
         totalProjects: projectCount === 0 ? projectsSeeded : projectCount,
@@ -209,11 +328,16 @@ export async function POST() {
         totalCountries: mapCount === 0 ? countriesSeeded : mapCount,
         totalGallery: galleryCount === 0 ? gallerySeeded : galleryCount,
         totalSettings: settingsCount === 0 ? settingsSeeded : settingsCount,
+        totalPartners: partnerCount === 0 ? partnersSeeded : partnerCount,
+        totalBeliefs: beliefCount === 0 ? beliefsSeeded : beliefCount,
+        totalWhyAgri: whyAgriCount === 0 ? whyAgriSeeded : whyAgriCount,
+        totalExpertise: expertiseCount === 0 ? expertiseSeeded : expertiseCount,
+        totalSections: sectionCount === 0 ? sectionsSeeded : sectionCount,
       },
     })
   } catch (err: any) {
     return NextResponse.json(
-      { error: err.message || 'Seeding failed' },
+      { success: false, error: err.message || 'Seeding failed' },
       { status: 500 }
     )
   }

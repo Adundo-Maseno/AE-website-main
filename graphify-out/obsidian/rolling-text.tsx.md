@@ -1,12 +1,12 @@
 ---
 source_file: "components/ui/rolling-text.tsx"
 type: "code"
-community: "Main Marketing Pages & Views"
+community: "Our Work Client Views"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Main_Marketing_Pages__Views
+  - community/Our_Work_Client_Views
 ---
 
 # rolling-text.tsx
@@ -14,22 +14,21 @@ tags:
 ## Connections
 - [[RollingText()]] - `contains` [EXTRACTED]
 - [[RollingTextProps]] - `contains` [EXTRACTED]
-- [[localepage.tsx]] - `imports_from` [EXTRACTED]
-- [[aboutpage.tsx]] - `imports_from` [EXTRACTED]
+- [[about-content.tsx]] - `imports_from` [EXTRACTED]
 - [[button.tsx]] - `imports_from` [EXTRACTED]
-- [[capacity-buildingpage.tsx]] - `imports_from` [EXTRACTED]
-- [[client-advisorypage.tsx]] - `imports_from` [EXTRACTED]
-- [[contactpage.tsx]] - `imports_from` [EXTRACTED]
-- [[digital-platformspage.tsx]] - `imports_from` [EXTRACTED]
+- [[capacity-building-client.tsx]] - `imports_from` [EXTRACTED]
+- [[client-advisory-client.tsx]] - `imports_from` [EXTRACTED]
+- [[contact-client-content.tsx]] - `imports_from` [EXTRACTED]
+- [[digital-platforms-client.tsx]] - `imports_from` [EXTRACTED]
 - [[header.tsx]] - `imports_from` [EXTRACTED]
-- [[insightspage.tsx]] - `imports_from` [EXTRACTED]
+- [[home-content.tsx]] - `imports_from` [EXTRACTED]
+- [[impact-page-content.tsx]] - `imports_from` [EXTRACTED]
 - [[newsletterpage.tsx]] - `imports_from` [EXTRACTED]
-- [[our-impactpage.tsx]] - `imports_from` [EXTRACTED]
-- [[project-implementationpage.tsx]] - `imports_from` [EXTRACTED]
+- [[project-implementation-client.tsx]] - `imports_from` [EXTRACTED]
 - [[react]] - `imports_from` [EXTRACTED]
-- [[resourcespage.tsx]] - `imports_from` [EXTRACTED]
+- [[resources-content.tsx]] - `imports_from` [EXTRACTED]
 - [[scroll-accordion.tsx]] - `imports_from` [EXTRACTED]
-- [[stakeholder-conveningspage.tsx]] - `imports_from` [EXTRACTED]
-- [[technical-studiespage.tsx]] - `imports_from` [EXTRACTED]
+- [[stakeholder-convenings-client.tsx]] - `imports_from` [EXTRACTED]
+- [[technical-studies-client.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Main_Marketing_Pages__Views
+#graphify/code #graphify/EXTRACTED #community/Our_Work_Client_Views

@@ -1,5 +1,6 @@
 import { Suspense } from 'react'
 import { getPageSections } from '@/lib/services/page-sections-service'
+import { getCountries } from '@/lib/services/map-service'
 import ImpactPageContent from '@/components/impact/impact-page-content'
 
 export const revalidate = 0 // Dynamic on-demand revalidation
@@ -10,9 +11,16 @@ export default async function OurImpactPage({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const sections = await getPageSections('our-impact')
+  const [sections, cmsCountries] = await Promise.all([
+    getPageSections('our-impact'),
+    getCountries(),
+  ])
+  const heroSec = sections['our_impact_hero']
   const ctaSec = sections['our_impact_cta']
   const sdgsSec = sections['our_impact_sdgs']
+
+  const heroTitle = locale === 'fr' ? heroSec?.titleFr || heroSec?.titleEn : heroSec?.titleEn
+  const heroSubtitle = locale === 'fr' ? heroSec?.subtitleFr || heroSec?.subtitleEn : heroSec?.subtitleEn
 
   const ctaTitle = locale === 'fr' ? ctaSec?.titleFr || ctaSec?.titleEn : ctaSec?.titleEn
   const ctaDesc = locale === 'fr' ? ctaSec?.subtitleFr || ctaSec?.subtitleEn : ctaSec?.subtitleEn
@@ -25,6 +33,9 @@ export default async function OurImpactPage({
   return (
     <Suspense fallback={<div className="bg-white min-h-[100dvh]" />}>
       <ImpactPageContent
+        cmsCountries={cmsCountries}
+        heroTitle={heroTitle || undefined}
+        heroSubtitle={heroSubtitle || undefined}
         ctaTitle={ctaTitle || undefined}
         ctaDesc={ctaDesc || undefined}
         ctaButton={ctaButton || undefined}

@@ -1,12 +1,12 @@
 ---
 source_file: "postcss.config.mjs"
 type: "code"
-community: "PostCSS & Tailwind Plugins"
+community: "PostCSS Tailwind Configuration"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PostCSS__Tailwind_Plugins
+  - community/PostCSS_Tailwind_Configuration
 ---
 
 # postcss.config.mjs
@@ -15,4 +15,4 @@ tags:
 - [[config_2]] - `contains` [EXTRACTED]
 - [[postcss-load-config]] - `dynamic_import` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PostCSS__Tailwind_Plugins
+#graphify/code #graphify/EXTRACTED #community/PostCSS_Tailwind_Configuration

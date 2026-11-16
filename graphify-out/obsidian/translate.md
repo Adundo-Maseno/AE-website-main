@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "NPM Scripts & Build Commands"
-location: "L16"
+community: "Package Build & Dev Scripts"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NPM_Scripts__Build_Commands
+  - community/Package_Build__Dev_Scripts
 ---
 
 # translate
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[scripts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NPM_Scripts__Build_Commands
+#graphify/code #graphify/EXTRACTED #community/Package_Build__Dev_Scripts

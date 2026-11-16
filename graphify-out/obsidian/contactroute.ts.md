@@ -1,20 +1,20 @@
 ---
 source_file: "app/api/contact/route.ts"
 type: "code"
-community: "API Routes & Email Pipeline"
+community: "Contact & Email Templates"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/API_Routes__Email_Pipeline
+  - community/Contact__Email_Templates
 ---
 
 # contact/route.ts
 
 ## Connections
-- [[POST()]] - `contains` [EXTRACTED]
+- [[POST()_16]] - `contains` [EXTRACTED]
 - [[email.ts]] - `imports_from` [EXTRACTED]
 - [[next_1]] - `imports_from` [EXTRACTED]
 - [[sendContactEmails()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/API_Routes__Email_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Contact__Email_Templates
