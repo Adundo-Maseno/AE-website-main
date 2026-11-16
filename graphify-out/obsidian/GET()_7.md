@@ -1,19 +1,19 @@
 ---
-source_file: "app/api/admin/partners/route.ts"
+source_file: "app/api/admin/map/route.ts"
 type: "code"
-community: "Partners Service & API Routes"
+community: "Pan-African Impact Map & Admin UI"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Partners_Service__API_Routes
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # GET()
 
 ## Connections
-- [[getAllPartnersAdmin()]] - `calls` [EXTRACTED]
+- [[getCountries()]] - `calls` [EXTRACTED]
 - [[getSession()]] - `calls` [EXTRACTED]
-- [[partnersroute.ts]] - `contains` [EXTRACTED]
+- [[maproute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Partners_Service__API_Routes
+#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

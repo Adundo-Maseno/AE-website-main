@@ -1,11 +1,11 @@
 ---
 source_file: "D:/AE-website-main/README.md"
 type: "document"
-community: "Root Localized Layout, Fonts & Footer"
+community: "Root Localized Layout, Fonts & Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Root_Localized_Layout_Fonts__Footer
+  - community/Root_Localized_Layout_Fonts__Docs
 ---
 
 # Editorial Design System
@@ -17,4 +17,4 @@ tags:
 - [[dmSans]] - `references` [EXTRACTED]
 - [[playfairDisplay]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Footer
+#graphify/document #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/auth/login/route.ts"
 type: "code"
-community: "Admin Session & JWT Auth"
+community: "Admin Session, JWT & Credentials API"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Session__JWT_Auth
+  - community/Admin_Session_JWT__Credentials_API
 ---
 
 # login/route.ts
@@ -19,4 +19,4 @@ tags:
 - [[signSessionToken()]] - `imports` [EXTRACTED]
 - [[verifyAdminCredentials()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Session__JWT_Auth
+#graphify/code #graphify/EXTRACTED #community/Admin_Session_JWT__Credentials_API

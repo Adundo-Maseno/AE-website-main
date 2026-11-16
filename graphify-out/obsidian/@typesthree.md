@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Dev Dependencies & Tooling"
+community: "Dev Dependencies & ESLint Config"
 location: "L57"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Dev_Dependencies__Tooling
+  - community/Dev_Dependencies__ESLint_Config
 ---
 
 # @types/three
@@ -15,4 +15,4 @@ tags:
 - [[@typesthree@0.184.1]] - `declares` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Dev_Dependencies__Tooling
+#graphify/concept #graphify/EXTRACTED #community/Dev_Dependencies__ESLint_Config

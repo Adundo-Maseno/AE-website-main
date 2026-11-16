@@ -1,12 +1,12 @@
 ---
 source_file: "proxy.ts"
 type: "code"
-community: "Localized Metadata & Privacy Pages"
+community: "Site Header & Language Switcher"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Localized_Metadata__Privacy_Pages
+  - community/Site_Header__Language_Switcher
 ---
 
 # config
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[proxy.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Localized_Metadata__Privacy_Pages
+#graphify/code #graphify/EXTRACTED #community/Site_Header__Language_Switcher

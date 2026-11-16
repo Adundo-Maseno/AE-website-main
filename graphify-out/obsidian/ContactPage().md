@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/contact/page.tsx"
 type: "code"
-community: "Page Sections API & Work Overview"
+community: "Contact Page & About Content"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Page_Sections_API__Work_Overview
+  - community/Contact_Page__About_Content
 ---
 
 # ContactPage()
@@ -17,4 +17,4 @@ tags:
 - [[getPageSections()]] - `calls` [EXTRACTED]
 - [[getSiteSettings()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Work_Overview
+#graphify/code #graphify/EXTRACTED #community/Contact_Page__About_Content

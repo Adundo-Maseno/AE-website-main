@@ -1,20 +1,19 @@
 ---
-source_file: "app/api/email-preview/route.ts"
+source_file: "app/api/admin/why-agri/route.ts"
 type: "code"
-community: "Media Upload, Contact & Email Pipeline"
-location: "L41"
+community: "Protected Admin API Auth Guards"
+location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Media_Upload_Contact__Email_Pipeline
+  - community/Protected_Admin_API_Auth_Guards
 ---
 
 # GET()
 
 ## Connections
-- [[email-previewroute.ts]] - `contains` [EXTRACTED]
-- [[generateRespondentAcknowledgmentEmail()]] - `calls` [EXTRACTED]
-- [[generateTeamNotificationEmail()]] - `calls` [EXTRACTED]
-- [[getLogoDataUri()]] - `calls` [EXTRACTED]
+- [[getAllWhyAgriCardsAdmin()]] - `calls` [EXTRACTED]
+- [[getSession()]] - `calls` [EXTRACTED]
+- [[why-agriroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Media_Upload_Contact__Email_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Protected_Admin_API_Auth_Guards

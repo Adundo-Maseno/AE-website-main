@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/expertise/[id]/route.ts"
 type: "code"
-community: "Expertise Pillars Service & API"
+community: "Expertise Pillars Service & ID Resolution"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Expertise_Pillars_Service__API
+  - community/Expertise_Pillars_Service__ID_Resolution
 ---
 
 # expertise/[id]/route.ts
@@ -21,4 +21,4 @@ tags:
 - [[next_1]] - `imports_from` [EXTRACTED]
 - [[updateExpertisePillar()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Expertise_Pillars_Service__API
+#graphify/code #graphify/EXTRACTED #community/Expertise_Pillars_Service__ID_Resolution

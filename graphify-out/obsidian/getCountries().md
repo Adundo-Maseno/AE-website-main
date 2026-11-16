@@ -1,18 +1,18 @@
 ---
 source_file: "lib/services/map-service.ts"
 type: "code"
-community: "Impact Map Country Data & Services"
+community: "Pan-African Impact Map & Admin UI"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Impact_Map_Country_Data__Services
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # getCountries()
 
 ## Connections
-- [[GET()_6]] - `calls` [EXTRACTED]
+- [[GET()_7]] - `calls` [EXTRACTED]
 - [[MapPage()]] - `calls` [EXTRACTED]
 - [[OurImpactPage()]] - `calls` [EXTRACTED]
 - [[localemappage.tsx]] - `imports` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[maproute.ts]] - `imports` [EXTRACTED]
 - [[our-impactpage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Impact_Map_Country_Data__Services
+#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

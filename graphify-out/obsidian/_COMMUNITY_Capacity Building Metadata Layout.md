@@ -22,8 +22,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Site Settings, SEO & Terms Routes]]
-- 1 edge to [[_COMMUNITY_Localized Metadata & Privacy Pages]]
+- 1 edge to [[_COMMUNITY_Admin Login & SEO Route Handlers]]
+- 1 edge to [[_COMMUNITY_Site Header & Language Switcher]]
 
 ## Top bridge nodes
 - [[capacity-buildinglayout.tsx]] - degree 4, connects to 2 communities

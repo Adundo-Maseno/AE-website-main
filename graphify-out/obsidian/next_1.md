@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Site Settings, SEO & Terms Routes"
+community: "Admin Login & SEO Route Handlers"
 location: "L39"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Site_Settings_SEO__Terms_Routes
+  - community/Admin_Login__SEO_Route_Handlers
 ---
 
 # next
@@ -90,6 +90,7 @@ tags:
 - [[seedroute.ts]] - `imports_from` [EXTRACTED]
 - [[sessionroute.ts]] - `imports_from` [EXTRACTED]
 - [[settings-service.ts]] - `imports_from` [EXTRACTED]
+- [[settingspage.tsx]] - `imports_from` [EXTRACTED]
 - [[settingsroute.ts]] - `imports_from` [EXTRACTED]
 - [[sitemap.ts]] - `imports_from` [EXTRACTED]
 - [[stakeholder-convenings-client.tsx]] - `imports_from` [EXTRACTED]
@@ -107,4 +108,4 @@ tags:
 - [[why-agriidroute.ts]] - `imports_from` [EXTRACTED]
 - [[why-agriroute.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Site_Settings_SEO__Terms_Routes
+#graphify/concept #graphify/EXTRACTED #community/Admin_Login__SEO_Route_Handlers

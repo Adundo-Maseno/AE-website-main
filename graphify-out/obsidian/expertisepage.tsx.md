@@ -1,12 +1,12 @@
 ---
 source_file: "app/admin/expertise/page.tsx"
 type: "code"
-community: "Admin Philosophy, Insights & Form Modals"
+community: "Admin Expertise UI & Bento Grid"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Philosophy_Insights__Form_Modals
+  - community/Admin_Expertise_UI__Bento_Grid
 ---
 
 # expertise/page.tsx
@@ -20,4 +20,4 @@ tags:
 - [[lucide-react]] - `imports_from` [EXTRACTED]
 - [[react]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals
+#graphify/code #graphify/EXTRACTED #community/Admin_Expertise_UI__Bento_Grid

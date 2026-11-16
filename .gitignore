@@ -37,4 +37,8 @@ public/12158327_3840_2160_30fps.mp4
 # Graphify AST cache
 graphify-out/cache/
 
+# Local admin credentials and settings fallback caches
+.admin-credentials.json
+.site-settings-cache.json
+
 scratch_check.js

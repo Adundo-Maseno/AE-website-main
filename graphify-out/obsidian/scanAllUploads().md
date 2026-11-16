@@ -12,7 +12,7 @@ tags:
 # scanAllUploads()
 
 ## Connections
-- [[GET()_4]] - `calls` [EXTRACTED]
+- [[GET()_5]] - `calls` [EXTRACTED]
 - [[galleryroute.ts]] - `contains` [EXTRACTED]
 - [[scanDirectory()]] - `calls` [EXTRACTED]
 

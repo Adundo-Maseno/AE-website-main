@@ -1,19 +1,19 @@
 ---
-source_file: "app/api/admin/team/route.ts"
+source_file: "app/api/admin/settings/route.ts"
 type: "code"
-community: "Protected Admin CRUD API Routes"
+community: "Site Settings & Feature Flag Persistence"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Protected_Admin_CRUD_API_Routes
+  - community/Site_Settings__Feature_Flag_Persistence
 ---
 
 # GET()
 
 ## Connections
 - [[getSession()]] - `calls` [EXTRACTED]
-- [[getTeamMembers()]] - `calls` [EXTRACTED]
-- [[teamroute.ts]] - `contains` [EXTRACTED]
+- [[getSiteSettings()]] - `calls` [EXTRACTED]
+- [[settingsroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Protected_Admin_CRUD_API_Routes
+#graphify/code #graphify/EXTRACTED #community/Site_Settings__Feature_Flag_Persistence

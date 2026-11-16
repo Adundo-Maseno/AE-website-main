@@ -1,12 +1,12 @@
 ---
 source_file: "components/language-switch-provider.tsx"
 type: "code"
-community: "Root Localized Layout, Fonts & Footer"
+community: "Root Localized Layout, Fonts & Docs"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Root_Localized_Layout_Fonts__Footer
+  - community/Root_Localized_Layout_Fonts__Docs
 ---
 
 # LanguageSwitchProvider()
@@ -16,4 +16,4 @@ tags:
 - [[localelayout.tsx]] - `imports` [EXTRACTED]
 - [[language-switch-provider.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Footer
+#graphify/code #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Docs

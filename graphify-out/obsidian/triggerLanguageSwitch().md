@@ -1,12 +1,12 @@
 ---
 source_file: "components/language-switch-provider.tsx"
 type: "code"
-community: "Header Navigation & i18n Routing"
+community: "Site Header & Language Switcher"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Header_Navigation__i18n_Routing
+  - community/Site_Header__Language_Switcher
 ---
 
 # triggerLanguageSwitch()
@@ -16,4 +16,4 @@ tags:
 - [[header.tsx]] - `imports` [EXTRACTED]
 - [[language-switch-provider.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Header_Navigation__i18n_Routing
+#graphify/code #graphify/EXTRACTED #community/Site_Header__Language_Switcher

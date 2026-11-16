@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/settings-service.ts"
 type: "code"
-community: "Root Localized Layout, Fonts & Footer"
-location: "L4"
+community: "Admin Settings UI, Footer & Why-Agri"
+location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Root_Localized_Layout_Fonts__Footer
+  - community/Admin_Settings_UI_Footer__Why-Agri
 ---
 
 # SiteSettingsData
@@ -17,4 +17,4 @@ tags:
 - [[settings-service.ts]] - `contains` [EXTRACTED]
 - [[settingspage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Footer
+#graphify/code #graphify/EXTRACTED #community/Admin_Settings_UI_Footer__Why-Agri

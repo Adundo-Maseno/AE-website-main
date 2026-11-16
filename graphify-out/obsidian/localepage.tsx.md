@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/page.tsx"
 type: "code"
-community: "Home Page Data Hydration"
+community: "Home & About Page Data Hydration"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home_Page_Data_Hydration
+  - community/Home__About_Page_Data_Hydration
 ---
 
 # [locale]/page.tsx
@@ -26,4 +26,4 @@ tags:
 - [[revalidate_14]] - `contains` [EXTRACTED]
 - [[why-agri-service.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home_Page_Data_Hydration
+#graphify/code #graphify/EXTRACTED #community/Home__About_Page_Data_Hydration

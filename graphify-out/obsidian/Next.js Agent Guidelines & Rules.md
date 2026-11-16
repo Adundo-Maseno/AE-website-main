@@ -1,11 +1,11 @@
 ---
 source_file: "D:/AE-website-main/AGENTS.md"
 type: "document"
-community: "Next.js Config & Deployment Docs"
+community: "Root Localized Layout, Fonts & Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Nextjs_Config__Deployment_Docs
+  - community/Root_Localized_Layout_Fonts__Docs
 ---
 
 # Next.js Agent Guidelines & Rules
@@ -15,4 +15,4 @@ tags:
 - [[RootLayout()]] - `references` [EXTRACTED]
 - [[next.config.mjs]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Nextjs_Config__Deployment_Docs
+#graphify/document #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Docs

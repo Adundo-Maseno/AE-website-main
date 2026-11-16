@@ -12,6 +12,7 @@ import { staticWhyAgriCards } from '@/lib/services/why-agri-service'
 import { staticExpertisePillars } from '@/lib/services/expertise-service'
 import { staticGalleryItems } from '@/lib/services/gallery-service'
 import { SECTION_CONFIGS } from '@/lib/cms-sections-config'
+import { getSiteSettings } from '@/lib/services/settings-service'
 import SeedButton from '@/components/admin/seed-button'
 import {
   FileText,
@@ -29,6 +30,7 @@ import {
   Globe,
   MapPin,
   Image as ImageIcon,
+  KeyRound,
 } from 'lucide-react'
 
 export default async function AdminDashboardPage() {
@@ -38,6 +40,7 @@ export default async function AdminDashboardPage() {
   }
 
   const dbConnected = await isDatabaseConnected()
+  const siteSettings = await getSiteSettings()
 
   let resourcesCount = publicDownloads.length
   let teamCount = staticTeamMembers.length
@@ -131,7 +134,7 @@ export default async function AdminDashboardPage() {
         </div>
 
         {/* Masthead Action Strip */}
-        <div className="flex items-center gap-2.5 shrink-0">
+        <div className="flex flex-wrap items-center gap-2.5 shrink-0">
           <Link
             href="/admin/resources"
             className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold bg-[#0F2417] text-[#FAF9F5] hover:bg-[#0F2417]/90 transition shadow-xs"
@@ -146,6 +149,14 @@ export default async function AdminDashboardPage() {
           >
             <Plus size={14} />
             <span>Add Member</span>
+          </Link>
+
+          <Link
+            href="/admin/settings#credentials"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold bg-white border border-[#0F2417]/15 text-[#0F2417] hover:bg-[#0F2417]/5 transition"
+          >
+            <KeyRound size={14} />
+            <span>Credentials &amp; Settings</span>
           </Link>
 
           <SeedButton />
@@ -203,6 +214,36 @@ export default async function AdminDashboardPage() {
           </div>
 
           <div className="space-y-2.5">
+            {/* Admin Credentials & Language Switcher Controls */}
+            <Link
+              href="/admin/settings#credentials"
+              className="group flex items-center justify-between p-4 rounded-xl bg-white border border-[#0F2417]/15 hover:border-[#0F2417]/40 transition shadow-xs"
+            >
+              <div className="flex items-center gap-3.5">
+                <div className="w-8 h-8 rounded-lg bg-[#0F2417]/10 flex items-center justify-center text-[#0F2417] group-hover:bg-[#0F2417] group-hover:text-white transition">
+                  <KeyRound size={16} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-[#0F2417]">
+                    Admin Login Credentials &amp; Language Switcher
+                  </h3>
+                  <p className="text-xs text-[#0F2417]/60">
+                    Change login email/password and show or hide the EN / FR switcher on the site
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className={`text-[11px] font-semibold px-2 py-0.5 rounded-full border ${
+                  siteSettings.showLanguageSwitcher !== false
+                    ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
+                    : 'bg-stone-100 text-stone-600 border-stone-200'
+                }`}>
+                  {siteSettings.showLanguageSwitcher !== false ? 'EN/FR Shown' : 'EN/FR Hidden'}
+                </span>
+                <ArrowRight size={14} className="text-[#0F2417]/40 group-hover:translate-x-0.5 group-hover:text-[#0F2417] transition" />
+              </div>
+            </Link>
+
             {/* Taglines, Vision, Mission & Goals */}
             <Link
               href="/admin/sections"

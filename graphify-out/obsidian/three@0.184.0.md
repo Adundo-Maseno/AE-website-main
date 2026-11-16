@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Field Gallery Service & Showcase"
+community: "Office Plants Motion Gallery"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Field_Gallery_Service__Showcase
+  - community/Office_Plants_Motion_Gallery
 ---
 
 # three@^0.184.0
@@ -15,4 +15,4 @@ tags:
 - [[dependencies]] - `contains` [EXTRACTED]
 - [[three]] - `declares` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Field_Gallery_Service__Showcase
+#graphify/code #graphify/EXTRACTED #community/Office_Plants_Motion_Gallery

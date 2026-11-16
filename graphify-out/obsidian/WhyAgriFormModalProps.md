@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/why-agri-form-modal.tsx"
 type: "code"
-community: "Admin Philosophy, Insights & Form Modals"
+community: "Admin Settings UI, Footer & Why-Agri"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Philosophy_Insights__Form_Modals
+  - community/Admin_Settings_UI_Footer__Why-Agri
 ---
 
 # WhyAgriFormModalProps
@@ -15,4 +15,4 @@ tags:
 - [[WhyAgriCardData]] - `references` [EXTRACTED]
 - [[why-agri-form-modal.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals
+#graphify/code #graphify/EXTRACTED #community/Admin_Settings_UI_Footer__Why-Agri

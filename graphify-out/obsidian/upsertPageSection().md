@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/page-sections-service.ts"
 type: "code"
-community: "Page Sections API & Work Overview"
+community: "Page Sections API & Client Advisory"
 location: "L263"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Page_Sections_API__Work_Overview
+  - community/Page_Sections_API__Client_Advisory
 ---
 
 # upsertPageSection()
@@ -17,4 +17,4 @@ tags:
 - [[page-sections-service.ts]] - `contains` [EXTRACTED]
 - [[sectionsroute.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Work_Overview
+#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Client_Advisory

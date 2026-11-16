@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Localized Metadata & Privacy Pages"
+community: "Site Header & Language Switcher"
 location: "L40"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Localized_Metadata__Privacy_Pages
+  - community/Site_Header__Language_Switcher
 ---
 
 # next-intl
@@ -60,4 +60,4 @@ tags:
 - [[technical-studieslayout.tsx]] - `imports_from` [EXTRACTED]
 - [[why-agri-experience.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Localized_Metadata__Privacy_Pages
+#graphify/concept #graphify/EXTRACTED #community/Site_Header__Language_Switcher

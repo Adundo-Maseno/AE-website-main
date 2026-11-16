@@ -1,19 +1,19 @@
 ---
-source_file: "app/api/admin/resources/route.ts"
+source_file: "app/api/admin/projects/route.ts"
 type: "code"
-community: "Protected Admin CRUD API Routes"
+community: "Projects Service & Capacity Building"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Protected_Admin_CRUD_API_Routes
+  - community/Projects_Service__Capacity_Building
 ---
 
 # GET()
 
 ## Connections
-- [[getResources()]] - `calls` [EXTRACTED]
+- [[getProjects()]] - `calls` [EXTRACTED]
 - [[getSession()]] - `calls` [EXTRACTED]
-- [[resourcesroute.ts]] - `contains` [EXTRACTED]
+- [[projectsroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Protected_Admin_CRUD_API_Routes
+#graphify/code #graphify/EXTRACTED #community/Projects_Service__Capacity_Building

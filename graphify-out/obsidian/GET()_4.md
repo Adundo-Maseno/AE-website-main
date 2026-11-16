@@ -1,20 +1,19 @@
 ---
-source_file: "app/api/admin/gallery/route.ts"
+source_file: "app/api/admin/gallery-items/route.ts"
 type: "code"
-community: "Media Upload, Contact & Email Pipeline"
-location: "L47"
+community: "Field Gallery Admin & Showcase"
+location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Media_Upload_Contact__Email_Pipeline
+  - community/Field_Gallery_Admin__Showcase
 ---
 
 # GET()
 
 ## Connections
-- [[galleryroute.ts]] - `contains` [EXTRACTED]
+- [[gallery-itemsroute.ts]] - `contains` [EXTRACTED]
+- [[getGalleryItems()]] - `calls` [EXTRACTED]
 - [[getSession()]] - `calls` [EXTRACTED]
-- [[scanAllUploads()]] - `calls` [EXTRACTED]
-- [[scanDirectory()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Media_Upload_Contact__Email_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Field_Gallery_Admin__Showcase

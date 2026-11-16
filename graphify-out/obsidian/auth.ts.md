@@ -1,12 +1,12 @@
 ---
 source_file: "lib/auth.ts"
 type: "code"
-community: "Admin Session & JWT Auth"
+community: "Admin Session, JWT & Credentials API"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Session__JWT_Auth
+  - community/Admin_Session_JWT__Credentials_API
 ---
 
 # auth.ts
@@ -16,6 +16,8 @@ tags:
 - [[DEFAULT_ADMIN_EMAIL]] - `contains` [EXTRACTED]
 - [[DEFAULT_ADMIN_PASSWORD]] - `contains` [EXTRACTED]
 - [[JWT_SECRET]] - `contains` [EXTRACTED]
+- [[LOCAL_CREDENTIALS_PATH]] - `contains` [EXTRACTED]
+- [[LocalAdminCredentials]] - `contains` [EXTRACTED]
 - [[SESSION_COOKIE_NAME]] - `contains` [EXTRACTED]
 - [[adminlayout.tsx]] - `imports_from` [EXTRACTED]
 - [[adminpage.tsx]] - `imports_from` [EXTRACTED]
@@ -32,6 +34,7 @@ tags:
 - [[getSession()]] - `contains` [EXTRACTED]
 - [[insightsidroute.ts]] - `imports_from` [EXTRACTED]
 - [[insightsroute.ts]] - `imports_from` [EXTRACTED]
+- [[isDatabaseConnected()]] - `imports` [EXTRACTED]
 - [[jose]] - `imports_from` [EXTRACTED]
 - [[loginroute.ts]] - `imports_from` [EXTRACTED]
 - [[logoutroute.ts]] - `imports_from` [EXTRACTED]
@@ -44,6 +47,9 @@ tags:
 - [[prisma]] - `imports` [EXTRACTED]
 - [[projectsidroute.ts]] - `imports_from` [EXTRACTED]
 - [[projectsroute.ts]] - `imports_from` [EXTRACTED]
+- [[readLocalAdminCredentials()]] - `contains` [EXTRACTED]
+- [[ref_fs]] - `imports_from` [EXTRACTED]
+- [[ref_path]] - `imports_from` [EXTRACTED]
 - [[resourcesidroute.ts]] - `imports_from` [EXTRACTED]
 - [[resourcesroute.ts]] - `imports_from` [EXTRACTED]
 - [[sectionsroute.ts]] - `imports_from` [EXTRACTED]
@@ -58,5 +64,6 @@ tags:
 - [[verifySessionToken()]] - `contains` [EXTRACTED]
 - [[why-agriidroute.ts]] - `imports_from` [EXTRACTED]
 - [[why-agriroute.ts]] - `imports_from` [EXTRACTED]
+- [[writeLocalAdminCredentials()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Session__JWT_Auth
+#graphify/code #graphify/EXTRACTED #community/Admin_Session_JWT__Credentials_API

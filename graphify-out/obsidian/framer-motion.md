@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Home Page Data Hydration"
+community: "Contact Page & About Content"
 location: "L34"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Home_Page_Data_Hydration
+  - community/Contact_Page__About_Content
 ---
 
 # framer-motion
@@ -36,4 +36,4 @@ tags:
 - [[technical-studies-client.tsx]] - `imports_from` [EXTRACTED]
 - [[why-agri-experience.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Home_Page_Data_Hydration
+#graphify/concept #graphify/EXTRACTED #community/Contact_Page__About_Content

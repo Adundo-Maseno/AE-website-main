@@ -1,12 +1,12 @@
 ---
 source_file: "components/contact/contact-client-content.tsx"
 type: "code"
-community: "Page Sections API & Work Overview"
+community: "Contact Page & About Content"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Page_Sections_API__Work_Overview
+  - community/Contact_Page__About_Content
 ---
 
 # ContactClientContent()
@@ -17,4 +17,4 @@ tags:
 - [[contact-client-content.tsx]] - `contains` [EXTRACTED]
 - [[contactpage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Work_Overview
+#graphify/code #graphify/EXTRACTED #community/Contact_Page__About_Content

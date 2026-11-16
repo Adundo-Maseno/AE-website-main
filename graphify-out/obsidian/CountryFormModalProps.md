@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/country-form-modal.tsx"
 type: "code"
-community: "Impact Map Country Data & Services"
+community: "Pan-African Impact Map & Admin UI"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Impact_Map_Country_Data__Services
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # CountryFormModalProps
@@ -15,4 +15,4 @@ tags:
 - [[CountryItem]] - `references` [EXTRACTED]
 - [[country-form-modal.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Impact_Map_Country_Data__Services
+#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

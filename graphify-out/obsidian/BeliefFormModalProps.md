@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/belief-form-modal.tsx"
 type: "code"
-community: "Admin Philosophy, Insights & Form Modals"
+community: "Beliefs Admin Page & Form Modal"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Philosophy_Insights__Form_Modals
+  - community/Beliefs_Admin_Page__Form_Modal
 ---
 
 # BeliefFormModalProps
@@ -15,4 +15,4 @@ tags:
 - [[BeliefData]] - `references` [EXTRACTED]
 - [[belief-form-modal.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals
+#graphify/code #graphify/EXTRACTED #community/Beliefs_Admin_Page__Form_Modal

@@ -25,21 +25,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Page Sections API & Work Overview]]
-- 3 edges to [[_COMMUNITY_Technical Studies & Scroll Accordion]]
-- 2 edges to [[_COMMUNITY_Admin Dashboard & DB Seeding]]
-- 2 edges to [[_COMMUNITY_Client Advisory & Projects API]]
-- 2 edges to [[_COMMUNITY_Localized Metadata & Privacy Pages]]
-- 2 edges to [[_COMMUNITY_About Page & Expertise Bento Grid]]
+- 4 edges to [[_COMMUNITY_Projects Service & Capacity Building]]
+- 4 edges to [[_COMMUNITY_Contact Page & About Content]]
+- 4 edges to [[_COMMUNITY_Site Header & Language Switcher]]
+- 3 edges to [[_COMMUNITY_Page Sections API & Client Advisory]]
 - 2 edges to [[_COMMUNITY_Our Work Pillar Client Views & Admin]]
-- 1 edge to [[_COMMUNITY_Interactive Mapbox Canvas & Controls]]
-- 1 edge to [[_COMMUNITY_Home Page Data Hydration]]
-- 1 edge to [[_COMMUNITY_Admin Philosophy, Insights & Form Modals]]
-- 1 edge to [[_COMMUNITY_Site Settings, SEO & Terms Routes]]
+- 1 edge to [[_COMMUNITY_Impact Map Data, Merging & Controls]]
+- 1 edge to [[_COMMUNITY_Admin Settings UI, Footer & Why-Agri]]
+- 1 edge to [[_COMMUNITY_Admin Login & SEO Route Handlers]]
 
 ## Top bridge nodes
-- [[project-implementation-client.tsx]] - degree 13, connects to 8 communities
-- [[project-implementationpage.tsx]] - degree 9, connects to 4 communities
+- [[project-implementation-client.tsx]] - degree 13, connects to 6 communities
+- [[project-implementationpage.tsx]] - degree 9, connects to 3 communities
 - [[ProjectImplementationClient()]] - degree 5, connects to 2 communities
 - [[ProjectImplementationPage()]] - degree 4, connects to 2 communities
 - [[ProjectImplementationClientProps]] - degree 2, connects to 1 community

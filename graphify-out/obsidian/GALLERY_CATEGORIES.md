@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/gallery-form-modal.tsx"
 type: "code"
-community: "Admin Content Pages & Sections Config"
+community: "Field Gallery Admin & Showcase"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Content_Pages__Sections_Config
+  - community/Field_Gallery_Admin__Showcase
 ---
 
 # GALLERY_CATEGORIES
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[gallery-form-modal.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Content_Pages__Sections_Config
+#graphify/code #graphify/EXTRACTED #community/Field_Gallery_Admin__Showcase

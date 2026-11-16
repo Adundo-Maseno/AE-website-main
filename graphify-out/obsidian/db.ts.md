@@ -1,12 +1,12 @@
 ---
 source_file: "lib/db.ts"
 type: "code"
-community: "Admin Dashboard & DB Seeding"
+community: "Home & About Page Data Hydration"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Dashboard__DB_Seeding
+  - community/Home__About_Page_Data_Hydration
 ---
 
 # db.ts
@@ -34,4 +34,4 @@ tags:
 - [[team-service.ts]] - `imports_from` [EXTRACTED]
 - [[why-agri-service.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Dashboard__DB_Seeding
+#graphify/code #graphify/EXTRACTED #community/Home__About_Page_Data_Hydration

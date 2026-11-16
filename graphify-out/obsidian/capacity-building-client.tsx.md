@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/capacity-building/capacity-building-client.tsx"
 type: "code"
-community: "Our Work Pillar Client Views & Admin"
+community: "Projects Service & Capacity Building"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Pillar_Client_Views__Admin
+  - community/Projects_Service__Capacity_Building
 ---
 
 # capacity-building-client.tsx
@@ -26,4 +26,4 @@ tags:
 - [[rolling-text.tsx]] - `imports_from` [EXTRACTED]
 - [[routing.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Client_Views__Admin
+#graphify/code #graphify/EXTRACTED #community/Projects_Service__Capacity_Building

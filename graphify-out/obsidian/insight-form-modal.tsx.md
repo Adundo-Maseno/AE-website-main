@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/insight-form-modal.tsx"
 type: "code"
-community: "Admin Philosophy, Insights & Form Modals"
+community: "Field Insights Admin & Public Showcase"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Philosophy_Insights__Form_Modals
+  - community/Field_Insights_Admin__Public_Showcase
 ---
 
 # insight-form-modal.tsx
@@ -20,4 +20,4 @@ tags:
 - [[lucide-react]] - `imports_from` [EXTRACTED]
 - [[react]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals
+#graphify/code #graphify/EXTRACTED #community/Field_Insights_Admin__Public_Showcase

@@ -1,19 +1,20 @@
 ---
-source_file: "app/api/admin/insights/route.ts"
+source_file: "app/api/admin/gallery/route.ts"
 type: "code"
-community: "Insights Service & API Routes"
-location: "L5"
+community: "Media Upload, Contact & Email Pipeline"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Insights_Service__API_Routes
+  - community/Media_Upload_Contact__Email_Pipeline
 ---
 
 # GET()
 
 ## Connections
-- [[getInsights()]] - `calls` [EXTRACTED]
+- [[galleryroute.ts]] - `contains` [EXTRACTED]
 - [[getSession()]] - `calls` [EXTRACTED]
-- [[insightsroute.ts]] - `contains` [EXTRACTED]
+- [[scanAllUploads()]] - `calls` [EXTRACTED]
+- [[scanDirectory()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Insights_Service__API_Routes
+#graphify/code #graphify/EXTRACTED #community/Media_Upload_Contact__Email_Pipeline

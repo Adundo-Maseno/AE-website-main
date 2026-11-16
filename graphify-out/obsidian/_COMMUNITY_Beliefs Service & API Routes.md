@@ -11,7 +11,7 @@ members: 15
 
 ## Members
 - [[DELETE()]] - code - app/api/admin/beliefs/[id]/route.ts
-- [[GET()_1]] - code - app/api/admin/beliefs/route.ts
+- [[GET()_2]] - code - app/api/admin/beliefs/route.ts
 - [[POST()_3]] - code - app/api/admin/beliefs/route.ts
 - [[PUT()]] - code - app/api/admin/beliefs/[id]/route.ts
 - [[beliefs-service.ts]] - code - lib/services/beliefs-service.ts
@@ -34,24 +34,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_Admin Dashboard & DB Seeding]]
-- 8 edges to [[_COMMUNITY_Protected Admin CRUD API Routes]]
+- 11 edges to [[_COMMUNITY_Home & About Page Data Hydration]]
+- 8 edges to [[_COMMUNITY_Protected Admin API Auth Guards]]
 - 4 edges to [[_COMMUNITY_Partners Service & API Routes]]
-- 3 edges to [[_COMMUNITY_Home Page Data Hydration]]
-- 3 edges to [[_COMMUNITY_Admin Philosophy, Insights & Form Modals]]
-- 3 edges to [[_COMMUNITY_Site Settings, SEO & Terms Routes]]
-- 3 edges to [[_COMMUNITY_Expertise Pillars Service & API]]
-- 3 edges to [[_COMMUNITY_Why-Agri Service & API Routes]]
-- 2 edges to [[_COMMUNITY_Admin Session & JWT Auth]]
-- 2 edges to [[_COMMUNITY_Gallery Items Service & API Routes]]
-- 2 edges to [[_COMMUNITY_Insights Service & API Routes]]
-- 1 edge to [[_COMMUNITY_Map Country Service & ID Resolution]]
-- 1 edge to [[_COMMUNITY_Projects Service & ID Resolution]]
-- 1 edge to [[_COMMUNITY_Team Service & ID Resolution]]
+- 3 edges to [[_COMMUNITY_Beliefs Admin Page & Form Modal]]
+- 3 edges to [[_COMMUNITY_Admin Dashboard & DB Seeding]]
+- 3 edges to [[_COMMUNITY_Admin Login & SEO Route Handlers]]
+- 2 edges to [[_COMMUNITY_Admin Session, JWT & Credentials API]]
+- 2 edges to [[_COMMUNITY_Expertise Pillars Service & ID Resolution]]
+- 2 edges to [[_COMMUNITY_Field Gallery Admin & Showcase]]
+- 2 edges to [[_COMMUNITY_Field Insights Admin & Public Showcase]]
+- 2 edges to [[_COMMUNITY_Pan-African Impact Map & Admin UI]]
+- 2 edges to [[_COMMUNITY_Projects Service & Capacity Building]]
+- 2 edges to [[_COMMUNITY_Resource Library & PDF Preview]]
+- 2 edges to [[_COMMUNITY_Team Service, Roster Admin & Showcase]]
+- 2 edges to [[_COMMUNITY_Why-Agri Service & ID Resolution]]
+- 1 edge to [[_COMMUNITY_Admin Settings UI, Footer & Why-Agri]]
 
 ## Top bridge nodes
-- [[stripManagedFields()]] - degree 29, connects to 10 communities
-- [[beliefs-service.ts]] - degree 25, connects to 4 communities
+- [[stripManagedFields()]] - degree 29, connects to 11 communities
+- [[beliefs-service.ts]] - degree 25, connects to 5 communities
 - [[beliefsidroute.ts]] - degree 8, connects to 3 communities
 - [[beliefsroute.ts]] - degree 8, connects to 3 communities
 - [[getAllBeliefsAdmin()]] - degree 4, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "app/admin/sections/page.tsx"
 type: "code"
-community: "Admin Content Pages & Sections Config"
+community: "Admin Partners & Sections Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Content_Pages__Sections_Config
+  - community/Admin_Partners__Sections_Config
 ---
 
 # sections/page.tsx
@@ -24,4 +24,4 @@ tags:
 - [[lucide-react]] - `imports_from` [EXTRACTED]
 - [[react]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Content_Pages__Sections_Config
+#graphify/code #graphify/EXTRACTED #community/Admin_Partners__Sections_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/map/[id]/route.ts"
 type: "code"
-community: "Map Country Service & ID Resolution"
+community: "Pan-African Impact Map & Admin UI"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Map_Country_Service__ID_Resolution
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # DELETE()
@@ -16,4 +16,4 @@ tags:
 - [[getSession()]] - `calls` [EXTRACTED]
 - [[mapidroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Map_Country_Service__ID_Resolution
+#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

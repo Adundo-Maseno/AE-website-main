@@ -1,19 +1,18 @@
 ---
-source_file: "app/api/admin/beliefs/route.ts"
+source_file: "app/api/admin/auth/session/route.ts"
 type: "code"
-community: "Beliefs Service & API Routes"
-location: "L5"
+community: "Protected Admin API Auth Guards"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Beliefs_Service__API_Routes
+  - community/Protected_Admin_API_Auth_Guards
 ---
 
 # GET()
 
 ## Connections
-- [[beliefsroute.ts]] - `contains` [EXTRACTED]
-- [[getAllBeliefsAdmin()]] - `calls` [EXTRACTED]
 - [[getSession()]] - `calls` [EXTRACTED]
+- [[sessionroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Beliefs_Service__API_Routes
+#graphify/code #graphify/EXTRACTED #community/Protected_Admin_API_Auth_Guards

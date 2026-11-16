@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/projects/route.ts"
 type: "code"
-community: "Client Advisory & Projects API"
+community: "Projects Service & Capacity Building"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Client_Advisory__Projects_API
+  - community/Projects_Service__Capacity_Building
 ---
 
 # POST()
@@ -16,4 +16,4 @@ tags:
 - [[getSession()]] - `calls` [EXTRACTED]
 - [[projectsroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Client_Advisory__Projects_API
+#graphify/code #graphify/EXTRACTED #community/Projects_Service__Capacity_Building

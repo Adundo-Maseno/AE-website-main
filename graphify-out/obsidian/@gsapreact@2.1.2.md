@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Home Page Data Hydration"
+community: "Admin Settings UI, Footer & Why-Agri"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home_Page_Data_Hydration
+  - community/Admin_Settings_UI_Footer__Why-Agri
 ---
 
 # @gsap/react@^2.1.2
@@ -15,4 +15,4 @@ tags:
 - [[@gsapreact]] - `declares` [EXTRACTED]
 - [[dependencies]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home_Page_Data_Hydration
+#graphify/code #graphify/EXTRACTED #community/Admin_Settings_UI_Footer__Why-Agri

@@ -1,7 +1,9 @@
 import { SignJWT, jwtVerify } from 'jose'
 import { cookies } from 'next/headers'
 import bcrypt from 'bcryptjs'
-import { prisma } from './db'
+import { readFileSync, writeFileSync } from 'fs'
+import path from 'path'
+import { prisma, isDatabaseConnected } from './db'
 
 const JWT_SECRET = new TextEncoder().encode(
   process.env.ADMIN_JWT_SECRET || 'agri-experience-cms-super-secret-key-2026-secure'
@@ -11,10 +13,39 @@ export const SESSION_COOKIE_NAME = 'ae_admin_session'
 export const DEFAULT_ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'admin@agri-experience.com'
 export const DEFAULT_ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'AgriAdmin2026!'
 
+const LOCAL_CREDENTIALS_PATH = path.join(process.cwd(), '.admin-credentials.json')
+
 export interface AdminSessionPayload {
   email: string
   name: string
   role: 'superadmin' | 'editor'
+}
+
+export interface LocalAdminCredentials {
+  email: string
+  passwordHash: string
+  name?: string
+}
+
+export function readLocalAdminCredentials(): LocalAdminCredentials | null {
+  try {
+    const raw = readFileSync(LOCAL_CREDENTIALS_PATH, 'utf-8')
+    const parsed = JSON.parse(raw)
+    if (parsed && typeof parsed.email === 'string' && typeof parsed.passwordHash === 'string') {
+      return parsed as LocalAdminCredentials
+    }
+  } catch {
+    // File missing or unreadable
+  }
+  return null
+}
+
+export function writeLocalAdminCredentials(creds: LocalAdminCredentials): void {
+  try {
+    writeFileSync(LOCAL_CREDENTIALS_PATH, JSON.stringify(creds, null, 2), 'utf-8')
+  } catch {
+    // Ignore read-only filesystem errors
+  }
 }
 
 /**
@@ -55,38 +86,60 @@ export async function getSession(): Promise<AdminSessionPayload | null> {
 }
 
 /**
- * Verifies credentials against database AdminUser records,
- * falling back to default environment credentials if database is empty/unseeded.
+ * Verifies credentials against database AdminUser records, then local credentials cache,
+ * falling back to default environment credentials only if neither store has been initialized.
  */
 export async function verifyAdminCredentials(
   email: string,
   pass: string
 ): Promise<{ success: boolean; user?: AdminSessionPayload }> {
-  try {
-    const user = await prisma.adminUser.findUnique({
-      where: { email: email.toLowerCase().trim() },
-    })
+  const normalizedEmail = email.toLowerCase().trim()
 
-    if (user) {
-      const isValid = await bcrypt.compare(pass, user.passwordHash)
-      if (isValid) {
-        return {
-          success: true,
-          user: {
-            email: user.email,
-            name: user.name || 'Admin',
-            role: 'superadmin',
-          },
+  if (await isDatabaseConnected()) {
+    try {
+      const userCount = await prisma.adminUser.count()
+      if (userCount > 0) {
+        const user = await prisma.adminUser.findUnique({
+          where: { email: normalizedEmail },
+        })
+        if (user && (await bcrypt.compare(pass, user.passwordHash))) {
+          return {
+            success: true,
+            user: {
+              email: user.email,
+              name: user.name || 'Admin',
+              role: 'superadmin',
+            },
+          }
         }
+        return { success: false }
+      }
+    } catch {
+      // Fall through to local/default store
+    }
+  }
+
+  const localCreds = readLocalAdminCredentials()
+  if (localCreds) {
+    if (
+      normalizedEmail === localCreds.email.toLowerCase().trim() &&
+      (await bcrypt.compare(pass, localCreds.passwordHash))
+    ) {
+      return {
+        success: true,
+        user: {
+          email: localCreds.email,
+          name: localCreds.name || 'Agri Experience Admin',
+          role: 'superadmin',
+        },
       }
     }
-  } catch {
-    // Database connection fallback
+    return { success: false }
   }
 
   // Fallback to default environment credentials
   if (
-    email.toLowerCase().trim() === DEFAULT_ADMIN_EMAIL.toLowerCase().trim() &&
+    normalizedEmail === DEFAULT_ADMIN_EMAIL.toLowerCase().trim() &&
     pass === DEFAULT_ADMIN_PASSWORD
   ) {
     return {
@@ -101,4 +154,3 @@ export async function verifyAdminCredentials(
 
   return { success: false }
 }
-

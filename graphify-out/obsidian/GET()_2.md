@@ -1,19 +1,19 @@
 ---
-source_file: "app/api/admin/expertise/route.ts"
+source_file: "app/api/admin/beliefs/route.ts"
 type: "code"
-community: "Expertise Pillars Service & API"
+community: "Beliefs Service & API Routes"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Expertise_Pillars_Service__API
+  - community/Beliefs_Service__API_Routes
 ---
 
 # GET()
 
 ## Connections
-- [[expertiseroute.ts]] - `contains` [EXTRACTED]
-- [[getAllExpertisePillarsAdmin()]] - `calls` [EXTRACTED]
+- [[beliefsroute.ts]] - `contains` [EXTRACTED]
+- [[getAllBeliefsAdmin()]] - `calls` [EXTRACTED]
 - [[getSession()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Expertise_Pillars_Service__API
+#graphify/code #graphify/EXTRACTED #community/Beliefs_Service__API_Routes

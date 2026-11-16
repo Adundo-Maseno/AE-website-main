@@ -1,19 +1,19 @@
 ---
-source_file: "app/api/admin/settings/route.ts"
+source_file: "app/api/admin/sections/route.ts"
 type: "code"
-community: "Site Settings, SEO & Terms Routes"
+community: "Page Sections API & Client Advisory"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Site_Settings_SEO__Terms_Routes
+  - community/Page_Sections_API__Client_Advisory
 ---
 
 # GET()
 
 ## Connections
+- [[getPageSections()]] - `calls` [EXTRACTED]
 - [[getSession()]] - `calls` [EXTRACTED]
-- [[getSiteSettings()]] - `calls` [EXTRACTED]
-- [[settingsroute.ts]] - `contains` [EXTRACTED]
+- [[sectionsroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Site_Settings_SEO__Terms_Routes
+#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Client_Advisory

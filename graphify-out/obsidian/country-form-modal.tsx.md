@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/country-form-modal.tsx"
 type: "code"
-community: "Admin Philosophy, Insights & Form Modals"
+community: "Pan-African Impact Map & Admin UI"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Philosophy_Insights__Form_Modals
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # country-form-modal.tsx
@@ -20,4 +20,4 @@ tags:
 - [[map-service.ts]] - `imports_from` [EXTRACTED]
 - [[react]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals
+#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

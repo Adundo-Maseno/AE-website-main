@@ -12,7 +12,7 @@ tags:
 # getAllBeliefsAdmin()
 
 ## Connections
-- [[GET()_1]] - `calls` [EXTRACTED]
+- [[GET()_2]] - `calls` [EXTRACTED]
 - [[beliefs-service.ts]] - `contains` [EXTRACTED]
 - [[beliefsroute.ts]] - `imports` [EXTRACTED]
 - [[isDatabaseConnected()]] - `calls` [EXTRACTED]

@@ -1,19 +1,19 @@
 ---
-source_file: "app/api/admin/map/route.ts"
+source_file: "app/api/admin/insights/route.ts"
 type: "code"
-community: "Impact Map Country Data & Services"
+community: "Field Insights Admin & Public Showcase"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Impact_Map_Country_Data__Services
+  - community/Field_Insights_Admin__Public_Showcase
 ---
 
 # GET()
 
 ## Connections
-- [[getCountries()]] - `calls` [EXTRACTED]
+- [[getInsights()]] - `calls` [EXTRACTED]
 - [[getSession()]] - `calls` [EXTRACTED]
-- [[maproute.ts]] - `contains` [EXTRACTED]
+- [[insightsroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Impact_Map_Country_Data__Services
+#graphify/code #graphify/EXTRACTED #community/Field_Insights_Admin__Public_Showcase

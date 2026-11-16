@@ -1,12 +1,12 @@
 ---
 source_file: "app/admin/map/page.tsx"
 type: "code"
-community: "Admin Philosophy, Insights & Form Modals"
+community: "Pan-African Impact Map & Admin UI"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Philosophy_Insights__Form_Modals
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # AdminMapPage()
@@ -15,4 +15,4 @@ tags:
 - [[CountryFormModal()]] - `calls` [EXTRACTED]
 - [[adminmappage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals
+#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

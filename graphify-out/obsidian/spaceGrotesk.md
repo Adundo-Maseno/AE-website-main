@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/layout.tsx"
 type: "code"
-community: "Root Localized Layout, Fonts & Footer"
+community: "Root Localized Layout, Fonts & Docs"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Root_Localized_Layout_Fonts__Footer
+  - community/Root_Localized_Layout_Fonts__Docs
 ---
 
 # spaceGrotesk
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[localelayout.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Footer
+#graphify/code #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Docs

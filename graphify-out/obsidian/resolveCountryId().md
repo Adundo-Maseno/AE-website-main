@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/map-service.ts"
 type: "code"
-community: "Map Country Service & ID Resolution"
+community: "Pan-African Impact Map & Admin UI"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Map_Country_Service__ID_Resolution
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # resolveCountryId()
@@ -16,4 +16,4 @@ tags:
 - [[map-service.ts]] - `contains` [EXTRACTED]
 - [[updateCountry()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Map_Country_Service__ID_Resolution
+#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

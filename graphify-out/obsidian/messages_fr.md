@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "Protected Admin CRUD API Routes"
+community: "Resource Library & PDF Preview"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Protected_Admin_CRUD_API_Routes
+  - community/Resource_Library__PDF_Preview
 ---
 
 # messages_fr
@@ -14,4 +14,4 @@ tags:
 - [[resources-service.ts]] - `imports_from` [EXTRACTED]
 - [[seedroute.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Protected_Admin_CRUD_API_Routes
+#graphify/concept #graphify/EXTRACTED #community/Resource_Library__PDF_Preview

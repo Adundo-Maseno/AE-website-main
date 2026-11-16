@@ -1,12 +1,12 @@
 ---
 source_file: "components/map/map-utils.ts"
 type: "code"
-community: "Interactive Mapbox Canvas & Controls"
+community: "Impact Map Data, Merging & Controls"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Mapbox_Canvas__Controls
+  - community/Impact_Map_Data_Merging__Controls
 ---
 
 # getOptimalZoom()
@@ -18,4 +18,4 @@ tags:
 - [[map-auto-center.tsx]] - `imports` [EXTRACTED]
 - [[map-utils.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Mapbox_Canvas__Controls
+#graphify/code #graphify/EXTRACTED #community/Impact_Map_Data_Merging__Controls

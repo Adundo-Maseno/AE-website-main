@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/admin-header.tsx"
 type: "code"
-community: "Admin Philosophy, Insights & Form Modals"
+community: "Admin Layout Shell & Navigation"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Philosophy_Insights__Form_Modals
+  - community/Admin_Layout_Shell__Navigation
 ---
 
 # AdminHeader()
@@ -17,4 +17,4 @@ tags:
 - [[adminlayout.tsx]] - `imports` [EXTRACTED]
 - [[handleClickOutside()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals
+#graphify/code #graphify/EXTRACTED #community/Admin_Layout_Shell__Navigation

@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/expertise-service.ts"
 type: "code"
-community: "Admin Dashboard & DB Seeding"
+community: "Home & About Page Data Hydration"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Dashboard__DB_Seeding
+  - community/Home__About_Page_Data_Hydration
 ---
 
 # expertise-service.ts
@@ -39,4 +39,4 @@ tags:
 - [[stripManagedFields()]] - `imports` [EXTRACTED]
 - [[updateExpertisePillar()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Dashboard__DB_Seeding
+#graphify/code #graphify/EXTRACTED #community/Home__About_Page_Data_Hydration

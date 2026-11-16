@@ -1,12 +1,12 @@
 ---
 source_file: "components/ui/rolling-text.tsx"
 type: "code"
-community: "Technical Studies & Scroll Accordion"
+community: "Contact Page & About Content"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Technical_Studies__Scroll_Accordion
+  - community/Contact_Page__About_Content
 ---
 
 # rolling-text.tsx
@@ -31,4 +31,4 @@ tags:
 - [[stakeholder-convenings-client.tsx]] - `imports_from` [EXTRACTED]
 - [[technical-studies-client.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Technical_Studies__Scroll_Accordion
+#graphify/code #graphify/EXTRACTED #community/Contact_Page__About_Content

@@ -1,11 +1,11 @@
 ---
 source_file: "D:/AE-website-main/README.md"
 type: "document"
-community: "Next.js Config & Deployment Docs"
+community: "Root Localized Layout, Fonts & Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Nextjs_Config__Deployment_Docs
+  - community/Root_Localized_Layout_Fonts__Docs
 ---
 
 # High-Performance Motion Design
@@ -16,4 +16,4 @@ tags:
 - [[RollingText()]] - `references` [EXTRACTED]
 - [[ScrollAccordion()]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Nextjs_Config__Deployment_Docs
+#graphify/document #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Docs

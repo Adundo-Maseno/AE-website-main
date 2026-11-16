@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/beliefs-service.ts"
 type: "code"
-community: "Admin Philosophy, Insights & Form Modals"
+community: "Beliefs Admin Page & Form Modal"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Philosophy_Insights__Form_Modals
+  - community/Beliefs_Admin_Page__Form_Modal
 ---
 
 # BeliefData
@@ -19,4 +19,4 @@ tags:
 - [[beliefspage.tsx]] - `imports` [EXTRACTED]
 - [[home-content.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals
+#graphify/code #graphify/EXTRACTED #community/Beliefs_Admin_Page__Form_Modal

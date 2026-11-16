@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Home Page Data Hydration"
+community: "Admin Settings UI, Footer & Why-Agri"
 location: "L35"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Home_Page_Data_Hydration
+  - community/Admin_Settings_UI_Footer__Why-Agri
 ---
 
 # gsap
@@ -17,4 +17,4 @@ tags:
 - [[package.json]] - `imports` [EXTRACTED]
 - [[scroll-accordion.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Home_Page_Data_Hydration
+#graphify/concept #graphify/EXTRACTED #community/Admin_Settings_UI_Footer__Why-Agri

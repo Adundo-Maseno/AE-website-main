@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/page.tsx"
 type: "code"
-community: "Page Sections API & Work Overview"
+community: "Page Sections API & Client Advisory"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Page_Sections_API__Work_Overview
+  - community/Page_Sections_API__Client_Advisory
 ---
 
 # our-work/page.tsx
@@ -21,4 +21,4 @@ tags:
 - [[revalidate_10]] - `contains` [EXTRACTED]
 - [[routing.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Work_Overview
+#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Client_Advisory

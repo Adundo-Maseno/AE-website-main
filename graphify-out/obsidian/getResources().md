@@ -12,7 +12,7 @@ tags:
 # getResources()
 
 ## Connections
-- [[GET()_10]] - `calls` [EXTRACTED]
+- [[GET()_11]] - `calls` [EXTRACTED]
 - [[Resource Library & PDF Preview]] - `references` [EXTRACTED]
 - [[ResourcesLayout()]] - `calls` [EXTRACTED]
 - [[ResourcesPage()]] - `calls` [EXTRACTED]

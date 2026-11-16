@@ -50,10 +50,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Interactive Mapbox Canvas & Controls]]
+- 10 edges to [[_COMMUNITY_Impact Map Data, Merging & Controls]]
 - 5 edges to [[_COMMUNITY_Runtime Package Dependencies]]
-- 4 edges to [[_COMMUNITY_Technical Studies & Scroll Accordion]]
-- 3 edges to [[_COMMUNITY_Admin Philosophy, Insights & Form Modals]]
+- 4 edges to [[_COMMUNITY_Contact Page & About Content]]
+- 3 edges to [[_COMMUNITY_Admin Settings UI, Footer & Why-Agri]]
 
 ## Top bridge nodes
 - [[command.tsx]] - degree 21, connects to 3 communities

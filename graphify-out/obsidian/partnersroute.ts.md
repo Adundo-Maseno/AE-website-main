@@ -12,7 +12,7 @@ tags:
 # partners/route.ts
 
 ## Connections
-- [[GET()_7]] - `contains` [EXTRACTED]
+- [[GET()_8]] - `contains` [EXTRACTED]
 - [[POST()_8]] - `contains` [EXTRACTED]
 - [[auth.ts]] - `imports_from` [EXTRACTED]
 - [[createPartner()]] - `imports` [EXTRACTED]

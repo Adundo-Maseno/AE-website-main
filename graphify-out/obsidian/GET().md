@@ -1,18 +1,18 @@
 ---
-source_file: "app/api/admin/auth/session/route.ts"
+source_file: "app/api/admin/auth/change-password/route.ts"
 type: "code"
-community: "Protected Admin CRUD API Routes"
-location: "L4"
+community: "Protected Admin API Auth Guards"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Protected_Admin_CRUD_API_Routes
+  - community/Protected_Admin_API_Auth_Guards
 ---
 
 # GET()
 
 ## Connections
+- [[change-passwordroute.ts]] - `contains` [EXTRACTED]
 - [[getSession()]] - `calls` [EXTRACTED]
-- [[sessionroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Protected_Admin_CRUD_API_Routes
+#graphify/code #graphify/EXTRACTED #community/Protected_Admin_API_Auth_Guards

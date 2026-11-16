@@ -1,18 +1,18 @@
 ---
 source_file: "app/api/admin/projects/route.ts"
 type: "code"
-community: "Client Advisory & Projects API"
+community: "Projects Service & Capacity Building"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Client_Advisory__Projects_API
+  - community/Projects_Service__Capacity_Building
 ---
 
 # projects/route.ts
 
 ## Connections
-- [[GET()_9]] - `contains` [EXTRACTED]
+- [[GET()_10]] - `contains` [EXTRACTED]
 - [[POST()_9]] - `contains` [EXTRACTED]
 - [[auth.ts]] - `imports_from` [EXTRACTED]
 - [[createProject()]] - `imports` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[next_1]] - `imports_from` [EXTRACTED]
 - [[projects-service.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Client_Advisory__Projects_API
+#graphify/code #graphify/EXTRACTED #community/Projects_Service__Capacity_Building

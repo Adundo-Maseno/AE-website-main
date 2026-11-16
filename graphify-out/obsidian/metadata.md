@@ -1,12 +1,12 @@
 ---
 source_file: "app/admin/layout.tsx"
 type: "code"
-community: "Admin Philosophy, Insights & Form Modals"
+community: "Admin Layout Shell & Navigation"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Philosophy_Insights__Form_Modals
+  - community/Admin_Layout_Shell__Navigation
 ---
 
 # metadata
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[adminlayout.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals
+#graphify/code #graphify/EXTRACTED #community/Admin_Layout_Shell__Navigation

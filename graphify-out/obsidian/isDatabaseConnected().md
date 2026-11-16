@@ -1,12 +1,12 @@
 ---
 source_file: "lib/db.ts"
 type: "code"
-community: "Admin Dashboard & DB Seeding"
+community: "Home & About Page Data Hydration"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Dashboard__DB_Seeding
+  - community/Home__About_Page_Data_Hydration
 ---
 
 # isDatabaseConnected()
@@ -16,6 +16,7 @@ tags:
 - [[POST()]] - `calls` [EXTRACTED]
 - [[POST()_12]] - `calls` [EXTRACTED]
 - [[adminpage.tsx]] - `imports` [EXTRACTED]
+- [[auth.ts]] - `imports` [EXTRACTED]
 - [[beliefs-service.ts]] - `imports` [EXTRACTED]
 - [[change-passwordroute.ts]] - `imports` [EXTRACTED]
 - [[createSeedGuard()]] - `calls` [EXTRACTED]
@@ -50,6 +51,7 @@ tags:
 - [[team-service.ts]] - `imports` [EXTRACTED]
 - [[updateSiteSettings()]] - `calls` [EXTRACTED]
 - [[upsertPageSection()]] - `calls` [EXTRACTED]
+- [[verifyAdminCredentials()]] - `calls` [EXTRACTED]
 - [[why-agri-service.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Dashboard__DB_Seeding
+#graphify/code #graphify/EXTRACTED #community/Home__About_Page_Data_Hydration

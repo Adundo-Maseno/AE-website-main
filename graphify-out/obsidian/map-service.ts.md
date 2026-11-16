@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/map-service.ts"
 type: "code"
-community: "Admin Dashboard & DB Seeding"
+community: "Pan-African Impact Map & Admin UI"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Dashboard__DB_Seeding
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # map-service.ts
@@ -39,4 +39,4 @@ tags:
 - [[stripManagedFields()]] - `imports` [EXTRACTED]
 - [[updateCountry()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Dashboard__DB_Seeding
+#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

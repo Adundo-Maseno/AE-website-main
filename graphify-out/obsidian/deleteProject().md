@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/projects-service.ts"
 type: "code"
-community: "Projects Service & ID Resolution"
+community: "Projects Service & Capacity Building"
 location: "L582"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Projects_Service__ID_Resolution
+  - community/Projects_Service__Capacity_Building
 ---
 
 # deleteProject()
@@ -18,4 +18,4 @@ tags:
 - [[projectsidroute.ts]] - `imports` [EXTRACTED]
 - [[resolveProjectId()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Projects_Service__ID_Resolution
+#graphify/code #graphify/EXTRACTED #community/Projects_Service__Capacity_Building

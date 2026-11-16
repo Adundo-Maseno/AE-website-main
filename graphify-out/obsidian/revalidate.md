@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/about/page.tsx"
 type: "code"
-community: "About Page & Expertise Bento Grid"
+community: "Home & About Page Data Hydration"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About_Page__Expertise_Bento_Grid
+  - community/Home__About_Page_Data_Hydration
 ---
 
 # revalidate
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[aboutpage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About_Page__Expertise_Bento_Grid
+#graphify/code #graphify/EXTRACTED #community/Home__About_Page_Data_Hydration

@@ -1,12 +1,12 @@
 ---
 source_file: "app/admin/settings/page.tsx"
 type: "code"
-community: "Admin Philosophy, Insights & Form Modals"
-location: "L22"
+community: "Admin Settings UI, Footer & Why-Agri"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Philosophy_Insights__Form_Modals
+  - community/Admin_Settings_UI_Footer__Why-Agri
 ---
 
 # AdminSettingsPage()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[settingspage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals
+#graphify/code #graphify/EXTRACTED #community/Admin_Settings_UI_Footer__Why-Agri

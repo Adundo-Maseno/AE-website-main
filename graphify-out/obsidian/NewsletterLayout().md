@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/newsletter/layout.tsx"
 type: "code"
-community: "Newsletter Page Metadata Layout"
+community: "Admin Login & SEO Route Handlers"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Newsletter_Page_Metadata_Layout
+  - community/Admin_Login__SEO_Route_Handlers
 ---
 
 # NewsletterLayout()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[newsletterlayout.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Newsletter_Page_Metadata_Layout
+#graphify/code #graphify/EXTRACTED #community/Admin_Login__SEO_Route_Handlers

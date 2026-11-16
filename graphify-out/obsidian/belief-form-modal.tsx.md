@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/belief-form-modal.tsx"
 type: "code"
-community: "Admin Philosophy, Insights & Form Modals"
+community: "Beliefs Admin Page & Form Modal"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Philosophy_Insights__Form_Modals
+  - community/Beliefs_Admin_Page__Form_Modal
 ---
 
 # belief-form-modal.tsx
@@ -20,4 +20,4 @@ tags:
 - [[lucide-react]] - `imports_from` [EXTRACTED]
 - [[react]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals
+#graphify/code #graphify/EXTRACTED #community/Beliefs_Admin_Page__Form_Modal

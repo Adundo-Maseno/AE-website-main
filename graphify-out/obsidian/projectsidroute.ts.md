@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/projects/[id]/route.ts"
 type: "code"
-community: "Projects Service & ID Resolution"
+community: "Projects Service & Capacity Building"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Projects_Service__ID_Resolution
+  - community/Projects_Service__Capacity_Building
 ---
 
 # projects/[id]/route.ts
@@ -21,4 +21,4 @@ tags:
 - [[projects-service.ts]] - `imports_from` [EXTRACTED]
 - [[updateProject()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Projects_Service__ID_Resolution
+#graphify/code #graphify/EXTRACTED #community/Projects_Service__Capacity_Building

@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/insights/page.tsx"
 type: "code"
-community: "Admin Philosophy, Insights & Form Modals"
+community: "Field Insights Admin & Public Showcase"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Philosophy_Insights__Form_Modals
+  - community/Field_Insights_Admin__Public_Showcase
 ---
 
 # [locale]/insights/page.tsx
@@ -20,4 +20,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[revalidate_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals
+#graphify/code #graphify/EXTRACTED #community/Field_Insights_Admin__Public_Showcase

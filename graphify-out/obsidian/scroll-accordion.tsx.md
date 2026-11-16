@@ -1,12 +1,12 @@
 ---
 source_file: "components/motion/scroll-accordion.tsx"
 type: "code"
-community: "Technical Studies & Scroll Accordion"
+community: "Contact Page & About Content"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Technical_Studies__Scroll_Accordion
+  - community/Contact_Page__About_Content
 ---
 
 # scroll-accordion.tsx
@@ -28,4 +28,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[rolling-text.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Technical_Studies__Scroll_Accordion
+#graphify/code #graphify/EXTRACTED #community/Contact_Page__About_Content

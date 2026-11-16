@@ -1,12 +1,12 @@
 ---
 source_file: "next.config.mjs"
 type: "code"
-community: "Next.js Config & Deployment Docs"
+community: "Root Localized Layout, Fonts & Docs"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Nextjs_Config__Deployment_Docs
+  - community/Root_Localized_Layout_Fonts__Docs
 ---
 
 # nextConfig
@@ -16,4 +16,4 @@ tags:
 - [[Next.js 16 Web Application Stack]] - `references` [EXTRACTED]
 - [[next.config.mjs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Nextjs_Config__Deployment_Docs
+#graphify/code #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Docs

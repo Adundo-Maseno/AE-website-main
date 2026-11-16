@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/page-sections-service.ts"
 type: "code"
-community: "Page Sections API & Work Overview"
+community: "Page Sections API & Client Advisory"
 location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Page_Sections_API__Work_Overview
+  - community/Page_Sections_API__Client_Advisory
 ---
 
 # getPageSections()
@@ -17,7 +17,7 @@ tags:
 - [[ClientAdvisoryPage()]] - `calls` [EXTRACTED]
 - [[ContactPage()]] - `calls` [EXTRACTED]
 - [[DigitalPlatformsPage()]] - `calls` [EXTRACTED]
-- [[GET()_11]] - `calls` [EXTRACTED]
+- [[GET()_12]] - `calls` [EXTRACTED]
 - [[HomePage()]] - `calls` [EXTRACTED]
 - [[OurImpactPage()]] - `calls` [EXTRACTED]
 - [[OurWorkPage()]] - `calls` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[stakeholder-conveningspage.tsx]] - `imports` [EXTRACTED]
 - [[technical-studiespage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Work_Overview
+#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Client_Advisory

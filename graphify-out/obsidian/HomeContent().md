@@ -1,12 +1,12 @@
 ---
 source_file: "components/home-content.tsx"
 type: "code"
-community: "Home Page Data Hydration"
+community: "Home & About Page Data Hydration"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home_Page_Data_Hydration
+  - community/Home__About_Page_Data_Hydration
 ---
 
 # HomeContent()
@@ -20,4 +20,4 @@ tags:
 - [[localepage.tsx]] - `imports` [EXTRACTED]
 - [[home-content.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home_Page_Data_Hydration
+#graphify/code #graphify/EXTRACTED #community/Home__About_Page_Data_Hydration

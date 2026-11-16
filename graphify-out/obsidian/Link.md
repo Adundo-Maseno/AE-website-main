@@ -1,12 +1,12 @@
 ---
 source_file: "i18n/routing.ts"
 type: "code"
-community: "About Page & Expertise Bento Grid"
+community: "Site Header & Language Switcher"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About_Page__Expertise_Bento_Grid
+  - community/Site_Header__Language_Switcher
 ---
 
 # Link
@@ -49,4 +49,4 @@ tags:
 - [[stakeholder-convenings-client.tsx]] - `imports` [EXTRACTED]
 - [[technical-studies-client.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About_Page__Expertise_Bento_Grid
+#graphify/code #graphify/EXTRACTED #community/Site_Header__Language_Switcher

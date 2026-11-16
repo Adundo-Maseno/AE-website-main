@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/settings-service.ts"
 type: "code"
-community: "Site Settings, SEO & Terms Routes"
-location: "L17"
+community: "Site Settings & Feature Flag Persistence"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Site_Settings_SEO__Terms_Routes
+  - community/Site_Settings__Feature_Flag_Persistence
 ---
 
 # defaultSiteSettings
@@ -15,4 +15,4 @@ tags:
 - [[seedroute.ts]] - `imports` [EXTRACTED]
 - [[settings-service.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Site_Settings_SEO__Terms_Routes
+#graphify/code #graphify/EXTRACTED #community/Site_Settings__Feature_Flag_Persistence

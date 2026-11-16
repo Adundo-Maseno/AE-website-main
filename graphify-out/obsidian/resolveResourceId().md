@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/resources-service.ts"
 type: "code"
-community: "Protected Admin CRUD API Routes"
+community: "Resource Library & PDF Preview"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Protected_Admin_CRUD_API_Routes
+  - community/Resource_Library__PDF_Preview
 ---
 
 # resolveResourceId()
@@ -16,4 +16,4 @@ tags:
 - [[resources-service.ts]] - `contains` [EXTRACTED]
 - [[updateResource()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Protected_Admin_CRUD_API_Routes
+#graphify/code #graphify/EXTRACTED #community/Resource_Library__PDF_Preview

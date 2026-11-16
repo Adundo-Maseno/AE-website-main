@@ -25,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Dev Dependencies & Tooling]]
+- 1 edge to [[_COMMUNITY_Dev Dependencies & ESLint Config]]
 
 ## Top bridge nodes
 - [[overrides]] - degree 6, connects to 1 community

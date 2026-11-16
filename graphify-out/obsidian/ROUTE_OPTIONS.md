@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/expertise-form-modal.tsx"
 type: "code"
-community: "Admin Philosophy, Insights & Form Modals"
+community: "Admin Expertise UI & Bento Grid"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Philosophy_Insights__Form_Modals
+  - community/Admin_Expertise_UI__Bento_Grid
 ---
 
 # ROUTE_OPTIONS
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[expertise-form-modal.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals
+#graphify/code #graphify/EXTRACTED #community/Admin_Expertise_UI__Bento_Grid

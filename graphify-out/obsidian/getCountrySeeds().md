@@ -1,12 +1,12 @@
 ---
 source_file: "components/country-data.ts"
 type: "code"
-community: "Impact Map Country Data & Services"
+community: "Impact Map Data, Merging & Controls"
 location: "L1049"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Impact_Map_Country_Data__Services
+  - community/Impact_Map_Data_Merging__Controls
 ---
 
 # getCountrySeeds()
@@ -15,4 +15,4 @@ tags:
 - [[country-data.ts]] - `contains` [EXTRACTED]
 - [[mergeCountriesWithCms()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Impact_Map_Country_Data__Services
+#graphify/code #graphify/EXTRACTED #community/Impact_Map_Data_Merging__Controls

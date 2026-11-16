@@ -1,11 +1,11 @@
 ---
 source_file: "D:/AE-website-main/README.md"
 type: "document"
-community: "Impact Map Country Data & Services"
+community: "Admin Dashboard & DB Seeding"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Impact_Map_Country_Data__Services
+  - community/Admin_Dashboard__DB_Seeding
 ---
 
 # Seed Sector Transformation
@@ -16,4 +16,4 @@ tags:
 - [[staticExpertisePillars]] - `implements` [EXTRACTED]
 - [[staticProjects]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Impact_Map_Country_Data__Services
+#graphify/document #graphify/EXTRACTED #community/Admin_Dashboard__DB_Seeding

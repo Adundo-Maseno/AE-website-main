@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/expertise-service.ts"
 type: "code"
-community: "About Page & Expertise Bento Grid"
+community: "Home & About Page Data Hydration"
 location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About_Page__Expertise_Bento_Grid
+  - community/Home__About_Page_Data_Hydration
 ---
 
 # getExpertisePillars()
@@ -17,4 +17,4 @@ tags:
 - [[expertise-service.ts]] - `contains` [EXTRACTED]
 - [[isDatabaseConnected()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About_Page__Expertise_Bento_Grid
+#graphify/code #graphify/EXTRACTED #community/Home__About_Page_Data_Hydration

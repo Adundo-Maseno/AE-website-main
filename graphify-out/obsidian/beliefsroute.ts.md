@@ -12,7 +12,7 @@ tags:
 # beliefs/route.ts
 
 ## Connections
-- [[GET()_1]] - `contains` [EXTRACTED]
+- [[GET()_2]] - `contains` [EXTRACTED]
 - [[POST()_3]] - `contains` [EXTRACTED]
 - [[auth.ts]] - `imports_from` [EXTRACTED]
 - [[beliefs-service.ts]] - `imports_from` [EXTRACTED]

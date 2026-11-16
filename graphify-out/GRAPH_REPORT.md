@@ -1,73 +1,70 @@
 # Graph Report - AE-website-main  (2026-11-16)
 
 ## Corpus Check
-- 381 files · ~182,943 words
+- 380 files · ~184,270 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 7 file(s) not represented in the graph (top: (none) 2, .example 1, .css 1)
 
 ## Summary
-- 883 nodes · 2263 edges · 59 communities (47 shown, 12 thin omitted)
+- 893 nodes · 2293 edges · 57 communities (43 shown, 14 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.84)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
-- Admin Philosophy, Insights & Form Modals
+- Impact Map Data, Merging & Controls
 - Media Upload, Contact & Email Pipeline
-- Impact Map Country Data & Services
-- Interactive Mapbox Canvas & Controls
-- Admin Content Pages & Sections Config
-- Dev Dependencies & Tooling
-- Map Search & Dialog Primitives
-- Admin Dashboard & DB Seeding
-- Runtime Package Dependencies
-- Root Localized Layout, Fonts & Footer
-- Liquid Glass Shader Effects
-- Protected Admin CRUD API Routes
-- Shadcn UI Registry Config
-- TypeScript Compiler Configuration
-- Field Gallery Service & Showcase
-- Localized Metadata & Privacy Pages
-- pnpm Build & Workspace Rules
-- Our Work Pillar Client Views & Admin
-- Admin Session & JWT Auth
-- Page Sections API & Work Overview
-- About Page & Expertise Bento Grid
-- Beliefs Service & API Routes
-- Insights Service & API Routes
-- Section Layouts & Structured JSON-LD
-- Home Page Data Hydration
-- Partners Service & API Routes
-- Site Settings, SEO & Terms Routes
-- Technical Studies & Scroll Accordion
-- Expertise Pillars Service & API
-- Gallery Items Service & API Routes
-- Why-Agri Service & API Routes
+- Dev Dependencies & ESLint Config
 - Resource Library & PDF Preview
-- Client Advisory & Projects API
+- Pan-African Impact Map & Admin UI
+- Root Localized Layout, Fonts & Docs
+- Map Search & Dialog Primitives
+- Team Service, Roster Admin & Showcase
+- Field Gallery Admin & Showcase
+- Admin Partners & Sections Config
+- Field Insights Admin & Public Showcase
+- Runtime Package Dependencies
+- Site Header & Language Switcher
+- Liquid Glass Shader Effects
+- Admin Settings UI, Footer & Why-Agri
+- Shadcn UI Registry Config
+- Admin Session, JWT & Credentials API
+- Projects Service & Capacity Building
+- Home & About Page Data Hydration
+- TypeScript Compiler Configuration
+- Contact Page & About Content
+- Admin Dashboard & DB Seeding
+- Our Work Pillar Client Views & Admin
+- pnpm Build & Workspace Rules
+- Protected Admin API Auth Guards
+- Beliefs Service & API Routes
+- Partners Service & API Routes
+- Page Sections API & Client Advisory
+- Section Layouts & Structured JSON-LD
+- Admin Login & SEO Route Handlers
+- Office Plants Motion Gallery
+- Site Settings & Feature Flag Persistence
+- Admin Expertise UI & Bento Grid
 - Package Build & Dev Scripts
-- Next.js Config & Deployment Docs
-- Map Country Service & ID Resolution
-- Projects Service & ID Resolution
-- Team Service & ID Resolution
-- Public Team Showcase & Bio Cards
-- Header Navigation & i18n Routing
+- Expertise Pillars Service & ID Resolution
+- Why-Agri Service & ID Resolution
+- Beliefs Admin Page & Form Modal
+- Admin Layout Shell & Navigation
 - Digital Platforms Pillar Page
 - Project Implementation Pillar Page
-- Stakeholder Convenings Pillar Page
 - Package Version Overrides
 - Package Dependency Resolutions
-- ESLint Next.js Configuration
+- Technical Studies Pillar Page
 - Package Manager Engine Spec
 - PostCSS Tailwind Configuration
 - Image Optimization Shell Script
 
 ## God Nodes (most connected - your core abstractions)
-1. `next` - 94 edges
-2. `getSession()` - 84 edges
+1. `next` - 95 edges
+2. `getSession()` - 85 edges
 3. `react` - 80 edges
 4. `lucide-react` - 60 edges
 5. `next-intl` - 47 edges
-6. `isDatabaseConnected()` - 39 edges
+6. `isDatabaseConnected()` - 41 edges
 7. `Link` - 36 edges
 8. `RollingText()` - 34 edges
 9. `stripManagedFields()` - 29 edges
@@ -78,223 +75,207 @@
   D:/AE-website-main/README.md → app/[locale]/layout.tsx
 - `Editorial Design System` --references--> `dmSans`  [EXTRACTED]
   D:/AE-website-main/README.md → app/[locale]/layout.tsx
-- `Next.js Agent Guidelines & Rules` --references--> `RootLayout()`  [EXTRACTED]
-  D:/AE-website-main/AGENTS.md → app/[locale]/layout.tsx
-- `ESSETA Seed Program Initiative` --references--> `countrySeeds`  [EXTRACTED]
-  D:/AE-website-main/README.md → components/country-data.ts
 - `Agri Experience Organization` --references--> `Footer()`  [EXTRACTED]
   D:/AE-website-main/README.md → components/footer.tsx
+- `Agri Experience Organization` --references--> `InteractiveMap()`  [EXTRACTED]
+  D:/AE-website-main/README.md → components/interactive-map.tsx
+- `Editorial Design System` --references--> `LiquidGlass()`  [EXTRACTED]
+  D:/AE-website-main/README.md → components/liquid-glass/index.tsx
 
 ## Import Cycles
 - None detected.
 
-## Communities (59 total, 12 thin omitted)
+## Communities (57 total, 14 thin omitted)
 
-### Community 0 - "Admin Philosophy, Insights & Form Modals"
-Cohesion: 0.06
-Nodes (36): AdminBeliefsPage(), AdminExpertisePage(), AdminInsightsPage(), AdminLayout(), metadata, AdminMapPage(), AdminResourcesPage(), CATEGORIES (+28 more)
+### Community 0 - "Impact Map Data, Merging & Controls"
+Cohesion: 0.07
+Nodes (49): MapPage(), revalidate, cityCoordinates, CmsCountryInput, createGenericProjects(), getCountrySeeds(), mergeCountriesWithCms(), parseCountryList() (+41 more)
 
 ### Community 1 - "Media Upload, Contact & Email Pipeline"
 Cohesion: 0.06
 Nodes (37): GET(), scanAllUploads(), scanDirectory(), formatBytes(), GET(), PdfFileItem, ALLOWED_MIME_TYPES, POST() (+29 more)
 
-### Community 2 - "Impact Map Country Data & Services"
-Cohesion: 0.08
-Nodes (38): GET(), POST(), MapPage(), revalidate, OurImpactPage(), revalidate, CountryFormModalProps, cityCoordinates (+30 more)
+### Community 2 - "Dev Dependencies & ESLint Config"
+Cohesion: 0.07
+Nodes (38): config, devDependencies, eslint@10.9.1, eslint-config-next@16.3.3, husky@^9.1.7, postcss@^8.5.25, prisma@^6.4.1, tailwindcss@^4.2.0 (+30 more)
 
-### Community 3 - "Interactive Mapbox Canvas & Controls"
+### Community 3 - "Resource Library & PDF Preview"
+Cohesion: 0.09
+Nodes (29): AdminResourcesPage(), CATEGORIES, DELETE(), PUT(), GET(), POST(), ResourcesPage(), revalidate (+21 more)
+
+### Community 4 - "Pan-African Impact Map & Admin UI"
 Cohesion: 0.10
-Nodes (33): getCategoryIcon(), InteractiveMapbox(), InteractiveMapboxProps, SelectedLocation, MapActiveProjectFlyTo(), MapActiveProjectFlyToProps, MapAutoCenter(), MapAutoCenterProps (+25 more)
+Nodes (28): AdminMapPage(), DELETE(), PUT(), GET(), POST(), OurImpactPage(), revalidate, CountryFormModal() (+20 more)
 
-### Community 4 - "Admin Content Pages & Sections Config"
-Cohesion: 0.08
-Nodes (33): AdminGalleryPage(), CATEGORIES, shouldUnoptimize(), AdminPartnersPage(), CATEGORY_LABELS, AdminSectionsPage(), SectionRecord, AdminTeamPage() (+25 more)
-
-### Community 5 - "Dev Dependencies & Tooling"
-Cohesion: 0.08
-Nodes (35): devDependencies, eslint@10.9.1, husky@^9.1.7, postcss@^8.5.25, prisma@^6.4.1, tailwindcss@^4.2.0, @tailwindcss/postcss@^4.2.0, tw-animate-css@1.3.3 (+27 more)
+### Community 5 - "Root Localized Layout, Fonts & Docs"
+Cohesion: 0.10
+Nodes (22): Next.js Agent Guidelines & Rules, bebasNeue, dmSans, playfairDisplay, RootLayout(), spaceGrotesk, CookieToast(), Footer() (+14 more)
 
 ### Community 6 - "Map Search & Dialog Primitives"
 Cohesion: 0.17
 Nodes (23): MapSearch(), PremiumSearchProps, Command(), CommandDialog(), CommandEmpty(), CommandGroup(), CommandInput(), CommandItem() (+15 more)
 
-### Community 7 - "Admin Dashboard & DB Seeding"
-Cohesion: 0.22
-Nodes (16): AdminDashboardPage(), SeedButton(), countrySeeds, globalForPrisma, isDatabaseConnected(), prisma, PublicDownload, publicDownloads (+8 more)
+### Community 7 - "Team Service, Roster Admin & Showcase"
+Cohesion: 0.14
+Nodes (22): AdminTeamPage(), shouldUnoptimize(), DELETE(), PUT(), GET(), POST(), OurTeamPage(), revalidate (+14 more)
 
-### Community 8 - "Runtime Package Dependencies"
+### Community 8 - "Field Gallery Admin & Showcase"
+Cohesion: 0.13
+Nodes (22): AdminGalleryPage(), CATEGORIES, shouldUnoptimize(), DELETE(), PUT(), GET(), POST(), GalleryPage() (+14 more)
+
+### Community 9 - "Admin Partners & Sections Config"
+Cohesion: 0.12
+Nodes (21): AdminPartnersPage(), CATEGORY_LABELS, AdminSectionsPage(), SectionRecord, ImageUploader(), ImageUploaderProps, shouldUnoptimize(), CATEGORIES (+13 more)
+
+### Community 10 - "Field Insights Admin & Public Showcase"
+Cohesion: 0.16
+Nodes (19): AdminInsightsPage(), DELETE(), PUT(), GET(), POST(), InsightsPage(), revalidate, InsightFormModal() (+11 more)
+
+### Community 11 - "Runtime Package Dependencies"
 Cohesion: 0.08
 Nodes (26): dependencies, bcryptjs@^3.0.3, clsx@^2.1.1, cmdk@1.1.1, framer-motion@^12.39.0, jose@^6.2.16, lucide-react@^0.564.0, mapbox-gl@^3.24.0 (+18 more)
 
-### Community 9 - "Root Localized Layout, Fonts & Footer"
-Cohesion: 0.13
-Nodes (18): bebasNeue, dmSans, playfairDisplay, RootLayout(), spaceGrotesk, CookieToast(), Footer(), FooterProps (+10 more)
+### Community 12 - "Site Header & Language Switcher"
+Cohesion: 0.15
+Nodes (19): PrivacyPage(), AnimatedHamburger(), Header(), HeaderProps, navItems, triggerLanguageSwitch(), LiquidGlass(), BentoCard() (+11 more)
 
-### Community 10 - "Liquid Glass Shader Effects"
+### Community 13 - "Liquid Glass Shader Effects"
 Cohesion: 0.13
 Nodes (15): generateShaderDisplacementMap(), getMap(), GlassContainer, GlassFilter(), LiquidGlassProps, fragmentShaders, FragmentShaderType, length() (+7 more)
 
-### Community 11 - "Protected Admin CRUD API Routes"
-Cohesion: 0.18
-Nodes (16): GET(), DELETE(), PUT(), GET(), POST(), POST(), GET(), POST() (+8 more)
+### Community 14 - "Admin Settings UI, Footer & Why-Agri"
+Cohesion: 0.16
+Nodes (15): AdminWhyAgriPage(), WhyAgriFormModal(), WhyAgriFormModalProps, FooterProps, HomeContentProps, WhyAgriExperience(), WhyAgriExperienceProps, PageSectionData (+7 more)
 
-### Community 12 - "Shadcn UI Registry Config"
+### Community 15 - "Shadcn UI Registry Config"
 Cohesion: 0.10
 Nodes (19): aliases, components, hooks, lib, ui, utils, iconLibrary, registries (+11 more)
 
-### Community 13 - "TypeScript Compiler Configuration"
+### Community 16 - "Admin Session, JWT & Credentials API"
+Cohesion: 0.20
+Nodes (14): POST(), POST(), AdminSessionPayload, DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD, JWT_SECRET, LOCAL_CREDENTIALS_PATH, LocalAdminCredentials (+6 more)
+
+### Community 17 - "Projects Service & Capacity Building"
+Cohesion: 0.22
+Nodes (14): DELETE(), PUT(), GET(), POST(), CapacityBuildingClient(), CapacityBuildingPage(), revalidate, createProject() (+6 more)
+
+### Community 18 - "Home & About Page Data Hydration"
+Cohesion: 0.23
+Nodes (13): AboutPage(), revalidate, HomePage(), revalidate, HomeContent(), globalForPrisma, isDatabaseConnected(), prisma (+5 more)
+
+### Community 19 - "TypeScript Compiler Configuration"
 Cohesion: 0.11
 Nodes (18): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+10 more)
 
-### Community 14 - "Field Gallery Service & Showcase"
-Cohesion: 0.16
-Nodes (15): GalleryPage(), revalidate, easeInCubic(), easeOutCirc(), OfficePlantsGallery(), PlantFrame(), plantImages, SETTLED_POSITIONS (+7 more)
+### Community 20 - "Contact Page & About Content"
+Cohesion: 0.24
+Nodes (12): ContactPage(), revalidate, NewsletterPage(), AboutContent(), ContactClientContent(), ContactClientContentProps, DesktopStickyAccordion(), MobileFallbackAccordion() (+4 more)
 
-### Community 15 - "Localized Metadata & Privacy Pages"
-Cohesion: 0.16
-Nodes (6): PrivacyPage(), getPathname, redirect, routing, config, next-intl
+### Community 21 - "Admin Dashboard & DB Seeding"
+Cohesion: 0.21
+Nodes (13): AdminDashboardPage(), POST(), SeedButton(), countrySeeds, PublicDownload, publicDownloads, staticBeliefs, staticExpertisePillars (+5 more)
 
-### Community 16 - "pnpm Build & Workspace Rules"
+### Community 22 - "Our Work Pillar Client Views & Admin"
+Cohesion: 0.17
+Nodes (13): AdminProjectsPage(), PILLARS, CapacityBuildingClientProps, ClientAdvisoryClientProps, revalidate, StakeholderConveningsPage(), StakeholderConveningsClient(), StakeholderConveningsClientProps (+5 more)
+
+### Community 23 - "pnpm Build & Workspace Rules"
 Cohesion: 0.12
 Nodes (16): allowBuilds, @parcel/watcher, prisma, @prisma/client, @prisma/engines, sharp, @swc/core, unrs-resolver (+8 more)
 
-### Community 17 - "Our Work Pillar Client Views & Admin"
-Cohesion: 0.18
-Nodes (12): AdminProjectsPage(), PILLARS, CapacityBuildingClient(), CapacityBuildingClientProps, CapacityBuildingPage(), revalidate, ClientAdvisoryClientProps, TechnicalStudiesClientProps (+4 more)
+### Community 24 - "Protected Admin API Auth Guards"
+Cohesion: 0.22
+Nodes (12): GET(), GET(), GET(), POST(), GET(), POST(), getSession(), verifySessionToken() (+4 more)
 
-### Community 18 - "Admin Session & JWT Auth"
-Cohesion: 0.23
-Nodes (11): POST(), POST(), AdminSessionPayload, DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD, JWT_SECRET, SESSION_COOKIE_NAME, signSessionToken() (+3 more)
-
-### Community 19 - "Page Sections API & Work Overview"
-Cohesion: 0.21
-Nodes (11): GET(), POST(), ContactPage(), revalidate, OurWorkPage(), revalidate, ContactClientContent(), ContactClientContentProps (+3 more)
-
-### Community 20 - "About Page & Expertise Bento Grid"
-Cohesion: 0.23
-Nodes (13): AboutPage(), revalidate, AboutContent(), AboutContentProps, BentoCard(), BentoCardProps, ServicePillar, ServicesBentoGrid() (+5 more)
-
-### Community 21 - "Beliefs Service & API Routes"
+### Community 25 - "Beliefs Service & API Routes"
 Cohesion: 0.30
 Nodes (12): DELETE(), PUT(), GET(), POST(), createBelief(), deleteBelief(), ensureSeeded(), getAllBeliefsAdmin() (+4 more)
 
-### Community 22 - "Insights Service & API Routes"
+### Community 26 - "Partners Service & API Routes"
 Cohesion: 0.27
-Nodes (12): DELETE(), PUT(), GET(), POST(), createInsight(), deleteInsight(), ensureSeeded(), getInsights() (+4 more)
+Nodes (12): DELETE(), PUT(), GET(), POST(), createPartner(), deletePartner(), ensureSeeded(), getAllPartnersAdmin() (+4 more)
 
-### Community 23 - "Section Layouts & Structured JSON-LD"
+### Community 27 - "Page Sections API & Client Advisory"
+Cohesion: 0.23
+Nodes (10): GET(), POST(), ClientAdvisoryClient(), ClientAdvisoryPage(), revalidate, OurWorkPage(), revalidate, defaultPageSections (+2 more)
+
+### Community 28 - "Section Layouts & Structured JSON-LD"
 Cohesion: 0.23
 Nodes (6): AboutLayout(), OurImpactLayout(), OurWorkLayout(), ResourcesLayout(), BreadcrumbJsonLd(), ResourcesJsonLd()
 
-### Community 24 - "Home Page Data Hydration"
-Cohesion: 0.21
-Nodes (12): HomePage(), revalidate, HomeContent(), WhyAgriExperience(), getBeliefs(), getPartners(), getWhyAgriCards(), gsap@^3.15.0 (+4 more)
-
-### Community 25 - "Partners Service & API Routes"
-Cohesion: 0.30
-Nodes (11): DELETE(), PUT(), GET(), POST(), createPartner(), deletePartner(), ensureSeeded(), getAllPartnersAdmin() (+3 more)
-
-### Community 26 - "Site Settings, SEO & Terms Routes"
+### Community 30 - "Office Plants Motion Gallery"
 Cohesion: 0.20
-Nodes (6): GET(), PUT(), defaultSiteSettings, getSiteSettings(), updateSiteSettings(), next
+Nodes (11): easeInCubic(), easeOutCirc(), PlantFrame(), plantImages, SETTLED_POSITIONS, @react-three/drei@^10.7.7, @react-three/fiber@^9.6.1, three@^0.184.0 (+3 more)
 
-### Community 27 - "Technical Studies & Scroll Accordion"
-Cohesion: 0.26
-Nodes (9): NewsletterPage(), revalidate, TechnicalStudiesPage(), TechnicalStudiesClient(), DesktopStickyAccordion(), MobileFallbackAccordion(), ScrollAccordion(), RollingText() (+1 more)
+### Community 31 - "Site Settings & Feature Flag Persistence"
+Cohesion: 0.33
+Nodes (9): GET(), PUT(), defaultSiteSettings, getSiteSettings(), LOCAL_SETTINGS_CACHE_PATH, parseFeatureFlags(), readLocalSettingsCache(), updateSiteSettings() (+1 more)
 
-### Community 28 - "Expertise Pillars Service & API"
-Cohesion: 0.23
-Nodes (11): DELETE(), PUT(), GET(), POST(), createExpertisePillar(), deleteExpertisePillar(), ensureSeeded(), getAllExpertisePillarsAdmin() (+3 more)
-
-### Community 29 - "Gallery Items Service & API Routes"
-Cohesion: 0.31
-Nodes (10): DELETE(), PUT(), GET(), POST(), createGalleryItem(), deleteGalleryItem(), ensureSeeded(), resolveGalleryItemId() (+2 more)
-
-### Community 30 - "Why-Agri Service & API Routes"
-Cohesion: 0.23
-Nodes (11): DELETE(), PUT(), GET(), POST(), createWhyAgriCard(), deleteWhyAgriCard(), ensureSeeded(), getAllWhyAgriCardsAdmin() (+3 more)
-
-### Community 31 - "Resource Library & PDF Preview"
-Cohesion: 0.24
-Nodes (10): ResourcesPage(), revalidate, PdfPreview(), categories, PdfPreview, ResourcesContent(), getResources(), react-pdf@^10.4.1 (+2 more)
-
-### Community 32 - "Client Advisory & Projects API"
-Cohesion: 0.31
-Nodes (7): GET(), POST(), ClientAdvisoryClient(), ClientAdvisoryPage(), revalidate, createProject(), getProjects()
+### Community 32 - "Admin Expertise UI & Bento Grid"
+Cohesion: 0.33
+Nodes (7): AdminExpertisePage(), AboutContentProps, ExpertiseFormModal(), ExpertiseFormModalProps, ROUTE_OPTIONS, ServicesBentoGridProps, ExpertisePillarData
 
 ### Community 33 - "Package Build & Dev Scripts"
 Cohesion: 0.22
 Nodes (9): scripts, build, dev, lint, postinstall, prepare, preview:emails, start (+1 more)
 
-### Community 34 - "Next.js Config & Deployment Docs"
-Cohesion: 0.32
-Nodes (6): Next.js Agent Guidelines & Rules, nextConfig, withNextIntl, Hostinger Production Deployment, High-Performance Motion Design, Next.js 16 Web Application Stack
-
-### Community 35 - "Map Country Service & ID Resolution"
+### Community 34 - "Expertise Pillars Service & ID Resolution"
 Cohesion: 0.39
-Nodes (7): DELETE(), PUT(), deleteCountry(), ensureSeeded(), resolveCountryId(), seedGuard, updateCountry()
+Nodes (7): DELETE(), PUT(), deleteExpertisePillar(), ensureSeeded(), resolveExpertiseId(), seedGuard, updateExpertisePillar()
 
-### Community 36 - "Projects Service & ID Resolution"
+### Community 35 - "Why-Agri Service & ID Resolution"
 Cohesion: 0.39
-Nodes (7): DELETE(), PUT(), deleteProject(), ensureSeeded(), resolveProjectId(), seedGuard, updateProject()
+Nodes (7): DELETE(), PUT(), deleteWhyAgriCard(), ensureSeeded(), resolveWhyAgriId(), seedGuard, updateWhyAgriCard()
 
-### Community 37 - "Team Service & ID Resolution"
-Cohesion: 0.39
-Nodes (7): DELETE(), PUT(), deleteTeamMember(), ensureSeeded(), resolveTeamMemberId(), seedGuard, updateTeamMember()
+### Community 36 - "Beliefs Admin Page & Form Modal"
+Cohesion: 0.60
+Nodes (4): AdminBeliefsPage(), BeliefFormModal(), BeliefFormModalProps, BeliefData
 
-### Community 38 - "Public Team Showcase & Bio Cards"
-Cohesion: 0.36
-Nodes (6): OurTeamPage(), revalidate, OurTeamContent(), STATIC_IMAGE_CONFIG, TeamCard, getTeamMembers()
+### Community 37 - "Admin Layout Shell & Navigation"
+Cohesion: 0.47
+Nodes (3): AdminLayout(), metadata, AdminHeader()
 
-### Community 39 - "Header Navigation & i18n Routing"
-Cohesion: 0.43
-Nodes (7): AnimatedHamburger(), Header(), navItems, triggerLanguageSwitch(), LiquidGlass(), usePathname, useRouter
-
-### Community 40 - "Digital Platforms Pillar Page"
+### Community 38 - "Digital Platforms Pillar Page"
 Cohesion: 0.47
 Nodes (4): DigitalPlatformsClient(), DigitalPlatformsClientProps, DigitalPlatformsPage(), revalidate
 
-### Community 41 - "Project Implementation Pillar Page"
+### Community 39 - "Project Implementation Pillar Page"
 Cohesion: 0.47
 Nodes (4): ProjectImplementationPage(), revalidate, ProjectImplementationClient(), ProjectImplementationClientProps
 
-### Community 42 - "Stakeholder Convenings Pillar Page"
-Cohesion: 0.47
-Nodes (4): revalidate, StakeholderConveningsPage(), StakeholderConveningsClient(), StakeholderConveningsClientProps
-
-### Community 43 - "Package Version Overrides"
+### Community 40 - "Package Version Overrides"
 Cohesion: 0.33
 Nodes (6): overrides, brace-expansion, postcss, sharp, @types/react, @types/react-dom
 
-### Community 44 - "Package Dependency Resolutions"
+### Community 41 - "Package Dependency Resolutions"
 Cohesion: 0.33
 Nodes (6): resolutions, brace-expansion, postcss, sharp, @types/react, @types/react-dom
 
-### Community 45 - "ESLint Next.js Configuration"
-Cohesion: 0.50
-Nodes (3): config, eslint-config-next@16.3.3, eslint-config-next
+### Community 42 - "Technical Studies Pillar Page"
+Cohesion: 0.60
+Nodes (3): revalidate, TechnicalStudiesPage(), TechnicalStudiesClient()
 
-### Community 47 - "Package Manager Engine Spec"
+### Community 44 - "Package Manager Engine Spec"
 Cohesion: 0.50
 Nodes (4): devEngines, packageManager, name, onFail
 
 ## Knowledge Gaps
-- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **14 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `next` connect `Site Settings, SEO & Terms Routes` to `Admin Philosophy, Insights & Form Modals`, `Media Upload, Contact & Email Pipeline`, `Impact Map Country Data & Services`, `Admin Content Pages & Sections Config`, `Dev Dependencies & Tooling`, `Admin Dashboard & DB Seeding`, `Runtime Package Dependencies`, `Root Localized Layout, Fonts & Footer`, `Protected Admin CRUD API Routes`, `Field Gallery Service & Showcase`, `Localized Metadata & Privacy Pages`, `Our Work Pillar Client Views & Admin`, `Admin Session & JWT Auth`, `Page Sections API & Work Overview`, `About Page & Expertise Bento Grid`, `Beliefs Service & API Routes`, `Insights Service & API Routes`, `Section Layouts & Structured JSON-LD`, `Home Page Data Hydration`, `Partners Service & API Routes`, `Technical Studies & Scroll Accordion`, `Expertise Pillars Service & API`, `Gallery Items Service & API Routes`, `Why-Agri Service & API Routes`, `Resource Library & PDF Preview`, `Client Advisory & Projects API`, `Map Country Service & ID Resolution`, `Projects Service & ID Resolution`, `Team Service & ID Resolution`, `Public Team Showcase & Bio Cards`, `Header Navigation & i18n Routing`, `Digital Platforms Pillar Page`, `Project Implementation Pillar Page`, `Stakeholder Convenings Pillar Page`, `Contact Page Metadata Layout`, `Insights Page Metadata Layout`, `Newsletter Page Metadata Layout`, `Capacity Building Metadata Layout`, `Digital Platforms Metadata Layout`, `Project Implementation Metadata Layout`, `Stakeholder Convenings Metadata Layout`, `Technical Studies Metadata Layout`?**
-  _High betweenness centrality (0.306) - this node is a cross-community bridge._
-- **Should `Admin Philosophy, Insights & Form Modals` be split into smaller, more focused modules?**
-  _Cohesion score 0.055523085914669784 - nodes in this community are weakly interconnected._
-- **Why does `react` connect `Interactive Mapbox Canvas & Controls` to `Admin Philosophy, Insights & Form Modals`, `Impact Map Country Data & Services`, `Admin Content Pages & Sections Config`, `Dev Dependencies & Tooling`, `Map Search & Dialog Primitives`, `Admin Dashboard & DB Seeding`, `Runtime Package Dependencies`, `Root Localized Layout, Fonts & Footer`, `Liquid Glass Shader Effects`, `Field Gallery Service & Showcase`, `Localized Metadata & Privacy Pages`, `Our Work Pillar Client Views & Admin`, `Page Sections API & Work Overview`, `About Page & Expertise Bento Grid`, `Section Layouts & Structured JSON-LD`, `Home Page Data Hydration`, `Technical Studies & Scroll Accordion`, `Resource Library & PDF Preview`, `Client Advisory & Projects API`, `Public Team Showcase & Bio Cards`, `Header Navigation & i18n Routing`, `Digital Platforms Pillar Page`, `Project Implementation Pillar Page`, `Stakeholder Convenings Pillar Page`?**
-  _High betweenness centrality (0.186) - this node is a cross-community bridge._
+- **Why does `next` connect `Admin Login & SEO Route Handlers` to `Impact Map Data, Merging & Controls`, `Media Upload, Contact & Email Pipeline`, `Dev Dependencies & ESLint Config`, `Resource Library & PDF Preview`, `Pan-African Impact Map & Admin UI`, `Root Localized Layout, Fonts & Docs`, `Team Service, Roster Admin & Showcase`, `Field Gallery Admin & Showcase`, `Admin Partners & Sections Config`, `Field Insights Admin & Public Showcase`, `Runtime Package Dependencies`, `Site Header & Language Switcher`, `Admin Settings UI, Footer & Why-Agri`, `Admin Session, JWT & Credentials API`, `Projects Service & Capacity Building`, `Home & About Page Data Hydration`, `Contact Page & About Content`, `Admin Dashboard & DB Seeding`, `Our Work Pillar Client Views & Admin`, `Protected Admin API Auth Guards`, `Beliefs Service & API Routes`, `Partners Service & API Routes`, `Page Sections API & Client Advisory`, `Section Layouts & Structured JSON-LD`, `Site Settings & Feature Flag Persistence`, `Expertise Pillars Service & ID Resolution`, `Why-Agri Service & ID Resolution`, `Admin Layout Shell & Navigation`, `Digital Platforms Pillar Page`, `Project Implementation Pillar Page`, `Technical Studies Pillar Page`, `Contact Page Metadata Layout`, `Insights Page Metadata Layout`, `Our Team Metadata Layout`, `Capacity Building Metadata Layout`, `Client Advisory Metadata Layout`, `Digital Platforms Metadata Layout`, `Project Implementation Metadata Layout`, `Stakeholder Convenings Metadata Layout`, `Technical Studies Metadata Layout`?**
+  _High betweenness centrality (0.292) - this node is a cross-community bridge._
+- **Should `Impact Map Data, Merging & Controls` be split into smaller, more focused modules?**
+  _Cohesion score 0.07459207459207459 - nodes in this community are weakly interconnected._
+- **Why does `react` connect `Impact Map Data, Merging & Controls` to `Dev Dependencies & ESLint Config`, `Resource Library & PDF Preview`, `Pan-African Impact Map & Admin UI`, `Root Localized Layout, Fonts & Docs`, `Map Search & Dialog Primitives`, `Team Service, Roster Admin & Showcase`, `Field Gallery Admin & Showcase`, `Admin Partners & Sections Config`, `Field Insights Admin & Public Showcase`, `Runtime Package Dependencies`, `Site Header & Language Switcher`, `Liquid Glass Shader Effects`, `Admin Settings UI, Footer & Why-Agri`, `Projects Service & Capacity Building`, `Home & About Page Data Hydration`, `Contact Page & About Content`, `Admin Dashboard & DB Seeding`, `Our Work Pillar Client Views & Admin`, `Page Sections API & Client Advisory`, `Section Layouts & Structured JSON-LD`, `Admin Login & SEO Route Handlers`, `Office Plants Motion Gallery`, `Admin Expertise UI & Bento Grid`, `Beliefs Admin Page & Form Modal`, `Admin Layout Shell & Navigation`, `Digital Platforms Pillar Page`, `Project Implementation Pillar Page`, `Technical Studies Pillar Page`?**
+  _High betweenness centrality (0.184) - this node is a cross-community bridge._
 - **Should `Media Upload, Contact & Email Pipeline` be split into smaller, more focused modules?**
   _Cohesion score 0.0611764705882353 - nodes in this community are weakly interconnected._
-- **Why does `lucide-react` connect `Admin Philosophy, Insights & Form Modals` to `Impact Map Country Data & Services`, `Interactive Mapbox Canvas & Controls`, `Admin Content Pages & Sections Config`, `Dev Dependencies & Tooling`, `Map Search & Dialog Primitives`, `Admin Dashboard & DB Seeding`, `Runtime Package Dependencies`, `Root Localized Layout, Fonts & Footer`, `Field Gallery Service & Showcase`, `Localized Metadata & Privacy Pages`, `Our Work Pillar Client Views & Admin`, `Page Sections API & Work Overview`, `About Page & Expertise Bento Grid`, `Home Page Data Hydration`, `Technical Studies & Scroll Accordion`, `Resource Library & PDF Preview`, `Client Advisory & Projects API`, `Public Team Showcase & Bio Cards`, `Header Navigation & i18n Routing`, `Digital Platforms Pillar Page`, `Project Implementation Pillar Page`, `Stakeholder Convenings Pillar Page`?**
+- **Why does `lucide-react` connect `Admin Settings UI, Footer & Why-Agri` to `Impact Map Data, Merging & Controls`, `Dev Dependencies & ESLint Config`, `Resource Library & PDF Preview`, `Pan-African Impact Map & Admin UI`, `Root Localized Layout, Fonts & Docs`, `Map Search & Dialog Primitives`, `Team Service, Roster Admin & Showcase`, `Field Gallery Admin & Showcase`, `Admin Partners & Sections Config`, `Field Insights Admin & Public Showcase`, `Runtime Package Dependencies`, `Site Header & Language Switcher`, `Projects Service & Capacity Building`, `Contact Page & About Content`, `Admin Dashboard & DB Seeding`, `Our Work Pillar Client Views & Admin`, `Page Sections API & Client Advisory`, `Admin Login & SEO Route Handlers`, `Office Plants Motion Gallery`, `Admin Expertise UI & Bento Grid`, `Beliefs Admin Page & Form Modal`, `Admin Layout Shell & Navigation`, `Digital Platforms Pillar Page`, `Project Implementation Pillar Page`, `Technical Studies Pillar Page`?**
   _High betweenness centrality (0.083) - this node is a cross-community bridge._
-- **Should `Impact Map Country Data & Services` be split into smaller, more focused modules?**
-  _Cohesion score 0.08309178743961353 - nodes in this community are weakly interconnected._
-- **Should `Interactive Mapbox Canvas & Controls` be split into smaller, more focused modules?**
-  _Cohesion score 0.10241545893719807 - nodes in this community are weakly interconnected._
+- **Should `Dev Dependencies & ESLint Config` be split into smaller, more focused modules?**
+  _Cohesion score 0.07051282051282051 - nodes in this community are weakly interconnected._
+- **Should `Resource Library & PDF Preview` be split into smaller, more focused modules?**
+  _Cohesion score 0.09446693657219973 - nodes in this community are weakly interconnected._

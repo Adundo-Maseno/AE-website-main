@@ -1,12 +1,12 @@
 ---
 source_file: "lib/auth.ts"
 type: "code"
-community: "Admin Session & JWT Auth"
-location: "L14"
+community: "Admin Session, JWT & Credentials API"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Session__JWT_Auth
+  - community/Admin_Session_JWT__Credentials_API
 ---
 
 # AdminSessionPayload
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[auth.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Session__JWT_Auth
+#graphify/code #graphify/EXTRACTED #community/Admin_Session_JWT__Credentials_API

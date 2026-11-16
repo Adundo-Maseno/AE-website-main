@@ -1,18 +1,18 @@
 ---
 source_file: "app/api/admin/team/route.ts"
 type: "code"
-community: "Protected Admin CRUD API Routes"
+community: "Team Service, Roster Admin & Showcase"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Protected_Admin_CRUD_API_Routes
+  - community/Team_Service_Roster_Admin__Showcase
 ---
 
 # team/route.ts
 
 ## Connections
-- [[GET()_13]] - `contains` [EXTRACTED]
+- [[GET()_14]] - `contains` [EXTRACTED]
 - [[POST()_13]] - `contains` [EXTRACTED]
 - [[auth.ts]] - `imports_from` [EXTRACTED]
 - [[createTeamMember()]] - `imports` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[next_1]] - `imports_from` [EXTRACTED]
 - [[team-service.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Protected_Admin_CRUD_API_Routes
+#graphify/code #graphify/EXTRACTED #community/Team_Service_Roster_Admin__Showcase

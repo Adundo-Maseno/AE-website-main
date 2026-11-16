@@ -1,11 +1,11 @@
 ---
 source_file: "next"
 type: "code"
-community: "Next.js Config & Deployment Docs"
+community: "Root Localized Layout, Fonts & Docs"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Nextjs_Config__Deployment_Docs
+  - community/Root_Localized_Layout_Fonts__Docs
 ---
 
 # next
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[next.config.mjs]] - `dynamic_import` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Nextjs_Config__Deployment_Docs
+#graphify/code #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Docs

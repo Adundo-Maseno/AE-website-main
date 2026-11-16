@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/expertise-service.ts"
 type: "code"
-community: "Expertise Pillars Service & API"
+community: "Expertise Pillars Service & ID Resolution"
 location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Expertise_Pillars_Service__API
+  - community/Expertise_Pillars_Service__ID_Resolution
 ---
 
 # updateExpertisePillar()
@@ -19,4 +19,4 @@ tags:
 - [[resolveExpertiseId()]] - `calls` [EXTRACTED]
 - [[stripManagedFields()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Expertise_Pillars_Service__API
+#graphify/code #graphify/EXTRACTED #community/Expertise_Pillars_Service__ID_Resolution

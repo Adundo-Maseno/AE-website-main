@@ -12,8 +12,8 @@ members: 4
 ## Members
 - [[NOTE This file should not be edited]] - rationale - next-env.d.ts
 - [[next-env.d.ts]] - code - next-env.d.ts
-- [[next_types_root_params_d]] - concept
-- [[next_types_routes_d]] - concept
+- [[next_dev_types_root_params_d]] - concept
+- [[next_dev_types_routes_d]] - concept
 
 ## Live Query (requires Dataview plugin)
 

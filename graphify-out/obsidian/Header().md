@@ -1,12 +1,12 @@
 ---
 source_file: "components/header.tsx"
 type: "code"
-community: "Header Navigation & i18n Routing"
-location: "L47"
+community: "Site Header & Language Switcher"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Header_Navigation__i18n_Routing
+  - community/Site_Header__Language_Switcher
 ---
 
 # Header()
@@ -23,4 +23,4 @@ tags:
 - [[usePathname]] - `calls` [EXTRACTED]
 - [[useRouter]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Header_Navigation__i18n_Routing
+#graphify/code #graphify/EXTRACTED #community/Site_Header__Language_Switcher

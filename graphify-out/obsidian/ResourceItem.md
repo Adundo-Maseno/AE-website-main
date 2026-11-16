@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/resources-service.ts"
 type: "code"
-community: "Admin Philosophy, Insights & Form Modals"
+community: "Resource Library & PDF Preview"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Philosophy_Insights__Form_Modals
+  - community/Resource_Library__PDF_Preview
 ---
 
 # ResourceItem
@@ -18,4 +18,4 @@ tags:
 - [[resources-content.tsx]] - `imports` [EXTRACTED]
 - [[resources-service.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals
+#graphify/code #graphify/EXTRACTED #community/Resource_Library__PDF_Preview

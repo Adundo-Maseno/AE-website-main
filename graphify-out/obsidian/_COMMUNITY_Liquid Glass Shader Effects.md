@@ -43,8 +43,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Header Navigation & i18n Routing]]
-- 1 edge to [[_COMMUNITY_Interactive Mapbox Canvas & Controls]]
+- 3 edges to [[_COMMUNITY_Site Header & Language Switcher]]
+- 1 edge to [[_COMMUNITY_Impact Map Data, Merging & Controls]]
 
 ## Top bridge nodes
 - [[index.tsx]] - degree 15, connects to 2 communities

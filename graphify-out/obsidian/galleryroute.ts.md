@@ -12,7 +12,7 @@ tags:
 # gallery/route.ts
 
 ## Connections
-- [[GET()_4]] - `contains` [EXTRACTED]
+- [[GET()_5]] - `contains` [EXTRACTED]
 - [[auth.ts]] - `imports_from` [EXTRACTED]
 - [[getSession()]] - `imports` [EXTRACTED]
 - [[next_1]] - `imports_from` [EXTRACTED]

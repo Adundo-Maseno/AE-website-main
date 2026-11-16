@@ -1,12 +1,12 @@
 ---
 source_file: "components/country-data.ts"
 type: "code"
-community: "Impact Map Country Data & Services"
+community: "Pan-African Impact Map & Admin UI"
 location: "L526"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Impact_Map_Country_Data__Services
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # countrySeedsFr
@@ -15,4 +15,4 @@ tags:
 - [[country-data.ts]] - `contains` [EXTRACTED]
 - [[map-service.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Impact_Map_Country_Data__Services
+#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

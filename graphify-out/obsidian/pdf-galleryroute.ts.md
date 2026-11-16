@@ -12,7 +12,7 @@ tags:
 # pdf-gallery/route.ts
 
 ## Connections
-- [[GET()_8]] - `contains` [EXTRACTED]
+- [[GET()_9]] - `contains` [EXTRACTED]
 - [[PdfFileItem]] - `contains` [EXTRACTED]
 - [[auth.ts]] - `imports_from` [EXTRACTED]
 - [[formatBytes()]] - `contains` [EXTRACTED]

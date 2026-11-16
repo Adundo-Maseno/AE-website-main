@@ -1,12 +1,12 @@
 ---
 source_file: "components/interactive-map.tsx"
 type: "code"
-community: "Impact Map Country Data & Services"
+community: "Impact Map Data, Merging & Controls"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Impact_Map_Country_Data__Services
+  - community/Impact_Map_Data_Merging__Controls
 ---
 
 # InteractiveMap()
@@ -25,4 +25,4 @@ tags:
 - [[interactive-map.tsx]] - `contains` [EXTRACTED]
 - [[mergeCountriesWithCms()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Impact_Map_Country_Data__Services
+#graphify/code #graphify/EXTRACTED #community/Impact_Map_Data_Merging__Controls

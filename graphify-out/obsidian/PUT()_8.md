@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/settings/route.ts"
 type: "code"
-community: "Site Settings, SEO & Terms Routes"
+community: "Site Settings & Feature Flag Persistence"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Site_Settings_SEO__Terms_Routes
+  - community/Site_Settings__Feature_Flag_Persistence
 ---
 
 # PUT()
@@ -16,4 +16,4 @@ tags:
 - [[settingsroute.ts]] - `contains` [EXTRACTED]
 - [[updateSiteSettings()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Site_Settings_SEO__Terms_Routes
+#graphify/code #graphify/EXTRACTED #community/Site_Settings__Feature_Flag_Persistence

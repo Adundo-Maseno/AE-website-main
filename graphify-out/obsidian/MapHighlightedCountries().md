@@ -1,12 +1,12 @@
 ---
 source_file: "components/map/map-highlighted-countries.tsx"
 type: "code"
-community: "Interactive Mapbox Canvas & Controls"
+community: "Impact Map Data, Merging & Controls"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Mapbox_Canvas__Controls
+  - community/Impact_Map_Data_Merging__Controls
 ---
 
 # MapHighlightedCountries()
@@ -19,4 +19,4 @@ tags:
 - [[mapbox-gl_1]] - `imports_from` [EXTRACTED]
 - [[useMap()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Mapbox_Canvas__Controls
+#graphify/code #graphify/EXTRACTED #community/Impact_Map_Data_Merging__Controls

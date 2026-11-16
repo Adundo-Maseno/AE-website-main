@@ -123,7 +123,10 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <LanguageSwitchProvider>
             <ScrollToTop />
-            <Header />
+            <Header
+              showLanguageSwitcher={settings.showLanguageSwitcher ?? true}
+              enableLanguageSwitcher={settings.enableLanguageSwitcher ?? false}
+            />
             {children}
             <Footer settings={settings} />
             <CookieToast />

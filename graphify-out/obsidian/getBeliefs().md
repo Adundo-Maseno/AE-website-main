@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/beliefs-service.ts"
 type: "code"
-community: "Home Page Data Hydration"
+community: "Home & About Page Data Hydration"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home_Page_Data_Hydration
+  - community/Home__About_Page_Data_Hydration
 ---
 
 # getBeliefs()
@@ -17,4 +17,4 @@ tags:
 - [[beliefs-service.ts]] - `contains` [EXTRACTED]
 - [[isDatabaseConnected()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home_Page_Data_Hydration
+#graphify/code #graphify/EXTRACTED #community/Home__About_Page_Data_Hydration

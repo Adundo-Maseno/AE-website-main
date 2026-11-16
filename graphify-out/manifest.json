@@ -1974,10 +1974,10 @@
     "semantic_hash": "b95eaf42a3bd7658df63b4ed6df8eaf7"
   },
   "D:\\AE-website-main\\app\\[locale]\\layout.tsx": {
-    "mtime": 1794807753.156928,
-    "seen": 1794808219.9460983,
-    "ast_hash": "8174e57e54ce970517dda7427b24b032",
-    "semantic_hash": "8174e57e54ce970517dda7427b24b032"
+    "mtime": 1794811443.568222,
+    "seen": 1794811448.4170535,
+    "ast_hash": "3310dcad108451dcae5aaa251225c848",
+    "semantic_hash": "3310dcad108451dcae5aaa251225c848"
   },
   "D:\\AE-website-main\\app\\[locale]\\map\\page.tsx": {
     "mtime": 1794807802.1132853,
@@ -2214,10 +2214,10 @@
     "semantic_hash": "1b66c5760261ba1e481169bea7aabc95"
   },
   "D:\\AE-website-main\\app\\admin\\page.tsx": {
-    "mtime": 1794809091.4136765,
-    "seen": 1794809588.3028977,
-    "ast_hash": "7f2d4057906660f4bb2d492b927d04af",
-    "semantic_hash": "7f2d4057906660f4bb2d492b927d04af"
+    "mtime": 1794811445.6985643,
+    "seen": 1794811448.4172087,
+    "ast_hash": "aee9a23eafb22b3d97fb24ae7268b438",
+    "semantic_hash": "aee9a23eafb22b3d97fb24ae7268b438"
   },
   "D:\\AE-website-main\\app\\admin\\partners\\page.tsx": {
     "mtime": 1794807630.2957213,
@@ -2238,16 +2238,16 @@
     "semantic_hash": "64bcfe0415e366d076cecc3e7af01c47"
   },
   "D:\\AE-website-main\\app\\admin\\sections\\page.tsx": {
-    "mtime": 1794809087.676779,
-    "seen": 1794809588.3029046,
+    "mtime": 1794809760.1433635,
+    "seen": 1794811448.4172242,
     "ast_hash": "cde96e3de90cd5b0c61c7bd6b733ca4b",
     "semantic_hash": "cde96e3de90cd5b0c61c7bd6b733ca4b"
   },
   "D:\\AE-website-main\\app\\admin\\settings\\page.tsx": {
-    "mtime": 1794313469.005992,
-    "seen": 1794808219.9461615,
-    "ast_hash": "2d79f56dae8d990ed3ebcf899f4cb850",
-    "semantic_hash": "2d79f56dae8d990ed3ebcf899f4cb850"
+    "mtime": 1794811446.825176,
+    "seen": 1794811448.4172287,
+    "ast_hash": "a5472bc7037ba0ddb22888d22f56b251",
+    "semantic_hash": "a5472bc7037ba0ddb22888d22f56b251"
   },
   "D:\\AE-website-main\\app\\admin\\team\\page.tsx": {
     "mtime": 1794807748.4043274,
@@ -2262,10 +2262,10 @@
     "semantic_hash": "3837e8439354ab94e5808529c7481012"
   },
   "D:\\AE-website-main\\app\\api\\admin\\auth\\change-password\\route.ts": {
-    "mtime": 1794313464.5920897,
-    "seen": 1794808219.946165,
-    "ast_hash": "e38b523faf66dcab462ba61b7cf4949b",
-    "semantic_hash": "e38b523faf66dcab462ba61b7cf4949b"
+    "mtime": 1794811446.9235873,
+    "seen": 1794811448.417241,
+    "ast_hash": "33986c98584ee1e9e18ac500b8a502eb",
+    "semantic_hash": "33986c98584ee1e9e18ac500b8a502eb"
   },
   "D:\\AE-website-main\\app\\api\\admin\\auth\\login\\route.ts": {
     "mtime": 1794288797.4819553,
@@ -2478,10 +2478,10 @@
     "semantic_hash": "86be0e864616eecd89c715007a4c80f3"
   },
   "D:\\AE-website-main\\components\\admin\\admin-header.tsx": {
-    "mtime": 1794807556.8597608,
-    "seen": 1794808219.9462087,
-    "ast_hash": "7b073a35098cb6a77a1ee565d5ad68d0",
-    "semantic_hash": "7b073a35098cb6a77a1ee565d5ad68d0"
+    "mtime": 1794811203.7468534,
+    "seen": 1794811448.417377,
+    "ast_hash": "eacb8a0fee9740a4f72e658ab68efb52",
+    "semantic_hash": "eacb8a0fee9740a4f72e658ab68efb52"
   },
   "D:\\AE-website-main\\components\\admin\\belief-form-modal.tsx": {
     "mtime": 1794807622.4868908,
@@ -2598,10 +2598,10 @@
     "semantic_hash": "1807a499c842d7cdfbdd325ad2d0398e"
   },
   "D:\\AE-website-main\\components\\header.tsx": {
-    "mtime": 1794251913.7899942,
-    "seen": 1794808219.9462323,
-    "ast_hash": "62f182a85e5cc38bfd75c5ad2be50b81",
-    "semantic_hash": "62f182a85e5cc38bfd75c5ad2be50b81"
+    "mtime": 1794811166.978856,
+    "seen": 1794811448.417451,
+    "ast_hash": "ba097e276156f5ff874c4337e7f1d6c0",
+    "semantic_hash": "ba097e276156f5ff874c4337e7f1d6c0"
   },
   "D:\\AE-website-main\\components\\home-content.tsx": {
     "mtime": 1794806246.6560102,
@@ -2622,8 +2622,8 @@
     "semantic_hash": "1b78fac94885d5519c7a5e3a9f16a792"
   },
   "D:\\AE-website-main\\components\\interactive-map.tsx": {
-    "mtime": 1794809306.330772,
-    "seen": 1794809588.3030028,
+    "mtime": 1794809760.4479313,
+    "seen": 1794811448.4174657,
     "ast_hash": "14c40ed831b4c450df7f1ef3cd7e3b02",
     "semantic_hash": "14c40ed831b4c450df7f1ef3cd7e3b02"
   },
@@ -2838,10 +2838,10 @@
     "semantic_hash": "08ad1a7ea29c650f54018049fe223335"
   },
   "D:\\AE-website-main\\lib\\auth.ts": {
-    "mtime": 1794288800.6112027,
-    "seen": 1794808219.946278,
-    "ast_hash": "f751b8b1dcc374651a217a2fba59ae23",
-    "semantic_hash": "f751b8b1dcc374651a217a2fba59ae23"
+    "mtime": 1794811111.465147,
+    "seen": 1794811448.4175913,
+    "ast_hash": "2ecb19a643c42103041a367fdfc489eb",
+    "semantic_hash": "2ecb19a643c42103041a367fdfc489eb"
   },
   "D:\\AE-website-main\\lib\\db.ts": {
     "mtime": 1794288800.8164587,
@@ -2922,10 +2922,10 @@
     "semantic_hash": "84f0c23680b4e331f681efc447776b1c"
   },
   "D:\\AE-website-main\\lib\\services\\settings-service.ts": {
-    "mtime": 1794298219.4801304,
-    "seen": 1794808219.9462953,
-    "ast_hash": "18aed85c7f3bec3ee24e9089e436b787",
-    "semantic_hash": "18aed85c7f3bec3ee24e9089e436b787"
+    "mtime": 1794811134.783425,
+    "seen": 1794811448.4176729,
+    "ast_hash": "1dbd87216797b1cb9f21032b2cd95f66",
+    "semantic_hash": "1dbd87216797b1cb9f21032b2cd95f66"
   },
   "D:\\AE-website-main\\lib\\services\\team-service.ts": {
     "mtime": 1794807783.290323,

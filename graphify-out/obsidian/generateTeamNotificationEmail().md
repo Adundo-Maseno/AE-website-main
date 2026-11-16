@@ -12,7 +12,7 @@ tags:
 # generateTeamNotificationEmail()
 
 ## Connections
-- [[GET()_15]] - `calls` [EXTRACTED]
+- [[GET()_16]] - `calls` [EXTRACTED]
 - [[email-previewroute.ts]] - `imports` [EXTRACTED]
 - [[email.ts]] - `contains` [EXTRACTED]
 - [[escapeHtml()]] - `calls` [EXTRACTED]

@@ -45,19 +45,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Dev Dependencies & Tooling]]
-- 5 edges to [[_COMMUNITY_Interactive Mapbox Canvas & Controls]]
+- 10 edges to [[_COMMUNITY_Dev Dependencies & ESLint Config]]
+- 5 edges to [[_COMMUNITY_Impact Map Data, Merging & Controls]]
 - 5 edges to [[_COMMUNITY_Map Search & Dialog Primitives]]
-- 3 edges to [[_COMMUNITY_Home Page Data Hydration]]
-- 3 edges to [[_COMMUNITY_Field Gallery Service & Showcase]]
-- 2 edges to [[_COMMUNITY_Admin Session & JWT Auth]]
-- 1 edge to [[_COMMUNITY_Header Navigation & i18n Routing]]
-- 1 edge to [[_COMMUNITY_Admin Dashboard & DB Seeding]]
+- 3 edges to [[_COMMUNITY_Admin Settings UI, Footer & Why-Agri]]
+- 3 edges to [[_COMMUNITY_Office Plants Motion Gallery]]
+- 2 edges to [[_COMMUNITY_Site Header & Language Switcher]]
+- 2 edges to [[_COMMUNITY_Admin Session, JWT & Credentials API]]
+- 1 edge to [[_COMMUNITY_Home & About Page Data Hydration]]
 - 1 edge to [[_COMMUNITY_Media Upload, Contact & Email Pipeline]]
 - 1 edge to [[_COMMUNITY_Resource Library & PDF Preview]]
-- 1 edge to [[_COMMUNITY_Admin Philosophy, Insights & Form Modals]]
-- 1 edge to [[_COMMUNITY_Site Settings, SEO & Terms Routes]]
-- 1 edge to [[_COMMUNITY_Localized Metadata & Privacy Pages]]
+- 1 edge to [[_COMMUNITY_Contact Page & About Content]]
+- 1 edge to [[_COMMUNITY_Admin Login & SEO Route Handlers]]
 
 ## Top bridge nodes
 - [[dependencies]] - degree 26, connects to 6 communities

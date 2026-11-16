@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-impact/page.tsx"
 type: "code"
-community: "Impact Map Country Data & Services"
+community: "Pan-African Impact Map & Admin UI"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Impact_Map_Country_Data__Services
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # revalidate
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[our-impactpage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Impact_Map_Country_Data__Services
+#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

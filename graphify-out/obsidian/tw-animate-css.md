@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Dev Dependencies & Tooling"
+community: "Dev Dependencies & ESLint Config"
 location: "L64"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Dev_Dependencies__Tooling
+  - community/Dev_Dependencies__ESLint_Config
 ---
 
 # tw-animate-css
@@ -15,4 +15,4 @@ tags:
 - [[package.json]] - `imports` [EXTRACTED]
 - [[tw-animate-css@1.3.3]] - `declares` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Dev_Dependencies__Tooling
+#graphify/concept #graphify/EXTRACTED #community/Dev_Dependencies__ESLint_Config

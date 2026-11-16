@@ -14,9 +14,9 @@ members: 51
 - [[Bilingual i18n & Auto-Translate Pipeline]] - document - D:/AE-website-main/README.md
 - [[Contact & Receipt Email Pipeline]] - document - D:/AE-website-main/README.md
 - [[ContactSubmission]] - code - lib/email.ts
-- [[GET()_4]] - code - app/api/admin/gallery/route.ts
-- [[GET()_8]] - code - app/api/admin/pdf-gallery/route.ts
-- [[GET()_15]] - code - app/api/email-preview/route.ts
+- [[GET()_5]] - code - app/api/admin/gallery/route.ts
+- [[GET()_9]] - code - app/api/admin/pdf-gallery/route.ts
+- [[GET()_16]] - code - app/api/email-preview/route.ts
 - [[POST()_14]] - code - app/api/admin/upload/route.ts
 - [[POST()_16]] - code - app/api/contact/route.ts
 - [[PdfFileItem]] - code - app/api/admin/pdf-gallery/route.ts
@@ -70,18 +70,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Protected Admin CRUD API Routes]]
-- 5 edges to [[_COMMUNITY_Site Settings, SEO & Terms Routes]]
-- 3 edges to [[_COMMUNITY_Admin Session & JWT Auth]]
-- 1 edge to [[_COMMUNITY_Localized Metadata & Privacy Pages]]
-- 1 edge to [[_COMMUNITY_Dev Dependencies & Tooling]]
+- 6 edges to [[_COMMUNITY_Protected Admin API Auth Guards]]
+- 5 edges to [[_COMMUNITY_Admin Session, JWT & Credentials API]]
+- 5 edges to [[_COMMUNITY_Admin Login & SEO Route Handlers]]
+- 2 edges to [[_COMMUNITY_Site Settings & Feature Flag Persistence]]
+- 1 edge to [[_COMMUNITY_Site Header & Language Switcher]]
+- 1 edge to [[_COMMUNITY_Dev Dependencies & ESLint Config]]
 - 1 edge to [[_COMMUNITY_Runtime Package Dependencies]]
-- 1 edge to [[_COMMUNITY_Impact Map Country Data & Services]]
-- 1 edge to [[_COMMUNITY_Next.js Config & Deployment Docs]]
+- 1 edge to [[_COMMUNITY_Admin Dashboard & DB Seeding]]
+- 1 edge to [[_COMMUNITY_Root Localized Layout, Fonts & Docs]]
 
 ## Top bridge nodes
 - [[galleryroute.ts]] - degree 8, connects to 3 communities
 - [[pdf-galleryroute.ts]] - degree 8, connects to 3 communities
 - [[uploadroute.ts]] - degree 7, connects to 3 communities
-- [[Bilingual i18n & Auto-Translate Pipeline]] - degree 4, connects to 2 communities
-- [[email-previewroute.ts]] - degree 11, connects to 1 community
+- [[ref_fs]] - degree 9, connects to 2 communities
+- [[ref_path]] - degree 8, connects to 2 communities

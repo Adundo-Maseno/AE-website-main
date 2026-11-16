@@ -12,7 +12,7 @@ tags:
 # getAllPartnersAdmin()
 
 ## Connections
-- [[GET()_7]] - `calls` [EXTRACTED]
+- [[GET()_8]] - `calls` [EXTRACTED]
 - [[isDatabaseConnected()]] - `calls` [EXTRACTED]
 - [[partners-service.ts]] - `contains` [EXTRACTED]
 - [[partnersroute.ts]] - `imports` [EXTRACTED]

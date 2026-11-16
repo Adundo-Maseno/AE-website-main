@@ -1,12 +1,12 @@
 ---
 source_file: "components/ui/rolling-text.tsx"
 type: "code"
-community: "Technical Studies & Scroll Accordion"
+community: "Contact Page & About Content"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Technical_Studies__Scroll_Accordion
+  - community/Contact_Page__About_Content
 ---
 
 # RollingTextProps
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rolling-text.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Technical_Studies__Scroll_Accordion
+#graphify/code #graphify/EXTRACTED #community/Contact_Page__About_Content

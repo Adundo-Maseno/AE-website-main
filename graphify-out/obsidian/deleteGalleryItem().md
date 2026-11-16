@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/gallery-service.ts"
 type: "code"
-community: "Gallery Items Service & API Routes"
+community: "Field Gallery Admin & Showcase"
 location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gallery_Items_Service__API_Routes
+  - community/Field_Gallery_Admin__Showcase
 ---
 
 # deleteGalleryItem()
@@ -18,4 +18,4 @@ tags:
 - [[gallery-service.ts]] - `contains` [EXTRACTED]
 - [[resolveGalleryItemId()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gallery_Items_Service__API_Routes
+#graphify/code #graphify/EXTRACTED #community/Field_Gallery_Admin__Showcase

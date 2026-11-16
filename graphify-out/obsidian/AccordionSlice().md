@@ -1,12 +1,12 @@
 ---
 source_file: "components/motion/impact-alignment.tsx"
 type: "code"
-community: "Impact Map Country Data & Services"
+community: "Pan-African Impact Map & Admin UI"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Impact_Map_Country_Data__Services
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # AccordionSlice()
@@ -15,4 +15,4 @@ tags:
 - [[AccordionRow()]] - `calls` [EXTRACTED]
 - [[impact-alignment.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Impact_Map_Country_Data__Services
+#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

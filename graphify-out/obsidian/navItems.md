@@ -1,12 +1,12 @@
 ---
 source_file: "components/header.tsx"
 type: "code"
-community: "Header Navigation & i18n Routing"
+community: "Site Header & Language Switcher"
 location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Header_Navigation__i18n_Routing
+  - community/Site_Header__Language_Switcher
 ---
 
 # navItems
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[header.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Header_Navigation__i18n_Routing
+#graphify/code #graphify/EXTRACTED #community/Site_Header__Language_Switcher

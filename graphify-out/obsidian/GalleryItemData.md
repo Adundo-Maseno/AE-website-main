@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/gallery-service.ts"
 type: "code"
-community: "Admin Content Pages & Sections Config"
+community: "Field Gallery Admin & Showcase"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Content_Pages__Sections_Config
+  - community/Field_Gallery_Admin__Showcase
 ---
 
 # GalleryItemData
@@ -17,4 +17,4 @@ tags:
 - [[gallery-form-modal.tsx]] - `imports` [EXTRACTED]
 - [[gallery-service.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Content_Pages__Sections_Config
+#graphify/code #graphify/EXTRACTED #community/Field_Gallery_Admin__Showcase

@@ -34,15 +34,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Site Settings, SEO & Terms Routes]]
-- 4 edges to [[_COMMUNITY_Localized Metadata & Privacy Pages]]
-- 2 edges to [[_COMMUNITY_Root Localized Layout, Fonts & Footer]]
-- 2 edges to [[_COMMUNITY_Resource Library & PDF Preview]]
-- 1 edge to [[_COMMUNITY_Protected Admin CRUD API Routes]]
-- 1 edge to [[_COMMUNITY_Interactive Mapbox Canvas & Controls]]
+- 4 edges to [[_COMMUNITY_Admin Login & SEO Route Handlers]]
+- 4 edges to [[_COMMUNITY_Site Header & Language Switcher]]
+- 3 edges to [[_COMMUNITY_Resource Library & PDF Preview]]
+- 2 edges to [[_COMMUNITY_Root Localized Layout, Fonts & Docs]]
+- 1 edge to [[_COMMUNITY_Impact Map Data, Merging & Controls]]
 
 ## Top bridge nodes
-- [[resourceslayout.tsx]] - degree 9, connects to 4 communities
+- [[resourceslayout.tsx]] - degree 9, connects to 3 communities
 - [[json-ld.tsx]] - degree 9, connects to 2 communities
 - [[aboutlayout.tsx]] - degree 6, connects to 2 communities
 - [[our-impactlayout.tsx]] - degree 6, connects to 2 communities

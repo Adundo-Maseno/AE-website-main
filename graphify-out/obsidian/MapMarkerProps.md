@@ -1,12 +1,12 @@
 ---
 source_file: "components/map/map-marker.tsx"
 type: "code"
-community: "Interactive Mapbox Canvas & Controls"
+community: "Impact Map Data, Merging & Controls"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Mapbox_Canvas__Controls
+  - community/Impact_Map_Data_Merging__Controls
 ---
 
 # MapMarkerProps
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[map-marker.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Mapbox_Canvas__Controls
+#graphify/code #graphify/EXTRACTED #community/Impact_Map_Data_Merging__Controls

@@ -1,12 +1,12 @@
 ---
 source_file: "i18n/routing.ts"
 type: "code"
-community: "Localized Metadata & Privacy Pages"
+community: "Site Header & Language Switcher"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Localized_Metadata__Privacy_Pages
+  - community/Site_Header__Language_Switcher
 ---
 
 # routing
@@ -17,4 +17,4 @@ tags:
 - [[request.ts]] - `imports` [EXTRACTED]
 - [[routing.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Localized_Metadata__Privacy_Pages
+#graphify/code #graphify/EXTRACTED #community/Site_Header__Language_Switcher

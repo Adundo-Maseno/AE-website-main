@@ -1,19 +1,19 @@
 ---
-source_file: "app/api/admin/pdf-gallery/route.ts"
+source_file: "app/api/admin/partners/route.ts"
 type: "code"
-community: "Media Upload, Contact & Email Pipeline"
-location: "L22"
+community: "Partners Service & API Routes"
+location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Media_Upload_Contact__Email_Pipeline
+  - community/Partners_Service__API_Routes
 ---
 
 # GET()
 
 ## Connections
-- [[formatBytes()]] - `calls` [EXTRACTED]
+- [[getAllPartnersAdmin()]] - `calls` [EXTRACTED]
 - [[getSession()]] - `calls` [EXTRACTED]
-- [[pdf-galleryroute.ts]] - `contains` [EXTRACTED]
+- [[partnersroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Media_Upload_Contact__Email_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Partners_Service__API_Routes

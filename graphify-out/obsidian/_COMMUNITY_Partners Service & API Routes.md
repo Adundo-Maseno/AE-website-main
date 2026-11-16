@@ -1,17 +1,17 @@
 ---
 type: community
-cohesion: 0.30
-members: 14
+cohesion: 0.27
+members: 15
 ---
 
 # Partners Service & API Routes
 
-**Cohesion:** 0.30 - loosely connected
-**Members:** 14 nodes
+**Cohesion:** 0.27 - loosely connected
+**Members:** 15 nodes
 
 ## Members
 - [[DELETE()_5]] - code - app/api/admin/partners/[id]/route.ts
-- [[GET()_7]] - code - app/api/admin/partners/route.ts
+- [[GET()_8]] - code - app/api/admin/partners/route.ts
 - [[POST()_8]] - code - app/api/admin/partners/route.ts
 - [[PUT()_5]] - code - app/api/admin/partners/[id]/route.ts
 - [[createPartner()]] - code - lib/services/partners-service.ts
@@ -23,6 +23,7 @@ members: 14
 - [[partnersroute.ts]] - code - app/api/admin/partners/route.ts
 - [[resolvePartnerId()]] - code - lib/services/partners-service.ts
 - [[seedGuard_5]] - code - lib/services/partners-service.ts
+- [[staticPartners]] - code - lib/services/partners-service.ts
 - [[updatePartner()]] - code - lib/services/partners-service.ts
 
 ## Live Query (requires Dataview plugin)
@@ -33,16 +34,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Admin Dashboard & DB Seeding]]
-- 6 edges to [[_COMMUNITY_Protected Admin CRUD API Routes]]
-- 4 edges to [[_COMMUNITY_Admin Content Pages & Sections Config]]
+- 8 edges to [[_COMMUNITY_Home & About Page Data Hydration]]
+- 6 edges to [[_COMMUNITY_Protected Admin API Auth Guards]]
+- 4 edges to [[_COMMUNITY_Admin Dashboard & DB Seeding]]
+- 4 edges to [[_COMMUNITY_Admin Partners & Sections Config]]
 - 4 edges to [[_COMMUNITY_Beliefs Service & API Routes]]
-- 3 edges to [[_COMMUNITY_Home Page Data Hydration]]
-- 3 edges to [[_COMMUNITY_Site Settings, SEO & Terms Routes]]
-- 2 edges to [[_COMMUNITY_Admin Session & JWT Auth]]
+- 3 edges to [[_COMMUNITY_Admin Login & SEO Route Handlers]]
+- 2 edges to [[_COMMUNITY_Admin Session, JWT & Credentials API]]
+- 1 edge to [[_COMMUNITY_Admin Settings UI, Footer & Why-Agri]]
 
 ## Top bridge nodes
-- [[partners-service.ts]] - degree 26, connects to 5 communities
+- [[partners-service.ts]] - degree 26, connects to 6 communities
 - [[partnersidroute.ts]] - degree 8, connects to 3 communities
 - [[partnersroute.ts]] - degree 8, connects to 3 communities
 - [[updatePartner()]] - degree 6, connects to 1 community

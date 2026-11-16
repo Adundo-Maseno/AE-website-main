@@ -1,18 +1,18 @@
 ---
 source_file: "app/api/admin/map/route.ts"
 type: "code"
-community: "Impact Map Country Data & Services"
+community: "Pan-African Impact Map & Admin UI"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Impact_Map_Country_Data__Services
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # map/route.ts
 
 ## Connections
-- [[GET()_6]] - `contains` [EXTRACTED]
+- [[GET()_7]] - `contains` [EXTRACTED]
 - [[POST()_7]] - `contains` [EXTRACTED]
 - [[auth.ts]] - `imports_from` [EXTRACTED]
 - [[createCountry()]] - `imports` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[map-service.ts]] - `imports_from` [EXTRACTED]
 - [[next_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Impact_Map_Country_Data__Services
+#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

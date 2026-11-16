@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Interactive Mapbox Canvas & Controls"
+community: "Impact Map Data, Merging & Controls"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Mapbox_Canvas__Controls
+  - community/Impact_Map_Data_Merging__Controls
 ---
 
 # class-variance-authority@^0.7.1
@@ -15,4 +15,4 @@ tags:
 - [[class-variance-authority]] - `declares` [EXTRACTED]
 - [[dependencies]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Mapbox_Canvas__Controls
+#graphify/code #graphify/EXTRACTED #community/Impact_Map_Data_Merging__Controls

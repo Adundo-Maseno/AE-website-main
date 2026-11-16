@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/insights/page.tsx"
 type: "code"
-community: "Admin Philosophy, Insights & Form Modals"
+community: "Field Insights Admin & Public Showcase"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Philosophy_Insights__Form_Modals
+  - community/Field_Insights_Admin__Public_Showcase
 ---
 
 # InsightsPage()
@@ -16,4 +16,4 @@ tags:
 - [[localeinsightspage.tsx]] - `contains` [EXTRACTED]
 - [[getInsights()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals
+#graphify/code #graphify/EXTRACTED #community/Field_Insights_Admin__Public_Showcase

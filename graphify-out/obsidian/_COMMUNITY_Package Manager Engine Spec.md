@@ -23,7 +23,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Dev Dependencies & Tooling]]
+- 1 edge to [[_COMMUNITY_Dev Dependencies & ESLint Config]]
 
 ## Top bridge nodes
 - [[devEngines]] - degree 2, connects to 1 community

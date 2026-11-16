@@ -149,11 +149,10 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
             {/* Overview */}
             <Link
               href="/admin"
-              className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all ${
-                pathname === '/admin'
+              className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all ${pathname === '/admin'
                   ? 'bg-[#0F2417] text-[#FAF9F5] font-semibold shadow-xs'
                   : 'text-[#0F2417]/70 hover:text-[#0F2417] hover:bg-[#0F2417]/5'
-              }`}
+                }`}
             >
               <LayoutDashboard size={14} />
               <span>Overview</span>
@@ -167,11 +166,10 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
                   setContentDropdownOpen(!contentDropdownOpen)
                   setPublishingDropdownOpen(false)
                 }}
-                className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
-                  isContentActive || contentDropdownOpen
+                className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${isContentActive || contentDropdownOpen
                     ? 'bg-[#0F2417]/10 text-[#0F2417] font-semibold'
                     : 'text-[#0F2417]/70 hover:text-[#0F2417] hover:bg-[#0F2417]/5'
-                }`}
+                  }`}
               >
                 <Layers size={14} />
                 <span>Site Content & Copy</span>
@@ -192,11 +190,10 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
                           key={item.href}
                           href={item.href}
                           onClick={() => setContentDropdownOpen(false)}
-                          className={`flex items-start gap-3 px-3 py-2.5 rounded-xl transition-all ${
-                            isActive
+                          className={`flex items-start gap-3 px-3 py-2.5 rounded-xl transition-all ${isActive
                               ? 'bg-[#FAF9F5] text-[#0F2417] font-semibold'
                               : 'hover:bg-stone-50 text-stone-700'
-                          }`}
+                            }`}
                         >
                           <div className="w-7 h-7 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] shrink-0 mt-0.5">
                             <Icon size={14} />
@@ -225,11 +222,10 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
                   setPublishingDropdownOpen(!publishingDropdownOpen)
                   setContentDropdownOpen(false)
                 }}
-                className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${
-                  isPublishingActive || publishingDropdownOpen
+                className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all cursor-pointer ${isPublishingActive || publishingDropdownOpen
                     ? 'bg-[#0F2417]/10 text-[#0F2417] font-semibold'
                     : 'text-[#0F2417]/70 hover:text-[#0F2417] hover:bg-[#0F2417]/5'
-                }`}
+                  }`}
               >
                 <FileText size={14} />
                 <span>Publishing & Media</span>
@@ -250,11 +246,10 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
                           key={item.href}
                           href={item.href}
                           onClick={() => setPublishingDropdownOpen(false)}
-                          className={`flex items-start gap-3 px-3 py-2.5 rounded-xl transition-all ${
-                            isActive
+                          className={`flex items-start gap-3 px-3 py-2.5 rounded-xl transition-all ${isActive
                               ? 'bg-[#FAF9F5] text-[#0F2417] font-semibold'
                               : 'hover:bg-stone-50 text-stone-700'
-                          }`}
+                            }`}
                         >
                           <div className="w-7 h-7 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] shrink-0 mt-0.5">
                             <Icon size={14} />
@@ -278,11 +273,10 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
             {/* Direct Links for Quick Workflow */}
             <Link
               href="/admin/team"
-              className={`hidden xl:flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
-                pathname === '/admin/team'
+              className={`hidden xl:flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${pathname === '/admin/team'
                   ? 'bg-[#0F2417] text-[#FAF9F5] font-semibold shadow-xs'
                   : 'text-[#0F2417]/70 hover:text-[#0F2417] hover:bg-[#0F2417]/5'
-              }`}
+                }`}
             >
               <Users size={14} />
               <span>Team</span>
@@ -290,14 +284,24 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
 
             <Link
               href="/admin/resources"
-              className={`hidden xl:flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
-                pathname === '/admin/resources'
+              className={`hidden xl:flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${pathname === '/admin/resources'
                   ? 'bg-[#0F2417] text-[#FAF9F5] font-semibold shadow-xs'
                   : 'text-[#0F2417]/70 hover:text-[#0F2417] hover:bg-[#0F2417]/5'
-              }`}
+                }`}
             >
               <FileText size={14} />
               <span>Publications</span>
+            </Link>
+
+            <Link
+              href="/admin/settings"
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${pathname === '/admin/settings'
+                  ? 'bg-[#0F2417] text-[#FAF9F5] font-semibold shadow-xs'
+                  : 'text-[#0F2417]/70 hover:text-[#0F2417] hover:bg-[#0F2417]/5'
+                }`}
+            >
+              <Settings size={14} />
+              <span>Settings &amp; Credentials</span>
             </Link>
           </nav>
         </div>
@@ -314,10 +318,14 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
           </Link>
 
           {adminEmail && (
-            <div className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white border border-[#0F2417]/10 text-xs text-[#0F2417]/80">
+            <Link
+              href="/admin/settings#credentials"
+              title="Manage admin login credentials"
+              className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 hover:bg-[#FAF9F5] text-xs text-[#0F2417]/80 transition-colors"
+            >
               <span className="w-2 h-2 rounded-full bg-emerald-500" />
               <span className="truncate max-w-[150px] font-medium">{adminEmail}</span>
-            </div>
+            </Link>
           )}
 
           <button
@@ -354,6 +362,14 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
             >
               <LayoutDashboard size={14} />
               Overview Dashboard
+            </Link>
+            <Link
+              href="/admin/settings#credentials"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold hover:bg-[#0F2417]/5"
+            >
+              <Settings size={14} />
+              Admin Credentials &amp; Settings
             </Link>
           </div>
 

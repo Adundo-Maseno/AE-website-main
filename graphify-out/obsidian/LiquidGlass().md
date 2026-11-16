@@ -1,12 +1,12 @@
 ---
 source_file: "components/liquid-glass/index.tsx"
 type: "code"
-community: "Header Navigation & i18n Routing"
+community: "Site Header & Language Switcher"
 location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Header_Navigation__i18n_Routing
+  - community/Site_Header__Language_Switcher
 ---
 
 # LiquidGlass()
@@ -19,4 +19,4 @@ tags:
 - [[header.tsx]] - `imports` [EXTRACTED]
 - [[index.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Header_Navigation__i18n_Routing
+#graphify/code #graphify/EXTRACTED #community/Site_Header__Language_Switcher

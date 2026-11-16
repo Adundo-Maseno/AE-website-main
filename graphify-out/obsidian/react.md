@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Interactive Mapbox Canvas & Controls"
+community: "Impact Map Data, Merging & Controls"
 location: "L43"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Interactive_Mapbox_Canvas__Controls
+  - community/Impact_Map_Data_Merging__Controls
 ---
 
 # react
@@ -93,4 +93,4 @@ tags:
 - [[why-agri-form-modal.tsx]] - `imports_from` [EXTRACTED]
 - [[why-agripage.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Interactive_Mapbox_Canvas__Controls
+#graphify/concept #graphify/EXTRACTED #community/Impact_Map_Data_Merging__Controls

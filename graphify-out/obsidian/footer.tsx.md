@@ -1,12 +1,12 @@
 ---
 source_file: "components/footer.tsx"
 type: "code"
-community: "Root Localized Layout, Fonts & Footer"
+community: "Admin Settings UI, Footer & Why-Agri"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Root_Localized_Layout_Fonts__Footer
+  - community/Admin_Settings_UI_Footer__Why-Agri
 ---
 
 # footer.tsx
@@ -24,4 +24,4 @@ tags:
 - [[routing.ts]] - `imports_from` [EXTRACTED]
 - [[settings-service.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Footer
+#graphify/code #graphify/EXTRACTED #community/Admin_Settings_UI_Footer__Why-Agri
