@@ -9,6 +9,10 @@ export const metadata: Metadata = {
     index: false,
     follow: false,
   },
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/apple-icon.png',
+  },
 }
 
 export default async function AdminLayout({

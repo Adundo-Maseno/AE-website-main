@@ -2,7 +2,6 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname, useRouter } from 'next/navigation'
 import {
   LayoutDashboard,
@@ -124,16 +123,6 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
         {/* Brand & Left Navigation */}
         <div className="flex items-center gap-8">
           <Link href="/admin" className="flex items-center gap-3 group shrink-0">
-            <div className="relative w-8 h-8 rounded-lg bg-white border border-[#0F2417]/15 p-1 flex items-center justify-center shadow-xs group-hover:border-[#0F2417]/40 transition-colors">
-              <Image
-                src="/agri-experience-logo.png"
-                alt="Agri Experience"
-                width={24}
-                height={24}
-                className="object-contain"
-                priority
-              />
-            </div>
             <div className="flex items-baseline gap-2">
               <span className="font-serif font-bold text-base text-[#0F2417] tracking-tight">
                 Agri Experience

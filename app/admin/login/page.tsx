@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { Lock, Mail, Eye, EyeOff, ArrowRight, AlertCircle, CheckCircle2 } from 'lucide-react'
 
@@ -46,16 +45,6 @@ export default function AdminLoginPage() {
       <div className="w-full max-w-md bg-white rounded-3xl border border-black/[0.08] shadow-[0_4px_20px_rgba(0,0,0,0.03)] p-8 sm:p-10 relative z-10">
         {/* Brand Header */}
         <div className="text-center mb-8">
-          <div className="inline-flex p-3 rounded-2xl bg-[#FAF9F5] border border-black/[0.08] mb-4 shadow-xs">
-            <Image
-              src="/agri-experience-logo.png"
-              alt="Agri Experience"
-              width={42}
-              height={42}
-              className="object-contain"
-              priority
-            />
-          </div>
           <h1 className="font-serif font-bold text-2xl sm:text-3xl text-deep-forest tracking-tight">
             Publishing Desk Sign In
           </h1>
