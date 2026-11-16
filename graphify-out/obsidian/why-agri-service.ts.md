@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/why-agri-service.ts"
 type: "code"
-community: "Why-Agri Service & API Routes"
+community: "Admin Dashboard & DB Seeding"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Why-Agri_Service__API_Routes
+  - community/Admin_Dashboard__DB_Seeding
 ---
 
 # why-agri-service.ts
@@ -39,4 +39,4 @@ tags:
 - [[why-agripage.tsx]] - `imports_from` [EXTRACTED]
 - [[why-agriroute.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Why-Agri_Service__API_Routes
+#graphify/code #graphify/EXTRACTED #community/Admin_Dashboard__DB_Seeding

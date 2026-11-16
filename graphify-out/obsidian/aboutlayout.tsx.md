@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/about/layout.tsx"
 type: "code"
-community: "Resources Library & Metadata Layouts"
+community: "Section Layouts & Structured JSON-LD"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resources_Library__Metadata_Layouts
+  - community/Section_Layouts__Structured_JSON-LD
 ---
 
 # about/layout.tsx
@@ -19,4 +19,4 @@ tags:
 - [[next_1]] - `imports_from` [EXTRACTED]
 - [[next-intl]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resources_Library__Metadata_Layouts
+#graphify/code #graphify/EXTRACTED #community/Section_Layouts__Structured_JSON-LD

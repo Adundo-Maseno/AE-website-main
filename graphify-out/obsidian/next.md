@@ -1,11 +1,11 @@
 ---
 source_file: "next"
 type: "code"
-community: "Next.js & Intl Configuration"
+community: "Next.js Config & Deployment Docs"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Nextjs__Intl_Configuration
+  - community/Nextjs_Config__Deployment_Docs
 ---
 
 # next
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[next.config.mjs]] - `dynamic_import` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Nextjs__Intl_Configuration
+#graphify/code #graphify/EXTRACTED #community/Nextjs_Config__Deployment_Docs

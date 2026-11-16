@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "App Layouts & Global Shell"
+community: "Admin Philosophy, Insights & Form Modals"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/App_Layouts__Global_Shell
+  - community/Admin_Philosophy_Insights__Form_Modals
 ---
 
 # app_globals
@@ -14,4 +14,4 @@ tags:
 - [[localelayout.tsx]] - `imports_from` [EXTRACTED]
 - [[adminlayout.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/App_Layouts__Global_Shell
+#graphify/concept #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals

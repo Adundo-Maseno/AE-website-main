@@ -1,12 +1,12 @@
 ---
 source_file: "components/map/map-auto-center.tsx"
 type: "code"
-community: "Interactive Impact Map & Services"
+community: "Interactive Mapbox Canvas & Controls"
 location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Impact_Map__Services
+  - community/Interactive_Mapbox_Canvas__Controls
 ---
 
 # MapAutoCenter()
@@ -18,4 +18,4 @@ tags:
 - [[map-auto-center.tsx]] - `contains` [EXTRACTED]
 - [[useMap()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services
+#graphify/code #graphify/EXTRACTED #community/Interactive_Mapbox_Canvas__Controls

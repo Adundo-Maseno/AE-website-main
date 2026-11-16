@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/digital-platforms/page.tsx"
 type: "code"
-community: "Our Work Pillar Pages"
+community: "Digital Platforms Pillar Page"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Pillar_Pages
+  - community/Digital_Platforms_Pillar_Page
 ---
 
 # DigitalPlatformsPage()
@@ -17,4 +17,4 @@ tags:
 - [[getPageSections()]] - `calls` [EXTRACTED]
 - [[getProjects()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Pages
+#graphify/code #graphify/EXTRACTED #community/Digital_Platforms_Pillar_Page

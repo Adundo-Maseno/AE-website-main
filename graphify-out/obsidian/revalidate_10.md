@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/page.tsx"
 type: "code"
-community: "About & Services Bento Grid"
+community: "Page Sections API & Work Overview"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About__Services_Bento_Grid
+  - community/Page_Sections_API__Work_Overview
 ---
 
 # revalidate
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[our-workpage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About__Services_Bento_Grid
+#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Work_Overview

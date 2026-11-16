@@ -1,12 +1,12 @@
 ---
 source_file: "components/map/map-context.tsx"
 type: "code"
-community: "Interactive Impact Map & Services"
+community: "Interactive Mapbox Canvas & Controls"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Impact_Map__Services
+  - community/Interactive_Mapbox_Canvas__Controls
 ---
 
 # MapContext
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[map-context.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services
+#graphify/code #graphify/EXTRACTED #community/Interactive_Mapbox_Canvas__Controls

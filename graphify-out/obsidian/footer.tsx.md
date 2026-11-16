@@ -1,12 +1,12 @@
 ---
 source_file: "components/footer.tsx"
 type: "code"
-community: "Footer Settings & PDF Preview"
+community: "Root Localized Layout, Fonts & Footer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Footer_Settings__PDF_Preview
+  - community/Root_Localized_Layout_Fonts__Footer
 ---
 
 # footer.tsx
@@ -24,4 +24,4 @@ tags:
 - [[routing.ts]] - `imports_from` [EXTRACTED]
 - [[settings-service.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Footer_Settings__PDF_Preview
+#graphify/code #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Footer

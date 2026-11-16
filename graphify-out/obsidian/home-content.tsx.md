@@ -1,12 +1,12 @@
 ---
 source_file: "components/home-content.tsx"
 type: "code"
-community: "Localized Metadata & Home Sections"
+community: "Home Page Data Hydration"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Localized_Metadata__Home_Sections
+  - community/Home_Page_Data_Hydration
 ---
 
 # home-content.tsx
@@ -39,4 +39,4 @@ tags:
 - [[why-agri-experience.tsx]] - `imports_from` [EXTRACTED]
 - [[why-agri-service.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Localized_Metadata__Home_Sections
+#graphify/code #graphify/EXTRACTED #community/Home_Page_Data_Hydration

@@ -1,12 +1,12 @@
 ---
 source_file: "components/about-content.tsx"
 type: "code"
-community: "About & Services Bento Grid"
+community: "About Page & Expertise Bento Grid"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About__Services_Bento_Grid
+  - community/About_Page__Expertise_Bento_Grid
 ---
 
 # AboutContentProps
@@ -16,4 +16,4 @@ tags:
 - [[PageSectionData]] - `references` [EXTRACTED]
 - [[about-content.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About__Services_Bento_Grid
+#graphify/code #graphify/EXTRACTED #community/About_Page__Expertise_Bento_Grid

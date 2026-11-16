@@ -1,12 +1,12 @@
 ---
 source_file: "i18n/routing.ts"
 type: "code"
-community: "Header Navigation & i18n Routing"
+community: "Localized Metadata & Privacy Pages"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Header_Navigation__i18n_Routing
+  - community/Localized_Metadata__Privacy_Pages
 ---
 
 # routing.ts
@@ -24,7 +24,6 @@ tags:
 - [[home-content.tsx]] - `imports_from` [EXTRACTED]
 - [[impact-page-content.tsx]] - `imports_from` [EXTRACTED]
 - [[insights-content.tsx]] - `imports_from` [EXTRACTED]
-- [[interactive-map.tsx]] - `imports_from` [EXTRACTED]
 - [[next-intl]] - `imports_from` [EXTRACTED]
 - [[our-workpage.tsx]] - `imports_from` [EXTRACTED]
 - [[privacypage.tsx]] - `imports_from` [EXTRACTED]
@@ -40,4 +39,4 @@ tags:
 - [[usePathname]] - `contains` [EXTRACTED]
 - [[useRouter]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Header_Navigation__i18n_Routing
+#graphify/code #graphify/EXTRACTED #community/Localized_Metadata__Privacy_Pages

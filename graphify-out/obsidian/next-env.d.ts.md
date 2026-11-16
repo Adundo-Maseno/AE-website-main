@@ -1,12 +1,12 @@
 ---
 source_file: "next-env.d.ts"
 type: "code"
-community: "Next.js Type Declarations"
+community: "Next.js TypeScript Env Definitions"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Nextjs_Type_Declarations
+  - community/Nextjs_TypeScript_Env_Definitions
 ---
 
 # next-env.d.ts
@@ -16,4 +16,4 @@ tags:
 - [[next_types_root_params_d]] - `imports_from` [EXTRACTED]
 - [[next_types_routes_d]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Nextjs_Type_Declarations
+#graphify/code #graphify/EXTRACTED #community/Nextjs_TypeScript_Env_Definitions

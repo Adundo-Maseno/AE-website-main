@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/gallery-items/route.ts"
 type: "code"
-community: "Protected Admin CRUD Routes"
+community: "Gallery Items Service & API Routes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Protected_Admin_CRUD_Routes
+  - community/Gallery_Items_Service__API_Routes
 ---
 
 # gallery-items/route.ts
@@ -21,4 +21,4 @@ tags:
 - [[getSession()]] - `imports` [EXTRACTED]
 - [[next_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Protected_Admin_CRUD_Routes
+#graphify/code #graphify/EXTRACTED #community/Gallery_Items_Service__API_Routes

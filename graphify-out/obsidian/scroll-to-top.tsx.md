@@ -1,12 +1,12 @@
 ---
 source_file: "components/scroll-to-top.tsx"
 type: "code"
-community: "App Layouts & Global Shell"
+community: "Root Localized Layout, Fonts & Footer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/App_Layouts__Global_Shell
+  - community/Root_Localized_Layout_Fonts__Footer
 ---
 
 # scroll-to-top.tsx
@@ -19,4 +19,4 @@ tags:
 - [[next_1]] - `imports_from` [EXTRACTED]
 - [[react]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/App_Layouts__Global_Shell
+#graphify/code #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Footer

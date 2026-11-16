@@ -1,12 +1,12 @@
 ---
 source_file: "components/insights-content.tsx"
 type: "code"
-community: "Our Work Client Views"
+community: "Admin Philosophy, Insights & Form Modals"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Client_Views
+  - community/Admin_Philosophy_Insights__Form_Modals
 ---
 
 # insights-content.tsx
@@ -22,4 +22,4 @@ tags:
 - [[next-intl]] - `imports_from` [EXTRACTED]
 - [[routing.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Client_Views
+#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals

@@ -1,12 +1,12 @@
 ---
 source_file: "app/admin/sections/page.tsx"
 type: "code"
-community: "Admin Media & Content Modals"
-location: "L290"
+community: "Admin Content Pages & Sections Config"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Media__Content_Modals
+  - community/Admin_Content_Pages__Sections_Config
 ---
 
 # AdminSectionsPage()
@@ -15,4 +15,4 @@ tags:
 - [[ImageUploader()]] - `calls` [EXTRACTED]
 - [[sectionspage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Media__Content_Modals
+#graphify/code #graphify/EXTRACTED #community/Admin_Content_Pages__Sections_Config

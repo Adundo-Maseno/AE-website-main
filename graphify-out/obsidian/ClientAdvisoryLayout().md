@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/client-advisory/layout.tsx"
 type: "code"
-community: "Localized Metadata & Home Sections"
+community: "Localized Metadata & Privacy Pages"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Localized_Metadata__Home_Sections
+  - community/Localized_Metadata__Privacy_Pages
 ---
 
 # ClientAdvisoryLayout()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[client-advisorylayout.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Localized_Metadata__Home_Sections
+#graphify/code #graphify/EXTRACTED #community/Localized_Metadata__Privacy_Pages

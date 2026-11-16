@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/team-service.ts"
 type: "code"
-community: "Team & Page Sections API"
+community: "Protected Admin CRUD API Routes"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Team__Page_Sections_API
+  - community/Protected_Admin_CRUD_API_Routes
 ---
 
 # createTeamMember()
@@ -17,4 +17,4 @@ tags:
 - [[team-service.ts]] - `contains` [EXTRACTED]
 - [[teamroute.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Team__Page_Sections_API
+#graphify/code #graphify/EXTRACTED #community/Protected_Admin_CRUD_API_Routes

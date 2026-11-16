@@ -50,15 +50,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Interactive Impact Map & Services]]
-- 4 edges to [[_COMMUNITY_GSAP Scroll Accordion Motion]]
-- 4 edges to [[_COMMUNITY_Runtime Package Dependencies]]
-- 3 edges to [[_COMMUNITY_Footer Settings & PDF Preview]]
-- 1 edge to [[_COMMUNITY_Radix Dialog Package Dependency]]
+- 10 edges to [[_COMMUNITY_Interactive Mapbox Canvas & Controls]]
+- 5 edges to [[_COMMUNITY_Runtime Package Dependencies]]
+- 4 edges to [[_COMMUNITY_Technical Studies & Scroll Accordion]]
+- 3 edges to [[_COMMUNITY_Admin Philosophy, Insights & Form Modals]]
 
 ## Top bridge nodes
 - [[command.tsx]] - degree 21, connects to 3 communities
 - [[dialog.tsx]] - degree 16, connects to 3 communities
 - [[libutils.ts]] - degree 9, connects to 3 communities
 - [[cn()]] - degree 26, connects to 2 communities
-- [[map-search.tsx]] - degree 16, connects to 2 communities
+- [[map-search.tsx]] - degree 15, connects to 2 communities

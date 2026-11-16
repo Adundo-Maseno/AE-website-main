@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/pdf-uploader.tsx"
 type: "code"
-community: "Resources Library & Metadata Layouts"
+community: "Admin Philosophy, Insights & Form Modals"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resources_Library__Metadata_Layouts
+  - community/Admin_Philosophy_Insights__Form_Modals
 ---
 
 # pdf-uploader.tsx
@@ -19,4 +19,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[resource-form-modal.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resources_Library__Metadata_Layouts
+#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals

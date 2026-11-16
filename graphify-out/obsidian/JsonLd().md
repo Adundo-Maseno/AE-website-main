@@ -1,12 +1,12 @@
 ---
 source_file: "components/json-ld.tsx"
 type: "code"
-community: "App Layouts & Global Shell"
+community: "Root Localized Layout, Fonts & Footer"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/App_Layouts__Global_Shell
+  - community/Root_Localized_Layout_Fonts__Footer
 ---
 
 # JsonLd()
@@ -16,4 +16,4 @@ tags:
 - [[localelayout.tsx]] - `imports` [EXTRACTED]
 - [[json-ld.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/App_Layouts__Global_Shell
+#graphify/code #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Footer

@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/map-service.ts"
 type: "code"
-community: "Interactive Impact Map & Services"
+community: "Admin Dashboard & DB Seeding"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Impact_Map__Services
+  - community/Admin_Dashboard__DB_Seeding
 ---
 
 # map-service.ts
@@ -39,4 +39,4 @@ tags:
 - [[stripManagedFields()]] - `imports` [EXTRACTED]
 - [[updateCountry()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services
+#graphify/code #graphify/EXTRACTED #community/Admin_Dashboard__DB_Seeding

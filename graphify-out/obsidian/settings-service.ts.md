@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/settings-service.ts"
 type: "code"
-community: "Admin Dashboard & DB Seeding"
+community: "Site Settings, SEO & Terms Routes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Dashboard__DB_Seeding
+  - community/Site_Settings_SEO__Terms_Routes
 ---
 
 # settings-service.ts
@@ -27,4 +27,4 @@ tags:
 - [[settingsroute.ts]] - `imports_from` [EXTRACTED]
 - [[updateSiteSettings()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Dashboard__DB_Seeding
+#graphify/code #graphify/EXTRACTED #community/Site_Settings_SEO__Terms_Routes

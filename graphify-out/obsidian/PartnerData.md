@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/partners-service.ts"
 type: "code"
-community: "Admin Media & Content Modals"
+community: "Admin Content Pages & Sections Config"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Media__Content_Modals
+  - community/Admin_Content_Pages__Sections_Config
 ---
 
 # PartnerData
@@ -21,4 +21,4 @@ tags:
 - [[partners-service.ts]] - `contains` [EXTRACTED]
 - [[partnerspage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Media__Content_Modals
+#graphify/code #graphify/EXTRACTED #community/Admin_Content_Pages__Sections_Config

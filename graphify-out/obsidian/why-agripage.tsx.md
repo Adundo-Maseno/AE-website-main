@@ -1,12 +1,12 @@
 ---
 source_file: "app/admin/why-agri/page.tsx"
 type: "code"
-community: "Beliefs & Why-Agri Admin UI"
+community: "Admin Philosophy, Insights & Form Modals"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Beliefs__Why-Agri_Admin_UI
+  - community/Admin_Philosophy_Insights__Form_Modals
 ---
 
 # why-agri/page.tsx
@@ -20,4 +20,4 @@ tags:
 - [[why-agri-form-modal.tsx]] - `imports_from` [EXTRACTED]
 - [[why-agri-service.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Beliefs__Why-Agri_Admin_UI
+#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals

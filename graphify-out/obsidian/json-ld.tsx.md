@@ -1,12 +1,12 @@
 ---
 source_file: "components/json-ld.tsx"
 type: "code"
-community: "Resources Library & Metadata Layouts"
+community: "Section Layouts & Structured JSON-LD"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resources_Library__Metadata_Layouts
+  - community/Section_Layouts__Structured_JSON-LD
 ---
 
 # json-ld.tsx
@@ -22,4 +22,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[resourceslayout.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resources_Library__Metadata_Layouts
+#graphify/code #graphify/EXTRACTED #community/Section_Layouts__Structured_JSON-LD

@@ -1,12 +1,12 @@
 ---
 source_file: "components/impact/impact-page-content.tsx"
 type: "code"
-community: "Impact Page & SDG Alignment"
+community: "Impact Map Country Data & Services"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Impact_Page__SDG_Alignment
+  - community/Impact_Map_Country_Data__Services
 ---
 
 # impact-page-content.tsx
@@ -28,4 +28,4 @@ tags:
 - [[rolling-text.tsx]] - `imports_from` [EXTRACTED]
 - [[routing.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Impact_Page__SDG_Alignment
+#graphify/code #graphify/EXTRACTED #community/Impact_Map_Country_Data__Services

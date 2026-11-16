@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/page-sections-service.ts"
 type: "code"
-community: "Our Work Pillar Pages"
+community: "Page Sections API & Work Overview"
 location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Pillar_Pages
+  - community/Page_Sections_API__Work_Overview
 ---
 
 # getPageSections()
@@ -39,4 +39,4 @@ tags:
 - [[stakeholder-conveningspage.tsx]] - `imports` [EXTRACTED]
 - [[technical-studiespage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Pages
+#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Work_Overview

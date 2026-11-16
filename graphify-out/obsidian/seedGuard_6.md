@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/projects-service.ts"
 type: "code"
-community: "Our Work Pillar Pages"
+community: "Projects Service & ID Resolution"
 location: "L472"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Pillar_Pages
+  - community/Projects_Service__ID_Resolution
 ---
 
 # seedGuard
@@ -15,4 +15,4 @@ tags:
 - [[ensureSeeded()_6]] - `calls` [EXTRACTED]
 - [[projects-service.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Pages
+#graphify/code #graphify/EXTRACTED #community/Projects_Service__ID_Resolution

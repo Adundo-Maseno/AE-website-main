@@ -12,6 +12,7 @@ tags:
 # staticExpertisePillars
 
 ## Connections
+- [[Seed Sector Transformation]] - `implements` [EXTRACTED]
 - [[adminpage.tsx]] - `imports` [EXTRACTED]
 - [[expertise-service.ts]] - `contains` [EXTRACTED]
 - [[seedroute.ts]] - `imports` [EXTRACTED]

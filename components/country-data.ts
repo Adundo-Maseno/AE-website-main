@@ -1137,3 +1137,191 @@ export function createGenericProjects(country: DetailedCountryRecord, locale: st
     },
   ];
 }
+
+export interface CmsCountryInput {
+  id: string;
+  countryCode: string;
+  countryName: string;
+  region?: string | null;
+  activeProjectsCount: number;
+  engagement: number;
+  overviewEn?: string | null;
+  overviewFr?: string | null;
+  workDone?: string | null;
+  focus?: string | null;
+  impact?: string | null;
+  locations?: string | null;
+}
+
+export const cityCoordinates: Record<string, [number, number]> = {
+  'Nairobi': [36.8219, -1.2921],
+  'Kisumu': [34.7617, -0.0917],
+  'Nakuru': [36.0800, -0.3031],
+  'Kitui': [38.0106, -1.3694],
+  'Tharaka Nithi': [37.9833, -0.2500],
+  'Kampala': [32.5825, 0.3476],
+  'Gulu': [32.2989, 2.7667],
+  'Mbarara': [30.6545, -0.6105],
+  'Dar es Salaam': [39.2622, -6.7924],
+  'Dodoma': [35.7516, -6.1630],
+  'Morogoro': [37.6668, -8.3685],
+  'Njombe': [34.7667, -9.3333],
+  'Arusha': [36.6833, -3.3667],
+  'Msimba Farm': [37.2833, -7.0333],
+  'Kigali': [30.0619, -1.9441],
+  'Musanze': [29.6349, -1.4998],
+  'Huye': [29.7434, -2.5966],
+  'Addis Ababa': [38.7469, 9.0227],
+  'Hawassa': [38.4805, 7.0504],
+  'Bahir Dar': [37.3939, 11.5936],
+  'Lusaka': [28.2833, -15.4167],
+  'Chipata': [32.6500, -13.6333],
+  'Ndola': [28.6366, -12.9587],
+  'Accra': [-0.1870, 5.6037],
+  'Kumasi': [-1.6244, 6.6884],
+  'Tamale': [-0.8393, 9.4008],
+  'Kinshasa': [15.3150, -4.3317],
+  'Goma': [29.2215, -1.6585],
+  'Lubumbashi': [27.4794, -11.6609],
+  'Bukavu': [28.8628, -2.5083],
+  'Abuja': [7.3986, 9.0765],
+  'Kano': [8.5167, 11.9964],
+  'Ibadan': [3.8996, 7.3775],
+  'Bujumbura': [29.3561, -3.3822],
+  'Gitega': [29.9246, -3.4270],
+  'Ngozi': [29.8306, -2.8797],
+  'East Africa corridor': [34.0, 0.0],
+  'Eastern and Southern DRC': [27.0, -6.0],
+  'West Africa': [2.0, 9.0],
+  'Southern Africa corridor': [29.0, -16.0],
+  'Nigeria': [8.0, 10.0],
+  'Ghana / regional': [-1.0, 8.0],
+};
+
+export function parseCountryList(raw?: string | null, fallback: string[] = []): string[] {
+  if (!raw) return fallback;
+  const trimmed = raw.trim();
+  if (!trimmed) return fallback;
+  try {
+    const parsed = JSON.parse(trimmed);
+    if (Array.isArray(parsed)) {
+      return parsed.map((item) => String(item).trim()).filter(Boolean);
+    }
+  } catch {
+    // Fallback to comma-separated parsing
+  }
+  const items = trimmed
+    .split(',')
+    .map((s) => s.trim())
+    .filter(Boolean);
+  return items.length > 0 ? items : fallback;
+}
+
+export function mergeCountriesWithCms(
+  locale: string,
+  cmsCountries?: CmsCountryInput[]
+): DetailedCountryRecord[] {
+  const baseSeeds = getCountrySeeds(locale);
+  const englishSeeds = locale === 'fr' ? getCountrySeeds('en') : baseSeeds;
+  if (!cmsCountries || cmsCountries.length === 0) {
+    return baseSeeds;
+  }
+
+  const matchedCmsIds = new Set<string>();
+  const mergedSeeds = baseSeeds.map((base) => {
+    const enBase = englishSeeds.find((item) => item.code === base.code);
+    const cms = cmsCountries.find(
+      (item) =>
+        item.countryCode?.toUpperCase() === base.code.toUpperCase() ||
+        item.countryName?.toLowerCase() === base.name.toLowerCase() ||
+        (enBase && item.countryName?.toLowerCase() === enBase.name.toLowerCase()) ||
+        (base.geoName && item.countryName?.toLowerCase() === base.geoName.toLowerCase())
+    );
+    if (!cms) return base;
+    matchedCmsIds.add(cms.id);
+
+    const projects =
+      typeof cms.activeProjectsCount === 'number' ? cms.activeProjectsCount : base.projects;
+    const engagement =
+      typeof cms.engagement === 'number' ? cms.engagement : base.engagement;
+
+    let overview = base.overview;
+    if (locale === 'fr') {
+      if (cms.overviewFr) {
+        overview = cms.overviewFr;
+      } else if (cms.overviewEn && enBase && cms.overviewEn !== enBase.overview) {
+        overview = cms.overviewEn;
+      }
+    } else if (cms.overviewEn) {
+      overview = cms.overviewEn;
+    }
+
+    const workDoneParsed = parseCountryList(cms.workDone, base.workDone);
+    const workDone =
+      locale === 'fr' &&
+      enBase &&
+      workDoneParsed.join('|') === enBase.workDone.join('|')
+        ? base.workDone
+        : workDoneParsed.length > 0
+          ? workDoneParsed
+          : base.workDone;
+
+    const focus = parseCountryList(cms.focus, base.focus);
+    const impact = parseCountryList(cms.impact, base.impact);
+    const locations = parseCountryList(cms.locations, base.locations);
+
+    const stats = base.stats.map((stat, idx) => {
+      if (idx === 0) return { ...stat, value: String(projects) };
+      if (idx === 1 && /reach|engag|train|touch|person/i.test(stat.label)) {
+        return { ...stat, value: formatFarmers(engagement) };
+      }
+      return stat;
+    });
+
+    return {
+      ...base,
+      name: locale === 'fr' ? base.name : cms.countryName || base.name,
+      region: cms.region || base.region,
+      projects,
+      engagement,
+      overview,
+      workDone,
+      focus,
+      impact,
+      locations,
+      stats,
+    };
+  });
+
+  for (const cms of cmsCountries) {
+    if (matchedCmsIds.has(cms.id)) continue;
+    const projects = cms.activeProjectsCount ?? 0;
+    const engagement = cms.engagement ?? 0;
+    const overview =
+      (locale === 'fr' ? cms.overviewFr || cms.overviewEn : cms.overviewEn) || '';
+    mergedSeeds.push({
+      name: cms.countryName,
+      code: cms.countryCode.toUpperCase(),
+      region: cms.region || 'East Africa',
+      projects,
+      engagement,
+      overview,
+      workDone: parseCountryList(cms.workDone, []),
+      focus: parseCountryList(cms.focus, []),
+      impact: parseCountryList(cms.impact, []),
+      locations: parseCountryList(cms.locations, []),
+      stats: [
+        {
+          label: locale === 'fr' ? 'Projets actifs' : 'Active projects',
+          value: String(projects),
+        },
+        {
+          label: locale === 'fr' ? 'Engagement' : 'Engagement',
+          value: formatFarmers(engagement),
+        },
+      ],
+    });
+  }
+
+  return mergedSeeds;
+}

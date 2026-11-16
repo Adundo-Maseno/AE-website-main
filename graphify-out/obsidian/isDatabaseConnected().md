@@ -1,12 +1,12 @@
 ---
 source_file: "lib/db.ts"
 type: "code"
-community: "Home Page Data Hydration"
+community: "Admin Dashboard & DB Seeding"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home_Page_Data_Hydration
+  - community/Admin_Dashboard__DB_Seeding
 ---
 
 # isDatabaseConnected()
@@ -52,4 +52,4 @@ tags:
 - [[upsertPageSection()]] - `calls` [EXTRACTED]
 - [[why-agri-service.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home_Page_Data_Hydration
+#graphify/code #graphify/EXTRACTED #community/Admin_Dashboard__DB_Seeding

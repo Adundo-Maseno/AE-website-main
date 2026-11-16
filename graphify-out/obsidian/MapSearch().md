@@ -21,7 +21,6 @@ tags:
 - [[Popover()]] - `calls` [EXTRACTED]
 - [[PopoverContent()]] - `calls` [EXTRACTED]
 - [[PopoverTrigger()]] - `calls` [EXTRACTED]
-- [[interactive-map.tsx]] - `imports` [EXTRACTED]
 - [[map-search.tsx]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Map_Search__Dialog_Primitives

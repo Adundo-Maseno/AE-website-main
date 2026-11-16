@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.12
-members: 25
+cohesion: 0.13
+members: 24
 ---
 
 # Liquid Glass Shader Effects
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 25 nodes
+**Cohesion:** 0.13 - loosely connected
+**Members:** 24 nodes
 
 ## Members
 - [[dot-constructor()]] - code - components/liquid-glass/shader-utils.ts
@@ -17,7 +17,6 @@ members: 25
 - [[FragmentShaderType]] - code - components/liquid-glass/shader-utils.ts
 - [[GlassContainer]] - code - components/liquid-glass/index.tsx
 - [[GlassFilter()]] - code - components/liquid-glass/index.tsx
-- [[LiquidGlass()]] - code - components/liquid-glass/index.tsx
 - [[LiquidGlassProps]] - code - components/liquid-glass/index.tsx
 - [[ShaderDisplacementGenerator]] - code - components/liquid-glass/shader-utils.ts
 - [[ShaderOptions]] - code - components/liquid-glass/shader-utils.ts
@@ -45,8 +44,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_Header Navigation & i18n Routing]]
-- 1 edge to [[_COMMUNITY_Interactive Impact Map & Services]]
+- 1 edge to [[_COMMUNITY_Interactive Mapbox Canvas & Controls]]
 
 ## Top bridge nodes
 - [[index.tsx]] - degree 15, connects to 2 communities
-- [[LiquidGlass()]] - degree 4, connects to 1 community
+- [[GlassContainer]] - degree 4, connects to 1 community

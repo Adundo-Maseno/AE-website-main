@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/digital-platforms/digital-platforms-client.tsx"
 type: "code"
-community: "Our Work Client Views"
+community: "Digital Platforms Pillar Page"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Client_Views
+  - community/Digital_Platforms_Pillar_Page
 ---
 
 # digital-platforms-client.tsx
@@ -25,4 +25,4 @@ tags:
 - [[rolling-text.tsx]] - `imports_from` [EXTRACTED]
 - [[routing.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Client_Views
+#graphify/code #graphify/EXTRACTED #community/Digital_Platforms_Pillar_Page

@@ -1,12 +1,12 @@
 ---
 source_file: "next.config.mjs"
 type: "code"
-community: "Next.js & Intl Configuration"
+community: "Next.js Config & Deployment Docs"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Nextjs__Intl_Configuration
+  - community/Nextjs_Config__Deployment_Docs
 ---
 
 # withNextIntl
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[next.config.mjs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Nextjs__Intl_Configuration
+#graphify/code #graphify/EXTRACTED #community/Nextjs_Config__Deployment_Docs

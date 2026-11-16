@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/project-implementation/layout.tsx"
 type: "code"
-community: "Localized Metadata & Home Sections"
+community: "Project Implementation Metadata Layout"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Localized_Metadata__Home_Sections
+  - community/Project_Implementation_Metadata_Layout
 ---
 
 # project-implementation/layout.tsx
@@ -17,4 +17,4 @@ tags:
 - [[next_1]] - `imports_from` [EXTRACTED]
 - [[next-intl]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Localized_Metadata__Home_Sections
+#graphify/code #graphify/EXTRACTED #community/Project_Implementation_Metadata_Layout

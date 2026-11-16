@@ -1,12 +1,12 @@
 ---
 source_file: "lib/email.ts"
 type: "code"
-community: "Contact & Email Templates"
+community: "Media Upload, Contact & Email Pipeline"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Contact__Email_Templates
+  - community/Media_Upload_Contact__Email_Pipeline
 ---
 
 # generateTeamNotificationEmail()
@@ -18,4 +18,4 @@ tags:
 - [[escapeHtml()]] - `calls` [EXTRACTED]
 - [[sendContactEmails()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Contact__Email_Templates
+#graphify/code #graphify/EXTRACTED #community/Media_Upload_Contact__Email_Pipeline

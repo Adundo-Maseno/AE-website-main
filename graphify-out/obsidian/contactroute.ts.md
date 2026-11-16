@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/contact/route.ts"
 type: "code"
-community: "Contact & Email Templates"
+community: "Media Upload, Contact & Email Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Contact__Email_Templates
+  - community/Media_Upload_Contact__Email_Pipeline
 ---
 
 # contact/route.ts
@@ -17,4 +17,4 @@ tags:
 - [[next_1]] - `imports_from` [EXTRACTED]
 - [[sendContactEmails()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Contact__Email_Templates
+#graphify/code #graphify/EXTRACTED #community/Media_Upload_Contact__Email_Pipeline

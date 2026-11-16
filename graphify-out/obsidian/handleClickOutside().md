@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/admin-header.tsx"
 type: "code"
-community: "App Layouts & Global Shell"
+community: "Admin Philosophy, Insights & Form Modals"
 location: "L50"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/App_Layouts__Global_Shell
+  - community/Admin_Philosophy_Insights__Form_Modals
 ---
 
 # handleClickOutside()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AdminHeader()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/App_Layouts__Global_Shell
+#graphify/code #graphify/INFERRED #community/Admin_Philosophy_Insights__Form_Modals

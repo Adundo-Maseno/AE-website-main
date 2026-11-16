@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "React Three Fiber Dependency"
+community: "Field Gallery Service & Showcase"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/React_Three_Fiber_Dependency
+  - community/Field_Gallery_Service__Showcase
 ---
 
 # @react-three/fiber@^9.6.1
@@ -15,4 +15,4 @@ tags:
 - [[@react-threefiber]] - `declares` [EXTRACTED]
 - [[dependencies]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/React_Three_Fiber_Dependency
+#graphify/code #graphify/EXTRACTED #community/Field_Gallery_Service__Showcase

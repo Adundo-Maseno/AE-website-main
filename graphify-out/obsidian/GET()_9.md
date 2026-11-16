@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/projects/route.ts"
 type: "code"
-community: "Our Work Pillar Pages"
+community: "Client Advisory & Projects API"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Pillar_Pages
+  - community/Client_Advisory__Projects_API
 ---
 
 # GET()
@@ -16,4 +16,4 @@ tags:
 - [[getSession()]] - `calls` [EXTRACTED]
 - [[projectsroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Pages
+#graphify/code #graphify/EXTRACTED #community/Client_Advisory__Projects_API

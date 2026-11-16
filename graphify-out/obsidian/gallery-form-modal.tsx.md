@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/gallery-form-modal.tsx"
 type: "code"
-community: "Field Gallery CMS & Showcase"
+community: "Admin Content Pages & Sections Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Field_Gallery_CMS__Showcase
+  - community/Admin_Content_Pages__Sections_Config
 ---
 
 # gallery-form-modal.tsx
@@ -23,4 +23,4 @@ tags:
 - [[lucide-react]] - `imports_from` [EXTRACTED]
 - [[react]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Field_Gallery_CMS__Showcase
+#graphify/code #graphify/EXTRACTED #community/Admin_Content_Pages__Sections_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/image-uploader.tsx"
 type: "code"
-community: "Admin Media & Content Modals"
+community: "Admin Content Pages & Sections Config"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Media__Content_Modals
+  - community/Admin_Content_Pages__Sections_Config
 ---
 
 # shouldUnoptimize()
@@ -15,4 +15,4 @@ tags:
 - [[ImageUploader()]] - `calls` [EXTRACTED]
 - [[image-uploader.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Media__Content_Modals
+#graphify/code #graphify/EXTRACTED #community/Admin_Content_Pages__Sections_Config

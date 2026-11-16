@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/project-form-modal.tsx"
 type: "code"
-community: "Admin Media & Content Modals"
+community: "Our Work Pillar Client Views & Admin"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Media__Content_Modals
+  - community/Our_Work_Pillar_Client_Views__Admin
 ---
 
 # ProjectFormModalProps
@@ -15,4 +15,4 @@ tags:
 - [[ProjectItem]] - `references` [EXTRACTED]
 - [[project-form-modal.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Media__Content_Modals
+#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Client_Views__Admin

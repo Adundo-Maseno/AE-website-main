@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/projects-service.ts"
 type: "code"
-community: "Our Work Client Views"
+community: "Our Work Pillar Client Views & Admin"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Client_Views
+  - community/Our_Work_Pillar_Client_Views__Admin
 ---
 
 # ProjectItem
@@ -27,4 +27,4 @@ tags:
 - [[stakeholder-convenings-client.tsx]] - `imports` [EXTRACTED]
 - [[technical-studies-client.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Client_Views
+#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Client_Views__Admin

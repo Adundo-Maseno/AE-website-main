@@ -1,12 +1,12 @@
 ---
 source_file: "components/json-ld.tsx"
 type: "code"
-community: "Resources Library & Metadata Layouts"
+community: "Section Layouts & Structured JSON-LD"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resources_Library__Metadata_Layouts
+  - community/Section_Layouts__Structured_JSON-LD
 ---
 
 # ResourcesJsonLd()
@@ -16,4 +16,4 @@ tags:
 - [[json-ld.tsx]] - `contains` [EXTRACTED]
 - [[resourceslayout.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resources_Library__Metadata_Layouts
+#graphify/code #graphify/EXTRACTED #community/Section_Layouts__Structured_JSON-LD

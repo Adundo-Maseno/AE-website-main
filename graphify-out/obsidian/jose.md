@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Core UI & 3D Libraries"
+community: "Runtime Package Dependencies"
 location: "L36"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Core_UI__3D_Libraries
+  - community/Runtime_Package_Dependencies
 ---
 
 # jose
@@ -16,4 +16,4 @@ tags:
 - [[jose@6.2.16]] - `declares` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Core_UI__3D_Libraries
+#graphify/concept #graphify/EXTRACTED #community/Runtime_Package_Dependencies

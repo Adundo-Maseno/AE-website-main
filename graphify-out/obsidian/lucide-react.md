@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Footer Settings & PDF Preview"
+community: "Admin Philosophy, Insights & Form Modals"
 location: "L37"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Footer_Settings__PDF_Preview
+  - community/Admin_Philosophy_Insights__Form_Modals
 ---
 
 # lucide-react
@@ -73,4 +73,4 @@ tags:
 - [[why-agri-form-modal.tsx]] - `imports_from` [EXTRACTED]
 - [[why-agripage.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Footer_Settings__PDF_Preview
+#graphify/concept #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals

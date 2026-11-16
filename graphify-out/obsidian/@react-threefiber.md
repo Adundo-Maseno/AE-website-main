@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "React Three Fiber Dependency"
+community: "Field Gallery Service & Showcase"
 location: "L29"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/React_Three_Fiber_Dependency
+  - community/Field_Gallery_Service__Showcase
 ---
 
 # @react-three/fiber
@@ -16,4 +16,4 @@ tags:
 - [[office-plants-gallery.tsx]] - `imports_from` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/React_Three_Fiber_Dependency
+#graphify/concept #graphify/EXTRACTED #community/Field_Gallery_Service__Showcase

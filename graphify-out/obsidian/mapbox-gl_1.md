@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Interactive Impact Map & Services"
+community: "Interactive Mapbox Canvas & Controls"
 location: "L38"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Interactive_Impact_Map__Services
+  - community/Interactive_Mapbox_Canvas__Controls
 ---
 
 # mapbox-gl
@@ -19,4 +19,4 @@ tags:
 - [[mapbox-gl@3.24.0]] - `declares` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Interactive_Impact_Map__Services
+#graphify/concept #graphify/EXTRACTED #community/Interactive_Mapbox_Canvas__Controls

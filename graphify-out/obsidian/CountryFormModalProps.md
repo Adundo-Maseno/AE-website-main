@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/country-form-modal.tsx"
 type: "code"
-community: "Interactive Impact Map & Services"
+community: "Impact Map Country Data & Services"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Impact_Map__Services
+  - community/Impact_Map_Country_Data__Services
 ---
 
 # CountryFormModalProps
@@ -15,4 +15,4 @@ tags:
 - [[CountryItem]] - `references` [EXTRACTED]
 - [[country-form-modal.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services
+#graphify/code #graphify/EXTRACTED #community/Impact_Map_Country_Data__Services

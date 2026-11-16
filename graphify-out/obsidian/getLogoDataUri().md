@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/email-preview/route.ts"
 type: "code"
-community: "Contact & Email Templates"
+community: "Media Upload, Contact & Email Pipeline"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Contact__Email_Templates
+  - community/Media_Upload_Contact__Email_Pipeline
 ---
 
 # getLogoDataUri()
@@ -15,4 +15,4 @@ tags:
 - [[GET()_15]] - `calls` [EXTRACTED]
 - [[email-previewroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Contact__Email_Templates
+#graphify/code #graphify/EXTRACTED #community/Media_Upload_Contact__Email_Pipeline

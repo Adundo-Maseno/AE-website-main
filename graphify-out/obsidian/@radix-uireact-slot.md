@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Runtime Package Dependencies"
+community: "Interactive Mapbox Canvas & Controls"
 location: "L27"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Runtime_Package_Dependencies
+  - community/Interactive_Mapbox_Canvas__Controls
 ---
 
 # @radix-ui/react-slot
@@ -17,4 +17,4 @@ tags:
 - [[button.tsx]] - `imports_from` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Runtime_Package_Dependencies
+#graphify/concept #graphify/EXTRACTED #community/Interactive_Mapbox_Canvas__Controls

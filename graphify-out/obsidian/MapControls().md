@@ -1,12 +1,12 @@
 ---
 source_file: "components/map/map-controls.tsx"
 type: "code"
-community: "Interactive Impact Map & Services"
+community: "Interactive Mapbox Canvas & Controls"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Impact_Map__Services
+  - community/Interactive_Mapbox_Canvas__Controls
 ---
 
 # MapControls()
@@ -18,4 +18,4 @@ tags:
 - [[map-controls.tsx]] - `contains` [EXTRACTED]
 - [[useMap()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services
+#graphify/code #graphify/EXTRACTED #community/Interactive_Mapbox_Canvas__Controls

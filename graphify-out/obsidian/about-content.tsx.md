@@ -1,12 +1,12 @@
 ---
 source_file: "components/about-content.tsx"
 type: "code"
-community: "About & Services Bento Grid"
+community: "About Page & Expertise Bento Grid"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About__Services_Bento_Grid
+  - community/About_Page__Expertise_Bento_Grid
 ---
 
 # about-content.tsx
@@ -32,4 +32,4 @@ tags:
 - [[scroll-accordion.tsx]] - `imports_from` [EXTRACTED]
 - [[services-bento-grid.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About__Services_Bento_Grid
+#graphify/code #graphify/EXTRACTED #community/About_Page__Expertise_Bento_Grid

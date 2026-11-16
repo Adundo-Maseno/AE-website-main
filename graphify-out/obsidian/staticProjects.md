@@ -12,6 +12,8 @@ tags:
 # staticProjects
 
 ## Connections
+- [[ESSETA Seed Program Initiative]] - `references` [EXTRACTED]
+- [[Seed Sector Transformation]] - `implements` [EXTRACTED]
 - [[adminpage.tsx]] - `imports` [EXTRACTED]
 - [[projects-service.ts]] - `contains` [EXTRACTED]
 - [[seedroute.ts]] - `imports` [EXTRACTED]

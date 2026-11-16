@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/settings-service.ts"
 type: "code"
-community: "Footer Settings & PDF Preview"
+community: "Root Localized Layout, Fonts & Footer"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Footer_Settings__PDF_Preview
+  - community/Root_Localized_Layout_Fonts__Footer
 ---
 
 # SiteSettingsData
@@ -17,4 +17,4 @@ tags:
 - [[settings-service.ts]] - `contains` [EXTRACTED]
 - [[settingspage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Footer_Settings__PDF_Preview
+#graphify/code #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Footer

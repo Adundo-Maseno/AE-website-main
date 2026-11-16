@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/project-implementation/page.tsx"
 type: "code"
-community: "Our Work Pillar Pages"
+community: "Project Implementation Pillar Page"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Pillar_Pages
+  - community/Project_Implementation_Pillar_Page
 ---
 
 # project-implementation/page.tsx
@@ -22,4 +22,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[revalidate_11]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Pages
+#graphify/code #graphify/EXTRACTED #community/Project_Implementation_Pillar_Page

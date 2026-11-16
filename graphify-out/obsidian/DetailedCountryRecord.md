@@ -1,12 +1,12 @@
 ---
 source_file: "components/map/map-types.ts"
 type: "code"
-community: "Interactive Impact Map & Services"
+community: "Impact Map Country Data & Services"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Impact_Map__Services
+  - community/Impact_Map_Country_Data__Services
 ---
 
 # DetailedCountryRecord
@@ -17,4 +17,4 @@ tags:
 - [[interactive-map.tsx]] - `imports` [EXTRACTED]
 - [[map-types.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services
+#graphify/code #graphify/EXTRACTED #community/Impact_Map_Country_Data__Services

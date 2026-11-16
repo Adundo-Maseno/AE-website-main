@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/resources/page.tsx"
 type: "code"
-community: "Resources Library & Metadata Layouts"
+community: "Resource Library & PDF Preview"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resources_Library__Metadata_Layouts
+  - community/Resource_Library__PDF_Preview
 ---
 
 # [locale]/resources/page.tsx
@@ -20,4 +20,4 @@ tags:
 - [[resources-service.ts]] - `imports_from` [EXTRACTED]
 - [[revalidate_15]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resources_Library__Metadata_Layouts
+#graphify/code #graphify/EXTRACTED #community/Resource_Library__PDF_Preview

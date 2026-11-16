@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Team & Page Sections API"
+community: "Site Settings, SEO & Terms Routes"
 location: "L39"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Team__Page_Sections_API
+  - community/Site_Settings_SEO__Terms_Routes
 ---
 
 # next
@@ -107,4 +107,4 @@ tags:
 - [[why-agriidroute.ts]] - `imports_from` [EXTRACTED]
 - [[why-agriroute.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Team__Page_Sections_API
+#graphify/concept #graphify/EXTRACTED #community/Site_Settings_SEO__Terms_Routes

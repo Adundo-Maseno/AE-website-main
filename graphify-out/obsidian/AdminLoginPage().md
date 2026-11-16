@@ -1,12 +1,12 @@
 ---
 source_file: "app/admin/login/page.tsx"
 type: "code"
-community: "Interactive Impact Map & Services"
+community: "Admin Philosophy, Insights & Form Modals"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Impact_Map__Services
+  - community/Admin_Philosophy_Insights__Form_Modals
 ---
 
 # AdminLoginPage()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[loginpage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services
+#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals

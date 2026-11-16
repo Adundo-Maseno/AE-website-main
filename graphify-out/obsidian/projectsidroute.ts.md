@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/projects/[id]/route.ts"
 type: "code"
-community: "Protected Admin CRUD Routes"
+community: "Projects Service & ID Resolution"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Protected_Admin_CRUD_Routes
+  - community/Projects_Service__ID_Resolution
 ---
 
 # projects/[id]/route.ts
@@ -21,4 +21,4 @@ tags:
 - [[projects-service.ts]] - `imports_from` [EXTRACTED]
 - [[updateProject()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Protected_Admin_CRUD_Routes
+#graphify/code #graphify/EXTRACTED #community/Projects_Service__ID_Resolution

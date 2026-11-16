@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/technical-studies/technical-studies-client.tsx"
 type: "code"
-community: "Our Work Client Views"
+community: "Technical Studies & Scroll Accordion"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Client_Views
+  - community/Technical_Studies__Scroll_Accordion
 ---
 
 # technical-studies-client.tsx
@@ -26,4 +26,4 @@ tags:
 - [[routing.ts]] - `imports_from` [EXTRACTED]
 - [[technical-studiespage.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Client_Views
+#graphify/code #graphify/EXTRACTED #community/Technical_Studies__Scroll_Accordion

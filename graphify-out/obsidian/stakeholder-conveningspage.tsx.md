@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/stakeholder-convenings/page.tsx"
 type: "code"
-community: "Our Work Pillar Pages"
+community: "Stakeholder Convenings Pillar Page"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Pillar_Pages
+  - community/Stakeholder_Convenings_Pillar_Page
 ---
 
 # stakeholder-convenings/page.tsx
@@ -22,4 +22,4 @@ tags:
 - [[revalidate_12]] - `contains` [EXTRACTED]
 - [[stakeholder-convenings-client.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Pages
+#graphify/code #graphify/EXTRACTED #community/Stakeholder_Convenings_Pillar_Page

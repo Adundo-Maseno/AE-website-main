@@ -1,12 +1,12 @@
 ---
 source_file: "components/motion/office-plants-gallery.tsx"
 type: "code"
-community: "Field Gallery CMS & Showcase"
+community: "Field Gallery Service & Showcase"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Field_Gallery_CMS__Showcase
+  - community/Field_Gallery_Service__Showcase
 ---
 
 # office-plants-gallery.tsx
@@ -26,4 +26,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[three]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Field_Gallery_CMS__Showcase
+#graphify/code #graphify/EXTRACTED #community/Field_Gallery_Service__Showcase

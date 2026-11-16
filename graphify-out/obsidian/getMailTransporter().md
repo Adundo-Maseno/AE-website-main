@@ -1,12 +1,12 @@
 ---
 source_file: "lib/email.ts"
 type: "code"
-community: "Contact & Email Templates"
+community: "Media Upload, Contact & Email Pipeline"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Contact__Email_Templates
+  - community/Media_Upload_Contact__Email_Pipeline
 ---
 
 # getMailTransporter()
@@ -15,4 +15,4 @@ tags:
 - [[email.ts]] - `contains` [EXTRACTED]
 - [[sendContactEmails()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Contact__Email_Templates
+#graphify/code #graphify/EXTRACTED #community/Media_Upload_Contact__Email_Pipeline

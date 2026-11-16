@@ -27,6 +27,8 @@ tags:
 - [[@typesreact]] - `imports` [EXTRACTED]
 - [[@typesreact-dom]] - `imports` [EXTRACTED]
 - [[@typesthree]] - `imports` [EXTRACTED]
+- [[Hostinger Production Deployment]] - `references` [EXTRACTED]
+- [[Next.js 16 Web Application Stack]] - `references` [EXTRACTED]
 - [[bcryptjs]] - `imports` [EXTRACTED]
 - [[class-variance-authority]] - `imports` [EXTRACTED]
 - [[clsx]] - `imports` [EXTRACTED]

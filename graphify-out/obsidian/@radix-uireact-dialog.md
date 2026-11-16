@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Radix Dialog Package Dependency"
+community: "Runtime Package Dependencies"
 location: "L25"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Radix_Dialog_Package_Dependency
+  - community/Runtime_Package_Dependencies
 ---
 
 # @radix-ui/react-dialog
@@ -16,4 +16,4 @@ tags:
 - [[dialog.tsx]] - `imports_from` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Radix_Dialog_Package_Dependency
+#graphify/concept #graphify/EXTRACTED #community/Runtime_Package_Dependencies

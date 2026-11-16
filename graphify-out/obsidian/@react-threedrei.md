@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Runtime Package Dependencies"
+community: "Field Gallery Service & Showcase"
 location: "L28"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Runtime_Package_Dependencies
+  - community/Field_Gallery_Service__Showcase
 ---
 
 # @react-three/drei
@@ -16,4 +16,4 @@ tags:
 - [[office-plants-gallery.tsx]] - `imports_from` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Runtime_Package_Dependencies
+#graphify/concept #graphify/EXTRACTED #community/Field_Gallery_Service__Showcase

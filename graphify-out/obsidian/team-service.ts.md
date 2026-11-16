@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/team-service.ts"
 type: "code"
-community: "Team & Page Sections API"
+community: "Admin Dashboard & DB Seeding"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Team__Page_Sections_API
+  - community/Admin_Dashboard__DB_Seeding
 ---
 
 # team-service.ts
@@ -37,4 +37,4 @@ tags:
 - [[teamroute.ts]] - `imports_from` [EXTRACTED]
 - [[updateTeamMember()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Team__Page_Sections_API
+#graphify/code #graphify/EXTRACTED #community/Admin_Dashboard__DB_Seeding

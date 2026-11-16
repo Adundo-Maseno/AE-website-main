@@ -55,23 +55,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Runtime Package Dependencies]]
-- 3 edges to [[_COMMUNITY_Core UI & 3D Libraries]]
+- 10 edges to [[_COMMUNITY_Runtime Package Dependencies]]
+- 4 edges to [[_COMMUNITY_Interactive Mapbox Canvas & Controls]]
+- 3 edges to [[_COMMUNITY_Home Page Data Hydration]]
+- 3 edges to [[_COMMUNITY_Field Gallery Service & Showcase]]
 - 2 edges to [[_COMMUNITY_ESLint Next.js Configuration]]
-- 2 edges to [[_COMMUNITY_GSAP Scroll Accordion Motion]]
-- 2 edges to [[_COMMUNITY_Interactive Impact Map & Services]]
+- 2 edges to [[_COMMUNITY_Next.js Config & Deployment Docs]]
 - 1 edge to [[_COMMUNITY_Package Manager Engine Spec]]
 - 1 edge to [[_COMMUNITY_Package Version Overrides]]
 - 1 edge to [[_COMMUNITY_Package Dependency Resolutions]]
 - 1 edge to [[_COMMUNITY_Package Build & Dev Scripts]]
 - 1 edge to [[_COMMUNITY_Admin Session & JWT Auth]]
-- 1 edge to [[_COMMUNITY_Our Work Client Views]]
-- 1 edge to [[_COMMUNITY_Footer Settings & PDF Preview]]
-- 1 edge to [[_COMMUNITY_Team & Page Sections API]]
-- 1 edge to [[_COMMUNITY_Localized Metadata & Home Sections]]
-- 1 edge to [[_COMMUNITY_Radix Dialog Package Dependency]]
-- 1 edge to [[_COMMUNITY_React Three Fiber Dependency]]
+- 1 edge to [[_COMMUNITY_Admin Philosophy, Insights & Form Modals]]
+- 1 edge to [[_COMMUNITY_Site Settings, SEO & Terms Routes]]
+- 1 edge to [[_COMMUNITY_Localized Metadata & Privacy Pages]]
+- 1 edge to [[_COMMUNITY_Media Upload, Contact & Email Pipeline]]
+- 1 edge to [[_COMMUNITY_Resource Library & PDF Preview]]
 
 ## Top bridge nodes
-- [[package.json]] - degree 51, connects to 16 communities
+- [[package.json]] - degree 53, connects to 16 communities
 - [[devDependencies]] - degree 17, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "components/our-team-content.tsx"
 type: "code"
-community: "Admin Media & Content Modals"
+community: "Public Team Showcase & Bio Cards"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Media__Content_Modals
+  - community/Public_Team_Showcase__Bio_Cards
 ---
 
 # OurTeamContent()
@@ -16,4 +16,4 @@ tags:
 - [[our-team-content.tsx]] - `contains` [EXTRACTED]
 - [[our-teampage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Media__Content_Modals
+#graphify/code #graphify/EXTRACTED #community/Public_Team_Showcase__Bio_Cards

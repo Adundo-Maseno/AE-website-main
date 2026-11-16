@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/team/route.ts"
 type: "code"
-community: "Team & Page Sections API"
+community: "Protected Admin CRUD API Routes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Team__Page_Sections_API
+  - community/Protected_Admin_CRUD_API_Routes
 ---
 
 # team/route.ts
@@ -21,4 +21,4 @@ tags:
 - [[next_1]] - `imports_from` [EXTRACTED]
 - [[team-service.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Team__Page_Sections_API
+#graphify/code #graphify/EXTRACTED #community/Protected_Admin_CRUD_API_Routes

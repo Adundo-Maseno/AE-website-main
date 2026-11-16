@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/expertise-form-modal.tsx"
 type: "code"
-community: "Admin Expertise Management UI"
+community: "Admin Philosophy, Insights & Form Modals"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Expertise_Management_UI
+  - community/Admin_Philosophy_Insights__Form_Modals
 ---
 
 # ROUTE_OPTIONS
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[expertise-form-modal.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Expertise_Management_UI
+#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals

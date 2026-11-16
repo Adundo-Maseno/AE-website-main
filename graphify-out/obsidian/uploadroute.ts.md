@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/upload/route.ts"
 type: "code"
-community: "Media Upload & Gallery Scanning"
+community: "Media Upload, Contact & Email Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Media_Upload__Gallery_Scanning
+  - community/Media_Upload_Contact__Email_Pipeline
 ---
 
 # upload/route.ts
@@ -20,4 +20,4 @@ tags:
 - [[ref_fs]] - `imports_from` [EXTRACTED]
 - [[ref_path]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Media_Upload__Gallery_Scanning
+#graphify/code #graphify/EXTRACTED #community/Media_Upload_Contact__Email_Pipeline

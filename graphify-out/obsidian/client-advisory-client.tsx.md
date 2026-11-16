@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/client-advisory/client-advisory-client.tsx"
 type: "code"
-community: "Our Work Client Views"
+community: "Client Advisory & Projects API"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Client_Views
+  - community/Client_Advisory__Projects_API
 ---
 
 # client-advisory-client.tsx
@@ -26,4 +26,4 @@ tags:
 - [[rolling-text.tsx]] - `imports_from` [EXTRACTED]
 - [[routing.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Client_Views
+#graphify/code #graphify/EXTRACTED #community/Client_Advisory__Projects_API

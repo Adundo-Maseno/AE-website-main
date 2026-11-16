@@ -22,8 +22,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Team & Page Sections API]]
-- 1 edge to [[_COMMUNITY_Localized Metadata & Home Sections]]
+- 1 edge to [[_COMMUNITY_Site Settings, SEO & Terms Routes]]
+- 1 edge to [[_COMMUNITY_Localized Metadata & Privacy Pages]]
 
 ## Top bridge nodes
 - [[digital-platformslayout.tsx]] - degree 4, connects to 2 communities

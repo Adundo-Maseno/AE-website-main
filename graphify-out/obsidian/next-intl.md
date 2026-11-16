@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Localized Metadata & Home Sections"
+community: "Localized Metadata & Privacy Pages"
 location: "L40"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Localized_Metadata__Home_Sections
+  - community/Localized_Metadata__Privacy_Pages
 ---
 
 # next-intl
@@ -60,4 +60,4 @@ tags:
 - [[technical-studieslayout.tsx]] - `imports_from` [EXTRACTED]
 - [[why-agri-experience.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Localized_Metadata__Home_Sections
+#graphify/concept #graphify/EXTRACTED #community/Localized_Metadata__Privacy_Pages

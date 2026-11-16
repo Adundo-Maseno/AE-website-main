@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/team/route.ts"
 type: "code"
-community: "Team & Page Sections API"
+community: "Protected Admin CRUD API Routes"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Team__Page_Sections_API
+  - community/Protected_Admin_CRUD_API_Routes
 ---
 
 # POST()
@@ -16,4 +16,4 @@ tags:
 - [[getSession()]] - `calls` [EXTRACTED]
 - [[teamroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Team__Page_Sections_API
+#graphify/code #graphify/EXTRACTED #community/Protected_Admin_CRUD_API_Routes

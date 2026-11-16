@@ -1,12 +1,12 @@
 ---
 source_file: "i18n/routing.ts"
 type: "code"
-community: "About & Services Bento Grid"
+community: "About Page & Expertise Bento Grid"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About__Services_Bento_Grid
+  - community/About_Page__Expertise_Bento_Grid
 ---
 
 # Link
@@ -40,7 +40,6 @@ tags:
 - [[home-content.tsx]] - `imports` [EXTRACTED]
 - [[impact-page-content.tsx]] - `imports` [EXTRACTED]
 - [[insights-content.tsx]] - `imports` [EXTRACTED]
-- [[interactive-map.tsx]] - `imports` [EXTRACTED]
 - [[our-workpage.tsx]] - `imports` [EXTRACTED]
 - [[privacypage.tsx]] - `imports` [EXTRACTED]
 - [[project-implementation-client.tsx]] - `imports` [EXTRACTED]
@@ -50,4 +49,4 @@ tags:
 - [[stakeholder-convenings-client.tsx]] - `imports` [EXTRACTED]
 - [[technical-studies-client.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About__Services_Bento_Grid
+#graphify/code #graphify/EXTRACTED #community/About_Page__Expertise_Bento_Grid

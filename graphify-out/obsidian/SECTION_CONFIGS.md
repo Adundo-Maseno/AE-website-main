@@ -1,17 +1,19 @@
 ---
-source_file: "app/admin/sections/page.tsx"
+source_file: "lib/cms-sections-config.ts"
 type: "code"
-community: "Admin Media & Content Modals"
-location: "L45"
+community: "Admin Content Pages & Sections Config"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Media__Content_Modals
+  - community/Admin_Content_Pages__Sections_Config
 ---
 
 # SECTION_CONFIGS
 
 ## Connections
-- [[sectionspage.tsx]] - `contains` [EXTRACTED]
+- [[adminpage.tsx]] - `imports` [EXTRACTED]
+- [[cms-sections-config.ts]] - `contains` [EXTRACTED]
+- [[sectionspage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Media__Content_Modals
+#graphify/code #graphify/EXTRACTED #community/Admin_Content_Pages__Sections_Config

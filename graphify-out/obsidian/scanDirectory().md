@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/gallery/route.ts"
 type: "code"
-community: "Media Upload & Gallery Scanning"
+community: "Media Upload, Contact & Email Pipeline"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Media_Upload__Gallery_Scanning
+  - community/Media_Upload_Contact__Email_Pipeline
 ---
 
 # scanDirectory()
@@ -16,4 +16,4 @@ tags:
 - [[galleryroute.ts]] - `contains` [EXTRACTED]
 - [[scanAllUploads()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Media_Upload__Gallery_Scanning
+#graphify/code #graphify/EXTRACTED #community/Media_Upload_Contact__Email_Pipeline

@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/sections/route.ts"
 type: "code"
-community: "Team & Page Sections API"
+community: "Page Sections API & Work Overview"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Team__Page_Sections_API
+  - community/Page_Sections_API__Work_Overview
 ---
 
 # POST()
@@ -16,4 +16,4 @@ tags:
 - [[sectionsroute.ts]] - `contains` [EXTRACTED]
 - [[upsertPageSection()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Team__Page_Sections_API
+#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Work_Overview

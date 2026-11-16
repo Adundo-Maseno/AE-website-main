@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Runtime Package Dependencies"
+community: "Resource Library & PDF Preview"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Runtime_Package_Dependencies
+  - community/Resource_Library__PDF_Preview
 ---
 
 # react-pdf@^10.4.1
@@ -15,4 +15,4 @@ tags:
 - [[dependencies]] - `contains` [EXTRACTED]
 - [[react-pdf]] - `declares` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Runtime_Package_Dependencies
+#graphify/code #graphify/EXTRACTED #community/Resource_Library__PDF_Preview

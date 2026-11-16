@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/terms/page.tsx"
 type: "code"
-community: "Team & Page Sections API"
+community: "Site Settings, SEO & Terms Routes"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Team__Page_Sections_API
+  - community/Site_Settings_SEO__Terms_Routes
 ---
 
 # TermsPage()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[termspage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Team__Page_Sections_API
+#graphify/code #graphify/EXTRACTED #community/Site_Settings_SEO__Terms_Routes

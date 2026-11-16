@@ -1,12 +1,12 @@
 ---
 source_file: "proxy.ts"
 type: "code"
-community: "Header Navigation & i18n Routing"
+community: "Localized Metadata & Privacy Pages"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Header_Navigation__i18n_Routing
+  - community/Localized_Metadata__Privacy_Pages
 ---
 
 # config
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[proxy.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Header_Navigation__i18n_Routing
+#graphify/code #graphify/EXTRACTED #community/Localized_Metadata__Privacy_Pages

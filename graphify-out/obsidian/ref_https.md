@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "i18n Auto-Translation Script"
+community: "Media Upload, Contact & Email Pipeline"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/i18n_Auto-Translation_Script
+  - community/Media_Upload_Contact__Email_Pipeline
 ---
 
 # ref_https
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[auto-translate.js]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/i18n_Auto-Translation_Script
+#graphify/concept #graphify/EXTRACTED #community/Media_Upload_Contact__Email_Pipeline

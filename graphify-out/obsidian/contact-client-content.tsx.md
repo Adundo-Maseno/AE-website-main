@@ -1,12 +1,12 @@
 ---
 source_file: "components/contact/contact-client-content.tsx"
 type: "code"
-community: "Our Work Client Views"
+community: "Page Sections API & Work Overview"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Client_Views
+  - community/Page_Sections_API__Work_Overview
 ---
 
 # contact-client-content.tsx
@@ -22,4 +22,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[rolling-text.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Client_Views
+#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Work_Overview

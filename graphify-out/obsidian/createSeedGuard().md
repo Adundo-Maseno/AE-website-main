@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/service-utils.ts"
 type: "code"
-community: "Partners Service & API Routes"
+community: "Admin Dashboard & DB Seeding"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Partners_Service__API_Routes
+  - community/Admin_Dashboard__DB_Seeding
 ---
 
 # createSeedGuard()
@@ -25,4 +25,4 @@ tags:
 - [[team-service.ts]] - `imports` [EXTRACTED]
 - [[why-agri-service.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Partners_Service__API_Routes
+#graphify/code #graphify/EXTRACTED #community/Admin_Dashboard__DB_Seeding

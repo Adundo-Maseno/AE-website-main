@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/digital-platforms/digital-platforms-client.tsx"
 type: "code"
-community: "Our Work Client Views"
+community: "Digital Platforms Pillar Page"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Client_Views
+  - community/Digital_Platforms_Pillar_Page
 ---
 
 # DigitalPlatformsClient()
@@ -18,4 +18,4 @@ tags:
 - [[digital-platforms-client.tsx]] - `contains` [EXTRACTED]
 - [[digital-platformspage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Client_Views
+#graphify/code #graphify/EXTRACTED #community/Digital_Platforms_Pillar_Page

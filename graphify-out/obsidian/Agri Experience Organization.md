@@ -1,11 +1,11 @@
 ---
-source_file: "README.md"
+source_file: "D:/AE-website-main/README.md"
 type: "document"
-community: "Agri Experience Architecture Docs"
+community: "Impact Map Country Data & Services"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agri_Experience_Architecture_Docs
+  - community/Impact_Map_Country_Data__Services
 ---
 
 # Agri Experience Organization
@@ -14,8 +14,10 @@ tags:
 - [[Contact & Receipt Email Pipeline]] - `references` [EXTRACTED]
 - [[ESSETA Seed Program Initiative]] - `conceptually_related_to` [EXTRACTED]
 - [[Editorial Design System]] - `conceptually_related_to` [EXTRACTED]
+- [[Footer()]] - `references` [EXTRACTED]
 - [[Interactive Mapbox Map]] - `references` [EXTRACTED]
+- [[InteractiveMap()]] - `references` [EXTRACTED]
 - [[Resource Library & PDF Preview]] - `references` [EXTRACTED]
 - [[Seed Sector Transformation]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agri_Experience_Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Impact_Map_Country_Data__Services

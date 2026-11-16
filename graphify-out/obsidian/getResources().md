@@ -1,18 +1,19 @@
 ---
 source_file: "lib/services/resources-service.ts"
 type: "code"
-community: "Resources Library & Metadata Layouts"
+community: "Resource Library & PDF Preview"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resources_Library__Metadata_Layouts
+  - community/Resource_Library__PDF_Preview
 ---
 
 # getResources()
 
 ## Connections
 - [[GET()_10]] - `calls` [EXTRACTED]
+- [[Resource Library & PDF Preview]] - `references` [EXTRACTED]
 - [[ResourcesLayout()]] - `calls` [EXTRACTED]
 - [[ResourcesPage()]] - `calls` [EXTRACTED]
 - [[localeresourcespage.tsx]] - `imports` [EXTRACTED]
@@ -21,4 +22,4 @@ tags:
 - [[resourceslayout.tsx]] - `imports` [EXTRACTED]
 - [[resourcesroute.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resources_Library__Metadata_Layouts
+#graphify/code #graphify/EXTRACTED #community/Resource_Library__PDF_Preview

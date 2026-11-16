@@ -24,7 +24,6 @@ tags:
 - [[PopoverTrigger()]] - `imports` [EXTRACTED]
 - [[PremiumSearchProps]] - `contains` [EXTRACTED]
 - [[command.tsx]] - `imports_from` [EXTRACTED]
-- [[interactive-map.tsx]] - `imports_from` [EXTRACTED]
 - [[lucide-react]] - `imports_from` [EXTRACTED]
 - [[popover.tsx]] - `imports_from` [EXTRACTED]
 - [[react]] - `imports_from` [EXTRACTED]

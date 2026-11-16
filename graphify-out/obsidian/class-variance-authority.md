@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Core UI & 3D Libraries"
+community: "Interactive Mapbox Canvas & Controls"
 location: "L31"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Core_UI__3D_Libraries
+  - community/Interactive_Mapbox_Canvas__Controls
 ---
 
 # class-variance-authority
@@ -17,4 +17,4 @@ tags:
 - [[class-variance-authority@0.7.1]] - `declares` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Core_UI__3D_Libraries
+#graphify/concept #graphify/EXTRACTED #community/Interactive_Mapbox_Canvas__Controls

@@ -1,12 +1,12 @@
 ---
 source_file: "components/motion/why-agri-experience.tsx"
 type: "code"
-community: "Beliefs & Why-Agri Admin UI"
+community: "About Page & Expertise Bento Grid"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Beliefs__Why-Agri_Admin_UI
+  - community/About_Page__Expertise_Bento_Grid
 ---
 
 # WhyAgriExperienceProps
@@ -16,4 +16,4 @@ tags:
 - [[WhyAgriCardData]] - `references` [EXTRACTED]
 - [[why-agri-experience.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Beliefs__Why-Agri_Admin_UI
+#graphify/code #graphify/EXTRACTED #community/About_Page__Expertise_Bento_Grid

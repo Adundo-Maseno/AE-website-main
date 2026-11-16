@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "Media Upload & Gallery Scanning"
+community: "Media Upload, Contact & Email Pipeline"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Media_Upload__Gallery_Scanning
+  - community/Media_Upload_Contact__Email_Pipeline
 ---
 
 # ref_fs
@@ -19,4 +19,4 @@ tags:
 - [[preview-emails.js]] - `imports_from` [EXTRACTED]
 - [[uploadroute.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Media_Upload__Gallery_Scanning
+#graphify/concept #graphify/EXTRACTED #community/Media_Upload_Contact__Email_Pipeline

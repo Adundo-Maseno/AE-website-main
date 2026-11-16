@@ -1,12 +1,12 @@
 ---
 source_file: "app/admin/beliefs/page.tsx"
 type: "code"
-community: "Beliefs & Why-Agri Admin UI"
+community: "Admin Philosophy, Insights & Form Modals"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Beliefs__Why-Agri_Admin_UI
+  - community/Admin_Philosophy_Insights__Form_Modals
 ---
 
 # AdminBeliefsPage()
@@ -15,4 +15,4 @@ tags:
 - [[BeliefFormModal()]] - `calls` [EXTRACTED]
 - [[beliefspage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Beliefs__Why-Agri_Admin_UI
+#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals

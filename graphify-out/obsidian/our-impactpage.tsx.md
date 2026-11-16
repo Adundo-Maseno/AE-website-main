@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-impact/page.tsx"
 type: "code"
-community: "Interactive Impact Map & Services"
+community: "Impact Map Country Data & Services"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Impact_Map__Services
+  - community/Impact_Map_Country_Data__Services
 ---
 
 # our-impact/page.tsx
@@ -22,4 +22,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[revalidate_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services
+#graphify/code #graphify/EXTRACTED #community/Impact_Map_Country_Data__Services

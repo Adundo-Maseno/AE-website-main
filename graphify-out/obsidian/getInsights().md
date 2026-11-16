@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/insights-service.ts"
 type: "code"
-community: "Public Insights Page & Content"
+community: "Insights Service & API Routes"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Public_Insights_Page__Content
+  - community/Insights_Service__API_Routes
 ---
 
 # getInsights()
@@ -19,4 +19,4 @@ tags:
 - [[insightsroute.ts]] - `imports` [EXTRACTED]
 - [[isDatabaseConnected()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Public_Insights_Page__Content
+#graphify/code #graphify/EXTRACTED #community/Insights_Service__API_Routes

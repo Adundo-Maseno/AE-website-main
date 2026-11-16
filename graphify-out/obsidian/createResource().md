@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/resources-service.ts"
 type: "code"
-community: "Resources Library & Metadata Layouts"
+community: "Protected Admin CRUD API Routes"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resources_Library__Metadata_Layouts
+  - community/Protected_Admin_CRUD_API_Routes
 ---
 
 # createResource()
@@ -17,4 +17,4 @@ tags:
 - [[resources-service.ts]] - `contains` [EXTRACTED]
 - [[resourcesroute.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resources_Library__Metadata_Layouts
+#graphify/code #graphify/EXTRACTED #community/Protected_Admin_CRUD_API_Routes

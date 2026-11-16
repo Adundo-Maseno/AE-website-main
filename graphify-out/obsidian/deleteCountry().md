@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/map-service.ts"
 type: "code"
-community: "Interactive Impact Map & Services"
+community: "Map Country Service & ID Resolution"
 location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Impact_Map__Services
+  - community/Map_Country_Service__ID_Resolution
 ---
 
 # deleteCountry()
@@ -18,4 +18,4 @@ tags:
 - [[mapidroute.ts]] - `imports` [EXTRACTED]
 - [[resolveCountryId()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services
+#graphify/code #graphify/EXTRACTED #community/Map_Country_Service__ID_Resolution

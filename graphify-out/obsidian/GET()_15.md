@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/email-preview/route.ts"
 type: "code"
-community: "Contact & Email Templates"
+community: "Media Upload, Contact & Email Pipeline"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Contact__Email_Templates
+  - community/Media_Upload_Contact__Email_Pipeline
 ---
 
 # GET()
@@ -17,4 +17,4 @@ tags:
 - [[generateTeamNotificationEmail()]] - `calls` [EXTRACTED]
 - [[getLogoDataUri()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Contact__Email_Templates
+#graphify/code #graphify/EXTRACTED #community/Media_Upload_Contact__Email_Pipeline

@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "GSAP Scroll Accordion Motion"
+community: "Home Page Data Hydration"
 location: "L35"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/GSAP_Scroll_Accordion_Motion
+  - community/Home_Page_Data_Hydration
 ---
 
 # gsap
@@ -17,4 +17,4 @@ tags:
 - [[package.json]] - `imports` [EXTRACTED]
 - [[scroll-accordion.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/GSAP_Scroll_Accordion_Motion
+#graphify/concept #graphify/EXTRACTED #community/Home_Page_Data_Hydration

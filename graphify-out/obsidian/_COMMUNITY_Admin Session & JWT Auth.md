@@ -35,27 +35,29 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Protected Admin CRUD Routes]]
-- 9 edges to [[_COMMUNITY_Admin Dashboard & DB Seeding]]
-- 7 edges to [[_COMMUNITY_Team & Page Sections API]]
-- 3 edges to [[_COMMUNITY_Media Upload & Gallery Scanning]]
-- 2 edges to [[_COMMUNITY_Home Page Data Hydration]]
+- 11 edges to [[_COMMUNITY_Admin Dashboard & DB Seeding]]
+- 8 edges to [[_COMMUNITY_Protected Admin CRUD API Routes]]
+- 5 edges to [[_COMMUNITY_Site Settings, SEO & Terms Routes]]
+- 3 edges to [[_COMMUNITY_Media Upload, Contact & Email Pipeline]]
 - 2 edges to [[_COMMUNITY_Beliefs Service & API Routes]]
 - 2 edges to [[_COMMUNITY_Expertise Pillars Service & API]]
+- 2 edges to [[_COMMUNITY_Gallery Items Service & API Routes]]
 - 2 edges to [[_COMMUNITY_Insights Service & API Routes]]
-- 2 edges to [[_COMMUNITY_Interactive Impact Map & Services]]
 - 2 edges to [[_COMMUNITY_Partners Service & API Routes]]
 - 2 edges to [[_COMMUNITY_Why-Agri Service & API Routes]]
-- 1 edge to [[_COMMUNITY_App Layouts & Global Shell]]
-- 1 edge to [[_COMMUNITY_Field Gallery CMS & Showcase]]
-- 1 edge to [[_COMMUNITY_Our Work Pillar Pages]]
-- 1 edge to [[_COMMUNITY_Core UI & 3D Libraries]]
+- 2 edges to [[_COMMUNITY_Runtime Package Dependencies]]
+- 1 edge to [[_COMMUNITY_Admin Philosophy, Insights & Form Modals]]
+- 1 edge to [[_COMMUNITY_Map Country Service & ID Resolution]]
+- 1 edge to [[_COMMUNITY_Impact Map Country Data & Services]]
+- 1 edge to [[_COMMUNITY_Projects Service & ID Resolution]]
+- 1 edge to [[_COMMUNITY_Client Advisory & Projects API]]
+- 1 edge to [[_COMMUNITY_Page Sections API & Work Overview]]
+- 1 edge to [[_COMMUNITY_Team Service & ID Resolution]]
 - 1 edge to [[_COMMUNITY_Dev Dependencies & Tooling]]
-- 1 edge to [[_COMMUNITY_Runtime Package Dependencies]]
 
 ## Top bridge nodes
-- [[auth.ts]] - degree 46, connects to 14 communities
-- [[change-passwordroute.ts]] - degree 12, connects to 4 communities
+- [[auth.ts]] - degree 46, connects to 18 communities
+- [[change-passwordroute.ts]] - degree 12, connects to 3 communities
 - [[bcryptjs]] - degree 5, connects to 3 communities
 - [[POST()]] - degree 4, connects to 2 communities
 - [[loginroute.ts]] - degree 6, connects to 1 community

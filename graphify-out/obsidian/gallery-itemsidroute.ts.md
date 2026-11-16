@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/gallery-items/[id]/route.ts"
 type: "code"
-community: "Field Gallery CMS & Showcase"
+community: "Gallery Items Service & API Routes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Field_Gallery_CMS__Showcase
+  - community/Gallery_Items_Service__API_Routes
 ---
 
 # gallery-items/[id]/route.ts
@@ -21,4 +21,4 @@ tags:
 - [[next_1]] - `imports_from` [EXTRACTED]
 - [[updateGalleryItem()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Field_Gallery_CMS__Showcase
+#graphify/code #graphify/EXTRACTED #community/Gallery_Items_Service__API_Routes

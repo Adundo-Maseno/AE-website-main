@@ -1,11 +1,11 @@
 ---
-source_file: "README.md"
+source_file: "D:/AE-website-main/README.md"
 type: "document"
-community: "Agri Experience Architecture Docs"
+community: "Media Upload, Contact & Email Pipeline"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agri_Experience_Architecture_Docs
+  - community/Media_Upload_Contact__Email_Pipeline
 ---
 
 # Contact & Receipt Email Pipeline
@@ -13,5 +13,8 @@ tags:
 ## Connections
 - [[Agri Experience Organization]] - `references` [EXTRACTED]
 - [[Bilingual i18n & Auto-Translate Pipeline]] - `shares_data_with` [INFERRED]
+- [[POST()_16]] - `implements` [EXTRACTED]
+- [[generateRespondentAcknowledgmentEmail()]] - `references` [EXTRACTED]
+- [[sendContactEmails()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agri_Experience_Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Media_Upload_Contact__Email_Pipeline

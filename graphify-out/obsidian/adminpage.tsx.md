@@ -13,9 +13,11 @@ tags:
 
 ## Connections
 - [[AdminDashboardPage()]] - `contains` [EXTRACTED]
+- [[SECTION_CONFIGS]] - `imports` [EXTRACTED]
 - [[SeedButton()]] - `imports` [EXTRACTED]
 - [[auth.ts]] - `imports_from` [EXTRACTED]
 - [[beliefs-service.ts]] - `imports_from` [EXTRACTED]
+- [[cms-sections-config.ts]] - `imports_from` [EXTRACTED]
 - [[db.ts]] - `imports_from` [EXTRACTED]
 - [[expertise-service.ts]] - `imports_from` [EXTRACTED]
 - [[gallery-service.ts]] - `imports_from` [EXTRACTED]

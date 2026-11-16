@@ -1,12 +1,12 @@
 ---
 source_file: "app/admin/resources/page.tsx"
 type: "code"
-community: "Resources Library & Metadata Layouts"
+community: "Admin Philosophy, Insights & Form Modals"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resources_Library__Metadata_Layouts
+  - community/Admin_Philosophy_Insights__Form_Modals
 ---
 
 # CATEGORIES
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[adminresourcespage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resources_Library__Metadata_Layouts
+#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals

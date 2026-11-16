@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/team-service.ts"
 type: "code"
-community: "Team & Page Sections API"
+community: "Team Service & ID Resolution"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Team__Page_Sections_API
+  - community/Team_Service__ID_Resolution
 ---
 
 # seedGuard
@@ -15,4 +15,4 @@ tags:
 - [[ensureSeeded()_8]] - `calls` [EXTRACTED]
 - [[team-service.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Team__Page_Sections_API
+#graphify/code #graphify/EXTRACTED #community/Team_Service__ID_Resolution

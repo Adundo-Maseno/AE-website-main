@@ -1,13 +1,13 @@
 ---
 type: community
 cohesion: 0.27
-members: 14
+members: 15
 ---
 
 # Insights Service & API Routes
 
 **Cohesion:** 0.27 - loosely connected
-**Members:** 14 nodes
+**Members:** 15 nodes
 
 ## Members
 - [[DELETE()_3]] - code - app/api/admin/insights/[id]/route.ts
@@ -17,6 +17,7 @@ members: 14
 - [[createInsight()]] - code - lib/services/insights-service.ts
 - [[deleteInsight()]] - code - lib/services/insights-service.ts
 - [[ensureSeeded()_3]] - code - lib/services/insights-service.ts
+- [[getInsights()]] - code - lib/services/insights-service.ts
 - [[insights-service.ts]] - code - lib/services/insights-service.ts
 - [[insightsidroute.ts]] - code - app/api/admin/insights/[id]/route.ts
 - [[insightsroute.ts]] - code - app/api/admin/insights/route.ts
@@ -33,19 +34,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Protected Admin CRUD Routes]]
-- 4 edges to [[_COMMUNITY_Public Insights Page & Content]]
-- 4 edges to [[_COMMUNITY_Admin Dashboard & DB Seeding]]
-- 4 edges to [[_COMMUNITY_Partners Service & API Routes]]
-- 3 edges to [[_COMMUNITY_Admin Insights Management UI]]
-- 3 edges to [[_COMMUNITY_Team & Page Sections API]]
+- 8 edges to [[_COMMUNITY_Admin Dashboard & DB Seeding]]
+- 7 edges to [[_COMMUNITY_Admin Philosophy, Insights & Form Modals]]
+- 6 edges to [[_COMMUNITY_Protected Admin CRUD API Routes]]
+- 3 edges to [[_COMMUNITY_Site Settings, SEO & Terms Routes]]
 - 2 edges to [[_COMMUNITY_Admin Session & JWT Auth]]
-- 1 edge to [[_COMMUNITY_Our Work Client Views]]
-- 1 edge to [[_COMMUNITY_Home Page Data Hydration]]
+- 2 edges to [[_COMMUNITY_Beliefs Service & API Routes]]
 
 ## Top bridge nodes
-- [[insights-service.ts]] - degree 23, connects to 7 communities
-- [[insightsroute.ts]] - degree 8, connects to 4 communities
+- [[insights-service.ts]] - degree 23, connects to 4 communities
 - [[insightsidroute.ts]] - degree 8, connects to 3 communities
-- [[GET()_5]] - degree 3, connects to 2 communities
+- [[insightsroute.ts]] - degree 8, connects to 3 communities
+- [[getInsights()]] - degree 6, connects to 2 communities
 - [[updateInsight()]] - degree 6, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/resource-form-modal.tsx"
 type: "code"
-community: "Resources Library & Metadata Layouts"
+community: "Admin Philosophy, Insights & Form Modals"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resources_Library__Metadata_Layouts
+  - community/Admin_Philosophy_Insights__Form_Modals
 ---
 
 # ResourceFormModal()
@@ -17,4 +17,4 @@ tags:
 - [[adminresourcespage.tsx]] - `imports` [EXTRACTED]
 - [[resource-form-modal.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resources_Library__Metadata_Layouts
+#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals

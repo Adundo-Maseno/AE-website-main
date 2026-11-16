@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/settings-service.ts"
 type: "code"
-community: "App Layouts & Global Shell"
+community: "Site Settings, SEO & Terms Routes"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/App_Layouts__Global_Shell
+  - community/Site_Settings_SEO__Terms_Routes
 ---
 
 # getSiteSettings()
@@ -21,4 +21,4 @@ tags:
 - [[settings-service.ts]] - `contains` [EXTRACTED]
 - [[settingsroute.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/App_Layouts__Global_Shell
+#graphify/code #graphify/EXTRACTED #community/Site_Settings_SEO__Terms_Routes

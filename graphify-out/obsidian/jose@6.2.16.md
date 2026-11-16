@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Core UI & 3D Libraries"
+community: "Runtime Package Dependencies"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Core_UI__3D_Libraries
+  - community/Runtime_Package_Dependencies
 ---
 
 # jose@^6.2.16
@@ -15,4 +15,4 @@ tags:
 - [[dependencies]] - `contains` [EXTRACTED]
 - [[jose]] - `declares` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Core_UI__3D_Libraries
+#graphify/code #graphify/EXTRACTED #community/Runtime_Package_Dependencies

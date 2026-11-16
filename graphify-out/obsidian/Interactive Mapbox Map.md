@@ -1,17 +1,19 @@
 ---
-source_file: "README.md"
+source_file: "D:/AE-website-main/README.md"
 type: "document"
-community: "Agri Experience Architecture Docs"
+community: "Impact Map Country Data & Services"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Agri_Experience_Architecture_Docs
+  - community/Impact_Map_Country_Data__Services
 ---
 
 # Interactive Mapbox Map
 
 ## Connections
 - [[Agri Experience Organization]] - `references` [EXTRACTED]
+- [[InteractiveMap()]] - `implements` [EXTRACTED]
 - [[Next.js 16 Web Application Stack]] - `references` [EXTRACTED]
+- [[mergeCountriesWithCms()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Agri_Experience_Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Impact_Map_Country_Data__Services

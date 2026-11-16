@@ -1,12 +1,12 @@
 ---
 source_file: "components/motion/scroll-accordion.tsx"
 type: "code"
-community: "GSAP Scroll Accordion Motion"
+community: "Technical Studies & Scroll Accordion"
 location: "L301"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GSAP_Scroll_Accordion_Motion
+  - community/Technical_Studies__Scroll_Accordion
 ---
 
 # MobileFallbackAccordion()
@@ -17,4 +17,4 @@ tags:
 - [[cn()]] - `calls` [EXTRACTED]
 - [[scroll-accordion.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GSAP_Scroll_Accordion_Motion
+#graphify/code #graphify/EXTRACTED #community/Technical_Studies__Scroll_Accordion

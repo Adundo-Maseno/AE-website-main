@@ -1,12 +1,12 @@
 ---
 source_file: "components/map/map-popup.tsx"
 type: "code"
-community: "Interactive Impact Map & Services"
+community: "Interactive Mapbox Canvas & Controls"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Impact_Map__Services
+  - community/Interactive_Mapbox_Canvas__Controls
 ---
 
 # MapPopup()
@@ -17,4 +17,4 @@ tags:
 - [[map-popup.tsx]] - `contains` [EXTRACTED]
 - [[useMap()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services
+#graphify/code #graphify/EXTRACTED #community/Interactive_Mapbox_Canvas__Controls

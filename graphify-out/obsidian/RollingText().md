@@ -1,12 +1,12 @@
 ---
 source_file: "components/ui/rolling-text.tsx"
 type: "code"
-community: "Our Work Client Views"
+community: "Technical Studies & Scroll Accordion"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Client_Views
+  - community/Technical_Studies__Scroll_Accordion
 ---
 
 # RollingText()
@@ -19,7 +19,9 @@ tags:
 - [[ContactClientContent()]] - `calls` [EXTRACTED]
 - [[DesktopStickyAccordion()]] - `calls` [EXTRACTED]
 - [[DigitalPlatformsClient()]] - `calls` [EXTRACTED]
+- [[Editorial Design System]] - `references` [EXTRACTED]
 - [[Header()]] - `calls` [EXTRACTED]
+- [[High-Performance Motion Design]] - `references` [EXTRACTED]
 - [[HomeContent()]] - `calls` [EXTRACTED]
 - [[ImpactPageContent()]] - `calls` [EXTRACTED]
 - [[MobileFallbackAccordion()]] - `calls` [EXTRACTED]
@@ -45,4 +47,4 @@ tags:
 - [[stakeholder-convenings-client.tsx]] - `imports` [EXTRACTED]
 - [[technical-studies-client.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Client_Views
+#graphify/code #graphify/EXTRACTED #community/Technical_Studies__Scroll_Accordion

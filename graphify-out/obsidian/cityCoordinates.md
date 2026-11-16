@@ -1,17 +1,18 @@
 ---
-source_file: "components/interactive-map.tsx"
+source_file: "components/country-data.ts"
 type: "code"
-community: "Interactive Impact Map & Services"
-location: "L46"
+community: "Impact Map Country Data & Services"
+location: "L1156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Impact_Map__Services
+  - community/Impact_Map_Country_Data__Services
 ---
 
 # cityCoordinates
 
 ## Connections
-- [[interactive-map.tsx]] - `contains` [EXTRACTED]
+- [[country-data.ts]] - `contains` [EXTRACTED]
+- [[interactive-map.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services
+#graphify/code #graphify/EXTRACTED #community/Impact_Map_Country_Data__Services

@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/seed/route.ts"
 type: "code"
-community: "Home Page Data Hydration"
+community: "Protected Admin CRUD API Routes"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home_Page_Data_Hydration
+  - community/Protected_Admin_CRUD_API_Routes
 ---
 
 # POST()
@@ -16,4 +16,4 @@ tags:
 - [[isDatabaseConnected()]] - `calls` [EXTRACTED]
 - [[seedroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home_Page_Data_Hydration
+#graphify/code #graphify/EXTRACTED #community/Protected_Admin_CRUD_API_Routes

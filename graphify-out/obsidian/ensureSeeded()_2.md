@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/gallery-service.ts"
 type: "code"
-community: "Field Gallery CMS & Showcase"
+community: "Gallery Items Service & API Routes"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Field_Gallery_CMS__Showcase
+  - community/Gallery_Items_Service__API_Routes
 ---
 
 # ensureSeeded()
@@ -18,4 +18,4 @@ tags:
 - [[seedGuard_2]] - `calls` [EXTRACTED]
 - [[updateGalleryItem()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Field_Gallery_CMS__Showcase
+#graphify/code #graphify/EXTRACTED #community/Gallery_Items_Service__API_Routes

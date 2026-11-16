@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/team-service.ts"
 type: "code"
-community: "Admin Media & Content Modals"
+community: "Public Team Showcase & Bio Cards"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Media__Content_Modals
+  - community/Public_Team_Showcase__Bio_Cards
 ---
 
 # getTeamMembers()
@@ -19,4 +19,4 @@ tags:
 - [[team-service.ts]] - `contains` [EXTRACTED]
 - [[teamroute.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Media__Content_Modals
+#graphify/code #graphify/EXTRACTED #community/Public_Team_Showcase__Bio_Cards

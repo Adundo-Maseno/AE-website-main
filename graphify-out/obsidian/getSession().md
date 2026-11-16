@@ -1,12 +1,12 @@
 ---
 source_file: "lib/auth.ts"
 type: "code"
-community: "Protected Admin CRUD Routes"
+community: "Protected Admin CRUD API Routes"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Protected_Admin_CRUD_Routes
+  - community/Protected_Admin_CRUD_API_Routes
 ---
 
 # getSession()
@@ -97,4 +97,4 @@ tags:
 - [[why-agriidroute.ts]] - `imports` [EXTRACTED]
 - [[why-agriroute.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Protected_Admin_CRUD_Routes
+#graphify/code #graphify/EXTRACTED #community/Protected_Admin_CRUD_API_Routes

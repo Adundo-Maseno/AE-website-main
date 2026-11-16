@@ -1,12 +1,12 @@
 ---
 source_file: "components/interactive-map.tsx"
 type: "code"
-community: "Interactive Impact Map & Services"
-location: "L28"
+community: "Impact Map Country Data & Services"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Impact_Map__Services
+  - community/Impact_Map_Country_Data__Services
 ---
 
 # InteractiveMapbox
@@ -16,4 +16,4 @@ tags:
 - [[interactive-map.tsx]] - `contains` [EXTRACTED]
 - [[interactive-mapbox.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services
+#graphify/code #graphify/EXTRACTED #community/Impact_Map_Country_Data__Services

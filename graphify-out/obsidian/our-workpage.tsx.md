@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/page.tsx"
 type: "code"
-community: "About & Services Bento Grid"
+community: "Page Sections API & Work Overview"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About__Services_Bento_Grid
+  - community/Page_Sections_API__Work_Overview
 ---
 
 # our-work/page.tsx
@@ -21,4 +21,4 @@ tags:
 - [[revalidate_10]] - `contains` [EXTRACTED]
 - [[routing.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About__Services_Bento_Grid
+#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Work_Overview

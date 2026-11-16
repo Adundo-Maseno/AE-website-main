@@ -1,12 +1,12 @@
 ---
 source_file: "components/cookie-toast.tsx"
 type: "code"
-community: "About & Services Bento Grid"
+community: "Localized Metadata & Privacy Pages"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/About__Services_Bento_Grid
+  - community/Localized_Metadata__Privacy_Pages
 ---
 
 # cookie-toast.tsx
@@ -21,4 +21,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[routing.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/About__Services_Bento_Grid
+#graphify/code #graphify/EXTRACTED #community/Localized_Metadata__Privacy_Pages

@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/team/[id]/route.ts"
 type: "code"
-community: "Team & Page Sections API"
+community: "Team Service & ID Resolution"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Team__Page_Sections_API
+  - community/Team_Service__ID_Resolution
 ---
 
 # DELETE()
@@ -16,4 +16,4 @@ tags:
 - [[getSession()]] - `calls` [EXTRACTED]
 - [[teamidroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Team__Page_Sections_API
+#graphify/code #graphify/EXTRACTED #community/Team_Service__ID_Resolution

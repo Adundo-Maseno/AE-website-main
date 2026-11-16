@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/projects/[id]/route.ts"
 type: "code"
-community: "Protected Admin CRUD Routes"
+community: "Projects Service & ID Resolution"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Protected_Admin_CRUD_Routes
+  - community/Projects_Service__ID_Resolution
 ---
 
 # DELETE()
@@ -16,4 +16,4 @@ tags:
 - [[getSession()]] - `calls` [EXTRACTED]
 - [[projectsidroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Protected_Admin_CRUD_Routes
+#graphify/code #graphify/EXTRACTED #community/Projects_Service__ID_Resolution

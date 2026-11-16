@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "Email Preview CLI Script"
+community: "Media Upload, Contact & Email Pipeline"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Email_Preview_CLI_Script
+  - community/Media_Upload_Contact__Email_Pipeline
 ---
 
 # ref_child_process
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[preview-emails.js]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Email_Preview_CLI_Script
+#graphify/concept #graphify/EXTRACTED #community/Media_Upload_Contact__Email_Pipeline

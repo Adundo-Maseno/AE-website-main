@@ -1,12 +1,12 @@
 ---
 source_file: "app/admin/layout.tsx"
 type: "code"
-community: "App Layouts & Global Shell"
+community: "Admin Philosophy, Insights & Form Modals"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/App_Layouts__Global_Shell
+  - community/Admin_Philosophy_Insights__Form_Modals
 ---
 
 # admin/layout.tsx
@@ -21,4 +21,4 @@ tags:
 - [[metadata]] - `contains` [EXTRACTED]
 - [[next_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/App_Layouts__Global_Shell
+#graphify/code #graphify/EXTRACTED #community/Admin_Philosophy_Insights__Form_Modals

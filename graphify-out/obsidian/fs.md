@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/auto-translate.js"
 type: "code"
-community: "i18n Auto-Translation Script"
+community: "Media Upload, Contact & Email Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/i18n_Auto-Translation_Script
+  - community/Media_Upload_Contact__Email_Pipeline
 ---
 
 # fs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[auto-translate.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/i18n_Auto-Translation_Script
+#graphify/code #graphify/EXTRACTED #community/Media_Upload_Contact__Email_Pipeline

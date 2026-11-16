@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/preview-emails.js"
 type: "code"
-community: "Email Preview CLI Script"
+community: "Media Upload, Contact & Email Pipeline"
 location: "L337"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Email_Preview_CLI_Script
+  - community/Media_Upload_Contact__Email_Pipeline
 ---
 
 # outDir
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[preview-emails.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Email_Preview_CLI_Script
+#graphify/code #graphify/EXTRACTED #community/Media_Upload_Contact__Email_Pipeline

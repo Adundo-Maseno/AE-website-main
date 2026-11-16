@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Radix Dialog Package Dependency"
+community: "Runtime Package Dependencies"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Radix_Dialog_Package_Dependency
+  - community/Runtime_Package_Dependencies
 ---
 
 # @radix-ui/react-dialog@1.1.15
@@ -15,4 +15,4 @@ tags:
 - [[@radix-uireact-dialog]] - `declares` [EXTRACTED]
 - [[dependencies]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Radix_Dialog_Package_Dependency
+#graphify/code #graphify/EXTRACTED #community/Runtime_Package_Dependencies

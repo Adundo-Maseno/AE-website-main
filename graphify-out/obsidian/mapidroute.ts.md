@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/map/[id]/route.ts"
 type: "code"
-community: "Interactive Impact Map & Services"
+community: "Map Country Service & ID Resolution"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Interactive_Impact_Map__Services
+  - community/Map_Country_Service__ID_Resolution
 ---
 
 # map/[id]/route.ts
@@ -21,4 +21,4 @@ tags:
 - [[next_1]] - `imports_from` [EXTRACTED]
 - [[updateCountry()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Interactive_Impact_Map__Services
+#graphify/code #graphify/EXTRACTED #community/Map_Country_Service__ID_Resolution

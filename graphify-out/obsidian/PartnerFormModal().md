@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/partner-form-modal.tsx"
 type: "code"
-community: "Admin Media & Content Modals"
+community: "Admin Content Pages & Sections Config"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Media__Content_Modals
+  - community/Admin_Content_Pages__Sections_Config
 ---
 
 # PartnerFormModal()
@@ -17,4 +17,4 @@ tags:
 - [[partner-form-modal.tsx]] - `contains` [EXTRACTED]
 - [[partnerspage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Media__Content_Modals
+#graphify/code #graphify/EXTRACTED #community/Admin_Content_Pages__Sections_Config

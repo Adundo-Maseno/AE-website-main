@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/technical-studies/page.tsx"
 type: "code"
-community: "Our Work Pillar Pages"
+community: "Technical Studies & Scroll Accordion"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Pillar_Pages
+  - community/Technical_Studies__Scroll_Accordion
 ---
 
 # technical-studies/page.tsx
@@ -22,4 +22,4 @@ tags:
 - [[revalidate_13]] - `contains` [EXTRACTED]
 - [[technical-studies-client.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Pages
+#graphify/code #graphify/EXTRACTED #community/Technical_Studies__Scroll_Accordion

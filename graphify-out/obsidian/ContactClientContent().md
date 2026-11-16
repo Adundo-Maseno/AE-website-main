@@ -1,12 +1,12 @@
 ---
 source_file: "components/contact/contact-client-content.tsx"
 type: "code"
-community: "App Layouts & Global Shell"
+community: "Page Sections API & Work Overview"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/App_Layouts__Global_Shell
+  - community/Page_Sections_API__Work_Overview
 ---
 
 # ContactClientContent()
@@ -17,4 +17,4 @@ tags:
 - [[contact-client-content.tsx]] - `contains` [EXTRACTED]
 - [[contactpage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/App_Layouts__Global_Shell
+#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Work_Overview

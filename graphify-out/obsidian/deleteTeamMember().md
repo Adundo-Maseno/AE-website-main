@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/team-service.ts"
 type: "code"
-community: "Team & Page Sections API"
+community: "Team Service & ID Resolution"
 location: "L228"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Team__Page_Sections_API
+  - community/Team_Service__ID_Resolution
 ---
 
 # deleteTeamMember()
@@ -18,4 +18,4 @@ tags:
 - [[team-service.ts]] - `contains` [EXTRACTED]
 - [[teamidroute.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Team__Page_Sections_API
+#graphify/code #graphify/EXTRACTED #community/Team_Service__ID_Resolution

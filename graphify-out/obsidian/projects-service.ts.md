@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/projects-service.ts"
 type: "code"
-community: "Our Work Pillar Pages"
+community: "Admin Dashboard & DB Seeding"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Pillar_Pages
+  - community/Admin_Dashboard__DB_Seeding
 ---
 
 # projects-service.ts
@@ -47,4 +47,4 @@ tags:
 - [[technical-studiespage.tsx]] - `imports_from` [EXTRACTED]
 - [[updateProject()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Pages
+#graphify/code #graphify/EXTRACTED #community/Admin_Dashboard__DB_Seeding

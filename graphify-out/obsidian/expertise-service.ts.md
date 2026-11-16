@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/expertise-service.ts"
 type: "code"
-community: "Expertise Pillars Service & API"
+community: "Admin Dashboard & DB Seeding"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Expertise_Pillars_Service__API
+  - community/Admin_Dashboard__DB_Seeding
 ---
 
 # expertise-service.ts
@@ -39,4 +39,4 @@ tags:
 - [[stripManagedFields()]] - `imports` [EXTRACTED]
 - [[updateExpertisePillar()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Expertise_Pillars_Service__API
+#graphify/code #graphify/EXTRACTED #community/Admin_Dashboard__DB_Seeding
