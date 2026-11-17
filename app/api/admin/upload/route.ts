@@ -62,21 +62,54 @@ export async function POST(req: NextRequest) {
     const timestamp = Date.now()
     const filename = `${baseName}-${timestamp}${ext}`
 
-    const uploadDir = path.join(process.cwd(), 'public', 'uploads', folder)
-    await mkdir(uploadDir, { recursive: true })
+    try {
+      const uploadDir = path.join(process.cwd(), 'public', 'uploads', folder)
+      await mkdir(uploadDir, { recursive: true })
 
-    const filePath = path.join(uploadDir, filename)
-    await writeFile(filePath, buffer)
+      const filePath = path.join(uploadDir, filename)
+      await writeFile(filePath, buffer)
 
-    const publicUrl = `/uploads/${folder}/${filename}`
+      const publicUrl = `/uploads/${folder}/${filename}`
 
-    return NextResponse.json({
-      success: true,
-      url: publicUrl,
-      filename,
-      size: file.size,
-      mimeType: file.type,
-    })
+      return NextResponse.json({
+        success: true,
+        url: publicUrl,
+        filename,
+        size: file.size,
+        mimeType: file.type,
+        storage: 'filesystem',
+      })
+    } catch (fsErr: any) {
+      const isReadOnlyFs =
+        fsErr?.code === 'EROFS' ||
+        fsErr?.code === 'EACCES' ||
+        fsErr?.code === 'EPERM' ||
+        fsErr?.code === 'ENOENT'
+
+      if (isReadOnlyFs && file.type.startsWith('image/')) {
+        const dataUrl = `data:${file.type};base64,${buffer.toString('base64')}`
+        return NextResponse.json({
+          success: true,
+          url: dataUrl,
+          filename,
+          size: file.size,
+          mimeType: file.type,
+          storage: 'inline-data-url',
+        })
+      }
+
+      if (isReadOnlyFs && file.type === 'application/pdf') {
+        return NextResponse.json(
+          {
+            error:
+              'Serverless storage is read-only for PDF uploads. Please host the PDF externally or under /public/resources and paste its URL.',
+          },
+          { status: 422 }
+        )
+      }
+
+      throw fsErr
+    }
   } catch (err: any) {
     console.error('File upload error:', err)
     return NextResponse.json(
