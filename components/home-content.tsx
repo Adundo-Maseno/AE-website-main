@@ -1,11 +1,10 @@
 'use client'
 
-import { useRef } from 'react'
-import ClientLogos from '@/components/client-logos'
+import { useEffect, useRef, useState } from 'react'
+import dynamic from 'next/dynamic'
 import { motion } from 'framer-motion'
 import { ArrowRight, Earth, Handshake, Building2 } from 'lucide-react'
 import { Link } from '@/i18n/routing'
-import WhyAgriExperience from '@/components/motion/why-agri-experience'
 import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
 import { RollingText } from '@/components/ui/rolling-text'
@@ -14,13 +13,8 @@ import { BeliefData } from '@/lib/services/beliefs-service'
 import { WhyAgriCardData } from '@/lib/services/why-agri-service'
 import { PartnerData } from '@/lib/services/partners-service'
 
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { useGSAP } from '@gsap/react'
-
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger, useGSAP)
-}
+const ClientLogos = dynamic(() => import('@/components/client-logos'), { ssr: true })
+const WhyAgriExperience = dynamic(() => import('@/components/motion/why-agri-experience'), { ssr: true })
 
 interface HomeContentProps {
   initialSections?: Record<string, PageSectionData>
@@ -47,112 +41,187 @@ export default function HomeContent({
   const track2Ref = useRef<HTMLDivElement>(null)
   const track2InnerRef = useRef<HTMLDivElement>(null)
 
-  // Effect 1: Hero Parallax
-  useGSAP(() => {
-    if (!heroRef.current || !heroBgRef.current) return
+  const [shouldMountVideo, setShouldMountVideo] = useState(false)
+  const [isVideoReady, setIsVideoReady] = useState(false)
 
-    let mm = gsap.matchMedia()
-    mm.add('(min-width: 768px) and (prefers-reduced-motion: no-preference)', () => {
-      gsap.to(heroBgRef.current, {
-        y: () => window.innerHeight * 0.2,
-        scale: 1.05,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: heroRef.current,
-          start: 0,
-          end: 'bottom top',
-          scrub: 1.5,
-          invalidateOnRefresh: true,
-        },
-      })
-    })
+  // Defer hero MP4 video mount on desktop until after window load + idle
+  useEffect(() => {
+    if (typeof window === 'undefined' || window.innerWidth < 768) return
 
-    return () => mm.revert()
+    let cancelled = false
+    let idleId: number | undefined
+    let timeoutId: ReturnType<typeof setTimeout> | undefined
+
+    const scheduleMount = () => {
+      if (cancelled) return
+      if ('requestIdleCallback' in window) {
+        idleId = window.requestIdleCallback(
+          () => {
+            if (!cancelled && window.innerWidth >= 768) {
+              setShouldMountVideo(true)
+            }
+          },
+          { timeout: 1500 }
+        )
+      } else {
+        timeoutId = setTimeout(() => {
+          if (!cancelled && window.innerWidth >= 768) {
+            setShouldMountVideo(true)
+          }
+        }, 1500)
+      }
+    }
+
+    if (document.readyState === 'complete') {
+      scheduleMount()
+    } else {
+      window.addEventListener('load', scheduleMount, { once: true })
+    }
+
+    return () => {
+      cancelled = true
+      window.removeEventListener('load', scheduleMount)
+      if (idleId !== undefined && 'cancelIdleCallback' in window) {
+        window.cancelIdleCallback(idleId)
+      }
+      if (timeoutId !== undefined) {
+        clearTimeout(timeoutId)
+      }
+    }
   }, [])
 
-  // Effect 2: Multi-step Pinned Horizontal Scroll with Parallax Overlap
-  useGSAP(() => {
-    if (
-      !sequenceWrapperRef.current ||
-      !track1Ref.current ||
-      !track1InnerRef.current ||
-      !track2Ref.current ||
-      !track2InnerRef.current
-    )
-      return
+  // Code-split GSAP & ScrollTrigger: load only on desktop with no reduced-motion preference after idle
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const mql = window.matchMedia('(min-width: 768px) and (prefers-reduced-motion: no-preference)')
+    if (!mql.matches) return
 
-    let mm = gsap.matchMedia()
+    let cancelled = false
+    let mm: { revert: () => void } | undefined
+    let idleId: number | undefined
+    let timeoutId: ReturnType<typeof setTimeout> | undefined
 
-    mm.add('(min-width: 768px) and (prefers-reduced-motion: no-preference)', () => {
-      const container = sequenceWrapperRef.current
+    const initGsap = async () => {
+      if (cancelled) return
+      const [{ default: gsap }, { ScrollTrigger }] = await Promise.all([
+        import('gsap'),
+        import('gsap/ScrollTrigger'),
+      ])
+      if (cancelled) return
 
-      const getScroll1 = () => {
-        if (!track1InnerRef.current) return 0
-        return Math.max(0, track1InnerRef.current.scrollWidth - window.innerWidth)
-      }
-      const getScroll2 = () => {
-        if (!track2InnerRef.current) return 0
-        return Math.max(0, track2InnerRef.current.scrollWidth - window.innerWidth)
-      }
+      gsap.registerPlugin(ScrollTrigger)
 
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: container,
-          start: 'top top',
-          end: () => `+=${getScroll1() + getScroll2() + window.innerWidth}`,
-          scrub: 1.5,
-          pin: true,
-          anticipatePin: 1,
-          invalidateOnRefresh: true,
-        },
+      const matchMedia = gsap.matchMedia()
+      mm = matchMedia
+      matchMedia.add('(min-width: 768px) and (prefers-reduced-motion: no-preference)', () => {
+        if (heroRef.current && heroBgRef.current) {
+          gsap.to(heroBgRef.current, {
+            y: () => window.innerHeight * 0.2,
+            scale: 1.05,
+            ease: 'none',
+            scrollTrigger: {
+              trigger: heroRef.current,
+              start: 0,
+              end: 'bottom top',
+              scrub: 1.5,
+              invalidateOnRefresh: true,
+            },
+          })
+        }
+
+        if (
+          sequenceWrapperRef.current &&
+          track1Ref.current &&
+          track1InnerRef.current &&
+          track2Ref.current &&
+          track2InnerRef.current
+        ) {
+          const container = sequenceWrapperRef.current
+
+          const getScroll1 = () => {
+            if (!track1InnerRef.current) return 0
+            return Math.max(0, track1InnerRef.current.scrollWidth - window.innerWidth)
+          }
+          const getScroll2 = () => {
+            if (!track2InnerRef.current) return 0
+            return Math.max(0, track2InnerRef.current.scrollWidth - window.innerWidth)
+          }
+
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: container,
+              start: 'top top',
+              end: () => `+=${getScroll1() + getScroll2() + window.innerWidth}`,
+              scrub: 1.5,
+              pin: true,
+              anticipatePin: 1,
+              invalidateOnRefresh: true,
+            },
+          })
+
+          const scroll1 = getScroll1()
+          const scroll2 = getScroll2()
+          const ratio1 = scroll1 > 0 ? scroll1 / window.innerWidth : 0.1
+          const ratio2 = scroll2 > 0 ? scroll2 / window.innerWidth : 0.1
+
+          tl.to(track1InnerRef.current, {
+            x: () => -getScroll1(),
+            ease: 'none',
+            duration: ratio1,
+          })
+
+          tl.to(
+            track1Ref.current,
+            {
+              x: () => -window.innerWidth * 0.3,
+              ease: 'power2.inOut',
+              duration: 0.8,
+            },
+            'cover'
+          )
+
+          tl.fromTo(
+            track2Ref.current,
+            {
+              x: '100%',
+            },
+            {
+              x: '0%',
+              ease: 'power2.inOut',
+              duration: 0.8,
+            },
+            'cover'
+          )
+
+          tl.to(track2InnerRef.current, {
+            x: () => -getScroll2(),
+            ease: 'none',
+            duration: ratio2,
+          })
+
+          return () => {
+            tl.kill()
+          }
+        }
       })
+    }
 
-      const scroll1 = getScroll1()
-      const scroll2 = getScroll2()
-      const ratio1 = scroll1 > 0 ? scroll1 / window.innerWidth : 0.1
-      const ratio2 = scroll2 > 0 ? scroll2 / window.innerWidth : 0.1
+    if ('requestIdleCallback' in window) {
+      idleId = window.requestIdleCallback(initGsap, { timeout: 1000 })
+    } else {
+      timeoutId = setTimeout(initGsap, 200)
+    }
 
-      tl.to(track1InnerRef.current, {
-        x: () => -getScroll1(),
-        ease: 'none',
-        duration: ratio1,
-      })
-
-      tl.to(
-        track1Ref.current,
-        {
-          x: () => -window.innerWidth * 0.3,
-          ease: 'power2.inOut',
-          duration: 0.8,
-        },
-        'cover'
-      )
-
-      tl.fromTo(
-        track2Ref.current,
-        {
-          x: '100%',
-        },
-        {
-          x: '0%',
-          ease: 'power2.inOut',
-          duration: 0.8,
-        },
-        'cover'
-      )
-
-      tl.to(track2InnerRef.current, {
-        x: () => -getScroll2(),
-        ease: 'none',
-        duration: ratio2,
-      })
-
-      return () => {
-        tl.kill()
+    return () => {
+      cancelled = true
+      if (idleId !== undefined && 'cancelIdleCallback' in window) {
+        window.cancelIdleCallback(idleId)
       }
-    })
-
-    return () => mm.revert()
+      if (timeoutId !== undefined) {
+        clearTimeout(timeoutId)
+      }
+      mm?.revert()
+    }
   }, [])
 
   // Section Data Resolve
@@ -342,32 +411,35 @@ export default function HomeContent({
             className="absolute inset-0 md:-top-[20vh] left-0 w-full h-full md:h-[120vh] z-0 origin-center bg-black overflow-hidden"
           >
             <div className="absolute inset-0 w-full h-full bg-mist">
-              <div className="block md:hidden absolute inset-0 w-full h-full">
-                <Image
-                  src="/hero-video-frame.webp"
-                  alt="Agri Experience"
-                  fill
-                  priority
-                  fetchPriority="high"
-                  sizes="100vw"
-                  className="object-cover object-center"
-                />
-              </div>
+              <Image
+                src="/hero-video-frame.webp"
+                alt="Agri Experience"
+                fill
+                priority
+                fetchPriority="high"
+                sizes="100vw"
+                className="object-cover object-center lg:object-[center_30%]"
+              />
 
-              <div className="hidden md:block absolute inset-0 w-full h-full">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  preload="none"
-                  poster="/hero-video-frame.webp"
-                  className="absolute inset-0 w-full h-full object-cover object-center lg:object-[center_30%]"
-                >
-                  <source src="/Videos/hero-video.mp4" type="video/mp4" media="(min-width: 768px)" />
-                  <track kind="captions" src="/empty.vtt" srcLang="en" label="English" />
-                </video>
-              </div>
+              {shouldMountVideo && (
+                <div className="hidden md:block absolute inset-0 w-full h-full">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="metadata"
+                    onPlaying={() => setIsVideoReady(true)}
+                    onCanPlay={() => setIsVideoReady(true)}
+                    className={`absolute inset-0 w-full h-full object-cover object-center lg:object-[center_30%] transition-opacity duration-700 ${
+                      isVideoReady ? 'opacity-100' : 'opacity-0'
+                    }`}
+                  >
+                    <source src="/Videos/hero-video.mp4" type="video/mp4" />
+                    <track kind="captions" src="/empty.vtt" srcLang="en" label="English" />
+                  </video>
+                </div>
+              )}
             </div>
           </div>
 
@@ -410,12 +482,7 @@ export default function HomeContent({
                 </Link>
               </div>
 
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 0.6 }}
-                className="pt-4 lg:pt-6"
-              >
+              <div className="pt-4 lg:pt-6">
                 <div className="flex flex-wrap justify-start items-center gap-4 sm:gap-6 lg:gap-10 xl:gap-12">
                   {statItems.map((stat, i) => (
                     <div key={i} className="flex items-center gap-3">
@@ -436,7 +503,7 @@ export default function HomeContent({
                     </div>
                   ))}
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>

@@ -56,7 +56,7 @@ export default function Footer({ settings }: FooterProps = {}) {
             alt="Agricultural landscape"
             fill
             sizes="100vw"
-            quality={75}
+            quality={60}
             className="object-cover object-center"
           />
           <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '160px', background: 'linear-gradient(to top, #0d0d0d, transparent)' }} />

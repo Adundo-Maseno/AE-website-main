@@ -115,23 +115,28 @@ export default function Header({
       const container = containerRef.current
 
       if (selectedButton && container) {
-        setDimensions({
-          width: selectedButton.offsetWidth,
-          height: selectedButton.offsetHeight,
-          left: selectedButton.offsetLeft,
-          top: selectedButton.offsetTop,
-        })
+        const width = selectedButton.offsetWidth
+        const height = selectedButton.offsetHeight
+        const left = selectedButton.offsetLeft
+        const top = selectedButton.offsetTop
+
+        setDimensions((prev) =>
+          prev.width === width && prev.height === height && prev.left === left && prev.top === top
+            ? prev
+            : { width, height, left, top }
+        )
       }
     }
 
     // Initial update
-    requestAnimationFrame(() => {
-      updateDimensions()
-    })
+    const rafId = requestAnimationFrame(updateDimensions)
 
     // Update on resize
-    window.addEventListener("resize", updateDimensions)
-    return () => window.removeEventListener("resize", updateDimensions)
+    window.addEventListener("resize", updateDimensions, { passive: true })
+    return () => {
+      cancelAnimationFrame(rafId)
+      window.removeEventListener("resize", updateDimensions)
+    }
   }, [activePath])
 
   return (
@@ -401,7 +406,7 @@ export default function Header({
                         key={item.href}
                         href={item.href}
                         onClick={() => { setIsOpen(false); }}
-                        className={`px-4 py-3.5 text-base font-semibold rounded-2xl transition-all duration-200 flex items-center justify-between ${
+                        className={`px-4 py-3.5 text-base font-semibold rounded-2xl transition-colors duration-200 flex items-center justify-between ${
                           isActive 
                             ? 'text-deep-forest bg-[#F1F6F3]' 
                             : 'text-charcoal/80 hover:text-deep-forest hover:bg-black/5'

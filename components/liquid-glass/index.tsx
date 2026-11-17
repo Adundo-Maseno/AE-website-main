@@ -37,12 +37,10 @@ const GlassFilter: React.FC<{ id: string; displacementScale: number; aberrationI
   id,
   displacementScale,
   aberrationIntensity,
-  width,
-  height,
   mode,
   shaderMapUrl,
 }) => (
-  <svg style={{ position: "absolute", width, height }} aria-hidden="true">
+  <svg style={{ position: "absolute", top: 0, left: 0, width: 0, height: 0, overflow: "hidden", pointerEvents: "none" }} aria-hidden="true">
     <defs>
       <radialGradient id={`${id}-edge-mask`} cx="50%" cy="50%" r="50%">
         <stop offset="0%" stopColor="black" stopOpacity="0" />
