@@ -41,7 +41,10 @@ export default function Footer({ settings }: FooterProps = {}) {
   }
 
   return (
-    <div className="relative w-full">
+    <div
+      className="relative w-full"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: '1px 700px' }}
+    >
       <style>{`
         .footer-nav-link { color: #999; font-size: 13px; text-decoration: none; font-weight: 300; transition: color 0.15s ease; }
         .footer-nav-link:hover { color: #ffffff; }

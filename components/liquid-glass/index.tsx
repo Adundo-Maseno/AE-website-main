@@ -1,130 +1,5 @@
 "use client"
-import { type CSSProperties, forwardRef, useCallback, useEffect, useId, useRef, useState } from "react"
-import { ShaderDisplacementGenerator, fragmentShaders } from "./shader-utils"
-import { displacementMap, polarDisplacementMap, prominentDisplacementMap } from "./utils"
-
-// Generate shader-based displacement map using shaderUtils
-const generateShaderDisplacementMap = (width: number, height: number): string => {
-  const generator = new ShaderDisplacementGenerator({
-    width,
-    height,
-    fragment: fragmentShaders.liquidGlass,
-  })
-
-  const dataUrl = generator.updateShader()
-  generator.destroy()
-
-  return dataUrl
-}
-
-const getMap = (mode: "standard" | "polar" | "prominent" | "shader", shaderMapUrl?: string) => {
-  switch (mode) {
-    case "standard":
-      return displacementMap
-    case "polar":
-      return polarDisplacementMap
-    case "prominent":
-      return prominentDisplacementMap
-    case "shader":
-      return shaderMapUrl || displacementMap
-    default:
-      throw new Error(`Invalid mode: ${mode}`)
-  }
-}
-
-/* ---------- SVG filter (edge-only displacement) ---------- */
-const GlassFilter: React.FC<{ id: string; displacementScale: number; aberrationIntensity: number; width: number; height: number; mode: "standard" | "polar" | "prominent" | "shader"; shaderMapUrl?: string }> = ({
-  id,
-  displacementScale,
-  aberrationIntensity,
-  mode,
-  shaderMapUrl,
-}) => (
-  <svg style={{ position: "absolute", top: 0, left: 0, width: 0, height: 0, overflow: "hidden", pointerEvents: "none" }} aria-hidden="true">
-    <defs>
-      <radialGradient id={`${id}-edge-mask`} cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="black" stopOpacity="0" />
-        <stop offset={`${Math.max(30, 80 - aberrationIntensity * 2)}%`} stopColor="black" stopOpacity="0" />
-        <stop offset="100%" stopColor="white" stopOpacity="1" />
-      </radialGradient>
-      <filter id={id} x="-35%" y="-35%" width="170%" height="170%" colorInterpolationFilters="sRGB">
-        <feImage id="feimage" x="0" y="0" width="100%" height="100%" result="DISPLACEMENT_MAP" href={getMap(mode, shaderMapUrl)} preserveAspectRatio="xMidYMid slice" />
-
-        {/* Create edge mask using the displacement map itself */}
-        <feColorMatrix
-          in="DISPLACEMENT_MAP"
-          type="matrix"
-          values="0.3 0.3 0.3 0 0
-                 0.3 0.3 0.3 0 0
-                 0.3 0.3 0.3 0 0
-                 0 0 0 1 0"
-          result="EDGE_INTENSITY"
-        />
-        <feComponentTransfer in="EDGE_INTENSITY" result="EDGE_MASK">
-          <feFuncA type="discrete" tableValues={`0 ${aberrationIntensity * 0.05} 1`} />
-        </feComponentTransfer>
-
-        {/* Original undisplaced image for center */}
-        <feOffset in="SourceGraphic" dx="0" dy="0" result="CENTER_ORIGINAL" />
-
-        {/* Red channel displacement with slight offset */}
-        <feDisplacementMap in="SourceGraphic" in2="DISPLACEMENT_MAP" scale={displacementScale * (mode === "shader" ? 1 : -1)} xChannelSelector="R" yChannelSelector="B" result="RED_DISPLACED" />
-        <feColorMatrix
-          in="RED_DISPLACED"
-          type="matrix"
-          values="1 0 0 0 0
-                 0 0 0 0 0
-                 0 0 0 0 0
-                 0 0 0 1 0"
-          result="RED_CHANNEL"
-        />
-
-        {/* Green channel displacement */}
-        <feDisplacementMap in="SourceGraphic" in2="DISPLACEMENT_MAP" scale={displacementScale * ((mode === "shader" ? 1 : -1) - aberrationIntensity * 0.05)} xChannelSelector="R" yChannelSelector="B" result="GREEN_DISPLACED" />
-        <feColorMatrix
-          in="GREEN_DISPLACED"
-          type="matrix"
-          values="0 0 0 0 0
-                 0 1 0 0 0
-                 0 0 0 0 0
-                 0 0 0 1 0"
-          result="GREEN_CHANNEL"
-        />
-
-        {/* Blue channel displacement with slight offset */}
-        <feDisplacementMap in="SourceGraphic" in2="DISPLACEMENT_MAP" scale={displacementScale * ((mode === "shader" ? 1 : -1) - aberrationIntensity * 0.1)} xChannelSelector="R" yChannelSelector="B" result="BLUE_DISPLACED" />
-        <feColorMatrix
-          in="BLUE_DISPLACED"
-          type="matrix"
-          values="0 0 0 0 0
-                 0 0 0 0 0
-                 0 0 1 0 0
-                 0 0 0 1 0"
-          result="BLUE_CHANNEL"
-        />
-
-        {/* Combine all channels with screen blend mode for chromatic aberration */}
-        <feBlend in="GREEN_CHANNEL" in2="BLUE_CHANNEL" mode="screen" result="GB_COMBINED" />
-        <feBlend in="RED_CHANNEL" in2="GB_COMBINED" mode="screen" result="RGB_COMBINED" />
-
-        {/* Add slight blur to soften the aberration effect */}
-        <feGaussianBlur in="RGB_COMBINED" stdDeviation={Math.max(0.1, 0.5 - aberrationIntensity * 0.1)} result="ABERRATED_BLURRED" />
-
-        {/* Apply edge mask to aberration effect */}
-        <feComposite in="ABERRATED_BLURRED" in2="EDGE_MASK" operator="in" result="EDGE_ABERRATION" />
-
-        {/* Create inverted mask for center */}
-        <feComponentTransfer in="EDGE_MASK" result="INVERTED_MASK">
-          <feFuncA type="table" tableValues="1 0" />
-        </feComponentTransfer>
-        <feComposite in="CENTER_ORIGINAL" in2="INVERTED_MASK" operator="in" result="CENTER_CLEAN" />
-
-        {/* Combine edge aberration with clean center */}
-        <feComposite in="EDGE_ABERRATION" in2="CENTER_CLEAN" operator="over" />
-      </filter>
-    </defs>
-  </svg>
-)
+import { type CSSProperties, forwardRef, useCallback, useEffect, useRef, useState } from "react"
 
 /* ---------- container ---------- */
 const GlassContainer = forwardRef<
@@ -155,10 +30,8 @@ const GlassContainer = forwardRef<
       children,
       className = "",
       style,
-      displacementScale = 25,
-      blurAmount = 12,
+      blurAmount = 0.25,
       saturation = 180,
-      aberrationIntensity = 2,
       onMouseEnter,
       onMouseLeave,
       onMouseDown,
@@ -167,37 +40,19 @@ const GlassContainer = forwardRef<
       overLight = false,
       cornerRadius = 999,
       padding = "24px 32px",
-      glassSize = { width: 270, height: 69 },
       onClick,
-      mode = "standard",
     },
     ref,
   ) => {
-    const filterId = useId()
-    const [shaderMapUrl, setShaderMapUrl] = useState<string>("")
-    const [isFirefox, setIsFirefox] = useState(false)
-
-    useEffect(() => {
-      setIsFirefox(typeof navigator !== "undefined" && navigator.userAgent.toLowerCase().includes("firefox"))
-    }, [])
-
-    // Generate shader displacement map when in shader mode
-    useEffect(() => {
-      if (mode === "shader") {
-        const url = generateShaderDisplacementMap(glassSize.width, glassSize.height)
-        setShaderMapUrl(url)
-      }
-    }, [mode, glassSize.width, glassSize.height])
-
-    const backdropStyle = {
-      filter: isFirefox ? null : `url(#${filterId})`,
-      backdropFilter: `blur(${(overLight ? 12 : 4) + blurAmount * 32}px) saturate(${saturation}%) brightness(1.15)`,
+    const blurPx = Math.max(12, Math.round((overLight ? 12 : 4) + blurAmount * 32))
+    const filterValue = `blur(${blurPx}px) saturate(${saturation}%) brightness(1.15)`
+    const backdropStyle: CSSProperties = {
+      backdropFilter: filterValue,
+      WebkitBackdropFilter: filterValue,
     }
 
     return (
       <div ref={ref} className={`relative ${className} ${active ? "active" : ""} ${Boolean(onClick) ? "cursor-pointer" : ""}`} style={style} onClick={onClick}>
-        <GlassFilter mode={mode} id={filterId} displacementScale={displacementScale} aberrationIntensity={aberrationIntensity} width={glassSize.width} height={glassSize.height} shaderMapUrl={shaderMapUrl} />
-
         <div
           className="glass"
           style={{
@@ -218,19 +73,17 @@ const GlassContainer = forwardRef<
           onMouseDown={onMouseDown}
           onMouseUp={onMouseUp}
         >
-          {/* backdrop layer that gets wiggly */}
+          {/* lightweight frosted glass backdrop layer */}
           <span
             className="glass__warp"
-            style={
-              {
-                ...backdropStyle,
-                position: "absolute",
-                inset: "0",
-              } as CSSProperties
-            }
+            style={{
+              ...backdropStyle,
+              position: "absolute",
+              inset: "0",
+            }}
           />
 
-          {/* white tint overlay applied AFTER distortion so the filter works on full contrast */}
+          {/* white tint overlay */}
           <div className="absolute inset-0 bg-white/60 pointer-events-none" />
 
           {/* user content stays sharp */}
@@ -357,7 +210,7 @@ export default function LiquidGlass({
 
   // Calculate directional scaling based on mouse position
   const calculateDirectionalScale = useCallback(() => {
-    if (!globalMousePos.x || !globalMousePos.y || !glassRef.current) {
+    if (elasticity === 0 || !globalMousePos.x || !globalMousePos.y || !glassRef.current) {
       return "scale(1)"
     }
 
@@ -429,7 +282,7 @@ export default function LiquidGlass({
 
   // Helper function to calculate elastic translation
   const calculateElasticTranslation = useCallback(() => {
-    if (!glassRef.current) {
+    if (elasticity === 0 || !glassRef.current) {
       return { x: 0, y: 0 }
     }
 
@@ -444,8 +297,10 @@ export default function LiquidGlass({
     }
   }, [globalMousePos, elasticity, calculateFadeInFactor])
 
-  // Update glass size whenever component mounts or window resizes
+  // Update glass size on window resize (avoid forced reflow on initial mount)
   useEffect(() => {
+    if (elasticity === 0 && !overLight) return
+
     const updateGlassSize = () => {
       if (glassRef.current) {
         const rect = glassRef.current.getBoundingClientRect()
@@ -453,10 +308,9 @@ export default function LiquidGlass({
       }
     }
 
-    updateGlassSize()
-    window.addEventListener("resize", updateGlassSize)
+    window.addEventListener("resize", updateGlassSize, { passive: true })
     return () => window.removeEventListener("resize", updateGlassSize)
-  }, [])
+  }, [elasticity, overLight])
 
   const transformStyle = `translate(${calculateElasticTranslation().x}px, ${calculateElasticTranslation().y}px) ${isActive && Boolean(onClick) ? "scale(0.96)" : calculateDirectionalScale()}`
 

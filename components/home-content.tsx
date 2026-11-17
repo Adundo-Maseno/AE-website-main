@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from 'react'
 import dynamic from 'next/dynamic'
-import { motion } from 'framer-motion'
 import { ArrowRight, Earth, Handshake, Building2 } from 'lucide-react'
 import { Link } from '@/i18n/routing'
 import Image from 'next/image'
@@ -44,13 +43,13 @@ export default function HomeContent({
   const [shouldMountVideo, setShouldMountVideo] = useState(false)
   const [isVideoReady, setIsVideoReady] = useState(false)
 
-  // Defer hero MP4 video mount on desktop until first interaction or 6.5s after window load
+  // Defer hero MP4 video mount on desktop until first interaction or 8s after window load
   useEffect(() => {
     if (typeof window === 'undefined' || window.innerWidth < 768) return
 
     let cancelled = false
     let timeoutId: ReturnType<typeof setTimeout> | undefined
-    const events = ['pointerdown', 'keydown', 'scroll', 'touchstart', 'mousemove'] as const
+    const events = ['pointerdown', 'keydown', 'scroll', 'touchstart'] as const
 
     const cleanup = () => {
       for (const ev of events) {
@@ -71,7 +70,7 @@ export default function HomeContent({
 
     function scheduleMount() {
       if (cancelled) return
-      timeoutId = setTimeout(triggerMount, 6500)
+      timeoutId = setTimeout(triggerMount, 8000)
     }
 
     for (const ev of events) {
@@ -523,12 +522,12 @@ export default function HomeContent({
                   className="flex h-full items-center pt-[4.5rem] lg:pt-[5rem] px-6 md:px-8 lg:px-10 xl:px-12 min-[1440px]:px-16 2xl:px-24 gap-5 lg:gap-6 xl:gap-8 min-[1440px]:gap-12 2xl:gap-16 relative z-10 w-max pr-6 md:pr-8 lg:pr-10 xl:pr-12 min-[1440px]:pr-16 2xl:pr-24"
                 >
                   <div className="w-[190px] lg:w-[210px] xl:w-[240px] min-[1440px]:w-[340px] 2xl:w-[380px] shrink-0 space-y-3 lg:space-y-4 min-[1440px]:space-y-6">
-                    <motion.div>
+                    <div>
                       <h2 className="text-2xl sm:text-3xl lg:text-[34px] xl:text-[38px] min-[1440px]:text-5xl 2xl:text-6xl font-serif text-deep-forest font-bold tracking-tight pb-1 mb-2 min-[1440px]:mb-6 leading-[1.14]">
                         {whySectionTitle}
                       </h2>
                       <div className="w-16 lg:w-20 h-1 bg-primary-green rounded-full" />
-                    </motion.div>
+                    </div>
                   </div>
 
                   <div className="grid grid-rows-2 grid-flow-col gap-3 lg:gap-3.5 xl:gap-4 min-[1440px]:gap-6 shrink-0 py-2 lg:py-3 h-[clamp(350px,52vh,520px)]">
@@ -561,12 +560,12 @@ export default function HomeContent({
                   className="flex h-full items-center pt-[4.5rem] lg:pt-[5rem] px-6 md:px-8 lg:px-10 xl:px-12 min-[1440px]:px-16 2xl:px-24 gap-5 lg:gap-6 xl:gap-8 min-[1440px]:gap-12 2xl:gap-16 relative z-10 w-max pr-6 md:pr-8 lg:pr-10 xl:pr-12 min-[1440px]:pr-16 2xl:pr-24"
                 >
                   <div className="w-[190px] lg:w-[210px] xl:w-[240px] min-[1440px]:w-[340px] 2xl:w-[380px] shrink-0 space-y-3 lg:space-y-4 min-[1440px]:space-y-6">
-                    <motion.div>
+                    <div>
                       <h2 className="text-2xl sm:text-3xl lg:text-[32px] xl:text-[34px] min-[1440px]:text-4xl 2xl:text-5xl font-serif text-white font-bold tracking-tight pb-1 mb-2 min-[1440px]:mb-6 leading-[1.15]">
                         {beliefsSectionTitle}
                       </h2>
                       <div className="w-16 lg:w-20 h-1 bg-primary-green rounded-full" />
-                    </motion.div>
+                    </div>
                   </div>
 
                   <div className="grid grid-rows-2 grid-flow-col gap-3.5 lg:gap-4 xl:gap-5 min-[1440px]:gap-6 shrink-0 py-2 lg:py-3 h-[clamp(360px,54vh,530px)]">
@@ -603,33 +602,25 @@ export default function HomeContent({
               <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative z-10">
                 <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
                   <div className="lg:w-1/3 space-y-6">
-                    <motion.div
-                      initial={{ opacity: 0, x: -30 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                    >
+                    <div>
                       <h2 className="text-4xl lg:text-5xl font-serif text-white font-bold tracking-tight pb-2 mb-6">
                         {beliefsSectionTitle}
                       </h2>
                       <div className="w-20 h-1 bg-primary-green rounded-full" />
-                    </motion.div>
+                    </div>
                   </div>
 
                   <div className="w-full lg:w-2/3 flex flex-col sm:grid sm:grid-cols-2 gap-4 md:gap-6">
                     {beliefs.map((belief, idx) => (
-                      <motion.div
+                      <div
                         key={idx}
-                        initial={{ opacity: 0, x: idx % 2 === 0 ? -30 : 30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, amount: 0.3 }}
-                        transition={{ delay: idx * 0.1 }}
-                        className="bg-white/5 backdrop-blur-sm border border-white/10 p-5 sm:p-6 rounded-2xl hover:bg-white/10 transition-colors flex flex-col justify-center"
+                        className="bg-white/5 backdrop-blur-sm border border-white/10 p-5 sm:p-6 rounded-2xl hover:bg-white/10 transition-colors duration-300 flex flex-col justify-center"
                       >
                         <div className="flex flex-col">
                           <h3 className="text-xl font-serif text-white mb-2 font-bold">{belief.title}</h3>
                           <p className="text-white/80 font-normal text-base leading-relaxed">{belief.text}</p>
                         </div>
-                      </motion.div>
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -662,36 +653,18 @@ export default function HomeContent({
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 text-center">
             <div className="flex flex-col items-center gap-4 lg:gap-8">
               <div className="overflow-hidden pb-4 -mb-4">
-                <motion.h2
-                  initial={{ y: '100%' }}
-                  whileInView={{ y: 0 }}
-                  transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-                  viewport={{ once: true }}
-                  className="text-3xl sm:text-4xl lg:text-5xl font-serif text-white font-bold tracking-tight"
-                >
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-white font-bold tracking-tight transition-transform duration-700">
                   {ctaTitle}
-                </motion.h2>
+                </h2>
               </div>
 
               <div className="overflow-hidden pb-4 -mb-4">
-                <motion.p
-                  initial={{ y: '100%' }}
-                  whileInView={{ y: 0 }}
-                  transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
-                  viewport={{ once: true }}
-                  className="text-base sm:text-lg lg:text-2xl text-white/80 font-light leading-relaxed"
-                >
+                <p className="text-base sm:text-lg lg:text-2xl text-white/80 font-light leading-relaxed transition-transform duration-700">
                   {ctaDesc}
-                </motion.p>
+                </p>
               </div>
 
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="flex flex-row flex-wrap gap-3 sm:gap-6 justify-center mt-2 lg:mt-4"
-              >
+              <div className="flex flex-row flex-wrap gap-3 sm:gap-6 justify-center mt-2 lg:mt-4 transition-opacity duration-700">
                 <Link
                   href="/contact"
                   className="group relative overflow-hidden inline-flex items-center justify-center px-4 py-3 sm:px-10 sm:py-5 bg-primary-green text-white rounded-full font-bold text-xs sm:text-lg transition duration-200 shadow-2xl shadow-primary-green/20"
@@ -708,7 +681,7 @@ export default function HomeContent({
                     {t('cta_btn_2')}
                   </RollingText>
                 </Link>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>

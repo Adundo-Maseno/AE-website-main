@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import { Link, usePathname, useRouter } from '@/i18n/routing'
 import Image from 'next/image'
 import { useParams } from 'next/navigation'
@@ -104,40 +104,75 @@ export default function Header({
   }
 
   const activePath = clickedPath || pathname
+  const hasMeasuredRef = useRef(false)
 
-  // Update dimensions whenever active path changes or on mount
+  const updateDimensions = useCallback(() => {
+    const activeItem = navItems.find(
+      (item) => activePath === item.href || (activePath.startsWith(item.href) && item.href !== '/')
+    )
+    if (!activeItem) return
+
+    const selectedButton = buttonRefs.current.get(activeItem.href)
+    const container = containerRef.current
+
+    if (selectedButton && container) {
+      const width = selectedButton.offsetWidth
+      const height = selectedButton.offsetHeight
+      const left = selectedButton.offsetLeft
+      const top = selectedButton.offsetTop
+
+      hasMeasuredRef.current = true
+      setDimensions((prev) =>
+        prev.width === width && prev.height === height && prev.left === left && prev.top === top
+          ? prev
+          : { width, height, left, top }
+      )
+    }
+  }, [activePath])
+
+  // Defer initial measurement until after window.load + requestIdleCallback to avoid forced reflow on mount;
+  // update immediately on subsequent route changes or window resize.
   useEffect(() => {
-    const updateDimensions = () => {
-      const activeItem = navItems.find((item) => activePath === item.href || (activePath.startsWith(item.href) && item.href !== '/'))
-      if (!activeItem) return
-
-      const selectedButton = buttonRefs.current.get(activeItem.href)
-      const container = containerRef.current
-
-      if (selectedButton && container) {
-        const width = selectedButton.offsetWidth
-        const height = selectedButton.offsetHeight
-        const left = selectedButton.offsetLeft
-        const top = selectedButton.offsetTop
-
-        setDimensions((prev) =>
-          prev.width === width && prev.height === height && prev.left === left && prev.top === top
-            ? prev
-            : { width, height, left, top }
-        )
+    if (hasMeasuredRef.current || clickedPath !== null) {
+      const rafId = requestAnimationFrame(updateDimensions)
+      window.addEventListener("resize", updateDimensions, { passive: true })
+      return () => {
+        cancelAnimationFrame(rafId)
+        window.removeEventListener("resize", updateDimensions)
       }
     }
 
-    // Initial update
-    const rafId = requestAnimationFrame(updateDimensions)
+    let idleId: number | null = null
+    let timeoutId: ReturnType<typeof setTimeout> | null = null
 
-    // Update on resize
+    const scheduleIdleMeasure = () => {
+      if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
+        idleId = (window as Window & { requestIdleCallback: (cb: () => void) => number }).requestIdleCallback(
+          updateDimensions
+        )
+      } else {
+        timeoutId = setTimeout(updateDimensions, 200)
+      }
+    }
+
+    if (typeof document !== 'undefined' && document.readyState === 'complete') {
+      scheduleIdleMeasure()
+    } else {
+      window.addEventListener("load", scheduleIdleMeasure, { once: true })
+    }
+
     window.addEventListener("resize", updateDimensions, { passive: true })
     return () => {
-      cancelAnimationFrame(rafId)
+      window.removeEventListener("load", scheduleIdleMeasure)
       window.removeEventListener("resize", updateDimensions)
+      if (idleId !== null && 'cancelIdleCallback' in window) {
+        (window as Window & { cancelIdleCallback: (id: number) => void }).cancelIdleCallback(idleId)
+      }
+      if (timeoutId !== null) {
+        clearTimeout(timeoutId)
+      }
     }
-  }, [activePath])
+  }, [updateDimensions, clickedPath])
 
   return (
     <>
@@ -231,14 +266,17 @@ export default function Header({
                   key={item.href}
                   href={item.href}
                   onClick={() => { setClickedPath(item.href); }}
-                  onMouseEnter={() => setHoveredPath(item.href)}
+                  onMouseEnter={() => {
+                    if (!hasMeasuredRef.current) updateDimensions();
+                    setHoveredPath(item.href);
+                  }}
                   ref={(el) => {
                     if (el) buttonRefs.current.set(item.href, el);
                     else buttonRefs.current.delete(item.href);
                   }}
                   className={`relative px-3 py-1.5 min-[1440px]:px-4 min-[1440px]:py-2 text-[13px] min-[1440px]:text-sm font-medium rounded-full transition-colors duration-150 ${
                     isActive
-                      ? 'text-deep-forest z-20'
+                      ? `text-deep-forest z-20 ${dimensions.width === 0 ? 'bg-white/60' : ''}`
                       : 'text-charcoal/80 hover:text-deep-forest z-10'
                   }`}
                 >
