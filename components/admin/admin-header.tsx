@@ -161,227 +161,213 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-[#FAF9F5]/95 backdrop-blur-md border-b border-[#0F2417]/10 transition-colors">
-      <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-3 lg:gap-6">
-        {/* Brand & Desktop/Tablet Navigation */}
-        <div className="flex items-center gap-4 lg:gap-6 min-w-0">
+      <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+        {/* Brand */}
+        <Link
+          href="/admin"
+          className="flex items-center gap-2.5 group shrink-0 whitespace-nowrap [word-break:normal] [overflow-wrap:normal]"
+        >
+          <Image src="/agri-experience-logo.png" alt="Agri Experience" width={28} height={28} className="object-contain shrink-0" priority />
+          <span className="font-serif font-bold text-base text-[#0F2417] tracking-tight whitespace-nowrap [word-break:normal] [overflow-wrap:normal]">
+            Agri Experience
+          </span>
+          <span className="hidden sm:inline-flex px-2 py-0.5 rounded-md bg-[#0F2417]/[0.06] border border-[#0F2417]/10 text-[10px] font-mono uppercase tracking-widest text-[#0F2417] whitespace-nowrap [word-break:normal] [overflow-wrap:normal]">
+            CMS
+          </span>
+        </Link>
+
+        {/* Segmented Navigation Track (lg+ so items always have generous breathing room and dropdowns never clip) */}
+        <nav
+          aria-label="Admin primary navigation"
+          className="hidden lg:flex items-center gap-1 p-1 rounded-xl bg-[#0F2417]/[0.04] border border-[#0F2417]/[0.08] shrink-0"
+        >
+          {/* Overview */}
           <Link
             href="/admin"
-            className="flex items-center gap-2 group shrink-0 whitespace-nowrap [word-break:normal] [overflow-wrap:normal]"
+            className={`${navItemBaseClass} ${
+              pathname === '/admin'
+                ? 'bg-[#0F2417] text-[#FAF9F5] font-semibold shadow-xs'
+                : 'text-[#0F2417]/70 hover:text-[#0F2417] hover:bg-[#0F2417]/5'
+            }`}
           >
-            <Image src="/agri-experience-logo.png" alt="Agri Experience" width={28} height={28} className="object-contain shrink-0" priority />
-            <span className="font-serif font-bold text-base text-[#0F2417] tracking-tight whitespace-nowrap [word-break:normal] [overflow-wrap:normal]">
-              Agri Experience
-            </span>
-            <span className="px-2 py-0.5 rounded-md bg-[#0F2417]/[0.06] border border-[#0F2417]/10 text-[10px] font-mono uppercase tracking-widest text-[#0F2417] whitespace-nowrap [word-break:normal] [overflow-wrap:normal]">
-              CMS
-            </span>
+            <LayoutDashboard size={14} className="shrink-0" />
+            <span>Overview</span>
           </Link>
 
-          {/* Segmented Navigation Track (overflow-visible so dropdown panels are never clipped) */}
-          <nav
-            aria-label="Admin primary navigation"
-            className="hidden md:flex items-center gap-1 p-1 rounded-xl bg-[#0F2417]/[0.04] border border-[#0F2417]/[0.08]"
-          >
-            {/* Overview */}
-            <Link
-              href="/admin"
-              className={`${navItemBaseClass} ${
-                pathname === '/admin'
-                  ? 'bg-[#0F2417] text-[#FAF9F5] font-semibold shadow-xs'
+          {/* Content & Brand Desks Dropdown */}
+          <div ref={contentRef} className="relative">
+            <button
+              type="button"
+              aria-haspopup="menu"
+              aria-expanded={contentDropdownOpen}
+              onClick={() => {
+                setContentDropdownOpen(!contentDropdownOpen)
+                setPublishingDropdownOpen(false)
+              }}
+              className={`${navItemBaseClass} cursor-pointer ${
+                isContentActive || contentDropdownOpen
+                  ? 'bg-[#0F2417]/10 text-[#0F2417] font-semibold'
                   : 'text-[#0F2417]/70 hover:text-[#0F2417] hover:bg-[#0F2417]/5'
               }`}
             >
-              <LayoutDashboard size={14} className="shrink-0" />
-              <span>Overview</span>
-            </Link>
-
-            {/* Content & Brand Desks Dropdown */}
-            <div ref={contentRef} className="relative">
-              <button
-                type="button"
-                aria-haspopup="menu"
-                aria-expanded={contentDropdownOpen}
-                onClick={() => {
-                  setContentDropdownOpen(!contentDropdownOpen)
-                  setPublishingDropdownOpen(false)
-                }}
-                className={`${navItemBaseClass} cursor-pointer ${
-                  isContentActive || contentDropdownOpen
-                    ? 'bg-[#0F2417]/10 text-[#0F2417] font-semibold'
-                    : 'text-[#0F2417]/70 hover:text-[#0F2417] hover:bg-[#0F2417]/5'
+              <Layers size={14} className="shrink-0" />
+              <span className="2xl:hidden">Content</span>
+              <span className="hidden 2xl:inline">Site Content &amp; Copy</span>
+              <span className="px-1.5 py-0.5 rounded bg-[#0F2417]/10 text-[10px] font-mono tabular-nums text-[#0F2417]/75">
+                {contentItems.length}
+              </span>
+              <ChevronDown
+                size={13}
+                className={`shrink-0 transition-transform duration-200 ${
+                  contentDropdownOpen ? 'rotate-180' : ''
                 }`}
-              >
-                <Layers size={14} className="shrink-0" />
-                <span className="xl:hidden">Content</span>
-                <span className="hidden xl:inline">Site Content &amp; Copy</span>
-                <span className="px-1.5 py-0.5 rounded bg-[#0F2417]/10 text-[10px] font-mono tabular-nums text-[#0F2417]/75">
-                  {contentItems.length}
-                </span>
-                <ChevronDown
-                  size={13}
-                  className={`shrink-0 transition-transform duration-200 ${
-                    contentDropdownOpen ? 'rotate-180' : ''
-                  }`}
-                />
-              </button>
+              />
+            </button>
 
-              {contentDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-[min(92vw,340px)] bg-white border border-[#0F2417]/10 rounded-2xl shadow-xl p-2 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
-                  <div className="px-3 py-2 flex items-center justify-between border-b border-stone-100">
-                    <span className="text-[10px] font-mono uppercase tracking-wider text-[#0F2417]/50">
-                      Content &amp; Identity Desks
-                    </span>
-                    <span className="text-[10px] font-mono tabular-nums text-[#0F2417]/40">
-                      {contentItems.length} modules
-                    </span>
-                  </div>
-                  <div className="py-1 space-y-0.5">
-                    {contentItems.map((item) => {
-                      const isActive = isRouteActive(item.href)
-                      const Icon = item.icon
-                      return (
-                        <Link
-                          key={item.href}
-                          href={item.href}
-                          onClick={() => setContentDropdownOpen(false)}
-                          className={`flex items-start gap-3 px-3 py-2.5 rounded-xl transition-all [word-break:normal] [overflow-wrap:normal] ${
-                            isActive
-                              ? 'bg-[#FAF9F5] text-[#0F2417] font-semibold border border-[#0F2417]/10'
-                              : 'hover:bg-stone-50 text-stone-700'
-                          }`}
-                        >
-                          <div className="w-7 h-7 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] shrink-0 mt-0.5">
-                            <Icon size={14} />
-                          </div>
-                          <div className="min-w-0">
-                            <span className="text-xs font-medium block text-[#0F2417]">
-                              {item.label}
-                            </span>
-                            <span className="text-[11px] text-stone-500 font-normal leading-tight block">
-                              {item.desc}
-                            </span>
-                          </div>
-                        </Link>
-                      )
-                    })}
-                  </div>
+            {contentDropdownOpen && (
+              <div className="absolute top-full left-0 mt-2 w-[min(92vw,340px)] bg-white border border-[#0F2417]/10 rounded-2xl shadow-xl p-2 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
+                <div className="px-3 py-2 flex items-center justify-between border-b border-stone-100">
+                  <span className="text-[10px] font-mono uppercase tracking-wider text-[#0F2417]/50">
+                    Content &amp; Identity Desks
+                  </span>
+                  <span className="text-[10px] font-mono tabular-nums text-[#0F2417]/40">
+                    {contentItems.length} modules
+                  </span>
                 </div>
-              )}
-            </div>
-
-            {/* Publishing & Media Desks Dropdown */}
-            <div ref={publishingRef} className="relative">
-              <button
-                type="button"
-                aria-haspopup="menu"
-                aria-expanded={publishingDropdownOpen}
-                onClick={() => {
-                  setPublishingDropdownOpen(!publishingDropdownOpen)
-                  setContentDropdownOpen(false)
-                }}
-                className={`${navItemBaseClass} cursor-pointer ${
-                  isPublishingActive || publishingDropdownOpen
-                    ? 'bg-[#0F2417]/10 text-[#0F2417] font-semibold'
-                    : 'text-[#0F2417]/70 hover:text-[#0F2417] hover:bg-[#0F2417]/5'
-                }`}
-              >
-                <FileText size={14} className="shrink-0" />
-                <span className="xl:hidden">Publishing</span>
-                <span className="hidden xl:inline">Publishing &amp; Media</span>
-                <span className="px-1.5 py-0.5 rounded bg-[#0F2417]/10 text-[10px] font-mono tabular-nums text-[#0F2417]/75">
-                  {publishingItems.length}
-                </span>
-                <ChevronDown
-                  size={13}
-                  className={`shrink-0 transition-transform duration-200 ${
-                    publishingDropdownOpen ? 'rotate-180' : ''
-                  }`}
-                />
-              </button>
-
-              {publishingDropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-[min(92vw,340px)] bg-white border border-[#0F2417]/10 rounded-2xl shadow-xl p-2 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
-                  <div className="px-3 py-2 flex items-center justify-between border-b border-stone-100">
-                    <span className="text-[10px] font-mono uppercase tracking-wider text-[#0F2417]/50">
-                      Editorial Records &amp; Roster
-                    </span>
-                    <span className="text-[10px] font-mono tabular-nums text-[#0F2417]/40">
-                      {publishingItems.length} desks
-                    </span>
-                  </div>
-                  <div className="py-1 space-y-0.5">
-                    {publishingItems.map((item) => {
-                      const isActive = isRouteActive(item.href)
-                      const Icon = item.icon
-                      return (
-                        <Link
-                          key={item.href}
-                          href={item.href}
-                          onClick={() => setPublishingDropdownOpen(false)}
-                          className={`flex items-start gap-3 px-3 py-2.5 rounded-xl transition-all [word-break:normal] [overflow-wrap:normal] ${
-                            isActive
-                              ? 'bg-[#FAF9F5] text-[#0F2417] font-semibold border border-[#0F2417]/10'
-                              : 'hover:bg-stone-50 text-stone-700'
-                          }`}
-                        >
-                          <div className="w-7 h-7 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] shrink-0 mt-0.5">
-                            <Icon size={14} />
-                          </div>
-                          <div className="min-w-0">
-                            <span className="text-xs font-medium block text-[#0F2417]">
-                              {item.label}
-                            </span>
-                            <span className="text-[11px] text-stone-500 font-normal leading-tight block">
-                              {item.desc}
-                            </span>
-                          </div>
-                        </Link>
-                      )
-                    })}
-                  </div>
+                <div className="py-1 space-y-0.5">
+                  {contentItems.map((item) => {
+                    const isActive = isRouteActive(item.href)
+                    const Icon = item.icon
+                    return (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setContentDropdownOpen(false)}
+                        className={`flex items-start gap-3 px-3 py-2.5 rounded-xl transition-all [word-break:normal] [overflow-wrap:normal] ${
+                          isActive
+                            ? 'bg-[#FAF9F5] text-[#0F2417] font-semibold border border-[#0F2417]/10'
+                            : 'hover:bg-stone-50 text-stone-700'
+                        }`}
+                      >
+                        <div className="w-7 h-7 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] shrink-0 mt-0.5">
+                          <Icon size={14} />
+                        </div>
+                        <div className="min-w-0">
+                          <span className="text-xs font-medium block text-[#0F2417]">
+                            {item.label}
+                          </span>
+                          <span className="text-[11px] text-stone-500 font-normal leading-tight block">
+                            {item.desc}
+                          </span>
+                        </div>
+                      </Link>
+                    )
+                  })}
                 </div>
-              )}
-            </div>
+              </div>
+            )}
+          </div>
 
-            {/* Direct Links for Quick Workflow */}
-            <Link
-              href="/admin/team"
-              className={`hidden xl:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap shrink-0 [word-break:normal] [overflow-wrap:normal] transition-all active:scale-[0.98] ${
-                isRouteActive('/admin/team')
-                  ? 'bg-[#0F2417] text-[#FAF9F5] font-semibold shadow-xs'
-                  : 'text-[#0F2417]/70 hover:text-[#0F2417] hover:bg-[#0F2417]/5'
-              }`}
-            >
-              <Users size={14} className="shrink-0" />
-              <span>Team</span>
-            </Link>
-
-            <Link
-              href="/admin/resources"
-              className={`hidden 2xl:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap shrink-0 [word-break:normal] [overflow-wrap:normal] transition-all active:scale-[0.98] ${
-                isRouteActive('/admin/resources')
-                  ? 'bg-[#0F2417] text-[#FAF9F5] font-semibold shadow-xs'
+          {/* Publishing & Media Desks Dropdown */}
+          <div ref={publishingRef} className="relative">
+            <button
+              type="button"
+              aria-haspopup="menu"
+              aria-expanded={publishingDropdownOpen}
+              onClick={() => {
+                setPublishingDropdownOpen(!publishingDropdownOpen)
+                setContentDropdownOpen(false)
+              }}
+              className={`${navItemBaseClass} cursor-pointer ${
+                isPublishingActive || publishingDropdownOpen
+                  ? 'bg-[#0F2417]/10 text-[#0F2417] font-semibold'
                   : 'text-[#0F2417]/70 hover:text-[#0F2417] hover:bg-[#0F2417]/5'
               }`}
             >
               <FileText size={14} className="shrink-0" />
-              <span>Publications</span>
-            </Link>
+              <span className="2xl:hidden">Publishing</span>
+              <span className="hidden 2xl:inline">Publishing &amp; Media</span>
+              <span className="px-1.5 py-0.5 rounded bg-[#0F2417]/10 text-[10px] font-mono tabular-nums text-[#0F2417]/75">
+                {publishingItems.length}
+              </span>
+              <ChevronDown
+                size={13}
+                className={`shrink-0 transition-transform duration-200 ${
+                  publishingDropdownOpen ? 'rotate-180' : ''
+                }`}
+              />
+            </button>
 
-            <Link
-              href="/admin/settings"
-              className={`${navItemBaseClass} ${
-                isRouteActive('/admin/settings')
-                  ? 'bg-[#0F2417] text-[#FAF9F5] font-semibold shadow-xs'
-                  : 'text-[#0F2417]/70 hover:text-[#0F2417] hover:bg-[#0F2417]/5'
-              }`}
-            >
-              <Settings size={14} className="shrink-0" />
-              <span className="xl:hidden">Settings</span>
-              <span className="hidden xl:inline">Settings &amp; Credentials</span>
-            </Link>
-          </nav>
-        </div>
+            {publishingDropdownOpen && (
+              <div className="absolute top-full left-0 mt-2 w-[min(92vw,340px)] bg-white border border-[#0F2417]/10 rounded-2xl shadow-xl p-2 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
+                <div className="px-3 py-2 flex items-center justify-between border-b border-stone-100">
+                  <span className="text-[10px] font-mono uppercase tracking-wider text-[#0F2417]/50">
+                    Editorial Records &amp; Roster
+                  </span>
+                  <span className="text-[10px] font-mono tabular-nums text-[#0F2417]/40">
+                    {publishingItems.length} desks
+                  </span>
+                </div>
+                <div className="py-1 space-y-0.5">
+                  {publishingItems.map((item) => {
+                    const isActive = isRouteActive(item.href)
+                    const Icon = item.icon
+                    return (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setPublishingDropdownOpen(false)}
+                        className={`flex items-start gap-3 px-3 py-2.5 rounded-xl transition-all [word-break:normal] [overflow-wrap:normal] ${
+                          isActive
+                            ? 'bg-[#FAF9F5] text-[#0F2417] font-semibold border border-[#0F2417]/10'
+                            : 'hover:bg-stone-50 text-stone-700'
+                        }`}
+                      >
+                        <div className="w-7 h-7 rounded-lg bg-stone-100 flex items-center justify-center text-[#0F2417] shrink-0 mt-0.5">
+                          <Icon size={14} />
+                        </div>
+                        <div className="min-w-0">
+                          <span className="text-xs font-medium block text-[#0F2417]">
+                            {item.label}
+                          </span>
+                          <span className="text-[11px] text-stone-500 font-normal leading-tight block">
+                            {item.desc}
+                          </span>
+                        </div>
+                      </Link>
+                    )
+                  })}
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Direct Links for Quick Workflow on Wide Screens */}
+          <Link
+            href="/admin/team"
+            className={`hidden 2xl:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap shrink-0 [word-break:normal] [overflow-wrap:normal] transition-all active:scale-[0.98] ${
+              isRouteActive('/admin/team')
+                ? 'bg-[#0F2417] text-[#FAF9F5] font-semibold shadow-xs'
+                : 'text-[#0F2417]/70 hover:text-[#0F2417] hover:bg-[#0F2417]/5'
+            }`}
+          >
+            <Users size={14} className="shrink-0" />
+            <span>Team</span>
+          </Link>
+
+          <Link
+            href="/admin/settings"
+            className={`${navItemBaseClass} ${
+              isRouteActive('/admin/settings')
+                ? 'bg-[#0F2417] text-[#FAF9F5] font-semibold shadow-xs'
+                : 'text-[#0F2417]/70 hover:text-[#0F2417] hover:bg-[#0F2417]/5'
+            }`}
+          >
+            <Settings size={14} className="shrink-0" />
+            <span className="2xl:hidden">Settings</span>
+            <span className="hidden 2xl:inline">Settings &amp; Credentials</span>
+          </Link>
+        </nav>
 
         {/* Right side controls */}
         <div className="flex items-center gap-2 shrink-0">
@@ -399,7 +385,7 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
             <Link
               href="/admin/settings#credentials"
               title="Manage admin login credentials"
-              className="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 hover:bg-[#FAF9F5] text-xs text-[#0F2417]/80 transition-all active:scale-[0.98] max-w-[170px] whitespace-nowrap shrink-0 [word-break:normal] [overflow-wrap:normal]"
+              className="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 hover:bg-[#FAF9F5] text-xs text-[#0F2417]/80 transition-all active:scale-[0.98] max-w-[165px] whitespace-nowrap shrink-0 [word-break:normal] [overflow-wrap:normal]"
             >
               <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
               <span className="truncate font-medium">{adminEmail}</span>
@@ -417,11 +403,11 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
             <span className="hidden xl:inline">Sign Out</span>
           </button>
 
-          {/* Mobile menu trigger */}
+          {/* Mobile & Tablet menu trigger */}
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden min-w-[40px] min-h-[40px] inline-flex items-center justify-center rounded-xl border border-[#0F2417]/10 text-[#0F2417]/80 hover:bg-[#0F2417]/5 transition-all active:scale-95 cursor-pointer"
+            className="lg:hidden min-w-[40px] min-h-[40px] inline-flex items-center justify-center rounded-xl border border-[#0F2417]/10 text-[#0F2417]/80 hover:bg-[#0F2417]/5 transition-all active:scale-95 cursor-pointer"
             aria-label="Toggle navigation"
             aria-expanded={mobileMenuOpen}
           >
@@ -430,11 +416,11 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
         </div>
       </div>
 
-      {/* Mobile Quick-Access Horizontal Scroll Ribbon */}
+      {/* Mobile & Tablet Quick-Access Horizontal Scroll Ribbon */}
       {!mobileMenuOpen && (
         <nav
           aria-label="Mobile quick links"
-          className="md:hidden flex items-center gap-1.5 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden px-4 py-2 border-t border-[#0F2417]/[0.06] bg-[#FAF9F5]"
+          className="lg:hidden flex items-center gap-1.5 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden px-4 py-2 border-t border-[#0F2417]/[0.06] bg-[#FAF9F5]"
         >
           {quickLinks.map((link) => {
             const active = isRouteActive(link.href)
@@ -455,9 +441,9 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
         </nav>
       )}
 
-      {/* Touch-Optimized Mobile Drawer */}
+      {/* Touch-Optimized Mobile & Tablet Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-[#0F2417]/10 bg-[#FAF9F5] px-4 py-4 space-y-5 max-h-[calc(100dvh-4rem)] overflow-y-auto">
+        <div className="lg:hidden border-t border-[#0F2417]/10 bg-[#FAF9F5] px-4 py-4 space-y-5 max-h-[calc(100dvh-4rem)] overflow-y-auto">
           <div>
             <span className="text-[10px] uppercase font-mono tracking-widest text-[#0F2417]/50 px-2 block mb-1.5">
               Editorial Overview
