@@ -1,12 +1,12 @@
 ---
 source_file: "i18n/routing.ts"
 type: "code"
-community: "Site Header & Language Switcher"
+community: "Our Work, Privacy & About Content"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Site_Header__Language_Switcher
+  - community/Our_Work_Privacy__About_Content
 ---
 
 # Link
@@ -49,4 +49,4 @@ tags:
 - [[stakeholder-convenings-client.tsx]] - `imports` [EXTRACTED]
 - [[technical-studies-client.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Site_Header__Language_Switcher
+#graphify/code #graphify/EXTRACTED #community/Our_Work_Privacy__About_Content

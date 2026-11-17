@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/map/route.ts"
 type: "code"
-community: "Pan-African Impact Map & Admin UI"
+community: "Impact Map Service & API Routes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pan-African_Impact_Map__Admin_UI
+  - community/Impact_Map_Service__API_Routes
 ---
 
 # map/route.ts
@@ -21,4 +21,4 @@ tags:
 - [[map-service.ts]] - `imports_from` [EXTRACTED]
 - [[next_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI
+#graphify/code #graphify/EXTRACTED #community/Impact_Map_Service__API_Routes

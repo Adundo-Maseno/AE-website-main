@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Runtime Package Dependencies"
+community: "Admin Session, JWT & Credentials API"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Runtime_Package_Dependencies
+  - community/Admin_Session_JWT__Credentials_API
 ---
 
 # bcryptjs@^3.0.3
@@ -15,4 +15,4 @@ tags:
 - [[bcryptjs]] - `declares` [EXTRACTED]
 - [[dependencies]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Runtime_Package_Dependencies
+#graphify/code #graphify/EXTRACTED #community/Admin_Session_JWT__Credentials_API

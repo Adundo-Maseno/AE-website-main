@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Dev Dependencies & ESLint Config"
+community: "ESLint Next.js Configuration"
 location: "L59"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Dev_Dependencies__ESLint_Config
+  - community/ESLint_Nextjs_Configuration
 ---
 
 # eslint-config-next
@@ -16,4 +16,4 @@ tags:
 - [[eslint.config.mjs]] - `imports_from` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Dev_Dependencies__ESLint_Config
+#graphify/concept #graphify/EXTRACTED #community/ESLint_Nextjs_Configuration

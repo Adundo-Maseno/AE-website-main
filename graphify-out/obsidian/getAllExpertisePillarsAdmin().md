@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/expertise-service.ts"
 type: "code"
-community: "Protected Admin API Auth Guards"
-location: "L99"
+community: "Expertise Pillars Service & API Routes"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Protected_Admin_API_Auth_Guards
+  - community/Expertise_Pillars_Service__API_Routes
 ---
 
 # getAllExpertisePillarsAdmin()
@@ -17,4 +17,4 @@ tags:
 - [[expertiseroute.ts]] - `imports` [EXTRACTED]
 - [[isDatabaseConnected()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Protected_Admin_API_Auth_Guards
+#graphify/code #graphify/EXTRACTED #community/Expertise_Pillars_Service__API_Routes

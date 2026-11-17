@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/technical-studies/technical-studies-client.tsx"
 type: "code"
-community: "Technical Studies Pillar Page"
+community: "Our Work Pillar Client Views & Newsletter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Technical_Studies_Pillar_Page
+  - community/Our_Work_Pillar_Client_Views__Newsletter
 ---
 
 # technical-studies-client.tsx
@@ -26,4 +26,4 @@ tags:
 - [[routing.ts]] - `imports_from` [EXTRACTED]
 - [[technical-studiespage.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Technical_Studies_Pillar_Page
+#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Client_Views__Newsletter

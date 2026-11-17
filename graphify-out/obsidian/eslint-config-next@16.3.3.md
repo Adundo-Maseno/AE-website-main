@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Dev Dependencies & ESLint Config"
+community: "ESLint Next.js Configuration"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dev_Dependencies__ESLint_Config
+  - community/ESLint_Nextjs_Configuration
 ---
 
 # eslint-config-next@16.3.3
@@ -15,4 +15,4 @@ tags:
 - [[devDependencies]] - `contains` [EXTRACTED]
 - [[eslint-config-next]] - `declares` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dev_Dependencies__ESLint_Config
+#graphify/code #graphify/EXTRACTED #community/ESLint_Nextjs_Configuration

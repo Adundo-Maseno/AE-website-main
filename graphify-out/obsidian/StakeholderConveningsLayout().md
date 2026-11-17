@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/stakeholder-convenings/layout.tsx"
 type: "code"
-community: "Stakeholder Convenings Metadata Layout"
+community: "Localized Metadata Layouts (Contact, Insights, Team)"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Stakeholder_Convenings_Metadata_Layout
+  - community/Localized_Metadata_Layouts_Contact_Insights_Team
 ---
 
 # StakeholderConveningsLayout()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[stakeholder-conveningslayout.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Stakeholder_Convenings_Metadata_Layout
+#graphify/code #graphify/EXTRACTED #community/Localized_Metadata_Layouts_Contact_Insights_Team

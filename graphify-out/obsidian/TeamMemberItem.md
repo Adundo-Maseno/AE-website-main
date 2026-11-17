@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/team-service.ts"
 type: "code"
-community: "Team Service, Roster Admin & Showcase"
+community: "Admin Gallery, Partners, Projects & Sections"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Team_Service_Roster_Admin__Showcase
+  - community/Admin_Gallery_Partners_Projects__Sections
 ---
 
 # TeamMemberItem
@@ -18,4 +18,4 @@ tags:
 - [[team-service.ts]] - `contains` [EXTRACTED]
 - [[teampage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Team_Service_Roster_Admin__Showcase
+#graphify/code #graphify/EXTRACTED #community/Admin_Gallery_Partners_Projects__Sections

@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/image-uploader.tsx"
 type: "code"
-community: "Admin Partners & Sections Config"
+community: "Admin Gallery, Partners, Projects & Sections"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Partners__Sections_Config
+  - community/Admin_Gallery_Partners_Projects__Sections
 ---
 
 # image-uploader.tsx
@@ -24,4 +24,4 @@ tags:
 - [[shouldUnoptimize()_2]] - `contains` [EXTRACTED]
 - [[team-form-modal.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Partners__Sections_Config
+#graphify/code #graphify/EXTRACTED #community/Admin_Gallery_Partners_Projects__Sections

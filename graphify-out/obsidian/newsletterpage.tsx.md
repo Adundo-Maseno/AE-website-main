@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/newsletter/page.tsx"
 type: "code"
-community: "Contact Page & About Content"
+community: "Our Work Pillar Client Views & Newsletter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Contact_Page__About_Content
+  - community/Our_Work_Pillar_Client_Views__Newsletter
 ---
 
 # newsletter/page.tsx
@@ -20,4 +20,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[rolling-text.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Contact_Page__About_Content
+#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Client_Views__Newsletter

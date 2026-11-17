@@ -11,6 +11,8 @@ import { staticBeliefs } from '@/lib/services/beliefs-service'
 import { staticWhyAgriCards } from '@/lib/services/why-agri-service'
 import { staticExpertisePillars } from '@/lib/services/expertise-service'
 import { staticGalleryItems } from '@/lib/services/gallery-service'
+import { staticInsights } from '@/lib/services/insights-service'
+import { countrySeeds } from '@/components/country-data'
 import { SECTION_CONFIGS } from '@/lib/cms-sections-config'
 import { getSiteSettings } from '@/lib/services/settings-service'
 import SeedButton from '@/components/admin/seed-button'
@@ -45,8 +47,8 @@ export default async function AdminDashboardPage() {
   let resourcesCount = publicDownloads.length
   let teamCount = staticTeamMembers.length
   let projectsCount = staticProjects.length
-  let insightsCount = 3
-  let countriesCount = 12
+  let insightsCount = staticInsights.length
+  let countriesCount = countrySeeds.length
   let sectionsCount = SECTION_CONFIGS.length
   let partnersCount = staticPartners.length
   let beliefsCount = staticBeliefs.length

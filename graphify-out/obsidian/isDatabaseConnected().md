@@ -1,12 +1,12 @@
 ---
 source_file: "lib/db.ts"
 type: "code"
-community: "Home & About Page Data Hydration"
+community: "Home Page & Partners API Routes"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home__About_Page_Data_Hydration
+  - community/Home_Page__Partners_API_Routes
 ---
 
 # isDatabaseConnected()
@@ -54,4 +54,4 @@ tags:
 - [[verifyAdminCredentials()]] - `calls` [EXTRACTED]
 - [[why-agri-service.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home__About_Page_Data_Hydration
+#graphify/code #graphify/EXTRACTED #community/Home_Page__Partners_API_Routes

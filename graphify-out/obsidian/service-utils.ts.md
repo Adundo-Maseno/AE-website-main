@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/service-utils.ts"
 type: "code"
-community: "Home & About Page Data Hydration"
+community: "Expertise Pillars Service & API Routes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home__About_Page_Data_Hydration
+  - community/Expertise_Pillars_Service__API_Routes
 ---
 
 # service-utils.ts
@@ -27,4 +27,4 @@ tags:
 - [[team-service.ts]] - `imports_from` [EXTRACTED]
 - [[why-agri-service.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home__About_Page_Data_Hydration
+#graphify/code #graphify/EXTRACTED #community/Expertise_Pillars_Service__API_Routes

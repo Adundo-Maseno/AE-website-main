@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/insights-service.ts"
 type: "code"
-community: "Field Insights Admin & Public Showcase"
+community: "Field Insights Service, API & Public View"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Field_Insights_Admin__Public_Showcase
+  - community/Field_Insights_Service_API__Public_View
 ---
 
 # insights-service.ts
@@ -15,6 +15,7 @@ tags:
 - [[InsightItem]] - `contains` [EXTRACTED]
 - [[localeinsightspage.tsx]] - `imports_from` [EXTRACTED]
 - [[admininsightspage.tsx]] - `imports_from` [EXTRACTED]
+- [[adminpage.tsx]] - `imports_from` [EXTRACTED]
 - [[createInsight()]] - `contains` [EXTRACTED]
 - [[createSeedGuard()]] - `imports` [EXTRACTED]
 - [[db.ts]] - `imports_from` [EXTRACTED]
@@ -36,4 +37,4 @@ tags:
 - [[stripManagedFields()]] - `imports` [EXTRACTED]
 - [[updateInsight()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Field_Insights_Admin__Public_Showcase
+#graphify/code #graphify/EXTRACTED #community/Field_Insights_Service_API__Public_View

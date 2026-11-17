@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "Root Localized Layout, Fonts & Docs"
+community: "Admin Layout Shell & Header"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Root_Localized_Layout_Fonts__Docs
+  - community/Admin_Layout_Shell__Header
 ---
 
 # app_globals
@@ -14,4 +14,4 @@ tags:
 - [[localelayout.tsx]] - `imports_from` [EXTRACTED]
 - [[adminlayout.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Docs
+#graphify/concept #graphify/EXTRACTED #community/Admin_Layout_Shell__Header

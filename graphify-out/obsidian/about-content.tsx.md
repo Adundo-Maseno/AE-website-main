@@ -1,12 +1,12 @@
 ---
 source_file: "components/about-content.tsx"
 type: "code"
-community: "Contact Page & About Content"
+community: "Our Work, Privacy & About Content"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Contact_Page__About_Content
+  - community/Our_Work_Privacy__About_Content
 ---
 
 # about-content.tsx
@@ -32,4 +32,4 @@ tags:
 - [[scroll-accordion.tsx]] - `imports_from` [EXTRACTED]
 - [[services-bento-grid.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Contact_Page__About_Content
+#graphify/code #graphify/EXTRACTED #community/Our_Work_Privacy__About_Content

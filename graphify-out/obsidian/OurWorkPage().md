@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/page.tsx"
 type: "code"
-community: "Page Sections API & Client Advisory"
+community: "Our Work, Privacy & About Content"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Page_Sections_API__Client_Advisory
+  - community/Our_Work_Privacy__About_Content
 ---
 
 # OurWorkPage()
@@ -16,4 +16,4 @@ tags:
 - [[getPageSections()]] - `calls` [EXTRACTED]
 - [[our-workpage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Client_Advisory
+#graphify/code #graphify/EXTRACTED #community/Our_Work_Privacy__About_Content

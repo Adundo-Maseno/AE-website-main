@@ -1,12 +1,12 @@
 ---
 source_file: "components/ui/rolling-text.tsx"
 type: "code"
-community: "Contact Page & About Content"
+community: "Our Work Pillar Client Views & Newsletter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Contact_Page__About_Content
+  - community/Our_Work_Pillar_Client_Views__Newsletter
 ---
 
 # rolling-text.tsx
@@ -31,4 +31,4 @@ tags:
 - [[stakeholder-convenings-client.tsx]] - `imports_from` [EXTRACTED]
 - [[technical-studies-client.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Contact_Page__About_Content
+#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Client_Views__Newsletter

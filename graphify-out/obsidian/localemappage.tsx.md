@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/map/page.tsx"
 type: "code"
-community: "Impact Map Data, Merging & Controls"
+community: "Pan-African Impact Map & Admin UI"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Impact_Map_Data_Merging__Controls
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # [locale]/map/page.tsx
@@ -20,4 +20,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[revalidate_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Impact_Map_Data_Merging__Controls
+#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/gallery/page.tsx"
 type: "code"
-community: "Field Gallery Admin & Showcase"
+community: "Gallery Page & Office Plants Motion"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Field_Gallery_Admin__Showcase
+  - community/Gallery_Page__Office_Plants_Motion
 ---
 
 # [locale]/gallery/page.tsx
@@ -21,4 +21,4 @@ tags:
 - [[office-plants-gallery.tsx]] - `imports_from` [EXTRACTED]
 - [[revalidate_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Field_Gallery_Admin__Showcase
+#graphify/code #graphify/EXTRACTED #community/Gallery_Page__Office_Plants_Motion

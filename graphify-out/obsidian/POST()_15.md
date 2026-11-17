@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/why-agri/route.ts"
 type: "code"
-community: "Protected Admin API Auth Guards"
+community: "Why-Agri Service & API Routes"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Protected_Admin_API_Auth_Guards
+  - community/Why-Agri_Service__API_Routes
 ---
 
 # POST()
@@ -16,4 +16,4 @@ tags:
 - [[getSession()]] - `calls` [EXTRACTED]
 - [[why-agriroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Protected_Admin_API_Auth_Guards
+#graphify/code #graphify/EXTRACTED #community/Why-Agri_Service__API_Routes

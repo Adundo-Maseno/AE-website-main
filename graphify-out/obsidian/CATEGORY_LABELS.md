@@ -1,12 +1,12 @@
 ---
 source_file: "app/admin/partners/page.tsx"
 type: "code"
-community: "Admin Partners & Sections Config"
+community: "Admin Gallery, Partners, Projects & Sections"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Partners__Sections_Config
+  - community/Admin_Gallery_Partners_Projects__Sections
 ---
 
 # CATEGORY_LABELS
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[partnerspage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Partners__Sections_Config
+#graphify/code #graphify/EXTRACTED #community/Admin_Gallery_Partners_Projects__Sections

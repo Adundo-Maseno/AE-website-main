@@ -50,10 +50,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Impact Map Data, Merging & Controls]]
+- 10 edges to [[_COMMUNITY_Pan-African Impact Map & Admin UI]]
 - 5 edges to [[_COMMUNITY_Runtime Package Dependencies]]
-- 4 edges to [[_COMMUNITY_Contact Page & About Content]]
-- 3 edges to [[_COMMUNITY_Admin Settings UI, Footer & Why-Agri]]
+- 4 edges to [[_COMMUNITY_Our Work Pillar Client Views & Newsletter]]
+- 3 edges to [[_COMMUNITY_Resource Library & PDF Preview]]
 
 ## Top bridge nodes
 - [[command.tsx]] - degree 21, connects to 3 communities

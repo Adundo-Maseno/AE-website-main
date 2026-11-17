@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Impact Map Data, Merging & Controls"
+community: "Pan-African Impact Map & Admin UI"
 location: "L27"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Impact_Map_Data_Merging__Controls
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # @radix-ui/react-slot
@@ -17,4 +17,4 @@ tags:
 - [[button.tsx]] - `imports_from` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Impact_Map_Data_Merging__Controls
+#graphify/concept #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

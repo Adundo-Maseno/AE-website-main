@@ -1,12 +1,12 @@
 ---
 source_file: "components/map/map-auto-center.tsx"
 type: "code"
-community: "Impact Map Data, Merging & Controls"
+community: "Pan-African Impact Map & Admin UI"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Impact_Map_Data_Merging__Controls
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # MapAutoCenterProps
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[map-auto-center.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Impact_Map_Data_Merging__Controls
+#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

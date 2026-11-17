@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Admin Settings UI, Footer & Why-Agri"
+community: "Home Content & Why-Agri Experience"
 location: "L23"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Admin_Settings_UI_Footer__Why-Agri
+  - community/Home_Content__Why-Agri_Experience
 ---
 
 # @gsap/react
@@ -17,4 +17,4 @@ tags:
 - [[package.json]] - `imports` [EXTRACTED]
 - [[scroll-accordion.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Admin_Settings_UI_Footer__Why-Agri
+#graphify/concept #graphify/EXTRACTED #community/Home_Content__Why-Agri_Experience

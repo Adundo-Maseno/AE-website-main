@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import {
   Briefcase,
   Plus,
@@ -11,6 +12,7 @@ import {
   AlertCircle,
   Calendar,
   Building,
+  ExternalLink,
 } from 'lucide-react'
 import ProjectFormModal from '@/components/admin/project-form-modal'
 import { ProjectItem } from '@/lib/services/projects-service'
@@ -113,7 +115,17 @@ export default function AdminProjectsPage() {
           </p>
         </div>
 
-        <div className="flex items-center gap-3 w-full sm:w-auto">
+        <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
+          <Link
+            href={selectedPillar === 'All' ? '/en/our-work' : `/en/our-work/${selectedPillar}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-white border border-[#0F2417]/15 text-[#0F2417] hover:bg-[#0F2417]/5 text-xs font-semibold transition-all active:scale-[0.98] whitespace-nowrap shrink-0 [word-break:normal] [overflow-wrap:normal]"
+          >
+            <ExternalLink size={14} className="shrink-0" />
+            <span>View Live Pillar</span>
+          </Link>
+
           <button
             onClick={fetchProjects}
             className="p-2.5 rounded-full border border-black/10 hover:bg-black/[0.04] text-charcoal/70 transition-colors cursor-pointer"

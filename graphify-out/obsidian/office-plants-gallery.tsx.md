@@ -1,12 +1,12 @@
 ---
 source_file: "components/motion/office-plants-gallery.tsx"
 type: "code"
-community: "Office Plants Motion Gallery"
+community: "Gallery Page & Office Plants Motion"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Office_Plants_Motion_Gallery
+  - community/Gallery_Page__Office_Plants_Motion
 ---
 
 # office-plants-gallery.tsx
@@ -26,4 +26,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[three]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Office_Plants_Motion_Gallery
+#graphify/code #graphify/EXTRACTED #community/Gallery_Page__Office_Plants_Motion

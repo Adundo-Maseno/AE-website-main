@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/expertise-service.ts"
 type: "code"
-community: "Admin Expertise UI & Bento Grid"
+community: "Admin Expertise Page & Form Modal"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Expertise_UI__Bento_Grid
+  - community/Admin_Expertise_Page__Form_Modal
 ---
 
 # ExpertisePillarData
@@ -21,4 +21,4 @@ tags:
 - [[expertisepage.tsx]] - `imports` [EXTRACTED]
 - [[services-bento-grid.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Expertise_UI__Bento_Grid
+#graphify/code #graphify/EXTRACTED #community/Admin_Expertise_Page__Form_Modal

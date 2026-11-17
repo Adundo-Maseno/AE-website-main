@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/projects-service.ts"
 type: "code"
-community: "Projects Service & Capacity Building"
+community: "Protected Admin API Routes (Projects & Gallery)"
 location: "L551"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Projects_Service__Capacity_Building
+  - community/Protected_Admin_API_Routes_Projects__Gallery
 ---
 
 # updateProject()
@@ -19,4 +19,4 @@ tags:
 - [[resolveProjectId()]] - `calls` [EXTRACTED]
 - [[stripManagedFields()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Projects_Service__Capacity_Building
+#graphify/code #graphify/EXTRACTED #community/Protected_Admin_API_Routes_Projects__Gallery

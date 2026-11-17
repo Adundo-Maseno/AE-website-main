@@ -1,11 +1,11 @@
 ---
 source_file: "D:/AE-website-main/README.md"
 type: "document"
-community: "Root Localized Layout, Fonts & Docs"
+community: "Our Work Pillar Client Views & Newsletter"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Root_Localized_Layout_Fonts__Docs
+  - community/Our_Work_Pillar_Client_Views__Newsletter
 ---
 
 # High-Performance Motion Design
@@ -16,4 +16,4 @@ tags:
 - [[RollingText()]] - `references` [EXTRACTED]
 - [[ScrollAccordion()]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Docs
+#graphify/document #graphify/EXTRACTED #community/Our_Work_Pillar_Client_Views__Newsletter

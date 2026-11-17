@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/beliefs-service.ts"
 type: "code"
-community: "Home & About Page Data Hydration"
+community: "Home Page & Partners API Routes"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home__About_Page_Data_Hydration
+  - community/Home_Page__Partners_API_Routes
 ---
 
 # getBeliefs()
@@ -17,4 +17,4 @@ tags:
 - [[beliefs-service.ts]] - `contains` [EXTRACTED]
 - [[isDatabaseConnected()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home__About_Page_Data_Hydration
+#graphify/code #graphify/EXTRACTED #community/Home_Page__Partners_API_Routes

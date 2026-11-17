@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/resource-form-modal.tsx"
 type: "code"
-community: "Resource Library & PDF Preview"
+community: "Resources Admin & PDF Uploader"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resource_Library__PDF_Preview
+  - community/Resources_Admin__PDF_Uploader
 ---
 
 # CATEGORIES
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[resource-form-modal.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resource_Library__PDF_Preview
+#graphify/code #graphify/EXTRACTED #community/Resources_Admin__PDF_Uploader

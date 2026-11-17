@@ -1,11 +1,11 @@
 ---
 source_file: "D:/AE-website-main/README.md"
 type: "document"
-community: "Impact Map Data, Merging & Controls"
+community: "Next.js Config, Deployment & Agent Rules"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Impact_Map_Data_Merging__Controls
+  - community/Nextjs_Config_Deployment__Agent_Rules
 ---
 
 # Interactive Mapbox Map
@@ -16,4 +16,4 @@ tags:
 - [[Next.js 16 Web Application Stack]] - `references` [EXTRACTED]
 - [[mergeCountriesWithCms()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Impact_Map_Data_Merging__Controls
+#graphify/document #graphify/EXTRACTED #community/Nextjs_Config_Deployment__Agent_Rules

@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/gallery-service.ts"
 type: "code"
-community: "Field Gallery Admin & Showcase"
+community: "Admin Dashboard & DB Seeding"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Field_Gallery_Admin__Showcase
+  - community/Admin_Dashboard__DB_Seeding
 ---
 
 # staticGalleryItems
@@ -16,4 +16,4 @@ tags:
 - [[gallery-service.ts]] - `contains` [EXTRACTED]
 - [[seedroute.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Field_Gallery_Admin__Showcase
+#graphify/code #graphify/EXTRACTED #community/Admin_Dashboard__DB_Seeding

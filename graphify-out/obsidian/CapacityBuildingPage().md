@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/capacity-building/page.tsx"
 type: "code"
-community: "Projects Service & Capacity Building"
+community: "Public Page Data Hydration & Revalidation"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Projects_Service__Capacity_Building
+  - community/Public_Page_Data_Hydration__Revalidation
 ---
 
 # CapacityBuildingPage()
@@ -17,4 +17,4 @@ tags:
 - [[getPageSections()]] - `calls` [EXTRACTED]
 - [[getProjects()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Projects_Service__Capacity_Building
+#graphify/code #graphify/EXTRACTED #community/Public_Page_Data_Hydration__Revalidation

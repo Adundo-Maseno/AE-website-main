@@ -1,12 +1,12 @@
 ---
 source_file: "lib/auth.ts"
 type: "code"
-community: "Protected Admin API Auth Guards"
+community: "Protected Admin API Routes (Projects & Gallery)"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Protected_Admin_API_Auth_Guards
+  - community/Protected_Admin_API_Routes_Projects__Gallery
 ---
 
 # getSession()
@@ -98,4 +98,4 @@ tags:
 - [[why-agriidroute.ts]] - `imports` [EXTRACTED]
 - [[why-agriroute.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Protected_Admin_API_Auth_Guards
+#graphify/code #graphify/EXTRACTED #community/Protected_Admin_API_Routes_Projects__Gallery

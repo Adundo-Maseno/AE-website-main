@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/project-form-modal.tsx"
 type: "code"
-community: "Our Work Pillar Client Views & Admin"
+community: "Admin Gallery, Partners, Projects & Sections"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Pillar_Client_Views__Admin
+  - community/Admin_Gallery_Partners_Projects__Sections
 ---
 
 # PROJECT_CATEGORIES
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[project-form-modal.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Client_Views__Admin
+#graphify/code #graphify/EXTRACTED #community/Admin_Gallery_Partners_Projects__Sections

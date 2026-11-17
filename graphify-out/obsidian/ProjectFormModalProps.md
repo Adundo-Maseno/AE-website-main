@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/project-form-modal.tsx"
 type: "code"
-community: "Our Work Pillar Client Views & Admin"
+community: "Our Work Pillar Client Views & Newsletter"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Our_Work_Pillar_Client_Views__Admin
+  - community/Our_Work_Pillar_Client_Views__Newsletter
 ---
 
 # ProjectFormModalProps
@@ -15,4 +15,4 @@ tags:
 - [[ProjectItem]] - `references` [EXTRACTED]
 - [[project-form-modal.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Client_Views__Admin
+#graphify/code #graphify/EXTRACTED #community/Our_Work_Pillar_Client_Views__Newsletter

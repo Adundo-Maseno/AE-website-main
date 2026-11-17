@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/terms/page.tsx"
 type: "code"
-community: "Admin Login & SEO Route Handlers"
+community: "Sections API, Terms & SEO Routes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Login__SEO_Route_Handlers
+  - community/Sections_API_Terms__SEO_Routes
 ---
 
 # terms/page.tsx
@@ -15,4 +15,4 @@ tags:
 - [[TermsPage()]] - `contains` [EXTRACTED]
 - [[next_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Login__SEO_Route_Handlers
+#graphify/code #graphify/EXTRACTED #community/Sections_API_Terms__SEO_Routes

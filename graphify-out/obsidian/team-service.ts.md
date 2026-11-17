@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/team-service.ts"
 type: "code"
-community: "Team Service, Roster Admin & Showcase"
+community: "Team Service & API Routes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Team_Service_Roster_Admin__Showcase
+  - community/Team_Service__API_Routes
 ---
 
 # team-service.ts
@@ -37,4 +37,4 @@ tags:
 - [[teamroute.ts]] - `imports_from` [EXTRACTED]
 - [[updateTeamMember()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Team_Service_Roster_Admin__Showcase
+#graphify/code #graphify/EXTRACTED #community/Team_Service__API_Routes

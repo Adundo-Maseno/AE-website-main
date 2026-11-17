@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/project-implementation/layout.tsx"
 type: "code"
-community: "Project Implementation Metadata Layout"
+community: "Localized Metadata Layouts (Contact, Insights, Team)"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Implementation_Metadata_Layout
+  - community/Localized_Metadata_Layouts_Contact_Insights_Team
 ---
 
 # generateMetadata()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[project-implementationlayout.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Implementation_Metadata_Layout
+#graphify/code #graphify/EXTRACTED #community/Localized_Metadata_Layouts_Contact_Insights_Team

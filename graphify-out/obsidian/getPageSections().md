@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/page-sections-service.ts"
 type: "code"
-community: "Page Sections API & Client Advisory"
+community: "Public Page Data Hydration & Revalidation"
 location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Page_Sections_API__Client_Advisory
+  - community/Public_Page_Data_Hydration__Revalidation
 ---
 
 # getPageSections()
@@ -39,4 +39,4 @@ tags:
 - [[stakeholder-conveningspage.tsx]] - `imports` [EXTRACTED]
 - [[technical-studiespage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Client_Advisory
+#graphify/code #graphify/EXTRACTED #community/Public_Page_Data_Hydration__Revalidation

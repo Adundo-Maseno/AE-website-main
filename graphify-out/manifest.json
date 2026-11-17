@@ -2040,10 +2040,10 @@
     "semantic_hash": "63754ccdb7ff80f9232a9b455da9cf1b"
   },
   "D:\\AE-website-main\\app\\[locale]\\our-work\\client-advisory\\client-advisory-client.tsx": {
-    "mtime": 1794313466.6429152,
-    "seen": 1794808219.946114,
-    "ast_hash": "261da7dc422ae1dd24ce4cd9ced25e37",
-    "semantic_hash": "261da7dc422ae1dd24ce4cd9ced25e37"
+    "mtime": 1794896539.6154065,
+    "seen": 1794896680.686362,
+    "ast_hash": "7a8abb6aea6a4ec88b4c79611fc055a8",
+    "semantic_hash": "7a8abb6aea6a4ec88b4c79611fc055a8"
   },
   "D:\\AE-website-main\\app\\[locale]\\our-work\\client-advisory\\layout.tsx": {
     "mtime": 1794241852.469038,
@@ -2058,10 +2058,10 @@
     "semantic_hash": "7ae140abc4da548f92a97f4164f8ef3f"
   },
   "D:\\AE-website-main\\app\\[locale]\\our-work\\digital-platforms\\digital-platforms-client.tsx": {
-    "mtime": 1794806246.6452153,
-    "seen": 1794808219.946124,
-    "ast_hash": "f0c8525434c31611c57c1c8af551c1b5",
-    "semantic_hash": "f0c8525434c31611c57c1c8af551c1b5"
+    "mtime": 1794895463.3772402,
+    "seen": 1794896680.686372,
+    "ast_hash": "dd30e256d40dfd728fb7f62cf3ac8f13",
+    "semantic_hash": "dd30e256d40dfd728fb7f62cf3ac8f13"
   },
   "D:\\AE-website-main\\app\\[locale]\\our-work\\digital-platforms\\layout.tsx": {
     "mtime": 1794241852.4922464,
@@ -2100,10 +2100,10 @@
     "semantic_hash": "a85bdeaefefb7410a74f955942944129"
   },
   "D:\\AE-website-main\\app\\[locale]\\our-work\\project-implementation\\project-implementation-client.tsx": {
-    "mtime": 1794313467.6761422,
-    "seen": 1794808219.946133,
-    "ast_hash": "e99b77b7e3b523da91ed2ace9aeb7758",
-    "semantic_hash": "e99b77b7e3b523da91ed2ace9aeb7758"
+    "mtime": 1794896544.4141395,
+    "seen": 1794896680.6863914,
+    "ast_hash": "8b452d5fe325f396d48003b5e3de04d3",
+    "semantic_hash": "8b452d5fe325f396d48003b5e3de04d3"
   },
   "D:\\AE-website-main\\app\\[locale]\\our-work\\stakeholder-convenings\\layout.tsx": {
     "mtime": 1794241852.5320423,
@@ -2118,10 +2118,10 @@
     "semantic_hash": "d6d05517042a2e19c01cdf3488ff9e96"
   },
   "D:\\AE-website-main\\app\\[locale]\\our-work\\stakeholder-convenings\\stakeholder-convenings-client.tsx": {
-    "mtime": 1794313468.1089888,
-    "seen": 1794808219.9461365,
-    "ast_hash": "ebca43e8144eb5510d6998fa248cf201",
-    "semantic_hash": "ebca43e8144eb5510d6998fa248cf201"
+    "mtime": 1794896549.0769534,
+    "seen": 1794896680.6863997,
+    "ast_hash": "6877aac6bb581ddf0a98108b5fcac4ce",
+    "semantic_hash": "6877aac6bb581ddf0a98108b5fcac4ce"
   },
   "D:\\AE-website-main\\app\\[locale]\\our-work\\technical-studies\\layout.tsx": {
     "mtime": 1794241852.5628734,
@@ -2178,16 +2178,16 @@
     "semantic_hash": "1486cdae8975f62a9aa9a337890de3b8"
   },
   "D:\\AE-website-main\\app\\admin\\expertise\\page.tsx": {
-    "mtime": 1794301517.3127744,
-    "seen": 1794808219.9461486,
-    "ast_hash": "88e36b8e8befaedd30c2cd5c60748e45",
-    "semantic_hash": "88e36b8e8befaedd30c2cd5c60748e45"
+    "mtime": 1794896490.648345,
+    "seen": 1794896680.6864283,
+    "ast_hash": "b12bd80c0f9f865ad4ac91066d81458e",
+    "semantic_hash": "b12bd80c0f9f865ad4ac91066d81458e"
   },
   "D:\\AE-website-main\\app\\admin\\gallery\\page.tsx": {
-    "mtime": 1794807723.3248122,
-    "seen": 1794808219.9461493,
-    "ast_hash": "44d5128e5f8bbbd5d31f388275efef13",
-    "semantic_hash": "44d5128e5f8bbbd5d31f388275efef13"
+    "mtime": 1794896484.0085337,
+    "seen": 1794896680.6864312,
+    "ast_hash": "01db437b6c787a03f90d15137ad71320",
+    "semantic_hash": "01db437b6c787a03f90d15137ad71320"
   },
   "D:\\AE-website-main\\app\\admin\\insights\\page.tsx": {
     "mtime": 1794298255.596847,
@@ -2196,16 +2196,16 @@
     "semantic_hash": "718d8b79d6436c28e9b9d8fc681549f8"
   },
   "D:\\AE-website-main\\app\\admin\\layout.tsx": {
-    "mtime": 1794288799.8884792,
-    "seen": 1794808219.946152,
-    "ast_hash": "5e146fe2b5e14bf3f3d0e20260477fdb",
-    "semantic_hash": "5e146fe2b5e14bf3f3d0e20260477fdb"
+    "mtime": 1794812098.8081067,
+    "seen": 1794896680.6864371,
+    "ast_hash": "1868e101b46cda89a5b59c8299ac8e80",
+    "semantic_hash": "1868e101b46cda89a5b59c8299ac8e80"
   },
   "D:\\AE-website-main\\app\\admin\\login\\page.tsx": {
-    "mtime": 1794807558.8818803,
-    "seen": 1794808219.9461532,
-    "ast_hash": "0deae705f04e597461edef33bd79f928",
-    "semantic_hash": "0deae705f04e597461edef33bd79f928"
+    "mtime": 1794812155.000025,
+    "seen": 1794896680.6864398,
+    "ast_hash": "c63fa41c12384c7914332b919ff12e9b",
+    "semantic_hash": "c63fa41c12384c7914332b919ff12e9b"
   },
   "D:\\AE-website-main\\app\\admin\\map\\page.tsx": {
     "mtime": 1794298214.1107018,
@@ -2214,10 +2214,10 @@
     "semantic_hash": "1b66c5760261ba1e481169bea7aabc95"
   },
   "D:\\AE-website-main\\app\\admin\\page.tsx": {
-    "mtime": 1794811445.6985643,
-    "seen": 1794811448.4172087,
-    "ast_hash": "aee9a23eafb22b3d97fb24ae7268b438",
-    "semantic_hash": "aee9a23eafb22b3d97fb24ae7268b438"
+    "mtime": 1794896470.3670847,
+    "seen": 1794896680.6864448,
+    "ast_hash": "b4abb61f132aec8fac1af370eee1f58f",
+    "semantic_hash": "b4abb61f132aec8fac1af370eee1f58f"
   },
   "D:\\AE-website-main\\app\\admin\\partners\\page.tsx": {
     "mtime": 1794807630.2957213,
@@ -2226,10 +2226,10 @@
     "semantic_hash": "7bb8d067754fd2b1191f8557d3bb77b5"
   },
   "D:\\AE-website-main\\app\\admin\\projects\\page.tsx": {
-    "mtime": 1794313468.7825465,
-    "seen": 1794808219.946158,
-    "ast_hash": "ff1d23479bfe372d47474b5767cd7da2",
-    "semantic_hash": "ff1d23479bfe372d47474b5767cd7da2"
+    "mtime": 1794896474.2300944,
+    "seen": 1794896680.6864498,
+    "ast_hash": "de670512874aa258c9d5fcca1b7d9745",
+    "semantic_hash": "de670512874aa258c9d5fcca1b7d9745"
   },
   "D:\\AE-website-main\\app\\admin\\resources\\page.tsx": {
     "mtime": 1794292862.3890824,
@@ -2478,10 +2478,10 @@
     "semantic_hash": "86be0e864616eecd89c715007a4c80f3"
   },
   "D:\\AE-website-main\\components\\admin\\admin-header.tsx": {
-    "mtime": 1794811203.7468534,
-    "seen": 1794811448.417377,
-    "ast_hash": "eacb8a0fee9740a4f72e658ab68efb52",
-    "semantic_hash": "eacb8a0fee9740a4f72e658ab68efb52"
+    "mtime": 1794813373.2085633,
+    "seen": 1794896680.6865623,
+    "ast_hash": "22c6f0a8b7113c9d737d3b1d2add82e6",
+    "semantic_hash": "22c6f0a8b7113c9d737d3b1d2add82e6"
   },
   "D:\\AE-website-main\\components\\admin\\belief-form-modal.tsx": {
     "mtime": 1794807622.4868908,
@@ -2598,16 +2598,16 @@
     "semantic_hash": "1807a499c842d7cdfbdd325ad2d0398e"
   },
   "D:\\AE-website-main\\components\\header.tsx": {
-    "mtime": 1794811166.978856,
-    "seen": 1794811448.417451,
+    "mtime": 1794811448.7209163,
+    "seen": 1794896680.6866157,
     "ast_hash": "ba097e276156f5ff874c4337e7f1d6c0",
     "semantic_hash": "ba097e276156f5ff874c4337e7f1d6c0"
   },
   "D:\\AE-website-main\\components\\home-content.tsx": {
-    "mtime": 1794806246.6560102,
-    "seen": 1794808219.9462333,
-    "ast_hash": "8249e4b0bfe5ec358e1c3a8486dfe58d",
-    "semantic_hash": "8249e4b0bfe5ec358e1c3a8486dfe58d"
+    "mtime": 1794895452.8185701,
+    "seen": 1794896680.6866186,
+    "ast_hash": "960adedc579bd56d04e00b76cc73860c",
+    "semantic_hash": "960adedc579bd56d04e00b76cc73860c"
   },
   "D:\\AE-website-main\\components\\impact\\impact-page-content.tsx": {
     "mtime": 1794807806.2066085,
@@ -2742,10 +2742,10 @@
     "semantic_hash": "f4a90d9b4e7b3a855d3e509c0f7e4d23"
   },
   "D:\\AE-website-main\\components\\motion\\services-bento-grid.tsx": {
-    "mtime": 1794806246.6560102,
-    "seen": 1794808219.9462597,
-    "ast_hash": "8c6d352832b5b0fc9f2c0b3f7093ccf2",
-    "semantic_hash": "8c6d352832b5b0fc9f2c0b3f7093ccf2"
+    "mtime": 1794895460.5859902,
+    "seen": 1794896680.6866772,
+    "ast_hash": "9f91d4fecde83db11eafda7d08507af1",
+    "semantic_hash": "9f91d4fecde83db11eafda7d08507af1"
   },
   "D:\\AE-website-main\\components\\motion\\why-agri-experience.tsx": {
     "mtime": 1794300773.5728588,
@@ -2838,8 +2838,8 @@
     "semantic_hash": "08ad1a7ea29c650f54018049fe223335"
   },
   "D:\\AE-website-main\\lib\\auth.ts": {
-    "mtime": 1794811111.465147,
-    "seen": 1794811448.4175913,
+    "mtime": 1794811448.7947154,
+    "seen": 1794896680.6867177,
     "ast_hash": "2ecb19a643c42103041a367fdfc489eb",
     "semantic_hash": "2ecb19a643c42103041a367fdfc489eb"
   },
@@ -2862,16 +2862,16 @@
     "semantic_hash": "d8cf58baa27a47195d14637779e5c402"
   },
   "D:\\AE-website-main\\lib\\services\\beliefs-service.ts": {
-    "mtime": 1794807708.4035437,
-    "seen": 1794808219.946283,
-    "ast_hash": "18cd1ca4efa7ad3d386d127f2d55fdd7",
-    "semantic_hash": "18cd1ca4efa7ad3d386d127f2d55fdd7"
+    "mtime": 1794895519.7499144,
+    "seen": 1794896680.686731,
+    "ast_hash": "a078402c27bfcfdf460ea2b5516aa277",
+    "semantic_hash": "a078402c27bfcfdf460ea2b5516aa277"
   },
   "D:\\AE-website-main\\lib\\services\\expertise-service.ts": {
-    "mtime": 1794807716.4407465,
-    "seen": 1794808219.946284,
-    "ast_hash": "a1f8c801d8100e1197f03b2662c2a7bf",
-    "semantic_hash": "a1f8c801d8100e1197f03b2662c2a7bf"
+    "mtime": 1794895516.5753086,
+    "seen": 1794896680.6867332,
+    "ast_hash": "6c267b4dda9f26469024569311bc1050",
+    "semantic_hash": "6c267b4dda9f26469024569311bc1050"
   },
   "D:\\AE-website-main\\lib\\services\\gallery-service.ts": {
     "mtime": 1794807795.467869,
@@ -2880,10 +2880,10 @@
     "semantic_hash": "1fb6657ca7226dfe2f5764fb9fc81693"
   },
   "D:\\AE-website-main\\lib\\services\\insights-service.ts": {
-    "mtime": 1794807789.5993302,
-    "seen": 1794808219.946286,
-    "ast_hash": "24db2bd7000c54197c1d757f33049cb4",
-    "semantic_hash": "24db2bd7000c54197c1d757f33049cb4"
+    "mtime": 1794895513.3341506,
+    "seen": 1794896680.6867387,
+    "ast_hash": "333b757a50f9dd8e9d6f6be51b225c2a",
+    "semantic_hash": "333b757a50f9dd8e9d6f6be51b225c2a"
   },
   "D:\\AE-website-main\\lib\\services\\map-service.ts": {
     "mtime": 1794807792.3495426,
@@ -2898,16 +2898,16 @@
     "semantic_hash": "ad7cfec466919e6f4980855f1f5caaf5"
   },
   "D:\\AE-website-main\\lib\\services\\partners-service.ts": {
-    "mtime": 1794807705.2148502,
-    "seen": 1794808219.9462898,
-    "ast_hash": "17bfcbb3038611b89b89217c16690cbf",
-    "semantic_hash": "17bfcbb3038611b89b89217c16690cbf"
+    "mtime": 1794895514.7007196,
+    "seen": 1794896680.6867468,
+    "ast_hash": "b4b52191e1ec4e812228dac9f8493523",
+    "semantic_hash": "b4b52191e1ec4e812228dac9f8493523"
   },
   "D:\\AE-website-main\\lib\\services\\projects-service.ts": {
-    "mtime": 1794807780.2608144,
-    "seen": 1794808219.9462912,
-    "ast_hash": "82d4831582c2822d772d6dd67e569e0e",
-    "semantic_hash": "82d4831582c2822d772d6dd67e569e0e"
+    "mtime": 1794896515.8730285,
+    "seen": 1794896680.6867495,
+    "ast_hash": "711fd8690f09327c573055021d8e7643",
+    "semantic_hash": "711fd8690f09327c573055021d8e7643"
   },
   "D:\\AE-website-main\\lib\\services\\resources-service.ts": {
     "mtime": 1794807786.5942657,
@@ -2922,22 +2922,22 @@
     "semantic_hash": "84f0c23680b4e331f681efc447776b1c"
   },
   "D:\\AE-website-main\\lib\\services\\settings-service.ts": {
-    "mtime": 1794811134.783425,
-    "seen": 1794811448.4176729,
+    "mtime": 1794811448.9320817,
+    "seen": 1794896680.6867585,
     "ast_hash": "1dbd87216797b1cb9f21032b2cd95f66",
     "semantic_hash": "1dbd87216797b1cb9f21032b2cd95f66"
   },
   "D:\\AE-website-main\\lib\\services\\team-service.ts": {
-    "mtime": 1794807783.290323,
-    "seen": 1794808219.946297,
-    "ast_hash": "7d6fb170455facb2e14864a824074cc1",
-    "semantic_hash": "7d6fb170455facb2e14864a824074cc1"
+    "mtime": 1794895511.750213,
+    "seen": 1794896680.686761,
+    "ast_hash": "8afd1b57c21e920d8051c0cd1c379b71",
+    "semantic_hash": "8afd1b57c21e920d8051c0cd1c379b71"
   },
   "D:\\AE-website-main\\lib\\services\\why-agri-service.ts": {
-    "mtime": 1794807711.6800797,
-    "seen": 1794808219.9462981,
-    "ast_hash": "755306423433fecf5c5132db9787b1e7",
-    "semantic_hash": "755306423433fecf5c5132db9787b1e7"
+    "mtime": 1794895518.3130314,
+    "seen": 1794896680.6867635,
+    "ast_hash": "72dbc60154bdc0f7bde879d1e141f3b9",
+    "semantic_hash": "72dbc60154bdc0f7bde879d1e141f3b9"
   },
   "D:\\AE-website-main\\lib\\utils.ts": {
     "mtime": 1794241853.0709908,

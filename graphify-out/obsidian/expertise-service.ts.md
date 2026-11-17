@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/expertise-service.ts"
 type: "code"
-community: "Home & About Page Data Hydration"
+community: "Expertise Pillars Service & API Routes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home__About_Page_Data_Hydration
+  - community/Expertise_Pillars_Service__API_Routes
 ---
 
 # expertise-service.ts
@@ -39,4 +39,4 @@ tags:
 - [[stripManagedFields()]] - `imports` [EXTRACTED]
 - [[updateExpertisePillar()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home__About_Page_Data_Hydration
+#graphify/code #graphify/EXTRACTED #community/Expertise_Pillars_Service__API_Routes

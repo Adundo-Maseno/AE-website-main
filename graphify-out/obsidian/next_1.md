@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Admin Login & SEO Route Handlers"
+community: "Sections API, Terms & SEO Routes"
 location: "L39"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Admin_Login__SEO_Route_Handlers
+  - community/Sections_API_Terms__SEO_Routes
 ---
 
 # next
@@ -37,6 +37,7 @@ tags:
 - [[email-previewroute.ts]] - `imports_from` [EXTRACTED]
 - [[expertise-service.ts]] - `imports_from` [EXTRACTED]
 - [[expertiseidroute.ts]] - `imports_from` [EXTRACTED]
+- [[expertisepage.tsx]] - `imports_from` [EXTRACTED]
 - [[expertiseroute.ts]] - `imports_from` [EXTRACTED]
 - [[footer.tsx]] - `imports_from` [EXTRACTED]
 - [[gallery-itemsidroute.ts]] - `imports_from` [EXTRACTED]
@@ -76,6 +77,7 @@ tags:
 - [[project-implementationlayout.tsx]] - `imports_from` [EXTRACTED]
 - [[projects-service.ts]] - `imports_from` [EXTRACTED]
 - [[projectsidroute.ts]] - `imports_from` [EXTRACTED]
+- [[projectspage.tsx]] - `imports_from` [EXTRACTED]
 - [[projectsroute.ts]] - `imports_from` [EXTRACTED]
 - [[resources-content.tsx]] - `imports_from` [EXTRACTED]
 - [[resources-service.ts]] - `imports_from` [EXTRACTED]
@@ -108,4 +110,4 @@ tags:
 - [[why-agriidroute.ts]] - `imports_from` [EXTRACTED]
 - [[why-agriroute.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Admin_Login__SEO_Route_Handlers
+#graphify/concept #graphify/EXTRACTED #community/Sections_API_Terms__SEO_Routes

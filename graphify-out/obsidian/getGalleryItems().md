@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/gallery-service.ts"
 type: "code"
-community: "Field Gallery Admin & Showcase"
+community: "Gallery Page & Office Plants Motion"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Field_Gallery_Admin__Showcase
+  - community/Gallery_Page__Office_Plants_Motion
 ---
 
 # getGalleryItems()
@@ -19,4 +19,4 @@ tags:
 - [[gallery-service.ts]] - `contains` [EXTRACTED]
 - [[isDatabaseConnected()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Field_Gallery_Admin__Showcase
+#graphify/code #graphify/EXTRACTED #community/Gallery_Page__Office_Plants_Motion

@@ -1,12 +1,12 @@
 ---
 source_file: "components/insights-content.tsx"
 type: "code"
-community: "Field Insights Admin & Public Showcase"
+community: "Our Work, Privacy & About Content"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Field_Insights_Admin__Public_Showcase
+  - community/Our_Work_Privacy__About_Content
 ---
 
 # insights-content.tsx
@@ -22,4 +22,4 @@ tags:
 - [[next-intl]] - `imports_from` [EXTRACTED]
 - [[routing.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Field_Insights_Admin__Public_Showcase
+#graphify/code #graphify/EXTRACTED #community/Our_Work_Privacy__About_Content

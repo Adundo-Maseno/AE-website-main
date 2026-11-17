@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/projects-service.ts"
 type: "code"
-community: "Projects Service & Capacity Building"
+community: "Protected Admin API Routes (Projects & Gallery)"
 location: "L472"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Projects_Service__Capacity_Building
+  - community/Protected_Admin_API_Routes_Projects__Gallery
 ---
 
 # seedGuard
@@ -15,4 +15,4 @@ tags:
 - [[ensureSeeded()_6]] - `calls` [EXTRACTED]
 - [[projects-service.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Projects_Service__Capacity_Building
+#graphify/code #graphify/EXTRACTED #community/Protected_Admin_API_Routes_Projects__Gallery

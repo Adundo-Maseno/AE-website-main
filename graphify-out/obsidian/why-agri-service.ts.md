@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/why-agri-service.ts"
 type: "code"
-community: "Home & About Page Data Hydration"
+community: "Why-Agri Service & API Routes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home__About_Page_Data_Hydration
+  - community/Why-Agri_Service__API_Routes
 ---
 
 # why-agri-service.ts
@@ -39,4 +39,4 @@ tags:
 - [[why-agripage.tsx]] - `imports_from` [EXTRACTED]
 - [[why-agriroute.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home__About_Page_Data_Hydration
+#graphify/code #graphify/EXTRACTED #community/Why-Agri_Service__API_Routes

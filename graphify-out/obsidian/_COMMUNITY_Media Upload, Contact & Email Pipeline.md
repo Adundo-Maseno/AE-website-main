@@ -1,13 +1,13 @@
 ---
 type: community
 cohesion: 0.06
-members: 51
+members: 49
 ---
 
 # Media Upload, Contact & Email Pipeline
 
 **Cohesion:** 0.06 - loosely connected
-**Members:** 51 nodes
+**Members:** 49 nodes
 
 ## Members
 - [[ALLOWED_MIME_TYPES]] - code - app/api/admin/upload/route.ts
@@ -39,8 +39,6 @@ members: 51
 - [[https]] - code - scripts/auto-translate.js
 - [[logoUri]] - code - scripts/preview-emails.js
 - [[main()]] - code - scripts/auto-translate.js
-- [[nodemailer]] - concept - package.json
-- [[nodemailer@9.1.1]] - code - package.json
 - [[outDir]] - code - scripts/preview-emails.js
 - [[path]] - code - scripts/preview-emails.js
 - [[pdf-galleryroute.ts]] - code - app/api/admin/pdf-gallery/route.ts
@@ -70,15 +68,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_Protected Admin API Auth Guards]]
+- 6 edges to [[_COMMUNITY_Protected Admin API Routes (Projects & Gallery)]]
 - 5 edges to [[_COMMUNITY_Admin Session, JWT & Credentials API]]
-- 5 edges to [[_COMMUNITY_Admin Login & SEO Route Handlers]]
-- 2 edges to [[_COMMUNITY_Site Settings & Feature Flag Persistence]]
-- 1 edge to [[_COMMUNITY_Site Header & Language Switcher]]
-- 1 edge to [[_COMMUNITY_Dev Dependencies & ESLint Config]]
+- 5 edges to [[_COMMUNITY_Sections API, Terms & SEO Routes]]
+- 2 edges to [[_COMMUNITY_Admin Settings UI & Contact Page]]
+- 1 edge to [[_COMMUNITY_Our Work, Privacy & About Content]]
 - 1 edge to [[_COMMUNITY_Runtime Package Dependencies]]
 - 1 edge to [[_COMMUNITY_Admin Dashboard & DB Seeding]]
-- 1 edge to [[_COMMUNITY_Root Localized Layout, Fonts & Docs]]
+- 1 edge to [[_COMMUNITY_Next.js Config, Deployment & Agent Rules]]
 
 ## Top bridge nodes
 - [[galleryroute.ts]] - degree 8, connects to 3 communities

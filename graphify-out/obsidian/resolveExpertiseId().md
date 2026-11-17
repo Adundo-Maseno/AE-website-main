@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/expertise-service.ts"
 type: "code"
-community: "Expertise Pillars Service & ID Resolution"
-location: "L132"
+community: "Expertise Pillars Service & API Routes"
+location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Expertise_Pillars_Service__ID_Resolution
+  - community/Expertise_Pillars_Service__API_Routes
 ---
 
 # resolveExpertiseId()
@@ -16,4 +16,4 @@ tags:
 - [[expertise-service.ts]] - `contains` [EXTRACTED]
 - [[updateExpertisePillar()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Expertise_Pillars_Service__ID_Resolution
+#graphify/code #graphify/EXTRACTED #community/Expertise_Pillars_Service__API_Routes

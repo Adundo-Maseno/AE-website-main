@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/page-sections-service.ts"
 type: "code"
-community: "Admin Settings UI, Footer & Why-Agri"
+community: "Home Content & Why-Agri Experience"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Settings_UI_Footer__Why-Agri
+  - community/Home_Content__Why-Agri_Experience
 ---
 
 # PageSectionData
@@ -22,4 +22,4 @@ tags:
 - [[services-bento-grid.tsx]] - `imports` [EXTRACTED]
 - [[why-agri-experience.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Settings_UI_Footer__Why-Agri
+#graphify/code #graphify/EXTRACTED #community/Home_Content__Why-Agri_Experience

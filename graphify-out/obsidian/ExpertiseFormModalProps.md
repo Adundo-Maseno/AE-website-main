@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/expertise-form-modal.tsx"
 type: "code"
-community: "Admin Expertise UI & Bento Grid"
+community: "Admin Expertise Page & Form Modal"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Expertise_UI__Bento_Grid
+  - community/Admin_Expertise_Page__Form_Modal
 ---
 
 # ExpertiseFormModalProps
@@ -15,4 +15,4 @@ tags:
 - [[ExpertisePillarData]] - `references` [EXTRACTED]
 - [[expertise-form-modal.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Expertise_UI__Bento_Grid
+#graphify/code #graphify/EXTRACTED #community/Admin_Expertise_Page__Form_Modal

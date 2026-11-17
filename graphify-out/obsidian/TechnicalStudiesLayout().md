@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/technical-studies/layout.tsx"
 type: "code"
-community: "Technical Studies Metadata Layout"
+community: "Localized Metadata Layouts (Contact, Insights, Team)"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Technical_Studies_Metadata_Layout
+  - community/Localized_Metadata_Layouts_Contact_Insights_Team
 ---
 
 # TechnicalStudiesLayout()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[technical-studieslayout.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Technical_Studies_Metadata_Layout
+#graphify/code #graphify/EXTRACTED #community/Localized_Metadata_Layouts_Contact_Insights_Team

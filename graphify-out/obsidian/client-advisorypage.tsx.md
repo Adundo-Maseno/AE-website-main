@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/client-advisory/page.tsx"
 type: "code"
-community: "Page Sections API & Client Advisory"
+community: "Public Page Data Hydration & Revalidation"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Page_Sections_API__Client_Advisory
+  - community/Public_Page_Data_Hydration__Revalidation
 ---
 
 # client-advisory/page.tsx
@@ -22,4 +22,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[revalidate_8]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Client_Advisory
+#graphify/code #graphify/EXTRACTED #community/Public_Page_Data_Hydration__Revalidation

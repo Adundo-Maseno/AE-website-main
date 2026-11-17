@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/resources/page.tsx"
 type: "code"
-community: "Resource Library & PDF Preview"
+community: "Localized Metadata Layouts (About, Impact, Work)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resource_Library__PDF_Preview
+  - community/Localized_Metadata_Layouts_About_Impact_Work
 ---
 
 # [locale]/resources/page.tsx
@@ -20,4 +20,4 @@ tags:
 - [[resources-service.ts]] - `imports_from` [EXTRACTED]
 - [[revalidate_15]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resource_Library__PDF_Preview
+#graphify/code #graphify/EXTRACTED #community/Localized_Metadata_Layouts_About_Impact_Work

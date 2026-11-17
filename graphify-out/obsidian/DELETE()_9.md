@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/why-agri/[id]/route.ts"
 type: "code"
-community: "Why-Agri Service & ID Resolution"
+community: "Why-Agri Service & API Routes"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Why-Agri_Service__ID_Resolution
+  - community/Why-Agri_Service__API_Routes
 ---
 
 # DELETE()
@@ -16,4 +16,4 @@ tags:
 - [[getSession()]] - `calls` [EXTRACTED]
 - [[why-agriidroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Why-Agri_Service__ID_Resolution
+#graphify/code #graphify/EXTRACTED #community/Why-Agri_Service__API_Routes

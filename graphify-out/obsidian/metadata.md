@@ -1,12 +1,12 @@
 ---
 source_file: "app/admin/layout.tsx"
 type: "code"
-community: "Admin Layout Shell & Navigation"
+community: "Admin Layout Shell & Header"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Layout_Shell__Navigation
+  - community/Admin_Layout_Shell__Header
 ---
 
 # metadata
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[adminlayout.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Layout_Shell__Navigation
+#graphify/code #graphify/EXTRACTED #community/Admin_Layout_Shell__Header

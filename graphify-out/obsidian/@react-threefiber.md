@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Office Plants Motion Gallery"
+community: "Gallery Page & Office Plants Motion"
 location: "L29"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Office_Plants_Motion_Gallery
+  - community/Gallery_Page__Office_Plants_Motion
 ---
 
 # @react-three/fiber
@@ -16,4 +16,4 @@ tags:
 - [[office-plants-gallery.tsx]] - `imports_from` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Office_Plants_Motion_Gallery
+#graphify/concept #graphify/EXTRACTED #community/Gallery_Page__Office_Plants_Motion

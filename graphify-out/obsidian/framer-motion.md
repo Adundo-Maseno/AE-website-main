@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Contact Page & About Content"
+community: "Our Work Pillar Client Views & Newsletter"
 location: "L34"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Contact_Page__About_Content
+  - community/Our_Work_Pillar_Client_Views__Newsletter
 ---
 
 # framer-motion
@@ -36,4 +36,4 @@ tags:
 - [[technical-studies-client.tsx]] - `imports_from` [EXTRACTED]
 - [[why-agri-experience.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Contact_Page__About_Content
+#graphify/concept #graphify/EXTRACTED #community/Our_Work_Pillar_Client_Views__Newsletter

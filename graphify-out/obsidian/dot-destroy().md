@@ -1,12 +1,12 @@
 ---
 source_file: "components/liquid-glass/shader-utils.ts"
 type: "code"
-community: "Liquid Glass Shader Effects"
+community: "Root Localized Layout, Fonts & Docs"
 location: "L127"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Liquid_Glass_Shader_Effects
+  - community/Root_Localized_Layout_Fonts__Docs
 ---
 
 # .destroy()
@@ -15,4 +15,4 @@ tags:
 - [[ShaderDisplacementGenerator]] - `method` [EXTRACTED]
 - [[generateShaderDisplacementMap()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Liquid_Glass_Shader_Effects
+#graphify/code #graphify/INFERRED #community/Root_Localized_Layout_Fonts__Docs

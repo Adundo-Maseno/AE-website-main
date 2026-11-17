@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Impact Map Data, Merging & Controls"
+community: "Pan-African Impact Map & Admin UI"
 location: "L43"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Impact_Map_Data_Merging__Controls
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # react
@@ -93,4 +93,4 @@ tags:
 - [[why-agri-form-modal.tsx]] - `imports_from` [EXTRACTED]
 - [[why-agripage.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Impact_Map_Data_Merging__Controls
+#graphify/concept #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

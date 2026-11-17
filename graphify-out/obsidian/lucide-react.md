@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Admin Settings UI, Footer & Why-Agri"
+community: "Resource Library & PDF Preview"
 location: "L37"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Admin_Settings_UI_Footer__Why-Agri
+  - community/Resource_Library__PDF_Preview
 ---
 
 # lucide-react
@@ -73,4 +73,4 @@ tags:
 - [[why-agri-form-modal.tsx]] - `imports_from` [EXTRACTED]
 - [[why-agripage.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Admin_Settings_UI_Footer__Why-Agri
+#graphify/concept #graphify/EXTRACTED #community/Resource_Library__PDF_Preview

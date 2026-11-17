@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/service-utils.ts"
 type: "code"
-community: "Beliefs Service & API Routes"
+community: "Expertise Pillars Service & API Routes"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Beliefs_Service__API_Routes
+  - community/Expertise_Pillars_Service__API_Routes
 ---
 
 # stripManagedFields()
@@ -42,4 +42,4 @@ tags:
 - [[updateWhyAgriCard()]] - `calls` [EXTRACTED]
 - [[why-agri-service.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Beliefs_Service__API_Routes
+#graphify/code #graphify/EXTRACTED #community/Expertise_Pillars_Service__API_Routes

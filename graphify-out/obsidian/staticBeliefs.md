@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/beliefs-service.ts"
 type: "code"
-community: "Admin Dashboard & DB Seeding"
+community: "Beliefs Service & API Routes"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Dashboard__DB_Seeding
+  - community/Beliefs_Service__API_Routes
 ---
 
 # staticBeliefs
@@ -16,4 +16,4 @@ tags:
 - [[beliefs-service.ts]] - `contains` [EXTRACTED]
 - [[seedroute.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Dashboard__DB_Seeding
+#graphify/code #graphify/EXTRACTED #community/Beliefs_Service__API_Routes

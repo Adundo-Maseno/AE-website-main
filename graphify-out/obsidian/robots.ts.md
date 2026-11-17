@@ -1,12 +1,12 @@
 ---
 source_file: "app/robots.ts"
 type: "code"
-community: "Admin Login & SEO Route Handlers"
+community: "Sections API, Terms & SEO Routes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Login__SEO_Route_Handlers
+  - community/Sections_API_Terms__SEO_Routes
 ---
 
 # robots.ts
@@ -15,4 +15,4 @@ tags:
 - [[next_1]] - `imports_from` [EXTRACTED]
 - [[robots()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Login__SEO_Route_Handlers
+#graphify/code #graphify/EXTRACTED #community/Sections_API_Terms__SEO_Routes

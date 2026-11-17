@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/digital-platforms/page.tsx"
 type: "code"
-community: "Digital Platforms Pillar Page"
+community: "Public Page Data Hydration & Revalidation"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Digital_Platforms_Pillar_Page
+  - community/Public_Page_Data_Hydration__Revalidation
 ---
 
 # digital-platforms/page.tsx
@@ -22,4 +22,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[revalidate_9]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Digital_Platforms_Pillar_Page
+#graphify/code #graphify/EXTRACTED #community/Public_Page_Data_Hydration__Revalidation

@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.21
-members: 17
+cohesion: 0.16
+members: 22
 ---
 
 # Admin Dashboard & DB Seeding
 
-**Cohesion:** 0.21 - loosely connected
-**Members:** 17 nodes
+**Cohesion:** 0.16 - loosely connected
+**Members:** 22 nodes
 
 ## Members
 - [[AdminDashboardPage()]] - code - app/admin/page.tsx
@@ -19,14 +19,19 @@ members: 17
 - [[SeedButton()]] - code - components/admin/seed-button.tsx
 - [[adminpage.tsx]] - code - app/admin/page.tsx
 - [[countrySeeds]] - code - components/country-data.ts
+- [[db.ts]] - code - lib/db.ts
+- [[defaultPageSections]] - code - lib/services/page-sections-service.ts
+- [[globalForPrisma]] - code - lib/db.ts
+- [[prisma]] - code - lib/db.ts
 - [[public-downloads.ts]] - code - lib/public-downloads.ts
 - [[publicDownloads]] - code - lib/public-downloads.ts
 - [[seed-button.tsx]] - code - components/admin/seed-button.tsx
 - [[seedroute.ts]] - code - app/api/admin/seed/route.ts
-- [[staticBeliefs]] - code - lib/services/beliefs-service.ts
 - [[staticExpertisePillars]] - code - lib/services/expertise-service.ts
+- [[staticGalleryItems]] - code - lib/services/gallery-service.ts
+- [[staticInsights]] - code - lib/services/insights-service.ts
+- [[staticPartners]] - code - lib/services/partners-service.ts
 - [[staticProjects]] - code - lib/services/projects-service.ts
-- [[staticWhyAgriCards]] - code - lib/services/why-agri-service.ts
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,29 +41,31 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_Home & About Page Data Hydration]]
-- 6 edges to [[_COMMUNITY_Resource Library & PDF Preview]]
-- 5 edges to [[_COMMUNITY_Admin Session, JWT & Credentials API]]
-- 5 edges to [[_COMMUNITY_Site Settings & Feature Flag Persistence]]
-- 5 edges to [[_COMMUNITY_Impact Map Data, Merging & Controls]]
-- 4 edges to [[_COMMUNITY_Protected Admin API Auth Guards]]
-- 4 edges to [[_COMMUNITY_Field Gallery Admin & Showcase]]
-- 4 edges to [[_COMMUNITY_Partners Service & API Routes]]
-- 4 edges to [[_COMMUNITY_Team Service, Roster Admin & Showcase]]
-- 3 edges to [[_COMMUNITY_Beliefs Service & API Routes]]
-- 3 edges to [[_COMMUNITY_Projects Service & Capacity Building]]
-- 3 edges to [[_COMMUNITY_Admin Login & SEO Route Handlers]]
-- 2 edges to [[_COMMUNITY_Admin Partners & Sections Config]]
-- 2 edges to [[_COMMUNITY_Admin Settings UI, Footer & Why-Agri]]
-- 2 edges to [[_COMMUNITY_Field Insights Admin & Public Showcase]]
-- 2 edges to [[_COMMUNITY_Page Sections API & Client Advisory]]
-- 2 edges to [[_COMMUNITY_Root Localized Layout, Fonts & Docs]]
-- 1 edge to [[_COMMUNITY_Pan-African Impact Map & Admin UI]]
+- 10 edges to [[_COMMUNITY_Home Page & Partners API Routes]]
+- 9 edges to [[_COMMUNITY_Admin Session, JWT & Credentials API]]
+- 9 edges to [[_COMMUNITY_Protected Admin API Routes (Projects & Gallery)]]
+- 7 edges to [[_COMMUNITY_Admin Settings UI & Contact Page]]
+- 7 edges to [[_COMMUNITY_Sections API, Terms & SEO Routes]]
+- 6 edges to [[_COMMUNITY_Beliefs Service & API Routes]]
+- 6 edges to [[_COMMUNITY_Expertise Pillars Service & API Routes]]
+- 6 edges to [[_COMMUNITY_Team Service & API Routes]]
+- 6 edges to [[_COMMUNITY_Why-Agri Service & API Routes]]
+- 5 edges to [[_COMMUNITY_Pan-African Impact Map & Admin UI]]
+- 5 edges to [[_COMMUNITY_Gallery Item Service & Route Handlers]]
+- 5 edges to [[_COMMUNITY_Field Insights Service, API & Public View]]
+- 5 edges to [[_COMMUNITY_Resource Library & PDF Preview]]
+- 5 edges to [[_COMMUNITY_Resources Service & API Routes]]
+- 3 edges to [[_COMMUNITY_Impact Map Service & API Routes]]
+- 2 edges to [[_COMMUNITY_Admin Gallery, Partners, Projects & Sections]]
+- 1 edge to [[_COMMUNITY_Our Work, Privacy & About Content]]
+- 1 edge to [[_COMMUNITY_Runtime Package Dependencies]]
 - 1 edge to [[_COMMUNITY_Media Upload, Contact & Email Pipeline]]
+- 1 edge to [[_COMMUNITY_Root Localized Layout, Fonts & Docs]]
+- 1 edge to [[_COMMUNITY_Next.js Config, Deployment & Agent Rules]]
 
 ## Top bridge nodes
-- [[seedroute.ts]] - degree 35, connects to 14 communities
-- [[adminpage.tsx]] - degree 30, connects to 12 communities
-- [[Agri Experience Organization]] - degree 8, connects to 4 communities
-- [[AdminDashboardPage()]] - degree 5, connects to 3 communities
-- [[seed-button.tsx]] - degree 5, connects to 3 communities
+- [[adminpage.tsx]] - degree 34, connects to 14 communities
+- [[db.ts]] - degree 21, connects to 14 communities
+- [[seedroute.ts]] - degree 35, connects to 13 communities
+- [[prisma]] - degree 17, connects to 13 communities
+- [[Agri Experience Organization]] - degree 8, connects to 6 communities

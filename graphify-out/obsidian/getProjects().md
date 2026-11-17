@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/projects-service.ts"
 type: "code"
-community: "Projects Service & Capacity Building"
+community: "Public Page Data Hydration & Revalidation"
 location: "L450"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Projects_Service__Capacity_Building
+  - community/Public_Page_Data_Hydration__Revalidation
 ---
 
 # getProjects()
@@ -29,4 +29,4 @@ tags:
 - [[stakeholder-conveningspage.tsx]] - `imports` [EXTRACTED]
 - [[technical-studiespage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Projects_Service__Capacity_Building
+#graphify/code #graphify/EXTRACTED #community/Public_Page_Data_Hydration__Revalidation

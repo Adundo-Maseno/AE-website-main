@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Impact Map Data, Merging & Controls"
+community: "Pan-African Impact Map & Admin UI"
 location: "L38"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Impact_Map_Data_Merging__Controls
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # mapbox-gl
@@ -19,4 +19,4 @@ tags:
 - [[mapbox-gl@3.24.0]] - `declares` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Impact_Map_Data_Merging__Controls
+#graphify/concept #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

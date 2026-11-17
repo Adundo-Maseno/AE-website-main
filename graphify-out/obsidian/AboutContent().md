@@ -1,12 +1,12 @@
 ---
 source_file: "components/about-content.tsx"
 type: "code"
-community: "Contact Page & About Content"
+community: "Our Work, Privacy & About Content"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Contact_Page__About_Content
+  - community/Our_Work_Privacy__About_Content
 ---
 
 # AboutContent()
@@ -20,4 +20,4 @@ tags:
 - [[about-content.tsx]] - `contains` [EXTRACTED]
 - [[aboutpage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Contact_Page__About_Content
+#graphify/code #graphify/EXTRACTED #community/Our_Work_Privacy__About_Content

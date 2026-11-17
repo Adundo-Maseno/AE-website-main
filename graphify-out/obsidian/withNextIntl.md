@@ -1,12 +1,12 @@
 ---
 source_file: "next.config.mjs"
 type: "code"
-community: "Root Localized Layout, Fonts & Docs"
+community: "Next.js Config, Deployment & Agent Rules"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Root_Localized_Layout_Fonts__Docs
+  - community/Nextjs_Config_Deployment__Agent_Rules
 ---
 
 # withNextIntl
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[next.config.mjs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Docs
+#graphify/code #graphify/EXTRACTED #community/Nextjs_Config_Deployment__Agent_Rules

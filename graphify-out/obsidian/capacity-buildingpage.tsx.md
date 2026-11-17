@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/capacity-building/page.tsx"
 type: "code"
-community: "Projects Service & Capacity Building"
+community: "Public Page Data Hydration & Revalidation"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Projects_Service__Capacity_Building
+  - community/Public_Page_Data_Hydration__Revalidation
 ---
 
 # capacity-building/page.tsx
@@ -22,4 +22,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[revalidate_7]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Projects_Service__Capacity_Building
+#graphify/code #graphify/EXTRACTED #community/Public_Page_Data_Hydration__Revalidation

@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/team-form-modal.tsx"
 type: "code"
-community: "Team Service, Roster Admin & Showcase"
+community: "Admin Gallery, Partners, Projects & Sections"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Team_Service_Roster_Admin__Showcase
+  - community/Admin_Gallery_Partners_Projects__Sections
 ---
 
 # team-form-modal.tsx
@@ -23,4 +23,4 @@ tags:
 - [[team-service.ts]] - `imports_from` [EXTRACTED]
 - [[teampage.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Team_Service_Roster_Admin__Showcase
+#graphify/code #graphify/EXTRACTED #community/Admin_Gallery_Partners_Projects__Sections

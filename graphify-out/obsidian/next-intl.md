@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Site Header & Language Switcher"
+community: "Localized Metadata Layouts (Contact, Insights, Team)"
 location: "L40"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Site_Header__Language_Switcher
+  - community/Localized_Metadata_Layouts_Contact_Insights_Team
 ---
 
 # next-intl
@@ -60,4 +60,4 @@ tags:
 - [[technical-studieslayout.tsx]] - `imports_from` [EXTRACTED]
 - [[why-agri-experience.tsx]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Site_Header__Language_Switcher
+#graphify/concept #graphify/EXTRACTED #community/Localized_Metadata_Layouts_Contact_Insights_Team

@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Admin Settings UI, Footer & Why-Agri"
+community: "Runtime Package Dependencies"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Settings_UI_Footer__Why-Agri
+  - community/Runtime_Package_Dependencies
 ---
 
 # gsap@^3.15.0
@@ -15,4 +15,4 @@ tags:
 - [[dependencies]] - `contains` [EXTRACTED]
 - [[gsap]] - `declares` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Settings_UI_Footer__Why-Agri
+#graphify/code #graphify/EXTRACTED #community/Runtime_Package_Dependencies

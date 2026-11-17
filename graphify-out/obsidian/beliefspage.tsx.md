@@ -1,12 +1,12 @@
 ---
 source_file: "app/admin/beliefs/page.tsx"
 type: "code"
-community: "Beliefs Admin Page & Form Modal"
+community: "Beliefs & Why-Agri Admin Pages"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Beliefs_Admin_Page__Form_Modal
+  - community/Beliefs__Why-Agri_Admin_Pages
 ---
 
 # beliefs/page.tsx
@@ -20,4 +20,4 @@ tags:
 - [[lucide-react]] - `imports_from` [EXTRACTED]
 - [[react]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Beliefs_Admin_Page__Form_Modal
+#graphify/code #graphify/EXTRACTED #community/Beliefs__Why-Agri_Admin_Pages

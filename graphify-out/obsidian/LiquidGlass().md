@@ -1,12 +1,12 @@
 ---
 source_file: "components/liquid-glass/index.tsx"
 type: "code"
-community: "Site Header & Language Switcher"
+community: "Root Localized Layout, Fonts & Docs"
 location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Site_Header__Language_Switcher
+  - community/Root_Localized_Layout_Fonts__Docs
 ---
 
 # LiquidGlass()
@@ -19,4 +19,4 @@ tags:
 - [[header.tsx]] - `imports` [EXTRACTED]
 - [[index.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Site_Header__Language_Switcher
+#graphify/code #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Docs

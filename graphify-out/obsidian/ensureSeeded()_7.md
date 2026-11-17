@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/resources-service.ts"
 type: "code"
-community: "Resource Library & PDF Preview"
+community: "Resources Service & API Routes"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resource_Library__PDF_Preview
+  - community/Resources_Service__API_Routes
 ---
 
 # ensureSeeded()
@@ -18,4 +18,4 @@ tags:
 - [[seedGuard_7]] - `calls` [EXTRACTED]
 - [[updateResource()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resource_Library__PDF_Preview
+#graphify/code #graphify/EXTRACTED #community/Resources_Service__API_Routes

@@ -1,12 +1,12 @@
 ---
 source_file: "app/admin/why-agri/page.tsx"
 type: "code"
-community: "Admin Settings UI, Footer & Why-Agri"
+community: "Beliefs & Why-Agri Admin Pages"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Settings_UI_Footer__Why-Agri
+  - community/Beliefs__Why-Agri_Admin_Pages
 ---
 
 # why-agri/page.tsx
@@ -20,4 +20,4 @@ tags:
 - [[why-agri-form-modal.tsx]] - `imports_from` [EXTRACTED]
 - [[why-agri-service.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Settings_UI_Footer__Why-Agri
+#graphify/code #graphify/EXTRACTED #community/Beliefs__Why-Agri_Admin_Pages

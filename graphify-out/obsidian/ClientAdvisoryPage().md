@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/client-advisory/page.tsx"
 type: "code"
-community: "Page Sections API & Client Advisory"
+community: "Public Page Data Hydration & Revalidation"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Page_Sections_API__Client_Advisory
+  - community/Public_Page_Data_Hydration__Revalidation
 ---
 
 # ClientAdvisoryPage()
@@ -17,4 +17,4 @@ tags:
 - [[getPageSections()]] - `calls` [EXTRACTED]
 - [[getProjects()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Client_Advisory
+#graphify/code #graphify/EXTRACTED #community/Public_Page_Data_Hydration__Revalidation

@@ -1,12 +1,12 @@
 ---
 source_file: "components/home-content.tsx"
 type: "code"
-community: "Admin Settings UI, Footer & Why-Agri"
+community: "Beliefs & Why-Agri Admin Pages"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Settings_UI_Footer__Why-Agri
+  - community/Beliefs__Why-Agri_Admin_Pages
 ---
 
 # HomeContentProps
@@ -18,4 +18,4 @@ tags:
 - [[WhyAgriCardData]] - `references` [EXTRACTED]
 - [[home-content.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Settings_UI_Footer__Why-Agri
+#graphify/code #graphify/EXTRACTED #community/Beliefs__Why-Agri_Admin_Pages

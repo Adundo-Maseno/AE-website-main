@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/insights/[id]/route.ts"
 type: "code"
-community: "Field Insights Admin & Public Showcase"
+community: "Field Insights Service, API & Public View"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Field_Insights_Admin__Public_Showcase
+  - community/Field_Insights_Service_API__Public_View
 ---
 
 # insights/[id]/route.ts
@@ -21,4 +21,4 @@ tags:
 - [[next_1]] - `imports_from` [EXTRACTED]
 - [[updateInsight()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Field_Insights_Admin__Public_Showcase
+#graphify/code #graphify/EXTRACTED #community/Field_Insights_Service_API__Public_View

@@ -13,7 +13,10 @@ import {
   CheckCircle2,
   Handshake,
   Shield,
+  ExternalLink,
+  FileText,
 } from 'lucide-react'
+import Image from 'next/image'
 import { Link } from '@/i18n/routing'
 import { useTranslations } from 'next-intl'
 import { ProjectItem } from '@/lib/services/projects-service'
@@ -102,6 +105,18 @@ export default function ProjectImplementationClient({
       icon: CheckCircle2,
     },
   ]
+
+  const defaultTitles = new Set([
+    'enhancing the seed systems in tanzania (esseta) – a turning point for tanzania’s seed sector',
+    'tanzania seed systems transformation: multi-year systems reform',
+    'feed the future seed systems for development (sssd)',
+    'scratch-off labels for certified seed authentication in kenya',
+    'county agrodealer association strengthening in kenya',
+  ])
+
+  const customProjects = projects.filter(
+    (p) => !p.id.startsWith('static-') && !defaultTitles.has(p.titleEn.toLowerCase())
+  )
 
   return (
     <main className="bg-white min-h-[100dvh]">
@@ -267,6 +282,88 @@ export default function ProjectImplementationClient({
           </motion.div>
         </div>
       </section>
+
+      {/* ─── Dynamic CMS Projects ─── */}
+      {customProjects.length > 0 && (
+        <section className="w-full py-16 bg-[#F8FAF6] border-b border-black/[0.06]">
+          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 space-y-8">
+            <div className="space-y-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-primary-green">
+                Project Implementation
+              </span>
+              <h3 className="font-serif font-bold text-2xl lg:text-3xl text-deep-forest tracking-tight">
+                Additional CMS Projects
+              </h3>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {customProjects.map((p) => {
+                const title = locale === 'fr' ? p.titleFr || p.titleEn : p.titleEn
+                const desc = locale === 'fr' ? p.descFr || p.descEn : p.descEn
+
+                return (
+                  <div
+                    key={p.id}
+                    className="group rounded-3xl bg-white border border-black/[0.08] hover:border-primary-green/30 hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col"
+                  >
+                    {p.imageUrl ? (
+                      <div className="relative w-full aspect-[16/10] overflow-hidden bg-mist border-b border-black/[0.06]">
+                        <Image
+                          src={p.imageUrl}
+                          alt={title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                    ) : (
+                      <div className="relative w-full h-32 bg-primary-green/5 border-b border-black/[0.06] flex items-center justify-center text-primary-green/30">
+                        <FileText size={40} />
+                      </div>
+                    )}
+
+                    <div className="p-6 flex flex-col flex-1 space-y-3">
+                      <div className="flex items-center justify-between gap-2 text-xs">
+                        {p.client && (
+                          <span className="font-bold text-primary-green uppercase tracking-wider text-[11px]">
+                            {p.client}
+                          </span>
+                        )}
+                        {p.year && (
+                          <span className="text-charcoal/50 text-[11px] font-mono">
+                            {p.year}
+                          </span>
+                        )}
+                      </div>
+
+                      <h4 className="font-serif font-bold text-lg text-deep-forest leading-snug group-hover:text-primary-green transition-colors">
+                        {title}
+                      </h4>
+
+                      <p className="text-xs text-charcoal/70 font-light leading-relaxed flex-1 line-clamp-3">
+                        {desc}
+                      </p>
+
+                      {p.link && (
+                        <div className="pt-3 border-t border-black/[0.06] mt-auto">
+                          <a
+                            href={p.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-xs font-bold text-primary-green hover:underline"
+                          >
+                            <span>View Project</span>
+                            <ExternalLink size={12} />
+                          </a>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ─── CTA Section ─── */}
       <section className="w-full">

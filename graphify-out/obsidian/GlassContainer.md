@@ -1,12 +1,12 @@
 ---
 source_file: "components/liquid-glass/index.tsx"
 type: "code"
-community: "Liquid Glass Shader Effects"
+community: "Root Localized Layout, Fonts & Docs"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Liquid_Glass_Shader_Effects
+  - community/Root_Localized_Layout_Fonts__Docs
 ---
 
 # GlassContainer
@@ -17,4 +17,4 @@ tags:
 - [[generateShaderDisplacementMap()]] - `calls` [EXTRACTED]
 - [[index.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Liquid_Glass_Shader_Effects
+#graphify/code #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "components/home-content.tsx"
 type: "code"
-community: "Admin Settings UI, Footer & Why-Agri"
+community: "Home Content & Why-Agri Experience"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Settings_UI_Footer__Why-Agri
+  - community/Home_Content__Why-Agri_Experience
 ---
 
 # home-content.tsx
@@ -39,4 +39,4 @@ tags:
 - [[why-agri-experience.tsx]] - `imports_from` [EXTRACTED]
 - [[why-agri-service.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Settings_UI_Footer__Why-Agri
+#graphify/code #graphify/EXTRACTED #community/Home_Content__Why-Agri_Experience

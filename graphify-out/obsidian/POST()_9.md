@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/projects/route.ts"
 type: "code"
-community: "Projects Service & Capacity Building"
+community: "Protected Admin API Routes (Projects & Gallery)"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Projects_Service__Capacity_Building
+  - community/Protected_Admin_API_Routes_Projects__Gallery
 ---
 
 # POST()
@@ -16,4 +16,4 @@ tags:
 - [[getSession()]] - `calls` [EXTRACTED]
 - [[projectsroute.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Projects_Service__Capacity_Building
+#graphify/code #graphify/EXTRACTED #community/Protected_Admin_API_Routes_Projects__Gallery

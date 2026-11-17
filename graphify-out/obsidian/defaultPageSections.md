@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/page-sections-service.ts"
 type: "code"
-community: "Page Sections API & Client Advisory"
+community: "Admin Dashboard & DB Seeding"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Page_Sections_API__Client_Advisory
+  - community/Admin_Dashboard__DB_Seeding
 ---
 
 # defaultPageSections
@@ -15,4 +15,4 @@ tags:
 - [[page-sections-service.ts]] - `contains` [EXTRACTED]
 - [[seedroute.ts]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Client_Advisory
+#graphify/code #graphify/EXTRACTED #community/Admin_Dashboard__DB_Seeding

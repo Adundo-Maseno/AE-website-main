@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Dev Dependencies & ESLint Config"
+community: "Dev Dependencies & Tooling"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dev_Dependencies__ESLint_Config
+  - community/Dev_Dependencies__Tooling
 ---
 
 # devDependencies
@@ -30,4 +30,4 @@ tags:
 - [[tw-animate-css@1.3.3]] - `contains` [EXTRACTED]
 - [[typescript@5.7.3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dev_Dependencies__ESLint_Config
+#graphify/code #graphify/EXTRACTED #community/Dev_Dependencies__Tooling

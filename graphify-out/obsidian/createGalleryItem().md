@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/gallery-service.ts"
 type: "code"
-community: "Field Gallery Admin & Showcase"
+community: "Gallery Item Service & Route Handlers"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Field_Gallery_Admin__Showcase
+  - community/Gallery_Item_Service__Route_Handlers
 ---
 
 # createGalleryItem()
@@ -17,4 +17,4 @@ tags:
 - [[gallery-itemsroute.ts]] - `imports` [EXTRACTED]
 - [[gallery-service.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Field_Gallery_Admin__Showcase
+#graphify/code #graphify/EXTRACTED #community/Gallery_Item_Service__Route_Handlers

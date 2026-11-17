@@ -1,7 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Target, Plus, Edit2, Trash2, Globe, Hash, Link as LinkIcon } from 'lucide-react'
+import Link from 'next/link'
+import { Target, Plus, Edit2, Trash2, Globe, Hash, Link as LinkIcon, ExternalLink, Info } from 'lucide-react'
 import { ExpertisePillarData } from '@/lib/services/expertise-service'
 import ExpertiseFormModal from '@/components/admin/expertise-form-modal'
 
@@ -69,7 +70,17 @@ export default function AdminExpertisePage() {
             </p>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
+            <Link
+              href="/en/about"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2.5 bg-white border border-[#0F2417]/15 text-[#0F2417] hover:bg-[#0F2417]/5 rounded-xl text-xs font-semibold transition-all active:scale-[0.98] shadow-sm whitespace-nowrap shrink-0 [word-break:normal] [overflow-wrap:normal]"
+            >
+              <ExternalLink size={14} className="shrink-0" />
+              <span>View on /about</span>
+            </Link>
+
             <div className="flex items-center gap-1 bg-white border border-[#0F2417]/15 rounded-xl p-1 shadow-sm">
               <button
                 onClick={() => setLangTab('en')}
@@ -104,6 +115,16 @@ export default function AdminExpertisePage() {
             </button>
           </div>
         </div>
+
+        {/* Bento Grid Count Notice */}
+        {!loading && pillars.length !== 5 && (
+          <div className="flex items-start gap-3 px-4 py-3 rounded-2xl bg-[#0F2417]/[0.04] border border-[#0F2417]/15 text-xs text-[#0F2417]/80">
+            <Info size={16} className="text-[#0F2417] shrink-0 mt-0.5" />
+            <p className="leading-relaxed">
+              The public <code className="font-mono font-semibold text-[#0F2417]">/about</code> Bento Grid renders <span className="font-mono tabular-nums font-semibold text-[#0F2417]">5</span> core capability domains (currently <span className="font-mono tabular-nums font-semibold text-[#0F2417]">{pillars.length}</span>).
+            </p>
+          </div>
+        )}
 
         {/* Pillars List */}
         {loading ? (

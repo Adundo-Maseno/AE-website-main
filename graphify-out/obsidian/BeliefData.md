@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/beliefs-service.ts"
 type: "code"
-community: "Beliefs Admin Page & Form Modal"
+community: "Beliefs & Why-Agri Admin Pages"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Beliefs_Admin_Page__Form_Modal
+  - community/Beliefs__Why-Agri_Admin_Pages
 ---
 
 # BeliefData
@@ -19,4 +19,4 @@ tags:
 - [[beliefspage.tsx]] - `imports` [EXTRACTED]
 - [[home-content.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Beliefs_Admin_Page__Form_Modal
+#graphify/code #graphify/EXTRACTED #community/Beliefs__Why-Agri_Admin_Pages

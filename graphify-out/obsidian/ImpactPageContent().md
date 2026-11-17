@@ -1,12 +1,12 @@
 ---
 source_file: "components/impact/impact-page-content.tsx"
 type: "code"
-community: "Pan-African Impact Map & Admin UI"
+community: "Impact Page & SDG Alignment Motion"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pan-African_Impact_Map__Admin_UI
+  - community/Impact_Page__SDG_Alignment_Motion
 ---
 
 # ImpactPageContent()
@@ -20,4 +20,4 @@ tags:
 - [[impact-page-content.tsx]] - `contains` [EXTRACTED]
 - [[our-impactpage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI
+#graphify/code #graphify/EXTRACTED #community/Impact_Page__SDG_Alignment_Motion

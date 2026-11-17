@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/map/[id]/route.ts"
 type: "code"
-community: "Pan-African Impact Map & Admin UI"
+community: "Impact Map Service & API Routes"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pan-African_Impact_Map__Admin_UI
+  - community/Impact_Map_Service__API_Routes
 ---
 
 # PUT()
@@ -16,4 +16,4 @@ tags:
 - [[mapidroute.ts]] - `contains` [EXTRACTED]
 - [[updateCountry()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI
+#graphify/code #graphify/EXTRACTED #community/Impact_Map_Service__API_Routes

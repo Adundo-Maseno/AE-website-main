@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/partners/[id]/route.ts"
 type: "code"
-community: "Partners Service & API Routes"
+community: "Home Page & Partners API Routes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Partners_Service__API_Routes
+  - community/Home_Page__Partners_API_Routes
 ---
 
 # partners/[id]/route.ts
@@ -21,4 +21,4 @@ tags:
 - [[partners-service.ts]] - `imports_from` [EXTRACTED]
 - [[updatePartner()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Partners_Service__API_Routes
+#graphify/code #graphify/EXTRACTED #community/Home_Page__Partners_API_Routes

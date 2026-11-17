@@ -1,12 +1,12 @@
 ---
 source_file: "components/header.tsx"
 type: "code"
-community: "Site Header & Language Switcher"
+community: "Root Localized Layout, Fonts & Docs"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Site_Header__Language_Switcher
+  - community/Root_Localized_Layout_Fonts__Docs
 ---
 
 # AnimatedHamburger()
@@ -15,4 +15,4 @@ tags:
 - [[Header()]] - `calls` [EXTRACTED]
 - [[header.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Site_Header__Language_Switcher
+#graphify/code #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Docs

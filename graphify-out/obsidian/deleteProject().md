@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/projects-service.ts"
 type: "code"
-community: "Projects Service & Capacity Building"
+community: "Protected Admin API Routes (Projects & Gallery)"
 location: "L582"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Projects_Service__Capacity_Building
+  - community/Protected_Admin_API_Routes_Projects__Gallery
 ---
 
 # deleteProject()
@@ -18,4 +18,4 @@ tags:
 - [[projectsidroute.ts]] - `imports` [EXTRACTED]
 - [[resolveProjectId()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Projects_Service__Capacity_Building
+#graphify/code #graphify/EXTRACTED #community/Protected_Admin_API_Routes_Projects__Gallery

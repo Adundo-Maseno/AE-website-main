@@ -1,12 +1,12 @@
 ---
 source_file: "components/json-ld.tsx"
 type: "code"
-community: "Section Layouts & Structured JSON-LD"
+community: "Localized Metadata Layouts (About, Impact, Work)"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Section_Layouts__Structured_JSON-LD
+  - community/Localized_Metadata_Layouts_About_Impact_Work
 ---
 
 # BreadcrumbJsonLd()
@@ -22,4 +22,4 @@ tags:
 - [[our-worklayout.tsx]] - `imports` [EXTRACTED]
 - [[resourceslayout.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Section_Layouts__Structured_JSON-LD
+#graphify/code #graphify/EXTRACTED #community/Localized_Metadata_Layouts_About_Impact_Work

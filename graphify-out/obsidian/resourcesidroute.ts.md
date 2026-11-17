@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/resources/[id]/route.ts"
 type: "code"
-community: "Resource Library & PDF Preview"
+community: "Resources Service & API Routes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resource_Library__PDF_Preview
+  - community/Resources_Service__API_Routes
 ---
 
 # resources/[id]/route.ts
@@ -21,4 +21,4 @@ tags:
 - [[resources-service.ts]] - `imports_from` [EXTRACTED]
 - [[updateResource()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resource_Library__PDF_Preview
+#graphify/code #graphify/EXTRACTED #community/Resources_Service__API_Routes

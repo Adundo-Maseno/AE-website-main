@@ -1,12 +1,12 @@
 ---
 source_file: "app/admin/settings/page.tsx"
 type: "code"
-community: "Admin Settings UI, Footer & Why-Agri"
+community: "Admin Settings UI & Contact Page"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Settings_UI_Footer__Why-Agri
+  - community/Admin_Settings_UI__Contact_Page
 ---
 
 # settings/page.tsx
@@ -19,4 +19,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[settings-service.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Settings_UI_Footer__Why-Agri
+#graphify/code #graphify/EXTRACTED #community/Admin_Settings_UI__Contact_Page

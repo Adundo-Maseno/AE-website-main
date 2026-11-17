@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/contact/page.tsx"
 type: "code"
-community: "Contact Page & About Content"
+community: "Admin Settings UI & Contact Page"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Contact_Page__About_Content
+  - community/Admin_Settings_UI__Contact_Page
 ---
 
 # contact/page.tsx
@@ -22,4 +22,4 @@ tags:
 - [[revalidate_1]] - `contains` [EXTRACTED]
 - [[settings-service.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Contact_Page__About_Content
+#graphify/code #graphify/EXTRACTED #community/Admin_Settings_UI__Contact_Page

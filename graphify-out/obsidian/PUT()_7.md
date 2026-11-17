@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/resources/[id]/route.ts"
 type: "code"
-community: "Resource Library & PDF Preview"
+community: "Resources Service & API Routes"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Resource_Library__PDF_Preview
+  - community/Resources_Service__API_Routes
 ---
 
 # PUT()
@@ -16,4 +16,4 @@ tags:
 - [[resourcesidroute.ts]] - `contains` [EXTRACTED]
 - [[updateResource()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Resource_Library__PDF_Preview
+#graphify/code #graphify/EXTRACTED #community/Resources_Service__API_Routes

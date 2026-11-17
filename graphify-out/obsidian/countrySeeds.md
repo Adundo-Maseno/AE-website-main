@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[ESSETA Seed Program Initiative]] - `references` [EXTRACTED]
+- [[adminpage.tsx]] - `imports` [EXTRACTED]
 - [[country-data.ts]] - `contains` [EXTRACTED]
 - [[map-service.ts]] - `imports` [EXTRACTED]
 - [[seedroute.ts]] - `imports` [EXTRACTED]

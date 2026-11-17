@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/expertise/route.ts"
 type: "code"
-community: "Protected Admin API Auth Guards"
+community: "Expertise Pillars Service & API Routes"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Protected_Admin_API_Auth_Guards
+  - community/Expertise_Pillars_Service__API_Routes
 ---
 
 # POST()
@@ -16,4 +16,4 @@ tags:
 - [[expertiseroute.ts]] - `contains` [EXTRACTED]
 - [[getSession()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Protected_Admin_API_Auth_Guards
+#graphify/code #graphify/EXTRACTED #community/Expertise_Pillars_Service__API_Routes

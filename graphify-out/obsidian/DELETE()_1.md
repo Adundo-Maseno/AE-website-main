@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/expertise/[id]/route.ts"
 type: "code"
-community: "Expertise Pillars Service & ID Resolution"
+community: "Expertise Pillars Service & API Routes"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Expertise_Pillars_Service__ID_Resolution
+  - community/Expertise_Pillars_Service__API_Routes
 ---
 
 # DELETE()
@@ -16,4 +16,4 @@ tags:
 - [[expertiseidroute.ts]] - `contains` [EXTRACTED]
 - [[getSession()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Expertise_Pillars_Service__ID_Resolution
+#graphify/code #graphify/EXTRACTED #community/Expertise_Pillars_Service__API_Routes

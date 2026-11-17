@@ -1,12 +1,12 @@
 ---
 source_file: "app/admin/gallery/page.tsx"
 type: "code"
-community: "Field Gallery Admin & Showcase"
-location: "L27"
+community: "Admin Gallery, Partners, Projects & Sections"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Field_Gallery_Admin__Showcase
+  - community/Admin_Gallery_Partners_Projects__Sections
 ---
 
 # shouldUnoptimize()
@@ -15,4 +15,4 @@ tags:
 - [[AdminGalleryPage()]] - `calls` [EXTRACTED]
 - [[admingallerypage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Field_Gallery_Admin__Showcase
+#graphify/code #graphify/EXTRACTED #community/Admin_Gallery_Partners_Projects__Sections

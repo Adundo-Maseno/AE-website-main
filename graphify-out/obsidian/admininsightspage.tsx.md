@@ -1,12 +1,12 @@
 ---
 source_file: "app/admin/insights/page.tsx"
 type: "code"
-community: "Field Insights Admin & Public Showcase"
+community: "Admin Insights Page & Form Modal"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Field_Insights_Admin__Public_Showcase
+  - community/Admin_Insights_Page__Form_Modal
 ---
 
 # admin/insights/page.tsx
@@ -20,4 +20,4 @@ tags:
 - [[lucide-react]] - `imports_from` [EXTRACTED]
 - [[react]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Field_Insights_Admin__Public_Showcase
+#graphify/code #graphify/EXTRACTED #community/Admin_Insights_Page__Form_Modal

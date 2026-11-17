@@ -1,12 +1,12 @@
 ---
 source_file: "components/cookie-toast.tsx"
 type: "code"
-community: "Root Localized Layout, Fonts & Docs"
+community: "Our Work, Privacy & About Content"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Root_Localized_Layout_Fonts__Docs
+  - community/Our_Work_Privacy__About_Content
 ---
 
 # CookieToast()
@@ -17,4 +17,4 @@ tags:
 - [[localelayout.tsx]] - `imports` [EXTRACTED]
 - [[cookie-toast.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Docs
+#graphify/code #graphify/EXTRACTED #community/Our_Work_Privacy__About_Content

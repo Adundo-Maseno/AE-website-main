@@ -1,12 +1,12 @@
 ---
 source_file: "i18n/routing.ts"
 type: "code"
-community: "Site Header & Language Switcher"
+community: "Root Localized Layout, Fonts & Docs"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Site_Header__Language_Switcher
+  - community/Root_Localized_Layout_Fonts__Docs
 ---
 
 # useRouter
@@ -16,4 +16,4 @@ tags:
 - [[header.tsx]] - `imports` [EXTRACTED]
 - [[routing.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Site_Header__Language_Switcher
+#graphify/code #graphify/EXTRACTED #community/Root_Localized_Layout_Fonts__Docs

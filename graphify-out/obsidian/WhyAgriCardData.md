@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/why-agri-service.ts"
 type: "code"
-community: "Admin Settings UI, Footer & Why-Agri"
+community: "Beliefs & Why-Agri Admin Pages"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Admin_Settings_UI_Footer__Why-Agri
+  - community/Beliefs__Why-Agri_Admin_Pages
 ---
 
 # WhyAgriCardData
@@ -21,4 +21,4 @@ tags:
 - [[why-agri-service.ts]] - `contains` [EXTRACTED]
 - [[why-agripage.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Admin_Settings_UI_Footer__Why-Agri
+#graphify/code #graphify/EXTRACTED #community/Beliefs__Why-Agri_Admin_Pages

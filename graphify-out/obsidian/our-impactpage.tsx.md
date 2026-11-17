@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-impact/page.tsx"
 type: "code"
-community: "Pan-African Impact Map & Admin UI"
+community: "Public Page Data Hydration & Revalidation"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pan-African_Impact_Map__Admin_UI
+  - community/Public_Page_Data_Hydration__Revalidation
 ---
 
 # our-impact/page.tsx
@@ -22,4 +22,4 @@ tags:
 - [[react]] - `imports_from` [EXTRACTED]
 - [[revalidate_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI
+#graphify/code #graphify/EXTRACTED #community/Public_Page_Data_Hydration__Revalidation

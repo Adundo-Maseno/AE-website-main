@@ -2,7 +2,7 @@
 source_file: "app/admin/page.tsx"
 type: "code"
 community: "Admin Dashboard & DB Seeding"
-location: "L36"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED

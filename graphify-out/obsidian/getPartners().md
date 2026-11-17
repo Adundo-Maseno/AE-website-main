@@ -1,12 +1,12 @@
 ---
 source_file: "lib/services/partners-service.ts"
 type: "code"
-community: "Home & About Page Data Hydration"
+community: "Home Page & Partners API Routes"
 location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Home__About_Page_Data_Hydration
+  - community/Home_Page__Partners_API_Routes
 ---
 
 # getPartners()
@@ -17,4 +17,4 @@ tags:
 - [[isDatabaseConnected()]] - `calls` [EXTRACTED]
 - [[partners-service.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Home__About_Page_Data_Hydration
+#graphify/code #graphify/EXTRACTED #community/Home_Page__Partners_API_Routes

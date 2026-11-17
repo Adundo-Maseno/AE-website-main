@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/sections/route.ts"
 type: "code"
-community: "Page Sections API & Client Advisory"
+community: "Sections API, Terms & SEO Routes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Page_Sections_API__Client_Advisory
+  - community/Sections_API_Terms__SEO_Routes
 ---
 
 # sections/route.ts
@@ -21,4 +21,4 @@ tags:
 - [[page-sections-service.ts]] - `imports_from` [EXTRACTED]
 - [[upsertPageSection()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Page_Sections_API__Client_Advisory
+#graphify/code #graphify/EXTRACTED #community/Sections_API_Terms__SEO_Routes

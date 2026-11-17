@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/admin-header.tsx"
 type: "code"
-community: "Admin Layout Shell & Navigation"
-location: "L50"
+community: "Admin Layout Shell & Header"
+location: "L59"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Admin_Layout_Shell__Navigation
+  - community/Admin_Layout_Shell__Header
 ---
 
 # handleClickOutside()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AdminHeader()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Admin_Layout_Shell__Navigation
+#graphify/code #graphify/INFERRED #community/Admin_Layout_Shell__Header

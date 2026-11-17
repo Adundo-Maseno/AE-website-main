@@ -1,12 +1,12 @@
 ---
 source_file: "components/admin/insight-form-modal.tsx"
 type: "code"
-community: "Field Insights Admin & Public Showcase"
+community: "Admin Insights Page & Form Modal"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Field_Insights_Admin__Public_Showcase
+  - community/Admin_Insights_Page__Form_Modal
 ---
 
 # InsightFormModalProps
@@ -15,4 +15,4 @@ tags:
 - [[InsightItem]] - `references` [EXTRACTED]
 - [[insight-form-modal.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Field_Insights_Admin__Public_Showcase
+#graphify/code #graphify/EXTRACTED #community/Admin_Insights_Page__Form_Modal

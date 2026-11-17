@@ -22,8 +22,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Admin Login & SEO Route Handlers]]
-- 1 edge to [[_COMMUNITY_Site Header & Language Switcher]]
+- 1 edge to [[_COMMUNITY_Sections API, Terms & SEO Routes]]
+- 1 edge to [[_COMMUNITY_Localized Metadata Layouts (Contact, Insights, Team)]]
 
 ## Top bridge nodes
 - [[client-advisorylayout.tsx]] - degree 4, connects to 2 communities

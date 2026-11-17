@@ -22,8 +22,8 @@ export const staticProjects: ProjectItem[] = [
   // ── Digital Platforms ──
   {
     id: 'static-mbeguchoice',
-    titleEn: 'MbeguChoice Variety Selector',
-    titleFr: 'Sélecteur de variétés MbeguChoice',
+    titleEn: 'MbeguChoice',
+    titleFr: 'MbeguChoice',
     descEn: 'Online crop variety database helping farmers, agrodealers, and extension agents choose best-suited seed varieties by ecological zone.',
     descFr: 'Base de données en ligne des variétés agricoles aidant les agriculteurs à choisir les meilleures semences adaptées à leur zone agro-écologique.',
     category: 'digital-platforms',
@@ -35,8 +35,8 @@ export const staticProjects: ProjectItem[] = [
   },
   {
     id: 'static-acvc',
-    titleEn: 'Africa Crop Variety Catalogue',
-    titleFr: 'Catalogue des variétés de cultures africaines',
+    titleEn: 'Africa Digital Crop Variety Catalogue',
+    titleFr: 'Catalogue numérique des variétés de cultures africaines',
     descEn: 'Regional catalog providing detailed agronomic data on commercial crop varieties released across East and Southern Africa.',
     descFr: 'Catalogue régional fournissant des données agronomiques détaillées sur les variétés commerciales publiées en Afrique de l’Est et australe.',
     category: 'digital-platforms',
@@ -127,8 +127,8 @@ export const staticProjects: ProjectItem[] = [
   // ── Technical Studies ──
   {
     id: 'static-kcdms-pasture',
-    titleEn: 'Scoping Study: Pasture & Fodder Planting Materials',
-    titleFr: 'Étude de cadrage : Matériel de plantation de pâturages et de fourrages',
+    titleEn: 'Scoping Study: Pasture and Fodder Planting Materials in Kenya',
+    titleFr: 'Étude de cadrage : Matériel de plantation de pâturages et de fourrages au Kenya',
     descEn: 'Comprehensive market scoping of commercial fodder seed and vegetative planting material systems across 12 high-potential Kenyan counties.',
     descFr: 'Cadrage complet du marché des semences fourragères commerciales et du matériel végétatif dans 12 comtés kenyans.',
     category: 'technical-studies',
@@ -140,8 +140,8 @@ export const staticProjects: ProjectItem[] = [
   },
   {
     id: 'static-kcdms-value-chain',
-    titleEn: 'Scoping Study: Value Chain Crop Planting Materials',
-    titleFr: 'Étude de cadrage : Matériel de plantation pour cultures de chaîne de valeur',
+    titleEn: 'Scoping Study: Planting Materials for Value Chain Crops in Kenya',
+    titleFr: 'Étude de cadrage : Matériel de plantation pour cultures de chaîne de valeur au Kenya',
     descEn: 'Detailed assessment of banana, avocado, mango, pineapple, passion fruit, sweet potato, and African leafy vegetable seedling value chains.',
     descFr: 'Évaluation détaillée des chaînes de valeur de plants de bananes, avocats, mangues, ananas, fruits de la passion et patates douces.',
     category: 'technical-studies',
@@ -166,8 +166,8 @@ export const staticProjects: ProjectItem[] = [
   },
   {
     id: 'static-kcdms-nurseries',
-    titleEn: 'Horticulture Seedling Nurseries Business Model Scoping Study',
-    titleFr: 'Étude de cadrage : Les pépinières de semis horticoles comme modèle viable',
+    titleEn: 'Scoping Study: Horticulture Seedling Nurseries as a Viable Business Model in Kenya',
+    titleFr: 'Étude de cadrage : Les pépinières de semis horticoles comme modèle viable au Kenya',
     descEn: 'Viability assessment of private horticulture seedling nurseries across Kenya, examining unit economics, phytosanitary standards, and farmer demand.',
     descFr: 'Évaluation de la viabilité commerciale des pépinières horticoles privées au Kenya, normes phytosanitaires et demande des producteurs.',
     category: 'technical-studies',
@@ -233,8 +233,8 @@ export const staticProjects: ProjectItem[] = [
   // ── Project Implementation ──
   {
     id: 'static-tanzania-transformation',
-    titleEn: 'Tanzania Seed Systems Transformation: Multi-Year Systems Reform',
-    titleFr: 'Transformation des systèmes semenciers en Tanzanie : Réforme pluriannuelle',
+    titleEn: 'Enhancing the Seed Systems in Tanzania (ESSETA) – A turning point for Tanzania’s Seed Sector',
+    titleFr: 'Renforcement des systèmes semenciers en Tanzanie (ESSETA) : Un tournant pour le secteur',
     descEn: 'Led multi-year institutional restructuring, digital seed catalog deployment, TOSCI inspector decentralization, and agrodealer licensing reforms.',
     descFr: 'Direction de la restructuration institutionnelle pluriannuelle, du déploiement du catalogue numérique des semences et des réformes de licences.',
     category: 'project-implementation',
@@ -287,8 +287,8 @@ export const staticProjects: ProjectItem[] = [
   // ── Client Advisory ──
   {
     id: 'static-kephis-modernization',
-    titleEn: 'KEPHIS Regulatory Modernization: Private Seed Inspection Pilot',
-    titleFr: 'Modernisation réglementaire de KEPHIS : Projet pilote d’inspection privée des semences',
+    titleEn: 'KEPHIS Regulatory Modernization: Private Seed Inspection & Standard Seed Pilot',
+    titleFr: 'Modernisation réglementaire de KEPHIS : Inspection privée des semences et pilote de semences standard',
     descEn: 'Structured policy frameworks for private inspector authorization and piloted the standard seed class, decentralizing quality assurance.',
     descFr: 'Cadres politiques structurés pour l’autorisation d’inspecteurs privés et projet pilote pour la classe de semences standard.',
     category: 'client-advisory',
@@ -408,8 +408,8 @@ export const staticProjects: ProjectItem[] = [
   // ── Stakeholder Convenings ──
   {
     id: 'static-private-sector-roundtables',
-    titleEn: 'Seed Industry Private Sector Policy & Trade Roundtables',
-    titleFr: 'Tables rondes de l’industrie semencière sur les politiques et le commerce',
+    titleEn: 'Seed Industry Private Sector Roundtables',
+    titleFr: 'Tables rondes du secteur privé de l’industrie semencière',
     descEn: 'Facilitated high-stakes roundtables uniting private seed companies, regulatory authorities, and development partners to break systemic bottlenecks.',
     descFr: 'Organisation de tables rondes réunissant semenciers privés, autorités réglementaires et partenaires de développement.',
     category: 'stakeholder-convenings',

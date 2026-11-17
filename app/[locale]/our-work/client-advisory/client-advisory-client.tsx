@@ -2,7 +2,8 @@
 
 import { RollingText } from '@/components/ui/rolling-text'
 import { motion } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, ExternalLink, FileText } from 'lucide-react'
+import Image from 'next/image'
 import { Link } from '@/i18n/routing'
 import { useTranslations } from 'next-intl'
 import { ProjectItem } from '@/lib/services/projects-service'
@@ -77,6 +78,19 @@ export default function ClientAdvisoryClient({
       desc: t('cs_pillar4_desc'),
     },
   ]
+
+  const defaultTitles = new Set([
+    'kephis regulatory modernization: private seed inspection & standard seed pilot',
+    'kephis regulatory modernization: private seed inspection pilot',
+    'national seed policy & regulatory simplification strategy',
+    'the african seed access index (tasai) kenya pilot case study',
+    'food security & crop seed in kenya: payoffs & policy advisory',
+    'mbeguchoice digital decision-support architecture case study',
+  ])
+
+  const customProjects = projects.filter(
+    (p) => !p.id.startsWith('static-') && !defaultTitles.has(p.titleEn.toLowerCase())
+  )
 
   return (
     <main className="bg-white min-h-[100dvh]">
@@ -309,6 +323,88 @@ export default function ClientAdvisoryClient({
           </div>
         </div>
       </section>
+
+      {/* ─── Dynamic CMS Projects ─── */}
+      {customProjects.length > 0 && (
+        <section className="w-full py-16 bg-[#F8FAF6] border-b border-black/[0.06]">
+          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 space-y-8">
+            <div className="space-y-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#435826]">
+                Client Advisory
+              </span>
+              <h3 className="font-serif font-bold text-2xl lg:text-3xl text-deep-forest tracking-tight">
+                Additional CMS Projects
+              </h3>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {customProjects.map((p) => {
+                const title = locale === 'fr' ? p.titleFr || p.titleEn : p.titleEn
+                const desc = locale === 'fr' ? p.descFr || p.descEn : p.descEn
+
+                return (
+                  <div
+                    key={p.id}
+                    className="group rounded-3xl bg-white border border-black/[0.08] hover:border-[#435826]/30 hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col"
+                  >
+                    {p.imageUrl ? (
+                      <div className="relative w-full aspect-[16/10] overflow-hidden bg-mist border-b border-black/[0.06]">
+                        <Image
+                          src={p.imageUrl}
+                          alt={title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                    ) : (
+                      <div className="relative w-full h-32 bg-[#435826]/5 border-b border-black/[0.06] flex items-center justify-center text-[#435826]/30">
+                        <FileText size={40} />
+                      </div>
+                    )}
+
+                    <div className="p-6 flex flex-col flex-1 space-y-3">
+                      <div className="flex items-center justify-between gap-2 text-xs">
+                        {p.client && (
+                          <span className="font-bold text-[#435826] uppercase tracking-wider text-[11px]">
+                            {p.client}
+                          </span>
+                        )}
+                        {p.year && (
+                          <span className="text-charcoal/50 text-[11px] font-mono">
+                            {p.year}
+                          </span>
+                        )}
+                      </div>
+
+                      <h4 className="font-serif font-bold text-lg text-deep-forest leading-snug group-hover:text-[#435826] transition-colors">
+                        {title}
+                      </h4>
+
+                      <p className="text-xs text-charcoal/70 font-light leading-relaxed flex-1 line-clamp-3">
+                        {desc}
+                      </p>
+
+                      {p.link && (
+                        <div className="pt-3 border-t border-black/[0.06] mt-auto">
+                          <a
+                            href={p.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-xs font-bold text-[#435826] hover:underline"
+                          >
+                            <span>View Project</span>
+                            <ExternalLink size={12} />
+                          </a>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ─── CTA Section ─── */}
       <section className="w-full">

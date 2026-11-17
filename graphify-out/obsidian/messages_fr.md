@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "concept"
-community: "Resource Library & PDF Preview"
+community: "Resources Service & API Routes"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Resource_Library__PDF_Preview
+  - community/Resources_Service__API_Routes
 ---
 
 # messages_fr
@@ -14,4 +14,4 @@ tags:
 - [[resources-service.ts]] - `imports_from` [EXTRACTED]
 - [[seedroute.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Resource_Library__PDF_Preview
+#graphify/concept #graphify/EXTRACTED #community/Resources_Service__API_Routes

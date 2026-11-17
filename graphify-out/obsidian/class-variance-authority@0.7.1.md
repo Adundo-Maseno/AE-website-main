@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "code"
-community: "Impact Map Data, Merging & Controls"
+community: "Pan-African Impact Map & Admin UI"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Impact_Map_Data_Merging__Controls
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # class-variance-authority@^0.7.1
@@ -15,4 +15,4 @@ tags:
 - [[class-variance-authority]] - `declares` [EXTRACTED]
 - [[dependencies]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Impact_Map_Data_Merging__Controls
+#graphify/code #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

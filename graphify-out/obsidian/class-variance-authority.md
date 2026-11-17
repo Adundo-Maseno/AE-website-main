@@ -1,12 +1,12 @@
 ---
 source_file: "package.json"
 type: "concept"
-community: "Impact Map Data, Merging & Controls"
+community: "Pan-African Impact Map & Admin UI"
 location: "L31"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Impact_Map_Data_Merging__Controls
+  - community/Pan-African_Impact_Map__Admin_UI
 ---
 
 # class-variance-authority
@@ -17,4 +17,4 @@ tags:
 - [[class-variance-authority@0.7.1]] - `declares` [EXTRACTED]
 - [[package.json]] - `imports` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Impact_Map_Data_Merging__Controls
+#graphify/concept #graphify/EXTRACTED #community/Pan-African_Impact_Map__Admin_UI

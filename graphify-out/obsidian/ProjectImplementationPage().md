@@ -1,12 +1,12 @@
 ---
 source_file: "app/[locale]/our-work/project-implementation/page.tsx"
 type: "code"
-community: "Project Implementation Pillar Page"
+community: "Public Page Data Hydration & Revalidation"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Implementation_Pillar_Page
+  - community/Public_Page_Data_Hydration__Revalidation
 ---
 
 # ProjectImplementationPage()
@@ -17,4 +17,4 @@ tags:
 - [[getProjects()]] - `calls` [EXTRACTED]
 - [[project-implementationpage.tsx]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Implementation_Pillar_Page
+#graphify/code #graphify/EXTRACTED #community/Public_Page_Data_Hydration__Revalidation

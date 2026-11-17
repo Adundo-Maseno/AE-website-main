@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/why-agri/[id]/route.ts"
 type: "code"
-community: "Why-Agri Service & ID Resolution"
+community: "Why-Agri Service & API Routes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Why-Agri_Service__ID_Resolution
+  - community/Why-Agri_Service__API_Routes
 ---
 
 # why-agri/[id]/route.ts
@@ -21,4 +21,4 @@ tags:
 - [[updateWhyAgriCard()]] - `imports` [EXTRACTED]
 - [[why-agri-service.ts]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Why-Agri_Service__ID_Resolution
+#graphify/code #graphify/EXTRACTED #community/Why-Agri_Service__API_Routes

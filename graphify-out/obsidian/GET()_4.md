@@ -1,12 +1,12 @@
 ---
 source_file: "app/api/admin/gallery-items/route.ts"
 type: "code"
-community: "Field Gallery Admin & Showcase"
+community: "Protected Admin API Routes (Projects & Gallery)"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Field_Gallery_Admin__Showcase
+  - community/Protected_Admin_API_Routes_Projects__Gallery
 ---
 
 # GET()
@@ -16,4 +16,4 @@ tags:
 - [[getGalleryItems()]] - `calls` [EXTRACTED]
 - [[getSession()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Field_Gallery_Admin__Showcase
+#graphify/code #graphify/EXTRACTED #community/Protected_Admin_API_Routes_Projects__Gallery
