@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import {
@@ -167,6 +168,7 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
             href="/admin"
             className="flex items-center gap-2 group shrink-0 whitespace-nowrap [word-break:normal] [overflow-wrap:normal]"
           >
+            <Image src="/agri-experience-logo.png" alt="Agri Experience" width={28} height={28} className="object-contain shrink-0" priority />
             <span className="font-serif font-bold text-base text-[#0F2417] tracking-tight whitespace-nowrap [word-break:normal] [overflow-wrap:normal]">
               Agri Experience
             </span>

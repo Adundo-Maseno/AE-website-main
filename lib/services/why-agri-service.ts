@@ -47,7 +47,7 @@ export const staticWhyAgriCards: WhyAgriCardData[] = [
     titleEn: 'Public & Private Sector Expertise',
     titleFr: 'Expertise des secteurs public et privé',
     textEn: 'We embed our work and recommendations with permanent stakeholders through a collaborative, public/private approach.',
-    textFr: 'We embed our work and recommendations with permanent stakeholders through a collaborative, public/private approach.',
+    textFr: 'Nous intégrons notre travail et nos recommandations auprès des acteurs permanents grâce à une approche collaborative public-privé.',
     order: 4,
     active: true,
   },

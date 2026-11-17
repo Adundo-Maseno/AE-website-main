@@ -29,7 +29,7 @@ export default function AdminSettingsPage() {
     yearsExperience: '25+',
     contactEmail: 'info@agri-experience.com',
     contactPhone: '+254 (20) 2626888',
-    officeAddress: 'Watermark Business Park, Spring Court, Karen, P.O. Box 1720 - 00606, Nairobi',
+    officeAddress: 'Watermark Business Park, Spring Court, Karen, P.O. Box 1720 - 00606, Nairobi, Kenya',
     linkedinUrl: 'https://www.linkedin.com/company/agri-experience-ltd/',
     showLanguageSwitcher: true,
     enableLanguageSwitcher: false,

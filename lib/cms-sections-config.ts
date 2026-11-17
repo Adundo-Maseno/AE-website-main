@@ -32,10 +32,8 @@ export const SECTION_CONFIGS: SectionConfig[] = [
     hasTitle: true,
     hasSubtitle: true,
     hasContent: true,
-    hasMedia: true,
     contentLabel: 'CTA Button Label',
     subtitleLabel: 'Hero Subtitle / Description',
-    mediaLabel: 'Hero Background Video / Image URL',
   },
   {
     key: 'why_agri_header',
@@ -91,9 +89,7 @@ export const SECTION_CONFIGS: SectionConfig[] = [
     desc: 'The overarching organizational vision for African agriculture.',
     hasTitle: true,
     hasContent: true,
-    hasMedia: true,
     contentLabel: 'Vision Statement Body',
-    mediaLabel: 'Vision Section Photography',
   },
   {
     key: 'about_mission',
@@ -102,9 +98,7 @@ export const SECTION_CONFIGS: SectionConfig[] = [
     desc: 'The core operational mission driving Agri Experience interventions.',
     hasTitle: true,
     hasContent: true,
-    hasMedia: true,
     contentLabel: 'Mission Statement Body',
-    mediaLabel: 'Mission Section Photography',
   },
   {
     key: 'about_goal',
@@ -113,9 +107,7 @@ export const SECTION_CONFIGS: SectionConfig[] = [
     desc: 'The strategic impact goal and SDG commitments.',
     hasTitle: true,
     hasContent: true,
-    hasMedia: true,
     contentLabel: 'Goal Statement Body',
-    mediaLabel: 'Strategic Goal Photography',
   },
   {
     key: 'expertise_header',
@@ -221,7 +213,7 @@ export const SECTION_CONFIGS: SectionConfig[] = [
     hasTitle: true,
     hasSubtitle: true,
     hasContent: true,
-    subtitleLabel: 'Header Eyebrow Tagline (e.g. Sustainable Development Goals)',
+    subtitleLabel: 'Header Eyebrow Tagline (e.g. Strategic Alignment)',
     contentLabel: 'Narrative Lead Description',
   },
   {
