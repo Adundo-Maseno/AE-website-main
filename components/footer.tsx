@@ -25,7 +25,7 @@ export default function Footer({ settings }: FooterProps = {}) {
   const phoneHref = `tel:${contactPhone.replace(/[^+\d]/g, '') || '+254202626888'}`
   const officeAddress =
     settings?.officeAddress ||
-    'Watermark Business Park, Spring Court, Karen, P.O. Box 1720 - 00606, Nairobi'
+    'Watermark Business Park\nSpring Court, Karen\nP.O. Box 1720 - 00606, Nairobi'
   const addressHref = `https://maps.google.com/?q=${encodeURIComponent(officeAddress)}`
   const linkedinUrl =
     settings?.linkedinUrl || 'https://www.linkedin.com/company/agri-experience-ltd/'
@@ -135,7 +135,7 @@ export default function Footer({ settings }: FooterProps = {}) {
                     <span className="sr-only">{t('linkedin')}</span>
                     {/* Filled "in" lettermark only */}
                     <svg width="18" height="18" viewBox="0 0 20 20" fill="white" aria-hidden="true">
-                      <path d="M4.94 2.07A2.07 2.07 0 112.87 4.14 2.07 2.07 0 014.94 2.07zM2.07 6.75h3.56v11.45H2.07V6.75zm5.3 0h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04s-2.14 1.45-2.14 2.94v5.67H7.37V6.75z"/>
+                      <path d="M4.94 2.07A2.07 2.07 0 112.87 4.14 2.07 2.07 0 014.94 2.07zM2.07 6.75h3.56v11.45H2.07V6.75zm5.3 0h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04s-2.14 1.45-2.14 2.94v5.67H7.37V6.75z" />
                     </svg>
                   </a>
                 </div>
@@ -233,7 +233,7 @@ export default function Footer({ settings }: FooterProps = {}) {
           }}>
             <div style={{ borderTop: '1px solid #1f1f1f', paddingTop: '24px', display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between' }}>
               <Link href="/" aria-label="Agri Experience" style={{ display: 'inline-flex' }}>
-                <div 
+                <div
                   className="h-18 w-37.5 bg-[#888] transition-colors hover:bg-white"
                   style={{
                     WebkitMaskImage: 'url(/Newsletters.svg)',
@@ -290,7 +290,7 @@ export default function Footer({ settings }: FooterProps = {}) {
                 </div>
               </form>
             )}
-            
+
             {/* Social */}
             <div style={{ marginTop: '24px', display: 'flex' }}>
               <a href={linkedinUrl} target="_blank" rel="noopener noreferrer"
@@ -305,7 +305,7 @@ export default function Footer({ settings }: FooterProps = {}) {
               >
                 <span className="sr-only">{t('linkedin')}</span>
                 <svg width="18" height="18" viewBox="0 0 20 20" fill="white" aria-hidden="true">
-                  <path d="M4.94 2.07A2.07 2.07 0 112.87 4.14 2.07 2.07 0 014.94 2.07zM2.07 6.75h3.56v11.45H2.07V6.75zm5.3 0h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04s-2.14 1.45-2.14 2.94v5.67H7.37V6.75z"/>
+                  <path d="M4.94 2.07A2.07 2.07 0 112.87 4.14 2.07 2.07 0 014.94 2.07zM2.07 6.75h3.56v11.45H2.07V6.75zm5.3 0h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04s-2.14 1.45-2.14 2.94v5.67H7.37V6.75z" />
                 </svg>
               </a>
             </div>
@@ -384,7 +384,7 @@ export default function Footer({ settings }: FooterProps = {}) {
           {/* Logo + copyright */}
           <div style={{ borderTop: '1px solid #1f1f1f', paddingTop: '24px' }}>
             <Link href="/" aria-label="Agri Experience" style={{ display: 'inline-flex', marginBottom: '12px' }}>
-              <div 
+              <div
                 className="h-14 w-29 bg-[#888] transition-colors hover:bg-white"
                 style={{
                   WebkitMaskImage: 'url(/Newsletters.svg)',
