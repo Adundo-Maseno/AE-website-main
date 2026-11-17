@@ -175,6 +175,12 @@ export default function OurTeamContent({
                       src={member.image}
                       alt={member.name}
                       fill
+                      unoptimized={
+                        member.image.toLowerCase().split('?')[0].endsWith('.svg') ||
+                        member.image.startsWith('data:') ||
+                        member.image.startsWith('/uploads/') ||
+                        /^https?:\/\//i.test(member.image)
+                      }
                       className={`object-cover transition-all duration-[800ms] ease-out group-hover:scale-110 ${
                         member.hoverImage ? 'group-hover:opacity-0' : ''
                       } opacity-0`}
@@ -191,6 +197,12 @@ export default function OurTeamContent({
                         src={member.hoverImage}
                         alt={`${member.name} alternate`}
                         fill
+                        unoptimized={
+                          member.hoverImage.toLowerCase().split('?')[0].endsWith('.svg') ||
+                          member.hoverImage.startsWith('data:') ||
+                          member.hoverImage.startsWith('/uploads/') ||
+                          /^https?:\/\//i.test(member.hoverImage)
+                        }
                         className="object-cover absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-[800ms] ease-out"
                         style={{
                           objectPosition: member.hoverImagePosition || 'center 25%',
@@ -307,6 +319,12 @@ export default function OurTeamContent({
                     src={selectedMember.image}
                     alt={selectedMember.name}
                     fill
+                    unoptimized={
+                      selectedMember.image.toLowerCase().split('?')[0].endsWith('.svg') ||
+                      selectedMember.image.startsWith('data:') ||
+                      selectedMember.image.startsWith('/uploads/') ||
+                      /^https?:\/\//i.test(selectedMember.image)
+                    }
                     className="object-cover"
                     style={{
                       objectPosition: selectedMember.imagePosition || 'center 25%',

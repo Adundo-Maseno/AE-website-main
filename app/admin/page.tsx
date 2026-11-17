@@ -761,6 +761,7 @@ export default async function AdminDashboardPage() {
                           sizes="36px"
                           unoptimized={
                             member.image.toLowerCase().split('?')[0].endsWith('.svg') ||
+                            member.image.startsWith('data:') ||
                             member.image.startsWith('/uploads/') ||
                             /^https?:\/\//i.test(member.image)
                           }

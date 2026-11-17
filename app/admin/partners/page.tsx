@@ -176,6 +176,7 @@ export default function AdminPartnersPage() {
                         height={60}
                         unoptimized={
                           partner.logoUrl.toLowerCase().split('?')[0].endsWith('.svg') ||
+                          partner.logoUrl.startsWith('data:') ||
                           partner.logoUrl.startsWith('/uploads/') ||
                           /^https?:\/\//i.test(partner.logoUrl)
                         }

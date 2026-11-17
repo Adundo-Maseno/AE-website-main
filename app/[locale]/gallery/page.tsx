@@ -50,7 +50,9 @@ export default async function GalleryPage({
               const caption = isFr ? item.captionFr || item.captionEn : item.captionEn
               const isExternal = item.imageUrl.startsWith('http')
               const isUnoptimized =
-                item.imageUrl.endsWith('.svg') || item.imageUrl.startsWith('/uploads/')
+                item.imageUrl.toLowerCase().split('?')[0].endsWith('.svg') ||
+                item.imageUrl.startsWith('data:') ||
+                item.imageUrl.startsWith('/uploads/')
 
               return (
                 <article

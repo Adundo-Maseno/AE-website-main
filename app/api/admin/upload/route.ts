@@ -12,6 +12,25 @@ const ALLOWED_MIME_TYPES = [
   'application/pdf',
 ]
 
+const EXT_TO_MIME: Record<string, string> = {
+  '.jpg': 'image/jpeg',
+  '.jpeg': 'image/jpeg',
+  '.png': 'image/png',
+  '.webp': 'image/webp',
+  '.avif': 'image/avif',
+  '.svg': 'image/svg+xml',
+  '.pdf': 'application/pdf',
+}
+
+const ALLOWED_FOLDERS = new Set([
+  'team',
+  'partners',
+  'projects',
+  'gallery',
+  'resources',
+  'sections',
+])
+
 const MAX_IMAGE_SIZE = 5 * 1024 * 1024 // 5MB
 const MAX_PDF_SIZE = 30 * 1024 * 1024 // 30MB for reports & studies
 
@@ -24,21 +43,29 @@ export async function POST(req: NextRequest) {
   try {
     const formData = await req.formData()
     const file = formData.get('file') as File | null
-    const rawFolder = (formData.get('folder') as string) || 'team'
-    const folder = rawFolder.replace(/[^a-zA-Z0-9_-]/g, '') || 'team'
+    const rawFolder = ((formData.get('folder') as string) || 'team')
+      .replace(/[^a-zA-Z0-9_-]/g, '')
+      .toLowerCase()
+    const folder = ALLOWED_FOLDERS.has(rawFolder) ? rawFolder : 'team'
 
     if (!file) {
       return NextResponse.json({ error: 'No file provided' }, { status: 400 })
     }
 
-    if (!ALLOWED_MIME_TYPES.includes(file.type)) {
+    const fileExt = path.extname(file.name || '').toLowerCase()
+    const normalizedType =
+      file.type === 'image/jpg'
+        ? 'image/jpeg'
+        : file.type || EXT_TO_MIME[fileExt] || ''
+
+    if (!ALLOWED_MIME_TYPES.includes(normalizedType)) {
       return NextResponse.json(
         { error: 'Only JPG, PNG, WebP, AVIF, SVG images and PDF documents are permitted.' },
         { status: 400 }
       )
     }
 
-    const maxSize = file.type === 'application/pdf' ? MAX_PDF_SIZE : MAX_IMAGE_SIZE
+    const maxSize = normalizedType === 'application/pdf' ? MAX_PDF_SIZE : MAX_IMAGE_SIZE
     if (file.size > maxSize) {
       const limitMb = Math.round(maxSize / (1024 * 1024))
       return NextResponse.json(
@@ -50,15 +77,15 @@ export async function POST(req: NextRequest) {
     const bytes = await file.arrayBuffer()
     const buffer = Buffer.from(bytes)
 
-    const rawName = file.name.replace(/[^a-zA-Z0-9.-]/g, '_').toLowerCase()
+    const rawName = (file.name || 'upload').replace(/[^a-zA-Z0-9.-]/g, '_').toLowerCase()
     const fallbackExt =
-      file.type === 'application/pdf'
+      normalizedType === 'application/pdf'
         ? '.pdf'
-        : file.type === 'image/svg+xml'
+        : normalizedType === 'image/svg+xml'
           ? '.svg'
           : '.jpg'
     const ext = path.extname(rawName) || fallbackExt
-    const baseName = path.basename(rawName, ext).slice(0, 30)
+    const baseName = (path.basename(rawName, ext) || 'file').slice(0, 30)
     const timestamp = Date.now()
     const filename = `${baseName}-${timestamp}${ext}`
 
@@ -74,9 +101,10 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({
         success: true,
         url: publicUrl,
+        folder,
         filename,
         size: file.size,
-        mimeType: file.type,
+        mimeType: normalizedType,
         storage: 'filesystem',
       })
     } catch (fsErr: any) {
@@ -86,19 +114,20 @@ export async function POST(req: NextRequest) {
         fsErr?.code === 'EPERM' ||
         fsErr?.code === 'ENOENT'
 
-      if (isReadOnlyFs && file.type.startsWith('image/')) {
-        const dataUrl = `data:${file.type};base64,${buffer.toString('base64')}`
+      if (isReadOnlyFs && normalizedType.startsWith('image/')) {
+        const dataUrl = `data:${normalizedType};base64,${buffer.toString('base64')}`
         return NextResponse.json({
           success: true,
           url: dataUrl,
+          folder,
           filename,
           size: file.size,
-          mimeType: file.type,
+          mimeType: normalizedType,
           storage: 'inline-data-url',
         })
       }
 
-      if (isReadOnlyFs && file.type === 'application/pdf') {
+      if (isReadOnlyFs && normalizedType === 'application/pdf') {
         return NextResponse.json(
           {
             error:

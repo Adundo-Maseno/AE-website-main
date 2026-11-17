@@ -22,7 +22,12 @@ import { TeamMemberItem } from '@/lib/services/team-service'
 
 const shouldUnoptimize = (url: string) => {
   const clean = url.split('?')[0].toLowerCase()
-  return clean.endsWith('.svg') || url.startsWith('/uploads/') || /^https?:\/\//i.test(url)
+  return (
+    clean.endsWith('.svg') ||
+    url.startsWith('data:') ||
+    url.startsWith('/uploads/') ||
+    /^https?:\/\//i.test(url)
+  )
 }
 
 export default function AdminTeamPage() {
