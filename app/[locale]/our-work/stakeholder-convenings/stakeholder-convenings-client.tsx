@@ -2,11 +2,9 @@
 
 import { RollingText } from '@/components/ui/rolling-text'
 import { motion } from 'framer-motion'
-import { ArrowRight, ExternalLink } from 'lucide-react'
-import Image from 'next/image'
+import { ArrowRight, Compass, MessageCircle, Plane, Users, Award, Handshake, Calendar } from 'lucide-react'
 import { Link } from '@/i18n/routing'
 import { useTranslations } from 'next-intl'
-import { MessageCircle, Plane, Users, Award, Handshake, Calendar } from 'lucide-react'
 import type { ProjectItem } from '@/lib/services/projects-service'
 
 interface StakeholderConveningsClientProps {
@@ -64,6 +62,34 @@ export default function StakeholderConveningsClient({
       detail: t('conveningTypes.5.detail'),
       icon: Calendar,
     },
+  ]
+
+  const whyConveningsMatter = [
+    {
+      title: t('whyConveningsMatter.0.title'),
+      description: t('whyConveningsMatter.0.description'),
+      icon: Compass,
+      accent: 'from-lighter-dark-green/10 to-transparent',
+    },
+    {
+      title: t('whyConveningsMatter.1.title'),
+      description: t('whyConveningsMatter.1.description'),
+      icon: MessageCircle,
+      accent: 'from-primary-blue/10 to-transparent',
+    },
+    {
+      title: t('whyConveningsMatter.2.title'),
+      description: t('whyConveningsMatter.2.description'),
+      icon: Handshake,
+      accent: 'from-accent-gold/10 to-transparent',
+    },
+  ]
+
+  const regions = [
+    { name: t('regions.0.name'), countries: t('regions.0.countries') },
+    { name: t('regions.1.name'), countries: t('regions.1.countries') },
+    { name: t('regions.2.name'), countries: t('regions.2.countries') },
+    { name: t('regions.3.name'), countries: t('regions.3.countries') },
   ]
 
   return (
@@ -225,168 +251,76 @@ export default function StakeholderConveningsClient({
         </div>
       </section>
 
-      {/* ===== FLAGSHIP EVENT: Redesigned with High-Res Authentic Photography & Strategic Metrics ===== */}
-      <section className="w-full py-20 bg-[#F2F6F3] border-y border-[#DCE7E0]">
+      {/* ===== FLAGSHIP EVENT ===== */}
+      <section className="w-full py-20 bg-mist">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="bg-deep-forest rounded-[40px] p-8 sm:p-12 lg:p-16 relative overflow-hidden flex flex-col lg:flex-row gap-12 lg:gap-16 items-center"
+            className="bg-deep-forest rounded-[40px] p-8 sm:p-12 lg:p-16 relative overflow-hidden flex flex-col lg:flex-row gap-12 lg:gap-20 items-center"
           >
+            {/* Background accents */}
             <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary-green/[0.05] rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-lighter-dark-green/[0.1] rounded-full blur-[60px] translate-y-1/3 -translate-x-1/3 pointer-events-none" />
 
-            {/* Left Visual Image Column */}
-            <div className="w-full lg:w-5/12 relative">
-              <div className="relative aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/5] rounded-[28px] overflow-hidden shadow-2xl border border-white/10 group">
-                <Image
-                  src="/glenn-carstens-peters-piNf3C4TViA-unsplash.jpg"
-                  alt="High-Stakes Agricultural Stakeholder Convening and Roundtable"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 38vw"
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
-                <div className="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-white/20 text-deep-forest text-xs space-y-1">
-                  <span className="font-bold uppercase tracking-wider text-teal-800 text-[10px]">
-                    Neutral Facilitation • High Trust
-                  </span>
-                  <p className="font-medium text-charcoal/85 leading-snug">
-                    Convening public regulators, private breeders, and farmer advocates to resolve critical policy logjams.
-                  </p>
-                </div>
-              </div>
+            <div className="flex-1 relative z-10 space-y-6">
+              <h3 className="text-3xl lg:text-5xl font-serif font-bold text-white tracking-tight pb-2 leading-tight">
+                {t('sp_title')}
+              </h3>
+              <p className="text-white/60 font-light text-lg italic">
+                {t('sp_subtitle')}
+              </p>
             </div>
 
-            {/* Right Narrative & Impact Statistics */}
-            <div className="w-full lg:w-7/12 relative z-10 space-y-8">
-              <div className="space-y-4">
-                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white/90 text-xs font-semibold uppercase tracking-wider">
-                  Flagship Dialogue
-                </span>
-                <h3 className="text-3xl lg:text-5xl font-serif font-bold text-white tracking-tight pb-1 leading-tight">
-                  {t('sp_title')}
-                </h3>
-                <p className="text-white/70 font-light text-base lg:text-lg italic">
-                  {t('sp_subtitle')}
-                </p>
-              </div>
-
-              <div className="space-y-4 text-white/80 font-light leading-relaxed text-[15px] sm:text-base border-t border-white/10 pt-6">
-                <p>{t('sp_desc1')}</p>
-                <p className="text-white/65">{t('sp_desc2')}</p>
-              </div>
-
-              {/* Convening Impact Badges */}
-              <div className="grid grid-cols-3 gap-3 pt-4 border-t border-white/10">
-                <div className="p-3 sm:p-4 rounded-2xl bg-white/5 border border-white/10 text-center">
-                  <div className="font-serif font-bold text-xl sm:text-2xl text-white">15+</div>
-                  <div className="text-[11px] text-white/60 uppercase tracking-wider mt-0.5">Roundtables</div>
-                </div>
-                <div className="p-3 sm:p-4 rounded-2xl bg-white/5 border border-white/10 text-center">
-                  <div className="font-serif font-bold text-xl sm:text-2xl text-white">100%</div>
-                  <div className="text-[11px] text-white/60 uppercase tracking-wider mt-0.5">Key Seed Cos</div>
-                </div>
-                <div className="p-3 sm:p-4 rounded-2xl bg-white/5 border border-white/10 text-center">
-                  <div className="font-serif font-bold text-xl sm:text-2xl text-white">5</div>
-                  <div className="text-[11px] text-white/60 uppercase tracking-wider mt-0.5">Policy Reforms</div>
-                </div>
-              </div>
+            <div className="flex-1 relative z-10 space-y-6 border-l border-white/[0.08] pl-0 lg:pl-12">
+              <p className="text-white/80 font-light leading-relaxed text-[14.5px] min-[1440px]:text-base">
+                {t('sp_desc1')}
+              </p>
+              <p className="text-white/60 font-light leading-relaxed text-[14.5px] min-[1440px]:text-base">
+                {t('sp_desc2')}
+              </p>
             </div>
           </motion.div>
         </div>
       </section>
-
-      {/* ===== DYNAMIC CMS CASE STUDIES & ASSIGNMENTS ===== */}
-      {projects.length > 0 && (
-        <section className="w-full py-20 bg-white border-b border-black/[0.06]">
-          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 space-y-10">
-            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-              <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-teal-800">
-                  Case Studies & Engagements
-                </span>
-                <h3 className="font-serif font-bold text-3xl lg:text-4xl text-deep-forest tracking-tight mt-1">
-                  Featured Convening Initiatives
-                </h3>
-              </div>
-              <p className="text-xs text-charcoal/60 max-w-md">
-                Cross-sector dialogues, industry consultations, and high-level stakeholder symposia curated by Agri Experience.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects.map((p) => {
-                const title = locale === 'fr' ? p.titleFr || p.titleEn : p.titleEn
-                const desc = locale === 'fr' ? p.descFr || p.descEn : p.descEn
-
-                return (
-                  <div
-                    key={p.id}
-                    className="group rounded-3xl bg-mist border border-mist hover:border-teal-700/30 hover:bg-white hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col"
-                  >
-                    {p.imageUrl && (
-                      <div className="relative w-full aspect-[16/10] overflow-hidden bg-white border-b border-black/[0.06]">
-                        <Image
-                          src={p.imageUrl}
-                          alt={title}
-                          fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                      </div>
-                    )}
-
-                    <div className="p-6 sm:p-7 flex flex-col flex-1 space-y-3">
-                      <div className="flex items-center justify-between gap-2 text-xs">
-                        {p.client && (
-                          <span className="font-bold text-teal-800 uppercase tracking-wider text-[11px]">
-                            {p.client}
-                          </span>
-                        )}
-                        {p.year && (
-                          <span className="text-charcoal/50 text-[11px] font-mono">
-                            {p.year}
-                          </span>
-                        )}
-                      </div>
-
-                      <h4 className="font-serif font-bold text-lg text-deep-forest leading-snug group-hover:text-teal-800 transition-colors">
-                        {title}
-                      </h4>
-
-                      <p className="text-xs text-charcoal/70 font-light leading-relaxed flex-1 line-clamp-3">
-                        {desc}
-                      </p>
-
-                      {p.link && (
-                        <div className="pt-3 border-t border-black/[0.06] mt-auto">
-                          <a
-                            href={p.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 text-xs font-bold text-teal-800 hover:underline"
-                          >
-                            <span>Read Convening Brief</span>
-                            <ExternalLink size={12} />
-                          </a>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* ===== CTA ===== */}
       <section className="w-full relative overflow-hidden">
         <div className="bg-deep-forest py-16 lg:py-20 relative">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(58,180,74,0.12),_transparent_60%)] pointer-events-none" />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(28,43,34,0.4),_transparent_60%)] pointer-events-none" />
+
+          {/* Noise texture */}
+          <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+            <svg width="100%" height="100%">
+              <filter id="noiseCTA_SC">
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.65"
+                  numOctaves="3"
+                  stitchTiles="stitch"
+                />
+              </filter>
+              <rect width="100%" height="100%" filter="url(#noiseCTA_SC)" />
+            </svg>
+          </div>
+
+          {/* Decorative connection dots */}
+          <div className="absolute top-12 left-12 pointer-events-none opacity-[0.08] hidden lg:block">
+            <svg width="120" height="120" viewBox="0 0 120 120">
+              <circle cx="10" cy="10" r="3" fill="white" />
+              <circle cx="60" cy="30" r="3" fill="white" />
+              <circle cx="110" cy="10" r="3" fill="white" />
+              <circle cx="30" cy="80" r="3" fill="white" />
+              <circle cx="90" cy="100" r="3" fill="white" />
+              <line x1="10" y1="10" x2="60" y2="30" stroke="white" strokeWidth="1" />
+              <line x1="60" y1="30" x2="110" y2="10" stroke="white" strokeWidth="1" />
+              <line x1="10" y1="10" x2="30" y2="80" stroke="white" strokeWidth="1" />
+              <line x1="60" y1="30" x2="90" y2="100" stroke="white" strokeWidth="1" />
+            </svg>
+          </div>
 
           <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative z-10 text-center">
             <motion.div

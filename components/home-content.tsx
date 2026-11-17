@@ -633,7 +633,7 @@ export default function HomeContent({
                   </RollingText>
                 </Link>
                 <Link
-                  href="/our-work"
+                  href="/contact"
                   className="group relative overflow-hidden inline-flex items-center justify-center px-4 py-3 sm:px-10 sm:py-5 border-2 border-white/30 text-white rounded-full font-bold text-xs sm:text-lg hover:bg-white/10 transition duration-200 backdrop-blur-sm"
                 >
                   <RollingText>

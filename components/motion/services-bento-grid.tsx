@@ -66,8 +66,8 @@ export default function ServicesBentoGrid({ initialPillars, headerData }: Servic
     { gridClass: 'md:col-span-2', route: '/our-work/project-implementation' },
     { gridClass: 'md:col-span-2', route: '/our-work/client-advisory' },
     { gridClass: 'md:col-span-2', route: '/our-work/capacity-building' },
-    { gridClass: 'md:col-span-2', route: '/our-work/client-advisory' },
-    { gridClass: 'md:col-span-2 md:col-start-2', route: '/our-work/project-implementation' },
+    { gridClass: 'md:col-span-2', route: '/our-work/technical-studies' },
+    { gridClass: 'md:col-span-2 md:col-start-2', route: '/our-work/digital-platforms' },
   ]
 
   let pillars: ServicePillar[] = []

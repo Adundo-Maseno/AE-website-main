@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { MonitorSmartphone, ArrowRight, ExternalLink } from 'lucide-react'
+import { ArrowRight, ExternalLink } from 'lucide-react'
 import { Link } from '@/i18n/routing'
 import { useTranslations } from 'next-intl'
 import { RollingText } from '@/components/ui/rolling-text'
@@ -116,10 +116,6 @@ export default function DigitalPlatformsClient({
               transition={{ duration: 0.8 }}
               className="flex-1 space-y-4 lg:space-y-6"
             >
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-green/10 text-primary-green text-xs font-bold uppercase tracking-wider">
-                <MonitorSmartphone size={14} />
-                <span>{t('eyebrow')}</span>
-              </div>
               <h1
                 className="font-serif text-deep-forest font-bold leading-tight tracking-tight pb-2"
                 style={{ fontSize: 'clamp(1.875rem, 1.4rem + 2.4vw, 4.5rem)' }}
