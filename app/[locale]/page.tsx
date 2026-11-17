@@ -5,7 +5,7 @@ import { getWhyAgriCards } from '@/lib/services/why-agri-service'
 import { getPartners } from '@/lib/services/partners-service'
 import HomeContent from '@/components/home-content'
 
-export const revalidate = 0 // Dynamic on-demand revalidation
+export const revalidate = 60 // ISR + on-demand revalidation from CMS
 
 export default async function HomePage() {
   const [sections, beliefs, whyCards, partners] = await Promise.all([

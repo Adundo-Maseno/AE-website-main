@@ -85,7 +85,7 @@ export default function GoogleAnalytics({ gaId }: { gaId?: string }) {
         } else {
           loadGtag()
         }
-      }, 3500)
+      }, 6500)
     }
 
     for (const event of INTERACTION_EVENTS) {

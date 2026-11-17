@@ -44,32 +44,38 @@ export default function HomeContent({
   const [shouldMountVideo, setShouldMountVideo] = useState(false)
   const [isVideoReady, setIsVideoReady] = useState(false)
 
-  // Defer hero MP4 video mount on desktop until after window load + idle
+  // Defer hero MP4 video mount on desktop until first interaction or 6.5s after window load
   useEffect(() => {
     if (typeof window === 'undefined' || window.innerWidth < 768) return
 
     let cancelled = false
-    let idleId: number | undefined
     let timeoutId: ReturnType<typeof setTimeout> | undefined
+    const events = ['pointerdown', 'keydown', 'scroll', 'touchstart', 'mousemove'] as const
 
-    const scheduleMount = () => {
-      if (cancelled) return
-      if ('requestIdleCallback' in window) {
-        idleId = window.requestIdleCallback(
-          () => {
-            if (!cancelled && window.innerWidth >= 768) {
-              setShouldMountVideo(true)
-            }
-          },
-          { timeout: 1500 }
-        )
-      } else {
-        timeoutId = setTimeout(() => {
-          if (!cancelled && window.innerWidth >= 768) {
-            setShouldMountVideo(true)
-          }
-        }, 1500)
+    const cleanup = () => {
+      for (const ev of events) {
+        window.removeEventListener(ev, triggerMount)
       }
+      window.removeEventListener('load', scheduleMount)
+      if (timeoutId !== undefined) {
+        clearTimeout(timeoutId)
+        timeoutId = undefined
+      }
+    }
+
+    function triggerMount() {
+      if (cancelled || window.innerWidth < 768) return
+      cleanup()
+      setShouldMountVideo(true)
+    }
+
+    function scheduleMount() {
+      if (cancelled) return
+      timeoutId = setTimeout(triggerMount, 6500)
+    }
+
+    for (const ev of events) {
+      window.addEventListener(ev, triggerMount, { once: true, passive: true })
     }
 
     if (document.readyState === 'complete') {
@@ -80,13 +86,7 @@ export default function HomeContent({
 
     return () => {
       cancelled = true
-      window.removeEventListener('load', scheduleMount)
-      if (idleId !== undefined && 'cancelIdleCallback' in window) {
-        window.cancelIdleCallback(idleId)
-      }
-      if (timeoutId !== undefined) {
-        clearTimeout(timeoutId)
-      }
+      cleanup()
     }
   }, [])
 
@@ -417,6 +417,7 @@ export default function HomeContent({
                 fill
                 priority
                 fetchPriority="high"
+                quality={60}
                 sizes="100vw"
                 className="object-cover object-center lg:object-[center_30%]"
               />
