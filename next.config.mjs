@@ -27,6 +27,8 @@ const nextConfig = {
   experimental: {
     inlineCss: true,
     optimizePackageImports: ['lucide-react', 'framer-motion', 'gsap', '@gsap/react'],
+    cpus: 2,
+    staticGenerationMaxConcurrency: 2,
   },
   async headers() {
     return [
