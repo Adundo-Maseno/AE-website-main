@@ -212,6 +212,8 @@ model ExpertisePillar {
 
 model WorkMilestone {
   id          String   @id @default(cuid())
+  startYear   Int      @default(2020)
+  endYear     Int?
   yearRange   String
   titleEn     String
   titleFr     String?
@@ -226,6 +228,7 @@ model WorkMilestone {
   updatedAt   DateTime @updatedAt
 
   @@index([serviceArea])
+  @@index([startYear, endYear])
   @@index([order])
 }
 

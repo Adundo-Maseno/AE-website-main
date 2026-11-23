@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { X, Save, Loader2 } from 'lucide-react'
 import {
   SERVICE_AREAS,
+  formatYearRange,
   type WorkMilestoneData,
 } from '@/lib/constants/milestones'
 import {
@@ -26,7 +27,8 @@ export default function MilestoneFormModal({
   initialData,
   nextOrder = 15,
 }: MilestoneFormModalProps) {
-  const [yearRange, setYearRange] = useState('')
+  const [startYear, setStartYear] = useState('2026')
+  const [endYear, setEndYear] = useState('')
   const [titleEn, setTitleEn] = useState('')
   const [titleFr, setTitleFr] = useState('')
   const [client, setClient] = useState('')
@@ -41,7 +43,8 @@ export default function MilestoneFormModal({
 
   useEffect(() => {
     if (initialData) {
-      setYearRange(initialData.yearRange || '')
+      setStartYear(String(initialData.startYear || 2020))
+      setEndYear(initialData.endYear ? String(initialData.endYear) : '')
       setTitleEn(initialData.titleEn || '')
       setTitleFr(initialData.titleFr || '')
       setClient(initialData.client || '')
@@ -52,7 +55,8 @@ export default function MilestoneFormModal({
       setOrder(initialData.order ?? 1)
       setActive(initialData.active ?? true)
     } else {
-      setYearRange('2026')
+      setStartYear(String(new Date().getFullYear()))
+      setEndYear('')
       setTitleEn('')
       setTitleFr('')
       setClient('')
@@ -68,10 +72,29 @@ export default function MilestoneFormModal({
 
   if (!isOpen) return null
 
+  const numericStart = Number(startYear)
+  const numericEnd = endYear.trim() !== '' ? Number(endYear) : null
+  const badgePreview =
+    Number.isInteger(numericStart) && numericStart >= 1990
+      ? formatYearRange(numericStart, numericEnd)
+      : '—'
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (!yearRange.trim() || !titleEn.trim() || !location.trim()) {
-      setError('Year range, English title, and location are required.')
+
+    if (!Number.isInteger(numericStart) || numericStart < 1990 || numericStart > 2100) {
+      setError('Please enter a valid 4-digit Start Year (e.g. 2024).')
+      return
+    }
+    if (
+      numericEnd !== null &&
+      (!Number.isInteger(numericEnd) || numericEnd < numericStart || numericEnd > 2100)
+    ) {
+      setError('End Year must be greater than or equal to Start Year (or leave blank for a single-year project).')
+      return
+    }
+    if (!titleEn.trim() || !location.trim()) {
+      setError('English title and location are required.')
       return
     }
 
@@ -80,7 +103,8 @@ export default function MilestoneFormModal({
       setError('')
 
       const payload = {
-        yearRange: yearRange.trim(),
+        startYear: numericStart,
+        endYear: numericEnd && numericEnd > numericStart ? numericEnd : null,
         titleEn: titleEn.trim(),
         titleFr: titleFr.trim() || null,
         client: client.trim() || null,
@@ -122,9 +146,14 @@ export default function MilestoneFormModal({
     <div className="fixed inset-0 z-50 bg-[#0F2417]/40 backdrop-blur-xs flex items-center justify-center p-4 overflow-y-auto">
       <div className="bg-white border border-[#0F2417]/15 rounded-2xl shadow-2xl w-full max-w-2xl my-8 overflow-hidden">
         <div className="px-6 py-4 bg-[#FAF9F5] border-b border-[#0F2417]/10 flex items-center justify-between">
-          <h2 className="font-serif text-xl font-bold text-[#0F2417]">
-            {initialData ? 'Edit Journey Milestone' : 'Add Journey Milestone'}
-          </h2>
+          <div className="flex items-center gap-3">
+            <h2 className="font-serif text-xl font-bold text-[#0F2417]">
+              {initialData ? 'Edit Journey Milestone' : 'Add Journey Milestone'}
+            </h2>
+            <span className="px-2.5 py-0.5 rounded-full bg-[#0F2417] text-white text-xs font-bold">
+              {badgePreview}
+            </span>
+          </div>
           <button
             type="button"
             onClick={onClose}
@@ -141,37 +170,54 @@ export default function MilestoneFormModal({
             </div>
           )}
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-xs font-bold text-[#0F2417]/80 mb-1.5">
-                Year / Period *
+                Start Year *
               </label>
               <input
-                type="text"
-                value={yearRange}
-                onChange={(e) => setYearRange(e.target.value)}
-                placeholder="e.g. 2024–2026"
+                type="number"
+                min={1990}
+                max={2100}
+                value={startYear}
+                onChange={(e) => setStartYear(e.target.value)}
+                placeholder="e.g. 2018"
                 className="w-full px-3.5 py-2.5 rounded-xl border border-[#0F2417]/20 text-sm focus:outline-none focus:ring-2 focus:ring-[#0F2417]/20"
                 required
               />
             </div>
 
-            <div className="sm:col-span-2">
+            <div>
               <label className="block text-xs font-bold text-[#0F2417]/80 mb-1.5">
-                Service Area (links to /our-work pillar) *
+                End Year <span className="font-normal text-[#0F2417]/50">(optional — leave blank for single year)</span>
               </label>
-              <select
-                value={serviceArea}
-                onChange={(e) => setServiceArea(e.target.value)}
-                className="w-full px-3.5 py-2.5 rounded-xl border border-[#0F2417]/20 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#0F2417]/20"
-              >
-                {SERVICE_AREAS.map((area) => (
-                  <option key={area.slug} value={area.slug}>
-                    {area.labelEn}
-                  </option>
-                ))}
-              </select>
+              <input
+                type="number"
+                min={1990}
+                max={2100}
+                value={endYear}
+                onChange={(e) => setEndYear(e.target.value)}
+                placeholder="e.g. 2024"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-[#0F2417]/20 text-sm focus:outline-none focus:ring-2 focus:ring-[#0F2417]/20"
+              />
             </div>
+          </div>
+
+          <div>
+            <label className="block text-xs font-bold text-[#0F2417]/80 mb-1.5">
+              Service Area (links to /our-work pillar) *
+            </label>
+            <select
+              value={serviceArea}
+              onChange={(e) => setServiceArea(e.target.value)}
+              className="w-full px-3.5 py-2.5 rounded-xl border border-[#0F2417]/20 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#0F2417]/20"
+            >
+              {SERVICE_AREAS.map((area) => (
+                <option key={area.slug} value={area.slug}>
+                  {area.labelEn}
+                </option>
+              ))}
+            </select>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -275,7 +321,7 @@ export default function MilestoneFormModal({
           <div className="grid grid-cols-2 gap-4 items-center pt-1">
             <div>
               <label className="block text-xs font-bold text-[#0F2417]/80 mb-1.5">
-                Display Order
+                Tie-break Order <span className="font-normal text-[#0F2417]/50">(same years)</span>
               </label>
               <input
                 type="number"

@@ -17,6 +17,40 @@ export async function PUT(
   try {
     const { id } = await params
     const body = await req.json()
+
+    if (body.startYear !== undefined) {
+      const parsedStart = Number(body.startYear)
+      if (!Number.isInteger(parsedStart) || parsedStart < 1990 || parsedStart > 2100) {
+        return NextResponse.json(
+          { success: false, error: 'Start year must be a valid 4-digit year' },
+          { status: 400 }
+        )
+      }
+      body.startYear = parsedStart
+    }
+
+    if (body.endYear !== undefined) {
+      if (body.endYear === null || body.endYear === '') {
+        body.endYear = null
+      } else {
+        const parsedEnd = Number(body.endYear)
+        if (
+          !Number.isInteger(parsedEnd) ||
+          parsedEnd > 2100 ||
+          (body.startYear !== undefined && parsedEnd < body.startYear)
+        ) {
+          return NextResponse.json(
+            {
+              success: false,
+              error: 'End year must be a valid year greater than or equal to start year',
+            },
+            { status: 400 }
+          )
+        }
+        body.endYear = parsedEnd
+      }
+    }
+
     const milestone = await updateWorkMilestone(id, body)
     return NextResponse.json({ success: true, milestone })
   } catch (err: any) {

@@ -4,7 +4,12 @@ import { useMemo, useRef, useState } from 'react'
 import { ArrowRight, MapPin, Building2, Filter } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { Link } from '@/i18n/routing'
-import { SERVICE_AREAS, type WorkMilestoneData } from '@/lib/constants/milestones'
+import {
+  SERVICE_AREAS,
+  formatYearRange,
+  sortMilestonesChronologically,
+  type WorkMilestoneData,
+} from '@/lib/constants/milestones'
 import { MilestoneIcon } from '@/components/our-work/milestone-icon'
 
 export interface ServiceCardItem {
@@ -48,24 +53,22 @@ export default function OurWorkContent({
     return counts
   }, [milestones])
 
+  const sortedMilestones = useMemo(
+    () => sortMilestonesChronologically(milestones),
+    [milestones]
+  )
+
   const filteredMilestones = useMemo(() => {
-    if (selectedArea === 'all') return milestones
-    return milestones.filter((m) => m.serviceArea === selectedArea)
-  }, [milestones, selectedArea])
+    if (selectedArea === 'all') return sortedMilestones
+    return sortedMilestones.filter((m) => m.serviceArea === selectedArea)
+  }, [sortedMilestones, selectedArea])
 
   const yearSpanLabel = useMemo(() => {
-    const years: number[] = []
-    for (const m of milestones) {
-      const matches = m.yearRange.match(/\d{4}/g)
-      if (matches) {
-        for (const y of matches) years.push(Number(y))
-      }
-    }
-    if (years.length === 0) return '2013 – 2026'
-    const min = Math.min(...years)
-    const max = Math.max(...years)
+    if (sortedMilestones.length === 0) return '2013 – 2026'
+    const min = Math.min(...sortedMilestones.map((m) => m.startYear))
+    const max = Math.max(...sortedMilestones.map((m) => m.endYear ?? m.startYear))
     return min === max ? `${min}` : `${min} – ${max}`
-  }, [milestones])
+  }, [sortedMilestones])
 
   const serviceAreaMap = useMemo(() => {
     const map = new Map<string, (typeof SERVICE_AREAS)[number]>()
@@ -290,7 +293,7 @@ export default function OurWorkContent({
                   >
                     {/* Overlapping Dark Green Year Badge */}
                     <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-deep-forest text-white font-bold text-xs tracking-wide shadow-sm whitespace-nowrap">
-                      {m.yearRange}
+                      {formatYearRange(m.startYear, m.endYear)}
                     </div>
 
                     <div className="space-y-3 flex-1 flex flex-col items-center">

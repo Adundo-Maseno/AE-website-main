@@ -75,6 +75,8 @@ export const SERVICE_AREAS: ServiceAreaMeta[] = [
 
 export interface WorkMilestoneData {
   id: string
+  startYear: number
+  endYear?: number | null
   yearRange: string
   titleEn: string
   titleFr?: string | null
@@ -87,4 +89,39 @@ export interface WorkMilestoneData {
   active: boolean
   createdAt?: Date
   updatedAt?: Date
+}
+
+export function formatYearRange(startYear: number, endYear?: number | null): string {
+  if (endYear && endYear > startYear) {
+    return `${startYear}–${endYear}`
+  }
+  return `${startYear}`
+}
+
+export function parseYearsFromRange(yearRange?: string | null): {
+  startYear: number
+  endYear: number | null
+} {
+  const matches = yearRange?.match(/\d{4}/g)
+  if (!matches || matches.length === 0) {
+    return { startYear: 2020, endYear: null }
+  }
+  const start = Number(matches[0])
+  const end = matches.length > 1 ? Number(matches[1]) : null
+  return {
+    startYear: start,
+    endYear: end && end > start ? end : null,
+  }
+}
+
+export function sortMilestonesChronologically<
+  T extends { startYear: number; endYear?: number | null; order?: number }
+>(items: T[]): T[] {
+  return [...items].sort((a, b) => {
+    if (a.startYear !== b.startYear) return a.startYear - b.startYear
+    const endA = a.endYear ?? a.startYear
+    const endB = b.endYear ?? b.startYear
+    if (endA !== endB) return endA - endB
+    return (a.order ?? 0) - (b.order ?? 0)
+  })
 }

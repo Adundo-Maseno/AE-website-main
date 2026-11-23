@@ -14,6 +14,8 @@ import {
 } from 'lucide-react'
 import {
   SERVICE_AREAS,
+  formatYearRange,
+  sortMilestonesChronologically,
   type WorkMilestoneData,
 } from '@/lib/constants/milestones'
 import { MilestoneIcon } from '@/components/our-work/milestone-icon'
@@ -54,8 +56,9 @@ export default function AdminMilestonesPage() {
   }, [])
 
   const filtered = useMemo(() => {
-    if (filterArea === 'all') return milestones
-    return milestones.filter((m) => m.serviceArea === filterArea)
+    const sorted = sortMilestonesChronologically(milestones)
+    if (filterArea === 'all') return sorted
+    return sorted.filter((m) => m.serviceArea === filterArea)
   }, [milestones, filterArea])
 
   const handleToggleActive = async (m: WorkMilestoneData) => {
@@ -215,10 +218,10 @@ export default function AdminMilestonesPage() {
                   <div className="space-y-3">
                     <div className="flex items-center justify-between gap-2">
                       <span className="px-3 py-1 rounded-full bg-[#0F2417] text-white text-xs font-bold">
-                        {m.yearRange}
+                        {formatYearRange(m.startYear, m.endYear)}
                       </span>
-                      <span className="text-[11px] font-semibold text-[#0F2417]/50">
-                        Order #{m.order}
+                      <span className="text-[11px] font-semibold text-[#0F2417]/60">
+                        {m.endYear ? `${m.startYear} → ${m.endYear}` : `Start: ${m.startYear}`}
                       </span>
                     </div>
 

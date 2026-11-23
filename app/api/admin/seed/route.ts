@@ -312,6 +312,8 @@ export async function POST() {
       for (const m of staticWorkMilestones) {
         await prisma.workMilestone.create({
           data: {
+            startYear: m.startYear,
+            endYear: m.endYear ?? null,
             yearRange: m.yearRange,
             titleEn: m.titleEn,
             titleFr: m.titleFr || null,

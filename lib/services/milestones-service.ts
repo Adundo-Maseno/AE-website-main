@@ -1,10 +1,18 @@
 import { prisma, isDatabaseConnected } from '@/lib/db'
 import { revalidatePath } from 'next/cache'
 import { createSeedGuard, stripManagedFields } from './service-utils'
-import type { WorkMilestoneData } from '@/lib/constants/milestones'
+import {
+  formatYearRange,
+  parseYearsFromRange,
+  sortMilestonesChronologically,
+  type WorkMilestoneData,
+} from '@/lib/constants/milestones'
 
 export {
   SERVICE_AREAS,
+  formatYearRange,
+  parseYearsFromRange,
+  sortMilestonesChronologically,
   type ServiceAreaSlug,
   type MilestoneIconName,
   type ServiceAreaMeta,
@@ -14,6 +22,8 @@ export {
 export const staticWorkMilestones: WorkMilestoneData[] = [
   {
     id: 'ms-1',
+    startYear: 2013,
+    endYear: 2018,
     yearRange: '2013–2018',
     titleEn: 'Kenya Crop Seed Sector Project',
     titleFr: 'Projet sur le secteur des semences au Kenya',
@@ -27,6 +37,8 @@ export const staticWorkMilestones: WorkMilestoneData[] = [
   },
   {
     id: 'ms-2',
+    startYear: 2018,
+    endYear: null,
     yearRange: '2018',
     titleEn: 'Kenya Crops and Dairy Market System Development (KCDMSD) – Scoping Studies',
     titleFr: 'Développement du système de marché des cultures et produits laitiers au Kenya (KCDMSD) – Études exploratoires',
@@ -40,6 +52,8 @@ export const staticWorkMilestones: WorkMilestoneData[] = [
   },
   {
     id: 'ms-3',
+    startYear: 2018,
+    endYear: null,
     yearRange: '2018',
     titleEn: 'Regional Seed Trade Assessment in East Africa',
     titleFr: 'Évaluation régionale du commerce des semences en Afrique de l’Est',
@@ -53,32 +67,8 @@ export const staticWorkMilestones: WorkMilestoneData[] = [
   },
   {
     id: 'ms-4',
-    yearRange: '2018–2024',
-    titleEn: 'Supporting Seed Systems for Development – CRS',
-    titleFr: 'Soutien aux systèmes semenciers pour le développement – CRS',
-    client: 'CRS',
-    location: 'Kenya, Tanzania',
-    locationFr: 'Kenya, Tanzanie',
-    serviceArea: 'project-implementation',
-    icon: 'settings',
-    order: 4,
-    active: true,
-  },
-  {
-    id: 'ms-5',
-    yearRange: '2018–2024',
-    titleEn: 'Enhancing the Seed Sector in Tanzania (ESSETA)',
-    titleFr: 'Renforcement du secteur semencier en Tanzanie (ESSETA)',
-    client: null,
-    location: 'Tanzania',
-    locationFr: 'Tanzanie',
-    serviceArea: 'project-implementation',
-    icon: 'trending-up',
-    order: 5,
-    active: true,
-  },
-  {
-    id: 'ms-6',
+    startYear: 2018,
+    endYear: 2019,
     yearRange: '2018–2019',
     titleEn: 'Evaluation and Assessment of Stress-Tolerant Maize for Africa',
     titleFr: 'Évaluation du maïs tolérant au stress pour l’Afrique',
@@ -87,11 +77,43 @@ export const staticWorkMilestones: WorkMilestoneData[] = [
     locationFr: 'Éthiopie, Kenya, Tanzanie, Ouganda',
     serviceArea: 'technical-studies',
     icon: 'shield-check',
+    order: 4,
+    active: true,
+  },
+  {
+    id: 'ms-5',
+    startYear: 2018,
+    endYear: 2024,
+    yearRange: '2018–2024',
+    titleEn: 'Supporting Seed Systems for Development – CRS',
+    titleFr: 'Soutien aux systèmes semenciers pour le développement – CRS',
+    client: 'CRS',
+    location: 'Kenya, Tanzania',
+    locationFr: 'Kenya, Tanzanie',
+    serviceArea: 'project-implementation',
+    icon: 'settings',
+    order: 5,
+    active: true,
+  },
+  {
+    id: 'ms-6',
+    startYear: 2018,
+    endYear: 2024,
+    yearRange: '2018–2024',
+    titleEn: 'Enhancing the Seed Sector in Tanzania (ESSETA)',
+    titleFr: 'Renforcement du secteur semencier en Tanzanie (ESSETA)',
+    client: null,
+    location: 'Tanzania',
+    locationFr: 'Tanzanie',
+    serviceArea: 'project-implementation',
+    icon: 'trending-up',
     order: 6,
     active: true,
   },
   {
     id: 'ms-7',
+    startYear: 2019,
+    endYear: 2020,
     yearRange: '2019–2020',
     titleEn: 'SeedSAT Beta Development for Quality Assurance',
     titleFr: 'Développement de la version bêta de SeedSAT pour l’assurance qualité',
@@ -105,6 +127,8 @@ export const staticWorkMilestones: WorkMilestoneData[] = [
   },
   {
     id: 'ms-8',
+    startYear: 2021,
+    endYear: 2022,
     yearRange: '2021–2022',
     titleEn: 'Support the Development of Seed Systems Assessment Tool (SeedSAT) and CESSA',
     titleFr: 'Soutien au développement de l’outil d’évaluation des systèmes semenciers (SeedSAT) et CESSA',
@@ -118,6 +142,8 @@ export const staticWorkMilestones: WorkMilestoneData[] = [
   },
   {
     id: 'ms-9',
+    startYear: 2023,
+    endYear: null,
     yearRange: '2023',
     titleEn: 'Digital Learning Study on Best Practices in Digital Learning',
     titleFr: 'Étude sur les meilleures pratiques en apprentissage numérique',
@@ -131,6 +157,8 @@ export const staticWorkMilestones: WorkMilestoneData[] = [
   },
   {
     id: 'ms-10',
+    startYear: 2023,
+    endYear: 2027,
     yearRange: '2023–2027',
     titleEn: 'Seed Systems Indicators (SSI) – Two Phases',
     titleFr: 'Indicateurs des systèmes semenciers (SSI) – Deux phases',
@@ -144,19 +172,8 @@ export const staticWorkMilestones: WorkMilestoneData[] = [
   },
   {
     id: 'ms-11',
-    yearRange: '2024–2026',
-    titleEn: 'Africa Digital Crop Variety Catalogue',
-    titleFr: 'Catalogue numérique africain des variétés cultivées',
-    client: 'AGRA',
-    location: '10 African Countries',
-    locationFr: '10 pays africains',
-    serviceArea: 'digital-platforms',
-    icon: 'smartphone',
-    order: 11,
-    active: true,
-  },
-  {
-    id: 'ms-12',
+    startYear: 2024,
+    endYear: 2025,
     yearRange: '2024–2025',
     titleEn: 'Seed Sector Environmental Assessment',
     titleFr: 'Évaluation environnementale du secteur semencier',
@@ -165,11 +182,28 @@ export const staticWorkMilestones: WorkMilestoneData[] = [
     locationFr: 'Kenya',
     serviceArea: 'client-advisory',
     icon: 'leaf',
+    order: 11,
+    active: true,
+  },
+  {
+    id: 'ms-12',
+    startYear: 2024,
+    endYear: 2026,
+    yearRange: '2024–2026',
+    titleEn: 'Africa Digital Crop Variety Catalogue',
+    titleFr: 'Catalogue numérique africain des variétés cultivées',
+    client: 'AGRA',
+    location: '10 African Countries',
+    locationFr: '10 pays africains',
+    serviceArea: 'digital-platforms',
+    icon: 'smartphone',
     order: 12,
     active: true,
   },
   {
     id: 'ms-13',
+    startYear: 2025,
+    endYear: 2026,
     yearRange: '2025–2026',
     titleEn: 'Development of South Sudan Investment Plan',
     titleFr: 'Élaboration du plan d’investissement du Soudan du Sud',
@@ -183,6 +217,8 @@ export const staticWorkMilestones: WorkMilestoneData[] = [
   },
   {
     id: 'ms-14',
+    startYear: 2026,
+    endYear: null,
     yearRange: '2026',
     titleEn: 'Assessment to Determine the Potential for Digitizing Seed Distribution in Mali',
     titleFr: 'Évaluation du potentiel de numérisation de la distribution des semences au Mali',
@@ -196,22 +232,39 @@ export const staticWorkMilestones: WorkMilestoneData[] = [
   },
 ]
 
+function normalizeMilestoneRecord(m: WorkMilestoneData): WorkMilestoneData {
+  const parsed = parseYearsFromRange(m.yearRange)
+  const startYear = m.startYear || parsed.startYear
+  const endYear =
+    m.endYear !== undefined
+      ? m.endYear && m.endYear > startYear
+        ? m.endYear
+        : null
+      : parsed.endYear
+  return {
+    ...m,
+    startYear,
+    endYear,
+    yearRange: formatYearRange(startYear, endYear),
+  }
+}
+
 export async function getWorkMilestones(): Promise<WorkMilestoneData[]> {
   const connected = await isDatabaseConnected()
   if (connected) {
     try {
       const records = await prisma.workMilestone.findMany({
         where: { active: true },
-        orderBy: { order: 'asc' },
+        orderBy: [{ startYear: 'asc' }, { endYear: 'asc' }, { order: 'asc' }],
       })
       if (records && records.length > 0) {
-        return records
+        return sortMilestonesChronologically(records.map(normalizeMilestoneRecord))
       }
     } catch (err) {
       console.error('Error fetching work milestones:', err)
     }
   }
-  return staticWorkMilestones
+  return sortMilestonesChronologically(staticWorkMilestones)
 }
 
 export async function getAllWorkMilestonesAdmin(): Promise<WorkMilestoneData[]> {
@@ -219,16 +272,16 @@ export async function getAllWorkMilestonesAdmin(): Promise<WorkMilestoneData[]> 
   if (connected) {
     try {
       const records = await prisma.workMilestone.findMany({
-        orderBy: { order: 'asc' },
+        orderBy: [{ startYear: 'asc' }, { endYear: 'asc' }, { order: 'asc' }],
       })
       if (records && records.length > 0) {
-        return records
+        return sortMilestonesChronologically(records.map(normalizeMilestoneRecord))
       }
     } catch (err) {
       console.error('Error fetching admin work milestones:', err)
     }
   }
-  return staticWorkMilestones
+  return sortMilestonesChronologically(staticWorkMilestones)
 }
 
 const seedIfEmpty = createSeedGuard(async () => {
@@ -237,7 +290,9 @@ const seedIfEmpty = createSeedGuard(async () => {
     for (const m of staticWorkMilestones) {
       await prisma.workMilestone.create({
         data: {
-          yearRange: m.yearRange,
+          startYear: m.startYear,
+          endYear: m.endYear ?? null,
+          yearRange: formatYearRange(m.startYear, m.endYear),
           titleEn: m.titleEn,
           titleFr: m.titleFr || null,
           client: m.client || null,
@@ -263,9 +318,17 @@ function revalidateWorkPaths() {
 
 export async function createWorkMilestone(data: Omit<WorkMilestoneData, 'id'>) {
   await seedIfEmpty()
+  const startYear = Number(data.startYear)
+  const endYear =
+    data.endYear !== null && data.endYear !== undefined && Number(data.endYear) > startYear
+      ? Number(data.endYear)
+      : null
+
   const created = await prisma.workMilestone.create({
     data: {
-      yearRange: data.yearRange,
+      startYear,
+      endYear,
+      yearRange: formatYearRange(startYear, endYear),
       titleEn: data.titleEn,
       titleFr: data.titleFr || null,
       client: data.client || null,
@@ -289,8 +352,26 @@ export async function updateWorkMilestone(id: string, data: Partial<WorkMileston
         where: { order: parseInt(id.replace('ms-', ''), 10) || 1 },
       })
     : null
+  const existingId = target ? target.id : id
+
+  if (cleanData.startYear !== undefined || cleanData.endYear !== undefined) {
+    const existing = await prisma.workMilestone.findUnique({ where: { id: existingId } })
+    const startYear =
+      cleanData.startYear !== undefined
+        ? Number(cleanData.startYear)
+        : existing?.startYear ?? 2020
+    const rawEnd =
+      cleanData.endYear !== undefined ? cleanData.endYear : existing?.endYear ?? null
+    const endYear =
+      rawEnd !== null && rawEnd !== '' && Number(rawEnd) > startYear ? Number(rawEnd) : null
+
+    cleanData.startYear = startYear
+    cleanData.endYear = endYear
+    cleanData.yearRange = formatYearRange(startYear, endYear)
+  }
+
   const updated = await prisma.workMilestone.update({
-    where: { id: target ? target.id : id },
+    where: { id: existingId },
     data: cleanData,
   })
   revalidateWorkPaths()
