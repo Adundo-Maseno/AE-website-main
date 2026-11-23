@@ -15,7 +15,7 @@ import {
 import {
   SERVICE_AREAS,
   type WorkMilestoneData,
-} from '@/lib/services/milestones-service'
+} from '@/lib/constants/milestones'
 import { MilestoneIcon } from '@/components/our-work/milestone-icon'
 import MilestoneFormModal from '@/components/admin/milestone-form-modal'
 

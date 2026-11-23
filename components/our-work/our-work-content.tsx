@@ -4,7 +4,7 @@ import { useMemo, useRef, useState } from 'react'
 import { ArrowRight, MapPin, Building2, Filter } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { Link } from '@/i18n/routing'
-import { SERVICE_AREAS, type WorkMilestoneData } from '@/lib/services/milestones-service'
+import { SERVICE_AREAS, type WorkMilestoneData } from '@/lib/constants/milestones'
 import { MilestoneIcon } from '@/components/our-work/milestone-icon'
 
 export interface ServiceCardItem {

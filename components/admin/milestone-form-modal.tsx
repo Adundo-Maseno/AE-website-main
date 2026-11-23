@@ -5,7 +5,7 @@ import { X, Save, Loader2 } from 'lucide-react'
 import {
   SERVICE_AREAS,
   type WorkMilestoneData,
-} from '@/lib/services/milestones-service'
+} from '@/lib/constants/milestones'
 import {
   MILESTONE_ICON_OPTIONS,
   MilestoneIcon,
