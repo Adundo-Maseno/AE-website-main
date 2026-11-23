@@ -119,6 +119,7 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
     { label: 'Overview', href: '/admin' },
     { label: 'Page Copy', href: '/admin/sections' },
     { label: 'Team', href: '/admin/team' },
+    { label: 'Milestones', href: '/admin/milestones' },
     { label: 'Publications', href: '/admin/resources' },
     { label: 'Case Studies', href: '/admin/projects' },
     { label: 'Impact Map', href: '/admin/map' },

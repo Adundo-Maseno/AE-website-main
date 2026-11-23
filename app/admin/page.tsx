@@ -10,6 +10,7 @@ import { staticPartners } from '@/lib/services/partners-service'
 import { staticBeliefs } from '@/lib/services/beliefs-service'
 import { staticWhyAgriCards } from '@/lib/services/why-agri-service'
 import { staticExpertisePillars } from '@/lib/services/expertise-service'
+import { staticWorkMilestones } from '@/lib/services/milestones-service'
 import { staticGalleryItems } from '@/lib/services/gallery-service'
 import { staticInsights } from '@/lib/services/insights-service'
 import { countrySeeds } from '@/components/country-data'
@@ -33,6 +34,7 @@ import {
   MapPin,
   Image as ImageIcon,
   KeyRound,
+  Layers,
 } from 'lucide-react'
 
 export default async function AdminDashboardPage() {
@@ -54,13 +56,14 @@ export default async function AdminDashboardPage() {
   let beliefsCount = staticBeliefs.length
   let whyAgriCount = staticWhyAgriCards.length
   let expertiseCount = staticExpertisePillars.length
+  let milestonesCount = staticWorkMilestones.length
   let galleryCount = staticGalleryItems.length
   let recentResources: any[] = []
   let recentTeam: any[] = []
 
   if (dbConnected) {
     try {
-      const [r, t, p, ins, map, sec, part, bel, why, exp, gal, recR, recT] = await Promise.all([
+      const [r, t, p, ins, map, sec, part, bel, why, exp, ms, gal, recR, recT] = await Promise.all([
         prisma.resource.count(),
         prisma.teamMember.count(),
         prisma.project.count(),
@@ -71,6 +74,7 @@ export default async function AdminDashboardPage() {
         prisma.coreBelief.count(),
         prisma.whyAgriCard.count(),
         prisma.expertisePillar.count(),
+        prisma.workMilestone.count(),
         prisma.galleryItem.count(),
         prisma.resource.findMany({ take: 5, orderBy: { createdAt: 'desc' } }),
         prisma.teamMember.findMany({ take: 5, orderBy: { order: 'asc' } }),
@@ -85,6 +89,7 @@ export default async function AdminDashboardPage() {
       if (bel > 0) beliefsCount = bel
       if (why > 0) whyAgriCount = why
       if (exp > 0) expertiseCount = exp
+      if (ms > 0) milestonesCount = ms
       if (gal > 0) galleryCount = gal
       recentResources = recR
       recentTeam = recT
@@ -511,7 +516,7 @@ export default async function AdminDashboardPage() {
               </p>
             </div>
             <span className="text-[11px] font-mono tabular-nums text-[#0F2417]/55 px-2.5 py-1 rounded-md bg-white border border-[#0F2417]/10 whitespace-nowrap shrink-0 [word-break:normal] [overflow-wrap:normal]">
-              6 desks
+              7 desks
             </span>
           </div>
 
@@ -589,6 +594,32 @@ export default async function AdminDashboardPage() {
               <div className="flex items-center gap-2 shrink-0 whitespace-nowrap [word-break:normal] [overflow-wrap:normal] ml-3">
                 <span className="text-[11px] text-[#0F2417]/70 font-mono tabular-nums px-2.5 py-1 rounded-md bg-[#FAF9F5] border border-[#0F2417]/[0.08] whitespace-nowrap shrink-0">
                   {projectsCount} studies
+                </span>
+                <ArrowRight size={14} className="text-[#0F2417]/40 group-hover:translate-x-0.5 group-hover:text-[#0F2417] transition shrink-0" />
+              </div>
+            </Link>
+
+            {/* Our Journey Milestones */}
+            <Link
+              href="/admin/milestones"
+              className="group flex items-center justify-between gap-3 p-4 rounded-xl bg-white border border-[#0F2417]/10 hover:border-[#0F2417]/30 hover:shadow-sm transition-all active:scale-[0.99] shadow-xs"
+            >
+              <div className="flex items-center gap-3.5 min-w-0 flex-1">
+                <div className="w-9 h-9 rounded-xl bg-stone-100 flex items-center justify-center text-[#0F2417] group-hover:bg-[#0F2417] group-hover:text-white transition-colors shrink-0">
+                  <Layers size={16} />
+                </div>
+                <div className="min-w-0">
+                  <h3 className="text-sm font-semibold text-[#0F2417]">
+                    Our Journey Milestones
+                  </h3>
+                  <p className="text-xs text-[#0F2417]/60 leading-snug">
+                    Chronological project timeline on /our-work linked to practice areas
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2 shrink-0 whitespace-nowrap [word-break:normal] [overflow-wrap:normal] ml-3">
+                <span className="text-[11px] text-[#0F2417]/70 font-mono tabular-nums px-2.5 py-1 rounded-md bg-[#FAF9F5] border border-[#0F2417]/[0.08] whitespace-nowrap shrink-0">
+                  {milestonesCount} milestones
                 </span>
                 <ArrowRight size={14} className="text-[#0F2417]/40 group-hover:translate-x-0.5 group-hover:text-[#0F2417] transition shrink-0" />
               </div>
