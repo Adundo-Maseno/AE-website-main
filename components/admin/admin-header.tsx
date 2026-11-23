@@ -109,6 +109,7 @@ export default function AdminHeader({ adminEmail }: { adminEmail?: string }) {
     { label: 'Team & Leadership', href: '/admin/team', icon: Users, desc: 'Portraits with dual-photo uploads & bios' },
     { label: 'Publications & Reports', href: '/admin/resources', icon: FileText, desc: 'Verified downloadable seed sector PDFs' },
     { label: 'Case Studies & Pillars', href: '/admin/projects', icon: Briefcase, desc: 'Digital platforms & advisory initiatives' },
+    { label: 'Journey Milestones', href: '/admin/milestones', icon: Layers, desc: 'Our Work timeline projects & service links' },
     { label: 'Field Insights', href: '/admin/insights', icon: Sparkles, desc: 'Regulatory articles & research breakthroughs' },
     { label: 'Field Gallery', href: '/admin/gallery', icon: ImageIcon, desc: 'Curated field photography & activity gallery' },
     { label: 'Pan-African Map', href: '/admin/map', icon: Compass, desc: 'Regional footprint & country project data' },

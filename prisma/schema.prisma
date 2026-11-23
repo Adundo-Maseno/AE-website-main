@@ -210,4 +210,23 @@ model ExpertisePillar {
   @@index([order])
 }
 
+model WorkMilestone {
+  id          String   @id @default(cuid())
+  yearRange   String
+  titleEn     String
+  titleFr     String?
+  client      String?
+  location    String
+  locationFr  String?
+  serviceArea String   @default("project-implementation")
+  icon        String   @default("sprout")
+  order       Int      @default(0)
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([serviceArea])
+  @@index([order])
+}
+
 

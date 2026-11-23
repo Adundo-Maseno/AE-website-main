@@ -11,6 +11,7 @@ import { staticPartners } from '@/lib/services/partners-service'
 import { staticBeliefs } from '@/lib/services/beliefs-service'
 import { staticWhyAgriCards } from '@/lib/services/why-agri-service'
 import { staticExpertisePillars } from '@/lib/services/expertise-service'
+import { staticWorkMilestones } from '@/lib/services/milestones-service'
 import { defaultPageSections } from '@/lib/services/page-sections-service'
 import { getSession, DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD } from '@/lib/auth'
 import frMessages from '@/messages/fr.json'
@@ -46,6 +47,7 @@ export async function POST() {
     let beliefsSeeded = 0
     let whyAgriSeeded = 0
     let expertiseSeeded = 0
+    let milestonesSeeded = 0
     let sectionsSeeded = 0
 
     // 1. Seed Superadmin if none exists
@@ -304,6 +306,28 @@ export async function POST() {
       }
     }
 
+    // 14. Seed WorkMilestones if empty
+    const milestoneCount = await prisma.workMilestone.count()
+    if (milestoneCount === 0) {
+      for (const m of staticWorkMilestones) {
+        await prisma.workMilestone.create({
+          data: {
+            yearRange: m.yearRange,
+            titleEn: m.titleEn,
+            titleFr: m.titleFr || null,
+            client: m.client || null,
+            location: m.location,
+            locationFr: m.locationFr || null,
+            serviceArea: m.serviceArea,
+            icon: m.icon,
+            order: m.order,
+            active: m.active,
+          },
+        })
+        milestonesSeeded++
+      }
+    }
+
     return NextResponse.json({
       success: true,
       message: 'Seed completed successfully across all domains',
@@ -320,6 +344,7 @@ export async function POST() {
         beliefsSeeded,
         whyAgriSeeded,
         expertiseSeeded,
+        milestonesSeeded,
         sectionsSeeded,
         totalResources: resourceCount === 0 ? resourcesSeeded : resourceCount,
         totalTeam: teamCount === 0 ? teamSeeded : teamCount,
@@ -332,6 +357,7 @@ export async function POST() {
         totalBeliefs: beliefCount === 0 ? beliefsSeeded : beliefCount,
         totalWhyAgri: whyAgriCount === 0 ? whyAgriSeeded : whyAgriCount,
         totalExpertise: expertiseCount === 0 ? expertiseSeeded : expertiseCount,
+        totalMilestones: milestoneCount === 0 ? milestonesSeeded : milestoneCount,
         totalSections: sectionCount === 0 ? sectionsSeeded : sectionCount,
       },
     })
